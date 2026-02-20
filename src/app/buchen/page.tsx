@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
@@ -90,7 +90,7 @@ const packages = [
   },
 ];
 
-export default function BuchenPage() {
+function BuchenPageInner() {
   const searchParams = useSearchParams();
   const paketIndex = parseInt(searchParams.get('paket') || '0');
   const [step, setStep] = useState(1);
@@ -922,4 +922,12 @@ export default function BuchenPage() {
   }
 
   return null;
+}
+
+export default function BuchenPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-stone-400">Laden…</div>}>
+      <BuchenPageInner />
+    </Suspense>
+  );
 }
