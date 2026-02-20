@@ -86,17 +86,24 @@ const packages = [
   },
 ];
 
+const bookButtonStyles = [
+  'bg-gradient-to-r from-cyan-500 to-cyan-600 hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]',
+  'bg-gradient-to-r from-orange-500 to-orange-400 hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]',
+  'bg-gradient-to-r from-purple-600 to-purple-400 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)]',
+  'bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_40px_rgba(34,197,94,0.7)]',
+];
+
 export default function FinalCTASection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [activePackage, setActivePackage] = useState(1);
+  const [activePackage, setActivePackage] = useState(0);
 
   const currentPackage = packages[activePackage];
 
   return (
     <section id="packages" ref={ref} className="relative h-screen flex flex-col lg:flex-row items-stretch overflow-hidden">
       {/* Left Side - Dynamic Text based on selected package */}
-      <div className="w-full lg:w-1/2 bg-gradient-to-br from-stone-100 to-stone-200 p-8 lg:p-12 flex flex-col justify-center relative">
+      <div className="w-full lg:w-1/2 bg-stone-100 p-8 lg:p-12 flex flex-col justify-center relative">
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-stone-300 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-stone-300 rounded-full blur-3xl opacity-40"></div>
@@ -146,15 +153,11 @@ export default function FinalCTASection() {
                 <motion.button
                   whileHover={{ 
                     scale: 1.05,
-                    boxShadow: "0 25px 80px rgba(6, 182, 212, 0.5)"
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="relative bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all overflow-hidden group w-full lg:w-auto"
+                  className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all overflow-hidden w-full lg:w-auto ${bookButtonStyles[activePackage]}`}
                 >
                   <span className="relative z-10">Jetzt buchen →</span>
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
                 </motion.button>
               </Link>
             </motion.div>

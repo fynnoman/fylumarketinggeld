@@ -30,7 +30,7 @@ export default function CaseStudySection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="relative py-32 px-6 bg-gradient-to-b from-stone-100 to-stone-200 overflow-hidden">
+    <section ref={ref} className="relative py-32 px-6 bg-stone-100 overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 grid-background opacity-10"></div>
 

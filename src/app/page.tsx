@@ -6,6 +6,7 @@ import ProblemSolutionSection from '@/components/ProblemSolutionSection';
 import CaseStudySection from '@/components/CaseStudySection';
 import FinalCTASection from '@/components/FinalCTASection';
 import FullscreenVideoSection from '@/components/FullscreenVideoSection';
+import PortfolioSection from '@/components/PortfolioSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <CaseStudySection />
       <FinalCTASection />
       <FullscreenVideoSection />
+      <PortfolioSection />
       <Footer />
     </main>
   );

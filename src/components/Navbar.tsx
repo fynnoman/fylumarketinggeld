@@ -35,7 +35,7 @@ export default function Navbar() {
               className="flex items-center"
             >
               <img 
-                src="/CCA2731B-F32B-49C3-AD25-A97E507C4EFB_1_105_c.jpeg" 
+                src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png" 
                 alt="Fylu Logo" 
                 className="h-12 w-auto"
               />

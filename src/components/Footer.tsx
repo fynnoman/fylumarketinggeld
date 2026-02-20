@@ -5,12 +5,9 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray-900 text-white overflow-hidden">
+    <footer className="relative bg-transparent text-white overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 grid-background-dark opacity-20"></div>
-      
-      {/* Gradient Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-10"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
@@ -23,7 +20,7 @@ export default function Footer() {
               className="mb-6"
             >
               <img 
-                src="/CCA2731B-F32B-49C3-AD25-A97E507C4EFB_1_105_c.jpeg" 
+                src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png" 
                 alt="Fylu Logo" 
                 className="h-16 w-auto mb-4"
               />

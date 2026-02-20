@@ -20,9 +20,9 @@ export default function AboutMeSection() {
           
           {/* Left Side - Image */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -120 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative"
           >
             <div className="relative w-full max-w-md mx-auto">

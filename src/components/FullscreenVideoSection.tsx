@@ -13,7 +13,7 @@ export default function FullscreenVideoSection() {
         {/* background video */}
         <div className="absolute inset-0 z-0 bg-white" aria-hidden="true">
           <video
-            src="/glyph_waves_remix.mp4"
+            src="/Frau_schaut_träumerisch_aus_Fenster.mov"
             autoPlay
             muted
             loop

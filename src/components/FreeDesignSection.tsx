@@ -10,10 +10,19 @@ export default function FreeDesignSection() {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section ref={ref} className="relative py-16 bg-white overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-30"></div>
+    <section ref={ref} className="relative py-16 overflow-hidden bg-white">
+      {/* Background video */}
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <video
+          src="/glyph_waves_remix.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
+      </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
