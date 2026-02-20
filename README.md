@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marketing Agentur Website
 
-## Getting Started
+Eine moderne, conversion-optimierte Website für eine Marketing-Agentur, die Webdesign, SEO und Google-Optimierung anbietet.
 
-First, run the development server:
+## Features
+
+- 🎨 Modernes Design mit Neuromarketing-Prinzipien
+- 🎯 Conversion-optimiert mit klaren CTAs
+- ⚡ Next.js 15 mit App Router
+- 💫 Smooth Animationen mit Framer Motion
+- 📱 Vollständig responsive
+- 🎭 TypeScript für Type Safety
+- 🌊 Tailwind CSS für schnelles Styling
+- 🚀 Optimiert für Performance
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Sprache:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animationen:** Framer Motion
+- **Deployment:** Vercel (empfohlen)
+
+## Installation
+
+```bash
+npm install
+```
+
+## Development
+
+Starte den Development Server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Öffne [http://localhost:3000](http://localhost:3000) in deinem Browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Projektstruktur
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root Layout
+│   ├── page.tsx            # Hauptseite
+│   ├── globals.css         # Globale Styles
+│   └── angebote/
+│       └── page.tsx        # Angebots-Seite
+└── components/
+    ├── HeroSection.tsx           # Hero mit Value Proposition
+    ├── ValueSection.tsx          # Benefits-Sektion
+    ├── ProblemSolutionSection.tsx # Problem-Lösungs-Block
+    ├── CaseStudySection.tsx      # Erfolgsgeschichten
+    ├── FinalCTASection.tsx       # Finale Call-to-Action
+    └── StickyButton.tsx          # Sticky "Projekt starten" Button
+```
 
-## Learn More
+## Design-Prinzipien
 
-To learn more about Next.js, take a look at the following resources:
+- Klare visuelle Hierarchie
+- Großzügiger Weißraum (120px Section-Abstände)
+- Maximal 2 Schriftarten
+- Farbschema: Weiß, Cyan (#06b6d4), Silber (#c0c0c0)
+- Headlines: 48-64px
+- Fokus auf Conversion und messbare Ergebnisse
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Am einfachsten über Vercel:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Siehe [Next.js Deployment Dokumentation](https://nextjs.org/docs/app/building-your-application/deploying) für Details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
