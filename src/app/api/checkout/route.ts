@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
       mode: 'payment',
       line_items: [{ price: priceId, quantity: 1 }],
       customer_email: customerEmail || undefined,
+      automatic_tax: { enabled: true },
       metadata: {
         customerName: customerName || '',
         paketIndex: String(paketIndex),
