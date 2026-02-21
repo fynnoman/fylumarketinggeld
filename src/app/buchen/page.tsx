@@ -132,6 +132,36 @@ function BuchenPageInner() {
   const canProceedStep4 = formData.signatureName;
   const canProceedStep5 = formData.serviceOption; // Service muss gewählt sein
 
+  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [checkoutError, setCheckoutError] = useState('');
+
+  const handleStripeCheckout = async () => {
+    if (!canProceedStep5) return;
+    setIsCheckingOut(true);
+    setCheckoutError('');
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          paketIndex,
+          customerEmail: formData.email,
+          customerName: formData.contactName || formData.firmName,
+        }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        setCheckoutError(data.error || 'Fehler beim Erstellen des Checkouts.');
+        setIsCheckingOut(false);
+      }
+    } catch {
+      setCheckoutError('Verbindungsfehler. Bitte versuchen Sie es erneut.');
+      setIsCheckingOut(false);
+    }
+  };
+
   // SCHRITT 1: Paket im Detail (ohne Preise)
   if (step === 1) {
     return (
@@ -901,20 +931,25 @@ function BuchenPageInner() {
           {/* Finaler Buchungsbutton */}
           <motion.button
             type="button"
-            disabled={!canProceedStep5}
-            whileHover={{ scale: canProceedStep5 ? 1.02 : 1 }}
-            whileTap={{ scale: canProceedStep5 ? 0.98 : 1 }}
+            disabled={!canProceedStep5 || isCheckingOut}
+            onClick={handleStripeCheckout}
+            whileHover={{ scale: canProceedStep5 && !isCheckingOut ? 1.02 : 1 }}
+            whileTap={{ scale: canProceedStep5 && !isCheckingOut ? 0.98 : 1 }}
             className={`w-full py-5 rounded-lg font-bold text-xl shadow-xl transition-all ${
-              canProceedStep5
+              canProceedStep5 && !isCheckingOut
                 ? 'bg-gradient-to-r from-cyan-500 to-cyan-600 text-white hover:shadow-2xl cursor-pointer'
                 : 'bg-stone-300 text-stone-500 cursor-not-allowed'
             }`}
           >
-            🔒 Jetzt kostenpflichtig buchen
+            {isCheckingOut ? 'Weiterleitung zu Stripe...' : '🔒 Jetzt kostenpflichtig buchen'}
           </motion.button>
 
+          {checkoutError && (
+            <p className="text-center text-sm text-red-500 mt-3">{checkoutError}</p>
+          )}
+
           <p className="text-center text-sm text-stone-500 mt-4">
-            Nach Klick werden Sie zur Zahlungsabwicklung weitergeleitet
+            Nach Klick werden Sie zur sicheren Zahlungsabwicklung von Stripe weitergeleitet
           </p>
         </div>
       </div>
