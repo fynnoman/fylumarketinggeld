@@ -2,15 +2,21 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function HeroSection() {
-  // plain background video (no JS effects)
   const { scrollY } = useScroll();
-  // move text to the right as user scrolls (0 -> 600px scroll maps to 0 -> 120px shift)
   const x = useTransform(scrollY, [0, 600], [0, 120]);
+  const [isMobile, setIsMobile] = useState(false);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   useEffect(() => {
     const vid = videoRef.current;
@@ -18,21 +24,17 @@ export default function HeroSection() {
     let timeoutId: number | undefined;
 
     const onEnded = () => {
-      // video ended: leave last frame visible, then restart after 5s
       timeoutId = window.setTimeout(() => {
         if (!videoRef.current) return;
         try {
           videoRef.current.currentTime = 0;
           const p = videoRef.current.play();
           if (p && typeof p.then === 'function') p.catch(() => {});
-        } catch (e) {
-          // ignore
-        }
+        } catch (e) { /* ignore */ }
       }, 5000);
     };
 
     vid.addEventListener('ended', onEnded);
-
     return () => {
       vid.removeEventListener('ended', onEnded);
       if (timeoutId) clearTimeout(timeoutId);
@@ -41,7 +43,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
-      {/* full-bleed background video — no effects, no layers on top of video (content sits above) */}
+      {/* background video */}
       <div className="absolute inset-0 z-0 bg-white" aria-hidden="true">
         <video
           ref={videoRef}
@@ -52,25 +54,24 @@ export default function HeroSection() {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-center bg-white"
         />
+        {/* mobile overlay so text is always readable */}
+        <div className="absolute inset-0 bg-white/60 md:hidden" />
       </div>
 
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto w-full px-6 py-12 lg:pr-[65vw] flex items-center"
-        style={{ x }}
+        className="relative z-10 max-w-7xl mx-auto w-full px-5 py-24 md:py-12 md:pr-[65vw] flex items-center"
+        style={{ x: isMobile ? 0 : x }}
       >
         <div className="max-w-2xl lg:max-w-xl text-left">
-          <div className="max-w-3xl lg:max-w-4xl">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-gray-900 leading-tight tracking-tight"
-            >
-              Websites, die nicht nur beeindrucken,
-              <br />
-              <span className="text-cyan-600">sondern verkaufen</span>
-            </motion.h1>
-          </div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-gray-900 leading-tight tracking-tight"
+          >
+            Websites, die nicht nur beeindrucken,{' '}
+            <span className="text-cyan-600">sondern verkaufen</span>
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -85,23 +86,23 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="flex flex-col sm:flex-row gap-4 items-start"
+            className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start"
           >
-            <Link href="/angebote">
+            <Link href="/angebote" className="w-full sm:w-auto">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md w-full sm:w-auto"
+                className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-6 py-4 rounded-full text-base font-bold shadow-md"
               >
                 Kostenlosen Entwurf sichern
               </motion.button>
             </Link>
 
-            <Link href="#packages">
+            <Link href="#packages" className="w-full sm:w-auto">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-white text-gray-900 px-5 py-3 rounded-full text-sm font-semibold border-2 border-gray-200 w-full sm:w-auto"
+                className="w-full bg-white text-gray-900 px-5 py-4 rounded-full text-base font-semibold border-2 border-gray-200"
               >
                 Meine Angebote
               </motion.button>
