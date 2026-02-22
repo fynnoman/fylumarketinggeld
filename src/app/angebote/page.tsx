@@ -32,11 +32,21 @@ export default function AngebotePage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simuliere API Call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      if (!res.ok) throw new Error('Fehler beim Senden');
+      setIsSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an fynnschulzonline@gmail.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
