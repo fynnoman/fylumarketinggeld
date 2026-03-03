@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="de">
       <head>
         <link rel="canonical" href="https://fylumarketing.de" />
+        <meta name="google-site-verification" content="Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
