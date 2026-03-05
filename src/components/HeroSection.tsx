@@ -9,9 +9,8 @@ export default function HeroSection() {
   const x = useTransform(scrollY, [0, 600], [0, 120]);
   const [isMobile, setIsMobile] = useState(false);
 
-  // image: subtle parallax (moves up) + slight rotation on scroll
+  // image: subtle parallax (moves up) on scroll
   const imgY = useTransform(scrollY, [0, 600], [0, -80]);
-  const imgRotate = useTransform(scrollY, [0, 600], [0, 4]);
   const imgScale = useTransform(scrollY, [0, 600], [1, 1.06]);
 
   useEffect(() => {
@@ -29,7 +28,6 @@ export default function HeroSection() {
         style={{
           backgroundImage: "url('/51882DC2-1247-4F10-B2A7-1D48EE839AEC.png')",
           y: imgY,
-          rotate: imgRotate,
           scale: imgScale,
         }}
         aria-hidden="true"
