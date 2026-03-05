@@ -58,18 +58,18 @@ export default function ValueSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl md:text-5xl font-bold text-center mb-6 text-stone-900"
         >
           Warum mit mir arbeiten?
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ duration: 0.5, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="text-xl text-stone-700 text-center mb-20 max-w-3xl mx-auto"
         >
           Neu am Markt, aber mit voller Leidenschaft und faire Preise für echte Qualität
@@ -79,23 +79,19 @@ export default function ValueSection() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="relative bg-white p-8 rounded-xl border border-stone-300 hover:border-cyan-400 transition-all hover:shadow-2xl group"
+              transition={{ duration: 0.5, delay: 0.1 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.2, ease: 'easeOut' } }}
+              className="relative bg-white p-8 rounded-xl border border-stone-300 hover:border-cyan-400 transition-colors hover:shadow-xl group"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
               
               <div className="relative z-10">
-                <motion.div
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                  className="w-14 h-14 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-xl mb-6 flex items-center justify-center shadow-lg"
-                >
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-xl mb-6 flex items-center justify-center shadow-lg">
                   {benefit.icon}
-                </motion.div>
+                </div>
                 <h3 className="text-xl font-bold mb-3 text-stone-900">{benefit.title}</h3>
                 <p className="text-stone-600">{benefit.description}</p>
               </div>

@@ -20,9 +20,9 @@ export default function AboutMeSection() {
           
           {/* Left Side - Image */}
           <motion.div
-            initial={{ opacity: 0, x: -120 }}
+            initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
             <div className="relative w-full max-w-md mx-auto">
@@ -45,36 +45,21 @@ export default function AboutMeSection() {
 
           {/* Right Side - About Text */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mb-6"
-            >
+            <div className="mb-6">
               <span className="text-sm font-bold text-cyan-500 uppercase tracking-wider">
                 Über mich
               </span>
-            </motion.div>
+            </div>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-stone-900 leading-tight"
-            >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-stone-900 leading-tight">
               Hallo, ich bin Fynn
-            </motion.h2>
+            </h2>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="space-y-4 text-lg text-stone-700 leading-relaxed"
-            >
+            <div className="space-y-4 text-lg text-stone-700 leading-relaxed">
               <p>
                 Ich bin Fynn und <span className="text-cyan-500 font-semibold">meine Vision ist es, Unternehmen jeder Größe zu befähigen, ihr volles Potenzial zu erreichen.</span> Ich glaube, dass jede Marke eine einzigartige Geschichte zu erzählen hat, und es ist meine Mission, 
                 ihnen dabei zu helfen, sie überzeugend zu erzählen.
@@ -89,7 +74,7 @@ export default function AboutMeSection() {
                 <span className="text-cyan-500 font-semibold">Gemeinsam können wir etwas Außergewöhnliches schaffen</span>, das nicht nur Ihre Geschäftsziele erfüllt, 
                 sondern Ihre kühnsten Erwartungen übertrifft.
               </p>
-            </motion.div>
+            </div>
           </motion.div>
 
         </div>

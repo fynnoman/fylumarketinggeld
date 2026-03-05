@@ -36,9 +36,9 @@ export default function CaseStudySection() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
@@ -53,17 +53,17 @@ export default function CaseStudySection() {
           {caseStudies.map((study, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all border border-stone-300"
+              transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -5, transition: { duration: 0.2, ease: 'easeOut' } }}
+              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border border-stone-300"
             >
               <div className="mb-6">
                 <motion.div
-                  initial={{ scale: 0 }}
-                  animate={isInView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ duration: 0.4, delay: index * 0.08 + 0.15, ease: [0.22, 1, 0.36, 1] }}
                   className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full"
                 >
                   <span className="text-3xl font-bold text-white">{study.metric}</span>

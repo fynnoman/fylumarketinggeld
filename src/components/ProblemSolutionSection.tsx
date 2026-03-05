@@ -35,9 +35,9 @@ export default function ProblemSolutionSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl md:text-5xl font-bold mb-20 text-left max-w-2xl text-gray-900"
         >
           Das Problem kenne ich
@@ -49,10 +49,9 @@ export default function ProblemSolutionSection() {
             {problems.map((problem, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -30 }}
+                initial={{ opacity: 0, x: -16 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                whileHover={{ x: 10 }}
+                transition={{ duration: 0.5, delay: 0.1 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
                 className="group relative"
               >
                 {/* Minimal border effect */}
@@ -69,9 +68,9 @@ export default function ProblemSolutionSection() {
 
           {/* Solution Text - Simple with Marker Effect */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
             className="relative mb-12"
           >
             <h3 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-900">
@@ -82,14 +81,14 @@ export default function ProblemSolutionSection() {
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.6, delay: 0.9 }}
+                  transition={{ duration: 0.5, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute -bottom-1 left-0 right-0 h-5 bg-cyan-400 opacity-60 -rotate-1"
                   style={{ transformOrigin: 'left' }}
                 />
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.6, delay: 1.0 }}
+                  transition={{ duration: 0.5, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute -bottom-0.5 left-0 right-0 h-4 bg-cyan-500 opacity-40 rotate-1"
                   style={{ transformOrigin: 'left' }}
                 />
@@ -104,7 +103,7 @@ export default function ProblemSolutionSection() {
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.6, delay: 1.2 }}
+                  transition={{ duration: 0.5, delay: 0.58, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute -bottom-0.5 left-0 right-0 h-3 bg-cyan-400 opacity-40 -rotate-1"
                   style={{ transformOrigin: 'left' }}
                 />
@@ -113,8 +112,9 @@ export default function ProblemSolutionSection() {
             </div>
             <Link href="/angebote">
               <motion.button
-                whileHover={{ scale: 1.03, boxShadow: "0 20px 60px rgba(6, 182, 212, 0.4)" }}
+                whileHover={{ scale: 1.02, boxShadow: "0 16px 48px rgba(6, 182, 212, 0.35)" }}
                 whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2, ease: 'easeOut' }}
                 className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-lg font-bold shadow-lg transition-all inline-flex items-center gap-3 group/btn"
               >
                 <span>Jetzt Transformation starten</span>
