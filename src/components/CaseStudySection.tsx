@@ -57,7 +57,7 @@ export default function CaseStudySection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -5, transition: { duration: 0.2, ease: 'easeOut' } }}
-              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border border-stone-300"
+              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border border-stone-300 will-change-[transform,opacity]"
             >
               <div className="mb-6">
                 <motion.div

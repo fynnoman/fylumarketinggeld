@@ -83,7 +83,7 @@ export default function ValueSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -6, transition: { duration: 0.2, ease: 'easeOut' } }}
-              className="relative bg-white p-8 rounded-xl border border-stone-300 hover:border-cyan-400 transition-colors hover:shadow-xl group"
+              className="relative bg-white p-8 rounded-xl border border-stone-300 hover:border-cyan-400 transition-colors hover:shadow-xl group will-change-[transform,opacity]"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
