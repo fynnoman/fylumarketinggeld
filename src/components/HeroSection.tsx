@@ -2,14 +2,17 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function HeroSection() {
   const { scrollY } = useScroll();
   const x = useTransform(scrollY, [0, 600], [0, 120]);
   const [isMobile, setIsMobile] = useState(false);
 
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  // image: subtle parallax (moves up) + slight rotation on scroll
+  const imgY = useTransform(scrollY, [0, 600], [0, -80]);
+  const imgRotate = useTransform(scrollY, [0, 600], [0, 4]);
+  const imgScale = useTransform(scrollY, [0, 600], [1, 1.06]);
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
@@ -18,45 +21,22 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
-  useEffect(() => {
-    const vid = videoRef.current;
-    if (!vid) return;
-    let timeoutId: number | undefined;
-
-    const onEnded = () => {
-      timeoutId = window.setTimeout(() => {
-        if (!videoRef.current) return;
-        try {
-          videoRef.current.currentTime = 0;
-          const p = videoRef.current.play();
-          if (p && typeof p.then === 'function') p.catch(() => {});
-        } catch (e) { /* ignore */ }
-      }, 5000);
-    };
-
-    vid.addEventListener('ended', onEnded);
-    return () => {
-      vid.removeEventListener('ended', onEnded);
-      if (timeoutId) clearTimeout(timeoutId);
-    };
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
-      {/* background video */}
-      <div className="absolute inset-0 z-0 bg-white" aria-hidden="true">
-        <video
-          ref={videoRef}
-          src="/Videoerstellung_Dein_Video_ist_fertig_.mov"
-          autoPlay
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover object-center bg-white"
-        />
+      {/* background image with parallax + rotation */}
+      <motion.div
+        className="absolute inset-0 z-0 bg-center bg-cover"
+        style={{
+          backgroundImage: "url('/51882DC2-1247-4F10-B2A7-1D48EE839AEC.png')",
+          y: imgY,
+          rotate: imgRotate,
+          scale: imgScale,
+        }}
+        aria-hidden="true"
+      >
         {/* mobile overlay so text is always readable */}
-        <div className="absolute inset-0 bg-white/60 md:hidden" />
-      </div>
+        <div className="absolute inset-0 bg-white/40 md:bg-transparent" />
+      </motion.div>
 
       <motion.div
         className="relative z-10 max-w-7xl mx-auto w-full px-5 py-24 md:py-12 md:pr-[65vw] flex items-center"
