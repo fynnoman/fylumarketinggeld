@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import Link from 'next/link';
+import LazyVideo from './LazyVideo';
+
+const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 const packages = [
   {
@@ -110,9 +113,9 @@ export default function FinalCTASection() {
 
         <div className="relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5, ease: smoothEase }}
             className="mb-6"
           >
             <span className="text-sm font-bold text-stone-600 uppercase tracking-wider">
@@ -123,10 +126,10 @@ export default function FinalCTASection() {
           <AnimatePresence mode="wait">
             <motion.div
               key={activePackage}
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 30 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
             >
               <div className="mb-6">
                 <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 text-stone-900 leading-tight">
@@ -150,15 +153,11 @@ export default function FinalCTASection() {
               </p>
 
               <Link href={`/buchen?paket=${activePackage}`}>
-                <motion.button
-                  whileHover={{ 
-                    scale: 1.05,
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all overflow-hidden w-full lg:w-auto ${bookButtonStyles[activePackage]}`}
+                <button
+                  className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 overflow-hidden w-full lg:w-auto hover:shadow-[0_16px_48px_rgba(6,182,212,0.35)] active:scale-[0.98] ${bookButtonStyles[activePackage]}`}
                 >
                   <span className="relative z-10">Jetzt buchen →</span>
-                </motion.button>
+                </button>
               </Link>
             </motion.div>
           </AnimatePresence>
@@ -168,22 +167,14 @@ export default function FinalCTASection() {
       {/* Right Side - Simple PNG Display */}
       <div className="w-full lg:w-1/2 bg-white p-8 lg:p-12 flex flex-col justify-center items-center overflow-y-auto relative">
         {/* Background Video */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
-        >
-          <source src="/glyph_waves_remix.mp4" type="video/mp4" />
-        </video>
+        <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-20" />
 
         {/* Content over video */}
         <div className="relative z-10 w-full flex flex-col items-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: smoothEase }}
           className="mb-6 text-center"
         >
           <h3 className="text-2xl font-bold text-stone-900 mb-2">Wählen Sie Ihr Paket</h3>
@@ -222,19 +213,11 @@ export default function FinalCTASection() {
           <AnimatePresence mode="wait">
             <motion.div
               key={activePackage}
-              initial={{ opacity: 0, scale: 0.9, rotateY: -15 }}
-              animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-              exit={{ opacity: 0, scale: 0.9, rotateY: 15 }}
-              transition={{ 
-                duration: 0.5,
-                type: "spring",
-                stiffness: 200,
-                damping: 25
-              }}
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.3, ease: smoothEase }}
               className="w-full h-full"
-              style={{
-                transformStyle: 'preserve-3d',
-              }}
             >
               <img 
                 src={currentPackage.image}
@@ -249,17 +232,14 @@ export default function FinalCTASection() {
         <motion.div 
           className="w-full max-w-xl bg-stone-50 rounded-xl p-4 shadow-lg mb-6"
           key={activePackage}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="grid grid-cols-2 gap-2">
             {currentPackage.features.map((feature, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + index * 0.02 }}
                 className="flex items-start gap-1.5"
               >
                 <div className="w-3.5 h-3.5 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -268,7 +248,7 @@ export default function FinalCTASection() {
                   </svg>
                 </div>
                 <span className="text-[11px] text-stone-700 font-medium leading-tight">{feature}</span>
-              </motion.div>
+              </div>
             ))}
           </div>
           {currentPackage.bonus && (

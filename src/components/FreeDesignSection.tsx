@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
+import LazyVideo from './LazyVideo';
+
+const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 export default function FreeDesignSection() {
   const ref = useRef(null);
@@ -11,24 +14,13 @@ export default function FreeDesignSection() {
 
   return (
     <section ref={ref} className="relative py-16 overflow-hidden bg-white">
-      {/* Background video */}
-      <div className="absolute inset-0 z-0" aria-hidden="true">
-        <video
-          src="/glyph_waves_remix.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
-      </div>
+      <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-20" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: smoothEase }}
           className="text-center"
         >
           <p className="text-cyan-600 text-lg mb-3 font-medium">
@@ -45,19 +37,9 @@ export default function FreeDesignSection() {
           </p>
 
           <Link href="/angebote">
-            <motion.button
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 25px 80px rgba(6, 182, 212, 0.3)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="relative bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all overflow-hidden group"
-            >
-              <span className="relative z-10">Jetzt Entwurf anfordern →</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity"
-              />
-            </motion.button>
+            <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]">
+              Jetzt Entwurf anfordern →
+            </button>
           </Link>
         </motion.div>
       </div>

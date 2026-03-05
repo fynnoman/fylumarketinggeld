@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LazyVideo from './LazyVideo';
 
 const problems = [
   'Ihre aktuelle Website sieht veraltet aus und schreckt potenzielle Kunden ab',
@@ -18,20 +19,7 @@ export default function ProblemSolutionSection() {
 
   return (
     <section ref={ref} className="relative py-32 px-6 overflow-hidden bg-white">
-      {/* Full-Width Background Video */}
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
-        >
-          <source src="/glyph_waves_remix.mp4" type="video/mp4" />
-        </video>
-        {/* Gradient overlay for readability */}
-        <div className="absolute inset-0 bg-white/0"></div>
-      </div>
+      <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-40" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.h2

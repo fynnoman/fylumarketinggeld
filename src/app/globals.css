@@ -22,6 +22,13 @@
   scroll-behavior: smooth;
 }
 
+/* Force GPU acceleration for motion elements */
+[style*="transform"] {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

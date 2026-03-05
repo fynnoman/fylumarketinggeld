@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import LazyVideo from './LazyVideo';
 
 const portfolioItems = [
   {
@@ -49,17 +50,7 @@ export default function PortfolioSection() {
   return (
     <section className="w-full relative flex flex-col items-center justify-center py-20 overflow-hidden" style={{ minHeight: '90vh' }}>
       {/* Background video */}
-      <div className="absolute inset-0 z-0 bg-[#e5e7eb]" aria-hidden="true">
-        <video
-          src="/glyph_waves_remix.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
-      </div>
+      <LazyVideo src="/glyph_waves_remix.mp4" className="bg-[#e5e7eb]" opacity="opacity-30" />
 
       {/* Title */}
       <h2 className="relative z-10 text-4xl md:text-5xl lg:text-6xl font-extrabold text-cyan-500 tracking-tight mb-10">
@@ -101,10 +92,10 @@ export default function PortfolioSection() {
             {item && (
               <motion.div
                 key={safeIndex}
-                initial={{ opacity: 0, x: 60 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -60 }}
-                transition={{ duration: 0.35, ease: 'easeInOut' }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
                 className="relative w-full h-full"
               >
                 <Image
