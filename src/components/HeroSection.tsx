@@ -23,15 +23,21 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
       <motion.div
-        className="absolute inset-0 z-0 bg-center bg-cover will-change-transform"
-        style={{
-          backgroundImage: "url('/C64B3436-B13E-4321-AA01-C0F84E766D06.png')",
-          y: imgY,
-          scale: imgScale,
-        }}
+        className="absolute inset-0 z-0 will-change-transform"
+        style={{ y: imgY, scale: imgScale }}
         aria-hidden="true"
       >
-        <div className="absolute inset-0 bg-white/40 md:bg-transparent" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/Videoerstellung_Dein_Video_ist_fertig_.mov" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-white/50 md:bg-white/30" />
       </motion.div>
 
       <motion.div
