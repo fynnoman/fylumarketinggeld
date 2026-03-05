@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { saveMessage } from '@/lib/messages';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -77,6 +78,21 @@ export async function POST(req: NextRequest) {
           </p>
         </div>
       `,
+    });
+
+    // Nachricht im Admin-Bereich speichern
+    saveMessage({
+      type: 'contact',
+      firmName,
+      contactName,
+      email,
+      phone,
+      branche,
+      groesse,
+      projectType,
+      budget,
+      preferences,
+      message,
     });
 
     return NextResponse.json({ success: true });
