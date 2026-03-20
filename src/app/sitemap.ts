@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://fylumarketing.de";
+  const baseUrl = "https://www.fylumarketing.de";
 
   return [
     {
