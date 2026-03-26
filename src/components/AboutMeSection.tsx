@@ -32,7 +32,7 @@ export default function AboutMeSection() {
               {/* Image container with modern shape */}
               <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
                 <img
-                  src="/B3FA1614-4018-4622-B786-9668EF8D1D07_1_105_c.jpeg"
+                  src="/64BB3620-F0DF-4887-A72B-6F4E69750FD8.png"
                   alt="Fynn Schulz"
                   className="w-full h-full object-cover"
                 />
