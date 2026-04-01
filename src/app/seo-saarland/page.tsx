@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Was ist der Unterschied zwischen SEO und Google Ads?',
-    a: 'SEO verbessert Ihre organische (kostenlose) Sichtbarkeit bei Google langfristig. Google Ads sind bezahlte Anzeigen, die sofort sichtbar sind, aber laufende Kosten verursachen. Idealerweise kombiniert man beides: Ads für sofortige Ergebnisse, SEO für nachhaltigen Traffic.',
+    a: 'SEO verbessert Ihre organische (kostenlose) Sichtbarkeit bei Google langfristig. Google Ads sind bezahlte Anzeigen, die sofort sichtbar sind, aber laufende Kosten verursachen. Idealerweise kombiniert man beides: Ads für sofortige Ergebnisse, SEO für nachhaltigen Traffic. Mehr dazu erfahren Sie auf unserer Seite zu Google Ads im Saarland.',
   },
   {
     q: 'Brauche ich SEO wenn ich schon eine Website habe?',
@@ -146,7 +146,7 @@ export default function SeoSaarlandPage() {
             transition={{ duration: 0.5, delay: 0.08, ease: smoothEase }}
             className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl"
           >
-            Ihre potenziellen Kunden suchen jeden Tag bei Google nach genau den Leistungen, die Sie anbieten. Wenn Ihr Unternehmen nicht auf Seite 1 erscheint, geht der Auftrag an die Konkurrenz. Als SEO-Spezialist aus Saarlouis helfe ich lokalen Unternehmen im Saarland, bei Google sichtbar zu werden — mit datenbasierter Suchmaschinenoptimierung, die nachweislich funktioniert. Ob Sie ein Handwerksbetrieb in Saarbrücken, ein Dienstleister in Merzig oder ein Restaurant in Dillingen sind: Ich sorge dafür, dass Ihre Kunden Sie finden, bevor sie Ihre Konkurrenz finden.
+            Ihre potenziellen Kunden suchen jeden Tag bei Google nach genau den Leistungen, die Sie anbieten. Wenn Ihr Unternehmen nicht auf Seite 1 erscheint, geht der Auftrag an die Konkurrenz. Als SEO-Spezialist aus Saarlouis helfe ich lokalen Unternehmen im Saarland, bei Google sichtbar zu werden — mit datenbasierter Suchmaschinenoptimierung, die nachweislich funktioniert. Ob Sie ein <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb in Saarbrücken</Link>, ein Dienstleister in Merzig oder ein Restaurant in Dillingen sind: Ich sorge dafür, dass Ihre Kunden Sie finden, bevor sie Ihre Konkurrenz finden.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -183,7 +183,7 @@ export default function SeoSaarlandPage() {
               Stellen Sie sich vor: Ein Hausbesitzer in Saarbrücken hat einen Rohrbruch. Was tut er? Er greift zum Smartphone und googelt „Klempner Saarbrücken Notdienst". Innerhalb von Sekunden hat er drei Firmen gefunden und die erste angerufen. Wenn Sie als Klempner in Saarbrücken nicht in diesen Ergebnissen auftauchen, haben Sie gerade einen Auftrag verloren — an einen Konkurrenten, der in SEO investiert hat.
             </p>
             <p>
-              Das ist kein Einzelfall. Über 90 Prozent aller Online-Erfahrungen beginnen mit einer Suchmaschine. 75 Prozent der Nutzer scrollen nie über die erste Seite bei Google hinaus. Für lokale Unternehmen im Saarland bedeutet das: Wenn Sie nicht auf Seite 1 sind, existieren Sie für Ihre potenziellen Kunden praktisch nicht. Die gute Nachricht: Gerade für lokale Suchanfragen im Saarland ist die Konkurrenz oft überschaubar. Mit gezielter SEO-Optimierung können Sie in wenigen Monaten auf die erste Seite bei Google gelangen — für genau die Suchbegriffe, die Ihre Kunden verwenden.
+              Das ist kein Einzelfall. Über 90 Prozent aller Online-Erfahrungen beginnen mit einer Suchmaschine. 75 Prozent der Nutzer scrollen nie über die erste Seite bei Google hinaus. Für lokale Unternehmen im Saarland bedeutet das: Wenn Sie nicht auf Seite 1 sind, existieren Sie für Ihre potenziellen Kunden praktisch nicht. Die gute Nachricht: Gerade für lokale Suchanfragen im Saarland ist die Konkurrenz oft überschaubar. Mit gezielter SEO-Optimierung können Sie in wenigen Monaten auf die erste Seite bei Google gelangen — für genau die Suchbegriffe, die Ihre Kunden verwenden. Voraussetzung dafür ist eine <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionelle Website</Link>, die technisch einwandfrei aufgebaut ist.
             </p>
           </motion.div>
         </div>

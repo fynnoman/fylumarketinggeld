@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: 'Für welche Branchen funktioniert Google Ads im Saarland?',
-    a: 'Google Ads funktioniert für praktisch jede lokale Branche: Handwerker, Ärzte, Anwälte, Restaurants, Immobilienmakler, Fitnessstudios, Autohäuser und viele mehr. Entscheidend ist, dass potenzielle Kunden aktiv nach Ihrem Angebot suchen — und das ist bei lokalen Dienstleistungen fast immer der Fall.',
+    a: 'Google Ads funktioniert für praktisch jede lokale Branche: Handwerker, Ärzte, Anwälte, Restaurants, Immobilienmakler, Fitnessstudios, Autohäuser und viele mehr. Entscheidend ist, dass potenzielle Kunden aktiv nach Ihrem Angebot suchen — und das ist bei lokalen Dienstleistungen fast immer der Fall. Speziell für Handwerker biete ich optimiertes Webdesign an.',
   },
 ];
 
@@ -159,7 +159,7 @@ export default function GoogleAdsSaarlandPage() {
               Im Gegensatz zu Social Media Werbung erreichen Sie mit Google Ads Menschen, die <strong>aktiv nach Ihrem Angebot suchen</strong>. Das ist der entscheidende Unterschied. Auf Facebook oder Instagram scrollen Nutzer durch ihren Feed und werden unterbrochen. Bei Google suchen sie gezielt — sie haben bereits ein Problem und wollen eine Lösung. Das macht Google Ads zur effektivsten Werbeform für lokale Unternehmen im Saarland.
             </p>
             <p>
-              Der Vorteil gegenüber SEO: Sie müssen nicht monatelang warten. Ihre Kampagnen sind innerhalb von 24 Stunden aktiv und Sie sehen sofort, wie viele Klicks, Anrufe und Kontaktanfragen Sie erhalten. Jeder Euro ist nachvollziehbar. Kein Rätselraten — nur harte Zahlen.
+              Der Vorteil gegenüber SEO: Sie müssen nicht monatelang warten. Ihre Kampagnen sind innerhalb von 24 Stunden aktiv und Sie sehen sofort, wie viele Klicks, Anrufe und Kontaktanfragen Sie erhalten. Jeder Euro ist nachvollziehbar. Kein Rätselraten — nur harte Zahlen. Langfristig empfehle ich eine Kombination mit <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionellem SEO</Link>, um auch organisch sichtbar zu werden.
             </p>
           </motion.div>
         </div>
@@ -175,7 +175,7 @@ export default function GoogleAdsSaarlandPage() {
             {[
               { title: 'Keyword-Recherche & Kampagnen-Setup', text: 'Ich finde heraus, welche Suchbegriffe Ihre Kunden im Saarland verwenden und erstelle darauf abgestimmte Kampagnen. Dazu gehören Anzeigengruppen, negative Keywords (um Streuverluste zu minimieren) und die korrekte Gebotsstrategie für Ihr Budget.' },
               { title: 'Überzeugende Anzeigentexte', text: 'Ihre Anzeigen müssen aus der Masse herausstechen. Ich schreibe Anzeigentexte, die den Suchenden sofort ansprechen, Vertrauen aufbauen und zum Klicken animieren — mit klaren Alleinstellungsmerkmalen, Handlungsaufforderungen und lokalen Bezügen.' },
-              { title: 'Optimierte Landing Pages', text: 'Eine Google Ads Kampagne ist nur so gut wie die Seite, auf der Besucher landen. Ich erstelle oder optimiere Ihre Landing Pages so, dass Besucher zu Kunden werden. Schnelle Ladezeit, klare Struktur, prominente Kontaktmöglichkeiten.' },
+              { title: 'Optimierte Landing Pages', text: 'Eine Google Ads Kampagne ist nur so gut wie die Seite, auf der Besucher landen. Ich erstelle oder optimiere Ihre Landing Pages so, dass Besucher zu Kunden werden. Schnelle Ladezeit, klare Struktur, prominente Kontaktmöglichkeiten. Erfahren Sie mehr über professionelles Webdesign im Saarland.' },
               { title: 'Conversion-Tracking & Reporting', text: 'Ich richte Google Analytics und Conversion-Tracking ein, damit Sie exakt wissen: Wie viele Anrufe, Kontaktformulare oder Buchungen hat Ihre Kampagne generiert? Monatliche Reports zeigen transparent, was funktioniert und wo optimiert wird.' },
               { title: 'Laufende Optimierung', text: 'Google Ads ist kein „einmal einrichten und vergessen". Ich überwache Ihre Kampagnen kontinuierlich, passe Keywords, Gebote und Anzeigentexte an und sorge dafür, dass Ihre Kosten pro Anfrage stetig sinken — während die Qualität der Anfragen steigt.' },
             ].map((item, i) => (

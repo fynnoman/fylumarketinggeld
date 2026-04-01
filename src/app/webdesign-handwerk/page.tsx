@@ -169,7 +169,7 @@ export default function WebdesignHandwerkPage() {
               „Ich bekomme meine Aufträge über Mundpropaganda" — diesen Satz höre ich oft. Und ja, Empfehlungen sind wertvoll. Aber die Zeiten haben sich geändert. Heute googelt der Hausbesitzer „Maler Saarbrücken" bevor er den Nachbarn fragt. Der Mieter sucht „Elektriker Notdienst in meiner Nähe" wenn am Sonntagabend der Strom ausfällt. Und der Bauherr vergleicht drei Dachdecker-Websites bevor er ein Angebot anfordert.
             </p>
             <p>
-              Wenn Sie in diesen Momenten nicht sichtbar sind, geht der Auftrag an Ihren Konkurrenten — an den Handwerker, der eine professionelle Website hat und bei Google auf Seite 1 erscheint. Eine gute Handwerker-Website ist kein Luxus mehr. Sie ist genauso wichtig wie Ihr Firmenwagen oder Ihr Werkzeug. Der Unterschied: Sie arbeitet 24 Stunden am Tag, 7 Tage die Woche für Sie — auch wenn Sie gerade auf der Baustelle sind. Und sie kostet weniger als ein neuer Akkuschrauber-Set, bringt aber deutlich mehr Aufträge.
+              Wenn Sie in diesen Momenten nicht sichtbar sind, geht der Auftrag an Ihren Konkurrenten — an den Handwerker, der eine <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionelle Website</Link> hat und bei Google auf Seite 1 erscheint. Eine gute Handwerker-Website ist kein Luxus mehr. Sie ist genauso wichtig wie Ihr Firmenwagen oder Ihr Werkzeug. Der Unterschied: Sie arbeitet 24 Stunden am Tag, 7 Tage die Woche für Sie — auch wenn Sie gerade auf der Baustelle sind. Und sie kostet weniger als ein neuer Akkuschrauber-Set, bringt aber deutlich mehr Aufträge.
             </p>
           </motion.div>
         </div>
@@ -183,7 +183,7 @@ export default function WebdesignHandwerkPage() {
           </h2>
           <div className="space-y-10">
             {[
-              { title: 'Sofort sichtbar auf Google Maps', text: 'Local SEO sorgt dafür, dass Ihr Betrieb bei Suchanfragen wie „Elektriker in meiner Nähe" auf Google Maps erscheint. Ich richte Ihr Google Business Profil ein und optimiere es, damit Sie dort auftauchen, wo Ihre Kunden suchen.' },
+              { title: 'Sofort sichtbar auf Google Maps', text: 'Local SEO sorgt dafür, dass Ihr Betrieb bei Suchanfragen wie „Elektriker in meiner Nähe" auf Google Maps erscheint. Ich richte Ihr Google Business Profil ein und optimiere es, damit Sie dort auftauchen, wo Ihre Kunden suchen. Erfahren Sie mehr über meine SEO-Leistungen auf der Seite SEO Saarland.' },
               { title: 'Mobiloptimiert — weil Kunden vom Handy suchen', text: 'Über 70 Prozent der lokalen Suchanfragen kommen vom Smartphone. Ihre Website muss auf dem Handy genauso gut funktionieren wie auf dem Desktop — schnelle Ladezeiten, große Buttons, klare Struktur. Das ist bei mir Standard.' },
               { title: 'Klarer Anruf-Button und Kontaktformular', text: 'Wenn ein Kunde Ihre Website besucht, muss er sofort wissen, wie er Sie erreicht. Ein prominenter „Jetzt anrufen"-Button und ein einfaches Kontaktformular sorgen dafür, dass aus Website-Besuchern Anrufer und aus Anrufern Aufträge werden.' },
               { title: 'Vertrauensaufbau durch Referenzen und Fotos', text: 'Echte Fotos Ihrer Arbeit überzeugen mehr als jeder Werbetext. Ich integriere Ihre besten Projekte, Vorher-Nachher-Bilder und Kundenbewertungen so in die Website, dass Besucher sofort Vertrauen fassen.' },
@@ -212,7 +212,7 @@ export default function WebdesignHandwerkPage() {
               Eine <strong>Elektrofirma</strong> profitiert von einer klaren Leistungsübersicht — Elektroinstallation, Smart Home, Photovoltaik — mit prominentem Notdienst-Button. Kunden müssen auf einen Blick sehen, was angeboten wird, und sofort anrufen können.
             </p>
             <p>
-              Ein <strong>SHK-Betrieb</strong> (Sanitär, Heizung, Klima) zeigt seine Kompetenz durch Referenzprojekte, Partnerlogos und eine übersichtliche Darstellung aller Leistungsbereiche. Dazu Energieberatung-Informationen, die Google-Traffic bringen und den Betrieb als Experten positionieren.
+              Ein <strong>SHK-Betrieb</strong> (Sanitär, Heizung, Klima) zeigt seine Kompetenz durch Referenzprojekte, Partnerlogos und eine übersichtliche Darstellung aller Leistungsbereiche. Dazu Energieberatung-Informationen, die Google-Traffic bringen und den Betrieb als Experten positionieren. Sie wollen noch schneller gefunden werden? <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads im Saarland</Link> bringen sofortige Sichtbarkeit, während das <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesign</Link> langfristig für organischen Traffic sorgt.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

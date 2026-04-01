@@ -103,7 +103,7 @@ export default function WebsiteErstellenLassenPage() {
             transition={{ duration: 0.5, delay: 0.08, ease: smoothEase }}
             className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl"
           >
-            Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als professioneller Webdesigner erstelle ich Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, Handwerker, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen. Ab 990€, fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
+            Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als professioneller <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesigner im Saarland</Link> erstelle ich Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerker</Link>, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen. Ab 990€, fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -207,7 +207,7 @@ export default function WebsiteErstellenLassenPage() {
           </h2>
           <div className="prose prose-lg prose-stone max-w-none">
             <p>
-              Unabhängig vom gewählten Paket ist jede Website mit den wichtigsten Grundlagen ausgestattet: Responsive Design für perfekte Darstellung auf allen Geräten, SEO-Grundoptimierung damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung für sichere Verbindungen, ein professionelles Kontaktformular für Anfragen, optimierte Ladezeiten unter 3 Sekunden und auf Wunsch Google Analytics Anbindung zur Erfolgsmessung. Jede Website wird individuell für Ihr Unternehmen gestaltet — keine Templates, kein Einheitsbrei.
+              Unabhängig vom gewählten Paket ist jede Website mit den wichtigsten Grundlagen ausgestattet: Responsive Design für perfekte Darstellung auf allen Geräten, <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">SEO-Grundoptimierung</Link> damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung für sichere Verbindungen, ein professionelles Kontaktformular für Anfragen, optimierte Ladezeiten unter 3 Sekunden und auf Wunsch Google Analytics Anbindung zur Erfolgsmessung. Für noch schnellere Ergebnisse empfehle ich ergänzend <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads</Link>. Jede Website wird individuell für Ihr Unternehmen gestaltet — keine Templates, kein Einheitsbrei.
             </p>
           </div>
         </div>
