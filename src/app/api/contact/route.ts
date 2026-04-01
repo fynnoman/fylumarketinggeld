@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: 'Fylu Website <onboarding@resend.dev>',
-      to: 'fynn@taskeyapp.com',
+      to: 'fynnschulzonline@gmail.com',
       replyTo: email,
       subject: `Neue Anfrage von ${firmName}`,
       html: `

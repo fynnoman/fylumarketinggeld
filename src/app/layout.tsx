@@ -73,7 +73,7 @@ export default function RootLayout({
               url: "https://www.fylumarketing.de",
               logo: "https://www.fylumarketing.de/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png",
               telephone: "+4915168488999",
-              email: "fynn@taskeyapp.com",
+              email: "fynnschulzonline@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Saarlouis",

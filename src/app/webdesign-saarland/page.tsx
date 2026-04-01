@@ -95,7 +95,7 @@ export default function WebdesignSaarlandPage() {
             description: 'Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, SEO und Google Ads für lokale Unternehmen.',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
             telephone: '+4915168488999',
-            email: 'fynn@taskeyapp.com',
+            email: 'fynnschulzonline@gmail.com',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
             geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
             priceRange: '€€',
