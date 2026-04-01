@@ -51,8 +51,8 @@ export default function HeroSection() {
             transition={{ duration: 0.5, ease: smoothEase }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-gray-900 leading-tight tracking-tight"
           >
-            Websites, die nicht nur beeindrucken,{' '}
-            <span className="text-cyan-600">sondern verkaufen</span>
+            Webdesign aus dem Saarland,{' '}
+            <span className="text-cyan-600">das wirklich verkauft</span>
           </motion.h1>
 
           <motion.p
@@ -61,7 +61,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.08, ease: smoothEase }}
             className="text-base md:text-lg text-gray-700 mb-8 max-w-lg"
           >
-            Professionelles Webdesign und Google-Optimierung, die messbare Ergebnisse liefern — mehr Anfragen, mehr Umsatz, mehr Wachstum.
+            Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen im Saarland und ganz Deutschland — mehr Sichtbarkeit, mehr Anfragen, mehr Umsatz.
           </motion.p>
 
           <motion.div
@@ -84,6 +84,13 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* SEO-relevanter, visuell integrierter Text */}
+      <div className="absolute bottom-6 left-0 right-0 z-10 text-center px-4">
+        <p className="text-xs text-gray-400/70 max-w-2xl mx-auto">
+          Webdesign Saarland — Webdesigner aus Saarlouis für Saarbrücken, Merzig, Dillingen und ganz Deutschland
+        </p>
+      </div>
     </section>
   );
 }

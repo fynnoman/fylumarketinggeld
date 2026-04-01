@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Webdesign Agentur | Professionelle Websites die Kunden gewinnen | Fylu",
-  description: "Professionelles Webdesign & SEO für kleine und mittlere Unternehmen. Mehr Google-Sichtbarkeit, mehr Anfragen, mehr Umsatz. Jetzt kostenlosen Website-Entwurf sichern.",
-  keywords: "Webdesign, Webdesign Agentur, Website erstellen, SEO Optimierung, Google Optimierung, Homepage erstellen, professionelle Website, Webdesign Deutschland, lokales SEO",
+  title: "Webdesign Saarland | Professionelle Websites & SEO | Fylu",
+  description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO & Google Ads für Unternehmen in Saarbrücken, Saarlouis & ganz Deutschland. Jetzt kostenlosen Entwurf sichern.",
+  keywords: "Webdesign Saarland, Webdesign Saarbrücken, Webdesign Saarlouis, Website erstellen lassen, SEO Saarland, Google Optimierung, Homepage erstellen, Webdesigner Saarland, Webdesign Agentur, lokales SEO, Google Ads Saarland, Website Redesign, professionelle Website",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu – Fynn Schulz",
   publisher: "Fylu",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Webdesign Agentur | Websites die Kunden gewinnen | Fylu",
-    description: "Professionelles Webdesign & SEO für kleine und mittlere Unternehmen. Mehr Google-Sichtbarkeit, mehr Anfragen, mehr Umsatz.",
+    title: "Webdesign Saarland | Websites & SEO die Kunden bringen | Fylu",
+    description: "Professionelles Webdesign & SEO aus dem Saarland. Für Unternehmen in Saarbrücken, Saarlouis & ganz Deutschland. Mehr Sichtbarkeit, mehr Anfragen, mehr Umsatz.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Webdesign",
     locale: "de_DE",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign Agentur | Fylu",
-    description: "Professionelles Webdesign & SEO. Mehr Kunden durch Ihre Website.",
+    title: "Webdesign Saarland | Fylu",
+    description: "Webdesign & SEO aus dem Saarland. Mehr Kunden durch Ihre Website.",
     images: ["/heroba.png"],
   },
   robots: {
