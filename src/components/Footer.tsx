@@ -45,11 +45,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-cyan-400">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Website-Erstellung</Link></li>
-              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">SEO-Optimierung</Link></li>
-              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Google Business</Link></li>
-              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Performance-Tuning</Link></li>
-              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Hosting</Link></li>
+              <li><Link href="/webdesign-saarland" className="hover:text-cyan-400 transition-colors">Webdesign Saarland</Link></li>
+              <li><Link href="/seo-saarland" className="hover:text-cyan-400 transition-colors">SEO Saarland</Link></li>
+              <li><Link href="/google-ads-saarland" className="hover:text-cyan-400 transition-colors">Google Ads Saarland</Link></li>
+              <li><Link href="/website-erstellen-lassen" className="hover:text-cyan-400 transition-colors">Website erstellen lassen</Link></li>
+              <li><Link href="/webdesign-handwerk" className="hover:text-cyan-400 transition-colors">Webdesign Handwerk</Link></li>
+              <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Alle Angebote</Link></li>
             </ul>
           </div>
 
