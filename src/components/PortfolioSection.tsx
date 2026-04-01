@@ -41,6 +41,13 @@ const portfolioItems = [
     description: 'Der Anfang von allem. Meine erste selbst gebaute Website — noch rau, aber mit viel Leidenschaft gebaut. Sie hat mir gezeigt, was möglich ist, wenn man anfängt.',
     url: 'https://salif-gebaeudeservice.de',
   },
+  {
+    src: '/DA23B12F-8917-4CE3-933F-DC15AD6D43C2.png',
+    alt: 'Webdesign für Taskey – Produktivitäts-App Website',
+    title: 'SaaS & App',
+    description: 'Moderne Landing Page für eine Produktivitäts-App — mit klarer Nutzerführung, starker Value Proposition und Conversion-Optimierung.',
+    url: 'https://taskeyapp.com',
+  },
 ];
 
 export default function PortfolioSection() {
