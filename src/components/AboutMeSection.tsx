@@ -31,10 +31,13 @@ export default function AboutMeSection() {
               
               {/* Image container with modern shape */}
               <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/64BB3620-F0DF-4887-A72B-6F4E69750FD8.png"
-                  alt="Fynn Schulz"
-                  className="w-full h-full object-cover"
+                  alt="Fynn Schulz – Webdesigner und SEO-Experte aus dem Saarland"
+                  fill
+                  className="object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 400px"
                 />
                 
                 {/* Subtle overlay gradient */}

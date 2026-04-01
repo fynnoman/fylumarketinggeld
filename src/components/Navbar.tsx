@@ -37,8 +37,10 @@ export default function Navbar() {
             <Link href="/" onClick={() => setMenuOpen(false)}>
               <img
                 src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png"
-                alt="Fylu Logo"
+                alt="Fylu Webdesign Saarland – Logo"
                 className="h-10 w-auto"
+                width={120}
+                height={40}
               />
             </Link>
 

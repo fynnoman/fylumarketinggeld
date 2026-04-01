@@ -21,12 +21,14 @@ export default function Footer() {
             >
               <img 
                 src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png" 
-                alt="Fylu Logo" 
+                alt="Fylu Webdesign Saarland – Logo" 
                 className="h-16 w-auto mb-4"
+                width={192}
+                height={64}
               />
             </motion.div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Professionelles Webdesign und Marketing für Unternehmen, die online wachsen wollen.
+              Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen in Saarbrücken, Merzig, Dillingen und ganz Deutschland.
             </p>
             <Link href="/angebote">
               <motion.button

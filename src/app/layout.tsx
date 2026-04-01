@@ -61,7 +61,6 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        <link rel="canonical" href="https://fylumarketing.de" />
         <meta name="google-site-verification" content="Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU" />
         <script
           type="application/ld+json"
@@ -70,17 +69,114 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               name: "Fylu – Webdesign & SEO",
-              description: "Professionelles Webdesign und SEO-Optimierung für kleine und mittlere Unternehmen in Deutschland.",
-              url: "https://fylumarketing.de",
+              description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen in Saarbrücken, Saarlouis und ganz Deutschland.",
+              url: "https://www.fylumarketing.de",
+              logo: "https://www.fylumarketing.de/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png",
               telephone: "+4915168488999",
               email: "fynnschulzonline@gmail.com",
               address: {
                 "@type": "PostalAddress",
+                addressLocality: "Saarlouis",
+                addressRegion: "Saarland",
                 addressCountry: "DE",
               },
-              serviceType: ["Webdesign", "SEO Optimierung", "Google Optimierung", "Website Erstellung"],
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 49.3133,
+                longitude: 6.7525,
+              },
+              serviceType: [
+                "Webdesign",
+                "SEO Optimierung",
+                "Google Ads",
+                "Website Erstellung",
+                "Google Business Optimierung",
+              ],
               priceRange: "€€",
-              areaServed: "Deutschland",
+              areaServed: [
+                { "@type": "State", name: "Saarland" },
+                { "@type": "Country", name: "Deutschland" },
+              ],
+              knowsAbout: [
+                "Webdesign Saarland",
+                "Webdesign Saarbrücken",
+                "Webdesign Saarlouis",
+                "SEO Optimierung",
+                "Google Ads",
+                "Website erstellen lassen",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Startseite",
+                  item: "https://www.fylumarketing.de",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Angebote",
+                  item: "https://www.fylumarketing.de/angebote",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Buchen",
+                  item: "https://www.fylumarketing.de/buchen",
+                },
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Was kostet eine professionelle Website?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten, mobiloptimiert und SEO-Basis. Individuelle Lösungen sind auf Anfrage möglich.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Wie lange dauert die Erstellung einer Website?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "In der Regel ist Ihre Website innerhalb von 2-4 Wochen fertig. Je nach Umfang und Paket kann es schneller oder etwas länger dauern.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Bietet Fylu auch SEO-Optimierung an?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Ja, jede Website wird mit SEO-Basis (OnPage & Technik) ausgeliefert. Erweiterte SEO-Optimierung und Google Ads Betreuung sind ebenfalls verfügbar.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Für welche Region arbeitet Fylu?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Fylu ist im Saarland ansässig und arbeitet für Unternehmen in Saarbrücken, Saarlouis, Merzig, Dillingen und ganz Deutschland.",
+                  },
+                },
+              ],
             }),
           }}
         />
