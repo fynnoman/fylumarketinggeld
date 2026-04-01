@@ -908,7 +908,7 @@ function BuchenPageInner() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       <span className="text-stone-700">
-                        <strong>Per E-Mail:</strong> <a href="mailto:fynnschulzonline@gmail.com" className="text-cyan-600 hover:text-cyan-700 underline">fynnschulzonline@gmail.com</a>
+                        <strong>Per E-Mail:</strong> <a href="mailto:fynn@taskeyapp.com" className="text-cyan-600 hover:text-cyan-700 underline">fynn@taskeyapp.com</a>
                       </span>
                     </div>
                     <div className="flex items-center gap-2">

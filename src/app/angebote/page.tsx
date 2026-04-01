@@ -43,7 +43,7 @@ export default function AngebotePage() {
       setIsSubmitted(true);
     } catch (err) {
       console.error(err);
-      alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an fynnschulzonline@gmail.com');
+      alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an fynn@taskeyapp.com');
     } finally {
       setIsSubmitting(false);
     }

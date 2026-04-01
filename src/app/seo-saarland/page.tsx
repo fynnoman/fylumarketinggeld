@@ -96,7 +96,7 @@ export default function SeoSaarlandPage() {
             description: 'SEO-Optimierung für lokale Unternehmen im Saarland. OnPage SEO, Local SEO und Google Business Optimierung.',
             url: 'https://www.fylumarketing.de/seo-saarland',
             telephone: '+4915168488999',
-            email: 'fynnschulzonline@gmail.com',
+            email: 'fynn@taskeyapp.com',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
             priceRange: '€€',
           }),

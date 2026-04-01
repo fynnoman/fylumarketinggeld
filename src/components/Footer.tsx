@@ -59,8 +59,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-cyan-400">Kontakt</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="mailto:fynnschulzonline@gmail.com" className="hover:text-cyan-400 transition-colors">
-                  fynnschulzonline@gmail.com
+                <a href="mailto:fynn@taskeyapp.com" className="hover:text-cyan-400 transition-colors">
+                  fynn@taskeyapp.com
                 </a>
               </li>
               <li>

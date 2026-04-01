@@ -82,7 +82,7 @@ export default function WebdesignHandwerkPage() {
             description: 'Webdesign speziell für Handwerksbetriebe. Modern, mobiloptimiert und bei Google sichtbar. Ab 990€.',
             url: 'https://www.fylumarketing.de/webdesign-handwerk',
             telephone: '+4915168488999',
-            email: 'fynnschulzonline@gmail.com',
+            email: 'fynn@taskeyapp.com',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
             priceRange: '€€',
           }),

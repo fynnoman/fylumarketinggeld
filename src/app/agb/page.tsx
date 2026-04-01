@@ -56,7 +56,7 @@ export default function AGBPage() {
           </p>
           <div className="mt-3 space-y-1">
             <p className="text-sm text-stone-700">
-              📧 E-Mail: <a href="mailto:fynnschulzonline@gmail.com" className="text-cyan-600 hover:text-cyan-700 underline">fynnschulzonline@gmail.com</a>
+              📧 E-Mail: <a href="mailto:fynn@taskeyapp.com" className="text-cyan-600 hover:text-cyan-700 underline">fynn@taskeyapp.com</a>
             </p>
             <p className="text-sm text-stone-700">
               📱 Telefon: <a href="tel:+4915168488999" className="text-cyan-600 hover:text-cyan-700 underline">+49 151 684 88999</a>
