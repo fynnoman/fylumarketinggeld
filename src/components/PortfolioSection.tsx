@@ -11,30 +11,35 @@ const portfolioItems = [
     alt: 'Website Projekt 1',
     title: 'Lokales Handwerksunternehmen',
     description: 'Eine moderne, conversion-optimierte Website für ein Handwerksunternehmen. Ziel war maximale Sichtbarkeit auf Google und mehr Anfragen über das Kontaktformular.',
+    url: 'https://galabaueifler.de',
   },
   {
     src: '/B2B192DF-AD56-4E4D-9F09-EE894CE91BB8.png',
     alt: 'Website Projekt 2',
     title: 'Dienstleister im B2B-Bereich',
     description: 'Klare Positionierung, starke Wertaussagen und eine durchdachte Nutzerführung — designed, um Entscheider direkt anzusprechen und Vertrauen aufzubauen.',
+    url: 'https://demir-speedconnect.de',
   },
   {
     src: '/D650852E-6EFC-477A-B33C-4F179CFB35FA.png',
     alt: 'Website Projekt 3',
     title: 'Personal Branding',
     description: 'Lokaler Dönerimbiss mit großem Hunger nach Sichtbarkeit. Klare Speisekarte, Öffnungszeiten und ein Design, das Appetit macht — direkt aus der Nachbarschaft ins Google-Ranking.',
+    url: 'https://saray-saarlouis.de',
   },
   {
     src: '/EE60E06D-A52C-4532-93C0-85429C27E880.png',
     alt: 'Website Projekt 4',
     title: 'Gastronomie & Lifestyle',
     description: 'Visuell starke Präsenz für die Gastronomiebranche — mit Fokus auf Atmosphäre, Online-Reservierung und lokaler SEO-Optimierung.',
+    url: 'https://portocervosaarlouis.de',
   },
   {
     src: '/504F6B03-A916-4EF1-ADA7-0E8843E99BE6.png',
     alt: 'Website Projekt 5',
     title: 'Meine erste eigene Website',
     description: 'Der Anfang von allem. Meine erste selbst gebaute Website — noch rau, aber mit viel Leidenschaft gebaut. Sie hat mir gezeigt, was möglich ist, wenn man anfängt.',
+    url: 'https://salif-gebaeudeservice.de',
   },
 ];
 
@@ -135,6 +140,16 @@ export default function PortfolioSection() {
             >
               <p className="text-sm font-bold text-cyan-600 uppercase tracking-widest mb-1">{item.title}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+              {item.url && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-sm font-semibold text-cyan-500 hover:text-cyan-700 transition-colors"
+                >
+                  Website besuchen &rarr;
+                </a>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
