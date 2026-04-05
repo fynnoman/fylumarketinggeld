@@ -31,19 +31,19 @@ export default function Footer() {
               Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen in Saarbrücken, Merzig, Dillingen und ganz Deutschland.
             </p>
             <Link href="/angebote">
-              <motion.button
+              <motion.span
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-colors"
+                className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-colors"
               >
                 Kostenloses Angebot
-              </motion.button>
+              </motion.span>
             </Link>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-cyan-400">Services</h4>
+            <h3 className="font-semibold mb-4 text-cyan-400">Services</h3>
             <ul className="space-y-2 text-gray-400">
               <li><Link href="/webdesign-saarland" className="hover:text-cyan-400 transition-colors">Webdesign Saarland</Link></li>
               <li><Link href="/seo-saarland" className="hover:text-cyan-400 transition-colors">SEO Saarland</Link></li>
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-cyan-400">Kontakt</h4>
+            <h3 className="font-semibold mb-4 text-cyan-400">Kontakt</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="mailto:fynnschulzonline@gmail.com" className="hover:text-cyan-400 transition-colors">

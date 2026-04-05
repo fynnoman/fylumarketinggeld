@@ -98,11 +98,12 @@ export default function ProblemSolutionSection() {
               </span>
               {' '}– mit voller Hingabe, statt Massenproduktion.
             </div>
-            <Link href="/angebote">
-              <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-flex items-center gap-3 group/btn">
-                <span>Jetzt Transformation starten</span>
-                <span className="transition-transform duration-200 group-hover/btn:translate-x-1">→</span>
-              </button>
+            <Link
+              href="/angebote"
+              className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-flex items-center gap-3 group/btn"
+            >
+              <span>Jetzt Transformation starten</span>
+              <span className="transition-transform duration-200 group-hover/btn:translate-x-1">→</span>
             </Link>
           </motion.div>
         </div>

@@ -70,16 +70,18 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.15, ease: smoothEase }}
             className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start"
           >
-            <Link href="/angebote" className="w-full sm:w-auto">
-              <button className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-6 py-4 rounded-full text-base font-bold shadow-md transition-all duration-200 hover:shadow-lg active:scale-[0.98]">
-                Kostenlosen Entwurf sichern
-              </button>
+            <Link
+              href="/angebote"
+              className="w-full sm:w-auto block text-center bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-6 py-4 rounded-full text-base font-bold shadow-md transition-all duration-200 hover:shadow-lg active:scale-[0.98]"
+            >
+              Kostenlosen Entwurf sichern
             </Link>
 
-            <Link href="#packages" className="w-full sm:w-auto">
-              <button className="w-full bg-white hover:bg-stone-50 text-gray-900 px-5 py-4 rounded-full text-base font-semibold border-2 border-gray-200 transition-all duration-200 active:scale-[0.98]">
-                Meine Angebote
-              </button>
+            <Link
+              href="#packages"
+              className="w-full sm:w-auto block text-center bg-white hover:bg-stone-50 text-gray-900 px-5 py-4 rounded-full text-base font-semibold border-2 border-gray-200 transition-all duration-200 active:scale-[0.98]"
+            >
+              Meine Angebote
             </Link>
           </motion.div>
         </div>
@@ -87,7 +89,7 @@ export default function HeroSection() {
 
       {/* SEO-relevanter, visuell integrierter Text */}
       <div className="absolute bottom-6 left-0 right-0 z-10 text-center px-4">
-        <p className="text-xs text-gray-400/70 max-w-2xl mx-auto">
+        <p className="text-xs text-gray-500 max-w-2xl mx-auto">
           Webdesign Saarland — Webdesigner aus Saarlouis für Saarbrücken, Merzig, Dillingen und ganz Deutschland
         </p>
       </div>

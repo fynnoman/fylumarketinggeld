@@ -126,10 +126,11 @@ export default function GoogleAdsSaarlandPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15, ease: smoothEase }}
           >
-            <Link href="/angebote">
-              <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98]">
-                Kostenlose Kampagnen-Analyse anfordern
-              </button>
+            <Link
+              href="/angebote"
+              className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
+            >
+              Kostenlose Kampagnen-Analyse anfordern
             </Link>
           </motion.div>
         </div>
@@ -296,10 +297,11 @@ export default function GoogleAdsSaarlandPage() {
           <p className="text-lg text-stone-600 mb-8">
             Lassen Sie uns in einem kostenlosen Gespräch analysieren, welches Google Ads Potenzial in Ihrer Branche steckt. Unverbindlich und transparent.
           </p>
-          <Link href="/angebote">
-            <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]">
-              Kostenlose Kampagnen-Analyse anfordern
-            </button>
+          <Link
+            href="/angebote"
+            className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
+          >
+            Kostenlose Kampagnen-Analyse anfordern
           </Link>
           <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
             <Link href="/seo-saarland" className="hover:text-cyan-500 transition-colors">SEO Saarland</Link>

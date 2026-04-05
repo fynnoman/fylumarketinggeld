@@ -36,10 +36,11 @@ export default function FreeDesignSection() {
             komplett kostenlos und ohne Verpflichtung.
           </p>
 
-          <Link href="/angebote">
-            <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]">
-              Jetzt Entwurf anfordern →
-            </button>
+          <Link
+            href="/angebote"
+            className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]"
+          >
+            Jetzt Entwurf anfordern →
           </Link>
         </motion.div>
       </div>

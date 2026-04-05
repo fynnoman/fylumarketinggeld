@@ -47,16 +47,19 @@ export default function Navbar() {
             {/* Desktop Links */}
             <div className="hidden md:flex items-center gap-3">
               {navLinks.map((link) => (
-                <a key={link.label} href={link.href}>
-                  <button className="px-4 py-2 rounded-lg font-semibold text-stone-900 hover:bg-stone-100 transition-colors text-sm">
-                    {link.label}
-                  </button>
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="px-4 py-2 rounded-lg font-semibold text-stone-900 hover:bg-stone-100 transition-colors text-sm"
+                >
+                  {link.label}
                 </a>
               ))}
-              <Link href="/angebote">
-                <button className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-5 py-2.5 rounded-lg font-semibold shadow-lg transition-all duration-200 text-sm">
-                  Kostenlosen Entwurf sichern
-                </button>
+              <Link
+                href="/angebote"
+                className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-5 py-2.5 rounded-lg font-semibold shadow-lg transition-all duration-200 text-sm"
+              >
+                Kostenlosen Entwurf sichern
               </Link>
             </div>
 
@@ -98,10 +101,12 @@ export default function Navbar() {
                     {link.label}
                   </a>
                 ))}
-                <Link href="/angebote" onClick={() => setMenuOpen(false)}>
-                  <button className="mt-2 w-full bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-3.5 rounded-xl font-bold shadow-lg text-base">
-                    Kostenlosen Entwurf sichern
-                  </button>
+                <Link
+                  href="/angebote"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-2 w-full block text-center bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-3.5 rounded-xl font-bold shadow-lg text-base"
+                >
+                  Kostenlosen Entwurf sichern
                 </Link>
               </div>
             </motion.div>

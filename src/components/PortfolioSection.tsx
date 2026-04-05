@@ -124,8 +124,8 @@ export default function PortfolioSection() {
                     <button
                       key={i}
                       onClick={() => setCurrent(i)}
-                      className={`h-2 rounded-full transition-all ${i === safeIndex ? 'bg-cyan-500 w-4' : 'bg-white/60 w-2'}`}
-                      aria-label={`Projekt ${i + 1}`}
+                      className={`rounded-full transition-all p-1 ${i === safeIndex ? 'bg-cyan-500 w-6 h-4' : 'bg-white/60 w-4 h-4'}`}
+                      aria-label={`Projekt ${i + 1} anzeigen`}
                     />
                   ))}
                 </div>

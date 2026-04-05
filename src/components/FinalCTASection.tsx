@@ -152,12 +152,11 @@ export default function FinalCTASection() {
                 zzgl. Mehrwertsteuer 19%
               </p>
 
-              <Link href={`/buchen?paket=${activePackage}`}>
-                <button
-                  className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 overflow-hidden w-full lg:w-auto hover:shadow-[0_16px_48px_rgba(6,182,212,0.35)] active:scale-[0.98] ${bookButtonStyles[activePackage]}`}
-                >
-                  <span className="relative z-10">Jetzt buchen →</span>
-                </button>
+              <Link
+                href={`/buchen?paket=${activePackage}`}
+                className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 overflow-hidden w-full lg:w-auto inline-block text-center hover:shadow-[0_16px_48px_rgba(6,182,212,0.35)] active:scale-[0.98] ${bookButtonStyles[activePackage]}`}
+              >
+                <span className="relative z-10">Jetzt buchen →</span>
               </Link>
             </motion.div>
           </AnimatePresence>
@@ -185,6 +184,7 @@ export default function FinalCTASection() {
         <div className="flex items-center gap-4 w-full max-w-xl mb-6">
           <button
             onClick={() => setActivePackage((prev) => (prev > 0 ? prev - 1 : packages.length - 1))}
+            aria-label="Vorheriges Paket"
             className="w-10 h-10 rounded-full bg-stone-200 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition-all shadow-lg hover:shadow-xl"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -200,6 +200,7 @@ export default function FinalCTASection() {
 
           <button
             onClick={() => setActivePackage((prev) => (prev < packages.length - 1 ? prev + 1 : 0))}
+            aria-label="Nächstes Paket"
             className="w-10 h-10 rounded-full bg-stone-200 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition-all shadow-lg hover:shadow-xl"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -221,7 +222,7 @@ export default function FinalCTASection() {
             >
               <img 
                 src={currentPackage.image}
-                alt={currentPackage.name}
+                alt={`${currentPackage.name} – ${currentPackage.subtitle}`}
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>
@@ -260,14 +261,15 @@ export default function FinalCTASection() {
 
         {/* Navigation Dots */}
         <div className="flex justify-center gap-2">
-          {packages.map((_, index) => (
+          {packages.map((pkg, index) => (
             <button
               key={index}
               onClick={() => setActivePackage(index)}
-              className={`h-2 rounded-full transition-all ${
+              aria-label={`Paket ${pkg.name} auswählen`}
+              className={`rounded-full transition-all p-1 ${
                 activePackage === index
-                  ? 'bg-cyan-500 w-8'
-                  : 'bg-stone-300 hover:bg-stone-400 w-2'
+                  ? 'bg-cyan-500 w-10 h-4'
+                  : 'bg-stone-300 hover:bg-stone-400 w-4 h-4'
               }`}
             />
           ))}
