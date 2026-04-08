@@ -60,15 +60,23 @@ export default function AdminPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoginError('');
-    const res = await fetch('/api/admin/messages', {
-      headers: { 'x-admin-token': password },
-    });
-    if (res.ok) {
+    try {
+      // authenticate via the dedicated login route which sets a secure httpOnly cookie
+      const res = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      if (!res.ok) {
+        setLoginError('Falsches Passwort.');
+        return;
+      }
+
+      // keep using the raw password as x-admin-token for the existing messages API
       setToken(password);
-      const data = await res.json();
-      setMessages(data);
-    } else {
-      setLoginError('Falsches Passwort.');
+      await fetchMessages(password);
+    } catch (err) {
+      setLoginError('Fehler beim Login');
     }
   };
 
