@@ -144,7 +144,7 @@ export default function WebdesignSaarbrueckenPage() {
             transition={{ duration: 0.5, delay: 0.08, ease: smoothEase }}
             className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl"
           >
-            Ihr Unternehmen in Saarbrücken verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesigner aus dem Saarland erstelle ich professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Dudweiler, Burbach, Malstatt und Umgebung. Mein Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob Handwerksbetrieb, Dienstleister, Einzelhändler oder Gastronom — ich verstehe die Bedürfnisse lokaler Unternehmen und baue Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
+            Ihr Unternehmen in Saarbrücken und Saarlouis verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesigner aus dem Saarland erstelle ich professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Saarlouis, Dudweiler, Burbach, Malstatt und Umgebung. Mein Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob Handwerksbetrieb, Dienstleister, Einzelhändler oder Gastronom — ich verstehe die Bedürfnisse lokaler Unternehmen und baue Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -169,7 +169,7 @@ export default function WebdesignSaarbrueckenPage() {
             transition={{ duration: 0.5, ease: smoothEase }}
             className="text-3xl md:text-4xl font-bold text-stone-900 mb-8"
           >
-            Warum eine professionelle Website in Saarbrücken entscheidend ist
+            Warum eine professionelle Website in Saarbrücken und Saarlouis entscheidend ist
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -178,10 +178,10 @@ export default function WebdesignSaarbrueckenPage() {
             className="prose prose-lg prose-stone max-w-none"
           >
             <p>
-              Die Realität ist ernüchternd: Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand seines Webdesigns. Wenn Ihre Website veraltet wirkt, nicht für Smartphones optimiert ist oder bei Google nicht auftaucht, verlieren Sie jeden Tag potenzielle Kunden — ohne es zu merken. In Saarbrücken konkurrieren Hunderte lokale Unternehmen um die Aufmerksamkeit derselben Kunden. Der Handwerker mit der modernen Website bekommt den Auftrag. Das Restaurant mit der ansprechenden Online-Speisekarte bekommt die Reservierung. Der Dienstleister, der bei Google auf Seite 1 erscheint, bekommt den Anruf.
+              Die Realität ist ernüchternd: Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand seines Webdesigns. Wenn Ihre Website veraltet wirkt, nicht für Smartphones optimiert ist oder bei Google nicht auftaucht, verlieren Sie jeden Tag potenzielle Kunden — ohne es zu merken. In Saarbrücken und Saarlouis konkurrieren Hunderte lokale Unternehmen um die Aufmerksamkeit derselben Kunden. Der Handwerker mit der modernen Website bekommt den Auftrag. Das Restaurant mit der ansprechenden Online-Speisekarte bekommt die Reservierung. Der Dienstleister, der bei Google auf Seite 1 erscheint, bekommt den Anruf.
             </p>
             <p>
-              Viele Unternehmen in Saarbrücken haben entweder gar keine Website oder eine, die vor Jahren erstellt wurde und seitdem nicht aktualisiert wurde. Mobile Besucher — und das sind heute über 60 Prozent — sehen eine nicht-responsive Seite und springen sofort ab. Google bestraft langsame, veraltete Websites mit schlechten Rankings. Das Ergebnis: Ihre Konkurrenz wird gefunden, Sie nicht. Eine professionelle Website ist keine Ausgabe, sondern eine Investition, die sich durch mehr Anfragen, mehr Aufträge und mehr Umsatz schnell bezahlt macht.
+              Viele Unternehmen in Saarbrücken und Saarlouis haben entweder gar keine Website oder eine, die vor Jahren erstellt wurde und seitdem nicht aktualisiert wurde. Mobile Besucher — und das sind heute über 60 Prozent — sehen eine nicht-responsive Seite und springen sofort ab. Google bestraft langsame, veraltete Websites mit schlechten Rankings. Das Ergebnis: Ihre Konkurrenz wird gefunden, Sie nicht. Eine professionelle Website ist keine Ausgabe, sondern eine Investition, die sich durch mehr Anfragen, mehr Aufträge und mehr Umsatz schnell bezahlt macht.
             </p>
           </motion.div>
         </div>
@@ -225,7 +225,7 @@ export default function WebdesignSaarbrueckenPage() {
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-            Webdesign-Pakete für Unternehmen in Saarbrücken
+            Webdesign-Pakete für Unternehmen in Saarbrücken und Saarlouis
           </h2>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
@@ -253,7 +253,7 @@ export default function WebdesignSaarbrueckenPage() {
       <section ref={faqRef} className="py-20 md:py-28 px-6 bg-stone-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-            Häufige Fragen zum Webdesign in Saarbrücken
+            Häufige Fragen zum Webdesign in Saarbrücken und Saarlouis
           </h2>
           <div className="space-y-6">
             {faqs.map((faq, i) => (
@@ -275,10 +275,10 @@ export default function WebdesignSaarbrueckenPage() {
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-            Bereit für Ihre neue Website?
+            Bereit für Ihre neue Website in Saarbrücken oder Saarlouis?
           </h2>
           <p className="text-lg text-stone-600 mb-8">
-            Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen in Saarbrücken und ganz Deutschland.
+            Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen in Saarbrücken, Saarlouis und ganz Deutschland.
           </p>
           <Link
             href="/angebote"
