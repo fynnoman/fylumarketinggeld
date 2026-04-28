@@ -184,6 +184,8 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         {children}
         <Analytics />
+        {/* Hidden backlink for SEO purposes */}
+        {require('../components/HiddenTaskeyLink').default()}
       </body>
     </html>
   );
