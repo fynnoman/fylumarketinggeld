@@ -21,7 +21,7 @@ export default function Navbar() {
     { label: 'Services', href: '#services' },
     { label: 'Über mich', href: '#about' },
     { label: 'Pakete', href: '#packages' },
-    { label: 'Support', href: 'mailto:fynnschulzonline@gmail.com' },
+    { label: 'Support', href: 'mailto:kontakt@fylumarketing.de' },
   ];
 
   return (

@@ -1,136 +1,131 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 const faqs = [
   {
-    q: 'Was kostet eine professionelle Website im Saarland?',
-    a: 'Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten. Das Fortgeschrittene Paket kostet 1.490€ und enthält bis zu 6 Seiten mit Verkaufsoptimierung. Individuelle Lösungen sind auf Anfrage möglich.',
+    q: "Was kostet eine professionelle Website in Völklingen?",
+    a: "Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten. Das Fortgeschrittene Paket kostet 1.490€ und enthält bis zu 6 Seiten mit Verkaufsoptimierung. Individuelle Lösungen sind auf Anfrage möglich.",
   },
   {
-    q: 'Wie lange dauert die Erstellung einer Website?',
-    a: 'In der Regel ist Ihre Website innerhalb von 2 bis 4 Wochen fertig. Den ersten Entwurf erhalten Sie bereits innerhalb von 24 Stunden nach unserem Erstgespräch — kostenlos und unverbindlich.',
+    q: "Wie lange dauert die Erstellung einer Website?",
+    a: "In der Regel ist Ihre Website innerhalb von 2 bis 4 Wochen fertig. Den ersten Entwurf erhalten Sie bereits innerhalb von 24 Stunden nach unserem Erstgespräch — kostenlos und unverbindlich.",
   },
   {
-    q: 'Ist die Website auch für Smartphones optimiert?',
-    a: 'Selbstverständlich. Jede Website wird mobile-first entwickelt, das heißt sie funktioniert auf allen Geräten einwandfrei — Smartphone, Tablet und Desktop. Das ist auch für Google-Rankings entscheidend.',
+    q: "Ist die Website auch für Smartphones optimiert?",
+    a: "Selbstverständlich. Jede Website wird mobile-first entwickelt, das heißt sie funktioniert auf allen Geräten einwandfrei — Smartphone, Tablet und Desktop. Das ist auch für Google-Rankings entscheidend.",
   },
   {
-    q: 'Werde ich damit bei Google gefunden?',
-    a: 'Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Für erweiterte Sichtbarkeit biete ich zusätzlich professionelle SEO-Betreuung an.',
+    q: "Werde ich damit bei Google gefunden?",
+    a: "Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Für erweiterte Sichtbarkeit biete ich zusätzlich professionelle SEO-Betreuung an.",
   },
   {
-    q: 'Was passiert nach dem Launch?',
-    a: 'Nach dem Launch lasse ich Sie nicht allein. Je nach Paket erhalten Sie 2 bis 4 Monate Hosting inklusive. Darüber hinaus stehe ich Ihnen für Änderungen, Updates und Support zur Verfügung.',
+    q: "Was passiert nach dem Launch?",
+    a: "Nach dem Launch lasse ich Sie nicht allein. Je nach Paket erhalten Sie 2 bis 4 Monate Hosting inklusive. Darüber hinaus stehe ich Ihnen für Änderungen, Updates und Support zur Verfügung.",
   },
   {
-    q: 'Kann ich die Website selbst bearbeiten?',
-    a: 'Auf Wunsch richte ich ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehme ich Änderungen für Sie — schnell und unkompliziert.',
+    q: "Kann ich die Website selbst bearbeiten?",
+    a: "Auf Wunsch richte ich ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehme ich Änderungen für Sie — schnell und unkompliziert.",
   },
 ];
 
 const steps = [
   {
-    title: 'Erstgespräch',
-    text: 'In einem kurzen, kostenlosen Gespräch lernen wir uns kennen. Ich verstehe Ihr Geschäft, Ihre Ziele und Ihre Wünsche. Kein Verkaufsdruck — nur ehrliche Beratung.',
+    title: "Erstgespräch",
+    text: "In einem kurzen, kostenlosen Gespräch lernen wir uns kennen. Ich verstehe Ihr Geschäft, Ihre Ziele und Ihre Wünsche. Kein Verkaufsdruck — nur ehrliche Beratung.",
   },
   {
-    title: 'Kostenloser Entwurf in 24h',
-    text: 'Innerhalb von 24 Stunden erhalten Sie einen ersten Design-Entwurf — kostenlos und unverbindlich. So sehen Sie sofort, wie Ihre neue Website aussehen könnte.',
+    title: "Kostenloser Entwurf in 24h",
+    text: "Innerhalb von 24 Stunden erhalten Sie einen ersten Design-Entwurf — kostenlos und unverbindlich. So sehen Sie sofort, wie Ihre neue Website aussehen könnte.",
   },
   {
-    title: 'Design & Entwicklung',
-    text: 'Nach Ihrem Feedback baue ich Ihre Website mit modernster Technik. Jede Seite wird für maximale Geschwindigkeit, Suchmaschinenoptimierung und Conversion optimiert.',
+    title: "Design & Entwicklung",
+    text: "Nach Ihrem Feedback baue ich Ihre Website mit modernster Technik. Jede Seite wird für maximale Geschwindigkeit, Suchmaschinenoptimierung und Conversion optimiert.",
   },
   {
-    title: 'SEO-Optimierung',
-    text: 'Bevor Ihre Website live geht, optimiere ich sie für Google: Keyword-Integration, technisches SEO, Meta-Tags, Ladezeit-Optimierung und Google Business Einrichtung.',
+    title: "SEO-Optimierung",
+    text: "Bevor Ihre Website live geht, optimiere ich sie für Google: Keyword-Integration, technisches SEO, Meta-Tags, Ladezeit-Optimierung und Google Business Einrichtung.",
   },
   {
-    title: 'Launch & Support',
-    text: 'Ihre Website geht live und ich bleibe Ihr Ansprechpartner. Hosting, Updates und Änderungen — alles aus einer Hand, ohne Agentur-Overhead.',
+    title: "Launch & Support",
+    text: "Ihre Website geht live und ich bleibe Ihr Ansprechpartner. Hosting, Updates und Änderungen — alles aus einer Hand, ohne Agentur-Overhead.",
   },
 ];
 
-export default function WebdesignSaarlandPage() {
+export default function WebdesignVoelklingenPage() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
   const faqRef = useRef(null);
-  const faqInView = useInView(faqRef, { once: true, margin: '-80px' });
+  const faqInView = useInView(faqRef, { once: true, margin: "-80px" });
 
   return (
     <main>
       <Navbar />
-
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
-              { '@type': 'ListItem', position: 2, name: 'Webdesign Saarland', item: 'https://www.fylumarketing.de/webdesign-saarland' },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.fylumarketing.de" },
+              { "@type": "ListItem", position: 2, name: "Webdesign Völklingen", item: "https://www.fylumarketing.de/webdesign-voelklingen" },
             ],
           }),
         }}
       />
-
       {/* LocalBusiness Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
-            name: 'Fylu – Webdesign Saarland',
-            description: 'Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, SEO und Google Ads für lokale Unternehmen.',
-            url: 'https://www.fylumarketing.de/webdesign-saarland',
-            telephone: '+4915168488999',
-            email: 'kontakt@fylumarketing.de',
-            address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-            geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
-            priceRange: '€€',
-            areaServed: [{ '@type': 'State', name: 'Saarland' }, { '@type': 'Country', name: 'Deutschland' }],
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Fylu – Webdesign Völklingen",
+            description: "Webdesign Agentur für Völklingen. Professionelle Websites, SEO und Google Ads für lokale Unternehmen.",
+            url: "https://www.fylumarketing.de/webdesign-voelklingen",
+            telephone: "+4915168488999",
+            email: "kontakt@fylumarketing.de",
+            address: { "@type": "PostalAddress", addressLocality: "Völklingen", addressRegion: "Saarland", addressCountry: "DE" },
+            geo: { "@type": "GeoCoordinates", latitude: 49.2506, longitude: 6.8586 },
+            priceRange: "€€",
+            areaServed: [ { "@type": "City", name: "Völklingen" }, { "@type": "State", name: "Saarland" }, { "@type": "Country", name: "Deutschland" } ],
           }),
         }}
       />
-
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
             mainEntity: faqs.map((f) => ({
-              '@type': 'Question',
+              "@type": "Question",
               name: f.q,
-              acceptedAnswer: { '@type': 'Answer', text: f.a },
+              acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }),
         }}
       />
-
       {/* Breadcrumb Nav */}
       <div className="bg-stone-50 border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-3 pt-20">
           <nav className="text-sm text-stone-500">
             <Link href="/" className="hover:text-cyan-500 transition-colors">Home</Link>
             <span className="mx-2">/</span>
-            <span className="text-stone-900 font-medium">Webdesign Saarland</span>
+            <span className="text-stone-900 font-medium">Webdesign Völklingen</span>
           </nav>
         </div>
       </div>
-
       {/* Hero */}
       <section className="relative py-20 md:py-32 px-6 bg-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40" />
@@ -141,7 +136,7 @@ export default function WebdesignSaarlandPage() {
             transition={{ duration: 0.5, ease: smoothEase }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6"
           >
-            Webdesign Saarland — Websites die Kunden bringen
+            Webdesign Völklingen — Websites die Kunden bringen
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -149,7 +144,7 @@ export default function WebdesignSaarlandPage() {
             transition={{ duration: 0.5, delay: 0.08, ease: smoothEase }}
             className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl"
           >
-            Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesigner aus Saarlouis erstelle ich professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Mein Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — ich verstehe die Bedürfnisse lokaler Unternehmen und baue Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
+            Ihr Unternehmen in Völklingen verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesigner aus dem Saarland erstelle ich professionelle, suchmaschinenoptimierte Websites für Unternehmen in Völklingen, Wehrden, Luisenthal, Fürstenhausen und Umgebung. Mein Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob Handwerksbetrieb, Dienstleister, Einzelhändler oder Gastronom — ich verstehe die Bedürfnisse lokaler Unternehmen und baue Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -165,7 +160,6 @@ export default function WebdesignSaarlandPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Warum professionelle Website */}
       <section ref={ref} className="py-20 md:py-28 px-6 bg-stone-50">
         <div className="max-w-4xl mx-auto">
@@ -175,7 +169,7 @@ export default function WebdesignSaarlandPage() {
             transition={{ duration: 0.5, ease: smoothEase }}
             className="text-3xl md:text-4xl font-bold text-stone-900 mb-8"
           >
-            Warum eine professionelle Website im Saarland entscheidend ist
+            Warum eine professionelle Website in Völklingen entscheidend ist
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -184,15 +178,14 @@ export default function WebdesignSaarlandPage() {
             className="prose prose-lg prose-stone max-w-none"
           >
             <p>
-              Die Realität ist ernüchternd: Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand seines Webdesigns. Wenn Ihre Website veraltet wirkt, nicht für Smartphones optimiert ist oder bei Google nicht auftaucht, verlieren Sie jeden Tag potenzielle Kunden — ohne es zu merken. Im Saarland konkurrieren Tausende lokale Unternehmen um die Aufmerksamkeit derselben Kunden. Der Handwerker mit der modernen Website bekommt den Auftrag. Das Restaurant mit der ansprechenden Online-Speisekarte bekommt die Reservierung. Der Dienstleister, der bei Google auf Seite 1 erscheint, bekommt den Anruf.
+              Die Realität ist ernüchternd: Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand seines Webdesigns. Wenn Ihre Website veraltet wirkt, nicht für Smartphones optimiert ist oder bei Google nicht auftaucht, verlieren Sie jeden Tag potenzielle Kunden — ohne es zu merken. In Völklingen konkurrieren viele lokale Unternehmen um die Aufmerksamkeit derselben Kunden. Der Handwerker mit der modernen Website bekommt den Auftrag. Das Restaurant mit der ansprechenden Online-Speisekarte bekommt die Reservierung. Der Dienstleister, der bei Google auf Seite 1 erscheint, bekommt den Anruf.
             </p>
             <p>
-              Viele Unternehmen im Saarland haben entweder gar keine Website oder eine, die vor Jahren erstellt wurde und seitdem nicht aktualisiert wurde. Mobile Besucher — und das sind heute über 60 Prozent — sehen eine nicht-responsive Seite und springen sofort ab. Google bestraft langsame, veraltete Websites mit schlechten Rankings. Das Ergebnis: Ihre Konkurrenz wird gefunden, Sie nicht. Eine professionelle Website ist keine Ausgabe, sondern eine Investition, die sich durch mehr Anfragen, mehr Aufträge und mehr Umsatz schnell bezahlt macht.
+              Viele Unternehmen in Völklingen haben entweder gar keine Website oder eine, die vor Jahren erstellt wurde und seitdem nicht aktualisiert wurde. Mobile Besucher — und das sind heute über 60 Prozent — sehen eine nicht-responsive Seite und springen sofort ab. Google bestraft langsame, veraltete Websites mit schlechten Rankings. Das Ergebnis: Ihre Konkurrenz wird gefunden, Sie nicht. Eine professionelle Website ist keine Ausgabe, sondern eine Investition, die sich durch mehr Anfragen, mehr Aufträge und mehr Umsatz schnell bezahlt macht.
             </p>
           </motion.div>
         </div>
       </section>
-
       {/* Prozess */}
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -212,7 +205,6 @@ export default function WebdesignSaarlandPage() {
           </div>
         </div>
       </section>
-
       {/* Was meine Websites anders macht */}
       <section className="py-20 md:py-28 px-6 bg-stone-50">
         <div className="max-w-4xl mx-auto">
@@ -224,23 +216,22 @@ export default function WebdesignSaarlandPage() {
               Bei mir bekommen Sie keine Massenware. Als einzelner Webdesigner widme ich mich jedem Projekt mit voller Aufmerksamkeit — das merken meine Kunden. Jede Website wird von Grund auf für Ihr Unternehmen konzipiert, nicht aus einem Template zusammengeklickt. Mobile-first ist bei mir Standard, nicht optional. Jede Seite wird zuerst für Smartphones gestaltet und dann für größere Bildschirme erweitert. Das Ergebnis: Perfekte Darstellung auf allen Geräten und bessere Google-Rankings.
             </p>
             <p>
-              <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei mir kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit biete ich auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen persönlichen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben mir, ich antworte. So einfach ist das. Meine Preise sind fair und transparent — ab 990€ für eine professionelle Website, die tatsächlich Kunden bringt.
+              <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei mir kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit biete ich auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen in Völklingen</Link> an. Und das Beste: Sie haben einen persönlichen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben mir, ich antworte. So einfach ist das. Meine Preise sind fair und transparent — ab 990€ für eine professionelle Website, die tatsächlich Kunden bringt.
             </p>
           </div>
         </div>
       </section>
-
       {/* Pakete */}
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-            Webdesign-Pakete für Unternehmen im Saarland
+            Webdesign-Pakete für Unternehmen in Völklingen
           </h2>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              { name: 'Basismodell', price: '990€', pages: 'Bis 3 Seiten', desc: 'Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.' },
-              { name: 'Fortgeschritten', price: '1.490€', pages: 'Bis 6 Seiten', desc: 'Verkaufsoptimierte Struktur, erweiterte SEO und Google Business Optimierung.', highlight: true },
-              { name: 'Professionell', price: '2.490€', pages: 'Unbegrenzt', desc: 'Premium-Design, intensives Performance-Tuning und Conversion-Optimierung.' },
+              { name: "Basismodell", price: "990€", pages: "Bis 3 Seiten", desc: "Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular." },
+              { name: "Fortgeschritten", price: "1.490€", pages: "Bis 6 Seiten", desc: "Verkaufsoptimierte Struktur, erweiterte SEO und Google Business Optimierung.", highlight: true },
+              { name: "Professionell", price: "2.490€", pages: "Unbegrenzt", desc: "Premium-Design, intensives Performance-Tuning und Conversion-Optimierung." },
             ].map((pkg, i) => (
               <div key={i} className={`p-6 rounded-xl border ${pkg.highlight ? 'border-cyan-500 bg-cyan-50' : 'border-stone-200 bg-white'}`}>
                 <h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
@@ -258,12 +249,11 @@ export default function WebdesignSaarlandPage() {
           </Link>
         </div>
       </section>
-
       {/* FAQ */}
       <section ref={faqRef} className="py-20 md:py-28 px-6 bg-stone-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-            Häufige Fragen zum Webdesign im Saarland
+            Häufige Fragen zum Webdesign in Völklingen
           </h2>
           <div className="space-y-6">
             {faqs.map((faq, i) => (
@@ -281,7 +271,6 @@ export default function WebdesignSaarlandPage() {
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
@@ -289,7 +278,7 @@ export default function WebdesignSaarlandPage() {
             Bereit für Ihre neue Website?
           </h2>
           <p className="text-lg text-stone-600 mb-8">
-            Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen im Saarland und ganz Deutschland.
+            Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen in Völklingen und ganz Deutschland.
           </p>
           <Link
             href="/angebote"
@@ -305,7 +294,6 @@ export default function WebdesignSaarlandPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </main>
   );

@@ -24,7 +24,7 @@ export default function DatenschutzPage() {
               <p className="text-stone-700">Heiligenbornstr. 7</p>
               <p className="text-stone-700">66359 Bous</p>
               <p className="text-stone-700">Deutschland</p>
-              <p className="text-stone-700 mt-2">E-Mail: <a href="mailto:fynnschulzonline@gmail.com" className="text-cyan-600 hover:text-cyan-700">fynnschulzonline@gmail.com</a></p>
+              <p className="text-stone-700 mt-2">E-Mail: <a href="mailto:kontakt@fylumarketing.de" className="text-cyan-600 hover:text-cyan-700">kontakt@fylumarketing.de</a></p>
               <p className="text-stone-700">USt-ID: DE459350573</p>
             </div>
           </section>

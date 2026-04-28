@@ -69,7 +69,7 @@ export default function GoogleAdsSaarlandPage() {
             description: 'Professionelle Google Ads Kampagnen für Unternehmen im Saarland. Sofort sichtbar, messbar und profitabel.',
             url: 'https://www.fylumarketing.de/google-ads-saarland',
             telephone: '+4915168488999',
-            email: 'fynnschulzonline@gmail.com',
+            email: 'kontakt@fylumarketing.de',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
             priceRange: '€€',
           }),

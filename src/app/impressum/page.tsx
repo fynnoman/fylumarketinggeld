@@ -31,8 +31,8 @@ export default function ImpressumPage() {
             <div className="bg-white p-6 rounded-lg border-2 border-stone-200 space-y-2">
               <p className="text-stone-700">
                 <span className="font-semibold">E-Mail:</span>{' '}
-                <a href="mailto:fynnschulzonline@gmail.com" className="text-cyan-600 hover:text-cyan-700 underline">
-                  fynnschulzonline@gmail.com
+                <a href="mailto:kontakt@fylumarketing.de" className="text-cyan-600 hover:text-cyan-700 underline">
+                  kontakt@fylumarketing.de
                 </a>
               </p>
               <p className="text-stone-700">
