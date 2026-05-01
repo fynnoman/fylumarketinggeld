@@ -33,9 +33,11 @@ export default function HeroSection() {
           loop
           playsInline
           preload="auto"
+          poster="/hero-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/Videoerstellung_Dein_Video_ist_fertig_.mov" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/Videoerstellung_Dein_Video_ist_fertig_.mov" type="video/quicktime" />
         </video>
         <div className="absolute inset-0 bg-white/50 md:bg-white/30" />
       </motion.div>

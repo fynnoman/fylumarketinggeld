@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import HiddenTaskeyLink from "@/components/HiddenTaskeyLink";
 import "./globals.css";
 
 const inter = Inter({
@@ -184,8 +185,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         {children}
         <Analytics />
-        {/* Hidden backlink for SEO purposes */}
-        {require('../components/HiddenTaskeyLink').default()}
+        <HiddenTaskeyLink />
       </body>
     </html>
   );
