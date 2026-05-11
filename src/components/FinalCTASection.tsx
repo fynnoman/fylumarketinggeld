@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import LazyVideo from './LazyVideo';
 
 const smoothEase = [0.22, 1, 0.36, 1] as const;
@@ -14,7 +15,7 @@ const packages = [
     subtitle: 'Sichtbar werden',
     price: '990€',
     description: 'Perfekt für kleine lokale Betriebe, die endlich online gefunden werden wollen. Mit Hingabe fertige ich Ihre neue Website an – professionell, schnell und ohne Schnickschnack.',
-    image: '/Untitled-24-removebg-preview.png',
+    image: '/untitled-24-removebg-preview.webp',
     features: [
       'Website (bis 3 Seiten)',
       'Rechtstexte integriert',
@@ -34,7 +35,7 @@ const packages = [
     subtitle: 'Neukunden-Maschine',
     price: '1.490€',
     description: 'Ihre Website wird zur echten Kundenquelle. Verkaufspsychologisch durchdacht, strategisch aufgebaut – damit Besucher zu zahlenden Kunden werden. Mein persönlicher Favorit für maximale Wirkung.',
-    image: '/Untitled-25-removebg-preview.png',
+    image: '/untitled-25-removebg-preview.webp',
     features: [
       'Alles aus Basismodell',
       'Website bis 6 Seiten',
@@ -53,7 +54,7 @@ const packages = [
     subtitle: 'Marktführer-Auftritt',
     price: '2.490€',
     description: 'Für Unternehmen, die nicht mitspielen, sondern dominieren wollen. Strategische Positionierung, Premium-Design und technische Perfektion – Ihr Wettbewerb wird neidisch sein.',
-    image: '/Untitled-26-removebg-preview.png',
+    image: '/untitled-26-removebg-preview.webp',
     features: [
       'Alles aus Fortgeschritten',
       '3 Korrekturschleifen',
@@ -72,7 +73,7 @@ const packages = [
     subtitle: 'Maßgeschneidert',
     price: 'Auf Anfrage',
     description: 'Sie haben spezielle Anforderungen oder wünschen sich eine komplett individuelle Lösung? Lassen Sie uns gemeinsam Ihr perfektes Projekt gestalten.',
-    image: '/Untitled-27-removebg-preview.png',
+    image: '/untitled-27-removebg-preview.webp',
     features: [
       'Persönliche Beratung & Konzeption',
       'Maßgeschneidertes Design',
@@ -220,9 +221,11 @@ export default function FinalCTASection() {
               transition={{ duration: 0.3, ease: smoothEase }}
               className="w-full h-full"
             >
-              <img 
+              <Image
                 src={currentPackage.image}
                 alt={`${currentPackage.name} – ${currentPackage.subtitle}`}
+                width={640}
+                height={280}
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>

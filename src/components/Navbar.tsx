@@ -1,6 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -35,12 +36,13 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" onClick={() => setMenuOpen(false)}>
-              <img
-                src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png"
+              <Image
+                src="/logo-fylu.webp"
                 alt="Fylu Webdesign Saarland – Logo"
-                className="h-10 w-auto"
                 width={120}
                 height={40}
+                priority
+                className="h-10 w-auto"
               />
             </Link>
 

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/heroba.png",
+        url: "/hero-background.webp",
         width: 1200,
         height: 630,
         alt: "Fylu Webdesign Agentur – Professionelle Websites",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Webdesign Saarland | Fylu",
     description: "Webdesign & SEO aus dem Saarland. Mehr Kunden durch Ihre Website.",
-    images: ["/heroba.png"],
+    images: ["/hero-background.webp"],
   },
   robots: {
     index: true,
@@ -71,7 +71,7 @@ export default function RootLayout({
               name: "Fylu – Webdesign & SEO",
               description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen in Saarbrücken, Saarlouis und ganz Deutschland.",
               url: "https://www.fylumarketing.de",
-              logo: "https://www.fylumarketing.de/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png",
+              logo: "https://www.fylumarketing.de/logo-fylu.webp",
               telephone: "+4915168488999",
               email: "kontakt@fylumarketing.de",
               address: {

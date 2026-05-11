@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -19,12 +20,12 @@ export default function Footer() {
               viewport={{ once: true }}
               className="mb-6"
             >
-              <img 
-                src="/69A2D4F6-C40F-447B-B10C-5C8633E4CD0D.png" 
-                alt="Fylu Webdesign Saarland – Logo" 
-                className="h-16 w-auto mb-4"
+              <Image
+                src="/logo-fylu.webp"
+                alt="Fylu Webdesign Saarland – Logo"
                 width={192}
                 height={64}
+                className="h-16 w-auto mb-4"
               />
             </motion.div>
             <p className="text-gray-400 mb-6 max-w-md">

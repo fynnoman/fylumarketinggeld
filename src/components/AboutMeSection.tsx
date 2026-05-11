@@ -32,7 +32,7 @@ export default function AboutMeSection() {
               {/* Image container with modern shape */}
               <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="/64BB3620-F0DF-4887-A72B-6F4E69750FD8.png"
+                  src="/64bb3620-f0df-4887-a72b-6f4e69750fd8.webp"
                   alt="Fynn Schulz – Webdesigner und SEO-Experte aus dem Saarland"
                   fill
                   className="object-cover"

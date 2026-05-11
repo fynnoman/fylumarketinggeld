@@ -1,6 +1,7 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const smoothEase = [0.22, 1, 0.36, 1] as const;
@@ -9,6 +10,7 @@ export default function HeroSection() {
   const { scrollY } = useScroll();
   const x = useTransform(scrollY, [0, 600], [0, 80]);
   const [isMobile, setIsMobile] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   const imgY = useTransform(scrollY, [0, 600], [0, -50]);
   const imgScale = useTransform(scrollY, [0, 600], [1, 1.04]);
@@ -20,6 +22,13 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  // Desktop: video loads lazily after 1s to prioritize LCP
+  useEffect(() => {
+    if (isMobile) return;
+    const t = window.setTimeout(() => setShowVideo(true), 1000);
+    return () => window.clearTimeout(t);
+  }, [isMobile]);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
       <motion.div
@@ -27,18 +36,37 @@ export default function HeroSection() {
         style={{ y: imgY, scale: imgScale }}
         aria-hidden="true"
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/hero-poster.jpg"
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-          <source src="/Videoerstellung_Dein_Video_ist_fertig_.mov" type="video/quicktime" />
-        </video>
+        {isMobile ? (
+          <Image
+            src="/hero-poster.webp"
+            alt="Webdesign aus dem Saarland – Hintergrund"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        ) : showVideo ? (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-poster.webp"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            src="/hero-poster.webp"
+            alt="Webdesign aus dem Saarland – Hintergrund"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        )}
         <div className="absolute inset-0 bg-white/50 md:bg-white/30" />
       </motion.div>
 

@@ -7,42 +7,42 @@ import LazyVideo from './LazyVideo';
 
 const portfolioItems = [
   {
-    src: '/8BE048EC-7F69-4DD4-AE4D-DED0A9A0415B.png',
+    src: '/portfolio-galabau-eifler.webp',
     alt: 'Webdesign für Garten- und Landschaftsbau Eifler – Handwerker Website Saarland',
     title: 'Lokales Handwerksunternehmen',
     description: 'Eine moderne, conversion-optimierte Website für ein Handwerksunternehmen. Ziel war maximale Sichtbarkeit auf Google und mehr Anfragen über das Kontaktformular.',
     url: 'https://galabaueifler.de',
   },
   {
-    src: '/B2B192DF-AD56-4E4D-9F09-EE894CE91BB8.png',
+    src: '/portfolio-demir-speedconnect.webp',
     alt: 'Webdesign für Demir SpeedConnect – B2B Dienstleister Website',
     title: 'Dienstleister im B2B-Bereich',
     description: 'Klare Positionierung, starke Wertaussagen und eine durchdachte Nutzerführung — designed, um Entscheider direkt anzusprechen und Vertrauen aufzubauen.',
     url: 'https://demir-speedconnect.de',
   },
   {
-    src: '/D650852E-6EFC-477A-B33C-4F179CFB35FA.png',
+    src: '/portfolio-saray-saarlouis.webp',
     alt: 'Webdesign für Saray Saarlouis – Gastronomie Website mit Speisekarte',
     title: 'Personal Branding',
     description: 'Lokaler Dönerimbiss mit großem Hunger nach Sichtbarkeit. Klare Speisekarte, Öffnungszeiten und ein Design, das Appetit macht — direkt aus der Nachbarschaft ins Google-Ranking.',
     url: 'https://saray-saarlouis.de',
   },
   {
-    src: '/EE60E06D-A52C-4532-93C0-85429C27E880.png',
+    src: '/portfolio-porto-cervo-saarlouis.webp',
     alt: 'Webdesign für Porto Cervo Saarlouis – Restaurant Website mit Reservierung',
     title: 'Gastronomie & Lifestyle',
     description: 'Visuell starke Präsenz für die Gastronomiebranche — mit Fokus auf Atmosphäre, Online-Reservierung und lokaler SEO-Optimierung.',
     url: 'https://portocervosaarlouis.de',
   },
   {
-    src: '/504F6B03-A916-4EF1-ADA7-0E8843E99BE6.png',
+    src: '/portfolio-salif-gebaeudeservice.webp',
     alt: 'Webdesign für Salif Gebäudeservice – Dienstleister Homepage',
     title: 'Meine erste eigene Website',
     description: 'Der Anfang von allem. Meine erste selbst gebaute Website — noch rau, aber mit viel Leidenschaft gebaut. Sie hat mir gezeigt, was möglich ist, wenn man anfängt.',
     url: 'https://salif-gebaeudeservice.de',
   },
   {
-    src: '/DA23B12F-8917-4CE3-933F-DC15AD6D43C2.png',
+    src: '/portfolio-taskey-app.webp',
     alt: 'Webdesign für Taskey – Produktivitäts-App Website',
     title: 'SaaS & App',
     description: 'Moderne Landing Page für eine Produktivitäts-App — mit klarer Nutzerführung, starker Value Proposition und Conversion-Optimierung.',
