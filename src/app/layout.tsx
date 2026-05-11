@@ -12,7 +12,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Webdesign Saarland | Professionelle Websites & SEO | Fylu",
   description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO & Google Ads für Unternehmen in Saarbrücken, Saarlouis & ganz Deutschland. Jetzt kostenlosen Entwurf sichern.",
-  keywords: "Webdesign Saarland, Webdesign Saarbrücken, Webdesign Saarlouis, Website erstellen lassen, SEO Saarland, Google Optimierung, Homepage erstellen, Webdesigner Saarland, Webdesign Agentur, lokales SEO, Google Ads Saarland, Website Redesign, professionelle Website",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu – Fynn Schulz",
   publisher: "Fylu",
@@ -105,35 +104,6 @@ export default function RootLayout({
                 "SEO Optimierung",
                 "Google Ads",
                 "Website erstellen lassen",
-              ],
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Startseite",
-                  item: "https://www.fylumarketing.de",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "Angebote",
-                  item: "https://www.fylumarketing.de/angebote",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 3,
-                  name: "Buchen",
-                  item: "https://www.fylumarketing.de/buchen",
-                },
               ],
             }),
           }}
