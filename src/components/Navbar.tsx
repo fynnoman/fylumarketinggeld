@@ -22,6 +22,8 @@ export default function Navbar() {
     { label: 'Services', href: '#services' },
     { label: 'Über mich', href: '#about' },
     { label: 'Pakete', href: '#packages' },
+    { label: 'Premium', href: '/premium' },
+    { label: 'Methodik', href: '/methodik' },
     { label: 'Support', href: 'mailto:kontakt@fylumarketing.de' },
   ];
 

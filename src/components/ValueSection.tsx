@@ -8,7 +8,7 @@ const benefits = [
 	{
 		title: 'Volle Hingabe für Ihr Projekt',
 		description:
-			'Ich widme mich Ihrem Projekt mit 100% Aufmerksamkeit – keine Massenproduktion, sondern maßgeschneiderte Lösungen.',
+			'Wir widmen uns Ihrem Projekt mit 100% Aufmerksamkeit – keine Massenproduktion, sondern maßgeschneiderte Lösungen.',
 		icon: (
 			<svg
 				className="w-7 h-7 text-white"
@@ -48,7 +48,7 @@ const benefits = [
 	{
 		title: 'Persönlicher Ansprechpartner',
 		description:
-			'Direkter Kontakt zu mir – keine Umwege über Projektmanager oder Support-Teams.',
+			'Direkter Draht zur Geschäftsleitung – keine Umwege über Projektmanager oder Support-Teams.',
 		icon: (
 			<svg
 				className="w-7 h-7 text-white"
@@ -114,7 +114,7 @@ export default function ValueSection() {
 					}}
 					className="text-4xl md:text-5xl font-bold text-center mb-6 text-stone-900"
 				>
-					Warum mit mir arbeiten?
+					Warum mit uns arbeiten?
 				</motion.h2>
 
 				<motion.p

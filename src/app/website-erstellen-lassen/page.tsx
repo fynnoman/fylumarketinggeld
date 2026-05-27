@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet eine professionelle Website?',
-		a: 'Eine professionelle Website bei Fylu beginnt ab 990€ für eine kompakte Seite mit bis zu 3 Unterseiten. Das mittlere Paket kostet 1.490€ und bietet bis zu 6 Seiten mit Verkaufsoptimierung. Für individuelle Anforderungen erstelle ich gerne ein maßgeschneidertes Angebot.',
+		a: 'Eine professionelle Website bei Fylu beginnt ab 990€ für eine kompakte Seite mit bis zu 3 Unterseiten. Das mittlere Paket kostet 1.490€ und bietet bis zu 6 Seiten mit Verkaufsoptimierung. Für individuelle Anforderungen erstellen wir gerne ein maßgeschneidertes Angebot.',
 	},
 	{
 		q: 'Wie lange dauert die Erstellung?',
@@ -16,19 +16,19 @@ const faqs = [
 	},
 	{
 		q: 'Kann ich Inhalte selbst ändern?',
-		a: 'Ja, auf Wunsch richte ich ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehme ich Änderungen für Sie — schnell, unkompliziert und zu fairen Stundensätzen.',
+		a: 'Ja, auf Wunsch richten wir ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie — schnell, unkompliziert und zu fairen Stundensätzen.',
 	},
 	{
 		q: 'Was brauche ich um loszulegen?',
-		a: 'Eigentlich nur 15 Minuten Ihrer Zeit für ein kurzes Gespräch. Ich brauche ein Verständnis für Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Texte, Bilder und alles weitere können wir gemeinsam erarbeiten oder ich übernehme die Erstellung für Sie.',
+		a: 'Eigentlich nur 15 Minuten Ihrer Zeit für ein kurzes Gespräch. Wir brauchen ein Verständnis für Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Texte, Bilder und alles weitere können wir gemeinsam erarbeiten oder wir übernehmen die Erstellung für Sie.',
 	},
 	{
 		q: 'Ist ein Online-Shop möglich?',
-		a: 'Ja, ich kann E-Commerce-Funktionalität in Ihre Website integrieren. Von einfachen Produktseiten bis zu vollständigen Online-Shops mit Warenkorb und Bezahlung — alles ist möglich. Sprechen Sie mich einfach an und wir finden die passende Lösung.',
+		a: 'Ja, wir können E-Commerce-Funktionalität in Ihre Website integrieren. Von einfachen Produktseiten bis zu vollständigen Online-Shops mit Warenkorb und Bezahlung — alles ist möglich. Sprechen Sie uns einfach an und wir finden die passende Lösung.',
 	},
 	{
 		q: 'Kümmern Sie sich auch um Hosting und Domain?',
-		a: 'Ja, ich kümmere mich um alles Technische. Domain-Registrierung, Hosting-Setup, SSL-Zertifikat, E-Mail-Einrichtung — Sie müssen sich um nichts kümmern. Je nach Paket sind 2 bis 4 Monate Hosting bereits inklusive.',
+		a: 'Ja, wir kümmern uns um alles Technische. Domain-Registrierung, Hosting-Setup, SSL-Zertifikat, E-Mail-Einrichtung — Sie müssen sich um nichts kümmern. Je nach Paket sind 2 bis 4 Monate Hosting bereits inklusive.',
 	},
 ];
 
@@ -87,7 +87,7 @@ export default function WebsiteErstellenLassenPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als professioneller <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesigner im Saarland</Link> erstelle ich Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerker</Link>, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen. Ab 990€, fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
+							Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesign-Studio im Saarland</Link> entwickeln wir Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerker</Link>, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen. Ab 990€, fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
@@ -114,7 +114,7 @@ export default function WebsiteErstellenLassenPage() {
 							Vielleicht haben Sie mit dem Gedanken gespielt, Ihre Website selbst zu bauen — mit Wix, Jimdo oder einem WordPress-Theme. Das klingt verlockend: wenig Kosten, alles selbst in der Hand. Doch die Realität sieht anders aus. Baukasten-Websites sind bei Google praktisch unsichtbar. Die Ladezeiten sind langsam, die SEO-Möglichkeiten stark eingeschränkt und das Design sieht wie tausend andere Seiten aus. Was anfangs günstig wirkt, wird langfristig teurer: Monatsgebühren summieren sich, Premium-Features kosten extra und die Zeit, die Sie investieren, fehlt Ihrem Kerngeschäft.
 						</p>
 						<p>
-							Eine professionell erstellte Website hingegen ist eine Investition, die sich bezahlt macht. Sie wird für Ihr Unternehmen maßgeschneidert, rankt bei Google, lädt blitzschnell und verwandelt Besucher in Kunden. Statt Stunden mit einem Baukasten zu kämpfen, investieren Sie 15 Minuten in ein Gespräch mit mir — und erhalten eine Website, die tatsächlich funktioniert. Meine Kunden berichten regelmäßig von einer Verdopplung bis Vervierfachung ihrer Online-Anfragen nach dem Website-Relaunch.
+							Eine professionell erstellte Website hingegen ist eine Investition, die sich bezahlt macht. Sie wird für Ihr Unternehmen maßgeschneidert, rankt bei Google, lädt blitzschnell und verwandelt Besucher in Kunden. Statt Stunden mit einem Baukasten zu kämpfen, investieren Sie 15 Minuten in ein Gespräch mit uns — und erhalten eine Website, die tatsächlich funktioniert. Unsere Kunden berichten regelmäßig von einer Verdopplung bis Vervierfachung ihrer Online-Anfragen nach dem Website-Relaunch.
 						</p>
 					</FadeInSection>
 				</div>
@@ -128,7 +128,7 @@ export default function WebsiteErstellenLassenPage() {
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none mb-10">
 						<p>
-							Transparenz ist mir wichtig. Deshalb gibt es bei mir keine versteckten Kosten und keine bösen Überraschungen. Der Preis Ihrer Website hängt von drei Faktoren ab: der Anzahl der Seiten, den gewünschten Funktionen und dem Umfang der SEO-Optimierung. Hier ist ein ehrlicher Überblick meiner Pakete:
+							Transparenz ist uns wichtig. Deshalb gibt es bei uns keine versteckten Kosten und keine bösen Überraschungen. Der Preis Ihrer Website hängt von drei Faktoren ab: der Anzahl der Seiten, den gewünschten Funktionen und dem Umfang der SEO-Optimierung. Hier ist ein ehrlicher Überblick unserer Pakete:
 						</p>
 					</div>
 					<div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -154,14 +154,14 @@ export default function WebsiteErstellenLassenPage() {
 			<section className="py-20 md:py-28 px-6 bg-stone-50">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Mein Prozess — In 4 Schritten zu Ihrer neuen Website
+						Unser Prozess — In 4 Schritten zu Ihrer neuen Website
 					</h2>
 					<div className="space-y-10">
 						{[
-							{ title: 'Kurzes Briefing', text: 'In einem 15-minütigen Gespräch lernen wir uns kennen. Ich verstehe Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Kein Papierkram, kein Aufwand für Sie.' },
+							{ title: 'Kurzes Briefing', text: 'In einem 15-minütigen Gespräch lernen wir uns kennen. Wir verstehen Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Kein Papierkram, kein Aufwand für Sie.' },
 							{ title: 'Kostenloser Entwurf in 24h', text: 'Innerhalb eines Tages erhalten Sie einen ersten Design-Entwurf — kostenlos und unverbindlich. So sehen Sie sofort, wie Ihre neue Website aussehen könnte, bevor Sie sich entscheiden.' },
-							{ title: 'Umsetzung & Optimierung', text: 'Nach Ihrem Feedback baue ich die komplette Website: responsives Design, schnelle Ladezeiten, SEO-Optimierung, Rechtstexte, Kontaktformular — alles inklusive. Zeitrahmen: 2 bis 3 Wochen.' },
-							{ title: 'Launch & Support', text: 'Ihre Website geht live. Ich kümmere mich um Hosting, Domain und alles Technische. Und danach? Bleibe ich Ihr Ansprechpartner für Änderungen und Updates.' },
+							{ title: 'Umsetzung & Optimierung', text: 'Nach Ihrem Feedback bauen wir die komplette Website: responsives Design, schnelle Ladezeiten, SEO-Optimierung, Rechtstexte, Kontaktformular — alles inklusive. Zeitrahmen: 2 bis 3 Wochen.' },
+							{ title: 'Launch & Support', text: 'Ihre Website geht live. Wir kümmern uns um Hosting, Domain und alles Technische. Und danach? Bleiben wir Ihr Ansprechpartner für Änderungen und Updates.' },
 						].map((step, i) => (
 							<div key={i} className="relative pl-12">
 								<div className="absolute left-0 top-1 w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{i + 1}</div>
@@ -181,7 +181,7 @@ export default function WebsiteErstellenLassenPage() {
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Unabhängig vom gewählten Paket ist jede Website mit den wichtigsten Grundlagen ausgestattet: Responsive Design für perfekte Darstellung auf allen Geräten, <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">SEO-Grundoptimierung</Link> damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung für sichere Verbindungen, ein professionelles Kontaktformular für Anfragen, optimierte Ladezeiten unter 3 Sekunden und auf Wunsch Google Analytics Anbindung zur Erfolgsmessung. Für noch schnellere Ergebnisse empfehle ich ergänzend <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads</Link>. Jede Website wird individuell für Ihr Unternehmen gestaltet — keine Templates, kein Einheitsbrei.
+							Unabhängig vom gewählten Paket ist jede Website mit den wichtigsten Grundlagen ausgestattet: Responsive Design für perfekte Darstellung auf allen Geräten, <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">SEO-Grundoptimierung</Link> damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung für sichere Verbindungen, ein professionelles Kontaktformular für Anfragen, optimierte Ladezeiten unter 3 Sekunden und auf Wunsch Google Analytics Anbindung zur Erfolgsmessung. Für noch schnellere Ergebnisse empfehlen wir ergänzend <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads</Link>. Jede Website wird individuell für Ihr Unternehmen gestaltet — keine Templates, kein Einheitsbrei.
 						</p>
 					</div>
 				</div>
@@ -195,7 +195,7 @@ export default function WebsiteErstellenLassenPage() {
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Meine Websites sind ideal für Handwerker, die online Aufträge gewinnen wollen, für Ärzte und Therapeuten die neue Patienten ansprechen, für Restaurants und Cafés die Reservierungen steigern möchten, für Coaches und Berater die sich professionell positionieren wollen, für Einzelhändler die ihre lokale Sichtbarkeit erhöhen und für Dienstleister jeder Art, die eine professionelle Online-Präsenz brauchen. Kurz gesagt: Für jeden, der mit seiner Website Kunden gewinnen will — statt nur eine digitale Visitenkarte zu haben.
+							Unsere Websites sind ideal für Handwerker, die online Aufträge gewinnen wollen, für Ärzte und Therapeuten die neue Patienten ansprechen, für Restaurants und Cafés die Reservierungen steigern möchten, für Coaches und Berater die sich professionell positionieren wollen, für Einzelhändler die ihre lokale Sichtbarkeit erhöhen und für Dienstleister jeder Art, die eine professionelle Online-Präsenz brauchen. Kurz gesagt: Für jeden, der mit seiner Website Kunden gewinnen will — statt nur eine digitale Visitenkarte zu haben.
 						</p>
 					</div>
 				</div>

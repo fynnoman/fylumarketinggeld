@@ -10,7 +10,7 @@ const SITE = "https://www.fylumarketing.de";
 const faqs = (city: string) => [
   {
     q: `Was kostet eine professionelle Website in ${city}?`,
-    a: "Eine professionelle Website beginnt bei mir bei 990€ für das Basismodell mit bis zu 3 Seiten. Das Business-Paket kostet 1.490€ und enthält bis zu 6 Seiten inklusive lokaler SEO und Google Business. Individuelle Lösungen sind auf Anfrage möglich.",
+    a: "Eine professionelle Website beginnt bei uns bei 990€ für das Basismodell mit bis zu 3 Seiten. Das Business-Paket kostet 1.490€ und enthält bis zu 6 Seiten inklusive lokaler SEO und Google Business. Individuelle Lösungen sind auf Anfrage möglich.",
   },
   {
     q: "Wie lange dauert die Erstellung meiner Website?",
@@ -18,7 +18,7 @@ const faqs = (city: string) => [
   },
   {
     q: "Werden meine Kunden mich bei Google finden?",
-    a: "Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Auf Wunsch betreue ich auch laufend Ihr lokales SEO und Ihre Google Ads.",
+    a: "Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Auf Wunsch betreuen wir auch laufend Ihr lokales SEO und Ihre Google Ads.",
   },
   {
     q: "Ist die Website für Smartphones optimiert?",
@@ -26,18 +26,18 @@ const faqs = (city: string) => [
   },
   {
     q: "Kann ich die Website später selbst pflegen?",
-    a: "Auf Wunsch richte ich ein einfaches CMS ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehme ich Änderungen für Sie – schnell, unkompliziert und ohne lange Wartezeiten.",
+    a: "Auf Wunsch richten wir ein einfaches CMS ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie – schnell, unkompliziert und ohne lange Wartezeiten.",
   },
   {
     q: "Was passiert nach dem Launch?",
-    a: "Nach dem Livegang lasse ich Sie nicht allein. Je nach Paket erhalten Sie 2–4 Monate Hosting inklusive. Darüber hinaus stehe ich Ihnen für Updates, Änderungen und Support zur Verfügung.",
+    a: "Nach dem Livegang lassen wir Sie nicht allein. Je nach Paket erhalten Sie 2–4 Monate Hosting inklusive. Darüber hinaus stehen wir Ihnen für Updates, Änderungen und Support zur Verfügung.",
   },
 ];
 
 const steps = [
   {
     title: "Erstgespräch",
-    text: "Wir lernen uns kennen, ich verstehe Ihr Geschäft, Ihre Ziele und Ihren Markt. Kein Verkaufsdruck – nur ehrliche Beratung.",
+    text: "Wir lernen uns kennen und verstehen Ihr Geschäft, Ihre Ziele und Ihren Markt. Kein Verkaufsdruck – nur ehrliche Beratung.",
   },
   {
     title: "Kostenloser Entwurf in 24h",
@@ -45,15 +45,15 @@ const steps = [
   },
   {
     title: "Design & Entwicklung",
-    text: "Nach Ihrem Feedback baue ich Ihre Website mit modernster Technik – optimiert auf Geschwindigkeit, SEO und Conversion.",
+    text: "Nach Ihrem Feedback bauen wir Ihre Website mit modernster Technik – optimiert auf Geschwindigkeit, SEO und Conversion.",
   },
   {
     title: "Lokale SEO-Optimierung",
-    text: "Vor dem Launch optimiere ich Ihre Website für Google: Keywords, technisches SEO, Meta-Tags, Ladezeit und Google Business.",
+    text: "Vor dem Launch optimieren wir Ihre Website für Google: Keywords, technisches SEO, Meta-Tags, Ladezeit und Google Business.",
   },
   {
     title: "Launch & Support",
-    text: "Ihre Website geht live – und ich bleibe Ihr fester Ansprechpartner für Updates, Änderungen und Wachstum.",
+    text: "Ihre Website geht live – und wir bleiben Ihr fester Ansprechpartner für Updates, Änderungen und Wachstum.",
   },
 ];
 
@@ -221,7 +221,7 @@ export default async function RegionPage({
       <section className="py-20 md:py-28 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-            Mein Webdesign-Prozess für Unternehmen in {region.city}
+            Unser Webdesign-Prozess für Unternehmen in {region.city}
           </h2>
           <div className="space-y-10">
             {steps.map((step, i) => (

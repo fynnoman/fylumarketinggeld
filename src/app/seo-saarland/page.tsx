@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet SEO im Saarland?',
-		a: 'Die Kosten für SEO hängen vom Umfang und der Wettbewerbssituation ab. Eine einmalige SEO-Grundoptimierung ist in meinen Webdesign-Paketen ab 990€ enthalten. Laufende SEO-Betreuung mit monatlichem Reporting beginnt ab 300€ pro Monat.',
+		a: 'Die Kosten für SEO hängen vom Umfang und der Wettbewerbssituation ab. Eine einmalige SEO-Grundoptimierung ist in unseren Webdesign-Paketen ab 990€ enthalten. Laufende SEO-Betreuung mit monatlichem Reporting beginnt ab 300€ pro Monat.',
 	},
 	{
 		q: 'Wie lange dauert es bis man Ergebnisse sieht?',
@@ -28,34 +28,34 @@ const faqs = [
 	},
 	{
 		q: 'Wie messe ich den Erfolg von SEO?',
-		a: 'Ich richte Google Search Console und Analytics für Sie ein. So sehen Sie genau, wie viele Menschen Ihre Website über Google finden, für welche Suchbegriffe Sie ranken und wie sich Ihre Position über die Zeit verbessert. Sie erhalten regelmäßige, verständliche Reports.',
+		a: 'Wir richten Google Search Console und Analytics für Sie ein. So sehen Sie genau, wie viele Menschen Ihre Website über Google finden, für welche Suchbegriffe Sie ranken und wie sich Ihre Position über die Zeit verbessert. Sie erhalten regelmäßige, verständliche Reports.',
 	},
 ];
 
 const leistungen = [
 	{
 		title: 'OnPage SEO — Technik & Content',
-		text: 'Ich optimiere Ihre Website von innen heraus: Seitentitel, Meta-Beschreibungen, Überschriftenstruktur, interne Verlinkung, Ladegeschwindigkeit und Core Web Vitals. Jede Seite wird so aufgebaut, dass Google sie versteht und belohnt. Dazu gehört auch die Erstellung von SEO-optimierten Texten, die sowohl für Suchmaschinen als auch für Ihre Besucher geschrieben sind.',
+		text: 'Wir optimieren Ihre Website von innen heraus: Seitentitel, Meta-Beschreibungen, Überschriftenstruktur, interne Verlinkung, Ladegeschwindigkeit und Core Web Vitals. Jede Seite wird so aufgebaut, dass Google sie versteht und belohnt. Dazu gehört auch die Erstellung von SEO-optimierten Texten, die sowohl für Suchmaschinen als auch für Ihre Besucher geschrieben sind.',
 	},
 	{
 		title: 'Local SEO — Google Maps & regionale Sichtbarkeit',
-		text: 'Für lokale Unternehmen im Saarland ist Local SEO entscheidend. Ich optimiere Ihren Google Business Eintrag, sorge für konsistente NAP-Daten (Name, Adresse, Telefon) und baue lokale Signale auf, damit Sie bei Suchanfragen wie „Handwerker Saarbrücken" oder „Restaurant Saarlouis" ganz oben erscheinen.',
+		text: 'Für lokale Unternehmen im Saarland ist Local SEO entscheidend. Wir optimieren Ihren Google Business Eintrag, sorgen für konsistente NAP-Daten (Name, Adresse, Telefon) und bauen lokale Signale auf, damit Sie bei Suchanfragen wie „Handwerker Saarbrücken" oder „Restaurant Saarlouis" ganz oben erscheinen.',
 	},
 	{
 		title: 'Google Business Optimierung',
-		text: 'Ihr Google Business Profil ist oft der erste Kontaktpunkt mit potenziellen Kunden. Ich optimiere Ihr Profil vollständig: professionelle Beschreibung, richtige Kategorien, Öffnungszeiten, Fotos und eine Strategie für positive Bewertungen. So stechen Sie in der lokalen Suche hervor.',
+		text: 'Ihr Google Business Profil ist oft der erste Kontaktpunkt mit potenziellen Kunden. Wir optimieren Ihr Profil vollständig: professionelle Beschreibung, richtige Kategorien, Öffnungszeiten, Fotos und eine Strategie für positive Bewertungen. So stechen Sie in der lokalen Suche hervor.',
 	},
 	{
 		title: 'Keyword-Recherche & Content-Strategie',
-		text: 'Ich recherchiere die Suchbegriffe, die Ihre Zielkunden tatsächlich verwenden. Basierend darauf entwickle ich eine Content-Strategie, die Ihre Website systematisch für die wichtigsten Keywords positioniert. Kein Raten — datenbasierte Entscheidungen für maximale Sichtbarkeit.',
+		text: 'Wir recherchieren die Suchbegriffe, die Ihre Zielkunden tatsächlich verwenden. Basierend darauf entwickeln wir eine Content-Strategie, die Ihre Website systematisch für die wichtigsten Keywords positioniert. Kein Raten — datenbasierte Entscheidungen für maximale Sichtbarkeit.',
 	},
 ];
 
 const prozessSteps = [
-	{ title: 'SEO-Analyse', text: 'Ich analysiere Ihre aktuelle Website, Ihre Rankings, Ihre Konkurrenz und identifiziere die größten Chancen. Sie erhalten einen klaren Überblick über den Ist-Zustand.' },
-	{ title: 'Keyword-Recherche', text: 'Ich finde die Suchbegriffe, die Ihre Zielkunden nutzen. Welche Keywords haben Volumen, sind erreichbar und führen zu Anfragen? Das wird die Basis der Optimierung.' },
+	{ title: 'SEO-Analyse', text: 'Wir analysieren Ihre aktuelle Website, Ihre Rankings, Ihre Konkurrenz und identifizieren die größten Chancen. Sie erhalten einen klaren Überblick über den Ist-Zustand.' },
+	{ title: 'Keyword-Recherche', text: 'Wir finden die Suchbegriffe, die Ihre Zielkunden nutzen. Welche Keywords haben Volumen, sind erreichbar und führen zu Anfragen? Das wird die Basis der Optimierung.' },
 	{ title: 'Optimierung', text: 'Technische Fehler werden behoben, Inhalte werden optimiert, Meta-Daten werden geschrieben und die Seitenstruktur wird für Google und Nutzer verbessert.' },
-	{ title: 'Monitoring', text: 'Nach der Optimierung überwache ich die Rankings und den Traffic kontinuierlich. Was funktioniert, wird ausgebaut. Was nicht funktioniert, wird angepasst.' },
+	{ title: 'Monitoring', text: 'Nach der Optimierung überwachen wir die Rankings und den Traffic kontinuierlich. Was funktioniert, wird ausgebaut. Was nicht funktioniert, wird angepasst.' },
 	{ title: 'Monatliches Reporting', text: 'Sie erhalten jeden Monat einen verständlichen Bericht: Wie haben sich Ihre Rankings entwickelt? Wie viele Besucher kommen über Google? Welche Maßnahmen stehen als nächstes an?' },
 ];
 
@@ -130,7 +130,7 @@ export default function SeoSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Ihre potenziellen Kunden suchen jeden Tag bei Google nach genau den Leistungen, die Sie anbieten. Wenn Ihr Unternehmen nicht auf Seite 1 erscheint, geht der Auftrag an die Konkurrenz. Als SEO-Spezialist aus Saarlouis helfe ich lokalen Unternehmen im Saarland, bei Google sichtbar zu werden — mit datenbasierter Suchmaschinenoptimierung, die nachweislich funktioniert. Ob Sie ein <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb in Saarbrücken</Link>, ein Dienstleister in Merzig oder ein Restaurant in Dillingen sind: Ich sorge dafür, dass Ihre Kunden Sie finden, bevor sie Ihre Konkurrenz finden.
+							Ihre potenziellen Kunden suchen jeden Tag bei Google nach genau den Leistungen, die Sie anbieten. Wenn Ihr Unternehmen nicht auf Seite 1 erscheint, geht der Auftrag an die Konkurrenz. Als SEO-Spezialisten aus Saarlouis helfen wir lokalen Unternehmen im Saarland, bei Google sichtbar zu werden — mit datenbasierter Suchmaschinenoptimierung, die nachweislich funktioniert. Ob Sie ein <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb in Saarbrücken</Link>, ein Dienstleister in Merzig oder ein Restaurant in Dillingen sind: Wir sorgen dafür, dass Ihre Kunden Sie finden, bevor sie Ihre Konkurrenz finden.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
@@ -167,7 +167,7 @@ export default function SeoSaarlandPage() {
 			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Meine SEO-Leistungen im Überblick
+						Unsere SEO-Leistungen im Überblick
 					</h2>
 					<div className="space-y-10">
 						{leistungen.map((item, i) => (

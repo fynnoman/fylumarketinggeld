@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/angebote`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/buchen`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/premium`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${baseUrl}/methodik`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/impressum`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/datenschutz`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/agb`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },

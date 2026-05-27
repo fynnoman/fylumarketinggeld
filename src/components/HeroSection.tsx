@@ -1,80 +1,66 @@
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 
 const smoothEase = [0.22, 1, 0.36, 1] as const;
 
+const GLOWS = [
+  // Tallest column glass-top (top-right)
+  { top: '23%', right: '13%', size: 160, minOp: 0.35, maxOp: 0.75, maxScale: 1.25, duration: 3.8, delay: 0 },
+  // Mid-tall column glass-top (center-right)
+  { top: '42%', right: '33%', size: 130, minOp: 0.25, maxOp: 0.6, maxScale: 1.2, duration: 4.5, delay: 0.7 },
+  // Short pillar glass-top (front)
+  { top: '58%', right: '22%', size: 110, minOp: 0.2, maxOp: 0.55, maxScale: 1.18, duration: 5.2, delay: 1.4 },
+];
+
 export default function HeroSection() {
-  const { scrollY } = useScroll();
-  const x = useTransform(scrollY, [0, 600], [0, 80]);
-  const [isMobile, setIsMobile] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
-
-  const imgY = useTransform(scrollY, [0, 600], [0, -50]);
-  const imgScale = useTransform(scrollY, [0, 600], [1, 1.04]);
-
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
-  }, []);
-
-  // Desktop: video loads lazily after 1s to prioritize LCP
-  useEffect(() => {
-    if (isMobile) return;
-    const t = window.setTimeout(() => setShowVideo(true), 1000);
-    return () => window.clearTimeout(t);
-  }, [isMobile]);
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
-      <motion.div
-        className="absolute inset-0 z-0 will-change-transform"
-        style={{ y: imgY, scale: imgScale }}
-        aria-hidden="true"
-      >
-        {isMobile ? (
+      {/* Animated podium background */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute inset-0"
+          animate={{ y: [0, -10, 0], scale: [1, 1.025, 1] }}
+          transition={{ duration: 9, ease: 'easeInOut', repeat: Infinity }}
+        >
           <Image
-            src="/hero-poster.webp"
-            alt="Webdesign aus dem Saarland – Hintergrund"
+            src="/1ec6b235-4a5e-4715-9724-3327085a5ae8.webp"
+            alt=""
             fill
             priority
+            quality={100}
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-right select-none"
+            draggable={false}
           />
-        ) : showVideo ? (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/hero-poster.webp"
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/hero.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <Image
-            src="/hero-poster.webp"
-            alt="Webdesign aus dem Saarland – Hintergrund"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-        )}
-        <div className="absolute inset-0 bg-white/50 md:bg-white/30" />
-      </motion.div>
+        </motion.div>
 
-      <motion.div
-        className="relative z-10 max-w-7xl mx-auto w-full px-5 py-24 md:py-12 md:pr-[65vw] flex items-center will-change-transform"
-        style={{ x: isMobile ? 0 : x }}
-      >
-        <div className="max-w-2xl lg:max-w-xl text-left">
+        {/* Pulsing cyan glows on each glass-top */}
+        {GLOWS.map((g, i) => (
+          <motion.div
+            key={i}
+            className="absolute hidden md:block"
+            style={{ top: g.top, right: g.right, width: g.size, height: g.size }}
+            animate={{
+              opacity: [g.minOp, g.maxOp, g.minOp],
+              scale: [1, g.maxScale, 1],
+            }}
+            transition={{
+              duration: g.duration,
+              ease: 'easeInOut',
+              repeat: Infinity,
+              delay: g.delay,
+            }}
+          >
+            <div className="w-full h-full bg-cyan-400 rounded-full blur-3xl" />
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-5 pt-32 md:pt-40 pb-24 md:pb-16 md:pr-[60vw] flex items-center">
+
+        <div className="max-w-2xl lg:max-w-2xl text-left">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,7 +101,7 @@ export default function HeroSection() {
             </Link>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       {/* SEO-relevanter, visuell integrierter Text */}
       <div className="absolute bottom-6 left-0 right-0 z-10 text-center px-4">

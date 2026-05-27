@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Ich habe keine Zeit mich um eine Website zu kümmern — wie läuft das ab?',
-		a: 'Das ist genau der Punkt: Sie müssen sich um nichts kümmern. Investieren Sie 15 Minuten in ein kurzes Gespräch, sagen Sie mir was Sie machen und was Sie sich wünschen. Den Rest erledige ich. Sie erhalten einen kostenlosen Entwurf innerhalb von 24 Stunden und Ihre fertige Website in 2 bis 3 Wochen.',
+		a: 'Das ist genau der Punkt: Sie müssen sich um nichts kümmern. Investieren Sie 15 Minuten in ein kurzes Gespräch, sagen Sie uns was Sie machen und was Sie sich wünschen. Den Rest erledigen wir. Sie erhalten einen kostenlosen Entwurf innerhalb von 24 Stunden und Ihre fertige Website in 2 bis 3 Wochen.',
 	},
 	{
 		q: 'Was kostet eine Handwerker-Website?',
@@ -20,15 +20,15 @@ const faqs = [
 	},
 	{
 		q: 'Kann ich meine Referenzfotos von Baustellen einbinden?',
-		a: 'Auf jeden Fall! Echte Fotos Ihrer Arbeit sind das beste Verkaufsargument. Ich integriere Ihre Baustellenfotos, Vorher-Nachher-Vergleiche und Referenzprojekte professionell in Ihre Website. Falls die Bildqualität nicht optimal ist, helfe ich bei der Aufbereitung.',
+		a: 'Auf jeden Fall! Echte Fotos Ihrer Arbeit sind das beste Verkaufsargument. Wir integrieren Ihre Baustellenfotos, Vorher-Nachher-Vergleiche und Referenzprojekte professionell in Ihre Website. Falls die Bildqualität nicht optimal ist, helfen wir bei der Aufbereitung.',
 	},
 	{
 		q: 'Kümmern Sie sich auch um Google Maps?',
-		a: 'Ja. Ich richte Ihr Google Business Profil komplett ein oder optimiere es: Beschreibung, Kategorien, Fotos, Öffnungszeiten und Bewertungsmanagement. So erscheinen Sie bei lokalen Suchanfragen auf Google Maps — genau dort, wo Ihre potenziellen Kunden suchen.',
+		a: 'Ja. Wir richten Ihr Google Business Profil komplett ein oder optimieren es: Beschreibung, Kategorien, Fotos, Öffnungszeiten und Bewertungsmanagement. So erscheinen Sie bei lokalen Suchanfragen auf Google Maps — genau dort, wo Ihre potenziellen Kunden suchen.',
 	},
 	{
 		q: 'Was ist wenn ich die Website später ändern will?',
-		a: 'Kein Problem. Kleine Änderungen wie Texte oder Bilder sind schnell erledigt. Auf Wunsch können Sie ein Content-Management-System bekommen, mit dem Sie selbst Inhalte aktualisieren können. Oder ich übernehme Änderungen für Sie — schnell und zu fairen Stundensätzen von 60€ netto.',
+		a: 'Kein Problem. Kleine Änderungen wie Texte oder Bilder sind schnell erledigt. Auf Wunsch können Sie ein Content-Management-System bekommen, mit dem Sie selbst Inhalte aktualisieren können. Oder wir übernehmen Änderungen für Sie — schnell und zu fairen Stundensätzen von 60€ netto.',
 	},
 ];
 
@@ -116,7 +116,7 @@ export default function WebdesignHandwerkPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Sie sind Handwerker und haben keine Zeit, sich um eine Website zu kümmern? Verstehe ich. Genau deshalb nehme ich Ihnen alles ab. In nur 15 Minuten Gespräch verstehe ich Ihren Betrieb — und liefere Ihnen eine fertige Website, die auf Google sichtbar ist, auf dem Smartphone perfekt funktioniert und aus Besuchern zahlende Kunden macht. Kein technisches Wissen nötig. Kein Aufwand für Sie. Nur Ergebnisse. Für Maler, Elektriker, SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und alle anderen Gewerke — ab 990€.
+							Sie sind Handwerker und haben keine Zeit, sich um eine Website zu kümmern? Verstehen wir. Genau deshalb nehmen wir Ihnen alles ab. In nur 15 Minuten Gespräch verstehen wir Ihren Betrieb — und liefern Ihnen eine fertige Website, die auf Google sichtbar ist, auf dem Smartphone perfekt funktioniert und aus Besuchern zahlende Kunden macht. Kein technisches Wissen nötig. Kein Aufwand für Sie. Nur Ergebnisse. Für Maler, Elektriker, SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und alle anderen Gewerke — ab 990€.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
@@ -140,7 +140,7 @@ export default function WebdesignHandwerkPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
 						<p>
-							„Ich bekomme meine Aufträge über Mundpropaganda" — diesen Satz höre ich oft. Und ja, Empfehlungen sind wertvoll. Aber die Zeiten haben sich geändert. Heute googelt der Hausbesitzer „Maler Saarbrücken" bevor er den Nachbarn fragt. Der Mieter sucht „Elektriker Notdienst in meiner Nähe" wenn am Sonntagabend der Strom ausfällt. Und der Bauherr vergleicht drei Dachdecker-Websites bevor er ein Angebot anfordert.
+							„Ich bekomme meine Aufträge über Mundpropaganda" — diesen Satz hören wir oft. Und ja, Empfehlungen sind wertvoll. Aber die Zeiten haben sich geändert. Heute googelt der Hausbesitzer „Maler Saarbrücken" bevor er den Nachbarn fragt. Der Mieter sucht „Elektriker Notdienst in meiner Nähe" wenn am Sonntagabend der Strom ausfällt. Und der Bauherr vergleicht drei Dachdecker-Websites bevor er ein Angebot anfordert.
 						</p>
 						<p>
 							Wenn Sie in diesen Momenten nicht sichtbar sind, geht der Auftrag an Ihren Konkurrenten — an den Handwerker, der eine <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionelle Website</Link> hat und bei Google auf Seite 1 erscheint. Eine gute Handwerker-Website ist kein Luxus mehr. Sie ist genauso wichtig wie Ihr Firmenwagen oder Ihr Werkzeug. Der Unterschied: Sie arbeitet 24 Stunden am Tag, 7 Tage die Woche für Sie — auch wenn Sie gerade auf der Baustelle sind. Und sie kostet weniger als ein neuer Akkuschrauber-Set, bringt aber deutlich mehr Aufträge.
@@ -157,11 +157,11 @@ export default function WebdesignHandwerkPage() {
 					</h2>
 					<div className="space-y-10">
 						{[
-							{ title: 'Sofort sichtbar auf Google Maps', text: 'Local SEO sorgt dafür, dass Ihr Betrieb bei Suchanfragen wie „Elektriker in meiner Nähe" auf Google Maps erscheint. Ich richte Ihr Google Business Profil ein und optimiere es, damit Sie dort auftauchen, wo Ihre Kunden suchen. Erfahren Sie mehr über meine SEO-Leistungen auf der Seite SEO Saarland.' },
-							{ title: 'Mobiloptimiert — weil Kunden vom Handy suchen', text: 'Über 70 Prozent der lokalen Suchanfragen kommen vom Smartphone. Ihre Website muss auf dem Handy genauso gut funktionieren wie auf dem Desktop — schnelle Ladezeiten, große Buttons, klare Struktur. Das ist bei mir Standard.' },
+							{ title: 'Sofort sichtbar auf Google Maps', text: 'Local SEO sorgt dafür, dass Ihr Betrieb bei Suchanfragen wie „Elektriker in meiner Nähe" auf Google Maps erscheint. Wir richten Ihr Google Business Profil ein und optimieren es, damit Sie dort auftauchen, wo Ihre Kunden suchen. Erfahren Sie mehr über unsere SEO-Leistungen auf der Seite SEO Saarland.' },
+							{ title: 'Mobiloptimiert — weil Kunden vom Handy suchen', text: 'Über 70 Prozent der lokalen Suchanfragen kommen vom Smartphone. Ihre Website muss auf dem Handy genauso gut funktionieren wie auf dem Desktop — schnelle Ladezeiten, große Buttons, klare Struktur. Das ist bei uns Standard.' },
 							{ title: 'Klarer Anruf-Button und Kontaktformular', text: 'Wenn ein Kunde Ihre Website besucht, muss er sofort wissen, wie er Sie erreicht. Ein prominenter „Jetzt anrufen"-Button und ein einfaches Kontaktformular sorgen dafür, dass aus Website-Besuchern Anrufer und aus Anrufern Aufträge werden.' },
-							{ title: 'Vertrauensaufbau durch Referenzen und Fotos', text: 'Echte Fotos Ihrer Arbeit überzeugen mehr als jeder Werbetext. Ich integriere Ihre besten Projekte, Vorher-Nachher-Bilder und Kundenbewertungen so in die Website, dass Besucher sofort Vertrauen fassen.' },
-							{ title: 'Schnelle Ladezeit — auch mit 3G auf der Baustelle', text: 'Nichts ist frustrierender als eine langsame Website. Ich optimiere jede Seite auf maximale Geschwindigkeit — unter 3 Sekunden Ladezeit, auch bei schlechter Mobilfunkverbindung. Google belohnt schnelle Seiten mit besseren Rankings.' },
+							{ title: 'Vertrauensaufbau durch Referenzen und Fotos', text: 'Echte Fotos Ihrer Arbeit überzeugen mehr als jeder Werbetext. Wir integrieren Ihre besten Projekte, Vorher-Nachher-Bilder und Kundenbewertungen so in die Website, dass Besucher sofort Vertrauen fassen.' },
+							{ title: 'Schnelle Ladezeit — auch mit 3G auf der Baustelle', text: 'Nichts ist frustrierender als eine langsame Website. Wir optimieren jede Seite auf maximale Geschwindigkeit — unter 3 Sekunden Ladezeit, auch bei schlechter Mobilfunkverbindung. Google belohnt schnelle Seiten mit besseren Rankings.' },
 						].map((item, i) => (
 							<div key={i}>
 								<h3 className="text-xl font-bold text-stone-900 mb-3">{item.title}</h3>
@@ -205,15 +205,15 @@ export default function WebdesignHandwerkPage() {
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none mb-8">
 						<p>
-							Der Prozess ist so einfach wie möglich gestaltet — weil ich weiß, dass Handwerker keine Zeit zu verschenken haben. Sie investieren nur 15 Minuten Ihrer Zeit.
+							Der Prozess ist so einfach wie möglich gestaltet — weil wir wissen, dass Handwerker keine Zeit zu verschenken haben. Sie investieren nur 15 Minuten Ihrer Zeit.
 						</p>
 					</div>
 					<div className="space-y-8">
 						{[
-							{ title: 'Kurzes Gespräch (15 Min.)', text: 'Erzählen Sie mir kurz, was Sie machen, wer Ihre Kunden sind und was Sie sich wünschen. Das reicht mir als Basis.' },
+							{ title: 'Kurzes Gespräch (15 Min.)', text: 'Erzählen Sie uns kurz, was Sie machen, wer Ihre Kunden sind und was Sie sich wünschen. Das reicht uns als Basis.' },
 							{ title: 'Kostenloser Entwurf in 24h', text: 'Innerhalb eines Tages sehen Sie, wie Ihre neue Website aussehen könnte. Kostenlos, unverbindlich, ohne Haken.' },
-							{ title: 'Feedback & Anpassung', text: 'Sagen Sie mir was gefällt und was geändert werden soll. Ich passe alles an bis es perfekt sitzt.' },
-							{ title: 'Website geht live', text: 'Ihre fertige Website geht online. Ich kümmere mich um Domain, Hosting und alles Technische. Sie lehnen sich zurück und freuen sich über neue Anfragen.' },
+							{ title: 'Feedback & Anpassung', text: 'Sagen Sie uns was gefällt und was geändert werden soll. Wir passen alles an bis es perfekt sitzt.' },
+							{ title: 'Website geht live', text: 'Ihre fertige Website geht online. Wir kümmern uns um Domain, Hosting und alles Technische. Sie lehnen sich zurück und freuen sich über neue Anfragen.' },
 						].map((step, i) => (
 							<div key={i} className="relative pl-12">
 								<div className="absolute left-0 top-1 w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{i + 1}</div>

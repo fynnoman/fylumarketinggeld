@@ -231,6 +231,376 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "zahnarzt",
+    h1: "Website für Zahnärzte im Saarland",
+    metaTitle: "Website für Zahnarzt Saarland | Mehr Neupatienten online | Fylu",
+    metaDescription:
+      "Zahnarzt-Websites speziell für das Saarland: seriöses Design, Online-Termin, lokale SEO. Mehr qualifizierte Neupatienten in Saarbrücken, Saarlouis und Co.",
+    intro:
+      `Neupatienten googeln heute zuerst „Zahnarzt Saarbrücken" oder „Implantologe Saarlouis" – bevor sie überhaupt anrufen. Wer auf Seite 2 landet oder eine veraltete Website hat, verliert genau diese Patienten an die nächstgelegene Praxis.`,
+    sections: [
+      {
+        title: "Vertrauen ab der ersten Sekunde",
+        text: "Eine Zahnarzt-Website hat genau 5 Sekunden, um Vertrauen aufzubauen. Wir entwickeln modernes, ruhiges Design mit klarem Leistungs-Fokus, Team-Vorstellung, Behandlungs-Beschreibungen und seriöser Bildsprache – ohne übertriebene Werbe-Tonalität.",
+      },
+      {
+        title: "Online-Termin & DSGVO-konformer Kontakt",
+        text: "Patienten wollen heute online buchen. Wir integrieren entweder ein eigenes sicheres Formular oder gängige Tools wie Doctolib, jameda oder samedi – immer DSGVO-konform und barrierearm.",
+      },
+      {
+        title: "Lokale SEO für Zahnarzt-Suchanfragen",
+        text: `Optimiert für Suchbegriffe wie „Zahnarzt Saarbrücken Notdienst", „Kieferorthopäde Saarlouis", „Implantate Homburg" oder „Bleaching Merzig". Inkl. Google-Unternehmensprofil-Setup und Strategie für mehr 5-Sterne-Bewertungen.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Welche Online-Termin-Systeme können integriert werden?",
+        a: "Wir integrieren gängige Systeme wie Doctolib, jameda, samedi oder Dampsoft Online – alternativ auch ein eigenes sicheres Formular ohne Drittanbieter-Provision.",
+      },
+      {
+        q: "Ist die Website rechtssicher (HWG, Berufsordnung)?",
+        a: "Ja. Wir achten auf HWG-konforme Bildsprache, korrekte Berufsbezeichnungen und vollständige Pflichtangaben. Optional Review-Strategie nach den Regeln der jeweiligen Ärztekammer.",
+      },
+      {
+        q: "Wie schnell ist meine Praxis-Website live?",
+        a: "Standard 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Design typischerweise 4–6 Wochen.",
+      },
+    ],
+  },
+  {
+    slug: "anwalt",
+    h1: "Website für Anwälte & Kanzleien im Saarland",
+    metaTitle: "Website für Anwalt Saarland | Mehr Mandanten online | Fylu",
+    metaDescription:
+      "Anwalts- und Kanzlei-Websites im Saarland: seriös, fachgebietsorientiert, mit lokaler SEO. Mehr qualifizierte Mandantenanfragen in Saarbrücken, Saarlouis und ganz Saarland.",
+    intro:
+      `Mandanten googeln heute spezifisch nach „Anwalt Familienrecht Saarbrücken" oder „Fachanwalt Arbeitsrecht Saarlouis". Wer dort nicht oben rankt, wird übersehen – egal wie groß die Reputation ist.`,
+    sections: [
+      {
+        title: "Seriöses Design mit klarer Spezialisierung",
+        text: "Wir entwickeln Kanzlei-Websites, die Kompetenz, Diskretion und Erreichbarkeit innerhalb von Sekunden vermitteln. Pro Fachgebiet eine eigene Seite – inkl. Beispielfälle, FAQ und Honorarmodell-Transparenz.",
+      },
+      {
+        title: "Lokale Mandanten gewinnen",
+        text: "Optimierung für relevante Suchbegriffe – nach Fachgebiet, Stadt und Spezialisierung. Inklusive Google-Unternehmensprofil, Schema.org für rechtliche Dienstleister und sauberer Linkstruktur.",
+      },
+      {
+        title: "BRAO-konform & DSGVO-sicher",
+        text: "Wir achten auf BRAO-konforme Außenwerbung, korrekte Pflichtangaben und vollständige rechtliche Hinweise. DSGVO-konforme Kontaktformulare, Cookie-Banner und Hosting in Deutschland gehören zum Standard.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Ist die Website BRAO-konform?",
+        a: "Ja. Wir achten auf alle berufsrechtlichen Anforderungen für anwaltliche Außendarstellung – inkl. korrekter Fachanwaltsbezeichnungen, Pflichtangaben und sachlicher Tonalität.",
+      },
+      {
+        q: "Können Sie ein Mandantenportal integrieren?",
+        a: "Ja, sichere Mandantenbereiche mit Datei-Upload, E-Akte-Anbindung und verschlüsselter Kommunikation lassen sich integrieren.",
+      },
+      {
+        q: "Wie funktioniert SEO für Anwaltskanzleien?",
+        a: `Wir optimieren pro Fachgebiet und Standort – z.B. „Fachanwalt Arbeitsrecht Saarbrücken". Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
+      },
+    ],
+  },
+  {
+    slug: "immobilienmakler",
+    h1: "Website für Immobilienmakler im Saarland",
+    metaTitle: "Website für Immobilienmakler Saarland | Mehr Verkäufe & Leads | Fylu",
+    metaDescription:
+      "Immobilienmakler-Websites im Saarland: Premium-Design, Objekt-Präsentation, Lead-Generierung. Mehr Eigentümer-Anfragen und Käufer-Leads.",
+    intro:
+      "Immobilienmakler verdienen ihr Geld zweimal: einmal beim Eigentümer (Auftrag) und einmal beim Käufer (Provision). Eine starke Website muss beide Zielgruppen gleichzeitig überzeugen – und das mit einem einzigen Auftritt.",
+    sections: [
+      {
+        title: "Premium-Objektpräsentation",
+        text: "Hochwertige Objektseiten mit Bildergalerie, Grundriss, 360°-Tour-Integration, Lageinformationen und direktem Anfrageformular. Jedes Objekt wird zur eigenen kleinen Verkaufsseite.",
+      },
+      {
+        title: "Eigentümer-Lead-Magnet",
+        text: "Eigentümer suchen seriöse Makler über Google. Wir bauen einen eigenen Lead-Funnel: kostenlose Online-Bewertung, regionale Marktberichte, klare Service-Beschreibung und vertrauensbildende Referenzen.",
+      },
+      {
+        title: "Lokale SEO für Verkaufsstandorte",
+        text: `Optimierung für Suchbegriffe wie „Haus verkaufen Saarbrücken", „Immobilienmakler Saarlouis", „Wohnung kaufen Homburg". Inkl. Google-Unternehmensprofil und Bewertungsstrategie.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Können Sie meine Objekte automatisch importieren?",
+        a: "Ja, wir integrieren Schnittstellen zu OpenImmo, ImmoScout24 und vergleichbaren Anbietern. Neue Objekte landen automatisch auf Ihrer Website.",
+      },
+      {
+        q: "Kann ich eine Online-Immobilienbewertung anbieten?",
+        a: "Ja. Wir integrieren entweder eine eigene Bewertungslogik oder Drittanbieter-Tools – als Lead-Magnet für Eigentümer-Akquise.",
+      },
+      {
+        q: "Wie messen wir den Erfolg?",
+        a: "Über klar definierte KPIs: Anzahl qualifizierter Eigentümer-Anfragen, Käufer-Leads pro Objekt, Verweildauer auf Objektseiten und Conversion-Rate. Monatliche Reports inklusive.",
+      },
+    ],
+  },
+  {
+    slug: "arzt",
+    h1: "Website für Arztpraxen im Saarland",
+    metaTitle: "Website für Arztpraxis Saarland | Online-Termin & SEO | Fylu",
+    metaDescription:
+      "Arztpraxis-Websites im Saarland: seriöses Design, Online-Termin, barrierearm, DSGVO-konform. Mehr Patientenanfragen in Saarbrücken, Saarlouis und ganz Saarland.",
+    intro:
+      "Patienten suchen heute zuerst online nach Ärzten – auch wenn sie schon einen Termin haben. Eine veraltete Praxis-Website kostet Sie Vertrauen, Neupatienten und im Zweifel auch bestehende Patienten.",
+    sections: [
+      {
+        title: "Patientenzentriertes Design",
+        text: "Klare Strukturen für Sprechzeiten, Leistungen, Team und Anfahrt. Große Schriften, hoher Kontrast, barrierearme Navigation. Mobile-first, weil über 70 % der Patienten zuerst aufs Smartphone schauen.",
+      },
+      {
+        title: "Online-Terminvergabe & Patientenkommunikation",
+        text: "Integration von Doctolib, jameda, samedi oder eigenes sicheres Formular. Auf Wunsch mit Patientenformular, Anamnese-Vorab-Erfassung und sicherer Kommunikation für Befunde.",
+      },
+      {
+        title: "Lokale SEO & Google Business",
+        text: `Optimierung für „Hausarzt Saarbrücken", „Kardiologe Saarlouis", „Dermatologe Homburg" und vergleichbare Suchbegriffe. Inkl. professionellem Google-Unternehmensprofil mit Fotos, Sprechzeiten und Review-Strategie.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Ist die Website DSGVO- und HWG-konform?",
+        a: "Ja. Wir achten auf alle medizinrechtlichen Vorgaben: HWG-konforme Sprache, vollständige Pflichtangaben, sichere Formulare, deutsches Hosting und transparente Datenschutzhinweise.",
+      },
+      {
+        q: "Kann ich Patientenformulare digital ausfüllen lassen?",
+        a: "Ja. Wir integrieren digitale Anamnese-Bögen, Datenschutzformulare und Erstkontakt-Fragebögen – sicher, schnell und papierlos.",
+      },
+      {
+        q: "Wie lange dauert die Erstellung?",
+        a: "Typischerweise 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Konzept 4–6 Wochen.",
+      },
+    ],
+  },
+  {
+    slug: "friseur",
+    h1: "Website für Friseure im Saarland",
+    metaTitle: "Website für Friseur Saarland | Mehr Kunden & Termine | Fylu",
+    metaDescription:
+      "Friseur- und Salon-Websites im Saarland: Premium-Design, Online-Termin, Galerie, lokale SEO. Mehr Stammkunden und Neukunden in Saarbrücken, Saarlouis und ganz Saarland.",
+    intro:
+      "Friseure und Stylisten leben von Sichtbarkeit, Stil und Buchung. Ihre Website muss in 5 Sekunden klarmachen: Hier bin ich richtig, hier sieht es gut aus, hier kann ich direkt einen Termin machen.",
+    sections: [
+      {
+        title: "Visuelle Inszenierung mit Stil",
+        text: "Hochwertige Galerie mit Vorher/Nachher, Team-Vorstellung mit Persönlichkeit, Service-Übersicht mit Preisen. Klar, premium, modern – ohne Klischee-Bildwelt.",
+      },
+      {
+        title: "Online-Terminbuchung ohne Provision",
+        text: "Integration von Treatwell, Shore oder eigenes Buchungssystem ohne Drittanbieter-Provision. Termine landen direkt in Ihrem Kalender. Kein Anruf-Pingpong mehr.",
+      },
+      {
+        title: "Lokale Sichtbarkeit & Bewertungen",
+        text: `Optimierung für „Friseur Saarbrücken", „Balayage Saarlouis", „Männerhaarschnitt Homburg" und vergleichbare Suchbegriffe. Inkl. Google-Unternehmensprofil mit Fotos, Stories und Review-Strategie.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Welche Buchungssysteme können integriert werden?",
+        a: "Treatwell, Shore, Booksy, Resmio oder eigenes Buchungsformular – immer ohne versteckte Drittanbieter-Provision.",
+      },
+      {
+        q: "Bekomme ich auch Instagram-Anbindung?",
+        a: "Ja. Wir binden Ihren Instagram-Feed automatisch ein – damit Ihre Website immer aktuelle Stylings zeigt, ohne dass Sie doppelt posten müssen.",
+      },
+      {
+        q: "Wie kann ich neue Kunden gezielt gewinnen?",
+        a: "Über lokale SEO, optimiertes Google-Profil und auf Wunsch Google-Ads-Kampagnen mit klar definiertem Budget pro Neukunde.",
+      },
+    ],
+  },
+  {
+    slug: "hotel",
+    h1: "Website für Hotels & Pensionen im Saarland",
+    metaTitle: "Website für Hotel Saarland | Direktbuchungen & SEO | Fylu",
+    metaDescription:
+      "Hotel- und Pension-Websites im Saarland: Direktbuchungen ohne Provision, Premium-Bilder, lokale SEO. Mehr Gäste in Saarbrücken, an der Saarschleife, im Bostalsee-Umfeld.",
+    intro:
+      "Jede Buchung über booking.com oder Expedia kostet 15–25 % Provision. Eine starke eigene Website holt Gäste direkt zu Ihnen – und macht aus der Provisions-Falle einen messbaren Profithebel.",
+    sections: [
+      {
+        title: "Direktbuchung ohne Provisionsfalle",
+        text: "Eigene Buchungs-Engine direkt auf der Website integriert. Gäste buchen direkt, Sie sparen die OTA-Provision. Bei 100 Buchungen pro Jahr á 200 € sind das schnell 4.000 € Mehrertrag.",
+      },
+      {
+        title: "Premium-Inszenierung",
+        text: "Hochwertige Bildwelten, 360°-Touren, atmosphärische Beschreibungen, Region-Storytelling. Mit klarem Fokus auf das, was Saarland-Gäste suchen: Saarschleife, Bostalsee, Völklinger Hütte, Weinregion.",
+      },
+      {
+        title: "Lokale & touristische SEO",
+        text: `Optimierung für „Hotel Saarbrücken", „Wellnesshotel Bostalsee", „Pension Saarschleife", saisonale Begriffe und Anreise-Routen. Inkl. Google-Profil mit aktuellen Bildern, Bewertungs-Pflege und Story-Inhalten.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Welche Buchungssysteme können integriert werden?",
+        a: "Mews, Cultuzz, hotline, Booking.com Channel Manager, Sirvoy oder eine eigene Buchungslogik – je nach Größe und Anforderungen.",
+      },
+      {
+        q: "Kann ich saisonale Pakete anbieten?",
+        a: "Ja. Wir bauen eine flexible Pakete-Logik mit Saison-Triggern, Aktionen, Frühbucher-Rabatten und Last-Minute-Angeboten.",
+      },
+      {
+        q: "Was passiert mit meinen bestehenden OTA-Buchungen?",
+        a: "Die laufen weiter – wir senken nur Ihren Abhängigkeitsgrad. Ziel: 30–50 % Direktbuchungen statt 100 % OTA.",
+      },
+    ],
+  },
+  {
+    slug: "autohaus",
+    h1: "Website für Autohäuser im Saarland",
+    metaTitle: "Website für Autohaus Saarland | Mehr Werkstatt- & Verkaufs-Leads | Fylu",
+    metaDescription:
+      "Autohaus-Websites im Saarland: Fahrzeugbestand, Werkstatt-Termin, Inzahlungnahme-Rechner, lokale SEO. Mehr Verkaufs- und Werkstatt-Leads in Saarbrücken, Saarlouis und ganz Saarland.",
+    intro:
+      "Autokäufer recherchieren heute zu 95 % online, bevor sie das erste Mal das Autohaus betreten. Wer dort nicht sichtbar ist, verliert Käufer an Online-Plattformen und Mitbewerber – noch bevor das Verkaufsgespräch überhaupt stattfindet.",
+    sections: [
+      {
+        title: "Fahrzeugbestand mit Conversion-Fokus",
+        text: "Live-Bestand mit hochwertigen Bildern, Filterfunktionen, Probefahrt-Anfrage, Finanzierungsrechner und Inzahlungnahme-Modul. Jedes Fahrzeug wird zur eigenen Verkaufsseite.",
+      },
+      {
+        title: "Werkstatt-Online-Termin",
+        text: "Werkstatt-Auslastung steigern: Online-Terminbuchung für Inspektion, TÜV, Reifenwechsel, Klima-Service. Direkter Sync mit Ihrem Werkstatt-Kalender.",
+      },
+      {
+        title: "Lokale SEO & Marken-SEO",
+        text: `Optimierung sowohl für „Autohaus Saarbrücken" als auch für markenspezifische Suchen wie „BMW Saarlouis", „Werkstatt Audi Homburg" oder „Reifen wechseln Saarbrücken".`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Können Sie meinen Fahrzeugbestand automatisch synchronisieren?",
+        a: "Ja, wir integrieren Schnittstellen zu DAT, mobile.de, AutoScout24 und herstellereigenen Systemen – Bestand updated sich automatisch.",
+      },
+      {
+        q: "Kann ich einen Finanzierungs- oder Leasingrechner einbauen?",
+        a: "Ja, sowohl eigene Rechner als auch Schnittstellen zu Santander, Hyundai Finance, BMW Bank und vergleichbaren Anbietern.",
+      },
+      {
+        q: "Wie generieren Sie Werkstatt-Termine?",
+        a: "Über Online-Buchungssystem, Erinnerungs-E-Mails an Bestandskunden und gezielte Google-Ads-Kampagnen für lokale Service-Suchbegriffe.",
+      },
+    ],
+  },
+  {
+    slug: "elektriker",
+    h1: "Website für Elektriker im Saarland",
+    metaTitle: "Website für Elektriker Saarland | Mehr Aufträge online | Fylu",
+    metaDescription:
+      "Elektriker- und Elektroinstallateur-Websites im Saarland: Notdienst-Anfrage, Photovoltaik-Lead-Magnet, lokale SEO. Mehr private und gewerbliche Aufträge.",
+    intro:
+      "Elektriker sind in der besten Marktlage seit Jahrzehnten – Photovoltaik, E-Mobilität, Wärmepumpen, Smart Home. Doch wer online nicht sichtbar ist, bekommt nur die alten Empfehlungs-Aufträge ab, nicht die neuen, gut zahlenden Premium-Anfragen.",
+    sections: [
+      {
+        title: "Photovoltaik- & Wärmepumpen-Lead-Generator",
+        text: "Eigene Landingpages für Photovoltaik-Anfragen, Wallbox-Installation, Wärmepumpen-Anschluss und Energieberatung. Lead-Magneten mit kostenloser Erstberatung als Conversion-Booster.",
+      },
+      {
+        title: "24/7-Notdienst online buchbar",
+        text: "Notdienst-Anfragen direkt über die Website mit klarer Erreichbarkeitsangabe, automatischer Weiterleitung an Ihr Handy und transparenter Notdienst-Preisstruktur.",
+      },
+      {
+        title: "Lokale SEO für Elektro-Suchen",
+        text: `Optimierung für „Elektriker Saarbrücken", „PV-Anlage Saarlouis", „Wallbox installieren Homburg" und vergleichbare Suchbegriffe. Plus Schema.org für Notdienst, Öffnungszeiten und Servicegebiete.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Kann ich Photovoltaik-Anfragen filtern?",
+        a: "Ja. Wir bauen eine Vor-Qualifikations-Logik (Dachfläche, Verbrauch, Standort) – Sie bekommen nur ernsthafte Anfragen mit ausreichendem Projektvolumen.",
+      },
+      {
+        q: "Wie funktioniert die Notdienst-Anfrage?",
+        a: "Anfragen werden direkt an Ihr Handy weitergeleitet (SMS + E-Mail). Auf Wunsch mit automatischer Bestätigung an den Kunden und Anfahrtszeit-Indikation.",
+      },
+      {
+        q: "Lohnt sich Google Ads für mein Gewerk?",
+        a: "Für Photovoltaik, Wärmepumpen und E-Mobilität: definitiv ja. Auftragswerte sind hoch (5.000–30.000 €), Werbe-Kosten amortisieren sich oft mit dem ersten Lead.",
+      },
+    ],
+  },
+  {
+    slug: "heizungsbauer",
+    h1: "Website für Heizungsbauer & SHK im Saarland",
+    metaTitle: "Website für Heizungsbauer Saarland | Wärmepumpe & Heizung | Fylu",
+    metaDescription:
+      "Heizungsbauer- und SHK-Websites im Saarland: Wärmepumpen-Anfragen, Heizung tauschen, Förderberatung, lokale SEO. Mehr qualifizierte Privat- und Gewerbeanfragen.",
+    intro:
+      "SHK-Betriebe haben aktuell die höchste Nachfrage seit Jahrzehnten – Wärmepumpen, Heizungstausch, Bad-Sanierung, Förderberatung. Das Problem: Die meisten Betriebe arbeiten am Limit und nehmen die falschen Aufträge an. Eine kluge Website filtert: nur noch profitable Anfragen kommen rein.",
+    sections: [
+      {
+        title: "Wärmepumpen- & Heizungs-Konfigurator",
+        text: "Online-Konfigurator für Wärmepumpe (Gebäudegröße, Bestandsheizung, Wärmebedarf), Heizungstausch und Bad-Sanierung. Qualifizierte Anfragen mit Vor-Daten – kein Cold-Call-Aufwand mehr.",
+      },
+      {
+        title: "Förderberatung als Lead-Magnet",
+        text: "Eigene Seite zur BEG-Förderung, KfW-Zuschüssen und steuerlichen Vorteilen. Kunden suchen gezielt danach – Sie werden gefunden, bevor die Konkurrenz auch nur Atem holt.",
+      },
+      {
+        title: "Lokale SEO für SHK-Suchanfragen",
+        text: `Optimierung für „Heizungsbauer Saarbrücken", „Wärmepumpe Saarlouis", „Bad sanieren Homburg" und vergleichbare hochpreisige Suchbegriffe. Inkl. Schema.org für lokale Dienstleister.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Wie qualifiziert sind die Online-Anfragen?",
+        a: "Mit Vor-Qualifikations-Logik (Gebäudegröße, Heizungsalter, Budget-Indikation) bekommen Sie zu 80 % ernsthafte Anfragen mit echtem Projektpotenzial.",
+      },
+      {
+        q: "Können Sie eine Online-Förderberatung anbieten?",
+        a: "Ja. Eigene Seiten zu BEG, KfW 458, KfW 261 und steuerlichen Vorteilen – als Conversion-Magneten für Eigentümer in Entscheidungsphase.",
+      },
+      {
+        q: "Lohnt sich Google Ads bei voller Auftragslage?",
+        a: "Ja – aber gezielt: nur für die hochpreisigsten Leistungen (Wärmepumpen, große Sanierungen, Premium-Bäder). So filtern Sie über die Werbung gleich auf profitable Aufträge.",
+      },
+    ],
+  },
+  {
+    slug: "maler",
+    h1: "Website für Maler & Lackierer im Saarland",
+    metaTitle: "Website für Maler Saarland | Mehr Aufträge online | Fylu",
+    metaDescription:
+      "Maler- und Lackierer-Websites im Saarland: Vorher/Nachher-Galerie, Online-Anfrage, lokale SEO. Mehr Aufträge für Innen, Außen und Fassade.",
+    intro:
+      "Maler-Aufträge entscheiden sich heute online. Wer eine moderne Website mit Vorher/Nachher-Bildern, klarer Leistungsübersicht und einfacher Anfrage hat, gewinnt Aufträge, die früher per Empfehlung kamen – und ist nicht mehr von Schwankungen abhängig.",
+    sections: [
+      {
+        title: "Premium-Galerie mit Vorher/Nachher",
+        text: "Bildgewaltige Projekt-Galerie mit Filter nach Innen, Außen, Fassade, Spezialanstrich. Vorher/Nachher als emotionaler Verkaufshebel. Direkt-Anfrage-Button auf jedem Projekt.",
+      },
+      {
+        title: "Online-Anfrage mit Vor-Kalkulation",
+        text: "Anfrageformular mit Bauteil-Auswahl (Wohnzimmer, Fassade, Treppenhaus), Quadratmeter-Schätzung und Bildupload. Sie bekommen vorqualifizierte Anfragen mit allen relevanten Daten.",
+      },
+      {
+        title: "Lokale SEO für Maler-Suchen",
+        text: `Optimierung für „Maler Saarbrücken", „Fassade streichen Saarlouis", „Wohnung renovieren Homburg" und ähnliche Suchbegriffe. Inkl. Google-Unternehmensprofil mit aktuellen Projektbildern.`,
+      },
+    ],
+    faqs: [
+      {
+        q: "Wie bekomme ich gute Bilder ohne Aufwand?",
+        a: "Auf Wunsch organisieren wir ein professionelles Foto-Shooting Ihrer schönsten Projekte – einmalig, langfristig nutzbar. Oder wir bringen Ihre vorhandenen Handy-Fotos auf Web-Qualität.",
+      },
+      {
+        q: "Lohnt sich SEO oder Google Ads für mein Gewerk?",
+        a: "Beides. SEO bringt langfristig kostenlose Anfragen, Google Ads liefert sofort. Empfehlung: Start mit beidem parallel, dann nach 6 Monaten Ads zurückfahren.",
+      },
+      {
+        q: "Kann ich Saisonangebote einbauen?",
+        a: `Ja. Z.B. „Frühjahrsaktion Fassade", „Renovierung in der Nebensaison günstiger" – als Conversion-Booster zu schwachen Jahreszeiten.`,
+      },
+    ],
+  },
 ];
 
 export function getTopicBySlug(slug: string): Topic | undefined {

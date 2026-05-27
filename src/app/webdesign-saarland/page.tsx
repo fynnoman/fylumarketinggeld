@@ -20,22 +20,22 @@ const faqs = [
 	},
 	{
 		q: 'Werde ich damit bei Google gefunden?',
-		a: 'Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Für erweiterte Sichtbarkeit biete ich zusätzlich professionelle SEO-Betreuung an.',
+		a: 'Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Für erweiterte Sichtbarkeit bieten wir zusätzlich professionelle SEO-Betreuung an.',
 	},
 	{
 		q: 'Was passiert nach dem Launch?',
-		a: 'Nach dem Launch lasse ich Sie nicht allein. Je nach Paket erhalten Sie 2 bis 4 Monate Hosting inklusive. Darüber hinaus stehe ich Ihnen für Änderungen, Updates und Support zur Verfügung.',
+		a: 'Nach dem Launch lassen wir Sie nicht allein. Je nach Paket erhalten Sie 2 bis 4 Monate Hosting inklusive. Darüber hinaus stehen wir Ihnen für Änderungen, Updates und Support zur Verfügung.',
 	},
 	{
 		q: 'Kann ich die Website selbst bearbeiten?',
-		a: 'Auf Wunsch richte ich ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehme ich Änderungen für Sie — schnell und unkompliziert.',
+		a: 'Auf Wunsch richten wir ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie — schnell und unkompliziert.',
 	},
 ];
 
 const steps = [
 	{
 		title: 'Erstgespräch',
-		text: 'In einem kurzen, kostenlosen Gespräch lernen wir uns kennen. Ich verstehe Ihr Geschäft, Ihre Ziele und Ihre Wünsche. Kein Verkaufsdruck — nur ehrliche Beratung.',
+		text: 'In einem kurzen, kostenlosen Gespräch lernen wir uns kennen. Wir verstehen Ihr Geschäft, Ihre Ziele und Ihre Wünsche. Kein Verkaufsdruck — nur ehrliche Beratung.',
 	},
 	{
 		title: 'Kostenloser Entwurf in 24h',
@@ -43,15 +43,15 @@ const steps = [
 	},
 	{
 		title: 'Design & Entwicklung',
-		text: 'Nach Ihrem Feedback baue ich Ihre Website mit modernster Technik. Jede Seite wird für maximale Geschwindigkeit, Suchmaschinenoptimierung und Conversion optimiert.',
+		text: 'Nach Ihrem Feedback bauen wir Ihre Website mit modernster Technik. Jede Seite wird für maximale Geschwindigkeit, Suchmaschinenoptimierung und Conversion optimiert.',
 	},
 	{
 		title: 'SEO-Optimierung',
-		text: 'Bevor Ihre Website live geht, optimiere ich sie für Google: Keyword-Integration, technisches SEO, Meta-Tags, Ladezeit-Optimierung und Google Business Einrichtung.',
+		text: 'Bevor Ihre Website live geht, optimieren wir sie für Google: Keyword-Integration, technisches SEO, Meta-Tags, Ladezeit-Optimierung und Google Business Einrichtung.',
 	},
 	{
 		title: 'Launch & Support',
-		text: 'Ihre Website geht live und ich bleibe Ihr Ansprechpartner. Hosting, Updates und Änderungen — alles aus einer Hand, ohne Agentur-Overhead.',
+		text: 'Ihre Website geht live und wir bleiben Ihr Ansprechpartner. Hosting, Updates und Änderungen — alles aus einer Hand, ohne Agentur-Overhead.',
 	},
 ];
 
@@ -133,7 +133,7 @@ export default function WebdesignSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesigner aus Saarlouis erstelle ich professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Mein Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — ich verstehe die Bedürfnisse lokaler Unternehmen und baue Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
+							Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesign-Studio aus Saarlouis entwickeln wir professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Unser Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — wir verstehen die Bedürfnisse lokaler Unternehmen und bauen Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
@@ -170,7 +170,7 @@ export default function WebdesignSaarlandPage() {
 			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Mein Webdesign-Prozess — Von der Idee zur fertigen Website
+						Unser Webdesign-Prozess — Von der Idee zur fertigen Website
 					</h2>
 					<div className="space-y-10">
 						{steps.map((step, i) => (
@@ -186,18 +186,18 @@ export default function WebdesignSaarlandPage() {
 				</div>
 			</section>
 
-			{/* Was meine Websites anders macht */}
+			{/* Was unsere Websites anders macht */}
 			<section className="py-20 md:py-28 px-6 bg-stone-50">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						Was meine Websites anders macht
+						Was unsere Websites anders macht
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Bei mir bekommen Sie keine Massenware. Als einzelner Webdesigner widme ich mich jedem Projekt mit voller Aufmerksamkeit — das merken meine Kunden. Jede Website wird von Grund auf für Ihr Unternehmen konzipiert, nicht aus einem Template zusammengeklickt. Mobile-first ist bei mir Standard, nicht optional. Jede Seite wird zuerst für Smartphones gestaltet und dann für größere Bildschirme erweitert. Das Ergebnis: Perfekte Darstellung auf allen Geräten und bessere Google-Rankings.
+							Bei uns bekommen Sie keine Massenware. Als Boutique-Studio widmen wir uns jedem Projekt mit voller Aufmerksamkeit — das merken unsere Kunden. Jede Website wird von Grund auf für Ihr Unternehmen konzipiert, nicht aus einem Template zusammengeklickt. Mobile-first ist bei uns Standard, nicht optional. Jede Seite wird zuerst für Smartphones gestaltet und dann für größere Bildschirme erweitert. Das Ergebnis: Perfekte Darstellung auf allen Geräten und bessere Google-Rankings.
 						</p>
 						<p>
-							<Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei mir kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit biete ich auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen persönlichen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben mir, ich antworte. So einfach ist das. Meine Preise sind fair und transparent — ab 990€ für eine professionelle Website, die tatsächlich Kunden bringt.
+							<Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei uns kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit bieten wir auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen festen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben uns, wir antworten. So einfach ist das. Unsere Preise sind fair und transparent — ab 990€ für eine professionelle Website, die tatsächlich Kunden bringt.
 						</p>
 					</div>
 				</div>

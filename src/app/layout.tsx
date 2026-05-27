@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import HiddenTaskeyLink from "@/components/HiddenTaskeyLink";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const inter = Inter({
@@ -113,6 +114,55 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Fylu – Webdesign & SEO Saarland",
+              url: "https://www.fylumarketing.de",
+              inLanguage: "de-DE",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.fylumarketing.de/?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Fylu",
+              alternateName: "Fylu Marketing",
+              url: "https://www.fylumarketing.de",
+              logo: "https://www.fylumarketing.de/logo-fylu.webp",
+              founder: {
+                "@type": "Person",
+                name: "Fynn Schulz",
+                jobTitle: "Inhaber & Strategie",
+                worksFor: { "@type": "Organization", name: "Fylu" },
+              },
+              foundingLocation: { "@type": "Place", name: "Saarlouis, Saarland, Deutschland" },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+4915168488999",
+                contactType: "customer service",
+                email: "kontakt@fylumarketing.de",
+                areaServed: ["DE"],
+                availableLanguage: ["de", "en"],
+              },
+              sameAs: [],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
               "@type": "FAQPage",
               mainEntity: [
                 {
@@ -156,6 +206,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <HiddenTaskeyLink />
+        <WhatsAppButton />
       </body>
     </html>
   );

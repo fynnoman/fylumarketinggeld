@@ -51,6 +51,8 @@ export default function Footer() {
               <li><Link href="/google-ads-saarland" className="hover:text-cyan-400 transition-colors">Google Ads Saarland</Link></li>
               <li><Link href="/website-erstellen-lassen" className="hover:text-cyan-400 transition-colors">Website erstellen lassen</Link></li>
               <li><Link href="/webdesign-handwerk" className="hover:text-cyan-400 transition-colors">Webdesign Handwerk</Link></li>
+              <li><Link href="/premium" className="hover:text-cyan-400 transition-colors">Premium-Pakete</Link></li>
+              <li><Link href="/methodik" className="hover:text-cyan-400 transition-colors">Unsere Methodik</Link></li>
               <li><Link href="/angebote" className="hover:text-cyan-400 transition-colors">Alle Angebote</Link></li>
             </ul>
           </div>

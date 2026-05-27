@@ -24,11 +24,11 @@ const faqs = [
 	},
 	{
 		q: 'Was passiert wenn ich Google Ads stoppe?',
-		a: 'Sobald Sie die Kampagnen pausieren, erscheinen keine Anzeigen mehr und Sie erhalten keine Klicks. Deshalb empfehle ich parallel immer auch SEO aufzubauen — so haben Sie ein Sicherheitsnetz, wenn Sie Ihr Ads-Budget reduzieren möchten.',
+		a: 'Sobald Sie die Kampagnen pausieren, erscheinen keine Anzeigen mehr und Sie erhalten keine Klicks. Deshalb empfehlen wir parallel immer auch SEO aufzubauen — so haben Sie ein Sicherheitsnetz, wenn Sie Ihr Ads-Budget reduzieren möchten.',
 	},
 	{
 		q: 'Für welche Branchen funktioniert Google Ads im Saarland?',
-		a: 'Google Ads funktioniert für praktisch jede lokale Branche: Handwerker, Ärzte, Anwälte, Restaurants, Immobilienmakler, Fitnessstudios, Autohäuser und viele mehr. Entscheidend ist, dass potenzielle Kunden aktiv nach Ihrem Angebot suchen — und das ist bei lokalen Dienstleistungen fast immer der Fall. Speziell für Handwerker biete ich optimiertes Webdesign an.',
+		a: 'Google Ads funktioniert für praktisch jede lokale Branche: Handwerker, Ärzte, Anwälte, Restaurants, Immobilienmakler, Fitnessstudios, Autohäuser und viele mehr. Entscheidend ist, dass potenzielle Kunden aktiv nach Ihrem Angebot suchen — und das ist bei lokalen Dienstleistungen fast immer der Fall. Speziell für Handwerker bieten wir optimiertes Webdesign an.',
 	},
 ];
 
@@ -103,7 +103,7 @@ export default function GoogleAdsSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Während SEO einige Monate braucht, bringen Google Ads Ihnen ab dem ersten Tag neue Kunden. Ich erstelle, manage und optimiere Ihre Kampagnen — damit jeder investierte Euro messbar mehr zurückbringt. Für Unternehmen in Saarbrücken, Saarlouis, Homburg, Neunkirchen, St. Wendel, Merzig und dem gesamten Saarland.
+							Während SEO einige Monate braucht, bringen Google Ads Ihnen ab dem ersten Tag neue Kunden. Wir erstellen, managen und optimieren Ihre Kampagnen — damit jeder investierte Euro messbar mehr zurückbringt. Für Unternehmen in Saarbrücken, Saarlouis, Homburg, Neunkirchen, St. Wendel, Merzig und dem gesamten Saarland.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
@@ -133,7 +133,7 @@ export default function GoogleAdsSaarlandPage() {
 							Im Gegensatz zu Social Media Werbung erreichen Sie mit Google Ads Menschen, die <strong>aktiv nach Ihrem Angebot suchen</strong>. Das ist der entscheidende Unterschied. Auf Facebook oder Instagram scrollen Nutzer durch ihren Feed und werden unterbrochen. Bei Google suchen sie gezielt — sie haben bereits ein Problem und wollen eine Lösung. Das macht Google Ads zur effektivsten Werbeform für lokale Unternehmen im Saarland.
 						</p>
 						<p>
-							Der Vorteil gegenüber SEO: Sie müssen nicht monatelang warten. Ihre Kampagnen sind innerhalb von 24 Stunden aktiv und Sie sehen sofort, wie viele Klicks, Anrufe und Kontaktanfragen Sie erhalten. Jeder Euro ist nachvollziehbar. Kein Rätselraten — nur harte Zahlen. Langfristig empfehle ich eine Kombination mit <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionellem SEO</Link>, um auch organisch sichtbar zu werden.
+							Der Vorteil gegenüber SEO: Sie müssen nicht monatelang warten. Ihre Kampagnen sind innerhalb von 24 Stunden aktiv und Sie sehen sofort, wie viele Klicks, Anrufe und Kontaktanfragen Sie erhalten. Jeder Euro ist nachvollziehbar. Kein Rätselraten — nur harte Zahlen. Langfristig empfehlen wir eine Kombination mit <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionellem SEO</Link>, um auch organisch sichtbar zu werden.
 						</p>
 					</FadeInSection>
 				</div>
@@ -143,15 +143,15 @@ export default function GoogleAdsSaarlandPage() {
 			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Meine Google Ads Leistungen für Ihr Unternehmen
+						Unsere Google Ads Leistungen für Ihr Unternehmen
 					</h2>
 					<div className="space-y-10">
 						{[
-							{ title: 'Keyword-Recherche & Kampagnen-Setup', text: 'Ich finde heraus, welche Suchbegriffe Ihre Kunden im Saarland verwenden und erstelle darauf abgestimmte Kampagnen. Dazu gehören Anzeigengruppen, negative Keywords (um Streuverluste zu minimieren) und die korrekte Gebotsstrategie für Ihr Budget.' },
-							{ title: 'Überzeugende Anzeigentexte', text: 'Ihre Anzeigen müssen aus der Masse herausstechen. Ich schreibe Anzeigentexte, die den Suchenden sofort ansprechen, Vertrauen aufbauen und zum Klicken animieren — mit klaren Alleinstellungsmerkmalen, Handlungsaufforderungen und lokalen Bezügen.' },
-							{ title: 'Optimierte Landing Pages', text: 'Eine Google Ads Kampagne ist nur so gut wie die Seite, auf der Besucher landen. Ich erstelle oder optimiere Ihre Landing Pages so, dass Besucher zu Kunden werden. Schnelle Ladezeit, klare Struktur, prominente Kontaktmöglichkeiten. Erfahren Sie mehr über professionelles Webdesign im Saarland.' },
-							{ title: 'Conversion-Tracking & Reporting', text: 'Ich richte Google Analytics und Conversion-Tracking ein, damit Sie exakt wissen: Wie viele Anrufe, Kontaktformulare oder Buchungen hat Ihre Kampagne generiert? Monatliche Reports zeigen transparent, was funktioniert und wo optimiert wird.' },
-							{ title: 'Laufende Optimierung', text: 'Google Ads ist kein „einmal einrichten und vergessen". Ich überwache Ihre Kampagnen kontinuierlich, passe Keywords, Gebote und Anzeigentexte an und sorge dafür, dass Ihre Kosten pro Anfrage stetig sinken — während die Qualität der Anfragen steigt.' },
+							{ title: 'Keyword-Recherche & Kampagnen-Setup', text: 'Wir finden heraus, welche Suchbegriffe Ihre Kunden im Saarland verwenden und erstellen darauf abgestimmte Kampagnen. Dazu gehören Anzeigengruppen, negative Keywords (um Streuverluste zu minimieren) und die korrekte Gebotsstrategie für Ihr Budget.' },
+							{ title: 'Überzeugende Anzeigentexte', text: 'Ihre Anzeigen müssen aus der Masse herausstechen. Wir schreiben Anzeigentexte, die den Suchenden sofort ansprechen, Vertrauen aufbauen und zum Klicken animieren — mit klaren Alleinstellungsmerkmalen, Handlungsaufforderungen und lokalen Bezügen.' },
+							{ title: 'Optimierte Landing Pages', text: 'Eine Google Ads Kampagne ist nur so gut wie die Seite, auf der Besucher landen. Wir erstellen oder optimieren Ihre Landing Pages so, dass Besucher zu Kunden werden. Schnelle Ladezeit, klare Struktur, prominente Kontaktmöglichkeiten. Erfahren Sie mehr über professionelles Webdesign im Saarland.' },
+							{ title: 'Conversion-Tracking & Reporting', text: 'Wir richten Google Analytics und Conversion-Tracking ein, damit Sie exakt wissen: Wie viele Anrufe, Kontaktformulare oder Buchungen hat Ihre Kampagne generiert? Monatliche Reports zeigen transparent, was funktioniert und wo optimiert wird.' },
+							{ title: 'Laufende Optimierung', text: 'Google Ads ist kein „einmal einrichten und vergessen". Wir überwachen Ihre Kampagnen kontinuierlich, passen Keywords, Gebote und Anzeigentexte an und sorgen dafür, dass Ihre Kosten pro Anfrage stetig sinken — während die Qualität der Anfragen steigt.' },
 						].map((item, i) => (
 							<div key={i}>
 								<h3 className="text-xl font-bold text-stone-900 mb-3">{item.title}</h3>
@@ -173,7 +173,7 @@ export default function GoogleAdsSaarlandPage() {
 							Bei Google Ads gibt es zwei Kostenpunkte: das <strong>Anzeigenbudget</strong> (was Sie direkt an Google zahlen) und die <strong>Management-Gebühr</strong> (für Kampagnenerstellung, Optimierung und Reporting).
 						</p>
 						<p>
-							Für lokale Unternehmen im Saarland empfehle ich ein Anzeigenbudget von <strong>500 bis 1.500 Euro pro Monat</strong> als Startpunkt. Das reicht erfahrungsgemäß für 30 bis 150 qualifizierte Klicks pro Monat — je nach Branche und Wettbewerb. Die Management-Gebühr beginnt bei <strong>250 Euro pro Monat</strong> für ein einfaches Kampagnen-Setup.
+							Für lokale Unternehmen im Saarland empfehlen wir ein Anzeigenbudget von <strong>500 bis 1.500 Euro pro Monat</strong> als Startpunkt. Das reicht erfahrungsgemäß für 30 bis 150 qualifizierte Klicks pro Monat — je nach Branche und Wettbewerb. Die Management-Gebühr beginnt bei <strong>250 Euro pro Monat</strong> für ein einfaches Kampagnen-Setup.
 						</p>
 						<p>
 							Wichtig: Jeder Euro ist nachvollziehbar. Sie sehen genau, wie viel ein Klick kostet, wie viele Anfragen daraus entstehen und was eine Kundenanfrage im Durchschnitt kostet. Wenn die Zahlen nicht stimmen, passen wir die Strategie an — oder pausieren die Kampagne. Kein Risiko, volle Kontrolle.
@@ -206,7 +206,7 @@ export default function GoogleAdsSaarlandPage() {
 							Die ehrliche Antwort: beides zusammen. Google Ads bringt <strong>sofortige Ergebnisse</strong> — ideal für Neugründungen, saisonale Angebote oder wenn Sie schnell neue Kunden brauchen. SEO baut <strong>langfristige Sichtbarkeit</strong> auf — nach 3 bis 6 Monaten erhalten Sie kostenlosen Traffic über die organischen Suchergebnisse.
 						</p>
 						<p>
-							Meine Empfehlung für Unternehmen im Saarland: Starten Sie mit Google Ads für sofortige Anfragen, während wir parallel an Ihrem SEO arbeiten. Sobald die organischen Rankings greifen, können Sie Ihr Ads-Budget reduzieren — oder auf noch profitablere Keywords umschichten.
+							Unsere Empfehlung für Unternehmen im Saarland: Starten Sie mit Google Ads für sofortige Anfragen, während wir parallel an Ihrem SEO arbeiten. Sobald die organischen Rankings greifen, können Sie Ihr Ads-Budget reduzieren — oder auf noch profitablere Keywords umschichten.
 						</p>
 					</div>
 					<div className="overflow-x-auto">
