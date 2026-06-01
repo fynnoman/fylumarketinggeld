@@ -601,6 +601,302 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    slug: "physiotherapie",
+    h1: "Website für Physiotherapie im Saarland",
+    metaTitle: "Website für Physiotherapie Saarland | Praxis-Website | Fylu",
+    metaDescription:
+      "Physio-Websites im Saarland: patientenorientiert, mit Online-Terminbuchung und lokaler SEO. Mehr Patienten in Saarbrücken, Saarlouis & Co. Ab 990€.",
+    intro:
+      "Patienten suchen Physiotherapeuten heute online – „Physiotherapie in meiner Nähe“, „Krankengymnastik Saarbrücken“, „Manuelle Therapie Saarlouis“. Eine moderne Website ist entscheidend für volle Terminkalender.",
+    sections: [
+      {
+        title: "Klare Leistungsübersicht",
+        text: "Krankengymnastik, Manuelle Therapie, Lymphdrainage, KG-ZNS, Massage, Kinesio-Taping – übersichtlich dargestellt mit nachvollziehbaren Erklärungen für Patienten.",
+      },
+      {
+        title: "Termin-Anfrage ohne Hürden",
+        text: "Einfaches Anfrageformular, klare Kontaktwege, Anbindung an gängige Buchungssysteme. Je leichter die Kontaktaufnahme, desto mehr Termine.",
+      },
+      {
+        title: "Lokale Sichtbarkeit",
+        text: "Optimierung für lokale Suchanfragen mit Google Business Profil, NAP-Konsistenz und Strategie für Patientenbewertungen.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine Physio-Website?",
+        a: "Ab 990€ für eine moderne, mobiloptimierte Praxis-Website. Mit erweiterten Funktionen wie Online-Terminbuchung typischerweise 1.490€.",
+      },
+      {
+        q: "Können Sie auch die Kassen-Logos einbinden?",
+        a: "Ja, alle relevanten Krankenkassen-Logos und Hinweise auf Selbstzahler-Leistungen werden klar und übersichtlich integriert.",
+      },
+      {
+        q: "Ist eine Online-Terminbuchung sinnvoll?",
+        a: "Definitiv. Patienten buchen gerne abends und am Wochenende – wenn Ihre Praxis geschlossen ist. Online-Buchungen erhöhen die Termin-Auslastung messbar.",
+      },
+    ],
+  },
+  {
+    slug: "onlineshop",
+    h1: "Online-Shop erstellen lassen im Saarland",
+    metaTitle: "Online-Shop erstellen Saarland | E-Commerce ab 1.490€ | Fylu",
+    metaDescription:
+      "Online-Shop aus dem Saarland: professionell, mobiloptimiert, mit SEO und Conversion-Optimierung. Shopify, WooCommerce oder individuell. Ab 1.490€.",
+    intro:
+      "Ein Online-Shop ist mehr als ein digitales Schaufenster – er ist Ihr 24/7-Vertrieb. Damit das funktioniert, braucht es das richtige System, eine starke SEO-Basis und eine Conversion-Strategie, die wirklich verkauft.",
+    sections: [
+      {
+        title: "Das passende System für Ihr Business",
+        text: "Shopify für Standard-Setups, WooCommerce für maximale Flexibilität oder individuelle Headless-Lösungen für ambitionierte Projekte. Ich berate unabhängig.",
+      },
+      {
+        title: "SEO & Conversion-Optimierung",
+        text: "Produktseiten mit strukturierten Daten (Product Schema), Kategorie-SEO, schnelle Ladezeiten, klare CTAs und einfacher Checkout. Jeder Schritt ist auf den Kauf optimiert.",
+      },
+      {
+        title: "Zahlung, Versand & Schnittstellen",
+        text: "Stripe, PayPal, Klarna, Versand mit DHL/DPD, Anbindung an Buchhaltung und Warenwirtschaft. Alles aus einer Hand.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet ein Online-Shop?",
+        a: "Standard-Shopify-Setup ab 1.490€. Umfangreichere Lösungen mit individuellen Funktionen ab 2.490€ – je nach Sortimentsgröße und Anforderungen.",
+      },
+      {
+        q: "Welches System ist das beste?",
+        a: "Das hängt von Ihren Anforderungen ab. Shopify ist schnell und stabil, WooCommerce flexibler. Wir wählen gemeinsam das Passende.",
+      },
+      {
+        q: "Können Sie auch das Marketing übernehmen?",
+        a: "Ja, ich biete Google Ads und SEO-Betreuung an – ein Shop ohne Traffic verkauft nichts.",
+      },
+    ],
+  },
+  {
+    slug: "coach",
+    h1: "Website für Coaches und Berater im Saarland",
+    metaTitle: "Website für Coach Saarland | Klienten gewinnen | Fylu",
+    metaDescription:
+      "Coach-Websites im Saarland: persönlich, conversion-stark, mit SEO und Klienten-Strategie. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+    intro:
+      "Als Coach oder Berater verkaufen Sie Vertrauen. Ihre Website ist der erste Eindruck, den potenzielle Klienten von Ihnen bekommen – sie muss Persönlichkeit, Kompetenz und ein klares Angebot transportieren.",
+    sections: [
+      {
+        title: "Persönliche Positionierung",
+        text: "Klare Botschaft: Wer sind Sie, für wen arbeiten Sie und welches Problem lösen Sie? Authentische Fotos, persönliche Texte und ein Design, das zu Ihnen passt.",
+      },
+      {
+        title: "Conversion-starkes Angebot",
+        text: "Klare Coaching-Pakete, Buchungsmöglichkeit für Erstgespräche und Testimonials, die Vertrauen aufbauen. Jeder Klick führt zur nächsten Aktion.",
+      },
+      {
+        title: "Content & SEO",
+        text: "Blog, Erfahrungsberichte und Long-Tail-SEO für Themen wie „Business Coach Saarland“, „Life Coach Saarbrücken“ oder Ihre spezifische Nische.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine Coach-Website?",
+        a: "Ab 990€ für eine persönliche, conversion-starke Website. Mit Buchungssystem und erweiterten Funktionen typischerweise 1.490€.",
+      },
+      {
+        q: "Brauche ich einen Blog?",
+        a: "Empfehlenswert – ein Blog ist langfristig das stärkste SEO-Werkzeug für Coaches und positioniert Sie als Experten in Ihrer Nische.",
+      },
+      {
+        q: "Wie wichtig sind Testimonials?",
+        a: "Sehr wichtig. Echte Kundenstimmen sind das stärkste Vertrauenssignal für potenzielle Klienten.",
+      },
+    ],
+  },
+  {
+    slug: "fitnessstudio",
+    h1: "Website für Fitnessstudios im Saarland",
+    metaTitle: "Website für Fitnessstudio Saarland | Mehr Mitglieder | Fylu",
+    metaDescription:
+      "Fitnessstudio-Websites im Saarland: motivierend, mobiloptimiert, mit Mitgliedschaftsformular und lokaler SEO. Mehr Mitglieder gewinnen. Ab 990€.",
+    intro:
+      "Ein Fitnessstudio lebt von neuen Mitgliedern. Eine professionelle Website mit klaren Preisen, Kursplan und einfacher Probetraining-Anmeldung ist heute der wichtigste Vertriebskanal.",
+    sections: [
+      {
+        title: "Motivierende Inszenierung",
+        text: "Energiegeladene Bilder, klare Botschaft, sichtbare Trainer und ein Design, das zur Anmeldung motiviert. Aus Interesse wird Anmeldung.",
+      },
+      {
+        title: "Mitgliedschaftsmodell & Probetraining",
+        text: "Transparente Preise, klare Tarifübersicht und ein einfaches Anmeldeformular fürs Probetraining – mit möglichst wenig Klicks zum Erstkontakt.",
+      },
+      {
+        title: "Kursplan & lokale SEO",
+        text: "Aktueller Kursplan, Trainer-Profile und Optimierung für „Fitnessstudio Saarbrücken“, „Crossfit Saarlouis“ oder Ihre Spezialisierung.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine Fitnessstudio-Website?",
+        a: "Ab 990€ für einen motivierenden, conversion-starken Auftritt. Mit Mitglieder-Login, Kursplan-Tool und erweiterten Funktionen ab 1.490€.",
+      },
+      {
+        q: "Kann ich den Kursplan selbst pflegen?",
+        a: "Ja, auf Wunsch via CMS oder Anbindung an Kurssoftware wie Magicline.",
+      },
+      {
+        q: "Wie wichtig ist Instagram-Integration?",
+        a: "Sehr wichtig – Fitness ist eine visuelle Branche. Ein Instagram-Feed bringt Leben in die Website.",
+      },
+    ],
+  },
+  {
+    slug: "dachdecker",
+    h1: "Website für Dachdecker im Saarland",
+    metaTitle: "Website für Dachdecker Saarland | Mehr Aufträge | Fylu",
+    metaDescription:
+      "Dachdecker-Websites im Saarland: mit Projektgalerie, lokaler SEO und schnellem Anfrageformular. Mehr Aufträge in Saarbrücken & Co. Ab 990€.",
+    intro:
+      "Dachdecker leben von Sichtbarkeit – sowohl auf dem Dach als auch online. „Dachdecker Saarbrücken“, „Dachreparatur Saarlouis“, „Flachdach Neunkirchen“ sind tägliche Suchanfragen, bei denen Sie ganz oben stehen müssen.",
+    sections: [
+      {
+        title: "Projektgalerie mit Wirkung",
+        text: "Hochwertige Bilder Ihrer abgeschlossenen Dächer, Sanierungen und Reparaturen. Professionell präsentiert, mobile-optimiert und schnell ladend.",
+      },
+      {
+        title: "Klares Leistungsspektrum",
+        text: "Dachsanierung, Flachdach, Steildach, Dachfenster, Dämmung, Photovoltaik-Dach. Jede Leistung als eigene Seite mit SEO-Optimierung.",
+      },
+      {
+        title: "Lokale SEO & Bewertungsstrategie",
+        text: "Optimierung für „Dachdecker Saarbrücken“ und Umgebung. Google Business mit Bewertungs-Strategie für mehr Vertrauen bei Hausbesitzern.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine Dachdecker-Website?",
+        a: "Ab 990€ für eine professionelle Website mit Projektgalerie und Anfrageformular. Mit erweiterten Funktionen typischerweise 1.490€.",
+      },
+      {
+        q: "Können Sie meine Baustellenfotos aufbereiten?",
+        a: "Ja. Eine professionelle Bildaufbereitung gehört zum Service – damit Ihre Projekte optimal zur Geltung kommen.",
+      },
+      {
+        q: "Werde ich für „Dachdecker in meiner Nähe“ gefunden?",
+        a: "Mit lokaler SEO und einem optimierten Google Business Profil definitiv – das ist eine der wichtigsten Suchanfragen für Hausbesitzer.",
+      },
+    ],
+  },
+  {
+    slug: "shk",
+    h1: "Website für SHK-Betriebe im Saarland (Sanitär, Heizung, Klima)",
+    metaTitle: "Website für SHK Saarland | Heizung, Sanitär & Klima | Fylu",
+    metaDescription:
+      "SHK-Websites im Saarland: mit Notdienst, Energieberatung und lokaler SEO. Mehr Aufträge für Sanitär, Heizung und Klima. Ab 990€.",
+    intro:
+      "SHK-Betriebe sind gefragt wie nie – Wärmepumpen, Heizungsmodernisierung, Bäder, Solar. Eine professionelle Website ist heute entscheidend, um die Auftragsflut sinnvoll zu kanalisieren und die richtigen Kunden anzusprechen.",
+    sections: [
+      {
+        title: "Klare Leistungsbereiche",
+        text: "Sanitär, Heizung (inkl. Wärmepumpe), Klima, Energieberatung, Bäder, Solar – jede Leistung übersichtlich mit eigener Seite und passender SEO.",
+      },
+      {
+        title: "Förder-Beratung als Magnet",
+        text: "BAFA-Förderung, KfW-Zuschüsse und Heizungsförderung sind heute Top-Suchbegriffe. Mit einem eigenen Info-Bereich positionieren Sie sich als Experte.",
+      },
+      {
+        title: "Lokale SEO & Notdienst",
+        text: "Optimierung für „Sanitär Saarbrücken“, „Heizung Saarlouis“, „Wärmepumpe Neunkirchen“. Prominente Notdienst-Hinweise und Google Business Profil.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine SHK-Website?",
+        a: "Ab 990€ für eine moderne, mobiloptimierte Website. Mit Förderrechner und erweiterten Funktionen typischerweise 1.490€ bis 2.490€.",
+      },
+      {
+        q: "Können Sie einen Förderrechner integrieren?",
+        a: "Ja, das ist heute ein starker Conversion-Magnet. Auf Anfrage integriere ich passende Tools.",
+      },
+      {
+        q: "Lohnt sich ein Wärmepumpen-Bereich?",
+        a: "Absolut – Wärmepumpe ist eines der gefragtesten Suchthemen und positioniert Sie als zukunftsorientierter Betrieb.",
+      },
+    ],
+  },
+  {
+    slug: "schreiner",
+    h1: "Website für Schreiner und Tischler im Saarland",
+    metaTitle: "Website für Schreiner Saarland | Mehr Aufträge online | Fylu",
+    metaDescription:
+      "Schreiner-Websites im Saarland: mit Projektgalerie, Leistungen und lokaler SEO. Mehr Aufträge für individuelle Möbel & Innenausbau. Ab 990€.",
+    intro:
+      "Schreiner und Tischler verkaufen Handwerkskunst. Ihre Website muss das transportieren – mit hochwertigen Bildern, einer klaren Leistungsübersicht und einer SEO-Basis, die für lokale Suchen wie „Schreiner Saarlouis“ oder „Tischler Saarbrücken“ rankt.",
+    sections: [
+      {
+        title: "Projektgalerie als Verkaufstool",
+        text: "Hochwertige Bilder Ihrer Möbel, Einbauten und Maßanfertigungen. So überzeugen Sie potenzielle Kunden bereits beim ersten Klick.",
+      },
+      {
+        title: "Klare Leistungsstruktur",
+        text: "Möbelbau, Innenausbau, Türen, Fenster, Küchen, Restaurierung – als eigene Bereiche mit SEO-optimierten Texten.",
+      },
+      {
+        title: "Lokale SEO & Bewertungen",
+        text: "Optimierung für lokale Suchanfragen und Google Business Profil mit Bewertungsstrategie – Vertrauen ist im Handwerk alles.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine Schreiner-Website?",
+        a: "Ab 990€ für eine moderne Website mit Projektgalerie. Mit erweiterten Funktionen und Konfigurator typischerweise 1.490€.",
+      },
+      {
+        q: "Können Sie ein 3D-Konfigurator-Tool integrieren?",
+        a: "Auf Anfrage – das ist ein starker Conversion-Hebel für individuelle Möbel.",
+      },
+      {
+        q: "Wie wichtig ist die Bildqualität?",
+        a: "Entscheidend. Hochwertige Bilder Ihrer Arbeit sind das beste Verkaufsargument für hochwertiges Handwerk.",
+      },
+    ],
+  },
+  {
+    slug: "garten-landschaftsbau",
+    h1: "Website für Garten- und Landschaftsbau im Saarland",
+    metaTitle: "Website für GaLaBau Saarland | Mehr Aufträge | Fylu",
+    metaDescription:
+      "GaLaBau-Websites im Saarland: mit Projektgalerie, lokaler SEO und Anfrageformular. Mehr Aufträge für Gartenbau in Saarbrücken & Co. Ab 990€.",
+    intro:
+      "Im Garten- und Landschaftsbau entscheidet die Bildwirkung. Eine Website mit hochwertigen Projektbildern, klarer Leistungsdarstellung und lokaler SEO bringt Sie zu den Hausbesitzern, die genau Ihre Leistung suchen.",
+    sections: [
+      {
+        title: "Bildgewaltige Projektgalerie",
+        text: "Vorher-Nachher-Bilder, Gartenanlagen, Terrassen, Teiche, Pflanzungen – hochwertig präsentiert und mobile-optimiert.",
+      },
+      {
+        title: "Leistungen klar strukturiert",
+        text: "Neuanlage, Gartenpflege, Pflasterarbeiten, Bewässerung, Teichbau, Baumschnitt – jede Leistung mit eigener Seite und lokalem SEO-Fokus.",
+      },
+      {
+        title: "Saisonale Anfrage-Steuerung",
+        text: "Im Frühjahr sind Anfragen oft chaotisch. Eine intelligente Anfragestrecke filtert Spielereien aus und priorisiert echte Kunden.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was kostet eine GaLaBau-Website?",
+        a: "Ab 990€ für eine professionelle Website mit Bildergalerie. Mit erweiterten Funktionen typischerweise 1.490€.",
+      },
+      {
+        q: "Wie wichtig sind hochwertige Fotos?",
+        a: "Entscheidend. Gartenbau ist visuell – ohne starke Bilder funktioniert die Website nur halb.",
+      },
+      {
+        q: "Können Sie auch saisonale Aktionen integrieren?",
+        a: "Ja – Frühjahrsaktionen, Herbst-Pflanzungen oder Winter-Baumschnitt können prominent eingeblendet werden.",
+      },
+    ],
+  },
 ];
 
 export function getTopicBySlug(slug: string): Topic | undefined {

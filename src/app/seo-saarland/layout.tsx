@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO Saarland | Bei Google auf Seite 1 | Fylu Saarlouis",
+  title: "SEO Saarland ▷ Bei Google auf Platz 1 ✓ Local SEO & Google Business | Fylu",
   description:
-    "SEO-Optimierung im Saarland: Mehr Google-Sichtbarkeit für lokale Unternehmen. OnPage, Local SEO & Google Business. Jetzt kostenlos beraten lassen.",
-  keywords:
-    "SEO Saarland, Suchmaschinenoptimierung Saarland, SEO Saarbrücken, SEO Saarlouis, Local SEO, Google Optimierung Saarland",
+    "SEO Saarland ★ Suchmaschinenoptimierung für Saarbrücken, Saarlouis, Neunkirchen, Homburg & Co. OnPage, Local SEO, Google Business. Ab 300€/Monat. Kostenlose Erstanalyse.",
+  keywords: [
+    "SEO Saarland",
+    "Suchmaschinenoptimierung Saarland",
+    "SEO Saarbrücken",
+    "SEO Saarlouis",
+    "SEO Neunkirchen",
+    "SEO Homburg",
+    "Local SEO Saarland",
+    "Google Business Saarland",
+    "SEO Agentur Saarland",
+    "SEO Optimierung Saarland",
+  ],
   alternates: {
     canonical: "/seo-saarland",
   },
@@ -17,6 +27,20 @@ export const metadata: Metadata = {
     siteName: "Fylu Webdesign",
     locale: "de_DE",
     type: "website",
+    images: [
+      {
+        url: "/hero-background.webp",
+        width: 1200,
+        height: 630,
+        alt: "SEO Saarland – Bei Google auf Platz 1 mit Fylu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Saarland | Bei Google auf Seite 1 | Fylu Saarlouis",
+    description: "SEO-Optimierung im Saarland: Mehr Google-Sichtbarkeit für lokale Unternehmen.",
+    images: ["/hero-background.webp"],
   },
 };
 

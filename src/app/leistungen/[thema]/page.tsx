@@ -7,6 +7,10 @@ import { topics, getTopicBySlug } from "@/lib/topics";
 
 const SITE = "https://www.fylumarketing.de";
 
+function getRelatedTopics(currentSlug: string) {
+  return topics.filter((t) => t.slug !== currentSlug).slice(0, 8);
+}
+
 export function generateStaticParams() {
   return topics.map((t) => ({ thema: t.slug }));
 }
@@ -50,6 +54,7 @@ export default async function TopicPage({
   if (!topic) notFound();
 
   const url = `${SITE}/leistungen/${topic.slug}`;
+  const relatedTopics = getRelatedTopics(topic.slug);
 
   return (
     <main>
@@ -62,8 +67,38 @@ export default async function TopicPage({
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: SITE },
-              { "@type": "ListItem", position: 2, name: topic.h1, item: url },
+              { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE}/angebote` },
+              { "@type": "ListItem", position: 3, name: topic.h1, item: url },
             ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: topic.h1,
+            description: topic.metaDescription,
+            provider: { "@id": "https://www.fylumarketing.de/#organization" },
+            areaServed: [
+              { "@type": "State", name: "Saarland" },
+              { "@type": "Country", name: "Deutschland" },
+            ],
+            offers: {
+              "@type": "Offer",
+              price: "990",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE}/angebote`,
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                price: "990",
+                priceCurrency: "EUR",
+                valueAddedTaxIncluded: false,
+              },
+            },
           }),
         }}
       />
@@ -164,6 +199,35 @@ export default async function TopicPage({
             >
               Projekt starten
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Cross-Linking: weitere Branchen-Leistungen */}
+      <section className="py-16 px-6 bg-stone-100 border-t border-stone-200">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-3 text-center">
+            Weitere Branchen-Lösungen
+          </h2>
+          <p className="text-stone-600 text-center mb-8 max-w-2xl mx-auto">
+            Webdesign für weitere Branchen im Saarland – mit Festpreis ab 990€:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {relatedTopics.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/leistungen/${t.slug}`}
+                className="bg-white border border-stone-200 rounded-lg px-4 py-3 text-center text-stone-700 hover:border-cyan-500 hover:text-cyan-600 transition-colors text-sm font-medium"
+              >
+                {t.h1.replace(" im Saarland", "").replace("Website für ", "").replace("Webdesign für ", "")}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+            <Link href="/webdesign-saarland" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Webdesign Saarland</Link>
+            <Link href="/seo-saarland" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">SEO Saarland</Link>
+            <Link href="/google-ads-saarland" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Google Ads Saarland</Link>
+            <Link href="/website-erstellen-lassen" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Website erstellen lassen</Link>
           </div>
         </div>
       </section>

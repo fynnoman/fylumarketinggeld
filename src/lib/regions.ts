@@ -145,6 +145,306 @@ export const regions: Region[] = [
     ],
     nearbyCities: ["Marpingen", "Tholey", "Nohfelden", "Freisen", "Oberthal"],
   },
+  {
+    slug: "lebach",
+    city: "Lebach",
+    region: "Saarland",
+    lat: 49.4108,
+    lng: 6.9101,
+    intro:
+      "Webdesign für Lebach und Umgebung – moderne, suchmaschinenoptimierte Websites für lokale Unternehmen im Landkreis Saarlouis. Ab 990€, kostenloser Entwurf in 24 Stunden.",
+    paragraphs: [
+      "Lebach liegt zentral im Saarland und ist Heimat zahlreicher inhabergeführter Betriebe, Handwerker und Dienstleister. In einem überschaubaren Markt entscheidet die Online-Sichtbarkeit oft darüber, wer den Auftrag bekommt – und wer leer ausgeht.",
+      "Ich baue Websites, die für Lebach, Eppelborn, Schmelz und Saarwellingen optimiert sind. Lokale SEO und Google Business Profil gehören zum Standard, nicht zum Aufpreis.",
+      "Sie bekommen einen festen Ansprechpartner statt einer Hotline – persönlich, transparent und mit klaren Festpreisen.",
+    ],
+    nearbyCities: ["Eppelborn", "Schmelz", "Saarwellingen", "Lebach-Falscheid"],
+  },
+  {
+    slug: "blieskastel",
+    city: "Blieskastel",
+    region: "Saarland",
+    lat: 49.2350,
+    lng: 7.2553,
+    intro:
+      "Webdesigner für Blieskastel im Saarpfalz-Kreis: moderne Websites, lokale SEO und Google Ads für Unternehmen in der Barockstadt. Ab 990€, kostenloser Entwurf in 24h.",
+    paragraphs: [
+      "Blieskastel ist die Barockstadt im Saarpfalz-Kreis – mit Tourismus, Gastronomie und Mittelstand. Wer hier Kunden gewinnen will, braucht eine Website, die den besonderen Charakter der Region transportiert und gleichzeitig technisch sauber bei Google rankt.",
+      "Ich erstelle Websites für Blieskastel, Mandelbachtal, Gersheim und Kirkel: mobiloptimiert, mit lokaler SEO direkt eingebaut und einem klaren Fokus auf Conversion. So werden aus Besuchern Anfragen.",
+      "Klare Festpreise, persönliche Betreuung und ein kostenloser Entwurf in 24 Stunden – ohne Agentur-Aufschlag.",
+    ],
+    nearbyCities: ["Mandelbachtal", "Gersheim", "Kirkel", "Homburg"],
+  },
+  {
+    slug: "bexbach",
+    city: "Bexbach",
+    region: "Saarland",
+    lat: 49.3494,
+    lng: 7.2611,
+    intro:
+      "Professionelles Webdesign für Bexbach und den Saarpfalz-Kreis: schnelle, mobiloptimierte Websites mit lokaler SEO. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+    paragraphs: [
+      "Bexbach liegt zwischen Homburg und Neunkirchen und ist Heimat vieler Handwerksbetriebe, Dienstleister und Einzelhändler. Eine moderne Website ist hier kein Luxus, sondern ein klarer Wettbewerbsvorteil.",
+      "Ich entwickle Websites für Bexbach, Homburg, Neunkirchen und das Bexbacher Umland – mit Local SEO, Google Business Optimierung und schnellen Ladezeiten als Standard.",
+      "Festpreis ab 990€, kostenloser Entwurf, persönlicher Ansprechpartner. Genau das, was lokale Unternehmen brauchen.",
+    ],
+    nearbyCities: ["Homburg", "Neunkirchen", "Kirkel", "Schiffweiler"],
+  },
+  {
+    slug: "puettlingen",
+    city: "Püttlingen",
+    region: "Saarland",
+    lat: 49.2842,
+    lng: 6.8825,
+    intro:
+      "Webdesign für Püttlingen, Köllertal und Umgebung: moderne, lokal optimierte Websites für Handwerk, Mittelstand und Dienstleistung. Ab 990€.",
+    paragraphs: [
+      "Püttlingen ist Teil des Köllertals und liegt verkehrsgünstig zwischen Saarbrücken und Völklingen. Lokale Betriebe stehen oft im Wettbewerb mit Anbietern aus den Nachbarstädten – eine starke Website macht hier den Unterschied.",
+      "Ich baue Websites speziell für Püttlingen, Riegelsberg, Heusweiler und Völklingen: mit lokaler SEO, sauberer Technik und mobile-first Design.",
+      "Kostenloser Entwurf in 24 Stunden, klare Festpreise, persönliche Betreuung – ohne Agentur-Aufschlag.",
+    ],
+    nearbyCities: ["Riegelsberg", "Heusweiler", "Völklingen", "Saarbrücken"],
+  },
+  {
+    slug: "sulzbach",
+    city: "Sulzbach",
+    region: "Saarland",
+    lat: 49.2997,
+    lng: 7.0606,
+    intro:
+      "Webdesigner für Sulzbach/Saar und das Sulzbachtal: moderne Websites, lokale SEO und Google Ads für lokale Betriebe. Persönlich, transparent, ab 990€.",
+    paragraphs: [
+      "Sulzbach liegt zentral im Sulzbachtal zwischen Saarbrücken und Neunkirchen. Gerade in dichter besiedelten Regionen wie hier ist die lokale Sichtbarkeit bei Google entscheidend, um aus der Masse herauszustechen.",
+      "Ich entwickle Websites für Unternehmen in Sulzbach, Friedrichsthal, Quierschied und Saarbrücken: technisch sauber, mobile-first, lokal SEO-optimiert.",
+      "Persönlicher Ansprechpartner statt Agentur-Hotline. Klare Festpreise statt Stundensätze. Kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Friedrichsthal", "Quierschied", "Saarbrücken", "Neunkirchen"],
+  },
+  {
+    slug: "wadgassen",
+    city: "Wadgassen",
+    region: "Saarland",
+    lat: 49.2606,
+    lng: 6.7903,
+    intro:
+      "Webdesign für Wadgassen und Bous im Saarland: moderne, lokal optimierte Websites für Unternehmen rund um die deutsch-französische Grenze. Ab 990€.",
+    paragraphs: [
+      "Wadgassen liegt strategisch nahe der französischen Grenze und ist ein wichtiger Standort für Handwerk, Industrie und Dienstleistung. Lokale Betriebe profitieren von einer Website, die sowohl Kunden aus dem Saarland als auch dem grenznahen Raum anspricht.",
+      "Ich erstelle Websites für Wadgassen, Bous, Saarlouis und Völklingen: mit lokaler SEO, sauberer Technik und mobiloptimiertem Design – schnell, modern und auf Conversion ausgelegt.",
+      "Festpreis ab 990€, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner direkt aus dem Saarland.",
+    ],
+    nearbyCities: ["Bous", "Saarlouis", "Völklingen", "Überherrn"],
+  },
+  {
+    slug: "mettlach",
+    city: "Mettlach",
+    region: "Saarland",
+    lat: 49.4934,
+    lng: 6.5867,
+    intro:
+      "Webdesign für Mettlach und die Saarschleife: moderne Websites für Tourismus, Gastronomie und lokale Betriebe an der Saar. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+    paragraphs: [
+      "Mettlach ist mit der berühmten Saarschleife eine der bekanntesten Tourismus-Regionen des Saarlandes. Hotels, Restaurants, Pensionen und Erlebnisanbieter brauchen Websites, die nicht nur informieren, sondern emotional begeistern und gleichzeitig technisch perfekt funktionieren.",
+      "Ich entwickle Websites für Mettlach, Orscholz, Saarhölzbach und Perl – mit Schwerpunkt auf hochwertige Bildsprache, Buchungsintegration und lokaler SEO für touristische Suchbegriffe.",
+      "Klarer Festpreis, kostenloser Entwurf und persönliche Beratung – ohne Agentur-Bürokratie.",
+    ],
+    nearbyCities: ["Orscholz", "Saarhölzbach", "Perl", "Merzig"],
+  },
+  {
+    slug: "wadern",
+    city: "Wadern",
+    region: "Saarland",
+    lat: 49.5395,
+    lng: 6.8836,
+    intro:
+      "Webdesigner für Wadern und den nördlichen Landkreis Merzig-Wadern: moderne Websites, lokale SEO und Google Ads. Ab 990€.",
+    paragraphs: [
+      "Wadern liegt im Norden des Saarlandes im Hochwald und ist Heimat zahlreicher Handwerksbetriebe und Mittelständler. In ländlich geprägten Regionen ist die Online-Sichtbarkeit besonders wichtig, da der Einzugsbereich oft größer ist als in städtischen Räumen.",
+      "Ich baue Websites für Wadern, Losheim am See, Weiskirchen und Nonnweiler: lokal SEO-optimiert, mit sauberer Technik und schnellen Ladezeiten – auch bei schlechter Mobilfunkverbindung im ländlichen Raum.",
+      "Persönlicher Ansprechpartner, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Losheim am See", "Weiskirchen", "Nonnweiler", "Merzig"],
+  },
+  {
+    slug: "eppelborn",
+    city: "Eppelborn",
+    region: "Saarland",
+    lat: 49.4017,
+    lng: 6.9678,
+    intro:
+      "Webdesign für Eppelborn und das Illtal: moderne Websites, lokale SEO und Google Ads für Unternehmen im Landkreis Neunkirchen. Persönlich, transparent, ab 990€.",
+    paragraphs: [
+      "Eppelborn liegt zwischen Lebach und Neunkirchen und ist ein wichtiger Standort für Handwerk, Mittelstand und Einzelhandel. Eine moderne Website ist hier oft der entscheidende Faktor, um sich gegenüber Anbietern aus den Nachbarstädten zu behaupten.",
+      "Ich erstelle Websites für Eppelborn, Lebach, Illingen und Merchweiler – mit lokaler SEO, mobile-first Design und schnellen Ladezeiten.",
+      "Klarer Festpreis ab 990€, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
+    ],
+    nearbyCities: ["Lebach", "Illingen", "Merchweiler", "Schiffweiler"],
+  },
+  {
+    slug: "heusweiler",
+    city: "Heusweiler",
+    region: "Saarland",
+    lat: 49.3375,
+    lng: 6.9325,
+    intro:
+      "Webdesign für Heusweiler und das Köllertal: moderne, lokal optimierte Websites für Handwerk, Mittelstand und Dienstleister. Ab 990€.",
+    paragraphs: [
+      "Heusweiler liegt im Regionalverband Saarbrücken und ist Heimat zahlreicher inhabergeführter Betriebe. In der Nähe der Landeshauptstadt ist der Wettbewerb groß – umso wichtiger ist eine professionelle, technisch saubere Website.",
+      "Ich entwickle Websites für Heusweiler, Riegelsberg, Püttlingen und Saarbrücken: mit lokaler SEO, mobile-first Design und einem klaren Fokus auf Anfragen und Aufträge.",
+      "Persönliche Betreuung, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Riegelsberg", "Püttlingen", "Saarbrücken", "Quierschied"],
+  },
+  {
+    slug: "riegelsberg",
+    city: "Riegelsberg",
+    region: "Saarland",
+    lat: 49.3033,
+    lng: 6.9344,
+    intro:
+      "Webdesigner für Riegelsberg im Regionalverband Saarbrücken: schnelle, moderne Websites mit lokaler SEO für lokale Betriebe. Ab 990€ mit kostenlosem Entwurf in 24h.",
+    paragraphs: [
+      "Riegelsberg liegt unmittelbar an Saarbrücken und ist ein wichtiger Wirtschaftsstandort im Köllertal. Wer hier Kunden gewinnen will, muss bei Google für lokale Suchanfragen sichtbar sein – besonders in einem so dicht besiedelten Raum.",
+      "Ich baue Websites für Riegelsberg, Heusweiler, Püttlingen und Saarbrücken – technisch einwandfrei, mobiloptimiert und mit lokaler SEO direkt eingebaut.",
+      "Festpreis statt Stundensatz, persönlicher Kontakt statt Hotline, Ergebnisse statt Versprechen.",
+    ],
+    nearbyCities: ["Heusweiler", "Püttlingen", "Saarbrücken", "Völklingen"],
+  },
+  {
+    slug: "losheim-am-see",
+    city: "Losheim am See",
+    region: "Saarland",
+    lat: 49.5081,
+    lng: 6.7461,
+    intro:
+      "Webdesign für Losheim am See: Websites für Tourismus, Gastronomie und lokale Unternehmen im Hochwald. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+    paragraphs: [
+      "Losheim am See ist ein beliebtes Naherholungsgebiet und wichtiger Tourismus-Standort im Saarland. Hotels, Restaurants, Pensionen und Erlebnisanbieter profitieren von Websites, die emotional ansprechen und gleichzeitig für lokale und touristische Suchanfragen optimiert sind.",
+      "Ich entwickle Websites für Losheim am See, Wadern, Weiskirchen und Mettlach: mit Schwerpunkt auf Bildsprache, Buchungsanfragen und lokaler SEO.",
+      "Klarer Festpreis, kostenloser Entwurf in 24 Stunden, persönliche Betreuung.",
+    ],
+    nearbyCities: ["Wadern", "Weiskirchen", "Mettlach", "Merzig"],
+  },
+  {
+    slug: "perl",
+    city: "Perl",
+    region: "Saarland",
+    lat: 49.4711,
+    lng: 6.3781,
+    intro:
+      "Webdesign für Perl und das Dreiländereck: moderne Websites für Weinbau, Gastronomie und lokale Unternehmen im Saarland. Ab 990€.",
+    paragraphs: [
+      "Perl liegt im Dreiländereck zwischen Deutschland, Frankreich und Luxemburg und ist berühmt für seinen Weinbau. Lokale Betriebe profitieren von einer Website, die sowohl regionale Saarland-Kunden als auch grenzüberschreitende Besucher anspricht.",
+      "Ich erstelle Websites für Perl, Mettlach, Merzig und das gesamte Mosel-Saar-Gebiet: mit Fokus auf Bildsprache, lokale SEO und Conversion-Optimierung.",
+      "Persönlicher Ansprechpartner, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Mettlach", "Merzig", "Saarhölzbach", "Orscholz"],
+  },
+  {
+    slug: "tholey",
+    city: "Tholey",
+    region: "Saarland",
+    lat: 49.4847,
+    lng: 7.0667,
+    intro:
+      "Webdesigner für Tholey und den Schaumberg: moderne Websites, lokale SEO und Google Ads für Unternehmen im Landkreis St. Wendel. Ab 990€.",
+    paragraphs: [
+      "Tholey liegt am Fuße des Schaumbergs und ist Heimat zahlreicher Handwerksbetriebe, Tourismus-Anbieter und Mittelständler. Eine professionelle Website ist hier oft entscheidend, um auch außerhalb des direkten Umfelds gefunden zu werden.",
+      "Ich entwickle Websites für Tholey, St. Wendel, Marpingen und Nonnweiler: schnell, mobiloptimiert und mit lokaler SEO direkt eingebaut.",
+      "Klare Festpreise ab 990€, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
+    ],
+    nearbyCities: ["St. Wendel", "Marpingen", "Nonnweiler", "Oberthal"],
+  },
+  {
+    slug: "saarwellingen",
+    city: "Saarwellingen",
+    region: "Saarland",
+    lat: 49.3578,
+    lng: 6.8131,
+    intro:
+      "Webdesign für Saarwellingen und Schwalbach: moderne, lokal optimierte Websites für Handwerk und Mittelstand im Landkreis Saarlouis. Ab 990€.",
+    paragraphs: [
+      "Saarwellingen liegt im Herzen des Landkreises Saarlouis und ist Heimat zahlreicher Handwerksbetriebe und Dienstleister. Eine moderne Website ist entscheidend, um sich im wachsenden Wettbewerb der Region zu behaupten.",
+      "Ich baue Websites für Saarwellingen, Schwalbach, Saarlouis und Lebach – technisch sauber, mobile-first und lokal SEO-optimiert.",
+      "Persönlicher Kontakt, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Schwalbach", "Saarlouis", "Lebach", "Dillingen"],
+  },
+  {
+    slug: "schwalbach",
+    city: "Schwalbach",
+    region: "Saarland",
+    lat: 49.2961,
+    lng: 6.8231,
+    intro:
+      "Webdesigner für Schwalbach im Landkreis Saarlouis: schnelle, mobiloptimierte Websites mit lokaler SEO. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+    paragraphs: [
+      "Schwalbach liegt zwischen Saarlouis, Völklingen und Saarbrücken und ist ein wirtschaftlich starker Standort mit Handwerk, Industrie und Einzelhandel. Eine professionelle Website ist hier ein klarer Wettbewerbsvorteil.",
+      "Ich entwickle Websites für Schwalbach, Saarwellingen, Völklingen und Saarlouis – mit lokaler SEO, mobile-first Design und sauberer Technik.",
+      "Klarer Festpreis ab 990€, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
+    ],
+    nearbyCities: ["Saarwellingen", "Völklingen", "Saarlouis", "Wadgassen"],
+  },
+  {
+    slug: "bous",
+    city: "Bous",
+    region: "Saarland",
+    lat: 49.2806,
+    lng: 6.8131,
+    intro:
+      "Webdesign für Bous im Landkreis Saarlouis: moderne, lokal optimierte Websites für Handwerk, Mittelstand und Dienstleister. Ab 990€.",
+    paragraphs: [
+      "Bous liegt zwischen Völklingen und Saarlouis und ist ein wichtiger lokaler Wirtschaftsstandort. Wer hier Kunden gewinnen will, braucht eine Website, die bei Google für lokale Suchanfragen wie „Handwerker Bous“ oder „Dienstleister Bous“ sichtbar ist.",
+      "Ich erstelle Websites für Bous, Wadgassen, Völklingen und Saarlouis: schnell, mobiloptimiert und mit lokaler SEO direkt eingebaut.",
+      "Persönlicher Ansprechpartner, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Wadgassen", "Völklingen", "Saarlouis", "Schwalbach"],
+  },
+  {
+    slug: "kirkel",
+    city: "Kirkel",
+    region: "Saarland",
+    lat: 49.2906,
+    lng: 7.2278,
+    intro:
+      "Webdesign für Kirkel im Saarpfalz-Kreis: moderne Websites mit lokaler SEO für Handwerk, Tourismus und Mittelstand. Ab 990€.",
+    paragraphs: [
+      "Kirkel ist Teil des Saarpfalz-Kreises und bekannt für die Kirkeler Burg und ein lebendiges Mittelstands-Umfeld. Eine professionelle Website ist hier oft der entscheidende Hebel, um auch außerhalb der direkten Nachbarschaft Aufträge zu gewinnen.",
+      "Ich entwickle Websites für Kirkel, Homburg, Blieskastel und St. Ingbert – mit lokaler SEO, schnellen Ladezeiten und mobiloptimiertem Design.",
+      "Festpreis statt Stundensatz, persönlicher Kontakt statt Hotline, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Homburg", "Blieskastel", "St. Ingbert", "Bexbach"],
+  },
+  {
+    slug: "spiesen-elversberg",
+    city: "Spiesen-Elversberg",
+    region: "Saarland",
+    lat: 49.3083,
+    lng: 7.1492,
+    intro:
+      "Webdesign für Spiesen-Elversberg im Landkreis Neunkirchen: moderne, lokal optimierte Websites für Handwerk, Mittelstand und Dienstleister. Ab 990€.",
+    paragraphs: [
+      "Spiesen-Elversberg liegt im Landkreis Neunkirchen und ist Heimat zahlreicher Mittelständler, Handwerker und Sportbetriebe (SV Elversberg). Lokale Sichtbarkeit bei Google ist hier oft der entscheidende Faktor für neue Kunden.",
+      "Ich baue Websites für Spiesen-Elversberg, Neunkirchen, Schiffweiler und Illingen: lokal SEO-optimiert, technisch sauber und mobile-first.",
+      "Klarer Festpreis, persönlicher Ansprechpartner, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Neunkirchen", "Schiffweiler", "Illingen", "Sulzbach"],
+  },
+  {
+    slug: "ueberherrn",
+    city: "Überherrn",
+    region: "Saarland",
+    lat: 49.2433,
+    lng: 6.7000,
+    intro:
+      "Webdesign für Überherrn an der französischen Grenze: moderne Websites mit lokaler SEO für Unternehmen im Landkreis Saarlouis. Ab 990€.",
+    paragraphs: [
+      "Überherrn liegt direkt an der französischen Grenze und ist ein wichtiger Standort für Handel, Handwerk und Dienstleistung – mit besonderer Anziehungskraft für deutsch-französische Kundschaft.",
+      "Ich entwickle Websites für Überherrn, Wallerfangen, Saarlouis und Bous – mit lokaler SEO, mobiloptimiertem Design und sauberer Technik.",
+      "Persönliche Betreuung, klare Festpreise, kostenloser Entwurf in 24 Stunden.",
+    ],
+    nearbyCities: ["Wallerfangen", "Saarlouis", "Bous", "Wadgassen"],
+  },
 ];
 
 export function getRegionBySlug(slug: string): Region | undefined {

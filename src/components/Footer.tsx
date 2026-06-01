@@ -60,7 +60,7 @@ export default function Footer() {
           {/* Standorte */}
           <div>
             <h3 className="font-semibold mb-4 text-cyan-400">Standorte im Saarland</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-400 text-sm">
               <li><Link href="/webdesign/saarbruecken" className="hover:text-cyan-400 transition-colors">Webdesign Saarbrücken</Link></li>
               <li><Link href="/webdesign/saarlouis" className="hover:text-cyan-400 transition-colors">Webdesign Saarlouis</Link></li>
               <li><Link href="/webdesign/voelklingen" className="hover:text-cyan-400 transition-colors">Webdesign Völklingen</Link></li>
@@ -69,16 +69,40 @@ export default function Footer() {
               <li><Link href="/webdesign/merzig" className="hover:text-cyan-400 transition-colors">Webdesign Merzig</Link></li>
               <li><Link href="/webdesign/st-ingbert" className="hover:text-cyan-400 transition-colors">Webdesign St. Ingbert</Link></li>
               <li><Link href="/webdesign/dillingen" className="hover:text-cyan-400 transition-colors">Webdesign Dillingen</Link></li>
+              <li><Link href="/webdesign/st-wendel" className="hover:text-cyan-400 transition-colors">Webdesign St. Wendel</Link></li>
+              <li><Link href="/webdesign/lebach" className="hover:text-cyan-400 transition-colors">Webdesign Lebach</Link></li>
+              <li><Link href="/webdesign/blieskastel" className="hover:text-cyan-400 transition-colors">Webdesign Blieskastel</Link></li>
+              <li><Link href="/webdesign/bexbach" className="hover:text-cyan-400 transition-colors">Webdesign Bexbach</Link></li>
+              <li><Link href="/webdesign/puettlingen" className="hover:text-cyan-400 transition-colors">Webdesign Püttlingen</Link></li>
+              <li><Link href="/webdesign/mettlach" className="hover:text-cyan-400 transition-colors">Webdesign Mettlach</Link></li>
+              <li><Link href="/webdesign/losheim-am-see" className="hover:text-cyan-400 transition-colors">Webdesign Losheim am See</Link></li>
+              <li><Link href="/webdesign/tholey" className="hover:text-cyan-400 transition-colors">Webdesign Tholey</Link></li>
             </ul>
           </div>
 
           {/* Branchen */}
           <div>
             <h3 className="font-semibold mb-4 text-cyan-400">Branchen</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link href="/leistungen/handwerker" className="hover:text-cyan-400 transition-colors">Webdesign für Handwerker</Link></li>
-              <li><Link href="/leistungen/restaurant" className="hover:text-cyan-400 transition-colors">Webdesign für Restaurants</Link></li>
-              <li><Link href="/leistungen/steuerberater" className="hover:text-cyan-400 transition-colors">Webdesign für Steuerberater</Link></li>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><Link href="/leistungen/handwerker" className="hover:text-cyan-400 transition-colors">Webdesign Handwerker</Link></li>
+              <li><Link href="/leistungen/maler" className="hover:text-cyan-400 transition-colors">Webdesign Maler</Link></li>
+              <li><Link href="/leistungen/elektriker" className="hover:text-cyan-400 transition-colors">Webdesign Elektriker</Link></li>
+              <li><Link href="/leistungen/dachdecker" className="hover:text-cyan-400 transition-colors">Webdesign Dachdecker</Link></li>
+              <li><Link href="/leistungen/shk" className="hover:text-cyan-400 transition-colors">Webdesign SHK</Link></li>
+              <li><Link href="/leistungen/schreiner" className="hover:text-cyan-400 transition-colors">Webdesign Schreiner</Link></li>
+              <li><Link href="/leistungen/garten-landschaftsbau" className="hover:text-cyan-400 transition-colors">Webdesign GaLaBau</Link></li>
+              <li><Link href="/leistungen/restaurant" className="hover:text-cyan-400 transition-colors">Webdesign Restaurants</Link></li>
+              <li><Link href="/leistungen/hotel" className="hover:text-cyan-400 transition-colors">Webdesign Hotels</Link></li>
+              <li><Link href="/leistungen/anwalt" className="hover:text-cyan-400 transition-colors">Webdesign Anwälte</Link></li>
+              <li><Link href="/leistungen/steuerberater" className="hover:text-cyan-400 transition-colors">Webdesign Steuerberater</Link></li>
+              <li><Link href="/leistungen/arzt" className="hover:text-cyan-400 transition-colors">Webdesign Ärzte</Link></li>
+              <li><Link href="/leistungen/zahnarzt" className="hover:text-cyan-400 transition-colors">Webdesign Zahnärzte</Link></li>
+              <li><Link href="/leistungen/physiotherapie" className="hover:text-cyan-400 transition-colors">Webdesign Physiotherapie</Link></li>
+              <li><Link href="/leistungen/friseur" className="hover:text-cyan-400 transition-colors">Webdesign Friseure</Link></li>
+              <li><Link href="/leistungen/immobilienmakler" className="hover:text-cyan-400 transition-colors">Webdesign Immobilienmakler</Link></li>
+              <li><Link href="/leistungen/coach" className="hover:text-cyan-400 transition-colors">Webdesign Coaches</Link></li>
+              <li><Link href="/leistungen/fitnessstudio" className="hover:text-cyan-400 transition-colors">Webdesign Fitnessstudio</Link></li>
+              <li><Link href="/leistungen/onlineshop" className="hover:text-cyan-400 transition-colors">Online-Shop erstellen</Link></li>
               <li><Link href="/leistungen/festpreis" className="hover:text-cyan-400 transition-colors">Website zum Festpreis</Link></li>
               <li><Link href="/leistungen/in-14-tagen" className="hover:text-cyan-400 transition-colors">Website in 14 Tagen</Link></li>
               <li><Link href="/leistungen/guenstig" className="hover:text-cyan-400 transition-colors">Webdesigner günstig</Link></li>

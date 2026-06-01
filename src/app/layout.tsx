@@ -11,8 +11,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Webdesign Saarland | Professionelle Websites & SEO | Fylu",
-  description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO & Google Ads für Unternehmen in Saarbrücken, Saarlouis & ganz Deutschland. Jetzt kostenlosen Entwurf sichern.",
+  title: "Webdesign Saarland | Websites, SEO & Google Ads ab 990€ | Fylu Saarlouis",
+  description: "Webdesign Agentur Saarland aus Saarlouis. Professionelle Websites, lokale SEO & Google Ads für Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig. Ab 990€, kostenloser Entwurf in 24h.",
+  keywords: [
+    "Webdesign Saarland",
+    "Webdesigner Saarland",
+    "Webdesign Saarbrücken",
+    "Webdesign Saarlouis",
+    "SEO Saarland",
+    "Google Ads Saarland",
+    "Website erstellen lassen Saarland",
+    "Webdesign Agentur Saarland",
+    "Homepage erstellen Saarland",
+  ],
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu – Fynn Schulz",
   publisher: "Fylu",
@@ -50,8 +61,13 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
+  verification: {
+    google: "Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU",
+  },
+  category: "Webdesign Agentur",
 };
 
 export default function RootLayout({
@@ -62,22 +78,49 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        <meta name="google-site-verification" content="Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              name: "Fylu – Webdesign & SEO",
-              description: "Webdesign Agentur aus dem Saarland. Professionelle Websites, SEO-Optimierung und Google Ads für Unternehmen in Saarbrücken, Saarlouis und ganz Deutschland.",
+              "@type": ["ProfessionalService", "LocalBusiness", "WebDesignCompany"],
+              "@id": "https://www.fylumarketing.de/#organization",
+              name: "Fylu – Webdesign & SEO Saarland",
+              alternateName: "Fylu Marketing",
+              legalName: "Fylu – Fynn Schulz",
+              description:
+                "Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, lokale Suchmaschinenoptimierung (SEO) und Google Ads für Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und im gesamten Saarland sowie deutschlandweit.",
               url: "https://www.fylumarketing.de",
-              logo: "https://www.fylumarketing.de/logo-fylu.webp",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.fylumarketing.de/logo-fylu.webp",
+                width: 512,
+                height: 512,
+              },
+              image: "https://www.fylumarketing.de/hero-background.webp",
               telephone: "+4915168488999",
               email: "kontakt@fylumarketing.de",
+              foundingDate: "2024",
+              founder: {
+                "@type": "Person",
+                "@id": "https://www.fylumarketing.de/#fynn-schulz",
+                name: "Fynn Schulz",
+                jobTitle: "Webdesigner & SEO-Spezialist",
+                worksFor: { "@id": "https://www.fylumarketing.de/#organization" },
+                knowsAbout: [
+                  "Webdesign",
+                  "Suchmaschinenoptimierung",
+                  "Google Ads",
+                  "Conversion-Optimierung",
+                  "Local SEO",
+                ],
+                url: "https://www.fylumarketing.de",
+              },
               address: {
                 "@type": "PostalAddress",
+                streetAddress: "Saarlouis",
                 addressLocality: "Saarlouis",
+                postalCode: "66740",
                 addressRegion: "Saarland",
                 addressCountry: "DE",
               },
@@ -86,26 +129,200 @@ export default function RootLayout({
                 latitude: 49.3133,
                 longitude: 6.7525,
               },
+              hasMap: "https://www.google.com/maps/place/Saarlouis",
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  opens: "08:00",
+                  closes: "20:00",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Saturday"],
+                  opens: "10:00",
+                  closes: "16:00",
+                },
+              ],
               serviceType: [
                 "Webdesign",
-                "SEO Optimierung",
+                "Suchmaschinenoptimierung (SEO)",
                 "Google Ads",
                 "Website Erstellung",
                 "Google Business Optimierung",
+                "Local SEO",
+                "Conversion-Optimierung",
+                "Webhosting",
               ],
               priceRange: "€€",
+              currenciesAccepted: "EUR",
+              paymentAccepted: ["Überweisung", "PayPal", "Kreditkarte"],
               areaServed: [
                 { "@type": "State", name: "Saarland" },
+                { "@type": "City", name: "Saarbrücken" },
+                { "@type": "City", name: "Saarlouis" },
+                { "@type": "City", name: "Neunkirchen" },
+                { "@type": "City", name: "Homburg" },
+                { "@type": "City", name: "Völklingen" },
+                { "@type": "City", name: "Merzig" },
+                { "@type": "City", name: "St. Ingbert" },
+                { "@type": "City", name: "Dillingen" },
+                { "@type": "City", name: "St. Wendel" },
+                { "@type": "City", name: "Lebach" },
+                { "@type": "City", name: "Püttlingen" },
+                { "@type": "City", name: "Blieskastel" },
                 { "@type": "Country", name: "Deutschland" },
               ],
+              serviceArea: {
+                "@type": "GeoCircle",
+                geoMidpoint: {
+                  "@type": "GeoCoordinates",
+                  latitude: 49.3133,
+                  longitude: 6.7525,
+                },
+                geoRadius: "60000",
+              },
               knowsAbout: [
                 "Webdesign Saarland",
                 "Webdesign Saarbrücken",
                 "Webdesign Saarlouis",
                 "SEO Optimierung",
+                "Local SEO",
                 "Google Ads",
+                "Google Business Profile",
                 "Website erstellen lassen",
+                "Conversion-Optimierung",
+                "Core Web Vitals",
+                "Mobile First Design",
               ],
+              sameAs: [
+                "https://www.instagram.com/fylumarketing/",
+                "https://www.linkedin.com/in/fynn-schulz/",
+                "https://g.page/fylumarketing",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Webdesign & SEO Pakete",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    name: "Basismodell Website",
+                    description:
+                      "Professionelle Website mit bis zu 3 Seiten, mobiloptimiert, SEO-Basis und Kontaktformular. Inklusive Hosting für 2 Monate.",
+                    price: "990",
+                    priceCurrency: "EUR",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.fylumarketing.de/angebote",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Basis-Webdesign",
+                      serviceType: "Webdesign",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Fortgeschritten Website",
+                    description:
+                      "Verkaufsoptimierte Website mit bis zu 6 Seiten, erweiterte SEO, Google Business Einrichtung. Inklusive Hosting für 2 Monate.",
+                    price: "1490",
+                    priceCurrency: "EUR",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.fylumarketing.de/angebote",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Business-Webdesign",
+                      serviceType: "Webdesign",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Professionell Website",
+                    description:
+                      "Unbegrenzte Seiten, Premium-Design, intensive Performance- und Conversion-Optimierung. Inklusive Hosting für 4 Monate.",
+                    price: "2490",
+                    priceCurrency: "EUR",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.fylumarketing.de/angebote",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Premium-Webdesign",
+                      serviceType: "Webdesign",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "SEO Betreuung",
+                    description:
+                      "Laufende SEO-Optimierung mit monatlichem Reporting für nachhaltige Google-Sichtbarkeit im Saarland.",
+                    price: "300",
+                    priceCurrency: "EUR",
+                    priceSpecification: {
+                      "@type": "UnitPriceSpecification",
+                      price: "300",
+                      priceCurrency: "EUR",
+                      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+                    },
+                    availability: "https://schema.org/InStock",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Suchmaschinenoptimierung",
+                      serviceType: "SEO",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Google Ads Management",
+                    description:
+                      "Professionelle Google Ads Kampagnen mit Setup, laufender Optimierung und transparentem Reporting.",
+                    price: "250",
+                    priceCurrency: "EUR",
+                    priceSpecification: {
+                      "@type": "UnitPriceSpecification",
+                      price: "250",
+                      priceCurrency: "EUR",
+                      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+                    },
+                    availability: "https://schema.org/InStock",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Google Ads Management",
+                      serviceType: "SEA",
+                    },
+                  },
+                ],
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                bestRating: "5",
+                worstRating: "1",
+                reviewCount: "12",
+              },
+              slogan: "Webdesign aus dem Saarland, das wirklich verkauft.",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.fylumarketing.de/#website",
+              url: "https://www.fylumarketing.de",
+              name: "Fylu – Webdesign Saarland",
+              description:
+                "Webdesign, SEO und Google Ads aus dem Saarland – persönlich, fair und mit messbaren Ergebnissen.",
+              publisher: { "@id": "https://www.fylumarketing.de/#organization" },
+              inLanguage: "de-DE",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.fylumarketing.de/?s={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
             }),
           }}
         />
@@ -167,10 +384,10 @@ export default function RootLayout({
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Was kostet eine professionelle Website?",
+                  name: "Was kostet eine professionelle Website im Saarland?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten, mobiloptimiert und SEO-Basis. Individuelle Lösungen sind auf Anfrage möglich.",
+                    text: "Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten, mobiloptimiert und mit lokaler SEO-Basis für das Saarland. Das beliebte Business-Paket kostet 1.490€ und enthält bis zu 6 Seiten, erweiterte SEO und Google Business Einrichtung. Premium-Lösungen ab 2.490€. Alle Pakete zum klaren Festpreis – ohne versteckte Kosten.",
                   },
                 },
                 {
@@ -178,23 +395,47 @@ export default function RootLayout({
                   name: "Wie lange dauert die Erstellung einer Website?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "In der Regel ist Ihre Website innerhalb von 2-4 Wochen fertig. Je nach Umfang und Paket kann es schneller oder etwas länger dauern.",
+                    text: "In der Regel ist Ihre Website innerhalb von 2-4 Wochen fertig. Den ersten Design-Entwurf erhalten Sie kostenlos und unverbindlich innerhalb von 24 Stunden. Express-Websites in 14 Tagen sind ohne Aufpreis möglich.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Bietet Fylu auch SEO-Optimierung an?",
+                  name: "Bietet Fylu auch SEO-Optimierung im Saarland an?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Ja, jede Website wird mit SEO-Basis (OnPage & Technik) ausgeliefert. Erweiterte SEO-Optimierung und Google Ads Betreuung sind ebenfalls verfügbar.",
+                    text: "Ja, jede Website wird mit lokaler SEO-Basis (OnPage, Technik, Google Business) ausgeliefert. Erweiterte SEO-Betreuung für Suchanfragen wie 'Webdesigner Saarbrücken' oder 'Handwerker Saarlouis' ab 300€ pro Monat. Google Ads Management ab 250€ pro Monat.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Für welche Region arbeitet Fylu?",
+                  name: "Für welche Städte im Saarland arbeitet Fylu?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Fylu ist im Saarland ansässig und arbeitet für Unternehmen in Saarbrücken, Saarlouis, Merzig, Dillingen und ganz Deutschland.",
+                    text: "Fylu ist in Saarlouis ansässig und betreut Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Völklingen, Merzig, St. Ingbert, Dillingen, St. Wendel, Lebach, Püttlingen, Blieskastel und im gesamten Saarland. Remote-Projekte deutschlandweit ebenfalls möglich.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Was unterscheidet Fylu von anderen Webdesign-Agenturen im Saarland?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Bei Fylu arbeiten Sie direkt mit dem Webdesigner – kein Agentur-Overhead, keine Ticket-Systeme, keine Warteschleifen. Sie bekommen klare Festpreise ab 990€, einen kostenlosen Entwurf in 24 Stunden und eine Website, die für lokale Suchanfragen im Saarland von Grund auf optimiert ist. Persönlich, transparent und nachweislich wirksam.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Wie schnell werde ich bei Google gefunden?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Erste Verbesserungen sind oft nach 4-8 Wochen messbar. Signifikante Rankings für lokale Begriffe wie 'Webdesign Saarbrücken' oder 'Handwerker Saarlouis' typischerweise nach 3-6 Monaten. Für sofortige Sichtbarkeit empfehle ich ergänzend Google Ads – Kampagnen sind binnen 24 Stunden aktiv.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Ist die Website mobiloptimiert und Google-konform?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Selbstverständlich. Jede Website wird mobile-first entwickelt, erfüllt alle Core Web Vitals (LCP, INP, CLS) und ist nach allen aktuellen Google-Standards gebaut. Über 70 Prozent der lokalen Suchanfragen kommen vom Smartphone – darauf ist alles ausgerichtet.",
                   },
                 },
               ],
