@@ -114,7 +114,7 @@ export default function ClientLogoBar() {
   return (
     <section
       ref={ref}
-      className="relative py-20 md:py-24 bg-stone-50 overflow-hidden"
+      className="relative py-24 md:py-32 bg-[var(--background-warm)] overflow-hidden"
       aria-labelledby="clients-heading"
     >
       <div className="container mx-auto px-6">
@@ -123,18 +123,26 @@ export default function ClientLogoBar() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-12 md:mb-14"
+          className="text-center mb-14 md:mb-16 max-w-3xl mx-auto"
         >
-          <span className="text-sm font-bold text-cyan-500 uppercase tracking-wider">
-            Vertraut von
-          </span>
+          <div className="mb-6 flex items-baseline justify-center gap-3">
+            <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
+              §8
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+              Im Portfolio
+            </span>
+          </div>
           <h2
             id="clients-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-900 mt-3 mb-4 leading-tight"
+            className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-[3.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Unternehmen, die mit uns gewachsen sind
+            Unternehmen, die mit uns{' '}
+            <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+              gewachsen sind.
+            </span>
           </h2>
-          <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg mt-5 leading-relaxed">
             Vom Saarländer Handwerksbetrieb über die regionale Top-Gastronomie bis zum US-Tech-Startup —
             Marken, die wir zu mehr Sichtbarkeit, mehr Anfragen und mehr Umsatz geführt haben.
           </p>

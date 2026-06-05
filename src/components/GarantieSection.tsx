@@ -4,6 +4,29 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 
+const ease = [0.22, 1, 0.36, 1] as const;
+
+const guarantees = [
+  {
+    value: '90',
+    unit: 'Tage',
+    label: 'Optimierung',
+    body: 'Garantierter Beobachtungs- und Optimierungszeitraum nach Live-Gang.',
+  },
+  {
+    value: '0',
+    unit: '€',
+    label: 'Zusatzkosten',
+    body: 'Keine Aufschläge bei der Nachoptimierung, wenn Anfragen unter der Zielmarke liegen.',
+  },
+  {
+    value: '100',
+    unit: '%',
+    label: 'Verantwortung',
+    body: 'Kein Abwälzen, keine Ausreden, kein Standard-Template — wir liefern bis es passt.',
+  },
+];
+
 export default function GarantieSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -11,102 +34,180 @@ export default function GarantieSection() {
   return (
     <section
       ref={ref}
-      className="relative py-24 md:py-32 bg-white overflow-hidden"
+      className="relative py-28 md:py-40 bg-[var(--background-warm)] overflow-hidden isolate"
       aria-labelledby="garantie-heading"
     >
-      {/* Soft cyan glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-cyan-50 rounded-full blur-3xl opacity-60 pointer-events-none" />
+      {/* Atmosphere */}
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="absolute inset-0 opacity-[0.4]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(12,14,16,0.06) 1px, transparent 1.4px)',
+            backgroundSize: '32px 32px',
+            maskImage:
+              'radial-gradient(ellipse 70% 70% at 50% 40%, black 30%, transparent 80%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 70% 70% at 50% 40%, black 30%, transparent 80%)',
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] rounded-full pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(50% 50% at 50% 50%, rgba(6,182,212,0.10), transparent 70%)',
+          }}
+          animate={{ opacity: [0.6, 1, 0.6] }}
+          transition={{ duration: 8, ease: 'easeInOut', repeat: Infinity }}
+        />
+        <div className="noise-overlay opacity-30" />
+      </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-5 md:px-8 relative z-10">
+        <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.7, ease }}
             className="text-center"
           >
-            <span className="text-sm font-bold text-cyan-500 uppercase tracking-wider">
-              Unser Versprechen
-            </span>
+            <div className="mb-6 inline-flex items-center gap-3 px-4 py-2 rounded-md border-2 border-dashed border-[var(--amber)]/40 -rotate-2">
+              <span className="font-display italic text-[var(--amber)] text-xl leading-none">
+                §7
+              </span>
+              <span className="text-[11px] uppercase tracking-[0.3em] text-[var(--amber)] font-bold">
+                Versprechen · stamped
+              </span>
+            </div>
+
             <h2
               id="garantie-heading"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 text-stone-900 leading-tight"
+              className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl mx-auto"
             >
-              Wenn die Website nicht{' '}
-              <span className="text-cyan-600">mehr Anfragen</span> bringt, arbeiten wir kostenlos
-              nach.
-            </h2>
-            <p className="text-lg md:text-xl text-stone-700 leading-relaxed max-w-3xl mx-auto">
-              Wir bauen keine Visitenkarten-Websites. Wir bauen Kundengewinnungssysteme. Und wir
-              stehen so hinter unserer Arbeit, dass wir Ihnen ein klares Versprechen geben:{' '}
-              <span className="font-semibold text-stone-900">
-                Sollten Sie 90 Tage nach Live-Gang keine messbar höheren Anfragen über Ihre Website
-                bekommen, optimieren wir kostenlos nach — bis die Zahlen stimmen.
+              Keine Anfragen?{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Wir arbeiten kostenlos nach.
               </span>
+            </h2>
+            <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
+              Wir bauen keine Visitenkarten — wir bauen Kundengewinnungssysteme.
+              Und wir stehen so hinter unserer Arbeit, dass wir Ihnen ein klares
+              Versprechen geben.
             </p>
           </motion.div>
 
+          {/* Guarantee tiles */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="grid sm:grid-cols-3 gap-5 md:gap-6 mt-12"
+            transition={{ duration: 0.7, delay: 0.15, ease }}
+            className="grid sm:grid-cols-3 gap-4 md:gap-5 mt-14 md:mt-16"
           >
-            <div className="bg-stone-50 rounded-2xl p-6 border border-stone-100">
-              <div className="text-4xl font-extrabold text-cyan-600 mb-2">90 Tage</div>
-              <p className="text-stone-700 text-sm leading-relaxed">
-                Garantierter Beobachtungs- und Optimierungszeitraum nach dem Live-Gang Ihrer
-                Website.
-              </p>
-            </div>
-            <div className="bg-stone-50 rounded-2xl p-6 border border-stone-100">
-              <div className="text-4xl font-extrabold text-cyan-600 mb-2">0 €</div>
-              <p className="text-stone-700 text-sm leading-relaxed">
-                Zusätzliche Kosten bei der Nachoptimierung, wenn die Anfragen unter unserer Zielmarke
-                bleiben.
-              </p>
-            </div>
-            <div className="bg-stone-50 rounded-2xl p-6 border border-stone-100">
-              <div className="text-4xl font-extrabold text-cyan-600 mb-2">100 %</div>
-              <p className="text-stone-700 text-sm leading-relaxed">
-                Verantwortung für Ihr Ergebnis — kein Abwälzen, keine Ausreden, kein
-                Standard-Template.
-              </p>
-            </div>
+            {guarantees.map((g, i) => (
+              <motion.div
+                key={g.label}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, delay: 0.25 + i * 0.1, ease }}
+                whileHover={{ y: -6 }}
+                className="relative bg-white rounded-3xl p-7 md:p-8 border border-stone-200/70 overflow-hidden group transition-shadow duration-500 hover:shadow-[0_30px_80px_-30px_rgba(12,14,16,0.25)]"
+              >
+                {/* Cyan corner glow on hover */}
+                <div
+                  className="absolute -top-16 -right-16 w-[200px] h-[200px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background:
+                      'radial-gradient(circle, rgba(6,182,212,0.25), transparent 65%)',
+                  }}
+                />
+                <div className="relative">
+                  <div className="text-[10px] uppercase tracking-[0.18em] font-semibold text-stone-500 mb-4">
+                    {g.label}
+                  </div>
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="font-display italic font-normal text-[5rem] md:text-[5.5rem] leading-[0.85] text-[var(--ink)] tracking-[-0.03em]">
+                      {g.value}
+                    </span>
+                    <span className="font-display italic font-normal text-2xl md:text-3xl text-[var(--cyan-deep)] leading-none">
+                      {g.unit}
+                    </span>
+                  </div>
+                  <p className="mt-6 text-stone-600 leading-relaxed text-sm">
+                    {g.body}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
 
-          {/* Scarcity / Kapazität */}
+          {/* Scarcity panel */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-12 bg-gradient-to-br from-stone-900 to-stone-800 rounded-3xl p-8 md:p-10 text-white"
+            transition={{ duration: 0.8, delay: 0.55, ease }}
+            className="relative mt-12 md:mt-16 bg-[var(--ink)] rounded-3xl p-8 md:p-12 text-white overflow-hidden"
           >
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
-              <div className="flex items-center gap-3">
-                <span className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-cyan-400" />
-                </span>
-                <span className="text-cyan-400 font-semibold uppercase tracking-wider text-xs">
-                  Aktuelle Kapazität
-                </span>
-              </div>
-              <div className="flex-1">
-                <p className="text-lg md:text-xl font-semibold leading-snug">
-                  Wir nehmen pro Monat maximal{' '}
-                  <span className="text-cyan-400">3 neue Kundenprojekte</span> an — damit jedes
-                  Projekt unsere volle Aufmerksamkeit bekommt.
-                </p>
-                <p className="text-stone-300 text-sm mt-2">
+            {/* Cyan corner glow */}
+            <motion.div
+              animate={{
+                opacity: [0.6, 1, 0.6],
+                scale: [1, 1.06, 1],
+              }}
+              transition={{ duration: 8, ease: 'easeInOut', repeat: Infinity }}
+              className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full"
+              style={{
+                background:
+                  'radial-gradient(circle, rgba(6,182,212,0.4), transparent 60%)',
+              }}
+            />
+            <div className="noise-overlay opacity-40 mix-blend-overlay" />
+
+            <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
+              <div className="lg:flex-1">
+                <div className="inline-flex items-center gap-2 mb-5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400" />
+                  </span>
+                  <span className="text-cyan-300 font-semibold uppercase tracking-[0.2em] text-[10px]">
+                    Aktuelle Kapazität
+                  </span>
+                </div>
+                <h3 className="text-2xl md:text-3xl lg:text-[2.2rem] font-semibold leading-[1.15] tracking-tight">
+                  Maximal{' '}
+                  <span className="font-display italic font-normal text-cyan-300">
+                    3 Projekte
+                  </span>{' '}
+                  pro Monat — damit jedes Projekt unsere volle Aufmerksamkeit bekommt.
+                </h3>
+                <p className="text-stone-400 text-sm md:text-base mt-3 max-w-xl">
                   Aktuell sind noch wenige Slots frei. Wer früh anfragt, sichert sich Priorität.
                 </p>
+
+                {/* Slots indicator */}
+                <div className="mt-6 flex items-center gap-2">
+                  {[1, 2, 3].map((slot, i) => (
+                    <div
+                      key={slot}
+                      className={`h-1.5 flex-1 max-w-[80px] rounded-full ${
+                        i === 0 ? 'bg-cyan-400' : 'bg-white/15'
+                      }`}
+                    />
+                  ))}
+                  <span className="text-[11px] uppercase tracking-wider text-stone-400 ml-3">
+                    1 / 3 vergeben
+                  </span>
+                </div>
               </div>
+
               <Link
                 href="/angebote"
-                className="w-full md:w-auto whitespace-nowrap text-center bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-4 rounded-full font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.4)] active:scale-[0.98]"
+                className="group inline-flex items-center gap-2 whitespace-nowrap text-center bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-4 rounded-full font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
               >
-                Slot sichern
+                <span>Slot sichern</span>
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
+                  <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </Link>
             </div>
           </motion.div>

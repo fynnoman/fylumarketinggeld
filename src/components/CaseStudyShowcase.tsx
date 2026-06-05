@@ -99,7 +99,7 @@ export default function CaseStudyShowcase() {
   return (
     <section
       ref={ref}
-      className="relative py-20 md:py-28 bg-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-white overflow-hidden"
       aria-labelledby="case-showcase-heading"
     >
       {/* Decorative grid + glow */}
@@ -116,19 +116,27 @@ export default function CaseStudyShowcase() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-3xl mx-auto text-center mb-12 md:mb-16"
+          className="max-w-3xl mx-auto text-center mb-14 md:mb-20"
         >
-          <span className="text-sm font-bold text-cyan-500 uppercase tracking-wider">
-            Erfolgsgeschichten
-          </span>
+          <div className="mb-6 flex items-baseline justify-center gap-3">
+            <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
+              §2
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+              Erfolgsgeschichten
+            </span>
+          </div>
           <h2
             id="case-showcase-heading"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-5 text-stone-900 leading-tight"
+            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Marken, die durch uns{' '}
-            <span className="text-cyan-600">messbar gewachsen</span> sind.
+            Marken, die{' '}
+            <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+              messbar gewachsen
+            </span>{' '}
+            sind.
           </h2>
-          <p className="text-lg text-stone-600 leading-relaxed">
+          <p className="mt-6 text-lg text-stone-600 leading-relaxed">
             Vier reale Geschichten. Vier Branchen. Ein Muster: Sichtbarkeit wird zur
             Anfragenmaschine.
           </p>
@@ -248,7 +256,7 @@ export default function CaseStudyShowcase() {
                           initial={{ opacity: 0, y: 20, scale: 0.9 }}
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                          className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-none tracking-tight"
+                          className="font-display italic font-normal text-7xl md:text-8xl lg:text-[8.5rem] text-white leading-none tracking-[-0.03em]"
                         >
                           {current.metric}
                         </motion.div>
@@ -257,7 +265,7 @@ export default function CaseStudyShowcase() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.4, delay: 0.4 }}
-                            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-cyan-400 leading-none tracking-tight"
+                            className="font-display italic font-normal text-4xl md:text-5xl lg:text-6xl text-cyan-300 leading-none tracking-tight"
                           >
                             {current.metricUnit}
                           </motion.div>

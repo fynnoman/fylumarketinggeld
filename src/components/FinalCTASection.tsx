@@ -119,9 +119,12 @@ export default function FinalCTASection() {
             transition={{ duration: 0.5, ease: smoothEase }}
             className="mb-6"
           >
-            <span className="text-sm font-bold text-stone-600 uppercase tracking-wider">
-              Paket
-            </span>
+            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-stone-200/70">
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+              <span className="text-[11px] font-medium tracking-[0.18em] uppercase text-stone-700">
+                Paket {activePackage + 1} von {packages.length}
+              </span>
+            </div>
           </motion.div>
 
           <AnimatePresence mode="wait">
@@ -133,10 +136,10 @@ export default function FinalCTASection() {
               transition={{ duration: 0.25 }}
             >
               <div className="mb-6">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 text-stone-900 leading-tight">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-3 text-[var(--ink)] leading-[1.02] tracking-[-0.035em]">
                   {currentPackage.name}
                 </h2>
-                <p className="text-2xl text-cyan-500 font-semibold">
+                <p className="font-display italic font-normal text-2xl md:text-3xl text-[var(--cyan-deep)]">
                   {currentPackage.subtitle}
                 </p>
               </div>
@@ -145,7 +148,7 @@ export default function FinalCTASection() {
                 {currentPackage.description}
               </p>
 
-              <div className="text-6xl md:text-7xl font-bold text-stone-900 mb-3">
+              <div className="font-display italic font-normal text-7xl md:text-8xl text-[var(--ink)] mb-3 leading-none tracking-[-0.035em]">
                 {currentPackage.price}
               </div>
               

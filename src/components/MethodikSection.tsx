@@ -1,138 +1,256 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 const steps = [
   {
     number: '01',
+    duration: 'Tag 1 – 3',
     title: 'Analyse',
     subtitle: 'Saarland-Marktscan & Sichtbarkeits-Audit',
     body:
       'Wir prüfen Ihre Top-Wettbewerber im Saarland, Ihre aktuelle Sichtbarkeit bei Google, Bing und Maps sowie die digitale Reife Ihrer Branche. Sie erhalten einen schonungslosen Befund — keine Schönfärberei.',
+    deliverable: 'Wettbewerbsanalyse · Sichtbarkeits-Report · Briefing',
   },
   {
     number: '02',
+    duration: 'Tag 4 – 7',
     title: 'Strategie',
     subtitle: 'Positionierung & Conversion-Architektur',
     body:
       'Wir entwickeln Ihre maßgeschneiderte Positionierung gegenüber lokaler Konkurrenz, definieren die richtige Zielgruppe und entwerfen die Conversion-Pfade Ihrer neuen Website. Kein Template, kein Bauchgefühl.',
+    deliverable: 'Positionierung · Wireframes · Content-Map',
   },
   {
     number: '03',
+    duration: 'Tag 8 – 21',
     title: 'Realisation',
     subtitle: 'Design & Development mit Verkaufsfokus',
     body:
       'Wir bauen Ihre Website mit Premium-Design, technischer SEO-Foundation, optimaler Performance, Schema.org-Strukturen und sauberem Code. Jedes Element folgt einem klaren Zweck: Anfragen produzieren.',
+    deliverable: 'Live-Website · Schema · Performance-Setup',
   },
   {
     number: '04',
+    duration: 'Tag 22 – 28',
     title: 'Sichtbarkeit',
     subtitle: 'Lokale Schärfung & Google Business',
     body:
       'Wir optimieren Ihre Sichtbarkeit für die Suchbegriffe, die Saarländer Kunden wirklich eingeben — über lokales SEO, Branchen-Snippets, strukturierte Daten und ein professionell aufgesetztes Google-Unternehmensprofil.',
+    deliverable: 'Lokales SEO · Google-Profil · Snippet-Setup',
   },
   {
     number: '05',
+    duration: 'Tag 29 – 90',
     title: 'Skalierung',
     subtitle: '90-Tage-Monitoring & Iteration',
     body:
       'In den ersten 90 Tagen nach Live-Gang messen wir, was wirklich Anfragen bringt — und optimieren kostenlos weiter, bis die Zahlen stimmen. Sie zahlen nicht für Theorie, sondern für Ergebnisse.',
+    deliverable: 'Reporting · A/B-Tests · Optimierung',
   },
 ];
 
 export default function MethodikSection() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start 70%', 'end 30%'],
+  });
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
     <section
       ref={ref}
       id="methodik"
-      className="relative py-24 md:py-32 bg-white overflow-hidden"
+      className="relative py-28 md:py-40 bg-white overflow-hidden isolate"
       aria-labelledby="methodik-heading"
     >
-      {/* Decorative grid background */}
-      <div className="absolute inset-0 grid-background opacity-40 pointer-events-none" />
+      {/* Atmosphere */}
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="absolute inset-0 opacity-[0.45]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(12,14,16,0.07) 1px, transparent 1.4px)',
+            backgroundSize: '28px 28px',
+            maskImage:
+              'radial-gradient(ellipse 70% 80% at 50% 40%, black 30%, transparent 80%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 70% 80% at 50% 40%, black 30%, transparent 80%)',
+          }}
+        />
+        <div
+          className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[70vw] h-[70vw]"
+          style={{
+            background:
+              'radial-gradient(40% 40% at 50% 30%, rgba(6,182,212,0.10), transparent 70%)',
+          }}
+        />
+      </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-5 md:px-8 relative z-10">
+        {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-3xl mx-auto text-center mb-16 md:mb-20"
+          transition={{ duration: 0.7, ease }}
+          className="max-w-3xl mx-auto text-center mb-16 md:mb-24"
         >
-          <span className="text-sm font-bold text-cyan-500 uppercase tracking-wider">
-            Unser System
-          </span>
+          <div className="mb-6 flex items-baseline justify-center gap-3">
+            <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
+              §6
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+              Das Fylu Sichtbarkeits-System
+            </span>
+          </div>
           <h2
             id="methodik-heading"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 text-stone-900 leading-tight"
+            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Das Fylu{' '}
-            <span className="text-cyan-600">Sichtbarkeits-System</span>
+            Fünf Schritte vom{' '}
+            <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+              Mittelmaß zur Marktführerschaft.
+            </span>
           </h2>
-          <p className="text-lg text-stone-700 leading-relaxed">
-            Fünf klar definierte Schritte, mit denen wir Saarländer Unternehmen in 90 Tagen aus dem
-            digitalen Mittelmaß holen — beweisbar, messbar, ohne Bauchgefühl.
+          <p className="mt-6 text-lg text-stone-600 leading-relaxed">
+            Beweisbar, messbar, ohne Bauchgefühl — in 90 Tagen.
           </p>
         </motion.div>
 
-        {/* Steps */}
-        <div className="relative max-w-6xl mx-auto">
-          {/* Connecting line on desktop */}
-          <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-cyan-200 to-transparent" />
+        {/* Journey */}
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical track */}
+          <div
+            className="absolute left-[26px] md:left-1/2 top-0 bottom-0 w-px bg-stone-200"
+            aria-hidden
+          />
+          {/* Animated progress fill */}
+          <motion.div
+            className="absolute left-[26px] md:left-1/2 top-0 w-px bg-gradient-to-b from-cyan-500 via-cyan-400 to-cyan-200 origin-top"
+            style={{ height: lineHeight }}
+            aria-hidden
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
-            {steps.map((step, i) => (
-              <motion.div
-                key={step.number}
-                initial={{ opacity: 0, y: 24 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{
-                  duration: 0.5,
-                  delay: 0.1 + i * 0.08,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="relative"
-              >
-                <div className="relative h-full bg-white rounded-2xl border border-stone-100 p-6 hover:border-cyan-200 hover:shadow-lg transition-all duration-300">
-                  {/* Number badge */}
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-600 text-white font-extrabold text-lg shadow-lg mb-5">
-                    {step.number}
+          <div className="space-y-14 md:space-y-20">
+            {steps.map((step, i) => {
+              const isLeft = i % 2 === 0;
+              return (
+                <motion.div
+                  key={step.number}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-80px' }}
+                  transition={{ duration: 0.7, ease }}
+                  className="relative grid md:grid-cols-2 gap-6 md:gap-12 items-start"
+                >
+                  {/* Milestone dot — pulsing */}
+                  <div className="absolute left-[14px] md:left-1/2 top-2 md:-translate-x-1/2 z-10">
+                    <span className="relative flex h-6 w-6 items-center justify-center">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-40" />
+                      <span className="relative inline-flex h-3 w-3 rounded-full bg-cyan-500 ring-4 ring-white" />
+                    </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-stone-900 mb-1">{step.title}</h3>
-                  <p className="text-xs font-semibold text-cyan-600 uppercase tracking-wider mb-3">
-                    {step.subtitle}
-                  </p>
-                  <p className="text-sm text-stone-700 leading-relaxed">{step.body}</p>
-                </div>
-              </motion.div>
-            ))}
+                  {/* Left side content */}
+                  <div
+                    className={`pl-14 md:pl-0 ${
+                      isLeft ? 'md:text-right md:pr-10' : 'md:col-start-2 md:pl-10'
+                    }`}
+                  >
+                    <div
+                      className={`inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] font-semibold text-stone-500 mb-3 ${
+                        isLeft ? 'md:flex-row-reverse' : ''
+                      }`}
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+                      <span>{step.duration}</span>
+                    </div>
+                    <div className="flex items-baseline gap-4 mb-3" style={{ flexDirection: isLeft ? 'row-reverse' : 'row' }}>
+                      <span className="font-display italic font-normal text-[3.5rem] md:text-[4.5rem] leading-none text-[var(--cyan-deep)]">
+                        {step.number}
+                      </span>
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-tight leading-tight">
+                          {step.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <p
+                      className={`text-sm font-medium text-cyan-700 mb-3 max-w-md ${
+                        isLeft ? 'md:ml-auto' : ''
+                      }`}
+                    >
+                      {step.subtitle}
+                    </p>
+                    <p
+                      className={`text-stone-600 leading-relaxed max-w-md text-[0.95rem] ${
+                        isLeft ? 'md:ml-auto' : ''
+                      }`}
+                    >
+                      {step.body}
+                    </p>
+                    <div
+                      className={`mt-5 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-stone-50 border border-stone-200/70 text-[11px] text-stone-600 ${
+                        isLeft ? 'md:float-right md:clear-both' : ''
+                      }`}
+                    >
+                      <span className="font-semibold text-stone-700">Deliverables:</span>
+                      <span>{step.deliverable}</span>
+                    </div>
+                  </div>
+
+                  {/* Spacer on opposite side */}
+                  <div className={isLeft ? '' : 'md:col-start-1 md:row-start-1'} />
+                </motion.div>
+              );
+            })}
+
+            {/* Finish flag */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease }}
+              className="relative pl-14 md:pl-0 md:text-center"
+            >
+              <div className="absolute left-[14px] md:left-1/2 top-2 md:-translate-x-1/2 z-10">
+                <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-[var(--ink)] ring-4 ring-white">
+                  <svg className="w-3.5 h-3.5 text-cyan-400" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8l3.5 3.5L13 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div className="md:inline-block md:mt-12 px-5 py-3 rounded-2xl bg-[var(--ink)] text-white text-sm font-semibold">
+                Live · Messbar · Skalierend
+              </div>
+            </motion.div>
           </div>
         </div>
 
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-14"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+          className="text-center mt-20"
         >
           <Link
             href="/methodik"
-            className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 font-semibold underline underline-offset-4 transition-colors"
+            className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
           >
-            Vollständige Methodik ansehen
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+            <span className="relative">
+              Vollständige Methodik ansehen
+              <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
+            </span>
+            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none">
+              <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </Link>
         </motion.div>

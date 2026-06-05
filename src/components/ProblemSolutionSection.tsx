@@ -1,110 +1,249 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import LazyVideo from './LazyVideo';
+import { HandStrike, HandUnderline, HandArrow } from './marks/HandMarks';
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 const problems = [
-  'Ihre aktuelle Website sieht veraltet aus und schreckt potenzielle Kunden ab',
-  'Mobile Besucher springen sofort ab – keine Optimierung für Smartphones',
-  'Kein klarer Call-to-Action – Besucher wissen nicht, was sie tun sollen',
+  {
+    short: 'Veraltet',
+    long: 'Ihre aktuelle Website sieht veraltet aus und schreckt potenzielle Kunden ab.',
+  },
+  {
+    short: 'Mobile bricht',
+    long: 'Mobile Besucher springen sofort ab — keine Optimierung für Smartphones.',
+  },
+  {
+    short: 'Kein Sog',
+    long: 'Kein klarer Call-to-Action — Besucher wissen nicht, was sie tun sollen.',
+  },
 ];
 
 export default function ProblemSolutionSection() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section ref={ref} className="relative py-32 px-6 overflow-hidden bg-white">
-      <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-40" />
+    <section
+      ref={ref}
+      className="relative py-32 md:py-44 px-5 md:px-8 overflow-hidden bg-[var(--ink)] text-white isolate"
+    >
+      <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-10" />
+
+      {/* Atmosphere */}
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="absolute -top-20 right-0 w-[60vw] h-[60vw]"
+          style={{
+            background:
+              'radial-gradient(40% 50% at 70% 20%, rgba(194,65,12,0.20), transparent 70%)',
+          }}
+        />
+        <div
+          className="absolute -bottom-20 left-0 w-[60vw] h-[60vw]"
+          style={{
+            background:
+              'radial-gradient(40% 50% at 30% 80%, rgba(6,182,212,0.20), transparent 70%)',
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage:
+              'linear-gradient(to right, rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.5) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+            maskImage:
+              'radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 80%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 80%)',
+          }}
+        />
+        <div className="noise-overlay opacity-60 mix-blend-overlay" />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+        {/* Editorial chapter intro — no pill, just type */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="text-4xl md:text-5xl font-bold mb-20 text-left max-w-2xl text-gray-900"
+          transition={{ duration: 0.6, ease }}
+          className="mb-3"
         >
-          Das Problem kenne ich
+          <span className="font-display italic text-[var(--amber-soft)] text-2xl md:text-3xl">
+            §1
+          </span>
+          <span className="ml-3 text-[11px] uppercase tracking-[0.3em] text-stone-400 font-medium">
+            Diagnose
+          </span>
+        </motion.div>
+
+        {/* Massive headline — brutalist scale */}
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease }}
+          className="text-[3rem] leading-[0.95] sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[11rem] font-semibold text-white tracking-[-0.045em] -mx-1"
+        >
+          Das Problem
+          <br />
+          <span className="font-display italic font-normal text-stone-500">
+            kenne&nbsp;ich.
+          </span>
         </motion.h2>
 
-        <div className="max-w-3xl">
-          {/* Problems - Minimalist Cards */}
-          <div className="space-y-8 mb-16">
-            {problems.map((problem, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -16 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.1 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative"
-              >
-                {/* Minimal border effect */}
-                <div className="absolute -left-4 top-0 bottom-0 w-1 bg-red-500 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                
-                <div className="pl-6">
-                  <p className="text-lg md:text-xl text-gray-900 group-hover:text-black transition-colors leading-relaxed">
-                    {problem}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+        <div className="mt-20 md:mt-28 grid lg:grid-cols-12 gap-12 lg:gap-16">
+          {/* LEFT — Problems, struck through by hand */}
+          <div className="lg:col-span-5">
+            <div className="mb-10 flex items-baseline gap-3">
+              <span className="font-display italic text-stone-500 text-xl">a.</span>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-stone-500 font-semibold">
+                Was Sie wahrscheinlich kennen
+              </p>
+            </div>
+            <ul className="space-y-10">
+              {problems.map((p, i) => (
+                <motion.li
+                  key={p.short}
+                  initial={{ opacity: 0, x: -16 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.6, delay: 0.15 + i * 0.1, ease }}
+                  className="group relative"
+                >
+                  <div className="flex items-start gap-5">
+                    <span className="font-display italic font-normal text-[3rem] leading-none text-stone-700 select-none w-14 shrink-0">
+                      0{i + 1}
+                    </span>
+                    <div className="flex-1">
+                      <div className="relative inline-block">
+                        <span className="font-semibold text-white text-xl md:text-2xl">
+                          {p.short}
+                        </span>
+                        <HandStrike
+                          className="absolute left-0 right-0 top-1/2 -translate-y-1/2 w-[110%] h-3 text-[var(--amber-soft)]"
+                          delay={0.6 + i * 0.15}
+                          inView={isInView}
+                        />
+                      </div>
+                      <p className="text-stone-400 text-sm md:text-base leading-relaxed mt-3 max-w-md">
+                        {p.long}
+                      </p>
+                    </div>
+                  </div>
+                </motion.li>
+              ))}
+            </ul>
+
+            {/* Handwritten margin note */}
+            <motion.div
+              initial={{ opacity: 0, rotate: -2 }}
+              animate={isInView ? { opacity: 1, rotate: -2.5 } : {}}
+              transition={{ duration: 0.8, delay: 1.3, ease }}
+              className="mt-12 ml-16 max-w-xs"
+            >
+              <p className="font-hand text-2xl text-[var(--amber-soft)] leading-tight">
+                und ehrlich — keiner mag&apos;s zugeben.
+              </p>
+              <HandArrow
+                className="w-24 h-12 text-[var(--amber-soft)] mt-1 ml-8"
+                direction="right"
+                delay={1.7}
+                inView={isInView}
+              />
+            </motion.div>
           </div>
 
-          {/* Solution Text - Simple with Marker Effect */}
+          {/* RIGHT — Solution card on cream paper */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mb-12"
+            transition={{ duration: 0.8, delay: 0.4, ease }}
+            className="lg:col-span-7 relative"
           >
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-900">
-              Ihre Website muss{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">liefern</span>
-                {/* Marker effect - cyan highlight */}
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                  className="absolute -bottom-1 left-0 right-0 h-5 bg-cyan-400 opacity-60 -rotate-1"
-                  style={{ transformOrigin: 'left' }}
-                />
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  className="absolute -bottom-0.5 left-0 right-0 h-4 bg-cyan-500 opacity-40 rotate-1"
-                  style={{ transformOrigin: 'left' }}
-                />
-              </span>
-              {' '}– nicht nur existieren
-            </h3>
-            <div className="text-xl text-gray-900 mb-10 leading-relaxed">
-              Ich verwandle Ihre Online-Präsenz in eine{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10 font-semibold text-black">professionelle Verkaufsmaschine</span>
-                {/* Marker effect on important phrase */}
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  animate={isInView ? { scaleX: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.58, ease: [0.22, 1, 0.36, 1] }}
-                  className="absolute -bottom-0.5 left-0 right-0 h-3 bg-cyan-400 opacity-40 -rotate-1"
-                  style={{ transformOrigin: 'left' }}
-                />
-              </span>
-              {' '}– mit voller Hingabe, statt Massenproduktion.
+            <div className="relative bg-[var(--cream)] text-[var(--ink)] rounded-3xl p-8 md:p-12 overflow-hidden shadow-[0_40px_100px_-30px_rgba(0,0,0,0.5)]">
+              {/* Paper texture */}
+              <div className="absolute inset-0 paper-line opacity-60 pointer-events-none" />
+              <div className="noise-overlay opacity-50 mix-blend-multiply" />
+
+              <div className="relative">
+                <div className="flex items-baseline gap-3 mb-8">
+                  <span className="font-display italic text-[var(--amber)] text-2xl">§2</span>
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-stone-500 font-semibold">
+                    Therapie
+                  </span>
+                </div>
+
+                <h3 className="text-3xl md:text-4xl lg:text-[2.8rem] font-semibold text-[var(--ink)] leading-[1.05] tracking-[-0.03em]">
+                  Ihre Website muss{' '}
+                  <span className="relative inline-block">
+                    <span className="relative z-10 font-display italic font-normal text-[var(--amber)]">
+                      liefern
+                    </span>
+                    <HandUnderline
+                      className="absolute -bottom-2 left-0 w-full h-3 text-[var(--amber)]"
+                      delay={1.0}
+                      inView={isInView}
+                    />
+                  </span>{' '}
+                  — nicht nur existieren.
+                </h3>
+
+                <p className="mt-7 text-stone-700 text-base md:text-lg leading-relaxed max-w-xl">
+                  Ich verwandle Ihre Online-Präsenz in eine{' '}
+                  <span className="font-semibold text-[var(--ink)]">
+                    professionelle Verkaufsmaschine
+                  </span>
+                  {' '}— mit voller Hingabe, statt Massenproduktion.
+                </p>
+
+                {/* Outcome tags */}
+                <div className="relative mt-10 grid sm:grid-cols-3 gap-3">
+                  {[
+                    { k: 'Mehr', v: 'Anfragen' },
+                    { k: 'Höhere', v: 'Conversion' },
+                    { k: 'Bessere', v: 'Qualität' },
+                  ].map((it, i) => (
+                    <motion.div
+                      key={it.v}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={isInView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.9 + i * 0.08, ease }}
+                      className="px-4 py-3 rounded-2xl bg-white border border-stone-200/70"
+                    >
+                      <div className="text-[10px] uppercase tracking-wider text-stone-500 mb-0.5">
+                        {it.k}
+                      </div>
+                      <div className="font-display italic text-xl text-[var(--ink)] leading-none">
+                        {it.v}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+
+                <Link
+                  href="/angebote"
+                  className="mt-10 inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[var(--ink)] hover:bg-black text-white text-[15px] font-semibold shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px] transition-all duration-300 group"
+                >
+                  <span>Jetzt Transformation starten</span>
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
+                    <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+
+                {/* Handwritten signature-like note */}
+                <div className="mt-10 pt-6 border-t border-stone-200/70 flex items-baseline gap-3">
+                  <span className="font-hand text-xl text-[var(--amber)] leading-none">
+                    — versprochen.
+                  </span>
+                  <span className="text-[10px] uppercase tracking-wider text-stone-400">
+                    F. S.
+                  </span>
+                </div>
+              </div>
             </div>
-            <Link
-              href="/angebote"
-              className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-flex items-center gap-3 group/btn"
-            >
-              <span>Jetzt Transformation starten</span>
-              <span className="transition-transform duration-200 group-hover/btn:translate-x-1">→</span>
-            </Link>
           </motion.div>
         </div>
       </div>
