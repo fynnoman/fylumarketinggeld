@@ -42,7 +42,7 @@ const portfolioItems = [
     url: 'https://salif-gebaeudeservice.de',
   },
   {
-    src: '/portfolio-taskey-app.webp',
+    src: '/portfolio-taskey-saas.webp',
     alt: 'Webdesign für Taskey – Produktivitäts-App Website',
     title: 'SaaS & App',
     description: 'Moderne Landing Page für eine Produktivitäts-App — mit klarer Nutzerführung, starker Value Proposition und Conversion-Optimierung.',

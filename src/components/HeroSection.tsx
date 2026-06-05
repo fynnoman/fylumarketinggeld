@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const portfolioCards = [
   {
-    src: '/portfolio-taskey-app.webp',
+    src: '/portfolio-taskey-saas.webp',
     alt: 'Taskey App – SaaS-Landingpage von Fylu',
     label: 'Taskey · SaaS',
     metric: '+3,2× Conversion',
