@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Main grid */}
         <div className="py-16 md:py-20 grid md:grid-cols-12 gap-10 md:gap-8">
           {/* Brand */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo-fylu.webp"
@@ -107,10 +107,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Marketing */}
           <div className="md:col-span-2">
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
-              Services
+              Marketing
             </h3>
             <ul className="space-y-2.5 text-sm text-stone-400">
               <li><Link href="/webdesign-saarland" className="hover:text-white transition-colors">Webdesign Saarland</Link></li>
@@ -123,8 +123,24 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Software & Code */}
+          <div className="md:col-span-2">
+            <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
+              Software &amp; Code
+            </h3>
+            <ul className="space-y-2.5 text-sm text-stone-400">
+              <li><Link href="/software-saarland" className="hover:text-white transition-colors">Software Saarland</Link></li>
+              <li><Link href="/programmierer-saarland" className="hover:text-white transition-colors">Programmierer Saarland</Link></li>
+              <li><Link href="/app-entwickeln-lassen" className="hover:text-white transition-colors">App entwickeln lassen</Link></li>
+              <li><Link href="/software/saarbruecken" className="hover:text-white transition-colors">Software Saarbrücken</Link></li>
+              <li><Link href="/software/saarlouis" className="hover:text-white transition-colors">Software Saarlouis</Link></li>
+              <li><Link href="/software/neunkirchen" className="hover:text-white transition-colors">Software Neunkirchen</Link></li>
+              <li><Link href="/software/homburg" className="hover:text-white transition-colors">Software Homburg</Link></li>
+            </ul>
+          </div>
+
           {/* Standorte */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Standorte
             </h3>
@@ -149,7 +165,7 @@ export default function Footer() {
           </div>
 
           {/* Branchen */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 lg:col-span-3">
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Branchen
             </h3>

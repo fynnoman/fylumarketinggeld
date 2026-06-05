@@ -24,6 +24,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${baseUrl}/webdesign-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${baseUrl}/software-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${baseUrl}/programmierer-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/app-entwickeln-lassen`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/seo-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/google-ads-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/website-erstellen-lassen`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
@@ -44,6 +47,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.9 : 0.75,
   }));
 
+  const softwareCityEntries: MetadataRoute.Sitemap = regions.map((r) => ({
+    url: `${baseUrl}/software/${r.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.85 : 0.7,
+  }));
+
   const topicEntries: MetadataRoute.Sitemap = topics.map((t) => ({
     url: `${baseUrl}/leistungen/${t.slug}`,
     lastModified: now,
@@ -51,5 +61,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: HIGH_PRIORITY_TOPICS.has(t.slug) ? 0.85 : 0.7,
   }));
 
-  return [...staticEntries, ...regionEntries, ...topicEntries];
+  return [...staticEntries, ...regionEntries, ...softwareCityEntries, ...topicEntries];
 }

@@ -1,8 +1,9 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { HandUnderline } from './marks/HandMarks';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -13,38 +14,48 @@ const portfolioCards = [
     alt: 'Taskey App – SaaS-Landingpage von Fylu',
     label: 'Taskey · SaaS',
     metric: '+3,2× Conversion',
-    rotate: -7,
-    offsetX: -40,
-    offsetY: 40,
-    scale: 0.94,
-    z: 10,
   },
   {
     src: '/portfolio-porto-cervo-saarlouis.webp',
     alt: 'Porto Cervo Saarlouis – Restaurant-Website von Fylu',
     label: 'Porto Cervo · Gastronomie',
     metric: '+184 % Reservierungen',
-    rotate: 4,
-    offsetX: 20,
-    offsetY: -20,
-    scale: 1,
-    z: 30,
   },
   {
     src: '/portfolio-galabau-eifler.webp',
     alt: 'Galabau Eifler – Landschaftsbau-Website von Fylu',
     label: 'Galabau Eifler · Handwerk',
     metric: '+12 Aufträge in 30 Tagen',
-    rotate: 9,
-    offsetX: 60,
-    offsetY: 20,
-    scale: 0.9,
-    z: 20,
   },
 ];
 
+// Three slots in the composition — back-left, front-center (featured), back-right
+const slots = [
+  { rotate: -7, x: -40, y: 40, scale: 0.94, z: 10 },
+  { rotate: 4, x: 20, y: -20, scale: 1, z: 30 },
+  { rotate: 9, x: 60, y: 20, scale: 0.9, z: 20 },
+];
+
+const ROTATION_INTERVAL = 10000; // 10 seconds
+
 export default function HeroSection() {
   const reduceMotion = useReducedMotion();
+  const [featuredIdx, setFeaturedIdx] = useState(1);
+
+  useEffect(() => {
+    if (reduceMotion) return;
+    const interval = setInterval(() => {
+      setFeaturedIdx((idx) => (idx + 1) % portfolioCards.length);
+    }, ROTATION_INTERVAL);
+    return () => clearInterval(interval);
+  }, [reduceMotion]);
+
+  // Each card occupies a slot based on its offset from the currently-featured card.
+  // featuredIdx points to the card that should sit in slot 1 (the front).
+  const getSlot = (cardIdx: number) => {
+    const offset = ((cardIdx - featuredIdx + 1) % portfolioCards.length + portfolioCards.length) % portfolioCards.length;
+    return slots[offset];
+  };
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[var(--background-warm)] isolate">
@@ -236,41 +247,28 @@ export default function HeroSection() {
             }}
           />
 
-          {portfolioCards.map((card, i) => (
-            <motion.div
-              key={card.src}
-              initial={{ opacity: 0, y: 40, rotate: card.rotate * 0.3 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                rotate: card.rotate,
-              }}
-              transition={{
-                duration: 0.9,
-                delay: 0.35 + i * 0.12,
-                ease,
-              }}
-              style={{ zIndex: card.z }}
-              className="absolute inset-0 m-auto"
-            >
+          {portfolioCards.map((card, i) => {
+            const slot = getSlot(i);
+            const isFeatured = i === featuredIdx;
+            return (
               <motion.div
-                animate={
-                  reduceMotion
-                    ? undefined
-                    : {
-                        y: [0, -8 - i * 2, 0],
-                      }
-                }
+                key={card.src}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{
+                  opacity: 1,
+                  x: slot.x,
+                  y: slot.y,
+                  rotate: slot.rotate,
+                  scale: slot.scale,
+                }}
                 transition={{
-                  duration: 6 + i * 1.2,
-                  ease: 'easeInOut',
-                  repeat: Infinity,
-                  delay: i * 0.4,
+                  opacity: { duration: 0.9, delay: 0.35 + i * 0.12, ease },
+                  x: { duration: 1.2, ease },
+                  y: { duration: 1.2, ease },
+                  rotate: { duration: 1.2, ease },
+                  scale: { duration: 1.2, ease },
                 }}
-                style={{
-                  transform: `translate(${card.offsetX}px, ${card.offsetY}px) scale(${card.scale}) rotate(${card.rotate}deg)`,
-                  transformOrigin: 'center',
-                }}
+                style={{ zIndex: slot.z }}
                 className="absolute inset-0 m-auto w-[78%] max-w-[420px] aspect-[4/3] rounded-2xl bg-white border border-stone-200/80 shadow-[0_30px_80px_-30px_rgba(12,14,16,0.35),0_8px_24px_-8px_rgba(12,14,16,0.15)] overflow-hidden"
               >
                 {/* Browser chrome */}
@@ -294,25 +292,45 @@ export default function HeroSection() {
                   <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/15 to-transparent pointer-events-none" />
                 </div>
 
-                {/* Metric badge on the featured card */}
-                {i === 1 && (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6, delay: 1.1, ease }}
-                    className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-white/85 backdrop-blur-md border border-stone-200/80 shadow-sm"
-                  >
-                    <span className="text-[11px] font-semibold text-stone-500 tracking-wide uppercase">
-                      {card.label}
-                    </span>
-                    <span className="text-[12px] font-bold text-cyan-700">
-                      {card.metric}
-                    </span>
-                  </motion.div>
-                )}
+                {/* Metric badge — appears on whichever card is currently featured */}
+                <AnimatePresence mode="wait">
+                  {isFeatured && (
+                    <motion.div
+                      key={`metric-${i}`}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.5, ease }}
+                      className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-white/85 backdrop-blur-md border border-stone-200/80 shadow-sm"
+                    >
+                      <span className="text-[11px] font-semibold text-stone-500 tracking-wide uppercase">
+                        {card.label}
+                      </span>
+                      <span className="text-[12px] font-bold text-cyan-700">
+                        {card.metric}
+                      </span>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
-            </motion.div>
-          ))}
+            );
+          })}
+
+          {/* Rotation indicator dots */}
+          <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-40">
+            {portfolioCards.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setFeaturedIdx(i)}
+                aria-label={`Karte ${i + 1} anzeigen`}
+                className={`h-1.5 rounded-full transition-all duration-500 ${
+                  i === featuredIdx
+                    ? 'w-7 bg-[var(--cyan-deep)]'
+                    : 'w-1.5 bg-stone-300 hover:bg-stone-400'
+                }`}
+              />
+            ))}
+          </div>
 
           {/* Floating spec chip top-right */}
           <motion.div
