@@ -1,9 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import { saveMessage } from '@/lib/messages';
 
+export const runtime = 'nodejs';
+
+const SMTP_HOST = process.env.SMTP_HOST ?? 'smtp.strato.de';
+const SMTP_PORT = Number(process.env.SMTP_PORT ?? 465);
+const SMTP_USER = process.env.SMTP_USER ?? '';
+const SMTP_PASS = process.env.SMTP_PASS ?? '';
 const MAIL_TO = process.env.MAIL_TO ?? 'kontakt@fylumarketing.de';
-const MAIL_FROM = process.env.MAIL_FROM ?? 'Fylu Website <noreply@fylumarketing.de>';
+const MAIL_FROM = process.env.MAIL_FROM ?? `Fylu Website <${SMTP_USER}>`;
 
 function escapeHtml(value: unknown): string {
   return String(value ?? '—')
@@ -31,15 +37,20 @@ export async function POST(req: NextRequest) {
       message,
     } = data;
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY missing on server.');
+    if (!SMTP_USER || !SMTP_PASS) {
+      console.error('SMTP credentials missing (SMTP_USER / SMTP_PASS env vars).');
       return NextResponse.json(
         { error: 'Mail-Konfiguration fehlt auf dem Server.' },
         { status: 500 },
       );
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const transporter = nodemailer.createTransport({
+      host: SMTP_HOST,
+      port: SMTP_PORT,
+      secure: SMTP_PORT === 465,
+      auth: { user: SMTP_USER, pass: SMTP_PASS },
+    });
 
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f9f9f9; border-radius: 8px;">
@@ -94,18 +105,13 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-    const result = await resend.emails.send({
+    await transporter.sendMail({
       from: MAIL_FROM,
       to: MAIL_TO,
       replyTo: email || undefined,
       subject: `Neue Anfrage von ${firmName || 'Website-Besucher'}`,
       html,
     });
-
-    if (result.error) {
-      console.error('Resend send error:', result.error);
-      return NextResponse.json({ error: result.error.message }, { status: 500 });
-    }
 
     saveMessage({
       type: 'contact',
