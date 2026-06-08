@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist, Caveat } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import HiddenTaskeyLink from "@/components/HiddenTaskeyLink";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
+
+const GTAG_ID = "AW-18076906192";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -560,6 +563,18 @@ export default function RootLayout({
         <Analytics />
         <HiddenTaskeyLink />
         <WhatsAppButton />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GTAG_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
