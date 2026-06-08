@@ -39,11 +39,16 @@ export default function AngeboteForm() {
         body: JSON.stringify(formData),
       });
 
-      if (!res.ok) throw new Error('Fehler beim Senden');
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({} as { error?: string }));
+        const detail = body?.error ? `\n\nDetails: ${body.error}` : '';
+        throw new Error(`Fehler beim Senden (HTTP ${res.status})${detail}`);
+      }
       setIsSubmitted(true);
     } catch (err) {
       console.error(err);
-      alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an kontakt@fylumarketing.de');
+      const msg = err instanceof Error ? err.message : 'Unbekannter Fehler';
+      alert(`${msg}\n\nBitte versuchen Sie es erneut oder schreiben Sie direkt an kontakt@fylumarketing.de`);
     } finally {
       setIsSubmitting(false);
     }
