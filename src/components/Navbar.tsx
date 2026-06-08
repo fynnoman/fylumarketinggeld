@@ -22,7 +22,7 @@ export default function Navbar() {
     { label: 'Services', href: '#services' },
     { label: 'Über mich', href: '#about' },
     { label: 'Pakete', href: '#packages' },
-    { label: 'Premium', href: '/premium' },
+    { label: 'Team', href: '/team' },
     { label: 'Methodik', href: '/methodik' },
   ];
 

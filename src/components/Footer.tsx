@@ -118,7 +118,7 @@ export default function Footer() {
               <li><Link href="/google-ads-saarland" className="hover:text-white transition-colors">Google Ads</Link></li>
               <li><Link href="/website-erstellen-lassen" className="hover:text-white transition-colors">Website erstellen lassen</Link></li>
               <li><Link href="/webdesign-handwerk" className="hover:text-white transition-colors">Webdesign Handwerk</Link></li>
-              <li><Link href="/premium" className="hover:text-white transition-colors">Premium-Pakete</Link></li>
+              <li><Link href="/team" className="hover:text-white transition-colors">Team &amp; Studio</Link></li>
               <li><Link href="/methodik" className="hover:text-white transition-colors">Methodik</Link></li>
             </ul>
           </div>

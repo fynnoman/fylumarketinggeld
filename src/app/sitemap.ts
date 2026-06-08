@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/website-erstellen-lassen`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/webdesign-handwerk`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/angebote`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/premium`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${baseUrl}/team`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/methodik`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/buchen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/impressum`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
