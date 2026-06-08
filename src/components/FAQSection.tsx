@@ -13,10 +13,6 @@ const faqs = [
     a: 'Standardprojekte gehen in 2 bis 4 Wochen live. Premium-Projekte mit individuellem Strategie- und SEO-Konzept planen wir mit 4 bis 8 Wochen — von Briefing bis Launch, mit klaren Meilensteinen, festen Feedback-Runden und ohne Verzögerungs-Spielräume.',
   },
   {
-    q: 'Warum nicht günstiger? Es gibt doch Baukasten-Lösungen ab 9,90 €/Monat.',
-    a: 'Weil ein Baukasten nicht das Problem löst, das Sie wirklich haben: zu wenig Anfragen, zu wenig Sichtbarkeit, zu wenig Vertrauen. Eine Website ist keine digitale Visitenkarte — sie ist Ihr wichtigster Vertriebs- und Marketing-Hebel. Wir konkurrieren nicht mit 9,90-€-Baukästen, sondern mit klassischen Vertriebs- und Werbekosten. Eine gute Website ersetzt im ersten Jahr in der Regel die Akquise-Leistung von 1 bis 3 Außendienstmitarbeitern.',
-  },
-  {
     q: 'Arbeiten Sie auch mit Unternehmen außerhalb des Saarlands?',
     a: 'Unser Hauptmarkt ist das Saarland: Saarbrücken, Saarlouis, Neunkirchen, Homburg, Völklingen, Merzig, St. Wendel, Dillingen und alle umliegenden Orte. Wir arbeiten aber auch deutschland- und EU-weit, wenn die Branchen-Passung stimmt. Aktuell betreuen wir Kunden in Deutschland und in den USA.',
   },

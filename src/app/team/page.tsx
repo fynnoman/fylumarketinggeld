@@ -33,34 +33,34 @@ type Member = {
 const team: Member[] = [
   {
     name: 'Fynn Schulz',
-    role: 'Inhaber & Geschäftsführung',
-    short: 'Strategie · Kundenführung',
-    bio: 'Gründer von Fylu. Verantwortet Positionierung, Strategie und die direkte Zusammenarbeit mit unseren Kunden — vom ersten Strategiegespräch bis zum Live-Gang. Über fünf Jahre Erfahrung in Webdesign, Conversion-Optimierung und lokaler SEO im Saarland.',
+    role: 'Inhaber & Kreativleitung',
+    short: 'Creative Direction · Kundenführung',
+    bio: 'Gründer von Fylu. Verantwortet die kreative Richtung jedes Projekts und die direkte Zusammenarbeit mit unseren Kunden — vom ersten Strategiegespräch bis zum Live-Gang. Über fünf Jahre Erfahrung in Webdesign, Brand-Aufbau und lokalem Marketing im Saarland.',
     image: '/64bb3620-f0df-4887-a72b-6f4e69750fd8.webp',
     imagePosition: 'object-[50%_25%]',
     initials: 'FS',
-    focus: ['Positionierung', 'Conversion-Strategie', 'Kundenführung'],
+    focus: ['Creative Direction', 'Kundenführung', 'Brand-Story'],
   },
   {
     name: 'Yukio Sato',
-    role: 'Technische Leitung',
-    short: 'Lead Developer · Performance',
-    bio: 'Verantwortet die technische Substanz unserer Projekte: Next.js-Architektur, sauberer Code, höchste Core-Web-Vitals-Werte. Sorgt dafür, dass jede Website nicht nur gut aussieht, sondern in der Google-Suche, auf dem Smartphone und unter Last spürbar überlegen ist.',
+    role: 'Head of Strategy',
+    short: 'Marktstrategie · Analyse',
+    bio: 'Verantwortet Markt- und Wettbewerbsanalysen, Positionierungs-Strategie und das datenbasierte Fundament unserer Projekte. Übersetzt Branchen- und Suchverhalten in klare strategische Empfehlungen, bevor das erste Layout entsteht.',
     image: '/team/yukio-sato.png',
     initials: 'YS',
-    focus: ['Next.js & React', 'Core Web Vitals', 'Technisches SEO'],
+    focus: ['Marktanalyse', 'Positionierung', 'Conversion-Audit'],
   },
   {
     name: 'Julian Stosse',
-    role: 'Creative Director',
-    short: 'Art Direction · Design',
-    bio: 'Leitet die gestalterische Linie des Studios. Übersetzt Strategie in visuelle Sprache, definiert Typografie, Farbe und Bildwelten unserer Projekte. Verantwortet das Premium-Niveau, an dem sich jede ausgelieferte Website messen lassen muss.',
+    role: 'Technische Leitung',
+    short: 'Lead Developer · Performance',
+    bio: 'Verantwortet die technische Substanz unserer Projekte: Next.js-Architektur, sauberer Code, höchste Core-Web-Vitals-Werte. Sorgt dafür, dass jede Website nicht nur gut aussieht, sondern in der Google-Suche, auf dem Smartphone und unter Last spürbar überlegen ist.',
     image: '/team/julian-stosse.png',
     initials: 'JS',
-    focus: ['Art Direction', 'Brand Design', 'UI-Systeme'],
+    focus: ['Next.js & React', 'Core Web Vitals', 'Technisches SEO'],
   },
   {
-    name: 'Noëlle Dohr',
+    name: 'Noelle Dohr',
     role: 'Head of Marketing',
     short: 'SEO · Performance Marketing',
     bio: 'Verantwortet die Sichtbarkeit unserer Kunden — von lokaler SEO im Saarland bis zu skalierten Google-Ads-Kampagnen. Konzipiert Content-Strategien, betreut Reporting und sorgt dafür, dass aus Traffic messbare Anfragen werden.',
@@ -79,7 +79,7 @@ const principles = [
   {
     kicker: '02',
     title: 'Strategie vor Pixel.',
-    body: 'Jedes Projekt beginnt mit einer gemeinsamen Strategie-Sitzung. Fynn führt das Gespräch, Noëlle bringt SEO- und Marktperspektive ein, Julian skizziert erste Design-Richtungen, Yukio prüft technische Machbarkeit. Bevor irgendjemand ein Tool öffnet, ist klar, was die Website leisten muss.',
+    body: 'Jedes Projekt beginnt mit einer gemeinsamen Strategie-Sitzung. Fynn führt das Gespräch und skizziert die kreative Richtung, Yukio liefert Markt- und Wettbewerbsanalyse, Noelle bringt die SEO-Perspektive ein, Julian prüft technische Machbarkeit. Bevor irgendjemand ein Tool öffnet, ist klar, was die Website leisten muss.',
   },
   {
     kicker: '03',
@@ -350,13 +350,13 @@ export default function TeamPage() {
                   {
                     week: 'Woche 1',
                     title: 'Strategie & Konzept',
-                    lead: 'Fynn & Noëlle',
+                    lead: 'Yukio & Noelle',
                     body: 'Gemeinsames Strategiegespräch, Wettbewerbs- und SEO-Analyse, Positionierungs-Statement, Conversion-Pfade. Sie wissen am Ende der Woche, worauf Ihre Website zielt.',
                   },
                   {
                     week: 'Woche 2 – 4',
                     title: 'Design & Realisation',
-                    lead: 'Julian & Yukio',
+                    lead: 'Fynn & Julian',
                     body: 'Art Direction, Wireframes, Premium-Design, technische Umsetzung in Next.js. Sie sehen den Fortschritt in einer Preview-Umgebung und geben strukturiertes Feedback in zwei Runden.',
                   },
                   {
@@ -397,11 +397,11 @@ export default function TeamPage() {
                 „
               </span>
               <blockquote className="mt-5 text-2xl md:text-3xl lg:text-[2.4rem] leading-[1.25] font-medium tracking-[-0.02em] text-stone-800">
-                Wir sind nicht die größte Agentur im Saarland. Aber wir sind die
-                Crew, die abends in der Werkstatt sitzt und ein Layout noch
-                einmal anfasst, weil es{' '}
+                Wir bauen die Websites, an denen sich die Konkurrenz im Saarland
+                ausrichtet — weil wir abends in der Werkstatt sitzen und nicht
+                aufhören, bis jedes Detail{' '}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                  besser werden kann.
+                  Maßstäbe setzt.
                 </span>
               </blockquote>
               <p className="mt-8 text-[11px] uppercase tracking-[0.24em] text-stone-400 font-medium">

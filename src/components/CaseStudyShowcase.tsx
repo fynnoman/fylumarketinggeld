@@ -221,15 +221,37 @@ export default function CaseStudyShowcase() {
                         <p className="text-xs font-bold uppercase tracking-widest text-stone-400 mb-3">
                           Eingesetzte Leistungen
                         </p>
-                        <div className="flex flex-wrap gap-2">
-                          {current.services.map((s) => (
-                            <span
-                              key={s}
-                              className="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-full text-xs font-semibold border border-cyan-100"
-                            >
-                              {s}
-                            </span>
-                          ))}
+                        <div className="relative">
+                          {/* Sizer: stack every case's chip row to hold the
+                              tallest wrap, so the card height never changes
+                              when the active case switches. */}
+                          <div aria-hidden className="invisible grid">
+                            {cases.map((c) => (
+                              <div
+                                key={c.client}
+                                className="row-start-1 col-start-1 flex flex-wrap gap-2"
+                              >
+                                {c.services.map((s) => (
+                                  <span
+                                    key={s}
+                                    className="px-3 py-1.5 rounded-full text-xs font-semibold border"
+                                  >
+                                    {s}
+                                  </span>
+                                ))}
+                              </div>
+                            ))}
+                          </div>
+                          <div className="absolute inset-0 flex flex-wrap gap-2">
+                            {current.services.map((s) => (
+                              <span
+                                key={s}
+                                className="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-full text-xs font-semibold border border-cyan-100"
+                              >
+                                {s}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -271,24 +293,52 @@ export default function CaseStudyShowcase() {
                           </motion.div>
                         )}
                       </div>
+                      <div className="mt-3 relative">
+                        {/* Sizer: keep label height stable across all cases */}
+                        <div aria-hidden className="invisible grid">
+                          {cases.map((c) => (
+                            <p
+                              key={c.client}
+                              className="row-start-1 col-start-1 text-base md:text-lg font-medium"
+                            >
+                              {c.metricLabel}
+                            </p>
+                          ))}
+                        </div>
+                        <motion.p
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.4, delay: 0.3 }}
+                          className="absolute inset-0 text-stone-300 text-base md:text-lg font-medium"
+                        >
+                          {current.metricLabel}
+                        </motion.p>
+                      </div>
+                    </div>
+
+                    <div className="mt-6 max-w-2xl relative">
+                      {/* Invisible sizer: stacks all stories in a single grid cell
+                          so the container is always sized to the tallest case.
+                          Prevents layout shift when the active case changes. */}
+                      <div aria-hidden className="invisible grid">
+                        {cases.map((c) => (
+                          <p
+                            key={c.client}
+                            className="row-start-1 col-start-1 text-base md:text-lg leading-relaxed"
+                          >
+                            {c.story}
+                          </p>
+                        ))}
+                      </div>
                       <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 0.3 }}
-                        className="text-stone-300 text-base md:text-lg font-medium mt-3"
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="absolute inset-0 text-stone-200 text-base md:text-lg leading-relaxed"
                       >
-                        {current.metricLabel}
+                        {current.story}
                       </motion.p>
                     </div>
-
-                    <motion.p
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.4 }}
-                      className="text-stone-200 text-base md:text-lg leading-relaxed mt-6 max-w-2xl"
-                    >
-                      {current.story}
-                    </motion.p>
                   </motion.div>
                 </AnimatePresence>
               </div>

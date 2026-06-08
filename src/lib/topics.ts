@@ -125,35 +125,35 @@ export const topics: Topic[] = [
     h1: "Webdesigner günstig im Saarland",
     metaTitle: "Webdesigner günstig Saarland | Festpreis ab 990€ | Fylu",
     metaDescription:
-      "Günstiger Webdesigner im Saarland: professionelle Websites zum Festpreis ab 990€. Transparent, mobiloptimiert, SEO inklusive. Jetzt anfragen.",
+      "Professionelle Websites zum klaren Festpreis ab 990€ — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
     intro:
-      "Günstig heißt nicht billig. Sie bekommen bei mir eine professionelle Website zum klaren Festpreis – ohne Stundensatz-Abrechnung, ohne versteckte Kosten und ohne Agentur-Aufschlag.",
+      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zum klaren Festpreis — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
     sections: [
       {
-        title: "Festpreis ab 990€ – ohne Überraschungen",
-        text: "Sie wissen vor dem Start, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten.",
+        title: "Festpreis ab 990€ — ohne Überraschungen",
+        text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
       },
       {
-        title: "Solo statt Agentur",
-        text: "Sie zahlen keinen Agentur-Overhead. Stattdessen arbeiten Sie direkt mit dem Webdesigner zusammen, der Ihre Website auch baut – kurze Wege, schnelle Reaktion, faire Preise.",
+        title: "Studio statt Agentur-Overhead",
+        text: "Sie arbeiten direkt mit dem Team, das Ihre Website auch konzipiert, gestaltet und baut — Strategie, Design und Entwicklung aus einer Hand. Kurze Wege, schnelle Entscheidungen, faire Preise.",
       },
       {
-        title: "Trotzdem alles drin",
-        text: "Auch im günstigsten Paket: mobile-first Design, technisches SEO, Sicherheit, schnelle Ladezeiten und sauberer Code. Günstig bedeutet hier: effizient, nicht reduziert.",
+        title: "Volle Substanz im günstigsten Paket",
+        text: "Mobile-first Design, technisches SEO, Sicherheit, höchste Core-Web-Vitals-Werte und sauberer Code sind in jedem Paket Standard. Effizient kalkuliert heißt bei uns: nichts weggelassen, sondern klug priorisiert.",
       },
     ],
     faqs: [
       {
-        q: "Warum ist das so günstig?",
-        a: "Ich arbeite ohne Agentur-Overhead, mit klar standardisierten Prozessen. Dadurch kann ich Top-Qualität zu fairen Preisen anbieten.",
+        q: "Was ist im Festpreis enthalten?",
+        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen einen schriftlichen Festpreis mit klarer Leistungsbeschreibung — bevor wir starten.",
       },
       {
         q: "Gibt es versteckte Kosten?",
-        a: "Nein. Sie bekommen einen schriftlichen Festpreis. Hosting, SEO-Basis und Einrichtung sind enthalten.",
+        a: "Nein. Was im Angebot steht, ist der Preis. Erweiterungen (zusätzliche Seiten, Sonderfunktionen, laufende Betreuung) kalkulieren wir transparent als separate Position — Sie entscheiden, ob Sie sie buchen.",
       },
       {
         q: "Was kostet die laufende Pflege?",
-        a: "Auf Wunsch übernehme ich Pflege und Updates – entweder pro Vorgang oder im Monatspaket. Beides immer transparent vorab kalkuliert.",
+        a: "Wahlweise pro Vorgang oder als Monatspaket — beides immer transparent vorab kalkuliert. Wir binden Sie nicht in Knebelverträge: monatlich kündbar, mit klarer Leistungsbeschreibung.",
       },
     ],
   },
