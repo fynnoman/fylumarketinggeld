@@ -13,6 +13,7 @@ interface Message {
   email?: string;
   phone?: string;
   branche?: string;
+  brancheDetail?: string;
   groesse?: string;
   projectType?: string;
   budget?: string;
@@ -318,8 +319,9 @@ export default function AdminPage() {
                     { label: 'E-Mail', value: selected.email },
                     { label: 'Telefon', value: selected.phone },
                     { label: 'Branche', value: selected.branche },
+                    { label: 'Genaue Branche', value: selected.brancheDetail },
                     { label: 'Unternehmensgröße', value: selected.groesse },
-                    { label: 'Projektart', value: selected.projectType },
+                    { label: 'Gewünschte Website-Art', value: selected.projectType },
                     { label: 'Budget', value: selected.budget },
                     { label: 'Design-Präferenzen', value: selected.preferences },
                   ].map(({ label, value }) =>

@@ -11,6 +11,7 @@ export interface Message {
   email?: string;
   phone?: string;
   branche?: string;
+  brancheDetail?: string;
   groesse?: string;
   projectType?: string;
   budget?: string;

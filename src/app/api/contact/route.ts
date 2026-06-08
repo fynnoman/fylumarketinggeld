@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
       email,
       phone,
       branche,
+      brancheDetail,
       groesse,
       projectType,
       budget,
@@ -78,22 +79,26 @@ export async function POST(req: NextRequest) {
             <td style="padding: 12px; color: #111827;">${escapeHtml(branche)}</td>
           </tr>
           <tr style="background: #f3f4f6; border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px; font-weight: bold; color: #374151;">Genaue Branche</td>
+            <td style="padding: 12px; color: #111827;">${escapeHtml(brancheDetail)}</td>
+          </tr>
+          <tr style="background: #fff; border-bottom: 1px solid #e5e7eb;">
             <td style="padding: 12px; font-weight: bold; color: #374151;">Unternehmensgröße</td>
             <td style="padding: 12px; color: #111827;">${escapeHtml(groesse)}</td>
           </tr>
-          <tr style="background: #fff; border-bottom: 1px solid #e5e7eb;">
-            <td style="padding: 12px; font-weight: bold; color: #374151;">Projektart</td>
+          <tr style="background: #f3f4f6; border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 12px; font-weight: bold; color: #374151;">Gewünschte Website-Art</td>
             <td style="padding: 12px; color: #111827;">${escapeHtml(projectType)}</td>
           </tr>
-          <tr style="background: #f3f4f6; border-bottom: 1px solid #e5e7eb;">
+          <tr style="background: #fff; border-bottom: 1px solid #e5e7eb;">
             <td style="padding: 12px; font-weight: bold; color: #374151;">Budget</td>
             <td style="padding: 12px; color: #111827;">${escapeHtml(budget)}</td>
           </tr>
-          <tr style="background: #fff; border-bottom: 1px solid #e5e7eb;">
+          <tr style="background: #f3f4f6; border-bottom: 1px solid #e5e7eb;">
             <td style="padding: 12px; font-weight: bold; color: #374151;">Design-Präferenzen</td>
             <td style="padding: 12px; color: #111827;">${escapeHtml(preferences)}</td>
           </tr>
-          <tr style="background: #f3f4f6;">
+          <tr style="background: #fff;">
             <td style="padding: 12px; font-weight: bold; color: #374151;">Nachricht</td>
             <td style="padding: 12px; color: #111827; white-space: pre-wrap;">${escapeHtml(message)}</td>
           </tr>
@@ -120,6 +125,7 @@ export async function POST(req: NextRequest) {
       email,
       phone,
       branche,
+      brancheDetail,
       groesse,
       projectType,
       budget,

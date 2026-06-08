@@ -11,6 +11,7 @@ export default function AngeboteForm() {
     email: '',
     phone: '',
     branche: '',
+    brancheDetail: '',
     groesse: '',
     projectType: '',
     budget: '',
@@ -191,6 +192,14 @@ export default function AngeboteForm() {
                 <option value="bildung">Bildung</option>
                 <option value="sonstige">Sonstige</option>
               </select>
+              <input
+                type="text"
+                name="brancheDetail"
+                value={formData.brancheDetail}
+                onChange={handleChange}
+                className="mt-2 w-full px-4 py-3 rounded-lg border-2 border-stone-200 focus:border-cyan-500 focus:outline-none transition-colors text-stone-900"
+                placeholder="Genaue Branche (z. B. Dachdeckerei, IT-Consulting, Café)"
+              />
             </div>
 
             <div>
@@ -215,7 +224,7 @@ export default function AngeboteForm() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-semibold text-stone-700 mb-2">
-                Projektart
+                Gewünschte Website-Art
               </label>
               <select
                 name="projectType"
@@ -224,12 +233,12 @@ export default function AngeboteForm() {
                 className="w-full px-4 py-3 rounded-lg border-2 border-stone-200 focus:border-cyan-500 focus:outline-none transition-colors text-stone-900"
               >
                 <option value="">Bitte wählen</option>
-                <option value="neue-website">Neue Website</option>
-                <option value="redesign">Website Redesign</option>
-                <option value="landingpage">Landing Page</option>
+                <option value="unternehmenswebsite">Klassische Unternehmenswebsite</option>
+                <option value="landingpage">Landing Page (Einzelseite)</option>
                 <option value="onlineshop">Online-Shop</option>
-                <option value="seo">SEO-Optimierung</option>
-                <option value="wartung">Wartung & Support</option>
+                <option value="portfolio">Portfolio / persönliche Seite</option>
+                <option value="webapp">Komplexere Web-App</option>
+                <option value="unklar">Noch unklar — Fylu soll vorschlagen</option>
               </select>
             </div>
 

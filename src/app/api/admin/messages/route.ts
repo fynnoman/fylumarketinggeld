@@ -46,6 +46,7 @@ export async function POST(req: NextRequest) {
     email: body.email || null,
     phone: body.phone || null,
     branche: body.branche || null,
+    brancheDetail: body.brancheDetail || null,
     groesse: body.groesse || null,
     projectType: body.projectType || null,
     budget: body.budget || null,
