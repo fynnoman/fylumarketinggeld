@@ -55,7 +55,7 @@ const team: Member[] = [
     role: 'Technische Leitung',
     short: 'Lead Developer · Performance',
     bio: 'Verantwortet die technische Substanz unserer Projekte: Next.js-Architektur, sauberer Code, höchste Core-Web-Vitals-Werte. Sorgt dafür, dass jede Website nicht nur gut aussieht, sondern in der Google-Suche, auf dem Smartphone und unter Last spürbar überlegen ist.',
-    image: '/team/julian-stosse.png',
+    image: '/team/julian-stosse-v2.png',
     initials: 'JS',
     focus: ['Next.js & React', 'Core Web Vitals', 'Technisches SEO'],
   },
