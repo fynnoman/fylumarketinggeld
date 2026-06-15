@@ -40,18 +40,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/agb`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 
-  const regionEntries: MetadataRoute.Sitemap = regions.map((r) => ({
+  // Nur Top-Tier-Städte in die Sitemap aufnehmen — die anderen sind per
+  // `metadata.robots = noindex` aus dem Index ausgeschlossen, ein Sitemap-
+  // Eintrag würde widersprüchliche Signale senden ("crawl this!" vs "don't index").
+  const topRegions = regions.filter((r) => r.tier === "top");
+
+  const regionEntries: MetadataRoute.Sitemap = topRegions.map((r) => ({
     url: `${baseUrl}/webdesign/${r.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.9 : 0.75,
+    priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.9 : 0.8,
   }));
 
-  const softwareCityEntries: MetadataRoute.Sitemap = regions.map((r) => ({
+  const softwareCityEntries: MetadataRoute.Sitemap = topRegions.map((r) => ({
     url: `${baseUrl}/software/${r.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.85 : 0.7,
+    priority: HIGH_PRIORITY_CITIES.has(r.slug) ? 0.85 : 0.75,
   }));
 
   const topicEntries: MetadataRoute.Sitemap = topics.map((t) => ({

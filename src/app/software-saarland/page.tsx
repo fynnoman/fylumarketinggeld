@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Arbeitet ihr nur im Saarland oder auch deutschlandweit?',
-    a: 'Sitz: Saarlouis. Hauptmarkt: Saarland (Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen). Wir arbeiten aber regelmäßig deutschland- und EU-weit, und betreuen aktuell einen Kunden in den USA. Remote-Setup ist von Tag 1 sauber aufgesetzt.',
+    a: 'Sitz: Saarlouis. Hauptmarkt: Saarland (Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert, Dillingen). Wir arbeiten aber regelmäßig deutschland- und EU-weit, und betreuen aktuell einen Kunden in den USA. Remote-Setup ist von Tag 1 sauber aufgesetzt.',
   },
   {
     q: 'Wie schnell könnt ihr starten?',

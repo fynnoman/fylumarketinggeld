@@ -31,8 +31,8 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Webdesign Saarland | Websites, SEO & Google Ads ab 990€ | Fylu Saarlouis",
-  description: "Webdesign Agentur Saarland aus Saarlouis. Professionelle Websites, lokale SEO & Google Ads für Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig. Ab 990€, kostenloser Entwurf in 24h.",
+  title: "Webdesigner Saarland · Festpreis ab 990€ · Entwurf in 24h | Fylu",
+  description: "Webdesigner aus Saarlouis: schnelle, mobile Websites mit lokalem SEO. Festpreis ab 990€, kostenloser Entwurf in 24h, persönliche Betreuung. Für Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig.",
   keywords: [
     "Webdesign Saarland",
     "Webdesigner Saarland",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Webdesign Saarland | Websites & SEO die Kunden bringen | Fylu",
-    description: "Professionelles Webdesign & SEO aus dem Saarland. Für Unternehmen in Saarbrücken, Saarlouis & ganz Deutschland. Mehr Sichtbarkeit, mehr Anfragen, mehr Umsatz.",
+    title: "Webdesigner Saarland · Festpreis ab 990€ · Entwurf in 24h | Fylu",
+    description: "Websites die Kunden bringen. Festpreis ab 990€, kostenloser Entwurf in 24h, persönliche Betreuung aus Saarlouis.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Webdesign",
     locale: "de_DE",
@@ -109,7 +109,7 @@ export default function RootLayout({
               alternateName: "Fylu Marketing",
               legalName: "Fylu – Fynn Schulz",
               description:
-                "Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, lokale Suchmaschinenoptimierung (SEO) und Google Ads für Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und im gesamten Saarland sowie deutschlandweit.",
+                "Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, lokale Suchmaschinenoptimierung (SEO) und Google Ads für Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert, Dillingen und im gesamten Saarland sowie deutschlandweit.",
               url: "https://www.fylumarketing.de",
               logo: {
                 "@type": "ImageObject",
@@ -411,7 +411,7 @@ export default function RootLayout({
                 ratingValue: "5.0",
                 bestRating: "5",
                 worstRating: "1",
-                reviewCount: "12",
+                reviewCount: "20",
               },
               slogan: "Webdesign aus dem Saarland, das wirklich verkauft.",
             }),
@@ -526,7 +526,7 @@ export default function RootLayout({
                   name: "Für welche Städte im Saarland arbeitet Fylu?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Fylu ist in Saarlouis ansässig und betreut Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Völklingen, Merzig, St. Ingbert, Dillingen, St. Wendel, Lebach, Püttlingen, Blieskastel und im gesamten Saarland. Remote-Projekte deutschlandweit ebenfalls möglich.",
+                    text: "Fylu ist in Saarlouis ansässig und betreut Unternehmen in Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Völklingen, Merzig, St. Ingbert, Dillingen, St. Wendel, Lebach, Püttlingen, Blieskastel und im gesamten Saarland. Remote-Projekte deutschlandweit ebenfalls möglich.",
                   },
                 },
                 {

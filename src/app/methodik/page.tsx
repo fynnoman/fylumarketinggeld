@@ -73,7 +73,7 @@ const steps = [
     title: 'Sichtbarkeit',
     subtitle: 'Lokale SEO-Schärfung & Google Business',
     body: [
-      'Eine technisch perfekte Website ist die Voraussetzung — aber sie reicht nicht. Damit Saarländer Kunden Sie überhaupt finden, optimieren wir Ihre Sichtbarkeit für die Suchbegriffe, die in Saarbrücken, Saarlouis, Neunkirchen, Homburg und Völklingen tatsächlich eingegeben werden.',
+      'Eine technisch perfekte Website ist die Voraussetzung — aber sie reicht nicht. Damit Saarländer Kunden Sie überhaupt finden, optimieren wir Ihre Sichtbarkeit für die Suchbegriffe, die in Saarbrücken, Saarlouis, Neunkirchen, Dillingen und Völklingen tatsächlich eingegeben werden.',
       'Dazu gehören lokal optimierte Landingpages je Standort und Branche, strukturierte Daten für lokale Geschäfte, ein professionell aufgesetztes Google-Unternehmensprofil mit Bildern, Beiträgen, Bewertungsmanagement, sowie lokale Backlink-Strategie über IHK, HWK, Branchenverzeichnisse und Netzwerke.',
       'Ziel: Wenn jemand im Saarland eine Lösung in Ihrer Branche sucht, taucht Ihr Name auf — bevor die Konkurrenz auch nur Atem holt.',
     ],

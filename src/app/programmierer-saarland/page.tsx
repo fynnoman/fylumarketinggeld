@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Arbeitet ihr remote oder vor Ort?',
-    a: 'Standardmäßig remote — moderne Tools machen das problemlos und meistens effizienter. Kick-off-Meetings und kritische Workshops finden auf Wunsch vor Ort statt: Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen oder im gesamten Saarland. Außerhalb der Region auf Anfrage.',
+    a: 'Standardmäßig remote — moderne Tools machen das problemlos und meistens effizienter. Kick-off-Meetings und kritische Workshops finden auf Wunsch vor Ort statt: Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert, Dillingen oder im gesamten Saarland. Außerhalb der Region auf Anfrage.',
   },
   {
     q: 'Bekomme ich den Source Code?',
