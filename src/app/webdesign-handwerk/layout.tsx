@@ -4,18 +4,6 @@ export const metadata: Metadata = {
   title: "Webdesign Handwerk ▷ Websites für Handwerker ✓ Mehr Aufträge | Fylu",
   description:
     "Webdesign für Handwerker ★ Speziell für Maler, Elektriker, Dachdecker, SHK, Schreiner. Mobiloptimiert, bei Google sichtbar, transparente Konditionen. Kostenloser Entwurf in 24h.",
-  keywords: [
-    "Webdesign Handwerk",
-    "Handwerker Website",
-    "Website Handwerksbetrieb",
-    "Webdesign Elektriker",
-    "Webdesign Maler",
-    "Webdesign SHK",
-    "Webdesign Dachdecker",
-    "Webdesign Schreiner",
-    "Handwerker Webseite Saarland",
-    "Website Handwerker Saarbrücken",
-  ],
   alternates: {
     canonical: "/webdesign-handwerk",
   },

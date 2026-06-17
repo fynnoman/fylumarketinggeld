@@ -4,16 +4,6 @@ export const metadata: Metadata = {
   title: "Google Ads Saarland ▷ Sofort mehr Anfragen | Fylu",
   description:
     "Google Ads Saarland ★ Professionelle Kampagnen für Saarbrücken, Saarlouis, Neunkirchen & Co. Sofort sichtbar ab Tag 1. Kostenlose Analyse — Konditionen auf Anfrage.",
-  keywords: [
-    "Google Ads Saarland",
-    "Google Werbung Saarland",
-    "Google Ads Saarbrücken",
-    "Google Ads Saarlouis",
-    "Google Ads Agentur Saarland",
-    "SEA Saarland",
-    "Suchmaschinenwerbung Saarland",
-    "Google Anzeigen Saarland",
-  ],
   alternates: {
     canonical: "/google-ads-saarland",
   },

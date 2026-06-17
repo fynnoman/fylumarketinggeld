@@ -33,17 +33,6 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Webdesign Saarland | Websites, SEO & Google Ads | Fylu Saarlouis",
   description: "Webdesign Agentur Saarland aus Saarlouis. Professionelle Websites, lokale SEO & Google Ads für Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig. Kostenloser Entwurf in 24h.",
-  keywords: [
-    "Webdesign Saarland",
-    "Webdesigner Saarland",
-    "Webdesign Saarbrücken",
-    "Webdesign Saarlouis",
-    "SEO Saarland",
-    "Google Ads Saarland",
-    "Website erstellen lassen Saarland",
-    "Webdesign Agentur Saarland",
-    "Homepage erstellen Saarland",
-  ],
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu – Fynn Schulz",
   publisher: "Fylu",
@@ -336,7 +325,7 @@ export default function RootLayout({
                     "@type": "Offer",
                     name: "Custom Software & Web-App",
                     description:
-                      "Maßgeschneiderte Web-Apps, interne Tools und Custom Software mit modernem Tech-Stack. transparente Konditionen nach Discovery-Phase.",
+                      "Maßgeschneiderte Web-Apps, interne Tools und Custom Software mit modernem Tech-Stack. Transparente Konditionen nach Discovery-Phase.",
                     priceSpecification: {
                       "@type": "PriceSpecification",
                       minPrice: "8000",
@@ -354,7 +343,7 @@ export default function RootLayout({
                     "@type": "Offer",
                     name: "App-Entwicklung",
                     description:
-                      "Web-Apps, PWAs und native iOS/Android-Apps mit React Native. transparente Konditionen-Modell, App-Store-Veröffentlichung inklusive.",
+                      "Web-Apps, PWAs und native iOS/Android-Apps mit React Native. Transparente Konditionen, App-Store-Veröffentlichung inklusive.",
                     priceSpecification: {
                       "@type": "PriceSpecification",
                       minPrice: "8900",
@@ -516,7 +505,7 @@ export default function RootLayout({
                   name: "Was unterscheidet Fylu von anderen Webdesign-Agenturen im Saarland?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Bei Fylu arbeiten Sie direkt mit dem Webdesigner – kein Agentur-Overhead, keine Ticket-Systeme, keine Warteschleifen. Sie bekommen klare klare Konditionen, einen kostenlosen Entwurf in 24 Stunden und eine Website, die für lokale Suchanfragen im Saarland von Grund auf optimiert ist. Persönlich, transparent und nachweislich wirksam.",
+                    text: "Bei Fylu arbeiten Sie direkt mit dem Webdesigner – kein Agentur-Overhead, keine Ticket-Systeme, keine Warteschleifen. Sie bekommen klare Konditionen, einen kostenlosen Entwurf in 24 Stunden und eine Website, die für lokale Suchanfragen im Saarland von Grund auf optimiert ist. Persönlich, transparent und nachweislich wirksam.",
                   },
                 },
                 {

@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website erstellen lassen ▷ transparente Konditionen ✓ in 2-3 Wochen fertig | Fylu",
+  title: "Website erstellen lassen ▷ Transparente Konditionen ✓ in 2-3 Wochen fertig | Fylu",
   description:
-    "Website erstellen lassen ★ Professionell, mobiloptimiert & SEO-ready aus dem Saarland. transparente Konditionen, fertig in 2-3 Wochen, kostenloser Entwurf in 24h. Jetzt anfragen.",
-  keywords: [
-    "Website erstellen lassen",
-    "Homepage erstellen lassen",
-    "professionelle Website",
-    "Website Kosten",
-    "Website erstellen lassen Preis",
-    "Website erstellen lassen Saarland",
-    "Webdesigner Saarland",
-    "Website transparente Konditionen",
-    "Homepage erstellen Saarland",
-  ],
+    "Website erstellen lassen ★ Professionell, mobiloptimiert & SEO-ready aus dem Saarland. Transparente Konditionen, fertig in 2-3 Wochen, kostenloser Entwurf in 24h. Jetzt anfragen.",
   alternates: {
     canonical: "/website-erstellen-lassen",
   },
@@ -31,7 +20,7 @@ export const metadata: Metadata = {
         url: "/hero-background.webp",
         width: 1200,
         height: 630,
-        alt: "Website erstellen lassen – transparente Konditionen mit Fylu",
+        alt: "Website erstellen lassen – Transparente Konditionen mit Fylu",
       },
     ],
   },

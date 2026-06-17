@@ -78,7 +78,7 @@ export default function ProgrammiererSaarlandPage() {
             serviceType: 'Programmierung',
             name: 'Programmierer Saarland',
             description:
-              'Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack-Entwicklung. TypeScript, React, Next.js, Node.js, Python. transparente Konditionen statt Stundensatz.',
+              'Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack-Entwicklung. TypeScript, React, Next.js, Node.js, Python. Transparente Konditionen statt Stundensatz.',
             url: 'https://www.fylumarketing.de/programmierer-saarland',
             provider: {
               '@type': 'Organization',

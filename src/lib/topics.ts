@@ -27,7 +27,7 @@ export const topics: Topic[] = [
         text: "Wir optimieren Ihre Website gezielt für Ihre Stadt und Umgebung – Saarbrücken, Saarlouis, Völklingen, Neunkirchen, Homburg, Merzig oder St. Ingbert. Inklusive Google Business Profil, das in Google Maps oben erscheint.",
       },
       {
-        title: "Klare klare Konditionen",
+        title: "Klare Konditionen",
         text: "Keine versteckten Kosten, keine Stundensätze. Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Auf Wunsch inkl. Google Ads-Kampagne für sofort sichtbare Ergebnisse.",
       },
     ],
@@ -123,14 +123,14 @@ export const topics: Topic[] = [
   {
     slug: "guenstig",
     h1: "Webdesigner günstig im Saarland",
-    metaTitle: "Webdesigner günstig Saarland | transparente Konditionen | Fylu",
+    metaTitle: "Webdesigner günstig Saarland | Transparente Konditionen | Fylu",
     metaDescription:
-      "Professionelle Websites zum klaren transparente Konditionen — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
+      "Professionelle Websites zu klaren, transparenten Konditionen — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
     intro:
-      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zum klaren transparente Konditionen — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
+      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zu klaren, transparenten Konditionen — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
     sections: [
       {
-        title: "transparente Konditionen — ohne Überraschungen",
+        title: "Transparente Konditionen — ohne Überraschungen",
         text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
       },
       {
@@ -144,8 +144,8 @@ export const topics: Topic[] = [
     ],
     faqs: [
       {
-        q: "Was ist im transparente Konditionen enthalten?",
-        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen einen schriftlichen transparente Konditionen mit klarer Leistungsbeschreibung — bevor wir starten.",
+        q: "Was ist im Angebot enthalten?",
+        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen ein schriftliches Angebot mit klarer Leistungsbeschreibung — bevor wir starten.",
       },
       {
         q: "Gibt es versteckte Kosten?",
@@ -159,12 +159,12 @@ export const topics: Topic[] = [
   },
   {
     slug: "festpreis",
-    h1: "Website zum transparente Konditionen im Saarland",
-    metaTitle: "Website transparente Konditionen Saarland | Transparent | Fylu",
+    h1: "Website mit transparenten Konditionen im Saarland",
+    metaTitle: "Website mit transparenten Konditionen Saarland | Fylu",
     metaDescription:
-      "Website zum transparente Konditionen: keine versteckten Kosten, klare Pakete, persönliche Betreuung im Saarland. Jetzt unverbindlich anfragen.",
+      "Website mit transparenten Konditionen: keine versteckten Kosten, klare Pakete, persönliche Betreuung im Saarland. Jetzt unverbindlich anfragen.",
     intro:
-      "Stundensatz-Abrechnungen sind das größte Risiko bei Web-Projekten. Bei mir arbeiten Sie zum klaren transparente Konditionen – Sie kennen das Endergebnis und den Preis, bevor wir starten.",
+      "Stundensatz-Abrechnungen sind das größte Risiko bei Web-Projekten. Bei uns arbeiten Sie zu klaren, transparenten Konditionen – Sie kennen Leistungsumfang und Konditionen, bevor wir starten.",
     sections: [
       {
         title: "Transparente Pakete",
@@ -175,22 +175,22 @@ export const topics: Topic[] = [
         text: "Sie erhalten ein Angebot mit detaillierter Leistungsliste: Anzahl der Seiten, Funktionen, SEO-Umfang, Hosting-Dauer und Support. So gibt es kein Vertun.",
       },
       {
-        title: "transparente Konditionen = transparente Konditionen",
-        text: "Auch wenn die Umsetzung länger dauert: Der Preis bleibt. Sie tragen kein Projektrisiko. Punkt.",
+        title: "Was vereinbart ist, gilt.",
+        text: "Auch wenn die Umsetzung länger dauert: Die vereinbarten Konditionen bleiben. Sie tragen kein Projektrisiko. Punkt.",
       },
     ],
     faqs: [
       {
-        q: "Was ist im transparente Konditionen enthalten?",
+        q: "Was ist im Angebot enthalten?",
         a: "Komplettes Design, technische Umsetzung, lokale SEO-Basis, Google Business-Einrichtung, mobile Optimierung und Hosting (je nach Paket 2–4 Monate inkl.).",
       },
       {
         q: "Was passiert bei nachträglichen Wünschen?",
-        a: "Sie erhalten vorab eine kostenlose Kalkulation. Sie entscheiden, ob die Erweiterung umgesetzt wird – immer zum klaren transparente Konditionen.",
+        a: "Sie erhalten vorab eine kostenlose Kalkulation. Sie entscheiden, ob die Erweiterung umgesetzt wird – immer zu klaren, transparenten Konditionen.",
       },
       {
-        q: "Wie sicher ist der transparente Konditionen?",
-        a: "100 % – er steht schriftlich im Angebot und gilt für den vereinbarten Leistungsumfang.",
+        q: "Wie verbindlich ist das Angebot?",
+        a: "Verbindlich. Es steht schriftlich und gilt für den vereinbarten Leistungsumfang.",
       },
     ],
   },
@@ -213,7 +213,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Voraussetzung: Sie sind ebenfalls schnell",
-        text: "Damit der Plan aufgeht, brauche ich Ihre Texte, Bilder und Feedbacks innerhalb von 24 Stunden. Wenn Sie liefern, halte ich den Termin – garantiert.",
+        text: "Damit der Plan aufgeht, brauchen wir Ihre Texte, Bilder und Feedbacks innerhalb von 24 Stunden. Wenn Sie liefern, halten wir den Termin – garantiert.",
       },
     ],
     faqs: [
@@ -223,7 +223,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kostet der Express-Service extra?",
-        a: "Nein. Der transparente Konditionen bleibt –. Sie zahlen keinen Aufpreis für das Tempo.",
+        a: "Nein. Die vereinbarten Konditionen bleiben — Sie zahlen keinen Aufpreis für das Tempo.",
       },
       {
         q: "Wie viele Seiten umfasst die Express-Website?",
@@ -649,7 +649,7 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Das passende System für Ihr Business",
-        text: "Shopify für Standard-Setups, WooCommerce für maximale Flexibilität oder individuelle Headless-Lösungen für ambitionierte Projekte. Ich berate unabhängig.",
+        text: "Shopify für Standard-Setups, WooCommerce für maximale Flexibilität oder individuelle Headless-Lösungen für ambitionierte Projekte. Wir beraten unabhängig.",
       },
       {
         title: "SEO & Conversion-Optimierung",
@@ -671,7 +671,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie auch das Marketing übernehmen?",
-        a: "Ja, ich biete Google Ads und SEO-Betreuung an – ein Shop ohne Traffic verkauft nichts.",
+        a: "Ja, wir bieten Google Ads und SEO-Betreuung an – ein Shop ohne Traffic verkauft nichts.",
       },
     ],
   },
@@ -815,7 +815,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie einen Förderrechner integrieren?",
-        a: "Ja, das ist heute ein starker Conversion-Magnet. Auf Anfrage integriere ich passende Tools.",
+        a: "Ja, das ist heute ein starker Conversion-Magnet. Auf Anfrage integrieren wir passende Tools.",
       },
       {
         q: "Lohnt sich ein Wärmepumpen-Bereich?",

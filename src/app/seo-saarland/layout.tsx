@@ -4,18 +4,6 @@ export const metadata: Metadata = {
   title: "SEO Saarland ▷ Bei Google auf Platz 1 ✓ Local SEO & Google Business | Fylu",
   description:
     "SEO Saarland ★ Suchmaschinenoptimierung für Saarbrücken, Saarlouis, Neunkirchen, Dillingen & Co. OnPage, Local SEO, Google Business. Kostenlose Erstanalyse — Konditionen auf Anfrage.",
-  keywords: [
-    "SEO Saarland",
-    "Suchmaschinenoptimierung Saarland",
-    "SEO Saarbrücken",
-    "SEO Saarlouis",
-    "SEO Neunkirchen",
-    "SEO Homburg",
-    "Local SEO Saarland",
-    "Google Business Saarland",
-    "SEO Agentur Saarland",
-    "SEO Optimierung Saarland",
-  ],
   alternates: {
     canonical: "/seo-saarland",
   },

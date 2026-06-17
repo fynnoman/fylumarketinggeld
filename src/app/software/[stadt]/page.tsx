@@ -54,18 +54,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [
-      `Software ${region.city}`,
-      `Softwareentwicklung ${region.city}`,
-      `Programmierer ${region.city}`,
-      `Webentwickler ${region.city}`,
-      `Software-Entwickler ${region.city}`,
-      `IT-Dienstleister ${region.city}`,
-      `Custom Software ${region.city}`,
-      `App entwickeln ${region.city}`,
-      "Software Saarland",
-      "Programmierer Saarland",
-    ],
     alternates: { canonical: url },
     robots: isTop
       ? { index: true, follow: true }
@@ -194,7 +182,7 @@ export default async function SoftwareCityPage({
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack, transparente Konditionen statt Stundensatz. {region.intro}
+              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack und transparenten Konditionen statt Stundensatz. {region.intro}
             </p>
           </FadeInSection>
           <FadeInSection delay={0.2}>

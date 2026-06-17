@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Bekomme ich eine App-Store-Veröffentlichung mit?',
-    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess — inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im transparente Konditionen enthalten.',
+    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess — inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im Paket enthalten.',
   },
   {
     q: 'Was passiert nach dem Launch?',
@@ -172,7 +172,7 @@ export default function AppEntwickelnLassenPage() {
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Web-Apps, PWAs, iOS und Android — entwickelt im Saarland. Wir bauen Apps mit modernem Stack (React Native, Next.js, TypeScript, Cloud-Native), liefern App-Store-fertig und übernehmen auf Wunsch Wartung. transparente Konditionen pro Projekt, kein Stundenrechnungs-Chaos. Mehr Tiefe zu unserer{' '}
+              Web-Apps, PWAs, iOS und Android — entwickelt im Saarland. Wir bauen Apps mit modernem Stack (React Native, Next.js, TypeScript, Cloud-Native), liefern App-Store-fertig und übernehmen auf Wunsch Wartung. Transparente Konditionen pro Projekt, kein Stundenrechnungs-Chaos. Mehr Tiefe zu unserer{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link>.
             </p>
           </FadeInSection>

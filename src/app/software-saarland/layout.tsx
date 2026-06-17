@@ -4,22 +4,6 @@ export const metadata: Metadata = {
   title: "Software Saarland ▷ Softwareentwicklung & IT-Dienstleister | Fylu",
   description:
     "Softwareentwicklung Saarland: Web-Apps, Custom-Software, ERP- & CRM-Lösungen, API-Integration und Automatisierung. Persönlich aus Saarlouis — für das Saarland und deutschlandweit.",
-  keywords: [
-    "Software Saarland",
-    "Softwareentwicklung Saarland",
-    "Softwareentwickler Saarland",
-    "IT-Dienstleister Saarland",
-    "Custom Software Saarland",
-    "Software Saarbrücken",
-    "Software Saarlouis",
-    "Web-App entwickeln Saarland",
-    "ERP Saarland",
-    "CRM Saarland",
-    "API Integration Saarland",
-    "Automatisierung Saarland",
-    "SaaS Saarland",
-    "Software Agentur Saarland",
-  ],
   alternates: {
     canonical: "/software-saarland",
   },

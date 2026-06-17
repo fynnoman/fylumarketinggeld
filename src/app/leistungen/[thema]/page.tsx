@@ -206,7 +206,7 @@ export default async function TopicPage({
             Weitere Branchen-Lösungen
           </h2>
           <p className="text-stone-600 text-center mb-8 max-w-2xl mx-auto">
-            Webdesign für weitere Branchen im Saarland – mit transparente Konditionen:
+            Webdesign für weitere Branchen im Saarland – mit transparenten Konditionen:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {relatedTopics.map((t) => (

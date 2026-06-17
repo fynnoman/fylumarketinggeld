@@ -77,8 +77,8 @@ const process = [
     text: 'Kostenloses 30-Minuten-Gespräch. Wir verstehen Ihr Problem, Ihre Prozesse und Ihre Ziele — bevor irgendwas gebaut wird.',
   },
   {
-    title: 'Konzept & transparente Konditionen',
-    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen einen verbindlichen transparente Konditionen — keine Stundensätze, keine bösen Überraschungen.',
+    title: 'Konzept & verbindliche Konditionen',
+    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen ein verbindliches Angebot — keine Stundensätze, keine bösen Überraschungen.',
   },
   {
     title: 'Iterative Entwicklung',
@@ -216,7 +216,7 @@ export default function SoftwareSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Wir entwickeln maßgeschneiderte Software für Unternehmen im Saarland — Web-Apps, ERP- und CRM-Systeme, interne Tools, API-Integrationen, Automatisierungen und AI-gestützte Lösungen. Startup-nah, mit modernem Tech-Stack, mit transparente Konditionen. Aus{' '}
+              Wir entwickeln maßgeschneiderte Software für Unternehmen im Saarland — Web-Apps, ERP- und CRM-Systeme, interne Tools, API-Integrationen, Automatisierungen und AI-gestützte Lösungen. Startup-nah, mit modernem Tech-Stack, mit transparenten Konditionen. Aus{' '}
               <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link> ist über die Jahre eine vollständige Software-Werkstatt geworden — vom Saarländer Mittelständler bis zum US-Tech-Startup.
             </p>
           </FadeInSection>
