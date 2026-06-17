@@ -90,10 +90,6 @@ export default async function TopicPage({
               "@type": "Offer",
               availability: "https://schema.org/InStock",
               url: `${SITE}/buchen`,
-              priceSpecification: {
-                "@type": "PriceSpecification",
-                valueAddedTaxIncluded: false,
-              },
             },
           }),
         }}

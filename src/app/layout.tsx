@@ -294,10 +294,6 @@ export default function RootLayout({
                     name: "SEO Betreuung",
                     description:
                       "Laufende SEO-Optimierung mit monatlichem Reporting für nachhaltige Google-Sichtbarkeit im Saarland.",
-                    priceSpecification: {
-                      "@type": "UnitPriceSpecification",
-                      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
-                    },
                     availability: "https://schema.org/InStock",
                     itemOffered: {
                       "@type": "Service",
@@ -310,10 +306,6 @@ export default function RootLayout({
                     name: "Google Ads Management",
                     description:
                       "Professionelle Google Ads Kampagnen mit Setup, laufender Optimierung und transparentem Reporting.",
-                    priceSpecification: {
-                      "@type": "UnitPriceSpecification",
-                      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
-                    },
                     availability: "https://schema.org/InStock",
                     itemOffered: {
                       "@type": "Service",
@@ -326,11 +318,6 @@ export default function RootLayout({
                     name: "Custom Software & Web-App",
                     description:
                       "Maßgeschneiderte Web-Apps, interne Tools und Custom Software mit modernem Tech-Stack. Transparente Konditionen nach Discovery-Phase.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      minPrice: "8000",
-                      maxPrice: "80000",
-                    },
                     availability: "https://schema.org/InStock",
                     url: "https://www.fylumarketing.de/software-saarland",
                     itemOffered: {
@@ -344,11 +331,6 @@ export default function RootLayout({
                     name: "App-Entwicklung",
                     description:
                       "Web-Apps, PWAs und native iOS/Android-Apps mit React Native. Transparente Konditionen, App-Store-Veröffentlichung inklusive.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      minPrice: "8900",
-                      maxPrice: "50000",
-                    },
                     availability: "https://schema.org/InStock",
                     url: "https://www.fylumarketing.de/app-entwickeln-lassen",
                     itemOffered: {
@@ -362,11 +344,6 @@ export default function RootLayout({
                     name: "ERP- & CRM-Entwicklung",
                     description:
                       "Maßgeschneiderte ERP- und CRM-Systeme für den Mittelstand. Modular, skalierbar, mit API-Integration zu DATEV, lexoffice und Co.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      minPrice: "25000",
-                      maxPrice: "150000",
-                    },
                     availability: "https://schema.org/InStock",
                     url: "https://www.fylumarketing.de/software-saarland",
                     itemOffered: {

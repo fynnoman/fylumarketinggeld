@@ -38,7 +38,7 @@ export const regions: Region[] = [
     localFact: "In Saarbrücken konkurrieren überdurchschnittlich viele Webdesign-Anbieter um wenige zentrale Begriffe. Statt im überfüllten Generalisten-Pool unterzugehen, planen wir Ihre Seite für konkrete Stadtteil- und Branchen-Keywords ('Friseur Burbach', 'Kanzlei Sankt Johann', 'Restaurant Alt-Saarbrücken') — dort gewinnen Sie mit einem deutlich kleineren Budget.",
     microCase: {
       headline: "Bäckerei aus Sankt Johann",
-      body: "Eine inhabergeführte Bäckerei in Saarbrücken-Sankt Johann hat über die neue Website + Google Business Optimierung innerhalb von 4 Monaten 47 % mehr Anfragen über das Web erhalten — bei einem Marketing-Budget von unter 300 € im Monat. Der größte Hebel war nicht die Optik, sondern das saubere Local-SEO-Setup.",
+      body: "Eine inhabergeführte Bäckerei in Saarbrücken-Sankt Johann hat über die neue Website + Google Business Optimierung innerhalb von 4 Monaten 47 % mehr Anfragen über das Web erhalten. Der größte Hebel war nicht die Optik, sondern das saubere Local-SEO-Setup.",
     },
   },
   {
