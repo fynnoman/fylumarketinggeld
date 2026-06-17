@@ -44,8 +44,13 @@ export async function generateMetadata({
   const region = getRegionBySlug(stadt);
   if (!region) return {};
   const url = `${SITE}/software/${region.slug}`;
-  const title = `Software ${region.city} | Softwareentwicklung & Programmierer | Fylu`;
-  const description = `Softwareentwicklung für Unternehmen in ${region.city}: Web-Apps, ERP, CRM, API-Integration, Automatisierung. Modern, persönlich, mit transparente Konditionen aus Saarlouis.`;
+  const isTop = region.tier === "top";
+  const title = isTop
+    ? `Software ${region.city} · Web-Apps, ERP & Automation · Fylu`
+    : `Software ${region.city} | Fylu Programmierer Saarland`;
+  const description = isTop
+    ? `Softwareentwicklung für ${region.city}: individuelle Web-Apps, ERP, CRM und API-Integrationen. Stack-transparent, persönliche Betreuung aus Saarlouis.`
+    : `Softwareentwicklung aus dem Saarland für ${region.city}: Web-Apps, ERP, CRM, Automatisierung.`;
   return {
     title,
     description,
@@ -62,6 +67,9 @@ export async function generateMetadata({
       "Programmierer Saarland",
     ],
     alternates: { canonical: url },
+    robots: isTop
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title,
       description,
@@ -236,6 +244,54 @@ export default async function SoftwareCityPage({
           </FadeInSection>
         </div>
       </section>
+
+      {/* Stadt-Profil für Top-Tier-Städte (Audit-fix gegen Duplicate Content) */}
+      {region.tier === "top" && (region.economy || region.topIndustries || region.localFact) && (
+        <section className="py-20 md:py-28 px-5 md:px-8 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-10">
+              {region.city} — Wirtschaft, Branchen & Software-Realität
+            </h2>
+            {region.economy && (
+              <p className="text-lg leading-relaxed text-stone-700 mb-8">{region.economy}</p>
+            )}
+
+            {region.topIndustries && region.topIndustries.length > 0 && (
+              <div className="mb-10">
+                <h3 className="text-xl font-semibold text-stone-900 mb-4">
+                  Wo Software in {region.city} am häufigsten gebraucht wird
+                </h3>
+                <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-stone-700">
+                  {region.topIndustries.map((ind, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1.5">•</span>
+                      <span>{ind}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {region.localFact && (
+              <div className="border-l-4 border-amber-600 pl-6 py-2 bg-amber-50/40 mb-10">
+                <p className="text-stone-800 italic">{region.localFact}</p>
+              </div>
+            )}
+
+            {region.microCase && (
+              <div className="border border-stone-200 rounded-2xl p-8 bg-stone-50">
+                <span className="inline-block text-xs uppercase tracking-wider font-medium text-amber-700 mb-3">
+                  Mini-Case · {region.city}
+                </span>
+                <h3 className="text-xl font-semibold text-stone-900 mb-3">
+                  {region.microCase.headline}
+                </h3>
+                <p className="text-stone-700 leading-relaxed">{region.microCase.body}</p>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Disziplinen */}
       <section className="py-20 md:py-28 px-5 md:px-8 bg-white">

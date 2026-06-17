@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SEO Saarland ▷ Bei Google auf Platz 1 ✓ Local SEO & Google Business | Fylu",
   description:
-    "SEO Saarland ★ Suchmaschinenoptimierung für Saarbrücken, Saarlouis, Neunkirchen, Homburg & Co. OnPage, Local SEO, Google Business. Kostenlose Erstanalyse — Konditionen auf Anfrage.",
+    "SEO Saarland ★ Suchmaschinenoptimierung für Saarbrücken, Saarlouis, Neunkirchen, Dillingen & Co. OnPage, Local SEO, Google Business. Kostenlose Erstanalyse — Konditionen auf Anfrage.",
   keywords: [
     "SEO Saarland",
     "Suchmaschinenoptimierung Saarland",

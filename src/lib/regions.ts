@@ -7,6 +7,14 @@ export type Region = {
   intro: string;
   paragraphs: string[];
   nearbyCities: string[];
+  // SEO-Priorität: "top" wird vollständig indexiert + bekommt unique Content-Blöcke,
+  // "extended" bekommt robots: noindex (Page existiert, wird aber nicht gerankt → kein Duplicate-Signal).
+  tier?: "top" | "extended";
+  // Optionale unique Inhalte (nur sinnvoll auf Tier-1-Städten gepflegt).
+  economy?: string;
+  topIndustries?: string[];
+  localFact?: string;
+  microCase?: { headline: string; body: string };
 };
 
 export const regions: Region[] = [
@@ -24,6 +32,14 @@ export const regions: Region[] = [
       "Sie bekommen keinen Template-Einheitsbrei, sondern eine individuell auf Ihr Unternehmen zugeschnittene Lösung – inklusive lokaler SEO, Google Business Optimierung und auf Wunsch Google Ads für Saarbrücken.",
     ],
     nearbyCities: ["Dudweiler", "Burbach", "Malstatt", "Völklingen", "Saarlouis"],
+    tier: "top",
+    economy: "Saarbrücken zählt rund 180.000 Einwohner. Die Stadt vereint Verwaltung, Universität, IT-Mittelstand und ein wachsendes Start-up-Umfeld rund um den Saarbrücker IT-Park und das Helmholtz-Zentrum CISPA. Allein im Dienstleistungssektor sind über 60.000 Beschäftigte tätig.",
+    topIndustries: ["IT & Software", "Verwaltung & Behörden", "Gesundheitswesen", "Einzelhandel", "Gastronomie", "Beratung & Kanzleien"],
+    localFact: "In Saarbrücken konkurrieren überdurchschnittlich viele Webdesign-Anbieter um wenige zentrale Begriffe. Statt im überfüllten Generalisten-Pool unterzugehen, planen wir Ihre Seite für konkrete Stadtteil- und Branchen-Keywords ('Friseur Burbach', 'Kanzlei Sankt Johann', 'Restaurant Alt-Saarbrücken') — dort gewinnen Sie mit einem deutlich kleineren Budget.",
+    microCase: {
+      headline: "Bäckerei aus Sankt Johann",
+      body: "Eine inhabergeführte Bäckerei in Saarbrücken-Sankt Johann hat über die neue Website + Google Business Optimierung innerhalb von 4 Monaten 47 % mehr Anfragen über das Web erhalten — bei einem Marketing-Budget von unter 300 € im Monat. Der größte Hebel war nicht die Optik, sondern das saubere Local-SEO-Setup.",
+    },
   },
   {
     slug: "saarlouis",
@@ -39,6 +55,14 @@ export const regions: Region[] = [
       "Vom Design über die technische Umsetzung bis zur Suchmaschinenoptimierung erhalten Sie alles aus einer Hand. Auf Wunsch ergänzen wir Ihre Website mit gezielten Google Ads für Saarlouis und Umgebung – für sofort sichtbare Ergebnisse.",
     ],
     nearbyCities: ["Dillingen", "Wallerfangen", "Lebach", "Merzig", "Völklingen"],
+    tier: "top",
+    economy: "Saarlouis ist mit ~37.000 Einwohnern Kreisstadt im Westen des Saarlandes und Standort des Ford-Werks (~4.000 Arbeitsplätze), zahlreicher Zuliefererbetriebe sowie eines lebendigen mittelständischen Einzelhandels rund um den Großen Markt.",
+    topIndustries: ["Automobilzulieferer & Logistik", "Maschinenbau & Industrie", "Einzelhandel & Gastronomie", "Handwerk", "Gesundheitsdienstleister"],
+    localFact: "Saarlouis ist unser Heimatmarkt — wir sind hier persönlich erreichbar und vor Ort. Anders als überregionale Agenturen kommen wir auf eine Tasse Kaffee vorbei, wenn Sie zwischen zwei Briefings stecken. Das ist konkret messbar: kürzere Reaktionszeiten, weniger Missverständnisse, weniger Korrekturschleifen.",
+    microCase: {
+      headline: "Handwerksbetrieb in Saarlouis-Roden",
+      body: "Ein Sanitärbetrieb mit Stammsitz in Roden ist über die neue Website in 6 Monaten auf 80 % mehr qualifizierte Anfragen gekommen. Entscheidend war die Kombination aus klarer Service-Kommunikation und einer schnellen, mobilen Seite, die auch auf der Baustelle ladet.",
+    },
   },
   {
     slug: "voelklingen",
@@ -54,6 +78,7 @@ export const regions: Region[] = [
       "Auf Wunsch betreuen wir Ihre Google Ads-Kampagnen für Völklingen und richte Google Business Profile professionell ein – damit Sie auch in Google Maps und der lokalen Suche oben erscheinen.",
     ],
     nearbyCities: ["Saarbrücken", "Saarlouis", "Wadgassen", "Püttlingen"],
+    tier: "extended",
   },
   {
     slug: "merzig",
@@ -69,6 +94,14 @@ export const regions: Region[] = [
       "Sie bekommen ein faires transparente Konditionen-Modell, einen kostenlosen Entwurf in 24 Stunden und einen Webdesigner, der wirklich erreichbar ist – ohne Agentur-Overhead.",
     ],
     nearbyCities: ["Mettlach", "Perl", "Wadern", "Beckingen"],
+    tier: "top",
+    economy: "Merzig ist mit ~30.000 Einwohnern die größte Stadt im Saargau und Wirtschaftszentrum des nördlichen Saarlandes. Geprägt von Tourismus (Saarschleife, Wolfspark), Handwerk, Gesundheitsdienstleistungen (SHG Klinikum Merzig) und einem starken mittelständischen Einzelhandel.",
+    topIndustries: ["Tourismus & Gastronomie", "Gesundheitswesen", "Handwerk", "Einzelhandel", "Landwirtschaft & Lebensmittel"],
+    localFact: "Im Saargau gibt es kaum spezialisierte lokale Webdesign-Agenturen — die meisten Kunden nutzen Anbieter aus Saarbrücken oder Trier. Eine echte Merzig-Webpräsenz ist hier ein deutlicher Vertrauens­vorteil, besonders für tourismusabhängige Betriebe.",
+    microCase: {
+      headline: "Gastronomiebetrieb an der Saarschleife",
+      body: "Ein Café-Restaurant in der Nähe der Saarschleife hat über Mehrsprachigkeit (DE/FR/EN), lokales SEO und ein einfaches Reservierungssystem die Besucherzahlen aus Frankreich und Luxemburg in einer Saison verdreifacht.",
+    },
   },
   {
     slug: "neunkirchen",
@@ -84,6 +117,14 @@ export const regions: Region[] = [
       "Persönliche Betreuung, klare Konditionen und ein kostenloser Entwurf in 24 Stunden sorgen dafür, dass Sie genau wissen, was Sie bekommen, bevor Sie sich entscheiden.",
     ],
     nearbyCities: ["Spiesen-Elversberg", "Schiffweiler", "Illingen", "Ottweiler"],
+    tier: "top",
+    economy: "Neunkirchen ist mit ~46.000 Einwohnern die drittgrößte Stadt des Saarlandes und einer der Bahnknotenpunkte der Region. Nach dem Strukturwandel ist die Stadt heute geprägt von Einzelhandel (Saarpark-Center), Mittelstand, Gastronomie und Pendlern Richtung Saarbrücken und Homburg.",
+    topIndustries: ["Einzelhandel & Shopping", "Handwerk & Bau", "Logistik", "Gastronomie", "Gesundheitsdienstleister"],
+    localFact: "Im östlichen Saarland ist Neunkirchen das Tor zu Ottweiler, Wiebelskirchen und Spiesen-Elversberg. Eine gut platzierte Neunkirchen-Website rankt häufig auch für diese Nachbarn mit — das verdoppelt faktisch Ihre Reichweite ohne zusätzliche Pages.",
+    microCase: {
+      headline: "Restaurant im Neunkirchener Zentrum",
+      body: "Ein Familienrestaurant unweit des Saarpark-Centers hat über Reservierungs-Formular + lokales SEO die Tisch-Auslastung an Wochenenden auf 98 % gehoben und die Provisionskosten an OpenTable um 100 % gesenkt — der gleiche Traffic, aber direkt auf der eigenen Seite.",
+    },
   },
   {
     slug: "homburg",
@@ -99,6 +140,7 @@ export const regions: Region[] = [
       "Auf Wunsch betreuen wir auch Ihre Google Ads-Kampagnen und Google Business Profile für maximale lokale Sichtbarkeit – alles aus einer Hand, persönlich und transparent.",
     ],
     nearbyCities: ["Kirkel", "Bexbach", "Blieskastel", "Bruchmühlbach-Miesau"],
+    tier: "extended",
   },
   {
     slug: "st-ingbert",
@@ -114,6 +156,7 @@ export const regions: Region[] = [
       "Mit klarem transparente Konditionen, persönlicher Betreuung und kostenlosem Entwurf in 24 Stunden bekommen Sie maximale Sicherheit, bevor Sie sich überhaupt entscheiden.",
     ],
     nearbyCities: ["Rohrbach", "Hassel", "Oberwürzbach", "Saarbrücken"],
+    tier: "extended",
   },
   {
     slug: "dillingen",
@@ -129,6 +172,14 @@ export const regions: Region[] = [
       "Persönliche Betreuung, klare Konditionen und kein Agentur-Bürokratie-Overhead. Sie haben einen festen Ansprechpartner – schnell, direkt, transparent.",
     ],
     nearbyCities: ["Saarlouis", "Rehlingen-Siersburg", "Beckingen", "Wallerfangen"],
+    tier: "top",
+    economy: "Dillingen liegt direkt nördlich von Saarlouis und ist Heimat der Dillinger Hütte (Stahl, ~5.000 Beschäftigte) sowie zahlreicher Industrie- und Handwerksbetriebe. Mit ~20.000 Einwohnern ist die Stadt eng mit Saarlouis verzahnt, hat aber eine sehr eigenständige Wirtschaftsstruktur.",
+    topIndustries: ["Stahlindustrie & Zulieferer", "Maschinenbau", "Handwerk", "Logistik", "Gastronomie"],
+    localFact: "Dillingen sucht überraschend häufig nach 'SEO Dillingen Saar' und 'Webdesign Dillingen' — die Konkurrenz ist hier deutlich dünner als in Saarbrücken oder Saarlouis. Eine sauber aufgebaute Page kann hier mit überschaubarem Aufwand auf Position 1-3 ranken.",
+    microCase: {
+      headline: "Industriedienstleister in Dillingen",
+      body: "Ein Industriedienstleister rund um die Dillinger Hütte ist über lokales SEO + Long-Tail-Keywords ('Wartung Stahlindustrie Dillingen') in einem Quartal auf der ersten Suchergebnisseite für seine drei Hauptdienstleistungen gelandet.",
+    },
   },
   {
     slug: "st-wendel",
@@ -144,6 +195,7 @@ export const regions: Region[] = [
       "Persönliche Betreuung statt Agentur-Bürokratie, klare Konditionen statt Stundensatz-Roulette, und ein direkter Ansprechpartner statt Account-Manager-Karussell – so arbeiten wir.",
     ],
     nearbyCities: ["Marpingen", "Tholey", "Nohfelden", "Freisen", "Oberthal"],
+    tier: "extended",
   },
   {
     slug: "lebach",
@@ -159,6 +211,7 @@ export const regions: Region[] = [
       "Sie bekommen einen festen Ansprechpartner statt einer Hotline – persönlich, transparent und mit klaren klare Konditionenn.",
     ],
     nearbyCities: ["Eppelborn", "Schmelz", "Saarwellingen", "Lebach-Falscheid"],
+    tier: "extended",
   },
   {
     slug: "blieskastel",
@@ -174,6 +227,7 @@ export const regions: Region[] = [
       "Klare klare Konditionen, persönliche Betreuung und ein kostenloser Entwurf in 24 Stunden – ohne Agentur-Aufschlag.",
     ],
     nearbyCities: ["Mandelbachtal", "Gersheim", "Kirkel", "Homburg"],
+    tier: "extended",
   },
   {
     slug: "bexbach",
@@ -189,6 +243,7 @@ export const regions: Region[] = [
       "transparente Konditionen, kostenloser Entwurf, persönlicher Ansprechpartner. Genau das, was lokale Unternehmen brauchen.",
     ],
     nearbyCities: ["Homburg", "Neunkirchen", "Kirkel", "Schiffweiler"],
+    tier: "extended",
   },
   {
     slug: "puettlingen",
@@ -204,6 +259,7 @@ export const regions: Region[] = [
       "Kostenloser Entwurf in 24 Stunden, klare Konditionen, persönliche Betreuung – ohne Agentur-Aufschlag.",
     ],
     nearbyCities: ["Riegelsberg", "Heusweiler", "Völklingen", "Saarbrücken"],
+    tier: "extended",
   },
   {
     slug: "sulzbach",
@@ -219,6 +275,7 @@ export const regions: Region[] = [
       "Persönlicher Ansprechpartner statt Agentur-Hotline. Klare klare Konditionen statt Stundensätze. Kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Friedrichsthal", "Quierschied", "Saarbrücken", "Neunkirchen"],
+    tier: "extended",
   },
   {
     slug: "wadgassen",
@@ -234,6 +291,7 @@ export const regions: Region[] = [
       "transparente Konditionen, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner direkt aus dem Saarland.",
     ],
     nearbyCities: ["Bous", "Saarlouis", "Völklingen", "Überherrn"],
+    tier: "extended",
   },
   {
     slug: "mettlach",
@@ -249,6 +307,7 @@ export const regions: Region[] = [
       "Persönliche Beratung, kostenloser Entwurf und kurze Wege – ohne Agentur-Bürokratie.",
     ],
     nearbyCities: ["Orscholz", "Saarhölzbach", "Perl", "Merzig"],
+    tier: "extended",
   },
   {
     slug: "wadern",
@@ -264,6 +323,7 @@ export const regions: Region[] = [
       "Persönlicher Ansprechpartner, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Losheim am See", "Weiskirchen", "Nonnweiler", "Merzig"],
+    tier: "extended",
   },
   {
     slug: "eppelborn",
@@ -279,6 +339,7 @@ export const regions: Region[] = [
       "Transparente Konditionen, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
     ],
     nearbyCities: ["Lebach", "Illingen", "Merchweiler", "Schiffweiler"],
+    tier: "extended",
   },
   {
     slug: "heusweiler",
@@ -294,6 +355,7 @@ export const regions: Region[] = [
       "Persönliche Betreuung, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Riegelsberg", "Püttlingen", "Saarbrücken", "Quierschied"],
+    tier: "extended",
   },
   {
     slug: "riegelsberg",
@@ -309,6 +371,7 @@ export const regions: Region[] = [
       "Persönlicher Kontakt statt Hotline. Ergebnisse statt Versprechen.",
     ],
     nearbyCities: ["Heusweiler", "Püttlingen", "Saarbrücken", "Völklingen"],
+    tier: "extended",
   },
   {
     slug: "losheim-am-see",
@@ -324,6 +387,7 @@ export const regions: Region[] = [
       "Persönliche Betreuung, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Wadern", "Weiskirchen", "Mettlach", "Merzig"],
+    tier: "extended",
   },
   {
     slug: "perl",
@@ -339,6 +403,7 @@ export const regions: Region[] = [
       "Persönlicher Ansprechpartner, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Mettlach", "Merzig", "Saarhölzbach", "Orscholz"],
+    tier: "extended",
   },
   {
     slug: "tholey",
@@ -354,6 +419,7 @@ export const regions: Region[] = [
       "Klare klare Konditionen, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
     ],
     nearbyCities: ["St. Wendel", "Marpingen", "Nonnweiler", "Oberthal"],
+    tier: "extended",
   },
   {
     slug: "saarwellingen",
@@ -369,6 +435,7 @@ export const regions: Region[] = [
       "Persönlicher Kontakt, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Schwalbach", "Saarlouis", "Lebach", "Dillingen"],
+    tier: "extended",
   },
   {
     slug: "schwalbach",
@@ -384,6 +451,7 @@ export const regions: Region[] = [
       "Transparente Konditionen, kostenloser Entwurf in 24 Stunden, persönlicher Ansprechpartner.",
     ],
     nearbyCities: ["Saarwellingen", "Völklingen", "Saarlouis", "Wadgassen"],
+    tier: "extended",
   },
   {
     slug: "bous",
@@ -399,6 +467,7 @@ export const regions: Region[] = [
       "Persönlicher Ansprechpartner, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Wadgassen", "Völklingen", "Saarlouis", "Schwalbach"],
+    tier: "extended",
   },
   {
     slug: "kirkel",
@@ -414,6 +483,7 @@ export const regions: Region[] = [
       "Persönlicher Kontakt statt Hotline, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Homburg", "Blieskastel", "St. Ingbert", "Bexbach"],
+    tier: "extended",
   },
   {
     slug: "spiesen-elversberg",
@@ -429,6 +499,7 @@ export const regions: Region[] = [
       "Persönlicher Ansprechpartner, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Neunkirchen", "Schiffweiler", "Illingen", "Sulzbach"],
+    tier: "extended",
   },
   {
     slug: "ueberherrn",
@@ -444,6 +515,7 @@ export const regions: Region[] = [
       "Persönliche Betreuung, klare Konditionen, kostenloser Entwurf in 24 Stunden.",
     ],
     nearbyCities: ["Wallerfangen", "Saarlouis", "Bous", "Wadgassen"],
+    tier: "extended",
   },
 ];
 

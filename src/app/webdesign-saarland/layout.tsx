@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Webdesign Saarland ▷ Websites ✓ kostenloser Entwurf in 24h | Fylu",
   description:
-    "Webdesign Saarland ★ Professionelle Websites für Saarbrücken, Saarlouis, Neunkirchen, Homburg & Co. transparente Konditionen. Persönlich, SEO-optimiert, kostenloser Entwurf in 24 Stunden. Jetzt anfragen.",
+    "Webdesign Saarland ★ Professionelle Websites für Saarbrücken, Saarlouis, Neunkirchen, Dillingen & Co. Transparente Konditionen, persönlich, SEO-optimiert, kostenloser Entwurf in 24 Stunden. Jetzt anfragen.",
   keywords: [
     "Webdesign Saarland",
     "Webdesigner Saarland",

@@ -74,12 +74,24 @@ export async function generateMetadata({
   const region = getRegionBySlug(stadt);
   if (!region) return {};
   const url = `${SITE}/webdesign/${region.slug}`;
-  const title = `Webdesign ${region.city} | Websites, SEO & Google Ads | Fylu`;
-  const description = `Webdesigner für ${region.city}: moderne Websites, lokale SEO und Google Ads. Persönliche Betreuung, kostenloser Entwurf in 24 Stunden.`;
+  const isTop = region.tier === "top";
+  // Conversion-fokussierter Title für Top-Tier (höhere CTR durch 24h-Versprechen).
+  const title = isTop
+    ? `Webdesigner ${region.city} · Entwurf in 24h · Fylu`
+    : `Webdesign ${region.city} | Fylu Webdesigner Saarland`;
+  const description = isTop
+    ? `Webdesigner für ${region.city}: schnelle, mobile Websites mit lokalem SEO. Kostenloser Entwurf in 24h, persönliche Betreuung aus Saarlouis.`
+    : `Webdesign aus dem Saarland für ${region.city}. Kostenloser Entwurf in 24 Stunden.`;
   return {
     title,
     description,
     alternates: { canonical: url },
+    // Extended-Tier-Städte aus dem Index halten — der Content überlappt zu stark
+    // mit den Top-5 (Audit-Befund: 99,85 % Duplicate). Hochstufen auf "top",
+    // sobald die Page unique Inhalte bekommt.
+    robots: isTop
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title,
       description,
@@ -179,7 +191,7 @@ export default async function RegionPage({
               ratingValue: "5.0",
               bestRating: "5",
               worstRating: "1",
-              reviewCount: "12",
+              reviewCount: "20",
             },
             sameAs: [
               "https://www.instagram.com/fylumarketing/",
@@ -290,6 +302,56 @@ export default async function RegionPage({
           </div>
         </div>
       </section>
+
+      {/* Stadt-spezifisches Profil — nur für Top-Tier-Städte mit unique Content.
+          Diese Sektion existiert genau aus dem Grund: Google sieht hier
+          stadtspezifische Substanz statt generischem Webdesign-Boilerplate. */}
+      {region.tier === "top" && (region.economy || region.topIndustries || region.localFact) && (
+        <section className="py-20 md:py-28 px-6 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-10">
+              {region.city} — Wirtschaft, Branchen & lokale Besonderheiten
+            </h2>
+            {region.economy && (
+              <p className="text-lg leading-relaxed text-stone-700 mb-8">{region.economy}</p>
+            )}
+
+            {region.topIndustries && region.topIndustries.length > 0 && (
+              <div className="mb-10">
+                <h3 className="text-xl font-semibold text-stone-900 mb-4">
+                  Stärkste Branchen vor Ort
+                </h3>
+                <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-stone-700">
+                  {region.topIndustries.map((ind, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-amber-600 mt-1.5">•</span>
+                      <span>{ind}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {region.localFact && (
+              <div className="border-l-4 border-amber-600 pl-6 py-2 bg-amber-50/40 mb-10">
+                <p className="text-stone-800 italic">{region.localFact}</p>
+              </div>
+            )}
+
+            {region.microCase && (
+              <div className="border border-stone-200 rounded-2xl p-8 bg-stone-50">
+                <span className="inline-block text-xs uppercase tracking-wider font-medium text-amber-700 mb-3">
+                  Mini-Case · {region.city}
+                </span>
+                <h3 className="text-xl font-semibold text-stone-900 mb-3">
+                  {region.microCase.headline}
+                </h3>
+                <p className="text-stone-700 leading-relaxed">{region.microCase.body}</p>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Prozess */}
       <section className="py-20 md:py-28 px-6 bg-white">
