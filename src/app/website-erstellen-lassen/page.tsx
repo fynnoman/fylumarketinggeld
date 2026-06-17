@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet eine professionelle Website?',
-		a: 'Eine professionelle Website bei Fylu beginnt ab 990€ für eine kompakte Seite mit bis zu 3 Unterseiten. Das mittlere Paket kostet 1.490€ und bietet bis zu 6 Seiten mit Verkaufsoptimierung. Für individuelle Anforderungen erstellen wir gerne ein maßgeschneidertes Angebot.',
+		a: 'Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.',
 	},
 	{
 		q: 'Wie lange dauert die Erstellung?',
@@ -87,15 +87,15 @@ export default function WebsiteErstellenLassenPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesign-Studio im Saarland</Link> entwickeln wir Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerker</Link>, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen. Ab 990€, fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
+							Sie brauchen eine Website, die nicht nur hübsch aussieht, sondern Kunden bringt? Als <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Webdesign-Studio im Saarland</Link> entwickeln wir Ihre neue Website — mobiloptimiert, SEO-ready und conversion-optimiert. Für Selbstständige, <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerker</Link>, lokale Geschäfte und Dienstleister, die endlich online durchstarten wollen., fertig in 2 bis 3 Wochen, mit kostenlosem Entwurf innerhalb von 24 Stunden. Kein Template-Einheitsbrei, sondern eine individuelle Website, die zu Ihrem Business passt und bei Google gefunden wird.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
 						<Link
-							href="/angebote"
+							href="/buchen"
 							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 						>
-							Kostenlosen Entwurf sichern
+							Anfrage senden
 						</Link>
 					</FadeInSection>
 				</div>
@@ -133,9 +133,9 @@ export default function WebsiteErstellenLassenPage() {
 					</div>
 					<div className="grid md:grid-cols-3 gap-6 mb-10">
 						{[
-							{ name: 'Basismodell', price: '990€', desc: 'Bis 3 Seiten, mobiloptimiert, SEO-Basis, Kontaktformular, 1 Korrekturschleife. Perfekt für den Start.' },
-							{ name: 'Fortgeschritten', price: '1.490€', desc: 'Bis 6 Seiten, verkaufsoptimiert, erweiterte SEO, Google Business, 2 Monate Hosting inklusive.', highlight: true },
-							{ name: 'Professionell', price: '2.490€', desc: 'Unbegrenzte Seiten, Premium-Design, intensives SEO, Conversion-Tuning, 4 Monate Hosting inklusive.' },
+							{ name: 'Basismodell', price: 'Auf Anfrage', desc: 'Bis 3 Seiten, mobiloptimiert, SEO-Basis, Kontaktformular, 1 Korrekturschleife. Perfekt für den Start.' },
+							{ name: 'Fortgeschritten', price: 'Auf Anfrage', desc: 'Bis 6 Seiten, verkaufsoptimiert, erweiterte SEO, Google Business, 2 Monate Hosting inklusive.', highlight: true },
+							{ name: 'Professionell', price: 'Auf Anfrage', desc: 'Unbegrenzte Seiten, Premium-Design, intensives SEO, Conversion-Tuning, 4 Monate Hosting inklusive.' },
 						].map((pkg, i) => (
 							<div key={i} className={`p-6 rounded-xl border ${pkg.highlight ? 'border-cyan-500 bg-cyan-50' : 'border-stone-200 bg-white'}`}>
 								<h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
@@ -145,7 +145,7 @@ export default function WebsiteErstellenLassenPage() {
 						))}
 					</div>
 					<p className="text-stone-600">
-						Individuelle Lösungen mit E-Commerce, Buchungssystemen oder besonderen Anforderungen erhalten ein maßgeschneidertes Angebot. <Link href="/angebote" className="text-cyan-500 font-semibold hover:text-cyan-700">Alle Details ansehen.</Link>
+						Individuelle Lösungen mit E-Commerce, Buchungssystemen oder besonderen Anforderungen erhalten ein maßgeschneidertes Angebot. <Link href="/buchen" className="text-cyan-500 font-semibold hover:text-cyan-700">Alle Details ansehen.</Link>
 					</p>
 				</div>
 			</section>
@@ -228,10 +228,10 @@ export default function WebsiteErstellenLassenPage() {
 						Kostenloser Entwurf in 24 Stunden. Kein Risiko, keine Verpflichtung. Nur eine ehrliche Vorschau auf Ihre neue Website.
 					</p>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 					>
-						Kostenlosen Entwurf sichern
+						Anfrage senden
 					</Link>
 					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
 						<Link href="/webdesign-saarland" className="hover:text-cyan-500 transition-colors">Webdesign Saarland</Link>

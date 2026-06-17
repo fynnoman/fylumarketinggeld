@@ -52,21 +52,23 @@ export default function Footer() {
           <p className="mt-6 text-stone-400 text-base md:text-lg max-w-xl mx-auto">
             15 Minuten Strategiegespräch. Kostenlos &amp; unverbindlich.
           </p>
-          <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
-            <Link
-              href="/angebote"
-              className="group inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px]"
-            >
-              <span>Kostenloses Angebot</span>
-              <span className="transition-transform group-hover:translate-x-0.5">→</span>
-            </Link>
+          <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center max-w-md sm:max-w-none mx-auto">
             <a
-              href="mailto:kontakt@fylumarketing.de"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-6 py-3.5 rounded-full text-[15px] font-medium border border-white/10 backdrop-blur-sm transition-all duration-300"
+              href="tel:+4915168488999"
+              className="group inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-4 rounded-full text-[15px] font-bold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px] min-h-[52px]"
             >
-              Direkt schreiben
-              <span className="text-cyan-300">↗</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+              </svg>
+              <span>+49 151 684 88999</span>
             </a>
+            <Link
+              href="/buchen"
+              className="inline-flex items-center justify-center gap-2 bg-white/8 hover:bg-white/15 text-white px-6 py-4 rounded-full text-[15px] font-semibold border border-white/15 backdrop-blur-sm transition-all duration-300 min-h-[52px]"
+            >
+              Anfrage senden
+              <span className="text-cyan-300">↗</span>
+            </Link>
           </div>
         </motion.div>
 
@@ -144,7 +146,7 @@ export default function Footer() {
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Standorte
             </h3>
-            <ul className="grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm text-stone-400">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2.5 text-sm text-stone-400">
               <li><Link href="/webdesign/saarbruecken" className="hover:text-white transition-colors">Saarbrücken</Link></li>
               <li><Link href="/webdesign/saarlouis" className="hover:text-white transition-colors">Saarlouis</Link></li>
               <li><Link href="/webdesign/voelklingen" className="hover:text-white transition-colors">Völklingen</Link></li>
@@ -169,7 +171,7 @@ export default function Footer() {
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Branchen
             </h3>
-            <ul className="grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm text-stone-400">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2.5 text-sm text-stone-400">
               <li><Link href="/leistungen/handwerker" className="hover:text-white transition-colors">Handwerker</Link></li>
               <li><Link href="/leistungen/maler" className="hover:text-white transition-colors">Maler</Link></li>
               <li><Link href="/leistungen/elektriker" className="hover:text-white transition-colors">Elektriker</Link></li>
@@ -189,9 +191,7 @@ export default function Footer() {
               <li><Link href="/leistungen/coach" className="hover:text-white transition-colors">Coaches</Link></li>
               <li><Link href="/leistungen/fitnessstudio" className="hover:text-white transition-colors">Fitnessstudio</Link></li>
               <li><Link href="/leistungen/onlineshop" className="hover:text-white transition-colors">Online-Shop</Link></li>
-              <li><Link href="/leistungen/festpreis" className="hover:text-white transition-colors">Festpreis</Link></li>
               <li><Link href="/leistungen/in-14-tagen" className="hover:text-white transition-colors">In 14 Tagen</Link></li>
-              <li><Link href="/leistungen/guenstig" className="hover:text-white transition-colors">Günstig</Link></li>
             </ul>
           </div>
         </div>

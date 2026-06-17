@@ -12,7 +12,7 @@ const faqs = [
 	},
 	{
 		q: 'Was kostet eine Handwerker-Website?',
-		a: 'Eine professionelle Handwerker-Website beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten — perfekt für den Einstieg. Das beliebteste Paket kostet 1.490€ und enthält bis zu 6 Seiten mit Verkaufsoptimierung und Google Business Einrichtung. Individuelle Lösungen sind auf Anfrage möglich.',
+		a: 'Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.',
 	},
 	{
 		q: 'Brauche ich eine Website wenn ich schon auf MyHammer oder Google bin?',
@@ -28,7 +28,7 @@ const faqs = [
 	},
 	{
 		q: 'Was ist wenn ich die Website später ändern will?',
-		a: 'Kein Problem. Kleine Änderungen wie Texte oder Bilder sind schnell erledigt. Auf Wunsch können Sie ein Content-Management-System bekommen, mit dem Sie selbst Inhalte aktualisieren können. Oder wir übernehmen Änderungen für Sie — schnell und zu fairen Stundensätzen von 60€ netto.',
+		a: 'Kein Problem. Kleine Änderungen wie Texte oder Bilder sind schnell erledigt. Auf Wunsch können Sie ein Content-Management-System bekommen, mit dem Sie selbst Inhalte aktualisieren können. Oder wir übernehmen Änderungen für Sie — schnell und zu fairen Stundensätzen.',
 	},
 ];
 
@@ -70,12 +70,11 @@ export default function WebdesignHandwerkPage() {
 						'@context': 'https://schema.org',
 						'@type': 'LocalBusiness',
 						name: 'Fylu – Webdesign für Handwerker',
-						description: 'Webdesign speziell für Handwerksbetriebe. Modern, mobiloptimiert und bei Google sichtbar. Ab 990€.',
+						description: 'Webdesign speziell für Handwerksbetriebe. Modern, mobiloptimiert und bei Google sichtbar..',
 						url: 'https://www.fylumarketing.de/webdesign-handwerk',
 						telephone: '+4915168488999',
 						email: 'kontakt@fylumarketing.de',
 						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-						priceRange: '€€',
 					}),
 				}}
 			/>
@@ -116,15 +115,15 @@ export default function WebdesignHandwerkPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Sie sind Handwerker und haben keine Zeit, sich um eine Website zu kümmern? Verstehen wir. Genau deshalb nehmen wir Ihnen alles ab. In nur 15 Minuten Gespräch verstehen wir Ihren Betrieb — und liefern Ihnen eine fertige Website, die auf Google sichtbar ist, auf dem Smartphone perfekt funktioniert und aus Besuchern zahlende Kunden macht. Kein technisches Wissen nötig. Kein Aufwand für Sie. Nur Ergebnisse. Für Maler, Elektriker, SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und alle anderen Gewerke — ab 990€.
+							Sie sind Handwerker und haben keine Zeit, sich um eine Website zu kümmern? Verstehen wir. Genau deshalb nehmen wir Ihnen alles ab. In nur 15 Minuten Gespräch verstehen wir Ihren Betrieb — und liefern Ihnen eine fertige Website, die auf Google sichtbar ist, auf dem Smartphone perfekt funktioniert und aus Besuchern zahlende Kunden macht. Kein technisches Wissen nötig. Kein Aufwand für Sie. Nur Ergebnisse. Für Maler, Elektriker, SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und alle anderen Gewerke —.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
 						<Link
-							href="/angebote"
+							href="/buchen"
 							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 						>
-							Kostenlosen Entwurf sichern
+							Anfrage senden
 						</Link>
 					</FadeInSection>
 				</div>
@@ -252,10 +251,10 @@ export default function WebdesignHandwerkPage() {
 						15 Minuten Gespräch. 24 Stunden später haben Sie einen kostenlosen Entwurf. Kein Risiko, kein Aufwand.
 					</p>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 					>
-						Kostenlosen Entwurf sichern
+						Anfrage senden
 					</Link>
 					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
 						<Link href="/webdesign-saarland" className="hover:text-cyan-500 transition-colors">Webdesign Saarland</Link>

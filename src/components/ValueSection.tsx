@@ -161,11 +161,10 @@ export default function ValueSection() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-[var(--ink)] tracking-tight">
-                Faire, transparente Preise
+                Transparente Konditionen
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Ab <span className="font-display italic text-[var(--cyan-deep)]">990€</span>.
-                Festpreise, keine versteckten Kosten, keine Agentur-Aufschläge.
+                Jedes Projekt wird vorab persönlich kalkuliert — klar, schriftlich, ohne Agentur-Aufschläge.
               </p>
             </div>
           </motion.div>

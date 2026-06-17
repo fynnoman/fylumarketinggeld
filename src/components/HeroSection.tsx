@@ -161,14 +161,23 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.28, ease }}
             className="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
           >
-            <Link
-              href="/angebote"
-              className="group relative inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.99]"
+            <a
+              href="tel:+4915168488999"
+              className="group relative inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-bold text-white bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(6,182,212,0.6)] hover:shadow-[0_20px_45px_-12px_rgba(6,182,212,0.7)] hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.99] min-h-[52px]"
             >
-              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/0 via-cyan-400/0 to-cyan-500/0 group-hover:from-cyan-500/20 group-hover:via-cyan-400/10 group-hover:to-cyan-500/20 transition-all duration-500" />
-              <span className="relative">Kostenlosen Entwurf sichern</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+              </svg>
+              <span>+49 151 684 88999</span>
+            </a>
+
+            <Link
+              href="/buchen"
+              className="group relative inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.99] min-h-[52px]"
+            >
+              <span>Anfrage senden</span>
               <svg
-                className="relative w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5"
                 viewBox="0 0 16 16"
                 fill="none"
                 aria-hidden
@@ -181,16 +190,6 @@ export default function HeroSection() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
-
-            <Link
-              href="#packages"
-              className="group inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-[15px] font-semibold text-stone-900 bg-white/60 hover:bg-white border border-stone-300/80 backdrop-blur-sm transition-all duration-300 hover:-translate-y-[1px]"
-            >
-              <span>Meine Angebote</span>
-              <span className="text-stone-400 group-hover:text-cyan-600 transition-colors">
-                ↗
-              </span>
             </Link>
           </motion.div>
 

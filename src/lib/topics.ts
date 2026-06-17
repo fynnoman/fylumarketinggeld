@@ -14,7 +14,7 @@ export const topics: Topic[] = [
     h1: "Website für Handwerker im Saarland",
     metaTitle: "Website für Handwerker Saarland | Mehr Aufträge online | Fylu",
     metaDescription:
-      "Websites speziell für Handwerker im Saarland: mobiloptimiert, lokale SEO, Angebotsformular. Mehr Anfragen, weniger Aufwand. Ab 990€.",
+      "Websites speziell für Handwerker im Saarland: mobiloptimiert, lokale SEO, Angebotsformular. Mehr Anfragen, weniger Aufwand..",
     intro:
       "Als Handwerker im Saarland leben Sie von Empfehlungen – aber neue Kunden suchen heute zuerst online. Mit einer modernen Website werden Sie auf Google gefunden, wenn jemand „Dachdecker Saarbrücken“, „Elektriker Saarlouis“ oder „Maler Merzig“ sucht.",
     sections: [
@@ -27,14 +27,14 @@ export const topics: Topic[] = [
         text: "Wir optimieren Ihre Website gezielt für Ihre Stadt und Umgebung – Saarbrücken, Saarlouis, Völklingen, Neunkirchen, Homburg, Merzig oder St. Ingbert. Inklusive Google Business Profil, das in Google Maps oben erscheint.",
       },
       {
-        title: "Klare Festpreise ab 990€",
+        title: "Klare klare Konditionen",
         text: "Keine versteckten Kosten, keine Stundensätze. Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Auf Wunsch inkl. Google Ads-Kampagne für sofort sichtbare Ergebnisse.",
       },
     ],
     faqs: [
       {
         q: "Was kostet eine Website für meinen Handwerksbetrieb?",
-        a: "Ab 990€ bekommen Sie eine professionelle, mobiloptimierte Website mit lokaler SEO. Mit Projektgalerie und erweiterten Funktionen liegen Sie typischerweise bei 1.490€.",
+        a: "Wir kalkulieren jedes Projekt individuell nach Umfang und Funktionsbedarf. Rufen Sie uns an oder senden Sie eine Anfrage — innerhalb von 24 Stunden bekommen Sie eine transparente Einschätzung.",
       },
       {
         q: "Werde ich damit bei Google gefunden?",
@@ -51,7 +51,7 @@ export const topics: Topic[] = [
     h1: "Website für Restaurants im Saarland",
     metaTitle: "Website für Restaurant Saarland | Mehr Gäste & Reservierungen | Fylu",
     metaDescription:
-      "Restaurant-Websites mit Online-Reservierung, Speisekarte und lokaler SEO. Mehr Gäste in Saarbrücken, Saarlouis & Co. Ab 990€.",
+      "Restaurant-Websites mit Online-Reservierung, Speisekarte und lokaler SEO. Mehr Gäste in Saarbrücken, Saarlouis & Co..",
     intro:
       "Eine Restaurant-Website soll Hunger machen – und gleichzeitig Reservierungen bringen. Wir entwickeln Websites, die Ihr Restaurant emotional inszenieren und gleichzeitig technisch sauber für Google und mobile Nutzer optimiert sind.",
     sections: [
@@ -71,7 +71,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Restaurant-Website?",
-        a: "Ab 990€ inkl. Speisekarte, Galerie und Kontakt. Mit Online-Reservierung und Eventseiten typischerweise 1.490€.",
+        a: "Wir kalkulieren das Paket nach gewünschten Funktionen (Speisekarte, Galerie, Online-Reservierung, Eventseiten). Konditionen auf Anfrage.",
       },
       {
         q: "Kann ich die Speisekarte selbst aktualisieren?",
@@ -88,7 +88,7 @@ export const topics: Topic[] = [
     h1: "Website für Steuerberater im Saarland",
     metaTitle: "Website für Steuerberater Saarland | Mandanten gewinnen | Fylu",
     metaDescription:
-      "Websites für Steuerberater & Kanzleien im Saarland: seriös, mandantenfokussiert, mit lokaler SEO. Mandanten gewinnen, Vertrauen stärken. Ab 990€.",
+      "Websites für Steuerberater & Kanzleien im Saarland: seriös, mandantenfokussiert, mit lokaler SEO. Mandanten gewinnen, Vertrauen stärken..",
     intro:
       "Steuerberater leben von Vertrauen. Ihre Website muss Kompetenz, Diskretion und Erreichbarkeit innerhalb weniger Sekunden vermitteln – sonst entscheidet sich der Mandant für die Kanzlei nebenan.",
     sections: [
@@ -123,14 +123,14 @@ export const topics: Topic[] = [
   {
     slug: "guenstig",
     h1: "Webdesigner günstig im Saarland",
-    metaTitle: "Webdesigner günstig Saarland | Festpreis ab 990€ | Fylu",
+    metaTitle: "Webdesigner günstig Saarland | transparente Konditionen | Fylu",
     metaDescription:
-      "Professionelle Websites zum klaren Festpreis ab 990€ — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
+      "Professionelle Websites zum klaren transparente Konditionen — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
     intro:
-      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zum klaren Festpreis — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
+      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zum klaren transparente Konditionen — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
     sections: [
       {
-        title: "Festpreis ab 990€ — ohne Überraschungen",
+        title: "transparente Konditionen — ohne Überraschungen",
         text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
       },
       {
@@ -144,8 +144,8 @@ export const topics: Topic[] = [
     ],
     faqs: [
       {
-        q: "Was ist im Festpreis enthalten?",
-        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen einen schriftlichen Festpreis mit klarer Leistungsbeschreibung — bevor wir starten.",
+        q: "Was ist im transparente Konditionen enthalten?",
+        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen einen schriftlichen transparente Konditionen mit klarer Leistungsbeschreibung — bevor wir starten.",
       },
       {
         q: "Gibt es versteckte Kosten?",
@@ -159,37 +159,37 @@ export const topics: Topic[] = [
   },
   {
     slug: "festpreis",
-    h1: "Website zum Festpreis im Saarland",
-    metaTitle: "Website Festpreis Saarland | Transparent ab 990€ | Fylu",
+    h1: "Website zum transparente Konditionen im Saarland",
+    metaTitle: "Website transparente Konditionen Saarland | Transparent | Fylu",
     metaDescription:
-      "Website zum Festpreis ab 990€: keine versteckten Kosten, klare Pakete, persönliche Betreuung im Saarland. Jetzt unverbindlich anfragen.",
+      "Website zum transparente Konditionen: keine versteckten Kosten, klare Pakete, persönliche Betreuung im Saarland. Jetzt unverbindlich anfragen.",
     intro:
-      "Stundensatz-Abrechnungen sind das größte Risiko bei Web-Projekten. Bei mir arbeiten Sie zum klaren Festpreis – Sie kennen das Endergebnis und den Preis, bevor wir starten.",
+      "Stundensatz-Abrechnungen sind das größte Risiko bei Web-Projekten. Bei mir arbeiten Sie zum klaren transparente Konditionen – Sie kennen das Endergebnis und den Preis, bevor wir starten.",
     sections: [
       {
         title: "Transparente Pakete",
-        text: "Drei klar definierte Pakete (990€, 1.490€, 2.490€) decken die meisten Anforderungen ab. Sonderwünsche werden vorab schriftlich kalkuliert – nichts entsteht überraschend auf der Rechnung.",
+        text: "Jedes Projekt wird vorab transparent und schriftlich kalkuliert — nichts entsteht überraschend auf der Rechnung.",
       },
       {
         title: "Schriftliche Leistungsbeschreibung",
         text: "Sie erhalten ein Angebot mit detaillierter Leistungsliste: Anzahl der Seiten, Funktionen, SEO-Umfang, Hosting-Dauer und Support. So gibt es kein Vertun.",
       },
       {
-        title: "Festpreis = Festpreis",
+        title: "transparente Konditionen = transparente Konditionen",
         text: "Auch wenn die Umsetzung länger dauert: Der Preis bleibt. Sie tragen kein Projektrisiko. Punkt.",
       },
     ],
     faqs: [
       {
-        q: "Was ist im Festpreis enthalten?",
+        q: "Was ist im transparente Konditionen enthalten?",
         a: "Komplettes Design, technische Umsetzung, lokale SEO-Basis, Google Business-Einrichtung, mobile Optimierung und Hosting (je nach Paket 2–4 Monate inkl.).",
       },
       {
         q: "Was passiert bei nachträglichen Wünschen?",
-        a: "Sie erhalten vorab eine kostenlose Kalkulation. Sie entscheiden, ob die Erweiterung umgesetzt wird – immer zum klaren Festpreis.",
+        a: "Sie erhalten vorab eine kostenlose Kalkulation. Sie entscheiden, ob die Erweiterung umgesetzt wird – immer zum klaren transparente Konditionen.",
       },
       {
-        q: "Wie sicher ist der Festpreis?",
+        q: "Wie sicher ist der transparente Konditionen?",
         a: "100 % – er steht schriftlich im Angebot und gilt für den vereinbarten Leistungsumfang.",
       },
     ],
@@ -197,9 +197,9 @@ export const topics: Topic[] = [
   {
     slug: "in-14-tagen",
     h1: "Website in 14 Tagen im Saarland",
-    metaTitle: "Website in 14 Tagen Saarland | Express ab 990€ | Fylu",
+    metaTitle: "Website in 14 Tagen Saarland | Express | Fylu",
     metaDescription:
-      "Express-Website in nur 14 Tagen: professionell, mobiloptimiert, mit lokaler SEO. Für Unternehmen im Saarland ab 990€.",
+      "Express-Website in nur 14 Tagen: professionell, mobiloptimiert, mit lokaler SEO. Für Unternehmen im Saarland.",
     intro:
       "Sie brauchen schnell eine professionelle Website? Mit dem Express-Prozess geht Ihre neue Website in 14 Tagen online – ohne Qualitätsverlust und mit allen Kernfunktionen, die Ihr Unternehmen braucht.",
     sections: [
@@ -223,7 +223,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kostet der Express-Service extra?",
-        a: "Nein. Der Festpreis bleibt – ab 990€. Sie zahlen keinen Aufpreis für das Tempo.",
+        a: "Nein. Der transparente Konditionen bleibt –. Sie zahlen keinen Aufpreis für das Tempo.",
       },
       {
         q: "Wie viele Seiten umfasst die Express-Website?",
@@ -427,7 +427,7 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Direktbuchung ohne Provisionsfalle",
-        text: "Eigene Buchungs-Engine direkt auf der Website integriert. Gäste buchen direkt, Sie sparen die OTA-Provision. Bei 100 Buchungen pro Jahr á 200 € sind das schnell 4.000 € Mehrertrag.",
+        text: "Eigene Buchungs-Engine direkt auf der Website integriert. Gäste buchen direkt, Sie sparen die OTA-Provision von Booking, HRS & Co. — ein deutlicher Mehrertrag pro Jahr.",
       },
       {
         title: "Premium-Inszenierung",
@@ -523,7 +523,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Lohnt sich Google Ads für mein Gewerk?",
-        a: "Für Photovoltaik, Wärmepumpen und E-Mobilität: definitiv ja. Auftragswerte sind hoch (5.000–30.000 €), Werbe-Kosten amortisieren sich oft mit dem ersten Lead.",
+        a: "Für Photovoltaik, Wärmepumpen und E-Mobilität: definitiv ja. Auftragswerte sind hoch, Werbe-Kosten amortisieren sich oft mit dem ersten Lead.",
       },
     ],
   },
@@ -606,7 +606,7 @@ export const topics: Topic[] = [
     h1: "Website für Physiotherapie im Saarland",
     metaTitle: "Website für Physiotherapie Saarland | Praxis-Website | Fylu",
     metaDescription:
-      "Physio-Websites im Saarland: patientenorientiert, mit Online-Terminbuchung und lokaler SEO. Mehr Patienten in Saarbrücken, Saarlouis & Co. Ab 990€.",
+      "Physio-Websites im Saarland: patientenorientiert, mit Online-Terminbuchung und lokaler SEO. Mehr Patienten in Saarbrücken, Saarlouis & Co..",
     intro:
       "Patienten suchen Physiotherapeuten heute online – „Physiotherapie in meiner Nähe“, „Krankengymnastik Saarbrücken“, „Manuelle Therapie Saarlouis“. Eine moderne Website ist entscheidend für volle Terminkalender.",
     sections: [
@@ -626,7 +626,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Physio-Website?",
-        a: "Ab 990€ für eine moderne, mobiloptimierte Praxis-Website. Mit erweiterten Funktionen wie Online-Terminbuchung typischerweise 1.490€.",
+        a: "Konditionen kalkulieren wir je nach gewünschten Funktionen (Online-Terminbuchung, Patienten-Bereich, mehrsprachig). Persönlich besprechen.",
       },
       {
         q: "Können Sie auch die Kassen-Logos einbinden?",
@@ -641,9 +641,9 @@ export const topics: Topic[] = [
   {
     slug: "onlineshop",
     h1: "Online-Shop erstellen lassen im Saarland",
-    metaTitle: "Online-Shop erstellen Saarland | E-Commerce ab 1.490€ | Fylu",
+    metaTitle: "Online-Shop erstellen Saarland | E-Commerce | Fylu",
     metaDescription:
-      "Online-Shop aus dem Saarland: professionell, mobiloptimiert, mit SEO und Conversion-Optimierung. Shopify, WooCommerce oder individuell. Ab 1.490€.",
+      "Online-Shop aus dem Saarland: professionell, mobiloptimiert, mit SEO und Conversion-Optimierung. Shopify, WooCommerce oder individuell.",
     intro:
       "Ein Online-Shop ist mehr als ein digitales Schaufenster – er ist Ihr 24/7-Vertrieb. Damit das funktioniert, braucht es das richtige System, eine starke SEO-Basis und eine Conversion-Strategie, die wirklich verkauft.",
     sections: [
@@ -663,7 +663,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet ein Online-Shop?",
-        a: "Standard-Shopify-Setup ab 1.490€. Umfangreichere Lösungen mit individuellen Funktionen ab 2.490€ – je nach Sortimentsgröße und Anforderungen.",
+        a: "Standard-Shopify-Setup. Umfangreichere Lösungen mit individuellen Funktionen – je nach Sortimentsgröße und Anforderungen.",
       },
       {
         q: "Welches System ist das beste?",
@@ -680,7 +680,7 @@ export const topics: Topic[] = [
     h1: "Website für Coaches und Berater im Saarland",
     metaTitle: "Website für Coach Saarland | Klienten gewinnen | Fylu",
     metaDescription:
-      "Coach-Websites im Saarland: persönlich, conversion-stark, mit SEO und Klienten-Strategie. Ab 990€ inklusive kostenlosem Entwurf in 24h.",
+      "Coach-Websites im Saarland: persönlich, conversion-stark, mit SEO und Klienten-Strategie. inklusive kostenlosem Entwurf in 24h.",
     intro:
       "Als Coach oder Berater verkaufen Sie Vertrauen. Ihre Website ist der erste Eindruck, den potenzielle Klienten von Ihnen bekommen – sie muss Persönlichkeit, Kompetenz und ein klares Angebot transportieren.",
     sections: [
@@ -700,7 +700,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Coach-Website?",
-        a: "Ab 990€ für eine persönliche, conversion-starke Website. Mit Buchungssystem und erweiterten Funktionen typischerweise 1.490€.",
+        a: "Konditionen je nach Umfang (Buchungssystem, Mitgliederbereich, Programm-Übersicht). Persönlich besprechen.",
       },
       {
         q: "Brauche ich einen Blog?",
@@ -717,7 +717,7 @@ export const topics: Topic[] = [
     h1: "Website für Fitnessstudios im Saarland",
     metaTitle: "Website für Fitnessstudio Saarland | Mehr Mitglieder | Fylu",
     metaDescription:
-      "Fitnessstudio-Websites im Saarland: motivierend, mobiloptimiert, mit Mitgliedschaftsformular und lokaler SEO. Mehr Mitglieder gewinnen. Ab 990€.",
+      "Fitnessstudio-Websites im Saarland: motivierend, mobiloptimiert, mit Mitgliedschaftsformular und lokaler SEO. Mehr Mitglieder gewinnen..",
     intro:
       "Ein Fitnessstudio lebt von neuen Mitgliedern. Eine professionelle Website mit klaren Preisen, Kursplan und einfacher Probetraining-Anmeldung ist heute der wichtigste Vertriebskanal.",
     sections: [
@@ -737,7 +737,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Fitnessstudio-Website?",
-        a: "Ab 990€ für einen motivierenden, conversion-starken Auftritt. Mit Mitglieder-Login, Kursplan-Tool und erweiterten Funktionen ab 1.490€.",
+        a: "Konditionen je nach Umfang (Mitglieder-Login, Kursplan, Buchungssystem). Persönlich besprechen.",
       },
       {
         q: "Kann ich den Kursplan selbst pflegen?",
@@ -754,7 +754,7 @@ export const topics: Topic[] = [
     h1: "Website für Dachdecker im Saarland",
     metaTitle: "Website für Dachdecker Saarland | Mehr Aufträge | Fylu",
     metaDescription:
-      "Dachdecker-Websites im Saarland: mit Projektgalerie, lokaler SEO und schnellem Anfrageformular. Mehr Aufträge in Saarbrücken & Co. Ab 990€.",
+      "Dachdecker-Websites im Saarland: mit Projektgalerie, lokaler SEO und schnellem Anfrageformular. Mehr Aufträge in Saarbrücken & Co..",
     intro:
       "Dachdecker leben von Sichtbarkeit – sowohl auf dem Dach als auch online. „Dachdecker Saarbrücken“, „Dachreparatur Saarlouis“, „Flachdach Neunkirchen“ sind tägliche Suchanfragen, bei denen Sie ganz oben stehen müssen.",
     sections: [
@@ -774,7 +774,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Dachdecker-Website?",
-        a: "Ab 990€ für eine professionelle Website mit Projektgalerie und Anfrageformular. Mit erweiterten Funktionen typischerweise 1.490€.",
+        a: "Konditionen je nach Umfang (Projektgalerie, Anfrageformular, Konfigurator). Persönlich besprechen.",
       },
       {
         q: "Können Sie meine Baustellenfotos aufbereiten?",
@@ -791,7 +791,7 @@ export const topics: Topic[] = [
     h1: "Website für SHK-Betriebe im Saarland (Sanitär, Heizung, Klima)",
     metaTitle: "Website für SHK Saarland | Heizung, Sanitär & Klima | Fylu",
     metaDescription:
-      "SHK-Websites im Saarland: mit Notdienst, Energieberatung und lokaler SEO. Mehr Aufträge für Sanitär, Heizung und Klima. Ab 990€.",
+      "SHK-Websites im Saarland: mit Notdienst, Energieberatung und lokaler SEO. Mehr Aufträge für Sanitär, Heizung und Klima..",
     intro:
       "SHK-Betriebe sind gefragt wie nie – Wärmepumpen, Heizungsmodernisierung, Bäder, Solar. Eine professionelle Website ist heute entscheidend, um die Auftragsflut sinnvoll zu kanalisieren und die richtigen Kunden anzusprechen.",
     sections: [
@@ -811,7 +811,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine SHK-Website?",
-        a: "Ab 990€ für eine moderne, mobiloptimierte Website. Mit Förderrechner und erweiterten Funktionen typischerweise 1.490€ bis 2.490€.",
+        a: "Konditionen je nach Umfang (Förderrechner, Beratungs-Tools, Buchungssystem). Persönlich besprechen.",
       },
       {
         q: "Können Sie einen Förderrechner integrieren?",
@@ -828,7 +828,7 @@ export const topics: Topic[] = [
     h1: "Website für Schreiner und Tischler im Saarland",
     metaTitle: "Website für Schreiner Saarland | Mehr Aufträge online | Fylu",
     metaDescription:
-      "Schreiner-Websites im Saarland: mit Projektgalerie, Leistungen und lokaler SEO. Mehr Aufträge für individuelle Möbel & Innenausbau. Ab 990€.",
+      "Schreiner-Websites im Saarland: mit Projektgalerie, Leistungen und lokaler SEO. Mehr Aufträge für individuelle Möbel & Innenausbau..",
     intro:
       "Schreiner und Tischler verkaufen Handwerkskunst. Ihre Website muss das transportieren – mit hochwertigen Bildern, einer klaren Leistungsübersicht und einer SEO-Basis, die für lokale Suchen wie „Schreiner Saarlouis“ oder „Tischler Saarbrücken“ rankt.",
     sections: [
@@ -848,7 +848,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Schreiner-Website?",
-        a: "Ab 990€ für eine moderne Website mit Projektgalerie. Mit erweiterten Funktionen und Konfigurator typischerweise 1.490€.",
+        a: "Konditionen je nach Umfang (Projektgalerie, Konfigurator, Online-Anfrage). Persönlich besprechen.",
       },
       {
         q: "Können Sie ein 3D-Konfigurator-Tool integrieren?",
@@ -865,7 +865,7 @@ export const topics: Topic[] = [
     h1: "Website für Garten- und Landschaftsbau im Saarland",
     metaTitle: "Website für GaLaBau Saarland | Mehr Aufträge | Fylu",
     metaDescription:
-      "GaLaBau-Websites im Saarland: mit Projektgalerie, lokaler SEO und Anfrageformular. Mehr Aufträge für Gartenbau in Saarbrücken & Co. Ab 990€.",
+      "GaLaBau-Websites im Saarland: mit Projektgalerie, lokaler SEO und Anfrageformular. Mehr Aufträge für Gartenbau in Saarbrücken & Co..",
     intro:
       "Im Garten- und Landschaftsbau entscheidet die Bildwirkung. Eine Website mit hochwertigen Projektbildern, klarer Leistungsdarstellung und lokaler SEO bringt Sie zu den Hausbesitzern, die genau Ihre Leistung suchen.",
     sections: [
@@ -885,7 +885,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine GaLaBau-Website?",
-        a: "Ab 990€ für eine professionelle Website mit Bildergalerie. Mit erweiterten Funktionen typischerweise 1.490€.",
+        a: "Konditionen je nach Umfang (Bildergalerie, Online-Buchung). Persönlich besprechen.",
       },
       {
         q: "Wie wichtig sind hochwertige Fotos?",

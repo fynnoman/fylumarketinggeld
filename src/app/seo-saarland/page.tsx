@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet SEO im Saarland?',
-		a: 'Die Kosten für SEO hängen vom Umfang und der Wettbewerbssituation ab. Eine einmalige SEO-Grundoptimierung ist in unseren Webdesign-Paketen ab 990€ enthalten. Laufende SEO-Betreuung mit monatlichem Reporting beginnt ab 300€ pro Monat.',
+		a: 'Die Konditionen für SEO hängen vom Umfang und der Wettbewerbssituation ab. Eine einmalige SEO-Grundoptimierung ist in jedem Webdesign-Projekt enthalten. Laufende SEO-Betreuung mit monatlichem Reporting bieten wir paketweise an — Konditionen auf Anfrage.',
 	},
 	{
 		q: 'Wie lange dauert es bis man Ergebnisse sieht?',
@@ -89,7 +89,6 @@ export default function SeoSaarlandPage() {
 						telephone: '+4915168488999',
 						email: 'kontakt@fylumarketing.de',
 						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-						priceRange: '€€',
 					}),
 				}}
 			/>
@@ -135,7 +134,7 @@ export default function SeoSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
 						<Link
-							href="/angebote"
+							href="/buchen"
 							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 						>
 							Kostenlose SEO-Analyse anfordern
@@ -249,10 +248,10 @@ export default function SeoSaarlandPage() {
 						Lassen Sie uns gemeinsam Ihre Google-Sichtbarkeit verbessern. Kostenlose Erstanalyse — unverbindlich und ehrlich.
 					</p>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 					>
-						Kostenlosen Entwurf sichern
+						Anfrage senden
 					</Link>
 					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
 						<Link href="/webdesign-saarland" className="hover:text-cyan-500 transition-colors">Webdesign Saarland</Link>

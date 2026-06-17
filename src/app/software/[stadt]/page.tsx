@@ -11,7 +11,7 @@ const SITE = "https://www.fylumarketing.de";
 const softwareFaqs = (city: string) => [
   {
     q: `Was kostet Softwareentwicklung in ${city}?`,
-    a: `Für Unternehmen in ${city} und Umgebung arbeiten wir mit Festpreis-Modellen: kleine Tools / MVPs ab 8.000€, mittelgroße Custom-Software (ERP/CRM/SaaS) zwischen 25.000–80.000€, komplexe Plattformen ab 50.000€. Stundensätze und versteckte Folgekosten gibt es bei uns nicht.`,
+    a: `Für Unternehmen in ${city} und Umgebung arbeiten wir mit transparenten Konditionen. Kleine Tools, mittelgroße Custom-Software oder komplexe Plattformen — wir kalkulieren jedes Projekt nach Discovery-Phase. Stundensätze und versteckte Folgekosten gibt es bei uns nicht.`,
   },
   {
     q: `Welche Software entwickelt ihr für Unternehmen in ${city}?`,
@@ -45,7 +45,7 @@ export async function generateMetadata({
   if (!region) return {};
   const url = `${SITE}/software/${region.slug}`;
   const title = `Software ${region.city} | Softwareentwicklung & Programmierer | Fylu`;
-  const description = `Softwareentwicklung für Unternehmen in ${region.city}: Web-Apps, ERP, CRM, API-Integration, Automatisierung. Modern, persönlich, mit Festpreis aus Saarlouis.`;
+  const description = `Softwareentwicklung für Unternehmen in ${region.city}: Web-Apps, ERP, CRM, API-Integration, Automatisierung. Modern, persönlich, mit transparente Konditionen aus Saarlouis.`;
   return {
     title,
     description,
@@ -186,13 +186,13 @@ export default async function SoftwareCityPage({
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack, Festpreis statt Stundensatz. {region.intro}
+              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack, transparente Konditionen statt Stundensatz. {region.intro}
             </p>
           </FadeInSection>
           <FadeInSection delay={0.2}>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/angebote"
+                href="/buchen"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
               >
                 Discovery-Gespräch <span className="text-cyan-300">→</span>

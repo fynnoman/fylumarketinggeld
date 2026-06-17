@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Ads Saarland ▷ Sofort mehr Anfragen ✓ ab 250€/Monat | Fylu",
+  title: "Google Ads Saarland ▷ Sofort mehr Anfragen | Fylu",
   description:
-    "Google Ads Saarland ★ Professionelle Kampagnen für Saarbrücken, Saarlouis, Neunkirchen & Co. Sofort sichtbar ab Tag 1. Setup ab 490€, Management ab 250€/Monat. Kostenlose Analyse.",
+    "Google Ads Saarland ★ Professionelle Kampagnen für Saarbrücken, Saarlouis, Neunkirchen & Co. Sofort sichtbar ab Tag 1. Kostenlose Analyse — Konditionen auf Anfrage.",
   keywords: [
     "Google Ads Saarland",
     "Google Werbung Saarland",

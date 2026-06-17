@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Wie viel Budget brauche ich für Google Ads?',
-		a: 'Ein realistisches Startbudget für lokale Kampagnen im Saarland liegt bei 500 bis 1.500 Euro pro Monat für die Anzeigenkosten selbst. Dazu kommt die monatliche Management-Gebühr für Kampagnenbetreuung und Optimierung. Der große Vorteil: Sie sehen sofort, welche Anzeige wie viel kostet und was sie bringt — volle Transparenz ab Tag 1.',
+		a: 'Das Anzeigenbudget richtet sich nach Region, Wettbewerb und Ziel-Suchbegriffen — wir besprechen das im Vorfeld konkret und definieren ein realistisches Startbudget. Der große Vorteil von Google Ads: Sie sehen sofort, welche Anzeige wie viel kostet und was sie bringt — volle Transparenz ab Tag 1.',
 	},
 	{
 		q: 'Wann sehe ich Ergebnisse mit Google Ads?',
@@ -62,7 +62,6 @@ export default function GoogleAdsSaarlandPage() {
 						telephone: '+4915168488999',
 						email: 'kontakt@fylumarketing.de',
 						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-						priceRange: '€€',
 					}),
 				}}
 			/>
@@ -108,7 +107,7 @@ export default function GoogleAdsSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
 						<Link
-							href="/angebote"
+							href="/buchen"
 							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 						>
 							Kostenlose Kampagnen-Analyse anfordern
@@ -173,7 +172,7 @@ export default function GoogleAdsSaarlandPage() {
 							Bei Google Ads gibt es zwei Kostenpunkte: das <strong>Anzeigenbudget</strong> (was Sie direkt an Google zahlen) und die <strong>Management-Gebühr</strong> (für Kampagnenerstellung, Optimierung und Reporting).
 						</p>
 						<p>
-							Für lokale Unternehmen im Saarland empfehlen wir ein Anzeigenbudget von <strong>500 bis 1.500 Euro pro Monat</strong> als Startpunkt. Das reicht erfahrungsgemäß für 30 bis 150 qualifizierte Klicks pro Monat — je nach Branche und Wettbewerb. Die Management-Gebühr beginnt bei <strong>250 Euro pro Monat</strong> für ein einfaches Kampagnen-Setup.
+							Für lokale Unternehmen im Saarland empfehlen wir ein Anzeigenbudget passend zu Region, Wettbewerb und Suchbegriffen. Das richtige Startbudget besprechen wir konkret — typischerweise reicht es für mehrere Dutzend bis Hundert qualifizierte Klicks pro Monat. Management-Konditionen auf Anfrage.
 						</p>
 						<p>
 							Wichtig: Jeder Euro ist nachvollziehbar. Sie sehen genau, wie viel ein Klick kostet, wie viele Anfragen daraus entstehen und was eine Kundenanfrage im Durchschnitt kostet. Wenn die Zahlen nicht stimmen, passen wir die Strategie an — oder pausieren die Kampagne. Kein Risiko, volle Kontrolle.
@@ -181,9 +180,9 @@ export default function GoogleAdsSaarlandPage() {
 					</div>
 					<div className="grid md:grid-cols-3 gap-6">
 						{[
-							{ label: 'Anzeigenbudget', value: '500–1.500€/Monat', desc: 'Direkt an Google — Sie bestimmen das Budget' },
-							{ label: 'Management-Gebühr', value: 'ab 250€/Monat', desc: 'Kampagnenerstellung, Optimierung, Reporting' },
-							{ label: 'Setup-Gebühr', value: 'einmalig ab 490€', desc: 'Keyword-Recherche, Kampagnen-Struktur, Tracking' },
+							{ label: 'Anzeigenbudget', value: 'Sie bestimmen', desc: 'Direkt an Google — wir empfehlen einen realistischen Rahmen' },
+							{ label: 'Management', value: 'Auf Anfrage', desc: 'Kampagnenerstellung, Optimierung, Reporting' },
+							{ label: 'Setup', value: 'Auf Anfrage', desc: 'Keyword-Recherche, Kampagnen-Struktur, Tracking' },
 						].map((c, i) => (
 							<div key={i} className="bg-white p-6 rounded-xl border border-stone-200 text-center">
 								<p className="text-sm text-stone-500 font-medium mb-2">{c.label}</p>
@@ -265,7 +264,7 @@ export default function GoogleAdsSaarlandPage() {
 						Lassen Sie uns in einem kostenlosen Gespräch analysieren, welches Google Ads Potenzial in Ihrer Branche steckt. Unverbindlich und transparent.
 					</p>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 					>
 						Kostenlose Kampagnen-Analyse anfordern

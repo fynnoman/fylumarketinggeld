@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'Was kostet die Entwicklung einer Custom Software?',
-    a: 'Internes Tool / MVP: 8.000–25.000€. ERP/CRM mit mehreren Modulen: 25.000–80.000€. Komplexe SaaS-Plattform: ab 50.000€. Jedes Projekt bekommt einen Festpreis nach Discovery-Phase — keine Stundensätze, keine Überraschungen. Wir starten oft mit einem kleinen Modul und skalieren von dort.',
+    a: 'Wir kalkulieren jedes Projekt nach einer Discovery-Phase mit transparenten Konditionen — keine Stundensätze, keine Überraschungen. Wir starten oft mit einem kleinen Modul und skalieren von dort. Konkrete Einschätzung im 15-Minuten-Gespräch.',
   },
   {
     q: 'Habt ihr Referenzen im Software-Bereich?',
@@ -77,8 +77,8 @@ const process = [
     text: 'Kostenloses 30-Minuten-Gespräch. Wir verstehen Ihr Problem, Ihre Prozesse und Ihre Ziele — bevor irgendwas gebaut wird.',
   },
   {
-    title: 'Konzept & Festpreis',
-    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen einen verbindlichen Festpreis — keine Stundensätze, keine bösen Überraschungen.',
+    title: 'Konzept & transparente Konditionen',
+    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen einen verbindlichen transparente Konditionen — keine Stundensätze, keine bösen Überraschungen.',
   },
   {
     title: 'Iterative Entwicklung',
@@ -216,14 +216,14 @@ export default function SoftwareSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Wir entwickeln maßgeschneiderte Software für Unternehmen im Saarland — Web-Apps, ERP- und CRM-Systeme, interne Tools, API-Integrationen, Automatisierungen und AI-gestützte Lösungen. Startup-nah, mit modernem Tech-Stack, mit Festpreis. Aus{' '}
+              Wir entwickeln maßgeschneiderte Software für Unternehmen im Saarland — Web-Apps, ERP- und CRM-Systeme, interne Tools, API-Integrationen, Automatisierungen und AI-gestützte Lösungen. Startup-nah, mit modernem Tech-Stack, mit transparente Konditionen. Aus{' '}
               <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link> ist über die Jahre eine vollständige Software-Werkstatt geworden — vom Saarländer Mittelständler bis zum US-Tech-Startup.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.2}>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/angebote"
+                href="/buchen"
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px]"
               >
                 <span>Kostenloses Discovery-Gespräch</span>
@@ -296,7 +296,7 @@ export default function SoftwareSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
             <p>
-              Klassische IT-Dienstleister im Saarland kommen oft aus der Microsoft-Ecke der 2000er — SAP, Sharepoint, Access-Datenbanken. Funktioniert, aber wirkt veraltet und ist teuer im Betrieb. Auf der anderen Seite gibt es Großstadt-Agenturen aus Berlin oder München mit modernem Stack, aber Tagessätzen ab 1.500€ und 6-Monats-Wartezeit für ein Discovery-Gespräch.
+              Klassische IT-Dienstleister im Saarland kommen oft aus der Microsoft-Ecke der 2000er — SAP, Sharepoint, Access-Datenbanken. Funktioniert, aber wirkt veraltet und ist teuer im Betrieb. Auf der anderen Seite gibt es Großstadt-Agenturen aus Berlin oder München mit modernem Stack, aber hohen Tagessätzen und langen Wartezeiten für ein Discovery-Gespräch.
             </p>
             <p>
               Fylu sitzt dazwischen: <strong>moderner Tech-Stack</strong> (React, TypeScript, Postgres, Cloud-Native), <strong>regionale Erreichbarkeit</strong> (Saarlouis als Zentrum für Saarbrücken, Merzig, Dillingen, Neunkirchen, Homburg), <strong>faire Konditionen</strong>. Aktuell betreuen wir Software-Kunden vom Saarländer Handwerksbetrieb mit Excel-Problem bis zum SaaS-Startup mit 50.000 Nutzern.
@@ -401,7 +401,7 @@ export default function SoftwareSaarlandPage() {
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/angebote"
+              href="/buchen"
               className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px]"
             >
               Discovery-Gespräch sichern <span>→</span>

@@ -428,7 +428,7 @@ export default function TeamPage() {
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
                 <Link
-                  href="/angebote"
+                  href="/buchen"
                   className="group inline-flex items-center justify-center gap-2 bg-[var(--ink)] hover:bg-black text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_20px_50px_-15px_rgba(12,14,16,0.4)] transition-all duration-300 hover:-translate-y-[1px]"
                 >
                   <span>Strategiegespräch buchen</span>

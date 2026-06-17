@@ -1,286 +1,116 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import LazyVideo from './LazyVideo';
 
 const smoothEase = [0.22, 1, 0.36, 1] as const;
-
-const packages = [
-  {
-    name: 'Basismodell',
-    subtitle: 'Sichtbar werden',
-    price: '990€',
-    description: 'Perfekt für kleine lokale Betriebe, die endlich online gefunden werden wollen. Mit Hingabe fertige ich Ihre neue Website an – professionell, schnell und ohne Schnickschnack.',
-    image: '/untitled-24-removebg-preview.webp',
-    features: [
-      'Website (bis 3 Seiten)',
-      'Rechtstexte integriert',
-      'Mobiloptimiert',
-      'Kontaktformular',
-      'SEO-Basis (OnPage & Technik)',
-      '1 Korrekturschleife',
-      'Veröffentlichung',
-      'Google Business Basis-Optimierung',
-    ],
-    bonus: 'Zahlung: 50% Anzahlung / 50% nach Abnahme • Zusatzleistungen: 60€ netto/Stunde',
-    highlight: false,
-    badge: null,
-  },
-  {
-    name: 'Fortgeschritten',
-    subtitle: 'Neukunden-Maschine',
-    price: '1.490€',
-    description: 'Ihre Website wird zur echten Kundenquelle. Verkaufspsychologisch durchdacht, strategisch aufgebaut – damit Besucher zu zahlenden Kunden werden. Mein persönlicher Favorit für maximale Wirkung.',
-    image: '/untitled-25-removebg-preview.webp',
-    features: [
-      'Alles aus Basismodell',
-      'Website bis 6 Seiten',
-      'Verkaufsoptimierte Struktur',
-      '2 Korrekturschleifen',
-      'Performance-Optimierung',
-      'Erweiterte Google Business Optimierung',
-      '2 Monate Hosting inklusive',
-    ],
-    bonus: 'Empfohlenes Paket für maximale Wirkung',
-    highlight: true,
-    badge: 'Meistgewählt',
-  },
-  {
-    name: 'Professionell',
-    subtitle: 'Marktführer-Auftritt',
-    price: '2.490€',
-    description: 'Für Unternehmen, die nicht mitspielen, sondern dominieren wollen. Strategische Positionierung, Premium-Design und technische Perfektion – Ihr Wettbewerb wird neidisch sein.',
-    image: '/untitled-26-removebg-preview.webp',
-    features: [
-      'Alles aus Fortgeschritten',
-      '3 Korrekturschleifen',
-      'Priorisierte Umsetzung',
-      'Intensives Performance-Tuning',
-      'Erweiterte Google Business Optimierung',
-      'Conversion- & UX-Feinschliff',
-      '4 Monate Hosting inklusive',
-    ],
-    bonus: 'Maximale Performance für Marktführer',
-    highlight: false,
-    badge: null,
-  },
-  {
-    name: 'Individuelle Lösung',
-    subtitle: 'Maßgeschneidert',
-    price: 'Auf Anfrage',
-    description: 'Sie haben spezielle Anforderungen oder wünschen sich eine komplett individuelle Lösung? Lassen Sie uns gemeinsam Ihr perfektes Projekt gestalten.',
-    image: '/untitled-27-removebg-preview.webp',
-    features: [
-      'Persönliche Beratung & Konzeption',
-      'Maßgeschneidertes Design',
-      'Flexible Seitenanzahl',
-      'Spezielle Funktionen nach Wunsch',
-      'E-Commerce Integration möglich',
-      'Custom Animationen & Interaktionen',
-      'Individuelle Support-Vereinbarung',
-      'Unbegrenzte Korrekturschleifen',
-    ],
-    bonus: 'Komplett auf Ihre Bedürfnisse zugeschnitten',
-    highlight: false,
-    badge: 'Sonderwunsch',
-  },
-];
-
-const bookButtonStyles = [
-  'bg-gradient-to-r from-cyan-500 to-cyan-600 hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]',
-  'bg-gradient-to-r from-orange-500 to-orange-400 hover:shadow-[0_0_40px_rgba(249,115,22,0.7)]',
-  'bg-gradient-to-r from-purple-600 to-purple-400 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)]',
-  'bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_40px_rgba(34,197,94,0.7)]',
-];
+const PHONE_HUMAN = '+49 151 684 88999';
+const PHONE_TEL = '+4915168488999';
 
 export default function FinalCTASection() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [activePackage, setActivePackage] = useState(0);
-
-  const currentPackage = packages[activePackage];
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="packages" ref={ref} className="relative h-screen flex flex-col lg:flex-row items-stretch overflow-hidden">
-      {/* Left Side - Dynamic Text based on selected package */}
-      <div className="w-full lg:w-1/2 bg-stone-100 p-8 lg:p-12 flex flex-col justify-center relative">
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-stone-300 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-stone-300 rounded-full blur-3xl opacity-40"></div>
-
-        <div className="relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, ease: smoothEase }}
-            className="mb-6"
-          >
-            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-stone-200/70">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
-              <span className="text-[11px] font-medium tracking-[0.18em] uppercase text-stone-700">
-                Paket {activePackage + 1} von {packages.length}
-              </span>
-            </div>
-          </motion.div>
-
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activePackage}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-            >
-              <div className="mb-6">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-3 text-[var(--ink)] leading-[1.02] tracking-[-0.035em]">
-                  {currentPackage.name}
-                </h2>
-                <p className="font-display italic font-normal text-2xl md:text-3xl text-[var(--cyan-deep)]">
-                  {currentPackage.subtitle}
-                </p>
-              </div>
-
-              <p className="text-lg text-stone-700 mb-8 leading-relaxed">
-                {currentPackage.description}
-              </p>
-
-              <div className="font-display italic font-normal text-7xl md:text-8xl text-[var(--ink)] mb-3 leading-none tracking-[-0.035em]">
-                {currentPackage.price}
-              </div>
-              
-              <p className="text-sm text-stone-500 mb-8">
-                zzgl. Mehrwertsteuer 19%
-              </p>
-
-              <Link
-                href={`/buchen?paket=${activePackage}`}
-                className={`relative text-white px-12 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 overflow-hidden w-full lg:w-auto inline-block text-center hover:shadow-[0_16px_48px_rgba(6,182,212,0.35)] active:scale-[0.98] ${bookButtonStyles[activePackage]}`}
-              >
-                <span className="relative z-10">Jetzt buchen →</span>
-              </Link>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+    <section
+      id="packages"
+      ref={ref}
+      className="relative bg-[var(--ink)] text-white overflow-hidden isolate"
+    >
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[40vw]"
+          style={{
+            background:
+              'radial-gradient(50% 50% at 50% 0%, rgba(6,182,212,0.22), transparent 70%)',
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              'linear-gradient(to right, rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.4) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+            maskImage:
+              'radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 80%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 80%)',
+          }}
+        />
       </div>
 
-      {/* Right Side - Simple PNG Display */}
-      <div className="w-full lg:w-1/2 bg-white p-8 lg:p-12 flex flex-col justify-center items-center overflow-y-auto relative">
-        {/* Background Video */}
-        <LazyVideo src="/glyph_waves_remix.mp4" opacity="opacity-20" />
-
-        {/* Content over video */}
-        <div className="relative z-10 w-full flex flex-col items-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 py-20 sm:py-24 md:py-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, ease: smoothEase }}
-          className="mb-6 text-center"
+          transition={{ duration: 0.6, ease: smoothEase }}
+          className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/8 backdrop-blur-sm border border-white/10 mb-8"
         >
-          <h3 className="text-2xl font-bold text-stone-900 mb-2">Wählen Sie Ihr Paket</h3>
-          <p className="text-sm text-stone-600">Klicken Sie auf die Pfeile</p>
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+          <span className="text-[11px] font-medium tracking-[0.18em] uppercase text-stone-300">
+            15 Minuten · kostenloses Gespräch
+          </span>
         </motion.div>
 
-        {/* Navigation Arrows */}
-        <div className="flex items-center gap-4 w-full max-w-xl mb-6">
-          <button
-            onClick={() => setActivePackage((prev) => (prev > 0 ? prev - 1 : packages.length - 1))}
-            aria-label="Vorheriges Paket"
-            className="w-10 h-10 rounded-full bg-stone-200 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition-all shadow-lg hover:shadow-xl"
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: smoothEase, delay: 0.05 }}
+          className="font-semibold tracking-[-0.035em] leading-[1.04] text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[4.2rem] max-w-3xl mx-auto"
+        >
+          Reden wir kurz —{' '}
+          <span className="font-display italic font-normal text-cyan-300">
+            persönlich.
+          </span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: smoothEase, delay: 0.18 }}
+          className="mt-6 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto"
+        >
+          Anrufen oder Anfrage senden. Sie bekommen innerhalb von 24 Stunden eine konkrete Rückmeldung — direkt von uns, nicht aus einer Hotline.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: smoothEase, delay: 0.3 }}
+          className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center max-w-md sm:max-w-none mx-auto"
+        >
+          <a
+            href={`tel:${PHONE_TEL}`}
+            className="group inline-flex items-center justify-center gap-2.5 bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-4 rounded-full text-base font-bold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px] min-h-[52px]"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
             </svg>
-          </button>
-          
-          <div className="flex-1 text-center">
-            <p className="text-sm text-stone-500">
-              {activePackage + 1} / {packages.length}
-            </p>
-          </div>
-
-          <button
-            onClick={() => setActivePackage((prev) => (prev < packages.length - 1 ? prev + 1 : 0))}
-            aria-label="Nächstes Paket"
-            className="w-10 h-10 rounded-full bg-stone-200 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition-all shadow-lg hover:shadow-xl"
+            <span>{PHONE_HUMAN}</span>
+          </a>
+          <Link
+            href="/buchen"
+            className="group inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-7 py-4 rounded-full text-base font-semibold border border-white/15 backdrop-blur-sm transition-all duration-300 min-h-[52px]"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+            <span>Anfrage senden</span>
+            <span className="transition-transform group-hover:translate-x-0.5">→</span>
+          </Link>
+        </motion.div>
 
-        {/* PNG Image Display */}
-        <div className="relative w-full max-w-xl h-[280px] flex items-center justify-center mb-4">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activePackage}
-              initial={{ opacity: 0, scale: 0.96 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.96 }}
-              transition={{ duration: 0.3, ease: smoothEase }}
-              className="w-full h-full"
-            >
-              <Image
-                src={currentPackage.image}
-                alt={`${currentPackage.name} – ${currentPackage.subtitle}`}
-                width={640}
-                height={280}
-                className="w-full h-full object-contain drop-shadow-2xl"
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* Package Features List */}
-        <motion.div 
-          className="w-full max-w-xl bg-stone-50 rounded-xl p-4 shadow-lg mb-6"
-          key={activePackage}
+        <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[12px] sm:text-sm text-stone-400"
         >
-          <div className="grid grid-cols-2 gap-2">
-            {currentPackage.features.map((feature, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-1.5"
-              >
-                <div className="w-3.5 h-3.5 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-2 h-2" fill="none" stroke="white" viewBox="0 0 24 24" strokeWidth={3}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-[11px] text-stone-700 font-medium leading-tight">{feature}</span>
-              </div>
-            ))}
-          </div>
-          {currentPackage.bonus && (
-            <div className="mt-2.5 pt-2.5 border-t border-stone-200">
-              <p className="text-[10px] text-stone-500 italic">{currentPackage.bonus}</p>
-            </div>
-          )}
+          <span>Antwort in 24 Stunden</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-stone-600" />
+          <span>Saarland · ganz Deutschland</span>
+          <span className="hidden sm:inline w-1 h-1 rounded-full bg-stone-600" />
+          <span>50+ Kunden · 4.9 / 5</span>
         </motion.div>
-
-        {/* Navigation Dots */}
-        <div className="flex justify-center gap-2">
-          {packages.map((pkg, index) => (
-            <button
-              key={index}
-              onClick={() => setActivePackage(index)}
-              aria-label={`Paket ${pkg.name} auswählen`}
-              className={`rounded-full transition-all p-1 ${
-                activePackage === index
-                  ? 'bg-cyan-500 w-10 h-4'
-                  : 'bg-stone-300 hover:bg-stone-400 w-4 h-4'
-              }`}
-            />
-          ))}
-        </div>
-        </div>
       </div>
     </section>
   );

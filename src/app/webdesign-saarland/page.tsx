@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet eine professionelle Website im Saarland?',
-		a: 'Eine professionelle Website bei Fylu beginnt ab 990€ für das Basismodell mit bis zu 3 Seiten. Das Fortgeschrittene Paket kostet 1.490€ und enthält bis zu 6 Seiten mit Verkaufsoptimierung. Individuelle Lösungen sind auf Anfrage möglich.',
+		a: 'Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.',
 	},
 	{
 		q: 'Wie lange dauert die Erstellung einer Website?',
@@ -89,7 +89,6 @@ export default function WebdesignSaarlandPage() {
 						email: 'kontakt@fylumarketing.de',
 						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
 						geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
-						priceRange: '€€',
 						areaServed: [{ '@type': 'State', name: 'Saarland' }, { '@type': 'Country', name: 'Deutschland' }],
 					}),
 				}}
@@ -133,15 +132,15 @@ export default function WebdesignSaarlandPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesign-Studio aus Saarlouis entwickeln wir professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Unser Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — wir verstehen die Bedürfnisse lokaler Unternehmen und bauen Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung. Ab 990€, mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
+							Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesign-Studio aus Saarlouis entwickeln wir professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Unser Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — wir verstehen die Bedürfnisse lokaler Unternehmen und bauen Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung., mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.15}>
 						<Link
-							href="/angebote"
+							href="/buchen"
 							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 						>
-							Kostenlosen Entwurf sichern
+							Anfrage senden
 						</Link>
 					</FadeInSection>
 				</div>
@@ -197,7 +196,7 @@ export default function WebdesignSaarlandPage() {
 							Bei uns bekommen Sie keine Massenware. Als Boutique-Studio widmen wir uns jedem Projekt mit voller Aufmerksamkeit — das merken unsere Kunden. Jede Website wird von Grund auf für Ihr Unternehmen konzipiert, nicht aus einem Template zusammengeklickt. Mobile-first ist bei uns Standard, nicht optional. Jede Seite wird zuerst für Smartphones gestaltet und dann für größere Bildschirme erweitert. Das Ergebnis: Perfekte Darstellung auf allen Geräten und bessere Google-Rankings.
 						</p>
 						<p>
-							<Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei uns kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit bieten wir auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen festen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben uns, wir antworten. So einfach ist das. Unsere Preise sind fair und transparent — ab 990€ für eine professionelle Website, die tatsächlich Kunden bringt.
+							<Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei uns kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit bieten wir auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen festen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben uns, wir antworten. So einfach ist das. Unsere Preise sind fair und transparent — für eine professionelle Website, die tatsächlich Kunden bringt.
 						</p>
 					</div>
 				</div>
@@ -211,9 +210,9 @@ export default function WebdesignSaarlandPage() {
 					</h2>
 					<div className="grid md:grid-cols-3 gap-6 mb-10">
 						{[
-							{ name: 'Basismodell', price: '990€', pages: 'Bis 3 Seiten', desc: 'Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.' },
-							{ name: 'Fortgeschritten', price: '1.490€', pages: 'Bis 6 Seiten', desc: 'Verkaufsoptimierte Struktur, erweiterte SEO und Google Business Optimierung.', highlight: true },
-							{ name: 'Professionell', price: '2.490€', pages: 'Unbegrenzt', desc: 'Premium-Design, intensives Performance-Tuning und Conversion-Optimierung.' },
+							{ name: 'Basismodell', price: 'Auf Anfrage', pages: 'Bis 3 Seiten', desc: 'Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.' },
+							{ name: 'Fortgeschritten', price: 'Auf Anfrage', pages: 'Bis 6 Seiten', desc: 'Verkaufsoptimierte Struktur, erweiterte SEO und Google Business Optimierung.', highlight: true },
+							{ name: 'Professionell', price: 'Auf Anfrage', pages: 'Unbegrenzt', desc: 'Premium-Design, intensives Performance-Tuning und Conversion-Optimierung.' },
 						].map((pkg, i) => (
 							<div key={i} className={`p-6 rounded-xl border ${pkg.highlight ? 'border-cyan-500 bg-cyan-50' : 'border-stone-200 bg-white'}`}>
 								<h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
@@ -224,7 +223,7 @@ export default function WebdesignSaarlandPage() {
 						))}
 					</div>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 active:scale-[0.98] inline-block"
 					>
 						Alle Pakete ansehen
@@ -259,10 +258,10 @@ export default function WebdesignSaarlandPage() {
 						Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen im Saarland und ganz Deutschland.
 					</p>
 					<Link
-						href="/angebote"
+						href="/buchen"
 						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
 					>
-						Kostenlosen Entwurf sichern
+						Anfrage senden
 					</Link>
 					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
 						<Link href="/seo-saarland" className="hover:text-cyan-500 transition-colors">SEO Saarland</Link>

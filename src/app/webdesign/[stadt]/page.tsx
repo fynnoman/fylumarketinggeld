@@ -14,7 +14,7 @@ const SITE = "https://www.fylumarketing.de";
 const faqs = (city: string) => [
   {
     q: `Was kostet eine professionelle Website in ${city}?`,
-    a: "Eine professionelle Website beginnt bei uns bei 990€ für das Basismodell mit bis zu 3 Seiten. Das Business-Paket kostet 1.490€ und enthält bis zu 6 Seiten inklusive lokaler SEO und Google Business. Individuelle Lösungen sind auf Anfrage möglich.",
+    a: "Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.",
   },
   {
     q: "Wie lange dauert die Erstellung meiner Website?",
@@ -75,7 +75,7 @@ export async function generateMetadata({
   if (!region) return {};
   const url = `${SITE}/webdesign/${region.slug}`;
   const title = `Webdesign ${region.city} | Websites, SEO & Google Ads | Fylu`;
-  const description = `Webdesigner für ${region.city}: moderne Websites, lokale SEO und Google Ads ab 990€. Persönliche Betreuung, kostenloser Entwurf in 24 Stunden.`;
+  const description = `Webdesigner für ${region.city}: moderne Websites, lokale SEO und Google Ads. Persönliche Betreuung, kostenloser Entwurf in 24 Stunden.`;
   return {
     title,
     description,
@@ -134,7 +134,7 @@ export default async function RegionPage({
             "@type": "LocalBusiness",
             "@id": `${url}#localbusiness`,
             name: `Fylu – Webdesign ${region.city}`,
-            description: `Webdesign Agentur aus Saarlouis im Saarland für Unternehmen in ${region.city}. Professionelle Websites, lokale SEO und Google Ads ab 990€.`,
+            description: `Webdesign Agentur aus Saarlouis im Saarland für Unternehmen in ${region.city}. Professionelle Websites, lokale SEO und Google Ads.`,
             url,
             telephone: "+4915168488999",
             email: "kontakt@fylumarketing.de",
@@ -163,7 +163,6 @@ export default async function RegionPage({
                 closes: "16:00",
               },
             ],
-            priceRange: "€€",
             currenciesAccepted: "EUR",
             areaServed: [
               { "@type": "City", name: region.city },
@@ -197,33 +196,27 @@ export default async function RegionPage({
             "@type": "Service",
             serviceType: "Webdesign",
             name: `Webdesign ${region.city}`,
-            description: `Professionelles Webdesign für Unternehmen in ${region.city} und Umgebung. Moderne Websites, lokale SEO und Google Ads – ab 990€ Festpreis.`,
+            description: `Professionelles Webdesign für Unternehmen in ${region.city} und Umgebung. Moderne Websites, lokale SEO und Google Ads – transparente Konditionen.`,
             provider: { "@id": "https://www.fylumarketing.de/#organization" },
             areaServed: { "@type": "City", name: region.city },
             offers: [
               {
                 "@type": "Offer",
                 name: "Basismodell",
-                price: "990",
-                priceCurrency: "EUR",
                 availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/angebote",
+                url: "https://www.fylumarketing.de/buchen",
               },
               {
                 "@type": "Offer",
                 name: "Business",
-                price: "1490",
-                priceCurrency: "EUR",
                 availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/angebote",
+                url: "https://www.fylumarketing.de/buchen",
               },
               {
                 "@type": "Offer",
                 name: "Premium",
-                price: "2490",
-                priceCurrency: "EUR",
                 availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/angebote",
+                url: "https://www.fylumarketing.de/buchen",
               },
             ],
           }),
@@ -269,10 +262,10 @@ export default async function RegionPage({
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/angebote"
+              href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Kostenlosen Entwurf sichern
+              Anfrage senden
             </Link>
             <Link
               href="/buchen"
@@ -328,20 +321,20 @@ export default async function RegionPage({
             {[
               {
                 name: "Basismodell",
-                price: "990€",
+                price: 'Auf Anfrage',
                 pages: "Bis 3 Seiten",
                 desc: "Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.",
               },
               {
                 name: "Business",
-                price: "1.490€",
+                price: 'Auf Anfrage',
                 pages: "Bis 6 Seiten",
                 desc: "Verkaufsoptimierte Struktur, lokale SEO und Google Business Einrichtung.",
                 highlight: true,
               },
               {
                 name: "Premium",
-                price: "2.490€",
+                price: 'Auf Anfrage',
                 pages: "Unbegrenzt",
                 desc: "Premium-Design, Performance-Tuning und Conversion-Optimierung.",
               },
@@ -360,7 +353,7 @@ export default async function RegionPage({
             ))}
           </div>
           <Link
-            href="/angebote"
+            href="/buchen"
             className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 active:scale-[0.98] inline-block"
           >
             Alle Pakete ansehen
@@ -398,10 +391,10 @@ export default async function RegionPage({
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/angebote"
+              href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Kostenlosen Entwurf sichern
+              Anfrage senden
             </Link>
             <Link
               href="/buchen"

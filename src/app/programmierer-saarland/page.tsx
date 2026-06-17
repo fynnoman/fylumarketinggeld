@@ -6,7 +6,7 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet ein Programmierer im Saarland?',
-    a: 'Klassische Tagessätze liegen im Saarland bei 700–1.200€ netto. Wir arbeiten anders: Festpreis pro Projekt, definiert nach einer kostenlosen Discovery-Phase. Sie wissen vorher, was es kostet — keine offene Rechnung, keine Stunden-Schätzungen. Kleine Projekte starten bei rund 2.000€, mittelgroße Custom-Software bei 8.000–25.000€.',
+    a: 'Wir arbeiten projektbasiert mit transparenten Konditionen — definiert nach einer kostenlosen Discovery-Phase. Sie wissen vorher, was es kostet: keine offene Rechnung, keine Stunden-Schätzungen. Konditionen je nach Projektumfang — anrufen und persönlich besprechen.',
   },
   {
     q: 'Bist du Freelancer oder eine Agentur?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Macht ihr auch kleine Aufträge oder nur große Projekte?',
-    a: 'Beides. Kleine Projekte (Landingpage mit Custom-Logik, API-Integration, Browser-Plugin) machen wir ab rund 2.000€. Größere Software-Projekte starten bei 8.000€. Stundenweise Unterstützung („nur mal kurz das fixen") machen wir nicht — das funktioniert für beide Seiten nicht.',
+    a: 'Beides. Kleine Projekte (Landingpage mit Custom-Logik, API-Integration, Browser-Plugin) und größere Software-Projekte. Stundenweise Unterstützung („nur mal kurz das fixen") machen wir nicht — das funktioniert für beide Seiten nicht. Umfang besprechen wir vorab persönlich.',
   },
   {
     q: 'Arbeitet ihr remote oder vor Ort?',
@@ -78,7 +78,7 @@ export default function ProgrammiererSaarlandPage() {
             serviceType: 'Programmierung',
             name: 'Programmierer Saarland',
             description:
-              'Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack-Entwicklung. TypeScript, React, Next.js, Node.js, Python. Festpreis statt Stundensatz.',
+              'Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack-Entwicklung. TypeScript, React, Next.js, Node.js, Python. transparente Konditionen statt Stundensatz.',
             url: 'https://www.fylumarketing.de/programmierer-saarland',
             provider: {
               '@type': 'Organization',
@@ -149,7 +149,7 @@ export default function ProgrammiererSaarlandPage() {
             <h1 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
               Programmierer aus dem Saarland —{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Festpreis statt Stundensatz.
+                transparente Konditionen statt Stundensatz.
               </span>
             </h1>
           </FadeInSection>
@@ -162,7 +162,7 @@ export default function ProgrammiererSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.2}>
             <Link
-              href="/angebote"
+              href="/buchen"
               className="mt-9 inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
             >
               Projekt besprechen <span className="text-cyan-300">→</span>

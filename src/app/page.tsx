@@ -47,7 +47,7 @@ export default function Home() {
             {/* Städte */}
             <div>
               <h3 className="text-xl font-bold text-stone-900 mb-4">Webdesign nach Stadt</h3>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {regions.map((r) => (
                   <Link
                     key={r.slug}
@@ -74,7 +74,7 @@ export default function Home() {
             {/* Branchen */}
             <div>
               <h3 className="text-xl font-bold text-stone-900 mb-4">Webdesign nach Branche</h3>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {topics.map((t) => (
                   <Link
                     key={t.slug}
@@ -92,7 +92,7 @@ export default function Home() {
                 <Link href="/webdesign-handwerk" className="px-3 py-1.5 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-700 hover:bg-cyan-100 transition-colors">
                   Webdesign Handwerk
                 </Link>
-                <Link href="/angebote" className="px-3 py-1.5 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-700 hover:bg-cyan-100 transition-colors">
+                <Link href="/buchen" className="px-3 py-1.5 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-700 hover:bg-cyan-100 transition-colors">
                   Alle Angebote
                 </Link>
               </div>

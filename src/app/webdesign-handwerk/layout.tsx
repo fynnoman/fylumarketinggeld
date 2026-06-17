@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Webdesign Handwerk ▷ Websites für Handwerker ab 990€ ✓ Mehr Aufträge | Fylu",
+  title: "Webdesign Handwerk ▷ Websites für Handwerker ✓ Mehr Aufträge | Fylu",
   description:
-    "Webdesign für Handwerker ★ Speziell für Maler, Elektriker, Dachdecker, SHK, Schreiner. Mobiloptimiert, bei Google sichtbar, ab 990€ Festpreis. Kostenloser Entwurf in 24h.",
+    "Webdesign für Handwerker ★ Speziell für Maler, Elektriker, Dachdecker, SHK, Schreiner. Mobiloptimiert, bei Google sichtbar, transparente Konditionen. Kostenloser Entwurf in 24h.",
   keywords: [
     "Webdesign Handwerk",
     "Handwerker Website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Webdesign für Handwerker | Website die Aufträge bringt | Fylu",
     description:
-      "Webdesign speziell für Handwerksbetriebe: modern, mobiloptimiert & bei Google sichtbar. Ab 990€.",
+      "Webdesign speziell für Handwerksbetriebe: modern, mobiloptimiert & bei Google sichtbar..",
     url: "https://www.fylumarketing.de/webdesign-handwerk",
     siteName: "Fylu Webdesign",
     locale: "de_DE",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign Handwerk | Mehr Aufträge ab 990€ | Fylu",
+    title: "Webdesign Handwerk | Mehr Aufträge | Fylu",
     description: "Webdesign speziell für Handwerksbetriebe – mobiloptimiert, lokal SEO-optimiert.",
     images: ["/hero-background.webp"],
   },

@@ -224,7 +224,7 @@ export default function ProblemSolutionSection() {
                 </div>
 
                 <Link
-                  href="/angebote"
+                  href="/buchen"
                   className="mt-10 inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[var(--ink)] hover:bg-black text-white text-[15px] font-semibold shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px] transition-all duration-300 group"
                 >
                   <span>Jetzt Transformation starten</span>

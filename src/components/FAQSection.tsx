@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 const faqs = [
   {
     q: 'Was kostet eine professionelle Website wirklich?',
-    a: 'Unser Einstiegspaket beginnt bei 990 € für kleinere Unternehmen mit klaren Anforderungen. Premium-Projekte mit individuellem Design, SEO-Strategie und Conversion-Optimierung sind in der Investition individuell und richten sich nach Umfang, Branche und Zielsetzung. Die exakte Größenordnung besprechen wir kostenlos und unverbindlich in einem 15-Minuten-Strategiegespräch.',
+    a: 'Jedes Projekt wird individuell kalkuliert — abhängig von Umfang, Funktionsbedarf, Branche und Zielsetzung. Die konkrete Größenordnung besprechen wir kostenlos und unverbindlich in einem 15-Minuten-Strategiegespräch. Anrufen oder Anfrage senden.',
   },
   {
     q: 'Wie lange dauert es, bis meine Website live ist?',

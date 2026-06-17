@@ -14,7 +14,6 @@ export default function AngeboteForm() {
     brancheDetail: '',
     groesse: '',
     projectType: '',
-    budget: '',
     preferences: '',
     message: ''
   });
@@ -72,8 +71,14 @@ export default function AngeboteForm() {
             Vielen Dank!
           </h1>
           <p className="text-xl text-stone-600 mb-8">
-            Ihre Anfrage wurde erfolgreich übermittelt. Ich melde mich innerhalb von 24 Stunden bei Ihnen mit einem kostenlosen Entwurf.
+            Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.
           </p>
+          <a
+            href="tel:+4915168488999"
+            className="inline-flex items-center justify-center gap-2 bg-stone-900 text-white px-6 py-3 rounded-full text-sm font-semibold mb-4 shadow-lg hover:bg-black transition-all min-h-[48px]"
+          >
+            Oder gleich anrufen: +49 151 684 88999
+          </a>
           <Link href="/">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -242,24 +247,6 @@ export default function AngeboteForm() {
               </select>
             </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-stone-700 mb-2">
-                Budget
-              </label>
-              <select
-                name="budget"
-                value={formData.budget}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border-2 border-stone-200 focus:border-cyan-500 focus:outline-none transition-colors text-stone-900"
-              >
-                <option value="">Bitte wählen</option>
-                <option value="unter-1000">Unter 1.000€</option>
-                <option value="1000-2500">1.000€ - 2.500€</option>
-                <option value="2500-5000">2.500€ - 5.000€</option>
-                <option value="ueber-5000">Über 5.000€</option>
-                <option value="flexibel">Flexibel</option>
-              </select>
-            </div>
           </div>
 
           <div>
@@ -304,8 +291,18 @@ export default function AngeboteForm() {
                 : 'bg-gradient-to-r from-cyan-500 to-cyan-600 hover:shadow-2xl text-white'
             }`}
           >
-            {isSubmitting ? 'Wird gesendet...' : 'Kostenlosen Entwurf anfordern'}
+            {isSubmitting ? 'Wird gesendet...' : 'Anfrage senden'}
           </motion.button>
+
+          <a
+            href="tel:+4915168488999"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-stone-900 text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-black transition-all shadow-lg min-h-[48px]"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+            </svg>
+            Lieber direkt anrufen
+          </a>
 
           <p className="text-sm text-stone-500 text-center max-w-md">
             Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten zu. Keine Sorge – Ihre Daten werden vertraulich behandelt.

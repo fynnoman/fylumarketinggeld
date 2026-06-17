@@ -67,7 +67,7 @@ export default async function TopicPage({
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: SITE },
-              { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE}/angebote` },
+              { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE}/buchen` },
               { "@type": "ListItem", position: 3, name: topic.h1, item: url },
             ],
           }),
@@ -88,14 +88,10 @@ export default async function TopicPage({
             ],
             offers: {
               "@type": "Offer",
-              price: "990",
-              priceCurrency: "EUR",
               availability: "https://schema.org/InStock",
-              url: `${SITE}/angebote`,
+              url: `${SITE}/buchen`,
               priceSpecification: {
                 "@type": "PriceSpecification",
-                price: "990",
-                priceCurrency: "EUR",
                 valueAddedTaxIncluded: false,
               },
             },
@@ -140,10 +136,10 @@ export default async function TopicPage({
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/angebote"
+              href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Kostenloses Angebot sichern
+              Anfrage senden
             </Link>
             <Link
               href="/buchen"
@@ -188,10 +184,10 @@ export default async function TopicPage({
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/angebote"
+              href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Angebot anfragen
+              Anfrage senden
             </Link>
             <Link
               href="/buchen"
@@ -210,9 +206,9 @@ export default async function TopicPage({
             Weitere Branchen-Lösungen
           </h2>
           <p className="text-stone-600 text-center mb-8 max-w-2xl mx-auto">
-            Webdesign für weitere Branchen im Saarland – mit Festpreis ab 990€:
+            Webdesign für weitere Branchen im Saarland – mit transparente Konditionen:
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {relatedTopics.map((t) => (
               <Link
                 key={t.slug}

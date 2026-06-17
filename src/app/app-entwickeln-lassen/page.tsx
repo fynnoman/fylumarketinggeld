@@ -6,7 +6,7 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet es, eine App entwickeln zu lassen?',
-    a: 'Realistische Größenordnungen: einfache PWA / Web-App mit Login (8.900–15.000€), mittelgroße App mit mehreren Modulen (15.000–40.000€), komplexe SaaS- oder Marketplace-Apps (ab 40.000€). Eine native iOS+Android-App startet bei 18.000€. Wir arbeiten mit Festpreis-Modellen — keine Stundensätze, keine Überraschungen.',
+    a: 'Die Konditionen hängen stark vom Funktionsumfang ab — einfache PWA, mittelgroße Apps mit mehreren Modulen oder komplexe SaaS-/Marketplace-Apps. Wir arbeiten mit transparenten Konditionen — keine Stundensätze, keine Überraschungen. Konkrete Einschätzung nach einem 15-Minuten-Gespräch.',
   },
   {
     q: 'iOS, Android oder Web-App — was passt für mein Projekt?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Bekomme ich eine App-Store-Veröffentlichung mit?',
-    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess — inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im Festpreis enthalten.',
+    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess — inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im transparente Konditionen enthalten.',
   },
   {
     q: 'Was passiert nach dem Launch?',
@@ -37,19 +37,19 @@ const faqs = [
 const types = [
   {
     name: 'Web-App / SaaS',
-    price: 'ab 8.900€',
+    price: 'Auf Anfrage',
     body: 'Vollständige Webanwendung mit Login, Datenbank, Bezahlung, Admin-Bereich. Läuft im Browser, keine Installation nötig.',
     perfect: 'Tools für Mitarbeiter, B2B-SaaS, Kundenportale',
   },
   {
     name: 'PWA (Progressive Web App)',
-    price: 'ab 9.900€',
+    price: 'Auf Anfrage',
     body: 'Web-App mit nativem Look auf dem Smartphone: Home-Icon, Offline-Funktion, Push-Notifications. Kein App-Store nötig.',
     perfect: 'Field-Service, mobile Tools, schnell launchen',
   },
   {
     name: 'iOS + Android (React Native)',
-    price: 'ab 18.000€',
+    price: 'Auf Anfrage',
     body: 'Native App für beide Plattformen aus einer Codebasis. App-Store-Präsenz, alle Geräte-Features (Kamera, GPS, Push).',
     perfect: 'Consumer-Apps, App-Store-Listing wichtig',
   },
@@ -96,7 +96,7 @@ export default function AppEntwickelnLassenPage() {
             serviceType: 'App-Entwicklung',
             name: 'App entwickeln lassen Saarland',
             description:
-              'App-Entwicklung aus dem Saarland: Web-Apps, PWAs, iOS- und Android-Apps mit React Native. Festpreis-Projekte ab 8.900€.',
+              'App-Entwicklung aus dem Saarland: Web-Apps, PWAs, iOS- und Android-Apps mit React Native. Projekte mit transparenten Konditionen.',
             url: 'https://www.fylumarketing.de/app-entwickeln-lassen',
             provider: {
               '@type': 'Organization',
@@ -104,7 +104,6 @@ export default function AppEntwickelnLassenPage() {
             },
             offers: {
               '@type': 'AggregateOffer',
-              priceCurrency: 'EUR',
               lowPrice: '8900',
               highPrice: '50000',
               offerCount: 4,
@@ -167,19 +166,19 @@ export default function AppEntwickelnLassenPage() {
             <h1 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
               App entwickeln lassen —{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Festpreis ab 8.900€.
+                Transparente Konditionen — persönlich besprechen.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Web-Apps, PWAs, iOS und Android — entwickelt im Saarland. Wir bauen Apps mit modernem Stack (React Native, Next.js, TypeScript, Cloud-Native), liefern App-Store-fertig und übernehmen auf Wunsch Wartung. Festpreis pro Projekt, kein Stundenrechnungs-Chaos. Mehr Tiefe zu unserer{' '}
+              Web-Apps, PWAs, iOS und Android — entwickelt im Saarland. Wir bauen Apps mit modernem Stack (React Native, Next.js, TypeScript, Cloud-Native), liefern App-Store-fertig und übernehmen auf Wunsch Wartung. transparente Konditionen pro Projekt, kein Stundenrechnungs-Chaos. Mehr Tiefe zu unserer{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link>.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.2}>
             <Link
-              href="/angebote"
+              href="/buchen"
               className="mt-9 inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
             >
               Discovery-Gespräch <span className="text-cyan-300">→</span>

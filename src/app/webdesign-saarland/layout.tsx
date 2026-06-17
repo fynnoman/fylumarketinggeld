@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Webdesign Saarland ▷ Websites ab 990€ ✓ kostenloser Entwurf in 24h | Fylu",
+  title: "Webdesign Saarland ▷ Websites ✓ kostenloser Entwurf in 24h | Fylu",
   description:
-    "Webdesign Saarland ★ Professionelle Websites für Saarbrücken, Saarlouis, Neunkirchen, Homburg & Co. ab 990€ Festpreis. Persönlich, SEO-optimiert, kostenloser Entwurf in 24 Stunden. Jetzt anfragen.",
+    "Webdesign Saarland ★ Professionelle Websites für Saarbrücken, Saarlouis, Neunkirchen, Homburg & Co. transparente Konditionen. Persönlich, SEO-optimiert, kostenloser Entwurf in 24 Stunden. Jetzt anfragen.",
   keywords: [
     "Webdesign Saarland",
     "Webdesigner Saarland",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "/webdesign-saarland",
   },
   openGraph: {
-    title: "Webdesign Saarland | Professionelle Websites ab 990€ | Fylu",
+    title: "Webdesign Saarland | Professionelle Websites | Fylu",
     description:
       "Webdesign aus dem Saarland: Moderne Websites für lokale Unternehmen. Persönlich, fair & SEO-optimiert. Kostenloser Entwurf in 24h.",
     url: "https://www.fylumarketing.de/webdesign-saarland",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign Saarland | Professionelle Websites ab 990€ | Fylu",
-    description: "Webdesign aus dem Saarland: Moderne Websites ab 990€. Kostenloser Entwurf in 24h.",
+    title: "Webdesign Saarland | Professionelle Websites | Fylu",
+    description: "Webdesign aus dem Saarland: Moderne Websites. Kostenloser Entwurf in 24h.",
     images: ["/hero-background.webp"],
   },
 };

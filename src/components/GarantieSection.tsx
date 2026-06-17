@@ -201,7 +201,7 @@ export default function GarantieSection() {
               </div>
 
               <Link
-                href="/angebote"
+                href="/buchen"
                 className="group inline-flex items-center gap-2 whitespace-nowrap text-center bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-4 rounded-full font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
               >
                 <span>Slot sichern</span>

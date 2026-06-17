@@ -162,7 +162,7 @@ export default function MethodikPage() {
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-center">
                 <Link
-                  href="/angebote"
+                  href="/buchen"
                   className="block text-center bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-7 py-4 rounded-full text-base font-bold shadow-md transition-all duration-200 hover:shadow-lg active:scale-[0.98]"
                 >
                   Strategiegespräch buchen
@@ -256,7 +256,7 @@ export default function MethodikPage() {
                 Ihrem Unternehmen passt. Kostenlos, unverbindlich, ohne Verkaufsdruck.
               </p>
               <Link
-                href="/angebote"
+                href="/buchen"
                 className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-full text-base md:text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-xl active:scale-[0.98]"
               >
                 Strategiegespräch buchen

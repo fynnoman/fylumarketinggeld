@@ -21,7 +21,6 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Services', href: '#services' },
     { label: 'Über mich', href: '#about' },
-    { label: 'Pakete', href: '#packages' },
     { label: 'Team', href: '/team' },
     { label: 'Methodik', href: '/methodik' },
   ];
@@ -79,11 +78,29 @@ export default function Navbar() {
 
             {/* CTA + Hamburger */}
             <div className="flex items-center gap-2">
+              <a
+                href="tel:+4915168488999"
+                aria-label="Jetzt anrufen"
+                className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500 text-white shadow-[0_4px_14px_-4px_rgba(6,182,212,0.6)] active:scale-[0.96] transition-all"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+                </svg>
+              </a>
+              <a
+                href="tel:+4915168488999"
+                className="hidden md:inline-flex items-center gap-1.5 bg-white border border-stone-200 hover:border-stone-300 text-stone-900 px-4 py-2 rounded-full text-[13px] font-semibold shadow-sm hover:-translate-y-[1px] transition-all duration-300"
+              >
+                <svg className="w-3.5 h-3.5 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+                </svg>
+                <span>Anrufen</span>
+              </a>
               <Link
-                href="/angebote"
+                href="/buchen"
                 className="hidden md:inline-flex group items-center gap-1.5 bg-[var(--ink)] hover:bg-black text-white px-4 py-2 rounded-full text-[13px] font-semibold shadow-[0_4px_14px_-4px_rgba(12,14,16,0.4)] hover:shadow-[0_8px_22px_-6px_rgba(12,14,16,0.5)] hover:-translate-y-[1px] transition-all duration-300"
               >
-                <span>Entwurf sichern</span>
+                <span>Anfrage senden</span>
                 <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">
                   →
                 </span>
@@ -133,12 +150,22 @@ export default function Navbar() {
                     <span className="text-stone-300 text-sm">↗</span>
                   </motion.a>
                 ))}
-                <Link
-                  href="/angebote"
+                <a
+                  href="tel:+4915168488999"
                   onClick={() => setMenuOpen(false)}
-                  className="mt-2 w-full inline-flex items-center justify-center gap-2 bg-[var(--ink)] text-white py-3.5 rounded-xl font-semibold text-[15px] shadow-lg"
+                  className="mt-2 w-full inline-flex items-center justify-center gap-2 bg-cyan-500 text-white py-3.5 rounded-xl font-semibold text-[15px] shadow-lg min-h-[52px]"
                 >
-                  <span>Kostenlosen Entwurf sichern</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+                  </svg>
+                  <span>+49 151 684 88999</span>
+                </a>
+                <Link
+                  href="/buchen"
+                  onClick={() => setMenuOpen(false)}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[var(--ink)] text-white py-3.5 rounded-xl font-semibold text-[15px] shadow-lg min-h-[52px]"
+                >
+                  <span>Anfrage senden</span>
                   <span className="text-cyan-400">→</span>
                 </Link>
               </div>
