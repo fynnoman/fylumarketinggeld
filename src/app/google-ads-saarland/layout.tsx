@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Ads Saarland ▷ Sofort mehr Anfragen | Fylu",
+  title: "Google Ads Saarland · Fylu Studio · Setup ab 690 € | Betreuung ab 390 €/Monat",
   description:
-    "Google Ads Saarland ★ Professionelle Kampagnen für Saarbrücken, Saarlouis, Neunkirchen & Co. Sofort sichtbar ab Tag 1. Kostenlose Analyse — Konditionen auf Anfrage.",
+    "Google Ads als Erweiterung Ihrer Fylu-Website. Setup ab 690 €, Betreuung ab 390 € pro Monat — kuratiert aus einem Boutique-Studio in Saarlouis.",
   alternates: {
     canonical: "/google-ads-saarland",
   },
   openGraph: {
-    title: "Google Ads Saarland | Mehr Anfragen ab Tag 1 | Fylu",
+    title: "Google Ads Saarland · Editorial Studio | Fylu",
     description:
-      "Google Ads im Saarland: Sofort sichtbar bei Google. Professionelle Kampagnen für lokale Unternehmen.",
+      "Google Ads Setup ab 690 €, Betreuung ab 390 € / Monat. Erweiterung Ihrer Fylu-Website.",
     url: "https://www.fylumarketing.de/google-ads-saarland",
-    siteName: "Fylu Webdesign",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
         url: "/hero-background.webp",
         width: 1200,
         height: 630,
-        alt: "Google Ads Saarland – sofort sichtbar bei Google mit Fylu",
+        alt: "Google Ads Saarland – Fylu Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Google Ads Saarland | Mehr Anfragen ab Tag 1 | Fylu",
-    description: "Google Ads im Saarland: Sofort sichtbar bei Google. Transparente Kosten.",
+    title: "Google Ads Saarland · Editorial Studio | Fylu",
+    description: "Setup ab 690 €, Betreuung ab 390 € / Monat.",
     images: ["/hero-background.webp"],
   },
 };

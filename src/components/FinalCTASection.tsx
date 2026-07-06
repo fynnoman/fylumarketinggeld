@@ -49,8 +49,8 @@ export default function FinalCTASection() {
           className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/8 backdrop-blur-sm border border-white/10 mb-8"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
-          <span className="text-[11px] font-medium tracking-[0.18em] uppercase text-stone-300">
-            15 Minuten · kostenloses Gespräch
+          <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-300">
+            Vorgespräch · 15 Minuten
           </span>
         </motion.div>
 
@@ -58,11 +58,11 @@ export default function FinalCTASection() {
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: smoothEase, delay: 0.05 }}
-          className="font-semibold tracking-[-0.035em] leading-[1.04] text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[4.2rem] max-w-3xl mx-auto"
+          className="font-semibold tracking-[-0.035em] leading-[1.04] text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[4.4rem] max-w-3xl mx-auto"
         >
-          Reden wir kurz —{' '}
+          Ein Gespräch —{' '}
           <span className="font-display italic font-normal text-cyan-300">
-            persönlich.
+            keine Verkaufspräsentation.
           </span>
         </motion.h2>
 
@@ -70,9 +70,10 @@ export default function FinalCTASection() {
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: smoothEase, delay: 0.18 }}
-          className="mt-6 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto"
+          className="mt-7 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Anrufen oder Anfrage senden. Sie bekommen innerhalb von 24 Stunden eine konkrete Rückmeldung — direkt von uns, nicht aus einer Hotline.
+          Anrufen oder anfragen. Sie bekommen binnen 24 Stunden eine persönliche
+          Rückmeldung — vom Studio-Lead, nicht aus einer Hotline.
         </motion.p>
 
         <motion.div
@@ -94,7 +95,7 @@ export default function FinalCTASection() {
             href="/buchen"
             className="group inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-7 py-4 rounded-full text-base font-semibold border border-white/15 backdrop-blur-sm transition-all duration-300 min-h-[52px]"
           >
-            <span>Anfrage senden</span>
+            <span>Platz für 2026 prüfen</span>
             <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </Link>
         </motion.div>
@@ -103,13 +104,13 @@ export default function FinalCTASection() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[12px] sm:text-sm text-stone-400"
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[12px] sm:text-sm text-stone-400 tracking-[0.02em]"
         >
-          <span>Antwort in 24 Stunden</span>
+          <span>Rückmeldung binnen 24 Stunden</span>
           <span className="hidden sm:inline w-1 h-1 rounded-full bg-stone-600" />
           <span>Saarland · ganz Deutschland</span>
           <span className="hidden sm:inline w-1 h-1 rounded-full bg-stone-600" />
-          <span>50+ Kunden · 4.9 / 5</span>
+          <span>Klienten seit 2024 · 4,9 / 5</span>
         </motion.div>
       </div>
     </section>

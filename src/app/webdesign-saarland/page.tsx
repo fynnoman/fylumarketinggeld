@@ -3,276 +3,471 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FadeInSection from '@/components/animated/FadeInSection';
 
-const smoothEase = [0.22, 1, 0.36, 1] as const;
-
 const faqs = [
-	{
-		q: 'Was kostet eine professionelle Website im Saarland?',
-		a: 'Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.',
-	},
-	{
-		q: 'Wie lange dauert die Erstellung einer Website?',
-		a: 'In der Regel ist Ihre Website innerhalb von 2 bis 4 Wochen fertig. Den ersten Entwurf erhalten Sie bereits innerhalb von 24 Stunden nach unserem Erstgespräch — kostenlos und unverbindlich.',
-	},
-	{
-		q: 'Ist die Website auch für Smartphones optimiert?',
-		a: 'Selbstverständlich. Jede Website wird mobile-first entwickelt, das heißt sie funktioniert auf allen Geräten einwandfrei — Smartphone, Tablet und Desktop. Das ist auch für Google-Rankings entscheidend.',
-	},
-	{
-		q: 'Werde ich damit bei Google gefunden?',
-		a: 'Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Für erweiterte Sichtbarkeit bieten wir zusätzlich professionelle SEO-Betreuung an.',
-	},
-	{
-		q: 'Was passiert nach dem Launch?',
-		a: 'Nach dem Launch lassen wir Sie nicht allein. Je nach Paket erhalten Sie 2 bis 4 Monate Hosting inklusive. Darüber hinaus stehen wir Ihnen für Änderungen, Updates und Support zur Verfügung.',
-	},
-	{
-		q: 'Kann ich die Website selbst bearbeiten?',
-		a: 'Auf Wunsch richten wir ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie — schnell und unkompliziert.',
-	},
+  {
+    q: 'Was kostet ein Fylu-Auftritt im Saarland?',
+    a: 'Das Signature-Paket beginnt bei 3.490 €, das Atelier bei 6.490 €, das Maison bei 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Alle Beträge zzgl. USt.',
+  },
+  {
+    q: 'Wie lange dauert ein Projekt?',
+    a: 'Signature-Auftritte gehen in etwa zwei bis vier Wochen live. Atelier und Maison planen wir mit vier bis sechs Wochen. Nach Live-Gang folgen bis zu sechs Monate Studio-Begleitung.',
+  },
+  {
+    q: 'Ist eine Fylu-Website mobil optimiert?',
+    a: 'Selbstverständlich. Jeder Auftritt wird mobile-first entworfen — auf die Rhythmisierung des Smartphones abgestimmt, dann für Tablet und Desktop erweitert. Auch aus SEO-Gründen unverhandelbar.',
+  },
+  {
+    q: 'Werde ich bei Google gefunden?',
+    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation ab 890 €, SEO Betreuung ab 490 €/Monat sowie Google Ads Setup ab 690 €.',
+  },
+  {
+    q: 'Was passiert nach dem Launch?',
+    a: 'Zwischen 60 und 180 Tagen Studio-Begleitung sind je nach Paket enthalten. Iteration, Reporting, Feinschliff. Danach entscheiden Sie, ob wir weiter begleiten oder Sie im eigenen Haus übernehmen.',
+  },
+  {
+    q: 'Kann ich Inhalte selbst pflegen?',
+    a: 'Auf Wunsch. Wir richten redaktionelle Content-Systeme ein, in denen Sie Texte, Bilder und Kapitel selbst pflegen — ohne die editoriale Handschrift der Seite zu verlieren.',
+  },
 ];
 
-const steps = [
-	{
-		title: 'Erstgespräch',
-		text: 'In einem kurzen, kostenlosen Gespräch lernen wir uns kennen. Wir verstehen Ihr Geschäft, Ihre Ziele und Ihre Wünsche. Kein Verkaufsdruck — nur ehrliche Beratung.',
-	},
-	{
-		title: 'Kostenloser Entwurf in 24h',
-		text: 'Innerhalb von 24 Stunden erhalten Sie einen ersten Design-Entwurf — kostenlos und unverbindlich. So sehen Sie sofort, wie Ihre neue Website aussehen könnte.',
-	},
-	{
-		title: 'Design & Entwicklung',
-		text: 'Nach Ihrem Feedback bauen wir Ihre Website mit modernster Technik. Jede Seite wird für maximale Geschwindigkeit, Suchmaschinenoptimierung und Conversion optimiert.',
-	},
-	{
-		title: 'SEO-Optimierung',
-		text: 'Bevor Ihre Website live geht, optimieren wir sie für Google: Keyword-Integration, technisches SEO, Meta-Tags, Ladezeit-Optimierung und Google Business Einrichtung.',
-	},
-	{
-		title: 'Launch & Support',
-		text: 'Ihre Website geht live und wir bleiben Ihr Ansprechpartner. Hosting, Updates und Änderungen — alles aus einer Hand, ohne Agentur-Overhead.',
-	},
+const chapters = [
+  {
+    ordinal: 'I',
+    title: 'Vorgespräch',
+    body: 'Fünfzehn Minuten, in denen wir zuhören: Substanz Ihres Hauses, aktuelle Präsenz, Anspruch des Vorhabens.',
+  },
+  {
+    ordinal: 'II',
+    title: 'Positionierung',
+    body: 'Rahmen, Verkaufsarchitektur, Content-Map. Kein Template — eine eigene Handschrift.',
+  },
+  {
+    ordinal: 'III',
+    title: 'Werkbank',
+    body: 'Design und Umsetzung. Editoriale Typografie, technische SEO-Foundation, spürbare Rhythmisierung.',
+  },
+  {
+    ordinal: 'IV',
+    title: 'Sichtbarkeit',
+    body: 'Lokale Schärfung, Google-Profil und strukturierte Daten — Sichtbarkeit für Begriffe, die Klienten tatsächlich eingeben.',
+  },
+  {
+    ordinal: 'V',
+    title: 'Iteration',
+    body: 'Neunzig Tage Studio-Begleitung nach Live-Gang. Zeit für Substanz, nicht für Theorie.',
+  },
+];
+
+const packages = [
+  {
+    ordinal: 'I',
+    name: 'Signature',
+    price: '3.490',
+    positioning: 'Der stille Auftritt.',
+    body: 'Bis zu fünf editorial gestaltete Seiten, technische SEO-Basis, 60 Tage Betreuung. Für Häuser, die still nach vorne treten wollen.',
+  },
+  {
+    ordinal: 'II',
+    name: 'Atelier',
+    price: '6.490',
+    positioning: 'Handschrift statt Vorlage.',
+    body: 'Bis zu zehn Seiten mit individueller Verkaufsarchitektur, lokales SEO-Framework, Google Business, 90 Tage Iteration.',
+    highlight: true,
+  },
+  {
+    ordinal: 'III',
+    name: 'Maison',
+    price: '9.190',
+    positioning: 'Kein Auftritt. Ein Werk.',
+    body: 'Umfassende, maßgefertigte Website mit Redaktionssystem, SEO-Foundation für Skalierung und sechs Monaten Studio-Begleitung.',
+  },
 ];
 
 export default function WebdesignSaarlandPage() {
-	return (
-		<main>
-			<Navbar />
+  return (
+    <main className="bg-white">
+      <Navbar />
 
-			{/* Breadcrumb Schema */}
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'BreadcrumbList',
-						itemListElement: [
-							{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
-							{ '@type': 'ListItem', position: 2, name: 'Webdesign Saarland', item: 'https://www.fylumarketing.de/webdesign-saarland' },
-						],
-					}),
-				}}
-			/>
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
+              { '@type': 'ListItem', position: 2, name: 'Webdesign Saarland', item: 'https://www.fylumarketing.de/webdesign-saarland' },
+            ],
+          }),
+        }}
+      />
 
-			{/* LocalBusiness Schema */}
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'LocalBusiness',
-						name: 'Fylu – Webdesign Saarland',
-						description: 'Webdesign Agentur aus Saarlouis im Saarland. Professionelle Websites, SEO und Google Ads für lokale Unternehmen.',
-						url: 'https://www.fylumarketing.de/webdesign-saarland',
-						telephone: '+4915168488999',
-						email: 'kontakt@fylumarketing.de',
-						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-						geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
-						areaServed: [{ '@type': 'State', name: 'Saarland' }, { '@type': 'Country', name: 'Deutschland' }],
-					}),
-				}}
-			/>
+      {/* LocalBusiness Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Fylu Studio · Editorial Webdesign Saarland',
+            description: 'Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites ab 3.490 €. Zwölf Klienten pro Jahr.',
+            url: 'https://www.fylumarketing.de/webdesign-saarland',
+            telephone: '+4915168488999',
+            email: 'kontakt@fylumarketing.de',
+            address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
+            geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
+            areaServed: [{ '@type': 'State', name: 'Saarland' }, { '@type': 'Country', name: 'Deutschland' }],
+          }),
+        }}
+      />
 
-			{/* FAQ Schema */}
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'FAQPage',
-						mainEntity: faqs.map((f) => ({
-							'@type': 'Question',
-							name: f.q,
-							acceptedAnswer: { '@type': 'Answer', text: f.a },
-						})),
-					}),
-				}}
-			/>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }),
+        }}
+      />
 
-			{/* Breadcrumb Nav */}
-			<div className="bg-stone-50 border-b border-stone-200">
-				<div className="max-w-7xl mx-auto px-6 py-3 pt-20">
-					<nav className="text-sm text-stone-500">
-						<Link href="/" className="hover:text-cyan-500 transition-colors">Home</Link>
-						<span className="mx-2">/</span>
-						<span className="text-stone-900 font-medium">Webdesign Saarland</span>
-					</nav>
-				</div>
-			</div>
+      {/* Breadcrumb Nav */}
+      <div className="bg-[var(--background-warm)] border-b border-stone-200/70">
+        <div className="max-w-7xl mx-auto px-6 py-3 pt-20">
+          <nav className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
+            <Link href="/" className="hover:text-cyan-700 transition-colors">Home</Link>
+            <span className="mx-2 text-stone-400">·</span>
+            <span className="text-stone-900 font-medium">Webdesign Saarland</span>
+          </nav>
+        </div>
+      </div>
 
-			{/* Hero */}
-			<section className="relative py-20 md:py-32 px-6 bg-white overflow-hidden">
-				<div className="absolute top-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40" />
-				<div className="max-w-4xl mx-auto relative z-10">
-					<FadeInSection>
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
-							Webdesign Saarland — Websites die Kunden bringen
-						</h1>
-					</FadeInSection>
-					<FadeInSection delay={0.08}>
-						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Ihr Unternehmen im Saarland verdient eine Website, die nicht nur gut aussieht, sondern auch Ergebnisse liefert. Als Webdesign-Studio aus Saarlouis entwickeln wir professionelle, suchmaschinenoptimierte Websites für Unternehmen in Saarbrücken, Merzig, Dillingen, Neunkirchen, St. Wendel und dem gesamten Saarland. Unser Ziel: Ihre Website wird zum wichtigsten Vertriebskanal Ihres Unternehmens. Ob <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb</Link>, Dienstleister, Einzelhändler oder Gastronom — wir verstehen die Bedürfnisse lokaler Unternehmen und bauen Websites, die bei Google gefunden werden und Besucher in Kunden verwandeln. Kein Template-Einheitsbrei, sondern individuelle Lösungen mit persönlicher Betreuung., mit kostenlosem Entwurf in 24 Stunden. Sie möchten mehr erfahren? Lesen Sie, wie Sie Ihre <Link href="/website-erstellen-lassen" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Website professionell erstellen lassen</Link> können.
-						</p>
-					</FadeInSection>
-					<FadeInSection delay={0.15}>
-						<Link
-							href="/buchen"
-							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
-						>
-							Anfrage senden
-						</Link>
-					</FadeInSection>
-				</div>
-			</section>
+      {/* Hero */}
+      <section className="relative py-24 md:py-36 px-5 md:px-8 bg-[var(--background-warm)] overflow-hidden isolate">
+        <div className="absolute inset-0 -z-10">
+          <div
+            className="absolute inset-0 opacity-[0.5]"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle, rgba(12,14,16,0.07) 1px, transparent 1.4px)',
+              backgroundSize: '28px 28px',
+              maskImage:
+                'radial-gradient(ellipse 80% 60% at 40% 40%, black 30%, transparent 80%)',
+              WebkitMaskImage:
+                'radial-gradient(ellipse 80% 60% at 40% 40%, black 30%, transparent 80%)',
+            }}
+          />
+          <div className="absolute top-0 right-0 w-[60vw] h-[50vw] bloom-cyan" />
+          <div className="noise-overlay opacity-30" />
+        </div>
 
-			{/* Warum professionelle Website */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<FadeInSection>
-						<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						Warum eine professionelle Website im Saarland entscheidend ist
-						</h2>
-					</FadeInSection>
-					<FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
-						<p>
-							Die Realität ist ernüchternd: Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand seines Webdesigns. Wenn Ihre Website veraltet wirkt, nicht für Smartphones optimiert ist oder bei Google nicht auftaucht, verlieren Sie jeden Tag potenzielle Kunden — ohne es zu merken. Im Saarland konkurrieren Tausende lokale Unternehmen um die Aufmerksamkeit derselben Kunden. Der Handwerker mit der modernen Website bekommt den Auftrag. Das Restaurant mit der ansprechenden Online-Speisekarte bekommt die Reservierung. Der Dienstleister, der bei Google auf Seite 1 erscheint, bekommt den Anruf.
-						</p>
-						<p>
-							Viele Unternehmen im Saarland haben entweder gar keine Website oder eine, die vor Jahren erstellt wurde und seitdem nicht aktualisiert wurde. Mobile Besucher — und das sind heute über 60 Prozent — sehen eine nicht-responsive Seite und springen sofort ab. Google bestraft langsame, veraltete Websites mit schlechten Rankings. Das Ergebnis: Ihre Konkurrenz wird gefunden, Sie nicht. Eine professionelle Website ist keine Ausgabe, sondern eine Investition, die sich durch mehr Anfragen, mehr Aufträge und mehr Umsatz schnell bezahlt macht.
-						</p>
-					</FadeInSection>
-				</div>
-			</section>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <FadeInSection>
+            <div className="mb-8 inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-stone-200/80">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-500 opacity-70 animate-ping" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-500" />
+              </span>
+              <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-700">
+                Studio Saarlouis · 12 Klienten / Jahr · 3 Plätze 2026
+              </span>
+            </div>
+          </FadeInSection>
 
-			{/* Prozess */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Unser Webdesign-Prozess — Von der Idee zur fertigen Website
-					</h2>
-					<div className="space-y-10">
-						{steps.map((step, i) => (
-							<div key={i} className="relative pl-12">
-								<div className="absolute left-0 top-1 w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-									{i + 1}
-								</div>
-								<h3 className="text-xl font-bold text-stone-900 mb-2">{step.title}</h3>
-								<p className="text-stone-600 leading-relaxed">{step.text}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
+          <FadeInSection delay={0.08}>
+            <h1 className="text-[2.8rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[0.98] font-semibold text-[var(--ink)] tracking-[-0.035em]">
+              Webdesign Saarland — mit einer{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Handschrift, die bleibt.
+              </span>
+            </h1>
+          </FadeInSection>
 
-			{/* Was unsere Websites anders macht */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						Was unsere Websites anders macht
-					</h2>
-					<div className="prose prose-lg prose-stone max-w-none">
-						<p>
-							Bei uns bekommen Sie keine Massenware. Als Boutique-Studio widmen wir uns jedem Projekt mit voller Aufmerksamkeit — das merken unsere Kunden. Jede Website wird von Grund auf für Ihr Unternehmen konzipiert, nicht aus einem Template zusammengeklickt. Mobile-first ist bei uns Standard, nicht optional. Jede Seite wird zuerst für Smartphones gestaltet und dann für größere Bildschirme erweitert. Das Ergebnis: Perfekte Darstellung auf allen Geräten und bessere Google-Rankings.
-						</p>
-						<p>
-							<Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">SEO</Link> ist bei uns kein Zusatzpaket, sondern fester Bestandteil jeder Website. Von der Keyword-Recherche über technisches SEO bis zur Google Business Optimierung — Ihre Website wird von Anfang an so gebaut, dass Google sie liebt. Für noch mehr Sichtbarkeit bieten wir auch professionelle <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700">Google Ads Kampagnen im Saarland</Link> an. Und das Beste: Sie haben einen festen Ansprechpartner. Kein Ticketsystem, keine Warteschleife. Sie schreiben uns, wir antworten. So einfach ist das. Unsere Preise sind fair und transparent — für eine professionelle Website, die tatsächlich Kunden bringt.
-						</p>
-					</div>
-				</div>
-			</section>
+          <FadeInSection delay={0.16}>
+            <p className="mt-8 text-lg md:text-[1.15rem] text-stone-600 leading-relaxed max-w-2xl">
+              Fylu ist ein Boutique-Webdesign-Studio aus Saarlouis. Wir begleiten
+              zwölf Häuser pro Jahr — im Saarland, bundesweit und international.
+              Editorial gestaltete Auftritte ab 3.490 €. Kein Template, kein Fließband.
+            </p>
+          </FadeInSection>
 
-			{/* Pakete */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						Webdesign-Pakete für Unternehmen im Saarland
-					</h2>
-					<div className="grid md:grid-cols-3 gap-6 mb-10">
-						{[
-							{ name: 'Basismodell', price: 'Auf Anfrage', pages: 'Bis 3 Seiten', desc: 'Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.' },
-							{ name: 'Fortgeschritten', price: 'Auf Anfrage', pages: 'Bis 6 Seiten', desc: 'Verkaufsoptimierte Struktur, erweiterte SEO und Google Business Optimierung.', highlight: true },
-							{ name: 'Professionell', price: 'Auf Anfrage', pages: 'Unbegrenzt', desc: 'Premium-Design, intensives Performance-Tuning und Conversion-Optimierung.' },
-						].map((pkg, i) => (
-							<div key={i} className={`p-6 rounded-xl border ${pkg.highlight ? 'border-cyan-500 bg-cyan-50' : 'border-stone-200 bg-white'}`}>
-								<h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
-								<p className="text-3xl font-extrabold text-cyan-600 mb-2">{pkg.price}</p>
-								<p className="text-sm text-stone-500 mb-3">{pkg.pages}</p>
-								<p className="text-stone-600 text-sm">{pkg.desc}</p>
-							</div>
-						))}
-					</div>
-					<Link
-						href="/buchen"
-						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 active:scale-[0.98] inline-block"
-					>
-						Alle Pakete ansehen
-					</Link>
-				</div>
-			</section>
+          <FadeInSection delay={0.24}>
+            <div className="mt-10 flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/buchen"
+                className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
+              >
+                <span>Platz für 2026 prüfen</span>
+                <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+              </Link>
+              <Link
+                href="#pakete-saarland"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
+              >
+                <span>Pakete ansehen</span>
+              </Link>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
 
-			{/* FAQ */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Häufige Fragen zum Webdesign im Saarland
-					</h2>
-					<div className="space-y-6">
-						{faqs.map((faq, i) => (
-							<FadeInSection key={i} delay={i * 0.06} className="bg-white p-6 rounded-xl border border-stone-200">
-								<h3 className="text-lg font-bold text-stone-900 mb-2">{faq.q}</h3>
-								<p className="text-stone-600 leading-relaxed">{faq.a}</p>
-							</FadeInSection>
-						))}
-					</div>
-				</div>
-			</section>
+      {/* Positionierung */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FadeInSection>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§I</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Positionierung
+              </span>
+            </div>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+              Warum ein{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Boutique-Studio
+              </span>{' '}
+              statt einer Agentur?
+            </h2>
+          </FadeInSection>
+          <FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none mt-10 leading-relaxed">
+            <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
+              Ein Auftritt ist keine Nebensache. Er ist die stille Antwort auf eine
+              laute Frage: <em>Kann man diesem Haus vertrauen?</em> Über 75 % der
+              Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand
+              seines Auftritts. Ein Auftritt aus einem Template ist eine Antwort im
+              Chor. Ein Auftritt mit Handschrift ist eine eigene Stimme.
+            </p>
+            <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
+              Fylu arbeitet mit einer bewusst kleinen Zahl an Klienten. Zwölf pro
+              Jahr. Direkter Draht zum Studio-Lead. Editoriale Gestaltung statt
+              Baukasten. Für Häuser vom saarländischen Handwerksbetrieb bis zum
+              internationalen SaaS-Haus — verbindend ist der Anspruch, digitale
+              Präsenz mit Substanz zu bauen, nicht mit Lautstärke.
+            </p>
+          </FadeInSection>
+        </div>
+      </section>
 
-			{/* CTA */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-						Bereit für Ihre neue Website?
-					</h2>
-					<p className="text-lg text-stone-600 mb-8">
-						Lassen Sie sich von einem kostenlosen Entwurf überzeugen — unverbindlich und innerhalb von 24 Stunden. Für Unternehmen im Saarland und ganz Deutschland.
-					</p>
-					<Link
-						href="/buchen"
-						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
-					>
-						Anfrage senden
-					</Link>
-					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
-						<Link href="/seo-saarland" className="hover:text-cyan-500 transition-colors">SEO Saarland</Link>
-						<Link href="/website-erstellen-lassen" className="hover:text-cyan-500 transition-colors">Website erstellen lassen</Link>
-						<Link href="/webdesign-handwerk" className="hover:text-cyan-500 transition-colors">Webdesign Handwerk</Link>
-						<Link href="/google-ads-saarland" className="hover:text-cyan-500 transition-colors">Google Ads Saarland</Link>
-					</div>
-				</div>
-			</section>
+      {/* Prozess */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
+        <div className="max-w-4xl mx-auto">
+          <FadeInSection>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§II</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Der Prozess
+              </span>
+            </div>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+              Fünf Kapitel — von der{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Vorstellung bis zur Wirkung.
+              </span>
+            </h2>
+          </FadeInSection>
 
-			<Footer />
-		</main>
-	);
+          <div className="mt-14 grid md:grid-cols-2 gap-5">
+            {chapters.map((c, i) => (
+              <FadeInSection key={c.ordinal} delay={0.08 + i * 0.05}>
+                <div className="bg-white rounded-3xl p-8 border border-stone-200/70 premium-lift h-full">
+                  <div className="flex items-start justify-between mb-5">
+                    <span className="text-[10px] uppercase tracking-[0.28em] text-stone-500">
+                      Kapitel {c.ordinal}
+                    </span>
+                    <span className="font-display italic text-3xl text-[var(--cyan-deep)] leading-none">
+                      {c.ordinal}
+                    </span>
+                  </div>
+                  <h3 className="font-display italic text-2xl md:text-[1.65rem] text-[var(--ink)] leading-tight mb-3">
+                    {c.title}
+                  </h3>
+                  <p className="text-stone-600 leading-relaxed text-[0.95rem]">
+                    {c.body}
+                  </p>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/methodik"
+              className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
+            >
+              <span className="relative">
+                Zum ganzen Prozess
+                <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
+              </span>
+              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Pakete */}
+      <section id="pakete-saarland" className="py-24 md:py-32 px-5 md:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-14">
+              <div className="mb-6 flex items-baseline justify-center gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§III</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Die Pakete
+                </span>
+              </div>
+              <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+                Drei Zugänge zu einer{' '}
+                <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                  Fylu-Website.
+                </span>
+              </h2>
+              <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
+                Preise sind Ausgangspunkte, keine Preisschilder. Der endgültige
+                Rahmen entsteht im Vorgespräch.
+              </p>
+            </div>
+          </FadeInSection>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {packages.map((pkg, i) => (
+              <FadeInSection key={pkg.name} delay={0.1 + i * 0.08}>
+                <div
+                  className={`p-8 rounded-3xl border premium-lift h-full flex flex-col ${
+                    pkg.highlight
+                      ? 'bg-[var(--ink)] text-white border-transparent shadow-[0_30px_80px_-30px_rgba(14,116,144,0.5)]'
+                      : 'bg-white border-stone-200/70'
+                  }`}
+                >
+                  <div className="flex items-start justify-between mb-6">
+                    <div>
+                      <div className={`text-[10px] uppercase tracking-[0.28em] mb-2 ${pkg.highlight ? 'text-stone-300' : 'text-stone-500'}`}>
+                        Kapitel {pkg.ordinal}
+                      </div>
+                      <h3 className={`font-display italic text-3xl md:text-[2.4rem] leading-none ${pkg.highlight ? 'text-cyan-200' : 'text-[var(--ink)]'}`}>
+                        {pkg.name}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className={`font-display italic text-lg mb-3 ${pkg.highlight ? 'text-white' : 'text-[var(--ink)]'}`}>
+                    {pkg.positioning}
+                  </p>
+                  <p className={`text-[0.95rem] leading-relaxed mb-6 ${pkg.highlight ? 'text-stone-300' : 'text-stone-600'}`}>
+                    {pkg.body}
+                  </p>
+                  <div className={`mt-auto pt-6 border-t border-dashed ${pkg.highlight ? 'border-white/20' : 'border-stone-200'}`}>
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <span className={`pricing-from ${pkg.highlight ? 'text-stone-300' : ''}`}>ab</span>
+                      <span className={`pricing-numeral text-4xl ${pkg.highlight ? 'text-white' : 'text-[var(--ink)]'}`}>
+                        {pkg.price}
+                      </span>
+                      <span className={`font-display italic text-xl ${pkg.highlight ? 'text-cyan-300' : 'text-[var(--cyan-deep)]'}`}>
+                        €
+                      </span>
+                    </div>
+                    <Link
+                      href="/buchen"
+                      className={`inline-flex w-full items-center justify-center gap-2 px-4 py-3 rounded-full text-[13px] font-semibold transition-all duration-300 ${
+                        pkg.highlight
+                          ? 'bg-cyan-500 hover:bg-cyan-400 text-white'
+                          : 'bg-[var(--ink)] hover:bg-black text-white'
+                      }`}
+                    >
+                      <span>{pkg.name} anfragen</span>
+                      <span>→</span>
+                    </Link>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
+        <div className="max-w-3xl mx-auto">
+          <FadeInSection>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§IV</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Fragen
+              </span>
+            </div>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em] mb-12">
+              Ehrlich{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                beantwortet.
+              </span>
+            </h2>
+          </FadeInSection>
+          <div className="space-y-3">
+            {faqs.map((faq, i) => (
+              <FadeInSection key={i} delay={i * 0.05}>
+                <div className="bg-white rounded-2xl border border-stone-200/70 p-6 md:p-7">
+                  <h3 className="text-[15px] md:text-base font-semibold text-[var(--ink)] mb-3 flex items-baseline gap-3">
+                    <span className="font-display italic text-cyan-700 text-sm leading-none">0{i + 1}</span>
+                    <span>{faq.q}</span>
+                  </h3>
+                  <p className="text-stone-700 leading-relaxed text-[0.95rem] pl-6">
+                    {faq.a}
+                  </p>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <FadeInSection>
+            <div className="hairline-rule w-24 mx-auto mb-8" />
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+              Bereit für einen{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Auftritt, der bleibt?
+              </span>
+            </h2>
+            <p className="mt-6 text-stone-600 text-lg leading-relaxed">
+              Vorgespräch, 15 Minuten. Wir hören zu, bevor wir antworten.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
+              <Link
+                href="/buchen"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)]"
+              >
+                <span>Vorgespräch buchen</span>
+                <span className="text-cyan-400">→</span>
+              </Link>
+              <a
+                href="tel:+4915168488999"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
+              >
+                <span>+49 151 684 88999</span>
+              </a>
+            </div>
+            <div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-stone-500">
+              <Link href="/seo-saarland" className="hover:text-cyan-700 transition-colors">SEO</Link>
+              <span className="text-stone-300">·</span>
+              <Link href="/google-ads-saarland" className="hover:text-cyan-700 transition-colors">Google Ads</Link>
+              <span className="text-stone-300">·</span>
+              <Link href="/software-saarland" className="hover:text-cyan-700 transition-colors">Software</Link>
+              <span className="text-stone-300">·</span>
+              <Link href="/app-entwickeln-lassen" className="hover:text-cyan-700 transition-colors">App-Entwicklung</Link>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
 }

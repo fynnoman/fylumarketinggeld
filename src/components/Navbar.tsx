@@ -19,10 +19,10 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const navLinks = [
-    { label: 'Services', href: '#services' },
-    { label: 'Über mich', href: '#about' },
-    { label: 'Team', href: '/team' },
-    { label: 'Methodik', href: '/methodik' },
+    { label: 'Pakete', href: '/#pakete' },
+    { label: 'Klienten', href: '/#about' },
+    { label: 'Prozess', href: '/methodik' },
+    { label: 'Studio', href: '/team' },
   ];
 
   return (
@@ -100,7 +100,7 @@ export default function Navbar() {
                 href="/buchen"
                 className="hidden md:inline-flex group items-center gap-1.5 bg-[var(--ink)] hover:bg-black text-white px-4 py-2 rounded-full text-[13px] font-semibold shadow-[0_4px_14px_-4px_rgba(12,14,16,0.4)] hover:shadow-[0_8px_22px_-6px_rgba(12,14,16,0.5)] hover:-translate-y-[1px] transition-all duration-300"
               >
-                <span>Anfrage senden</span>
+                <span>Platz 2026 prüfen</span>
                 <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">
                   →
                 </span>
@@ -165,7 +165,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="w-full inline-flex items-center justify-center gap-2 bg-[var(--ink)] text-white py-3.5 rounded-xl font-semibold text-[15px] shadow-lg min-h-[52px]"
                 >
-                  <span>Anfrage senden</span>
+                  <span>Platz 2026 prüfen</span>
                   <span className="text-cyan-400">→</span>
                 </Link>
               </div>

@@ -5,14 +5,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Team & Studio | Die Menschen hinter Fylu | Webdesign Saarland',
+  title: 'Studio · Die Menschen hinter Fylu · Editorial Webdesign Saarland',
   description:
-    'Das Studio hinter Fylu — vier Spezialisten, die Strategie, Design, Code und Sichtbarkeit unter ein Dach bringen. Kein Outsourcing, kein Account-Manager-Pingpong, sondern ein eingespieltes Team aus dem Saarland.',
+    'Das Fylu Studio — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift. Ein eingespieltes Studio aus Saarlouis, direkt geführt, ohne Account-Manager-Kette.',
   alternates: { canonical: '/team' },
   openGraph: {
-    title: 'Team & Studio | Fylu Webdesign Saarland',
+    title: 'Studio · Fylu Editorial Webdesign',
     description:
-      'Lernen Sie das Fylu-Studio kennen — Strategie, Design, Code und SEO aus einer Hand.',
+      'Lernen Sie das Fylu-Studio kennen — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
     url: 'https://www.fylumarketing.de/team',
     type: 'website',
     locale: 'de_DE',
@@ -33,9 +33,9 @@ type Member = {
 const team: Member[] = [
   {
     name: 'Fynn Schulz',
-    role: 'Inhaber & Kreativleitung',
-    short: 'Creative Direction · Kundenführung',
-    bio: 'Gründer von Fylu. Verantwortet die kreative Richtung jedes Projekts und die direkte Zusammenarbeit mit unseren Kunden — vom ersten Strategiegespräch bis zum Live-Gang. Über fünf Jahre Erfahrung in Webdesign, Brand-Aufbau und lokalem Marketing im Saarland.',
+    role: 'Studio-Lead & Kreativleitung',
+    short: 'Creative Direction · Klientenführung',
+    bio: 'Gründer und Studio-Lead von Fylu. Verantwortet die kreative Richtung jedes Projekts und die direkte Zusammenarbeit mit unseren Klienten — vom Vorgespräch bis zum Live-Gang. Über fünf Jahre Handwerk in editorialem Webdesign, Marken-Aufbau und lokalem Marketing im Saarland.',
     image: '/64bb3620-f0df-4887-a72b-6f4e69750fd8.webp',
     imagePosition: 'object-[50%_25%]',
     initials: 'FS',

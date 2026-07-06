@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Software Saarland ▷ Softwareentwicklung & IT-Dienstleister | Fylu",
+  title: "Software Saarland · Fylu Studio · Custom Software & Web-Apps | Editorial",
   description:
-    "Softwareentwicklung Saarland: Web-Apps, Custom-Software, ERP- & CRM-Lösungen, API-Integration und Automatisierung. Persönlich aus Saarlouis — für das Saarland und deutschlandweit.",
+    "Software als Erweiterung des Fylu-Studios: Web-Apps, ERP, CRM, API-Integration und Automatisierung. Editorial gearbeitet aus Saarlouis. Rahmen nach Vorgespräch.",
   alternates: {
     canonical: "/software-saarland",
   },
   openGraph: {
-    title: "Software Saarland | Softwareentwicklung & IT-Dienstleister | Fylu",
+    title: "Software Saarland · Fylu Studio | Editorial",
     description:
-      "Software aus dem Saarland: Web-Apps, ERP, CRM, API-Integration. Persönlich, modern, messbar. Aus Saarlouis für das gesamte Saarland.",
+      "Custom Software und Web-Apps aus Saarlouis. Als Erweiterung des Fylu-Studios oder als eigenständiges Vorhaben.",
     url: "https://www.fylumarketing.de/software-saarland",
-    siteName: "Fylu Webdesign & Software",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
         url: "/hero-background.webp",
         width: 1200,
         height: 630,
-        alt: "Software Saarland – Fylu aus Saarlouis",
+        alt: "Software Saarland – Fylu Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Saarland | Softwareentwicklung aus Saarlouis | Fylu",
-    description: "Web-Apps, ERP, CRM, API-Integration aus dem Saarland. Persönlich & modern.",
+    title: "Software Saarland · Fylu Studio",
+    description: "Custom Software als Erweiterung des Fylu-Studios.",
     images: ["/hero-background.webp"],
   },
 };

@@ -49,21 +49,22 @@ export default function ValueSection() {
         >
           <div className="mb-5 flex items-baseline gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §4
+              §IV
             </span>
-            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+            <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Was uns trennt
             </span>
           </div>
-          <h2 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-            Kein Standard-Studio.{' '}
+          <h2 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
+            Kein Studio unter vielen.{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              Ein Sparringspartner.
+              Ein Haus mit Handschrift.
             </span>
           </h2>
-          <p className="mt-6 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Wir arbeiten nicht für Sie — wir arbeiten mit Ihnen. Wenige Kunden,
-            tiefe Verantwortung, messbare Resultate. Kein Account-Manager-Theater.
+          <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
+            Wir arbeiten mit einer bewusst kleinen Zahl an Klienten — tiefe
+            Verantwortung pro Projekt, direkte Führung, keine Ticket-Systeme, kein
+            Account-Management-Theater.
           </p>
         </motion.div>
 
@@ -99,8 +100,8 @@ export default function ValueSection() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
                   </span>
-                  <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-stone-300">
-                    Hands-on Studio
+                  <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-stone-300">
+                    Ein Haus. Eine Handschrift.
                   </span>
                 </div>
                 <h3 className="text-3xl md:text-4xl lg:text-[2.7rem] font-semibold leading-[1.08] tracking-[-0.025em] max-w-lg">
@@ -110,9 +111,9 @@ export default function ValueSection() {
                   </span>
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-md">
-                  Maximal drei Projekte pro Monat. Persönlicher Lead-Designer
-                  über die gesamte Strecke. Direkter Draht zur Geschäftsleitung —
-                  ohne Umweg über Project Management.
+                  Zwölf Klienten pro Jahr. Persönliche Führung durch den
+                  Studio-Lead über die gesamte Strecke. Direkter Draht — ohne
+                  Umweg über Account-Manager oder Ticket-Warteschlangen.
                 </p>
               </div>
 
@@ -120,26 +121,26 @@ export default function ValueSection() {
               <div className="mt-8 grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                 <div>
                   <div className="font-display text-[2.4rem] leading-none italic font-normal text-white">
-                    3
+                    12
                   </div>
-                  <div className="text-[10px] uppercase tracking-wider text-stone-400 mt-1">
-                    Projekte / Monat
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-stone-400 mt-1.5">
+                    Klienten · Jahr
                   </div>
                 </div>
                 <div>
                   <div className="font-display text-[2.4rem] leading-none italic font-normal text-cyan-300">
                     100<span className="text-stone-400 text-2xl">%</span>
                   </div>
-                  <div className="text-[10px] uppercase tracking-wider text-stone-400 mt-1">
-                    Direkter Kontakt
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-stone-400 mt-1.5">
+                    Direkter Draht
                   </div>
                 </div>
                 <div>
                   <div className="font-display text-[2.4rem] leading-none italic font-normal text-white">
                     0
                   </div>
-                  <div className="text-[10px] uppercase tracking-wider text-stone-400 mt-1">
-                    Account Manager
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-stone-400 mt-1.5">
+                    Account-Manager
                   </div>
                 </div>
               </div>
@@ -161,10 +162,10 @@ export default function ValueSection() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-[var(--ink)] tracking-tight">
-                Transparente Konditionen
+                Kuratierte Konditionen
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Jedes Projekt wird vorab persönlich kalkuliert — klar, schriftlich, ohne Agentur-Aufschläge.
+                Jedes Projekt wird persönlich kalkuliert. Der Ausgangspreis steht — der Umfang folgt der Substanz, nicht dem Formular.
               </p>
             </div>
           </motion.div>
@@ -184,11 +185,11 @@ export default function ValueSection() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-[var(--ink)] tracking-tight">
-                Persönlicher Lead
+                Direkter Draht
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Sie sprechen direkt mit Fynn — Strategie, Design, Umsetzung. Keine
-                Telefonkette, keine Übersetzungsverluste.
+                Sie sprechen mit dem Studio-Lead — Strategie, Design und Umsetzung
+                in einer Handschrift. Keine Telefonkette, keine Übersetzungsverluste.
               </p>
             </div>
           </motion.div>
@@ -208,14 +209,15 @@ export default function ValueSection() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold text-[var(--ink)] tracking-tight leading-tight">
-                  Ergebnisse, die man{' '}
+                  Wirkung, die man{' '}
                   <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                     messen kann.
                   </span>
                 </h3>
                 <p className="text-sm text-stone-600 leading-relaxed mt-3 max-w-md">
-                  Jede Website ist auf konkrete KPIs aufgebaut — Anfragen, Anrufe,
-                  Conversion-Rate. Mit 90-Tage-Monitoring nach Live-Gang.
+                  Jede Website wird auf konkrete Kennzahlen ausgerichtet — Anfragen,
+                  Anrufe, sortierte Kaufentscheidungen. Mit neunzig Tagen Iteration
+                  nach Live-Gang.
                 </p>
               </div>
               {/* Mini chart */}

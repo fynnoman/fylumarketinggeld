@@ -10,47 +10,47 @@ const steps = [
   {
     number: '01',
     duration: 'Tag 1 – 3',
-    title: 'Analyse',
-    subtitle: 'Saarland-Marktscan & Sichtbarkeits-Audit',
+    title: 'Vorgespräch',
+    subtitle: 'Verstehen, wofür Sie stehen',
     body:
-      'Wir prüfen Ihre Top-Wettbewerber im Saarland, Ihre aktuelle Sichtbarkeit bei Google, Bing und Maps sowie die digitale Reife Ihrer Branche. Sie erhalten einen schonungslosen Befund — keine Schönfärberei.',
-    deliverable: 'Wettbewerbsanalyse · Sichtbarkeits-Report · Briefing',
+      'Wir hören zu, bevor wir zeichnen. Wir prüfen den Markt, die aktuelle Präsenz und die Substanz Ihres Hauses — und teilen einen ehrlichen Befund, ohne Schönfärberei.',
+    deliverable: 'Marktbild · Präsenz-Befund · Briefing',
   },
   {
     number: '02',
     duration: 'Tag 4 – 7',
-    title: 'Strategie',
-    subtitle: 'Positionierung & Conversion-Architektur',
+    title: 'Positionierung',
+    subtitle: 'Rahmen und Verkaufsarchitektur',
     body:
-      'Wir entwickeln Ihre maßgeschneiderte Positionierung gegenüber lokaler Konkurrenz, definieren die richtige Zielgruppe und entwerfen die Conversion-Pfade Ihrer neuen Website. Kein Template, kein Bauchgefühl.',
+      'Wir entwerfen die Positionierung Ihres Hauses im lokalen Markt, definieren die Zielgruppe und skizzieren die Führung der neuen Präsenz. Kein Template, keine Vorlage.',
     deliverable: 'Positionierung · Wireframes · Content-Map',
   },
   {
     number: '03',
     duration: 'Tag 8 – 21',
-    title: 'Realisation',
-    subtitle: 'Design & Development mit Verkaufsfokus',
+    title: 'Werkbank',
+    subtitle: 'Design und Umsetzung mit Handschrift',
     body:
-      'Wir bauen Ihre Website mit Premium-Design, technischer SEO-Foundation, optimaler Performance, Schema.org-Strukturen und sauberem Code. Jedes Element folgt einem klaren Zweck: Anfragen produzieren.',
+      'Wir bauen Ihre Website mit editorial gestaltetem Design, technischer SEO-Foundation, sauberem Code, strukturierten Daten und einer Rhythmisierung, die spürbar ist.',
     deliverable: 'Live-Website · Schema · Performance-Setup',
   },
   {
     number: '04',
     duration: 'Tag 22 – 28',
     title: 'Sichtbarkeit',
-    subtitle: 'Lokale Schärfung & Google Business',
+    subtitle: 'Lokale Schärfung und Google-Präsenz',
     body:
-      'Wir optimieren Ihre Sichtbarkeit für die Suchbegriffe, die Saarländer Kunden wirklich eingeben — über lokales SEO, Branchen-Snippets, strukturierte Daten und ein professionell aufgesetztes Google-Unternehmensprofil.',
-    deliverable: 'Lokales SEO · Google-Profil · Snippet-Setup',
+      'Wir schärfen Ihre Sichtbarkeit für die Begriffe, die Klienten im Saarland tatsächlich eingeben — über lokales SEO, strukturierte Daten und ein Google-Profil, das dem Auftritt entspricht.',
+    deliverable: 'Lokales SEO · Google-Profil · Snippets',
   },
   {
     number: '05',
     duration: 'Tag 29 – 90',
-    title: 'Skalierung',
-    subtitle: '90-Tage-Monitoring & Iteration',
+    title: 'Iteration',
+    subtitle: 'Neunzig Tage Studio-Begleitung',
     body:
-      'In den ersten 90 Tagen nach Live-Gang messen wir, was wirklich Anfragen bringt — und optimieren kostenlos weiter, bis die Zahlen stimmen. Sie zahlen nicht für Theorie, sondern für Ergebnisse.',
-    deliverable: 'Reporting · A/B-Tests · Optimierung',
+      'In den ersten neunzig Tagen nach Live-Gang messen wir die Wirkung und feilen weiter, bis die Zahlen dem Anspruch entsprechen. Zeit für Substanz, nicht für Theorie.',
+    deliverable: 'Reporting · A/B-Iteration · Feinschliff',
   },
 ];
 
@@ -103,23 +103,23 @@ export default function MethodikSection() {
         >
           <div className="mb-6 flex items-baseline justify-center gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §6
+              §VI
             </span>
-            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-              Das Fylu Sichtbarkeits-System
+            <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+              Der Fylu-Prozess
             </span>
           </div>
           <h2
             id="methodik-heading"
-            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
+            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Fünf Schritte vom{' '}
+            Fünf Kapitel — von der{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              Mittelmaß zur Marktführerschaft.
+              Vorstellung bis zur Wirkung.
             </span>
           </h2>
-          <p className="mt-6 text-lg text-stone-600 leading-relaxed">
-            Beweisbar, messbar, ohne Bauchgefühl — in 90 Tagen.
+          <p className="mt-7 text-lg text-stone-600 leading-relaxed">
+            Beweisbare Wirkung. Sichtbare Meilensteine. In etwa neunzig Tagen.
           </p>
         </motion.div>
 
@@ -226,8 +226,8 @@ export default function MethodikSection() {
                   </svg>
                 </span>
               </div>
-              <div className="md:inline-block md:mt-12 px-5 py-3 rounded-2xl bg-[var(--ink)] text-white text-sm font-semibold">
-                Live · Messbar · Skalierend
+              <div className="md:inline-block md:mt-12 px-5 py-3 rounded-2xl bg-[var(--ink)] text-white text-sm font-semibold tracking-[0.02em]">
+                Live · Sichtbar · Bleibend
               </div>
             </motion.div>
           </div>
@@ -246,7 +246,7 @@ export default function MethodikSection() {
             className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
           >
             <span className="relative">
-              Vollständige Methodik ansehen
+              Zum ganzen Prozess
               <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
             </span>
             <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none">

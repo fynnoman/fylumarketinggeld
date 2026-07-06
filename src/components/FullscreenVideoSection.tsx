@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import FreeDesignSection from './FreeDesignSection';
 import LazyVideo from './LazyVideo';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -10,8 +9,6 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export default function FullscreenVideoSection() {
   return (
     <>
-      <FreeDesignSection />
-
       <section className="w-full min-h-[80vh] relative flex items-center justify-center bg-white overflow-hidden isolate">
         <LazyVideo
           src="/section-decoration.mp4"
@@ -37,9 +34,9 @@ export default function FullscreenVideoSection() {
             className="mb-8 flex items-baseline justify-center gap-3"
           >
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §
+              §X
             </span>
-            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+            <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Manifest
             </span>
           </motion.div>
@@ -49,16 +46,16 @@ export default function FullscreenVideoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.9, delay: 0.1, ease }}
-            className="text-3xl md:text-5xl lg:text-[3.6rem] leading-[1.05] font-semibold text-[var(--ink)] tracking-[-0.035em]"
+            className="text-3xl md:text-5xl lg:text-[3.7rem] leading-[1.05] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
             Design mit{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
               Absicht.
             </span>
             <br />
-            Ergebnisse mit{' '}
+            Auftritte mit{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              Wirkung.
+              Bleibedauer.
             </span>
           </motion.h2>
         </div>

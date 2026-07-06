@@ -73,8 +73,8 @@ export default function AboutMeSection() {
                   <span className="font-display italic text-[1.3rem] text-[var(--ink)] leading-none">
                     Fynn Schulz
                   </span>
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-stone-400">
-                    2026 · SAA
+                  <span className="text-[10px] uppercase tracking-[0.24em] text-stone-400">
+                    Studio-Lead · SLS
                   </span>
                 </div>
               </motion.div>
@@ -90,8 +90,8 @@ export default function AboutMeSection() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-500" />
                 </span>
-                <span className="text-[11px] font-medium text-stone-700">
-                  Inhaber &amp; Strategie
+                <span className="text-[11px] font-medium text-stone-700 tracking-[0.06em]">
+                  Studio-Lead
                 </span>
               </motion.div>
 
@@ -120,9 +120,9 @@ export default function AboutMeSection() {
                 className="absolute -left-2 sm:-left-20 top-[28%] hidden md:block max-w-[140px]"
               >
                 <p className="font-hand text-xl text-[var(--amber)] leading-tight">
-                  das bin ich.
+                  der Studio-Lead.
                   <br />
-                  echt &amp; greifbar.
+                  persönlich, direkt.
                 </p>
                 <HandArrow
                   className="w-20 h-10 text-[var(--amber)] mt-1 ml-6 -rotate-12"
@@ -143,18 +143,18 @@ export default function AboutMeSection() {
           >
             <div className="mb-6 flex items-baseline gap-3">
               <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-                §5
+                §V
               </span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-                Der Mensch dahinter
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Studio-Lead
               </span>
             </div>
 
-            <h2 className="text-[2.6rem] leading-[1.04] sm:text-5xl md:text-[3.6rem] lg:text-[4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-              Hallo, ich bin{' '}
+            <h2 className="text-[2.6rem] leading-[1.04] sm:text-5xl md:text-[3.6rem] lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
+              Geführt aus{' '}
               <span className="relative inline-block">
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                  Fynn.
+                  Saarlouis.
                 </span>
                 <HandUnderline
                   className="absolute -bottom-1 left-0 w-full h-2.5 text-[var(--amber)]"
@@ -166,33 +166,32 @@ export default function AboutMeSection() {
 
             {/* Lead paragraph — editorial pull-style */}
             <p className="mt-7 text-xl md:text-[1.35rem] leading-[1.55] text-stone-800 max-w-2xl font-light">
-              Ich baue Websites, die nicht{' '}
+              Wir bauen Auftritte, die nicht{' '}
               <span className="line-through decoration-stone-300 decoration-1 text-stone-400">
-                schön aussehen
+                schöner aussehen
               </span>{' '}
-              — sondern Anfragen produzieren. Mit der Substanz einer Boutique-
-              Beratung und dem Tempo eines Startups.
+              — sondern spürbar sind. Mit der Substanz eines Ateliers, geführt aus
+              einem kleinen Studio in Saarlouis.
             </p>
 
             {/* Body */}
             <div className="mt-6 space-y-4 text-base md:text-[1.05rem] text-stone-600 leading-relaxed max-w-2xl">
               <p>
-                Fylu ist als{' '}
+                Fylu ist ein{' '}
                 <span className="font-medium text-stone-800">
-                  unabhängiges Studio aus dem Saarland
+                  unabhängiges Studio aus Saarlouis
                 </span>{' '}
-                gestartet — heute betreuen wir Kunden vom regionalen
-                Handwerksbetrieb bis zum US-Tech-Startup. Verbindendes Element:
-                der Anspruch, Marketing ehrlich, messbar und mit Substanz zu
-                betreiben.
+                — wir begleiten Häuser vom saarländischen Mittelstand bis zum
+                internationalen SaaS-Haus. Was verbindet: der Anspruch, digitale
+                Auftritte mit Substanz zu bauen, nicht mit Lautstärke.
               </p>
             </div>
 
             {/* Stats row */}
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-xl">
               {[
-                { value: '50+', label: 'Projekte ausgeliefert' },
-                { value: '4.9', label: 'Durchschnittsbewertung' },
+                { value: '50+', label: 'Klienten begleitet' },
+                { value: '4,9', label: 'Durchschnitt · fünf' },
                 { value: '2', label: 'Kontinente betreut' },
               ].map((stat, i) => (
                 <motion.div
@@ -220,7 +219,7 @@ export default function AboutMeSection() {
                 className="group inline-flex items-center gap-2 text-[11px] font-semibold text-stone-500 hover:text-stone-900 uppercase tracking-[0.18em] transition-colors"
               >
                 <span className="w-6 h-px bg-stone-300 group-hover:bg-stone-700 transition-colors" />
-                {expanded ? 'Weniger anzeigen' : 'Die längere Geschichte lesen'}
+                {expanded ? 'Weniger anzeigen' : 'Die längere Geschichte'}
                 <svg
                   className={`w-3 h-3 transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}
                   viewBox="0 0 12 12"
@@ -241,30 +240,22 @@ export default function AboutMeSection() {
                   >
                     <div className="text-sm md:text-base text-stone-500 leading-relaxed space-y-4 mt-6 pr-2 max-w-2xl border-l border-stone-200 pl-5">
                       <p>
-                        Die längere Geschichte: Angefangen habe ich vor über fünf Jahren — zunächst
-                        rein aus Neugier, neben Schule und Studium, als reines Hobby. Websites
-                        bauen, Code lernen, Performance optimieren, Marketing verstehen. Über die
-                        Jahre haben sich daraus erste Kundenprojekte ergeben, dann größere
-                        Aufträge, dann der Punkt, an dem es kein Hobby mehr war.
+                        Fylu ist aus Handwerk entstanden. Websites bauen, Code
+                        beherrschen, Performance verstehen, Marketing lesen können —
+                        über mehrere Jahre wurde aus konsequenter Praxis erst ein
+                        festes Portfolio, dann 2025 ein Studio unter eigenem Namen.
                       </p>
                       <p>
-                        Anfang 2025 habe ich entschieden, daraus etwas Festes zu machen, und Fylu
-                        als Marketing- und Webdesign-Studio aus dem Saarland offiziell gegründet.
-                        Seitdem arbeite ich mit Unternehmen aus Handwerk, Gastronomie, Software
-                        und Gebäudereinigung daran, ihre digitale Außenwirkung auf das Niveau zu
-                        bringen, das sie eigentlich verdient hätten.
+                        Der Ansatz ist bewusst nicht klassisch-agenturhaft: keine
+                        Account-Manager-Schleifen, keine Templates, keine
+                        Jahresverträge, die niemand liest. Stattdessen: direkte
+                        Führung, klare Kapitel, ein kuratierter Kalender.
                       </p>
                       <p>
-                        Mein Ansatz ist bewusst nicht klassisch-agenturmäßig: keine endlosen
-                        Account-Manager-Schleifen, keine Standard-Templates, keine
-                        12-Monats-Knebelverträge. Stattdessen direkte Kommunikation, klare
-                        Deliverables und ein Anspruch, der näher an einer Boutique-Beratung als
-                        an einer typischen Saarland-Agentur liegt.
-                      </p>
-                      <p>
-                        Heute betreuen wir Kunden vom Saarländer Mittelständler bis zum
-                        US-amerikanischen SaaS-Startup — und auf genau diesem Spagat zwischen
-                        handwerklicher Substanz und Skalierbarkeit baut Fylu auf.
+                        Heute begleiten wir Klienten vom saarländischen
+                        Mittelständler bis zum US-amerikanischen SaaS-Haus. Auf
+                        diesem Spagat zwischen handwerklicher Substanz und
+                        internationaler Skalierbarkeit baut Fylu auf.
                       </p>
                     </div>
                   </motion.div>

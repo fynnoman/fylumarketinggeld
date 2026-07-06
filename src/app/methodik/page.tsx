@@ -4,15 +4,14 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title:
-    'Das Fylu Sichtbarkeits-System | Methodik für Webdesign & SEO im Saarland',
+  title: 'Der Fylu-Prozess · Fünf Kapitel · Editorial Webdesign Saarland',
   description:
-    'Unser bewährtes 5-Schritte-System für Saarländer Unternehmen: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. So holen wir Sie in 90 Tagen aus dem digitalen Mittelmaß — beweisbar, messbar, ohne Bauchgefühl.',
+    'Fünf Kapitel von der Vorstellung bis zur Wirkung: Vorgespräch, Positionierung, Werkbank, Sichtbarkeit, Iteration. Der Fylu-Prozess für editoriale Websites — geführt aus Saarlouis.',
   alternates: { canonical: '/methodik' },
   openGraph: {
-    title: 'Das Fylu Sichtbarkeits-System | Methodik',
+    title: 'Der Fylu-Prozess · Fünf Kapitel',
     description:
-      'Bewährtes 5-Schritte-System für Webdesign, SEO & Google Ads im Saarland. Analyse → Strategie → Realisation → Sichtbarkeit → Skalierung.',
+      'Fünf Kapitel — Vorgespräch, Positionierung, Werkbank, Sichtbarkeit, Iteration. Editorial Webdesign aus Saarlouis.',
     url: 'https://www.fylumarketing.de/methodik',
     type: 'article',
     locale: 'de_DE',

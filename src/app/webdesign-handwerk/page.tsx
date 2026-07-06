@@ -7,12 +7,12 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 const faqs = [
 	{
-		q: 'Ich habe keine Zeit mich um eine Website zu kümmern — wie läuft das ab?',
-		a: 'Das ist genau der Punkt: Sie müssen sich um nichts kümmern. Investieren Sie 15 Minuten in ein kurzes Gespräch, sagen Sie uns was Sie machen und was Sie sich wünschen. Den Rest erledigen wir. Sie erhalten einen kostenlosen Entwurf innerhalb von 24 Stunden und Ihre fertige Website in 2 bis 3 Wochen.',
+		q: 'Was kostet eine Fylu-Website für Handwerker?',
+		a: 'Signature ab 3.490 €, Atelier ab 6.490 €, Maison ab 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Für einen schlanken Refresh Ihrer bestehenden Website: ab 890 €.',
 	},
 	{
-		q: 'Was kostet eine Handwerker-Website?',
-		a: 'Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.',
+		q: 'Ich habe keine Zeit, mich zu kümmern — wie läuft das ab?',
+		a: 'Fünfzehn Minuten Vorgespräch. Sie erzählen uns kurz, was Sie machen und was Sie sich wünschen. Den Rest übernimmt das Studio. Kein Papierkram, keine Ticket-Systeme — direkter Draht.',
 	},
 	{
 		q: 'Brauche ich eine Website wenn ich schon auf MyHammer oder Google bin?',
@@ -109,22 +109,42 @@ export default function WebdesignHandwerkPage() {
 				<div className="absolute top-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40" />
 				<div className="max-w-4xl mx-auto relative z-10">
 					<FadeInSection>
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
-							Webdesign für Handwerksbetriebe — Ihre Website als Auftragsbringer
-						</h1>
+						<div className="editorial-eyebrow mb-6">
+							<span>Für das Handwerk</span>
+						</div>
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
-						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Sie sind Handwerker und haben keine Zeit, sich um eine Website zu kümmern? Verstehen wir. Genau deshalb nehmen wir Ihnen alles ab. In nur 15 Minuten Gespräch verstehen wir Ihren Betrieb — und liefern Ihnen eine fertige Website, die auf Google sichtbar ist, auf dem Smartphone perfekt funktioniert und aus Besuchern zahlende Kunden macht. Kein technisches Wissen nötig. Kein Aufwand für Sie. Nur Ergebnisse. Für Maler, Elektriker, SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und alle anderen Gewerke —.
+						<h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
+							Webdesign fürs Handwerk —{' '}
+							<span className="font-display italic font-normal text-[var(--cyan-deep)]">
+								mit einer Handschrift, die trägt.
+							</span>
+						</h1>
+					</FadeInSection>
+					<FadeInSection delay={0.16}>
+						<p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+							Ein Fylu-Auftritt für Ihren Meisterbetrieb. Editorial gestaltet,
+							mobile-first, technisch sauber. Für Maler, Elektriker,
+							SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und
+							alle Gewerke, die einen Auftritt mit Substanz suchen — ab 3.490 €.
 						</p>
 					</FadeInSection>
-					<FadeInSection delay={0.15}>
-						<Link
-							href="/buchen"
-							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
-						>
-							Anfrage senden
-						</Link>
+					<FadeInSection delay={0.24}>
+						<div className="mt-10 flex flex-col sm:flex-row gap-3">
+							<Link
+								href="/buchen"
+								className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
+							>
+								<span>Vorgespräch buchen</span>
+								<span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+							</Link>
+							<Link
+								href="/webdesign-saarland"
+								className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
+							>
+								<span>Pakete ansehen</span>
+							</Link>
+						</div>
 					</FadeInSection>
 				</div>
 			</section>
@@ -244,22 +264,29 @@ export default function WebdesignHandwerkPage() {
 			{/* CTA */}
 			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-						Bereit für eine Website die Aufträge bringt?
+					<div className="hairline-rule w-24 mx-auto mb-8" />
+					<h2 className="text-[2rem] md:text-[2.6rem] font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.05] mb-6">
+						Bereit für einen{' '}
+						<span className="font-display italic font-normal text-[var(--cyan-deep)]">
+							Auftritt, der Klienten holt?
+						</span>
 					</h2>
-					<p className="text-lg text-stone-600 mb-8">
-						15 Minuten Gespräch. 24 Stunden später haben Sie einen kostenlosen Entwurf. Kein Risiko, kein Aufwand.
+					<p className="text-lg text-stone-600 mb-8 leading-relaxed">
+						Fünfzehn Minuten Vorgespräch. Wir hören zu, bevor wir antworten.
 					</p>
 					<Link
 						href="/buchen"
-						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
+						className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)]"
 					>
-						Anfrage senden
+						<span>Vorgespräch buchen</span>
+						<span className="text-cyan-400">→</span>
 					</Link>
-					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
-						<Link href="/webdesign-saarland" className="hover:text-cyan-500 transition-colors">Webdesign Saarland</Link>
-						<Link href="/website-erstellen-lassen" className="hover:text-cyan-500 transition-colors">Website erstellen lassen</Link>
-						<Link href="/seo-saarland" className="hover:text-cyan-500 transition-colors">SEO Saarland</Link>
+					<div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-stone-500">
+						<Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Studio-Übersicht</Link>
+						<span className="text-stone-300">·</span>
+						<Link href="/seo-saarland" className="hover:text-cyan-700 transition-colors">SEO als Erweiterung</Link>
+						<span className="text-stone-300">·</span>
+						<Link href="/google-ads-saarland" className="hover:text-cyan-700 transition-colors">Google Ads</Link>
 					</div>
 				</div>
 			</section>

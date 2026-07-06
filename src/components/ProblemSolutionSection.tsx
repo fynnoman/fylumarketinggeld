@@ -11,15 +11,15 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const problems = [
   {
     short: 'Veraltet',
-    long: 'Ihre aktuelle Website sieht veraltet aus und schreckt potenzielle Kunden ab.',
+    long: 'Die alte Präsenz atmet den Ton von gestern und passt nicht mehr zu dem, was Ihr Haus heute ist.',
   },
   {
-    short: 'Mobile bricht',
-    long: 'Mobile Besucher springen sofort ab — keine Optimierung für Smartphones.',
+    short: 'Mobil zerbricht',
+    long: 'Mobile Besucher wenden sich ab, bevor die Seite überhaupt gelesen wurde — keine Führung, kein Rhythmus.',
   },
   {
-    short: 'Kein Sog',
-    long: 'Kein klarer Call-to-Action — Besucher wissen nicht, was sie tun sollen.',
+    short: 'Ohne Sog',
+    long: 'Keine klare Handlungsführung. Besucher wissen nicht, wohin die Seite sie führen möchte.',
   },
 ];
 
@@ -74,9 +74,9 @@ export default function ProblemSolutionSection() {
           className="mb-3"
         >
           <span className="font-display italic text-[var(--amber-soft)] text-2xl md:text-3xl">
-            §1
+            §I
           </span>
-          <span className="ml-3 text-[11px] uppercase tracking-[0.3em] text-stone-400 font-medium">
+          <span className="ml-3 text-[11px] uppercase tracking-[0.32em] text-stone-400 font-medium">
             Diagnose
           </span>
         </motion.div>
@@ -88,10 +88,10 @@ export default function ProblemSolutionSection() {
           transition={{ duration: 0.8, ease }}
           className="text-[3rem] leading-[0.95] sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[11rem] font-semibold text-white tracking-[-0.045em] -mx-1"
         >
-          Das Problem
+          Das Muster
           <br />
           <span className="font-display italic font-normal text-stone-500">
-            kenne&nbsp;ich.
+            kennen&nbsp;wir.
           </span>
         </motion.h2>
 
@@ -100,7 +100,7 @@ export default function ProblemSolutionSection() {
           <div className="lg:col-span-5">
             <div className="mb-10 flex items-baseline gap-3">
               <span className="font-display italic text-stone-500 text-xl">a.</span>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-stone-500 font-semibold">
+              <p className="text-[10px] uppercase tracking-[0.28em] text-stone-500 font-semibold">
                 Was Sie wahrscheinlich kennen
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function ProblemSolutionSection() {
               className="mt-12 ml-16 max-w-xs"
             >
               <p className="font-hand text-2xl text-[var(--amber-soft)] leading-tight">
-                und ehrlich — keiner mag&apos;s zugeben.
+                und ehrlich — kaum ein Haus mag es aussprechen.
               </p>
               <HandArrow
                 className="w-24 h-12 text-[var(--amber-soft)] mt-1 ml-8"
@@ -170,17 +170,17 @@ export default function ProblemSolutionSection() {
 
               <div className="relative">
                 <div className="flex items-baseline gap-3 mb-8">
-                  <span className="font-display italic text-[var(--amber)] text-2xl">§2</span>
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-stone-500 font-semibold">
+                  <span className="font-display italic text-[var(--amber)] text-2xl">§Ib</span>
+                  <span className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold">
                     Therapie
                   </span>
                 </div>
 
                 <h3 className="text-3xl md:text-4xl lg:text-[2.8rem] font-semibold text-[var(--ink)] leading-[1.05] tracking-[-0.03em]">
-                  Ihre Website muss{' '}
+                  Ihre Website soll{' '}
                   <span className="relative inline-block">
                     <span className="relative z-10 font-display italic font-normal text-[var(--amber)]">
-                      liefern
+                      bleiben
                     </span>
                     <HandUnderline
                       className="absolute -bottom-2 left-0 w-full h-3 text-[var(--amber)]"
@@ -188,23 +188,23 @@ export default function ProblemSolutionSection() {
                       inView={isInView}
                     />
                   </span>{' '}
-                  — nicht nur existieren.
+                  — nicht bloß existieren.
                 </h3>
 
                 <p className="mt-7 text-stone-700 text-base md:text-lg leading-relaxed max-w-xl">
-                  Ich verwandle Ihre Online-Präsenz in eine{' '}
+                  Wir verwandeln Ihren digitalen Auftritt in ein{' '}
                   <span className="font-semibold text-[var(--ink)]">
-                    professionelle Verkaufsmaschine
+                    Werkzeug, das für Sie steht
                   </span>
-                  {' '}— mit voller Hingabe, statt Massenproduktion.
+                  {' '}— in Klarheit, Substanz und Wirkung.
                 </p>
 
                 {/* Outcome tags */}
                 <div className="relative mt-10 grid sm:grid-cols-3 gap-3">
                   {[
-                    { k: 'Mehr', v: 'Anfragen' },
-                    { k: 'Höhere', v: 'Conversion' },
-                    { k: 'Bessere', v: 'Qualität' },
+                    { k: 'Sortierte', v: 'Anfragen' },
+                    { k: 'Klare', v: 'Führung' },
+                    { k: 'Bleibende', v: 'Präsenz' },
                   ].map((it, i) => (
                     <motion.div
                       key={it.v}
@@ -227,7 +227,7 @@ export default function ProblemSolutionSection() {
                   href="/buchen"
                   className="mt-10 inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[var(--ink)] hover:bg-black text-white text-[15px] font-semibold shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px] transition-all duration-300 group"
                 >
-                  <span>Jetzt Transformation starten</span>
+                  <span>Platz für 2026 prüfen</span>
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
                     <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -236,10 +236,10 @@ export default function ProblemSolutionSection() {
                 {/* Handwritten signature-like note */}
                 <div className="mt-10 pt-6 border-t border-stone-200/70 flex items-baseline gap-3">
                   <span className="font-hand text-xl text-[var(--amber)] leading-none">
-                    — versprochen.
+                    — gehalten.
                   </span>
-                  <span className="text-[10px] uppercase tracking-wider text-stone-400">
-                    F. S.
+                  <span className="text-[10px] uppercase tracking-[0.22em] text-stone-400">
+                    Fylu · Studio Saarlouis
                   </span>
                 </div>
               </div>

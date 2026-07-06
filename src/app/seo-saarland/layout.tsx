@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO Saarland ▷ Bei Google auf Platz 1 ✓ Local SEO & Google Business | Fylu",
+  title: "SEO Saarland · Fylu Studio · Erweiterung Ihrer Website | ab 890 €",
   description:
-    "SEO Saarland ★ Suchmaschinenoptimierung für Saarbrücken, Saarlouis, Neunkirchen, Dillingen & Co. OnPage, Local SEO, Google Business. Kostenlose Erstanalyse — Konditionen auf Anfrage.",
+    "SEO als Erweiterung Ihrer Fylu-Website. SEO Foundation ab 890 €, Google Business ab 290 €, SEO Betreuung ab 490 € / Monat — kuratiert aus einem Boutique-Studio in Saarlouis.",
   alternates: {
     canonical: "/seo-saarland",
   },
   openGraph: {
-    title: "SEO Saarland | Bei Google auf Seite 1 | Fylu Saarlouis",
+    title: "SEO Saarland · Editorial Studio | Fylu",
     description:
-      "SEO-Optimierung im Saarland: Mehr Google-Sichtbarkeit für lokale Unternehmen. OnPage, Local SEO & Google Business.",
+      "SEO Foundation ab 890 €. Als Erweiterung Ihrer Fylu-Website — geführt aus einem Boutique-Studio in Saarlouis.",
     url: "https://www.fylumarketing.de/seo-saarland",
-    siteName: "Fylu Webdesign",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
         url: "/hero-background.webp",
         width: 1200,
         height: 630,
-        alt: "SEO Saarland – Bei Google auf Platz 1 mit Fylu",
+        alt: "SEO Saarland – Fylu Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Saarland | Bei Google auf Seite 1 | Fylu Saarlouis",
-    description: "SEO-Optimierung im Saarland: Mehr Google-Sichtbarkeit für lokale Unternehmen.",
+    title: "SEO Saarland · Editorial Studio | Fylu",
+    description: "SEO als Erweiterung Ihrer Website — ab 890 €.",
     images: ["/hero-background.webp"],
   },
 };

@@ -140,32 +140,35 @@ export default function ProgrammiererSaarlandPage() {
 
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
-            <div className="mb-5 flex items-baseline gap-3">
-              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§</span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-                Programmierer · Saarland
-              </span>
+            <div className="editorial-eyebrow mb-6">
+              <span>Erweiterung · Entwicklung</span>
             </div>
-            <h1 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
+          </FadeInSection>
+          <FadeInSection delay={0.08}>
+            <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
               Programmierer aus dem Saarland —{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                transparente Konditionen statt Stundensatz.
+                mit einer Handschrift, die trägt.
               </span>
             </h1>
           </FadeInSection>
-          <FadeInSection delay={0.1}>
-            <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Webentwickler, Software-Entwickler, Full-Stack — für Unternehmen in Saarbrücken, Saarlouis, Merzig, Neunkirchen, Homburg und dem gesamten Saarland. Moderner Tech-Stack (TypeScript, React, Next.js, Node.js, Python), erfahrene Hand, planbare Konditionen. Brauchst du auch{' '}
+          <FadeInSection delay={0.16}>
+            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+              Full-Stack-Entwicklung für Unternehmen in Saarbrücken, Saarlouis, Merzig,
+              Neunkirchen, Homburg und im übrigen Saarland. Moderner Tech-Stack
+              (TypeScript, React, Next.js, Node.js, Python), erfahrene Hand,
+              kuratierte Rahmen. Brauchen Sie{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link> oder{' '}
-              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link>? Alles aus einer Hand.
+              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Editorial Webdesign</Link>? Alles aus einer Hand.
             </p>
           </FadeInSection>
-          <FadeInSection delay={0.2}>
+          <FadeInSection delay={0.24}>
             <Link
               href="/buchen"
-              className="mt-9 inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
+              className="mt-10 inline-flex items-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
             >
-              Projekt besprechen <span className="text-cyan-300">→</span>
+              <span>Vorhaben besprechen</span>
+              <span className="text-cyan-400">→</span>
             </Link>
           </FadeInSection>
         </div>

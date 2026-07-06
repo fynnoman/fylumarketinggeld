@@ -23,10 +23,10 @@ const cases: CaseStudy[] = [
     industry: 'Gebäudereinigung',
     location: 'Saarland',
     metric: '+6',
-    metricLabel: 'Neukunden in 30 Tagen',
+    metricLabel: 'Klienten im ersten Monat',
     story:
-      'Nach Launch der neuen Website, Google-Maps-Optimierung und gezielten Google Ads gewann Salif in nur einem Monat sechs Neukunden — ohne ein einziges Kaltakquise-Telefonat.',
-    services: ['Webdesign', 'Google Maps', 'Google Ads'],
+      'Innerhalb eines Monats nach Launch der neuen Website, Google-Maps-Präsenz und einer sortierten Kampagne gewann Salif sechs Klienten — ohne einen einzigen Kaltakquise-Anruf.',
+    services: ['Website', 'Google Maps', 'Google Ads'],
   },
   {
     client: 'Demir SpeedConnect',
@@ -35,22 +35,22 @@ const cases: CaseStudy[] = [
     location: 'Saarland',
     metric: '+25',
     metricUnit: '%',
-    metricLabel: 'mehr qualifizierte Anfragen',
+    metricLabel: 'sortiertere Anfragen',
     story:
-      'Seit dem Relaunch der Website mit Conversion-Architektur kommen bei Demir SpeedConnect 25 % mehr Anfragen rein — bei gleichbleibendem Marketing-Aufwand. Die Anfragen sind zudem qualitativ besser vorgefiltert.',
-    services: ['Webdesign', 'Conversion-Optimierung', 'SEO-Foundation'],
+      'Seit dem Relaunch mit einer klaren Verkaufsarchitektur erreichen Demir SpeedConnect fünfundzwanzig Prozent mehr Anfragen — bei gleichem Marketing-Aufwand. Die Qualität der Anfragen ist zusätzlich sichtbar sortierter.',
+    services: ['Website', 'Conversion-Architektur', 'SEO-Foundation'],
   },
   {
     client: 'Taskey',
     logo: '/logos/taskey.webp',
-    industry: 'SaaS-Startup',
+    industry: 'SaaS-Haus',
     location: 'Software für Gebäudereiniger',
     metric: '0',
     metricUnit: ' €',
-    metricLabel: 'Startkapital — voll skaliert',
+    metricLabel: 'Startkapital · voll skaliert',
     story:
-      'Als Software-Startup ohne klassisches Startkapital steht Taskey vor der härtesten Vertriebsherausforderung: Gebäudereiniger zur Nutzung einer neuen Software überzeugen. Seit Google-Ads-Setup und Premium-Website skaliert Taskey messbar professioneller — und tritt gegen etablierte Wettbewerber auf Augenhöhe auf.',
-    services: ['Webdesign', 'Google Ads', 'Brand-Architektur'],
+      'Ein Software-Haus ohne klassisches Startkapital, das eine der härtesten Vertriebsdisziplinen bespielt — Gebäudereiniger von einer neuen Software überzeugen. Seit Ads-Setup und Premium-Auftritt skaliert Taskey messbar auf Augenhöhe zu etablierten Wettbewerbern.',
+    services: ['Website', 'Google Ads', 'Marken-Architektur'],
   },
   {
     client: 'MG Gebäudeservice',
@@ -58,10 +58,10 @@ const cases: CaseStudy[] = [
     industry: 'Gebäudereinigung',
     location: 'Köln & Düsseldorf',
     metric: 'Top 3',
-    metricLabel: 'Anbieter Köln & Düsseldorf in 12 Monaten',
+    metricLabel: 'Anbieter Köln & Düsseldorf · 12 Monate',
     story:
-      'Vom regionalen Mitbewerber zur ersten Wahl: Mit Premium-Website, lokalem SEO und gezielten Google-Ads-Kampagnen hat sich MG Gebäudeservice in nur einem Jahr zu einem der größten Gebäudereiniger in ganz Köln und Düsseldorf entwickelt.',
-    services: ['Webdesign', 'Lokales SEO', 'Google Ads'],
+      'Vom regionalen Mitbewerber zur ersten Wahl: Mit Premium-Auftritt, lokalem SEO und einer geführten Kampagne hat MG Gebäudeservice in zwölf Monaten die Spitzengruppe im Kölner und Düsseldorfer Markt erreicht.',
+    services: ['Website', 'Lokales SEO', 'Google Ads'],
   },
 ];
 
@@ -120,25 +120,25 @@ export default function CaseStudyShowcase() {
         >
           <div className="mb-6 flex items-baseline justify-center gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §2
+              §II
             </span>
-            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-              Erfolgsgeschichten
+            <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+              Klienten · Kapitel
             </span>
           </div>
           <h2
             id="case-showcase-heading"
-            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
+            className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Marken, die{' '}
+            Häuser, die uns{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              messbar gewachsen
+              ihre Präsenz
             </span>{' '}
-            sind.
+            anvertraut haben.
           </h2>
-          <p className="mt-6 text-lg text-stone-600 leading-relaxed">
-            Vier reale Geschichten. Vier Branchen. Ein Muster: Sichtbarkeit wird zur
-            Anfragenmaschine.
+          <p className="mt-7 text-lg text-stone-600 leading-relaxed">
+            Vier Klienten. Vier Kontexte. Ein wiederkehrendes Muster — aus stiller
+            Präsenz wird eine Marke, die man von Weitem erkennt.
           </p>
         </motion.div>
 
@@ -171,12 +171,12 @@ export default function CaseStudyShowcase() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
                     <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" />
                   </span>
-                  <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest">
-                    Case Study {String(index + 1).padStart(2, '0')} / {String(cases.length).padStart(2, '0')}
+                  <span className="text-cyan-400 text-xs font-semibold uppercase tracking-[0.28em]">
+                    Kapitel {String(index + 1).padStart(2, '0')} · {String(cases.length).padStart(2, '0')}
                   </span>
                 </div>
-                <div className="text-stone-500 text-xs font-mono hidden md:block">
-                  fylu / clients
+                <div className="text-stone-500 text-[11px] font-mono uppercase tracking-[0.22em] hidden md:block">
+                  fylu · klienten
                 </div>
               </div>
 
@@ -206,8 +206,8 @@ export default function CaseStudyShowcase() {
                       </div>
 
                       <div className="mb-5">
-                        <p className="text-xs font-bold uppercase tracking-widest text-cyan-600 mb-1">
-                          Kunde
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-cyan-700 mb-1.5">
+                          Klient
                         </p>
                         <h3 className="text-2xl md:text-3xl font-extrabold text-stone-900 leading-tight">
                           {current.client}
@@ -218,8 +218,8 @@ export default function CaseStudyShowcase() {
                       </div>
 
                       <div className="mt-auto pt-4 border-t border-stone-100 w-full">
-                        <p className="text-xs font-bold uppercase tracking-widest text-stone-400 mb-3">
-                          Eingesetzte Leistungen
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-stone-400 mb-3">
+                          Ausgeführte Arbeit
                         </p>
                         <div className="relative">
                           {/* Sizer: stack every case's chip row to hold the
@@ -269,8 +269,8 @@ export default function CaseStudyShowcase() {
                     className="lg:col-span-7 flex flex-col justify-center text-white"
                   >
                     <div className="mb-4">
-                      <p className="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">
-                        Ergebnis
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-cyan-400 mb-3">
+                        Wirkung
                       </p>
                       <div className="flex items-baseline gap-2">
                         <motion.div
@@ -415,10 +415,9 @@ export default function CaseStudyShowcase() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-center text-stone-500 text-sm mt-6"
+            className="text-center text-stone-500 text-sm mt-6 tracking-[0.02em]"
           >
-            Plus über <span className="font-semibold text-stone-700">40 weitere Projekte</span> für
-            Saarländer und deutsche Unternehmer.
+            Weitere <span className="font-display italic text-stone-700">Häuser seit 2024</span> auf Anfrage.
           </motion.p>
         </motion.div>
       </div>

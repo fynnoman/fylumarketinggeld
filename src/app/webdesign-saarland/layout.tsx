@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Webdesign Saarland ▷ Websites ✓ kostenloser Entwurf in 24h | Fylu",
+  title: "Webdesign Saarland · Editorial Studio · Signature / Atelier / Maison | Fylu",
   description:
-    "Webdesign Saarland ★ Professionelle Websites für Saarbrücken, Saarlouis, Neunkirchen, Dillingen & Co. Transparente Konditionen, persönlich, SEO-optimiert, kostenloser Entwurf in 24 Stunden. Jetzt anfragen.",
+    "Editorial Webdesign aus Saarlouis. Zwölf Klienten pro Jahr, Websites ab 3.490 €. Signature, Atelier und Maison — für Häuser im Saarland und international, die einen Auftritt mit Substanz wollen.",
   alternates: {
     canonical: "/webdesign-saarland",
   },
   openGraph: {
-    title: "Webdesign Saarland | Professionelle Websites | Fylu",
+    title: "Webdesign Saarland · Editorial Studio | Fylu",
     description:
-      "Webdesign aus dem Saarland: Moderne Websites für lokale Unternehmen. Persönlich, fair & SEO-optimiert. Kostenloser Entwurf in 24h.",
+      "Ein Boutique-Studio aus Saarlouis. Editorial gestaltete Websites ab 3.490 € — Signature, Atelier, Maison. Zwölf Klienten pro Jahr.",
     url: "https://www.fylumarketing.de/webdesign-saarland",
-    siteName: "Fylu Webdesign",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,14 +20,15 @@ export const metadata: Metadata = {
         url: "/hero-background.webp",
         width: 1200,
         height: 630,
-        alt: "Webdesign Saarland – Fylu Marketing aus Saarlouis",
+        alt: "Fylu Studio – Editorial Webdesign aus Saarlouis",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign Saarland | Professionelle Websites | Fylu",
-    description: "Webdesign aus dem Saarland: Moderne Websites. Kostenloser Entwurf in 24h.",
+    title: "Webdesign Saarland · Editorial Studio | Fylu",
+    description:
+      "Editorial gestaltete Websites aus Saarlouis. Ab 3.490 €. Zwölf Klienten pro Jahr.",
     images: ["/hero-background.webp"],
   },
 };

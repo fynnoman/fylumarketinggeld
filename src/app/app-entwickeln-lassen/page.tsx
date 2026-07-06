@@ -157,31 +157,34 @@ export default function AppEntwickelnLassenPage() {
 
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
-            <div className="mb-5 flex items-baseline gap-3">
-              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§</span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-                App-Entwicklung · Saarland
-              </span>
+            <div className="editorial-eyebrow mb-6">
+              <span>Erweiterung · App-Entwicklung</span>
             </div>
-            <h1 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
+          </FadeInSection>
+          <FadeInSection delay={0.08}>
+            <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
               App entwickeln lassen —{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Transparente Konditionen — persönlich besprechen.
+                als Erweiterung des Studios.
               </span>
             </h1>
           </FadeInSection>
-          <FadeInSection delay={0.1}>
-            <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Web-Apps, PWAs, iOS und Android — entwickelt im Saarland. Wir bauen Apps mit modernem Stack (React Native, Next.js, TypeScript, Cloud-Native), liefern App-Store-fertig und übernehmen auf Wunsch Wartung. Transparente Konditionen pro Projekt, kein Stundenrechnungs-Chaos. Mehr Tiefe zu unserer{' '}
+          <FadeInSection delay={0.16}>
+            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+              Web-Apps, PWAs, iOS und Android — entwickelt aus Saarlouis. Mit
+              einem Stack, der auch in fünf Jahren noch wartbar ist (React Native,
+              Next.js, TypeScript, Cloud-Native). App-Store-fertig, mit Studio-Begleitung.
+              Kuratierter Rahmen pro Vorhaben. Mehr Tiefe zur{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link>.
             </p>
           </FadeInSection>
-          <FadeInSection delay={0.2}>
+          <FadeInSection delay={0.24}>
             <Link
               href="/buchen"
-              className="mt-9 inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
+              className="mt-10 inline-flex items-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
             >
-              Discovery-Gespräch <span className="text-cyan-300">→</span>
+              <span>Discovery-Vorgespräch</span>
+              <span className="text-cyan-400">→</span>
             </Link>
           </FadeInSection>
         </div>

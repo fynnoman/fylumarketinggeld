@@ -10,20 +10,20 @@ const guarantees = [
   {
     value: '90',
     unit: 'Tage',
-    label: 'Optimierung',
-    body: 'Garantierter Beobachtungs- und Optimierungszeitraum nach Live-Gang.',
+    label: 'Begleitung',
+    body: 'Studio-Begleitung nach Live-Gang, damit die Zahlen dem Anspruch folgen.',
   },
   {
     value: '0',
-    unit: '€',
-    label: 'Zusatzkosten',
-    body: 'Keine Aufschläge bei der Nachoptimierung, wenn Anfragen unter der Zielmarke liegen.',
+    unit: 'Aufschlag',
+    label: 'Iteration',
+    body: 'Wenn die Wirkung dem Anspruch noch nicht folgt, feilen wir weiter — ohne Aufschlag.',
   },
   {
     value: '100',
     unit: '%',
     label: 'Verantwortung',
-    body: 'Kein Abwälzen, keine Ausreden, kein Standard-Template — wir liefern bis es passt.',
+    body: 'Kein Abwälzen, keine Ausreden. Wir feilen, bis das Werk der Handschrift entspricht.',
   },
 ];
 
@@ -71,28 +71,29 @@ export default function GarantieSection() {
             transition={{ duration: 0.7, ease }}
             className="text-center"
           >
-            <div className="mb-6 inline-flex items-center gap-3 px-4 py-2 rounded-md border-2 border-dashed border-[var(--amber)]/40 -rotate-2">
-              <span className="font-display italic text-[var(--amber)] text-xl leading-none">
-                §7
+            <div className="mb-6 inline-flex items-center gap-3 px-4 py-2 rounded-md border border-[var(--cyan-deep)]/30 -rotate-2">
+              <span className="font-display italic text-[var(--cyan-deep)] text-xl leading-none">
+                §VII
               </span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-[var(--amber)] font-bold">
-                Versprechen · stamped
+              <span className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-semibold">
+                Versprechen
               </span>
             </div>
 
             <h2
               id="garantie-heading"
-              className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl mx-auto"
+              className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl mx-auto"
             >
-              Keine Anfragen?{' '}
+              Wir stehen{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Wir arbeiten kostenlos nach.
-              </span>
+                persönlich
+              </span>{' '}
+              für unsere Arbeit ein.
             </h2>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Wir bauen keine Visitenkarten — wir bauen Kundengewinnungssysteme.
-              Und wir stehen so hinter unserer Arbeit, dass wir Ihnen ein klares
-              Versprechen geben.
+              Wir bauen keine Präsenz — wir bauen Auftritte, die tragen. Und wenn
+              die Wirkung dem Anspruch einmal nicht folgt, feilen wir weiter, bis
+              das Werk der Handschrift entspricht.
             </p>
           </motion.div>
 
@@ -164,47 +165,27 @@ export default function GarantieSection() {
 
             <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
               <div className="lg:flex-1">
-                <div className="inline-flex items-center gap-2 mb-5">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400" />
-                  </span>
-                  <span className="text-cyan-300 font-semibold uppercase tracking-[0.2em] text-[10px]">
-                    Aktuelle Kapazität
-                  </span>
+                <div className="editorial-eyebrow-inverse mb-5">
+                  <span>Persönlich</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl lg:text-[2.2rem] font-semibold leading-[1.15] tracking-tight">
-                  Maximal{' '}
+                <h3 className="text-2xl md:text-3xl lg:text-[2.2rem] font-semibold leading-[1.15] tracking-[-0.015em]">
+                  Kein Kundenservice-Portal. Kein Ticket.{' '}
                   <span className="font-display italic font-normal text-cyan-300">
-                    3 Projekte
-                  </span>{' '}
-                  pro Monat — damit jedes Projekt unsere volle Aufmerksamkeit bekommt.
-                </h3>
-                <p className="text-stone-400 text-sm md:text-base mt-3 max-w-xl">
-                  Aktuell sind noch wenige Slots frei. Wer früh anfragt, sichert sich Priorität.
-                </p>
-
-                {/* Slots indicator */}
-                <div className="mt-6 flex items-center gap-2">
-                  {[1, 2, 3].map((slot, i) => (
-                    <div
-                      key={slot}
-                      className={`h-1.5 flex-1 max-w-[80px] rounded-full ${
-                        i === 0 ? 'bg-cyan-400' : 'bg-white/15'
-                      }`}
-                    />
-                  ))}
-                  <span className="text-[11px] uppercase tracking-wider text-stone-400 ml-3">
-                    1 / 3 vergeben
+                    Ein direkter Draht.
                   </span>
-                </div>
+                </h3>
+                <p className="text-stone-400 text-sm md:text-base mt-4 max-w-xl leading-relaxed">
+                  Ein Vorgespräch, um zu prüfen, ob wir zueinander passen. Ohne
+                  Verkaufsdruck, ohne Standard-Slides — wir hören zu, bevor wir
+                  antworten.
+                </p>
               </div>
 
               <Link
                 href="/buchen"
-                className="group inline-flex items-center gap-2 whitespace-nowrap text-center bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-4 rounded-full font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
+                className="group inline-flex items-center gap-2 whitespace-nowrap text-center bg-white hover:bg-cyan-50 text-[var(--ink)] px-7 py-4 rounded-full font-semibold shadow-[0_14px_40px_-14px_rgba(255,255,255,0.4)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
               >
-                <span>Slot sichern</span>
+                <span>Vorgespräch buchen</span>
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
                   <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

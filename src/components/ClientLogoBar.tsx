@@ -127,24 +127,25 @@ export default function ClientLogoBar() {
         >
           <div className="mb-6 flex items-baseline justify-center gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §8
+              §VIII
             </span>
-            <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-              Im Portfolio
+            <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+              Ausgewählte Klienten
             </span>
           </div>
           <h2
             id="clients-heading"
-            className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-[3.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
+            className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-5xl lg:text-[3.7rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Unternehmen, die mit uns{' '}
+            Häuser, die uns ihre{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              gewachsen sind.
+              Präsenz anvertraut haben.
             </span>
           </h2>
-          <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg mt-5 leading-relaxed">
-            Vom Saarländer Handwerksbetrieb über die regionale Top-Gastronomie bis zum US-Tech-Startup —
-            Marken, die wir zu mehr Sichtbarkeit, mehr Anfragen und mehr Umsatz geführt haben.
+          <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg mt-6 leading-relaxed">
+            Vom saarländischen Handwerksbetrieb über regionale Gastronomie bis zum
+            US-amerikanischen SaaS-Haus — eine Auswahl der Klienten, die wir
+            begleiten durften.
           </p>
         </motion.div>
 
@@ -213,7 +214,7 @@ export default function ClientLogoBar() {
                     {/* CTA */}
                     <div className="mt-6 text-center">
                       <span className="inline-flex items-center gap-2 text-cyan-600 group-hover:text-cyan-700 font-semibold text-sm md:text-base">
-                        Website ansehen
+                        Präsenz ansehen
                         <svg
                           className="w-4 h-4 transition-transform group-hover:translate-x-1"
                           fill="none"
@@ -273,9 +274,8 @@ export default function ClientLogoBar() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-10 text-center"
         >
-          <p className="text-sm text-stone-500">
-            Plus über <span className="font-semibold text-stone-700">40 weitere Projekte</span> für
-            Saarländer Unternehmer, Selbstständige und mittelständische Betriebe.
+          <p className="text-sm text-stone-500 tracking-[0.02em]">
+            Weitere <span className="font-display italic text-stone-700">Klienten seit 2024</span> auf Anfrage — kuratiert nach Passung und Kapazität.
           </p>
         </motion.div>
       </div>

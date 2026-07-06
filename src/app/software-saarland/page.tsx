@@ -201,39 +201,42 @@ export default function SoftwareSaarlandPage() {
 
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
-            <div className="mb-5 flex items-baseline gap-3">
-              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§</span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-                Software · Saarland · Saarlouis
-              </span>
+            <div className="editorial-eyebrow mb-6">
+              <span>Erweiterung · Software</span>
             </div>
-            <h1 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
-              Software aus dem Saarland, die{' '}
+          </FadeInSection>
+          <FadeInSection delay={0.08}>
+            <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
+              Software Saarland — als{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Probleme löst.
+                Erweiterung des Studios.
               </span>
             </h1>
           </FadeInSection>
-          <FadeInSection delay={0.1}>
-            <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Wir entwickeln maßgeschneiderte Software für Unternehmen im Saarland — Web-Apps, ERP- und CRM-Systeme, interne Tools, API-Integrationen, Automatisierungen und AI-gestützte Lösungen. Startup-nah, mit modernem Tech-Stack, mit transparenten Konditionen. Aus{' '}
-              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link> ist über die Jahre eine vollständige Software-Werkstatt geworden — vom Saarländer Mittelständler bis zum US-Tech-Startup.
+          <FadeInSection delay={0.16}>
+            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+              Maßgeschneiderte Software als eigenständige Disziplin oder als
+              Erweiterung Ihres Fylu-Auftritts. Web-Apps, ERP- und CRM-Systeme,
+              interne Tools, API-Integrationen, Automatisierungen und AI-gestützte
+              Vorhaben — kuratiert aus Saarlouis, mit einer Handschrift, die auch
+              in fünf Jahren noch wartbar ist. Zurück zum{' '}
+              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Fylu Webdesign Studio</Link>.
             </p>
           </FadeInSection>
-          <FadeInSection delay={0.2}>
-            <div className="mt-9 flex flex-col sm:flex-row gap-3">
+          <FadeInSection delay={0.24}>
+            <div className="mt-10 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/buchen"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_10px_30px_-12px_rgba(12,14,16,0.55)] hover:shadow-[0_20px_45px_-12px_rgba(12,14,16,0.65)] hover:-translate-y-[1px]"
+                className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
               >
-                <span>Kostenloses Discovery-Gespräch</span>
-                <span className="text-cyan-300 transition-transform group-hover:translate-x-0.5">→</span>
+                <span>Discovery-Vorgespräch</span>
+                <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
               </Link>
               <Link
                 href="/programmierer-saarland"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-[15px] font-semibold text-stone-900 bg-white border border-stone-300/80 hover:bg-stone-50 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                Programmierer im Saarland
+                <span>Programmierer im Saarland</span>
                 <span className="text-stone-400">↗</span>
               </Link>
             </div>
@@ -319,8 +322,8 @@ export default function SoftwareSaarlandPage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-semibold text-[var(--ink)] tracking-[-0.035em] leading-[1.05] mb-12">
-              Fünf Phasen, kein{' '}
-              <span className="font-display italic font-normal text-[var(--cyan-deep)]">Bullshit.</span>
+              Fünf Phasen, ein{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">klarer Weg.</span>
             </h2>
           </FadeInSection>
           <div className="space-y-8">
@@ -393,24 +396,27 @@ export default function SoftwareSaarlandPage() {
         </div>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl lg:text-[3.6rem] font-semibold tracking-[-0.035em] leading-[1.05]">
-            Software-Problem?{' '}
-            <span className="font-display italic font-normal text-cyan-300">Reden wir.</span>
+            Ein Software-Vorhaben?{' '}
+            <span className="font-display italic font-normal text-cyan-300">Wir hören zu.</span>
           </h2>
-          <p className="mt-6 text-stone-400 max-w-xl mx-auto text-base md:text-lg">
-            30 Minuten Discovery. Kostenlos. Sie schildern das Problem, wir sagen Ihnen ehrlich, ob und wie wir helfen können.
+          <p className="mt-6 text-stone-400 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
+            Dreißig Minuten Discovery. Sie schildern das Vorhaben, wir sagen
+            ehrlich, ob und wie wir es begleiten würden.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/buchen"
-              className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-3.5 rounded-full text-[15px] font-semibold shadow-[0_20px_50px_-15px_rgba(6,182,212,0.6)] transition-all duration-300 hover:-translate-y-[1px]"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-cyan-50 text-[var(--ink)] px-7 py-4 rounded-full text-[15px] font-semibold transition-all duration-300 hover:-translate-y-[1px]"
             >
-              Discovery-Gespräch sichern <span>→</span>
+              <span>Discovery-Vorgespräch</span>
+              <span className="text-[var(--cyan-deep)]">→</span>
             </Link>
             <a
               href="mailto:kontakt@fylumarketing.de"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-6 py-3.5 rounded-full text-[15px] font-medium border border-white/10 backdrop-blur-sm transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-6 py-4 rounded-full text-[15px] font-medium border border-white/10 backdrop-blur-sm transition-all duration-300"
             >
-              Direkt schreiben <span className="text-cyan-300">↗</span>
+              <span>Direkt schreiben</span>
+              <span className="text-cyan-300">↗</span>
             </a>
           </div>
         </div>

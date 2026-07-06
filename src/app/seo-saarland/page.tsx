@@ -3,265 +3,348 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FadeInSection from '@/components/animated/FadeInSection';
 
-const smoothEase = [0.22, 1, 0.36, 1] as const;
-
 const faqs = [
-	{
-		q: 'Was kostet SEO im Saarland?',
-		a: 'Die Konditionen für SEO hängen vom Umfang und der Wettbewerbssituation ab. Eine einmalige SEO-Grundoptimierung ist in jedem Webdesign-Projekt enthalten. Laufende SEO-Betreuung mit monatlichem Reporting bieten wir paketweise an — Konditionen auf Anfrage.',
-	},
-	{
-		q: 'Wie lange dauert es bis man Ergebnisse sieht?',
-		a: 'SEO ist eine langfristige Strategie. Erste Verbesserungen in den Rankings sind oft nach 4 bis 8 Wochen sichtbar. Signifikante Ergebnisse — wie ein Sprung auf Seite 1 bei Google — dauern in der Regel 3 bis 6 Monate, abhängig von der Konkurrenz in Ihrer Branche.',
-	},
-	{
-		q: 'Was ist der Unterschied zwischen SEO und Google Ads?',
-		a: 'SEO verbessert Ihre organische (kostenlose) Sichtbarkeit bei Google langfristig. Google Ads sind bezahlte Anzeigen, die sofort sichtbar sind, aber laufende Kosten verursachen. Idealerweise kombiniert man beides: Ads für sofortige Ergebnisse, SEO für nachhaltigen Traffic. Mehr dazu erfahren Sie auf unserer Seite zu Google Ads im Saarland.',
-	},
-	{
-		q: 'Brauche ich SEO wenn ich schon eine Website habe?',
-		a: 'Eine Website ohne SEO ist wie ein Geschäft ohne Schild. Sie existiert, aber niemand findet sie. Wenn Ihre Website bei Google nicht auf Seite 1 erscheint, verpassen Sie täglich potenzielle Kunden. SEO sorgt dafür, dass Ihre bestehende Website gefunden wird.',
-	},
-	{
-		q: 'Was ist Local SEO?',
-		a: 'Local SEO optimiert Ihre Online-Präsenz speziell für lokale Suchanfragen. Wenn jemand „Friseur Saarbrücken" oder „Elektriker in meiner Nähe" googelt, sorgt Local SEO dafür, dass Ihr Unternehmen in den Ergebnissen und auf Google Maps erscheint.',
-	},
-	{
-		q: 'Wie messe ich den Erfolg von SEO?',
-		a: 'Wir richten Google Search Console und Analytics für Sie ein. So sehen Sie genau, wie viele Menschen Ihre Website über Google finden, für welche Suchbegriffe Sie ranken und wie sich Ihre Position über die Zeit verbessert. Sie erhalten regelmäßige, verständliche Reports.',
-	},
+  {
+    q: 'Was kostet SEO im Saarland bei Fylu?',
+    a: 'Google Business Optimierung ab 290 € einmalig. SEO Foundation ab 890 € einmalig. SEO Betreuung ab 490 € pro Monat. Diese Preise sind Ausgangspunkte für den lokalen Rahmen im Saarland — Wettbewerbsdichte und Zielgruppe fließen in die Kalkulation ein.',
+  },
+  {
+    q: 'Wie lange dauert es, bis Ergebnisse sichtbar sind?',
+    a: 'Erste Bewegungen in den Rankings sehen wir in der Regel nach vier bis acht Wochen. Signifikante Verschiebungen — etwa auf die erste Google-Seite — brauchen drei bis sechs Monate. SEO ist Aufbauarbeit, keine Kampagne.',
+  },
+  {
+    q: 'Ist SEO Teil des Website-Pakets?',
+    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk — sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit — Keyword-Strategie, Content, Google Business, laufende Iteration — buchen Sie als Erweiterung dazu.',
+  },
+  {
+    q: 'Was ist Local SEO?',
+    a: 'Local SEO schärft Ihre Präsenz für lokale Suchbegriffe wie „Kanzlei Saarbrücken" oder „Handwerker Saarlouis". Kernstück ist das Google-Unternehmensprofil, ergänzt durch strukturierte Daten, konsistente NAP-Angaben und lokale Signale in Ihrer Website.',
+  },
+  {
+    q: 'Was ist der Unterschied zwischen SEO und Google Ads?',
+    a: 'SEO ist Aufbauarbeit über Monate. Google Ads ist sofort sichtbare Reichweite. Wir empfehlen häufig eine Kombination — Ads für sofortigen Fluss, SEO für die stille Sichtbarkeit, die bleibt.',
+  },
+  {
+    q: 'Wie messen wir Erfolg?',
+    a: 'Google Search Console und Analytics sind ab Tag eins verbunden. Sie sehen, für welche Begriffe Sie ranken, wie sich Ihre Position verändert und wieviele Anfragen entstehen. Reporting kommt monatlich, in ruhiger Sprache — nicht als Datenwust.',
+  },
 ];
 
-const leistungen = [
-	{
-		title: 'OnPage SEO — Technik & Content',
-		text: 'Wir optimieren Ihre Website von innen heraus: Seitentitel, Meta-Beschreibungen, Überschriftenstruktur, interne Verlinkung, Ladegeschwindigkeit und Core Web Vitals. Jede Seite wird so aufgebaut, dass Google sie versteht und belohnt. Dazu gehört auch die Erstellung von SEO-optimierten Texten, die sowohl für Suchmaschinen als auch für Ihre Besucher geschrieben sind.',
-	},
-	{
-		title: 'Local SEO — Google Maps & regionale Sichtbarkeit',
-		text: 'Für lokale Unternehmen im Saarland ist Local SEO entscheidend. Wir optimieren Ihren Google Business Eintrag, sorgen für konsistente NAP-Daten (Name, Adresse, Telefon) und bauen lokale Signale auf, damit Sie bei Suchanfragen wie „Handwerker Saarbrücken" oder „Restaurant Saarlouis" ganz oben erscheinen.',
-	},
-	{
-		title: 'Google Business Optimierung',
-		text: 'Ihr Google Business Profil ist oft der erste Kontaktpunkt mit potenziellen Kunden. Wir optimieren Ihr Profil vollständig: professionelle Beschreibung, richtige Kategorien, Öffnungszeiten, Fotos und eine Strategie für positive Bewertungen. So stechen Sie in der lokalen Suche hervor.',
-	},
-	{
-		title: 'Keyword-Recherche & Content-Strategie',
-		text: 'Wir recherchieren die Suchbegriffe, die Ihre Zielkunden tatsächlich verwenden. Basierend darauf entwickeln wir eine Content-Strategie, die Ihre Website systematisch für die wichtigsten Keywords positioniert. Kein Raten — datenbasierte Entscheidungen für maximale Sichtbarkeit.',
-	},
-];
-
-const prozessSteps = [
-	{ title: 'SEO-Analyse', text: 'Wir analysieren Ihre aktuelle Website, Ihre Rankings, Ihre Konkurrenz und identifizieren die größten Chancen. Sie erhalten einen klaren Überblick über den Ist-Zustand.' },
-	{ title: 'Keyword-Recherche', text: 'Wir finden die Suchbegriffe, die Ihre Zielkunden nutzen. Welche Keywords haben Volumen, sind erreichbar und führen zu Anfragen? Das wird die Basis der Optimierung.' },
-	{ title: 'Optimierung', text: 'Technische Fehler werden behoben, Inhalte werden optimiert, Meta-Daten werden geschrieben und die Seitenstruktur wird für Google und Nutzer verbessert.' },
-	{ title: 'Monitoring', text: 'Nach der Optimierung überwachen wir die Rankings und den Traffic kontinuierlich. Was funktioniert, wird ausgebaut. Was nicht funktioniert, wird angepasst.' },
-	{ title: 'Monatliches Reporting', text: 'Sie erhalten jeden Monat einen verständlichen Bericht: Wie haben sich Ihre Rankings entwickelt? Wie viele Besucher kommen über Google? Welche Maßnahmen stehen als nächstes an?' },
+const modules = [
+  {
+    ordinal: 'I',
+    label: 'Foundation',
+    price: '890 €',
+    cadence: 'einmalig',
+    body: 'Keyword-Analyse, technisches Audit, OnPage-Optimierung, Schema-Struktur. Das Fundament für organische Reichweite.',
+  },
+  {
+    ordinal: 'II',
+    label: 'Google Business',
+    price: '290 €',
+    cadence: 'einmalig',
+    body: 'Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache — sauber und komplett.',
+  },
+  {
+    ordinal: 'III',
+    label: 'Betreuung',
+    price: '490 €',
+    cadence: 'pro Monat',
+    body: 'Fortlaufende Optimierung, Content-Feinschliff, Reporting — damit Sichtbarkeit nicht wieder abbricht.',
+  },
 ];
 
 export default function SeoSaarlandPage() {
-	return (
-		<main>
-			<Navbar />
+  return (
+    <main className="bg-white">
+      <Navbar />
 
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'BreadcrumbList',
-						itemListElement: [
-							{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
-							{ '@type': 'ListItem', position: 2, name: 'SEO Saarland', item: 'https://www.fylumarketing.de/seo-saarland' },
-						],
-					}),
-				}}
-			/>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'LocalBusiness',
-						name: 'Fylu – SEO Saarland',
-						description: 'SEO-Optimierung für lokale Unternehmen im Saarland. OnPage SEO, Local SEO und Google Business Optimierung.',
-						url: 'https://www.fylumarketing.de/seo-saarland',
-						telephone: '+4915168488999',
-						email: 'kontakt@fylumarketing.de',
-						address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
-					}),
-				}}
-			/>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'FAQPage',
-						mainEntity: faqs.map((f) => ({
-							'@type': 'Question',
-							name: f.q,
-							acceptedAnswer: { '@type': 'Answer', text: f.a },
-						})),
-					}),
-				}}
-			/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
+              { '@type': 'ListItem', position: 2, name: 'SEO Saarland', item: 'https://www.fylumarketing.de/seo-saarland' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Fylu Studio · SEO Saarland',
+            description: 'SEO als Erweiterung Ihrer Fylu-Website. Foundation ab 890 €, Google Business ab 290 €, Betreuung ab 490 € pro Monat. Geführt aus Saarlouis.',
+            url: 'https://www.fylumarketing.de/seo-saarland',
+            telephone: '+4915168488999',
+            email: 'kontakt@fylumarketing.de',
+            address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }),
+        }}
+      />
 
-			{/* Breadcrumb */}
-			<div className="bg-stone-50 border-b border-stone-200">
-				<div className="max-w-7xl mx-auto px-6 py-3 pt-20">
-					<nav className="text-sm text-stone-500">
-						<Link href="/" className="hover:text-cyan-500 transition-colors">Home</Link>
-						<span className="mx-2">/</span>
-						<span className="text-stone-900 font-medium">SEO Saarland</span>
-					</nav>
-				</div>
-			</div>
+      {/* Breadcrumb */}
+      <div className="bg-[var(--background-warm)] border-b border-stone-200/70">
+        <div className="max-w-7xl mx-auto px-6 py-3 pt-20">
+          <nav className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
+            <Link href="/" className="hover:text-cyan-700 transition-colors">Home</Link>
+            <span className="mx-2 text-stone-400">·</span>
+            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Studio</Link>
+            <span className="mx-2 text-stone-400">·</span>
+            <span className="text-stone-900 font-medium">SEO Saarland</span>
+          </nav>
+        </div>
+      </div>
 
-			{/* Hero */}
-			<section className="relative py-20 md:py-32 px-6 bg-white overflow-hidden">
-				<div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40" />
-				<div className="max-w-4xl mx-auto relative z-10">
-					<FadeInSection>
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
-							SEO Saarland — Bei Google gefunden werden
-						</h1>
-					</FadeInSection>
-					<FadeInSection delay={0.08}>
-						<p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
-							Ihre potenziellen Kunden suchen jeden Tag bei Google nach genau den Leistungen, die Sie anbieten. Wenn Ihr Unternehmen nicht auf Seite 1 erscheint, geht der Auftrag an die Konkurrenz. Als SEO-Spezialisten aus Saarlouis helfen wir lokalen Unternehmen im Saarland, bei Google sichtbar zu werden — mit datenbasierter Suchmaschinenoptimierung, die nachweislich funktioniert. Ob Sie ein <Link href="/webdesign-handwerk" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Handwerksbetrieb in Saarbrücken</Link>, ein Dienstleister in Merzig oder ein Restaurant in Dillingen sind: Wir sorgen dafür, dass Ihre Kunden Sie finden, bevor sie Ihre Konkurrenz finden.
-						</p>
-					</FadeInSection>
-					<FadeInSection delay={0.15}>
-						<Link
-							href="/buchen"
-							className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
-						>
-							Kostenlose SEO-Analyse anfordern
-						</Link>
-					</FadeInSection>
-				</div>
-			</section>
+      {/* Hero */}
+      <section className="relative py-24 md:py-36 px-5 md:px-8 bg-[var(--background-warm)] overflow-hidden isolate">
+        <div className="absolute inset-0 -z-10">
+          <div
+            className="absolute inset-0 opacity-[0.5]"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle, rgba(12,14,16,0.07) 1px, transparent 1.4px)',
+              backgroundSize: '28px 28px',
+              maskImage:
+                'radial-gradient(ellipse 80% 60% at 40% 40%, black 30%, transparent 80%)',
+              WebkitMaskImage:
+                'radial-gradient(ellipse 80% 60% at 40% 40%, black 30%, transparent 80%)',
+            }}
+          />
+          <div className="absolute bottom-0 left-0 w-[55vw] h-[45vw] bloom-cyan" />
+          <div className="noise-overlay opacity-30" />
+        </div>
 
-			{/* Warum SEO */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<FadeInSection>
-						<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-							Warum SEO für Unternehmen im Saarland so wichtig ist
-						</h2>
-					</FadeInSection>
-					<FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
-						<p>
-							Stellen Sie sich vor: Ein Hausbesitzer in Saarbrücken hat einen Rohrbruch. Was tut er? Er greift zum Smartphone und googelt „Klempner Saarbrücken Notdienst". Innerhalb von Sekunden hat er drei Firmen gefunden und die erste angerufen. Wenn Sie als Klempner in Saarbrücken nicht in diesen Ergebnissen auftauchen, haben Sie gerade einen Auftrag verloren — an einen Konkurrenten, der in SEO investiert hat.
-						</p>
-						<p>
-							Das ist kein Einzelfall. Über 90 Prozent aller Online-Erfahrungen beginnen mit einer Suchmaschine. 75 Prozent der Nutzer scrollen nie über die erste Seite bei Google hinaus. Für lokale Unternehmen im Saarland bedeutet das: Wenn Sie nicht auf Seite 1 sind, existieren Sie für Ihre potenziellen Kunden praktisch nicht. Die gute Nachricht: Gerade für lokale Suchanfragen im Saarland ist die Konkurrenz oft überschaubar. Mit gezielter SEO-Optimierung können Sie in wenigen Monaten auf die erste Seite bei Google gelangen — für genau die Suchbegriffe, die Ihre Kunden verwenden. Voraussetzung dafür ist eine <Link href="/webdesign-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">professionelle Website</Link>, die technisch einwandfrei aufgebaut ist.
-						</p>
-					</FadeInSection>
-				</div>
-			</section>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <FadeInSection>
+            <div className="editorial-eyebrow mb-6">
+              <span>Erweiterung · Sichtbarkeit</span>
+            </div>
+          </FadeInSection>
+          <FadeInSection delay={0.08}>
+            <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
+              SEO Saarland. Als{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Erweiterung Ihrer Fylu-Website.
+              </span>
+            </h1>
+          </FadeInSection>
+          <FadeInSection delay={0.16}>
+            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
+              Sichtbarkeit für Suchbegriffe, die Ihre Klienten tatsächlich
+              eingeben. Kuratiert aus Saarlouis — als Erweiterung des
+              Fylu-Auftritts oder als eigenständiges Modul für ein Haus, das seine
+              Präsenz stufenweise schärfen möchte.
+            </p>
+          </FadeInSection>
+          <FadeInSection delay={0.24}>
+            <div className="mt-10 flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/buchen"
+                className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
+              >
+                <span>Vorgespräch buchen</span>
+                <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+              </Link>
+              <Link
+                href="#seo-module"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
+              >
+                <span>Preise ansehen</span>
+              </Link>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
 
-			{/* Leistungen */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Unsere SEO-Leistungen im Überblick
-					</h2>
-					<div className="space-y-10">
-						{leistungen.map((item, i) => (
-							<div key={i}>
-								<h3 className="text-xl font-bold text-stone-900 mb-3">{item.title}</h3>
-								<p className="text-stone-600 leading-relaxed">{item.text}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
+      {/* Positionierung */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FadeInSection>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§I</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Positionierung
+              </span>
+            </div>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+              Sichtbarkeit ist keine{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                Kampagne. Sie ist Aufbauarbeit.
+              </span>
+            </h2>
+          </FadeInSection>
+          <FadeInSection delay={0.08}>
+            <div className="prose prose-lg prose-stone max-w-none mt-10">
+              <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
+                Klienten suchen bei Google — nach „Kanzlei Saarbrücken", „Meisterbetrieb
+                Saarlouis", „Restaurant Merzig". Wer auf Seite eins steht, wird gerufen.
+                Wer nicht, existiert für die Suche praktisch nicht.
+              </p>
+              <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
+                SEO bei Fylu ist keine schnelle Kampagne, sondern Aufbauarbeit im
+                Hintergrund. Technische Foundation, sauberes Google-Profil, geführte
+                Inhalte. Wir arbeiten nicht in Batches, sondern kuratiert — pro Haus,
+                pro Kontext.
+              </p>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
 
-			{/* Prozess */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						So läuft eine SEO-Optimierung bei Fylu ab
-					</h2>
-					<div className="space-y-8">
-						{prozessSteps.map((step, i) => (
-							<div key={i} className="relative pl-12">
-								<div className="absolute left-0 top-1 w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{i + 1}</div>
-								<h3 className="text-xl font-bold text-stone-900 mb-2">{step.title}</h3>
-								<p className="text-stone-600 leading-relaxed">{step.text}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
+      {/* Module */}
+      <section id="seo-module" className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-14">
+              <div className="mb-6 flex items-baseline justify-center gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§II</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Die Module
+                </span>
+              </div>
+              <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+                Drei Ebenen an{' '}
+                <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                  SEO-Arbeit.
+                </span>
+              </h2>
+              <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
+                Einzeln buchbar oder als abgestimmte Erweiterung Ihres Fylu-Auftritts.
+              </p>
+            </div>
+          </FadeInSection>
 
-			{/* Ergebnisse */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						SEO-Ergebnisse die überzeugen
-					</h2>
-					<div className="grid md:grid-cols-3 gap-6">
-						{[
-							{ metric: '+400%', label: 'Mehr Anfragen', text: 'Handwerksbetrieb in Saarbrücken: Von Seite 5 auf Platz 3 in 4 Monaten. Die Anfragen über die Website haben sich vervierfacht.' },
-							{ metric: '+250%', label: 'Mehr Verkäufe', text: 'Online-Shop aus dem Saarland: Durch gezielte Keyword-Optimierung und technisches SEO stiegen die organischen Verkäufe um 250 Prozent.' },
-							{ metric: 'Platz 1', label: 'Google Maps', text: 'Restaurant in Saarlouis: Durch Local SEO und Google Business Optimierung auf Platz 1 in Google Maps — Reservierungen verdoppelt.' },
-						].map((item, i) => (
-							<div key={i} className="p-6 rounded-xl border border-stone-200 bg-stone-50">
-								<div className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full mb-3">
-									<span className="text-2xl font-bold text-white">{item.metric}</span>
-								</div>
-								<p className="text-sm font-semibold text-stone-500 mb-2">{item.label}</p>
-								<p className="text-stone-600 text-sm leading-relaxed">{item.text}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
+          <div className="grid md:grid-cols-3 gap-5">
+            {modules.map((m, i) => (
+              <FadeInSection key={m.ordinal} delay={0.1 + i * 0.08}>
+                <div className="bg-white rounded-3xl p-8 border border-stone-200/70 premium-lift h-full flex flex-col">
+                  <div className="flex items-start justify-between mb-6">
+                    <div>
+                      <div className="text-[10px] uppercase tracking-[0.28em] text-stone-500 mb-2">
+                        Modul {m.ordinal}
+                      </div>
+                      <h3 className="font-display italic text-3xl md:text-[2.1rem] text-[var(--ink)] leading-none">
+                        {m.label}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-stone-700 text-[0.95rem] leading-relaxed mb-8">
+                    {m.body}
+                  </p>
+                  <div className="mt-auto pt-6 border-t border-dashed border-stone-200">
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <span className="pricing-from">ab</span>
+                      <span className="pricing-numeral text-4xl text-[var(--ink)]">
+                        {m.price.replace(' €', '')}
+                      </span>
+                      <span className="font-display italic text-xl text-[var(--cyan-deep)]">€</span>
+                      {m.cadence === 'pro Monat' && (
+                        <span className="ml-1 text-[11px] uppercase tracking-[0.18em] text-stone-500">/ Monat</span>
+                      )}
+                    </div>
+                    <span className="text-[10px] uppercase tracking-[0.22em] text-stone-500">
+                      {m.cadence}
+                    </span>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+          <p className="mt-10 text-center text-[11px] uppercase tracking-[0.22em] text-stone-500">
+            Alle Preise zzgl. USt. · Ausgangspunkte, keine Preisschilder
+          </p>
+        </div>
+      </section>
 
-			{/* FAQ */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Häufige Fragen zur Suchmaschinenoptimierung
-					</h2>
-					<div className="space-y-6">
-						{faqs.map((faq, i) => (
-							<FadeInSection key={i} delay={i * 0.06} className="bg-white p-6 rounded-xl border border-stone-200">
-								<h3 className="text-lg font-bold text-stone-900 mb-2">{faq.q}</h3>
-								<p className="text-stone-600 leading-relaxed">{faq.a}</p>
-							</FadeInSection>
-						))}
-					</div>
-				</div>
-			</section>
+      {/* FAQ */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <FadeInSection>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§III</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                Fragen
+              </span>
+            </div>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em] mb-12">
+              Ehrlich{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                beantwortet.
+              </span>
+            </h2>
+          </FadeInSection>
+          <div className="space-y-3">
+            {faqs.map((faq, i) => (
+              <FadeInSection key={i} delay={i * 0.05}>
+                <div className="bg-[var(--background-warm)] rounded-2xl border border-stone-200/70 p-6 md:p-7">
+                  <h3 className="text-[15px] md:text-base font-semibold text-[var(--ink)] mb-3 flex items-baseline gap-3">
+                    <span className="font-display italic text-cyan-700 text-sm leading-none">0{i + 1}</span>
+                    <span>{faq.q}</span>
+                  </h3>
+                  <p className="text-stone-700 leading-relaxed text-[0.95rem] pl-6">
+                    {faq.a}
+                  </p>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+        </div>
+      </section>
 
-			{/* CTA */}
-			<section className="py-20 md:py-28 px-6 bg-white">
-				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-						Bereit, bei Google sichtbar zu werden?
-					</h2>
-					<p className="text-lg text-stone-600 mb-8">
-						Lassen Sie uns gemeinsam Ihre Google-Sichtbarkeit verbessern. Kostenlose Erstanalyse — unverbindlich und ehrlich.
-					</p>
-					<Link
-						href="/buchen"
-						className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98] inline-block"
-					>
-						Anfrage senden
-					</Link>
-					<div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
-						<Link href="/webdesign-saarland" className="hover:text-cyan-500 transition-colors">Webdesign Saarland</Link>
-						<Link href="/google-ads-saarland" className="hover:text-cyan-500 transition-colors">Google Ads Saarland</Link>
-						<Link href="/website-erstellen-lassen" className="hover:text-cyan-500 transition-colors">Website erstellen lassen</Link>
-					</div>
-				</div>
-			</section>
+      {/* CTA */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
+        <div className="max-w-3xl mx-auto text-center">
+          <FadeInSection>
+            <div className="hairline-rule w-24 mx-auto mb-8" />
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+              Bereit für eine{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                sichtbare Präsenz?
+              </span>
+            </h2>
+            <p className="mt-6 text-stone-600 text-lg leading-relaxed">
+              Fünfzehn Minuten. Wir hören zu, bevor wir antworten.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
+              <Link
+                href="/buchen"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)]"
+              >
+                <span>Vorgespräch buchen</span>
+                <span className="text-cyan-400">→</span>
+              </Link>
+              <Link
+                href="/webdesign-saarland"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
+              >
+                <span>Zurück zu den Website-Paketen</span>
+              </Link>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
 
-			<Footer />
-		</main>
-	);
+      <Footer />
+    </main>
+  );
 }

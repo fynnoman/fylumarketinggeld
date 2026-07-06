@@ -10,32 +10,32 @@ const caseStudies = [
   {
     metric: '250',
     unit: '%',
-    metricLabel: 'mehr Verkäufe',
-    title: 'Online-Shop verdreifacht Verkäufe',
+    metricLabel: 'Kaufabschlüsse',
+    title: 'Ein Handelshaus. Dreimal so viel Kaufabschluss.',
     description:
-      'Durch eine neue, übersichtliche Website kaufen jetzt 2,5× mehr Besucher ein.',
+      'Nach dem Neubau der Website mit klarer Führung entscheiden sich zweieinhalbmal so viele Besucher zum Kauf.',
     industry: 'E-Commerce',
-    note: 'Relaunch in 5 Wochen.',
+    note: 'Fünf Wochen bis Live.',
   },
   {
     metric: '400',
     unit: '%',
-    metricLabel: 'mehr Anfragen',
-    title: 'Lokales Geschäft auf Platz 1',
+    metricLabel: 'Nachfrage',
+    title: 'Ein Ortsansässiger. Jetzt an der Spitze.',
     description:
-      'Jetzt auf Platz 1 bei Google — 400% mehr Anrufe und Anfragen von Neukunden.',
+      'Platz eins bei Google und vierfache Nachfrage nach Anrufen und Anfragen von neuen Klienten.',
     industry: 'Lokal · Saarland',
-    note: 'Vom Niemand zum Map-Pack-Champion.',
+    note: 'Vom lokalen Anbieter zur ersten Wahl.',
   },
   {
     metric: '180',
     unit: '%',
-    metricLabel: 'mehr Engagement',
-    title: 'Moderne Website zieht Kunden an',
+    metricLabel: 'Zuwendung',
+    title: 'Ein Serviceanbieter. Jetzt vielgefragt.',
     description:
-      'Besucher bleiben länger und melden sich häufiger an — 180% mehr Interesse.',
-    industry: 'Service',
-    note: 'Vom Absprung zur Anmeldung.',
+      'Besucher bleiben länger und wenden sich häufiger — knapp verdoppeltes Interesse.',
+    industry: 'Serviceanbieter',
+    note: 'Vom Verlassen zur Zuwendung.',
   },
 ];
 
@@ -73,10 +73,10 @@ export default function CaseStudySection() {
           className="mb-3"
         >
           <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">
-            §3
+            §III
           </span>
-          <span className="ml-3 text-[11px] uppercase tracking-[0.3em] text-stone-500 font-medium">
-            Beweise
+          <span className="ml-3 text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+            Zahlen
           </span>
         </motion.div>
 
@@ -92,7 +92,7 @@ export default function CaseStudySection() {
               sprechen
             </span>
             <HandCircle
-              className="absolute -inset-x-4 -inset-y-3 w-[calc(100%+2rem)] h-[calc(100%+1.5rem)] text-[var(--amber)] opacity-90"
+              className="absolute -inset-x-4 -inset-y-3 w-[calc(100%+2rem)] h-[calc(100%+1.5rem)] text-[var(--cyan-deep)] opacity-60"
               delay={0.6}
               inView={isInView}
             />

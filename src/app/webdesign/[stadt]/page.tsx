@@ -13,51 +13,51 @@ const SITE = "https://www.fylumarketing.de";
 
 const faqs = (city: string) => [
   {
-    q: `Was kostet eine professionelle Website in ${city}?`,
-    a: "Konditionen kalkulieren wir je nach Seitenanzahl und gewünschten Funktionen. Persönliche Beratung — Konditionen auf Anfrage.",
+    q: `Was kostet eine Fylu-Website in ${city}?`,
+    a: "Signature ab 3.490 €, Atelier ab 6.490 €, Maison ab 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Alle Beträge zzgl. USt.",
   },
   {
-    q: "Wie lange dauert die Erstellung meiner Website?",
-    a: "In der Regel ist Ihre Website innerhalb von 2–4 Wochen fertig. Den ersten Design-Entwurf erhalten Sie schon innerhalb von 24 Stunden nach unserem Erstgespräch – kostenlos und unverbindlich.",
+    q: "Wie lange dauert ein Projekt?",
+    a: "Signature-Auftritte gehen in etwa zwei bis vier Wochen live. Atelier und Maison planen wir mit vier bis sechs Wochen. Nach Live-Gang folgen bis zu sechs Monate Studio-Begleitung.",
   },
   {
-    q: "Werden meine Kunden mich bei Google finden?",
-    a: "Ja. Jede Website enthält eine SEO-Basis-Optimierung mit OnPage-SEO, technischer Optimierung und Google Business Einrichtung. Auf Wunsch betreuen wir auch laufend Ihr lokales SEO und Ihre Google Ads.",
+    q: "Werde ich bei Google gefunden?",
+    a: "Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation ab 890 €, SEO Betreuung ab 490 €/Monat sowie Google Ads Setup ab 690 €.",
   },
   {
-    q: "Ist die Website für Smartphones optimiert?",
-    a: "Selbstverständlich. Jede Website wird mobile-first entwickelt und auf allen Geräten getestet – Smartphone, Tablet und Desktop. Das ist auch für die Google-Rankings entscheidend.",
+    q: "Ist die Website mobil optimiert?",
+    a: "Selbstverständlich. Jeder Fylu-Auftritt wird mobile-first entworfen — auf die Rhythmisierung des Smartphones abgestimmt, dann für Tablet und Desktop erweitert.",
   },
   {
-    q: "Kann ich die Website später selbst pflegen?",
-    a: "Auf Wunsch richten wir ein einfaches CMS ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie – schnell, unkompliziert und ohne lange Wartezeiten.",
+    q: "Kann ich Inhalte selbst pflegen?",
+    a: "Auf Wunsch. Wir richten redaktionelle Content-Systeme ein, in denen Sie Texte, Bilder und Kapitel selbst pflegen — ohne die editoriale Handschrift der Seite zu verlieren.",
   },
   {
     q: "Was passiert nach dem Launch?",
-    a: "Nach dem Livegang lassen wir Sie nicht allein. Je nach Paket erhalten Sie 2–4 Monate Hosting inklusive. Darüber hinaus stehen wir Ihnen für Updates, Änderungen und Support zur Verfügung.",
+    a: "Zwischen 60 und 180 Tagen Studio-Begleitung sind je nach Paket enthalten. Iteration, Reporting, Feinschliff. Danach entscheiden Sie, ob wir weiter begleiten oder Sie im eigenen Haus übernehmen.",
   },
 ];
 
 const steps = [
   {
-    title: "Erstgespräch",
-    text: "Wir lernen uns kennen und verstehen Ihr Geschäft, Ihre Ziele und Ihren Markt. Kein Verkaufsdruck – nur ehrliche Beratung.",
+    title: "Vorgespräch",
+    text: "Fünfzehn Minuten. Wir hören zu — Substanz Ihres Hauses, aktuelle Präsenz, Anspruch des Vorhabens.",
   },
   {
-    title: "Kostenloser Entwurf in 24h",
-    text: "Innerhalb von 24 Stunden erhalten Sie einen ersten Design-Entwurf – unverbindlich. Sie sehen sofort, wie Ihre neue Website aussehen kann.",
+    title: "Positionierung",
+    text: "Rahmen, Verkaufsarchitektur, Content-Map. Kein Template, eine eigene Handschrift.",
   },
   {
-    title: "Design & Entwicklung",
-    text: "Nach Ihrem Feedback bauen wir Ihre Website mit modernster Technik – optimiert auf Geschwindigkeit, SEO und Conversion.",
+    title: "Werkbank",
+    text: "Design und Umsetzung mit editorial gestalteter Typografie, technischer SEO-Foundation, spürbarer Rhythmisierung.",
   },
   {
-    title: "Lokale SEO-Optimierung",
-    text: "Vor dem Launch optimieren wir Ihre Website für Google: Keywords, technisches SEO, Meta-Tags, Ladezeit und Google Business.",
+    title: "Sichtbarkeit",
+    text: "Lokale Schärfung und Google-Präsenz — für Suchbegriffe, die Klienten tatsächlich eingeben.",
   },
   {
-    title: "Launch & Support",
-    text: "Ihre Website geht live – und wir bleiben Ihr fester Ansprechpartner für Updates, Änderungen und Wachstum.",
+    title: "Iteration",
+    text: "Bis zu sechs Monate Studio-Begleitung nach Live-Gang. Zeit für Substanz, nicht für Theorie.",
   },
 ];
 
