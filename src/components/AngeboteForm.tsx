@@ -41,14 +41,19 @@ export default function AngeboteForm() {
 
       if (!res.ok) {
         const body = await res.json().catch(() => ({} as { error?: string }));
-        const detail = body?.error ? `\n\nDetails: ${body.error}` : '';
-        throw new Error(`Fehler beim Senden (HTTP ${res.status})${detail}`);
+        const msg =
+          body?.error ??
+          'Ihre Anfrage konnte nicht übermittelt werden. Bitte schreiben Sie uns direkt an kontakt@fylumarketing.de oder rufen Sie an unter +49 151 684 88999.';
+        throw new Error(msg);
       }
       setIsSubmitted(true);
     } catch (err) {
       console.error(err);
-      const msg = err instanceof Error ? err.message : 'Unbekannter Fehler';
-      alert(`${msg}\n\nBitte versuchen Sie es erneut oder schreiben Sie direkt an kontakt@fylumarketing.de`);
+      const msg =
+        err instanceof Error
+          ? err.message
+          : 'Ihre Anfrage konnte nicht übermittelt werden. Bitte schreiben Sie uns direkt an kontakt@fylumarketing.de oder rufen Sie an unter +49 151 684 88999.';
+      alert(msg);
     } finally {
       setIsSubmitting(false);
     }
@@ -336,8 +341,8 @@ export default function AngeboteForm() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 className="font-semibold text-stone-900 mb-2">100% Kostenlos</h3>
-          <p className="text-stone-600 text-sm">Keine versteckten Kosten</p>
+          <h3 className="font-semibold text-stone-900 mb-2">Persönliche Antwort</h3>
+          <p className="text-stone-600 text-sm">Direkt vom Studio-Lead</p>
         </motion.div>
 
         <motion.div
