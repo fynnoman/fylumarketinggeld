@@ -60,9 +60,9 @@ export default function FinalCTASection() {
           transition={{ duration: 0.7, ease: smoothEase, delay: 0.05 }}
           className="font-semibold tracking-[-0.035em] leading-[1.04] text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[4.4rem] max-w-3xl mx-auto"
         >
-          Ein Gespräch —{' '}
+          Ein Gespräch.{' '}
           <span className="font-display italic font-normal text-cyan-300">
-            keine Verkaufspräsentation.
+            Keine Verkaufspräsentation.
           </span>
         </motion.h2>
 
@@ -72,8 +72,7 @@ export default function FinalCTASection() {
           transition={{ duration: 0.6, ease: smoothEase, delay: 0.18 }}
           className="mt-7 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Anrufen oder anfragen. Sie bekommen binnen 24 Stunden eine persönliche
-          Rückmeldung — vom Studio-Lead, nicht aus einer Hotline.
+          Persönliche Rückmeldung binnen 24 Stunden. Direkt vom Studio-Lead.
         </motion.p>
 
         <motion.div

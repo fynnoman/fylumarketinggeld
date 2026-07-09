@@ -56,15 +56,14 @@ export default function ValueSection() {
             </span>
           </div>
           <h2 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-            Kein Studio unter vielen.{' '}
+            Persönlich geführt.{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              Ein Haus mit Handschrift.
+              Direkt umgesetzt.
             </span>
           </h2>
           <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Wir arbeiten mit einer bewusst kleinen Zahl an Klienten — tiefe
-            Verantwortung pro Projekt, direkte Führung, keine Ticket-Systeme, kein
-            Account-Management-Theater.
+            Sie sprechen mit der Person, die Ihre Website konzipiert, gestaltet
+            und sichtbar macht. Direkter Draht, kurze Wege, klare Verantwortung.
           </p>
         </motion.div>
 
@@ -77,14 +76,9 @@ export default function ValueSection() {
             transition={{ duration: 0.7, delay: 0.05, ease }}
             className="relative md:col-span-4 md:row-span-2 rounded-3xl bg-[var(--ink)] text-white p-8 md:p-10 overflow-hidden group"
           >
-            {/* Cyan glow */}
-            <motion.div
-              animate={{
-                opacity: [0.6, 0.9, 0.6],
-                scale: [1, 1.06, 1],
-              }}
-              transition={{ duration: 8, ease: 'easeInOut', repeat: Infinity }}
-              className="absolute -top-20 -right-20 w-[420px] h-[420px] rounded-full"
+            {/* Cyan glow — static */}
+            <div
+              className="absolute -top-20 -right-20 w-[420px] h-[420px] rounded-full opacity-75"
               style={{
                 background:
                   'radial-gradient(circle, rgba(6,182,212,0.45), transparent 60%)',
@@ -111,9 +105,8 @@ export default function ValueSection() {
                   </span>
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-md">
-                  Zwölf Klienten pro Jahr. Persönliche Führung durch den
-                  Studio-Lead über die gesamte Strecke. Direkter Draht — ohne
-                  Umweg über Account-Manager oder Ticket-Warteschlangen.
+                  Zwölf Klienten pro Jahr. Direkter Draht, kein Account-Management,
+                  keine Ticket-Warteschlangen.
                 </p>
               </div>
 

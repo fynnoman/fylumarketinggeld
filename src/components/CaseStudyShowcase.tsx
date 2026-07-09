@@ -102,13 +102,9 @@ export default function CaseStudyShowcase() {
       className="relative py-24 md:py-32 bg-white overflow-hidden scroll-mt-24"
       aria-labelledby="case-showcase-heading"
     >
-      {/* Decorative grid + glow */}
+      {/* Static decorative grid + glow — no per-frame animation */}
       <div className="absolute inset-0 grid-background opacity-30 pointer-events-none" />
-      <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] bg-cyan-100 rounded-full blur-3xl opacity-30 pointer-events-none"
-        animate={{ scale: [1, 1.05, 1] }}
-        transition={{ duration: 8, ease: 'easeInOut', repeat: Infinity }}
-      />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] bg-cyan-100 rounded-full blur-3xl opacity-30 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
@@ -130,15 +126,14 @@ export default function CaseStudyShowcase() {
             id="case-showcase-heading"
             className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Häuser, die uns{' '}
+            Häuser, die{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              ihre Präsenz
-            </span>{' '}
-            anvertraut haben.
+              messbar wachsen
+            </span>
+            .
           </h2>
           <p className="mt-7 text-lg text-stone-600 leading-relaxed">
-            Vier Klienten. Vier Kontexte. Ein wiederkehrendes Muster — aus stiller
-            Präsenz wird eine Marke, die man von Weitem erkennt.
+            Vier Klienten. Vier Kontexte. Ein Ergebnis: sichtbar mehr Anfragen.
           </p>
         </motion.div>
 
@@ -153,15 +148,13 @@ export default function CaseStudyShowcase() {
         >
           <div className="relative rounded-3xl bg-gradient-to-br from-stone-900 via-stone-900 to-stone-800 p-1 shadow-2xl">
             <div className="relative rounded-[calc(1.5rem-4px)] bg-stone-950 overflow-hidden">
-              {/* Subtle animated gradient overlay */}
-              <motion.div
+              {/* Static gradient overlay */}
+              <div
                 className="absolute inset-0 opacity-30 pointer-events-none"
                 style={{
                   background:
                     'radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.25), transparent 50%), radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.15), transparent 50%)',
                 }}
-                animate={{ opacity: [0.25, 0.4, 0.25] }}
-                transition={{ duration: 6, ease: 'easeInOut', repeat: Infinity }}
               />
 
               {/* Top corner labels */}
