@@ -6,7 +6,7 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet ein Fylu-Auftritt im Saarland?',
-    a: 'Das Signature-Paket beginnt bei 3.490 €, das Atelier bei 6.490 €, das Maison bei 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Alle Beträge zzgl. USt.',
+    a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten.',
   },
   {
     q: 'Wie lange dauert ein Projekt?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Werde ich bei Google gefunden?',
-    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation ab 890 €, SEO Betreuung ab 490 €/Monat sowie Google Ads Setup ab 690 €.',
+    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation, SEO Betreuung sowie Google Ads Setup — Konditionen individuell im Vorgespräch.',
   },
   {
     q: 'Was passiert nach dem Launch?',
@@ -62,14 +62,12 @@ const packages = [
   {
     ordinal: 'I',
     name: 'Signature',
-    price: '3.490',
     positioning: 'Der stille Auftritt.',
     body: 'Bis zu fünf editorial gestaltete Seiten, technische SEO-Basis, 60 Tage Betreuung. Für Häuser, die still nach vorne treten wollen.',
   },
   {
     ordinal: 'II',
     name: 'Atelier',
-    price: '6.490',
     positioning: 'Handschrift statt Vorlage.',
     body: 'Bis zu zehn Seiten mit individueller Verkaufsarchitektur, lokales SEO-Framework, Google Business, 90 Tage Iteration.',
     highlight: true,
@@ -77,7 +75,6 @@ const packages = [
   {
     ordinal: 'III',
     name: 'Maison',
-    price: '9.190',
     positioning: 'Kein Auftritt. Ein Werk.',
     body: 'Umfassende, maßgefertigte Website mit Redaktionssystem, SEO-Foundation für Skalierung und sechs Monaten Studio-Begleitung.',
   },
@@ -111,7 +108,7 @@ export default function WebdesignSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Fylu Studio · Editorial Webdesign Saarland',
-            description: 'Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites ab 3.490 €. Zwölf Klienten pro Jahr.',
+            description: 'Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites. Zwölf Klienten pro Jahr.',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -194,7 +191,7 @@ export default function WebdesignSaarlandPage() {
             <p className="mt-8 text-lg md:text-[1.15rem] text-stone-600 leading-relaxed max-w-2xl">
               Fylu ist ein Boutique-Webdesign-Studio aus Saarlouis. Wir begleiten
               zwölf Häuser pro Jahr — im Saarland, bundesweit und international.
-              Editorial gestaltete Auftritte ab 3.490 €. Kein Template, kein Fließband.
+              Editorial gestaltete Auftritte mit Substanz. Kein Template, kein Fließband.
             </p>
           </FadeInSection>
 
@@ -329,8 +326,8 @@ export default function WebdesignSaarlandPage() {
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Preise sind Ausgangspunkte, keine Preisschilder. Der endgültige
-                Rahmen entsteht im Vorgespräch.
+                Drei Zugänge, ein Anspruch. Der endgültige Rahmen entsteht
+                individuell im Vorgespräch.
               </p>
             </div>
           </FadeInSection>
@@ -362,15 +359,6 @@ export default function WebdesignSaarlandPage() {
                     {pkg.body}
                   </p>
                   <div className={`mt-auto pt-6 border-t border-dashed ${pkg.highlight ? 'border-white/20' : 'border-stone-200'}`}>
-                    <div className="flex items-baseline gap-2 mb-4">
-                      <span className={`pricing-from ${pkg.highlight ? 'text-stone-300' : ''}`}>ab</span>
-                      <span className={`pricing-numeral text-4xl ${pkg.highlight ? 'text-white' : 'text-[var(--ink)]'}`}>
-                        {pkg.price}
-                      </span>
-                      <span className={`font-display italic text-xl ${pkg.highlight ? 'text-cyan-300' : 'text-[var(--cyan-deep)]'}`}>
-                        €
-                      </span>
-                    </div>
                     <Link
                       href="/buchen"
                       className={`inline-flex w-full items-center justify-center gap-2 px-4 py-3 rounded-full text-[13px] font-semibold transition-all duration-300 ${

@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import CaseStudyShowcase from '@/components/CaseStudyShowcase';
 import ValueSection from '@/components/ValueSection';
-import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';

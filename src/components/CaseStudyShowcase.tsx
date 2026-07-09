@@ -45,11 +45,10 @@ const cases: CaseStudy[] = [
     logo: '/logos/taskey.webp',
     industry: 'SaaS-Haus',
     location: 'Software für Gebäudereiniger',
-    metric: '0',
-    metricUnit: ' €',
-    metricLabel: 'Startkapital · voll skaliert',
+    metric: 'Bootstrap',
+    metricLabel: 'ohne Startkapital · voll skaliert',
     story:
-      'Ein Software-Haus ohne klassisches Startkapital, das eine der härtesten Vertriebsdisziplinen bespielt — Gebäudereiniger von einer neuen Software überzeugen. Seit Ads-Setup und Premium-Auftritt skaliert Taskey messbar auf Augenhöhe zu etablierten Wettbewerbern.',
+      'Ein Software-Haus, das eine der härtesten Vertriebsdisziplinen bespielt: Gebäudereiniger von einer neuen Software überzeugen. Seit Ads-Setup und Premium-Auftritt skaliert Taskey messbar auf Augenhöhe zu etablierten Wettbewerbern.',
     services: ['Website', 'Google Ads', 'Marken-Architektur'],
   },
   {
@@ -99,7 +98,8 @@ export default function CaseStudyShowcase() {
   return (
     <section
       ref={ref}
-      className="relative py-24 md:py-32 bg-white overflow-hidden"
+      id="klienten"
+      className="relative py-24 md:py-32 bg-white overflow-hidden scroll-mt-24"
       aria-labelledby="case-showcase-heading"
     >
       {/* Decorative grid + glow */}
@@ -123,7 +123,7 @@ export default function CaseStudyShowcase() {
               §II
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
-              Klienten · Kapitel
+              Klienten
             </span>
           </div>
           <h2
@@ -172,7 +172,7 @@ export default function CaseStudyShowcase() {
                     <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" />
                   </span>
                   <span className="text-cyan-400 text-xs font-semibold uppercase tracking-[0.28em]">
-                    Kapitel {String(index + 1).padStart(2, '0')} · {String(cases.length).padStart(2, '0')}
+                    {String(index + 1).padStart(2, '0')} · {String(cases.length).padStart(2, '0')}
                   </span>
                 </div>
                 <div className="text-stone-500 text-[11px] font-mono uppercase tracking-[0.22em] hidden md:block">

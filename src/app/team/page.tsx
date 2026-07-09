@@ -33,63 +33,36 @@ type Member = {
 const team: Member[] = [
   {
     name: 'Fynn Schulz',
-    role: 'Studio-Lead & Kreativleitung',
-    short: 'Creative Direction · Klientenführung',
-    bio: 'Gründer und Studio-Lead von Fylu. Verantwortet die kreative Richtung jedes Projekts und die direkte Zusammenarbeit mit unseren Klienten — vom Vorgespräch bis zum Live-Gang. Über fünf Jahre Handwerk in editorialem Webdesign, Marken-Aufbau und lokalem Marketing im Saarland.',
+    role: 'Studio-Lead',
+    short: 'Strategie · Design · Umsetzung · Sichtbarkeit',
+    bio: 'Gründer und Studio-Lead von Fylu. Als Ein-Mann-Studio verantworte ich jedes Projekt von Anfang bis Ende: Strategie und Konzept, Design, technische Umsetzung in Next.js, lokales SEO und Google Ads. Sie sprechen bei Fylu direkt mit der Person, die Ihre Website entwirft, baut und sichtbar macht. Über fünf Jahre Handwerk in Webdesign, Marken-Aufbau und lokalem Marketing im Saarland.',
     image: '/64bb3620-f0df-4887-a72b-6f4e69750fd8.webp',
     imagePosition: 'object-[50%_25%]',
     initials: 'FS',
-    focus: ['Creative Direction', 'Kundenführung', 'Brand-Story'],
-  },
-  {
-    name: 'Yukio Sato',
-    role: 'Head of Strategy',
-    short: 'Marktstrategie · Analyse',
-    bio: 'Verantwortet Markt- und Wettbewerbsanalysen, Positionierungs-Strategie und das datenbasierte Fundament unserer Projekte. Übersetzt Branchen- und Suchverhalten in klare strategische Empfehlungen, bevor das erste Layout entsteht.',
-    image: '/team/yukio-sato.png',
-    initials: 'YS',
-    focus: ['Marktanalyse', 'Positionierung', 'Conversion-Audit'],
-  },
-  {
-    name: 'Julian Stosse',
-    role: 'Technische Leitung',
-    short: 'Lead Developer · Performance',
-    bio: 'Verantwortet die technische Substanz unserer Projekte: Next.js-Architektur, sauberer Code, höchste Core-Web-Vitals-Werte. Sorgt dafür, dass jede Website nicht nur gut aussieht, sondern in der Google-Suche, auf dem Smartphone und unter Last spürbar überlegen ist.',
-    image: '/team/julian-stosse-v2.png',
-    initials: 'JS',
-    focus: ['Next.js & React', 'Core Web Vitals', 'Technisches SEO'],
-  },
-  {
-    name: 'Noelle Dohr',
-    role: 'Head of Marketing',
-    short: 'SEO · Performance Marketing',
-    bio: 'Verantwortet die Sichtbarkeit unserer Kunden — von lokaler SEO im Saarland bis zu skalierten Google-Ads-Kampagnen. Konzipiert Content-Strategien, betreut Reporting und sorgt dafür, dass aus Traffic messbare Anfragen werden.',
-    image: '/team/noelle-dohr.png',
-    initials: 'ND',
-    focus: ['Lokale SEO', 'Google Ads', 'Content-Strategie'],
+    focus: ['Strategie & Konzept', 'Design & Realisation', 'Lokales SEO', 'Google Ads'],
   },
 ];
 
 const principles = [
   {
     kicker: '01',
-    title: 'Ein Team. Ein Verantwortlicher.',
-    body: 'Bei uns gibt es keinen Account-Manager, der zwischen Ihnen und der eigentlichen Arbeit sitzt. Sie sprechen direkt mit den Menschen, die Ihre Website konzipieren, gestalten, bauen und sichtbar machen. Entscheidungen fallen in Stunden, nicht in Wochen.',
+    title: 'Ein Ansprechpartner. Ohne Umwege.',
+    body: 'Bei Fylu gibt es keinen Account-Manager, der zwischen Ihnen und der eigentlichen Arbeit sitzt. Sie sprechen direkt mit der Person, die Ihre Website konzipiert, gestaltet, baut und sichtbar macht. Entscheidungen fallen in Stunden, nicht in Wochen.',
   },
   {
     kicker: '02',
     title: 'Strategie vor Pixel.',
-    body: 'Jedes Projekt beginnt mit einer gemeinsamen Strategie-Sitzung. Fynn führt das Gespräch und skizziert die kreative Richtung, Yukio liefert Markt- und Wettbewerbsanalyse, Noelle bringt die SEO-Perspektive ein, Julian prüft technische Machbarkeit. Bevor irgendjemand ein Tool öffnet, ist klar, was die Website leisten muss.',
+    body: 'Jedes Projekt beginnt mit einem Strategiegespräch. Bevor ein Tool geöffnet wird, ist klar, was die Website leisten soll: Zielgruppe, Positionierung, Conversion-Pfad und SEO-Fundament. Erst wenn das Fundament steht, entsteht Design.',
   },
   {
     kicker: '03',
     title: 'Werkstatt, nicht Agentur.',
-    body: 'Wir arbeiten wie ein Atelier: kleine, eingespielte Crew, kurze Wege, hohe Substanz. Statt zwanzig parallele Projekte zu jonglieren, betreuen wir wenige Kunden gleichzeitig — dafür mit voller Aufmerksamkeit. So entstehen Websites, die nicht nach Vorlage aussehen.',
+    body: 'Ich arbeite wie ein Atelier: klein, konzentriert, mit kurzen Wegen. Statt zwanzig parallele Projekte zu jonglieren, betreue ich wenige Kunden gleichzeitig, dafür mit voller Aufmerksamkeit. So entstehen Websites, die nicht nach Vorlage aussehen.',
   },
   {
     kicker: '04',
     title: 'Ergebnis vor Aufwand.',
-    body: 'Eine Website ist kein Selbstzweck. Wir messen unseren Erfolg an Anfragen, Rankings und Umsatz unserer Kunden — nicht an gestalterischer Selbstverliebtheit. Deshalb iterieren wir nach dem Launch weiter, prüfen, optimieren. 90 Tage lang, ohne Aufpreis.',
+    body: 'Eine Website ist kein Selbstzweck. Ich messe meinen Erfolg an Anfragen, Rankings und Umsatz meiner Kunden, nicht an gestalterischer Selbstverliebtheit. Deshalb iteriere ich nach dem Launch weiter, prüfe, optimiere. 90 Tage lang.',
   },
 ];
 
@@ -168,7 +141,7 @@ export default function TeamPage() {
               </div>
 
               <h1 className="text-[2.6rem] leading-[1.04] sm:text-5xl md:text-[3.8rem] lg:text-[4.6rem] lg:leading-[1] font-semibold tracking-[-0.035em]">
-                Vier Menschen.{' '}
+                Eine Person.{' '}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                   Ein Studio.
                 </span>{' '}
@@ -176,10 +149,10 @@ export default function TeamPage() {
               </h1>
 
               <p className="mt-9 text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Hinter Fylu steht keine Agentur mit Karteileichen-Mitarbeitern und
-                outgesourcter Produktion. Sondern ein eingespieltes Studio aus dem
-                Saarland — vier Spezialisten für Strategie, Design, Code und
-                Sichtbarkeit, die alle Projekte gemeinsam tragen.
+                Hinter Fylu steht keine Agentur mit Account-Manager-Kette und
+                outgesourcter Produktion. Sondern ein Ein-Personen-Studio aus
+                Saarlouis: Strategie, Design, Code und Sichtbarkeit aus einer
+                Hand, für Häuser mit Substanz.
               </p>
 
               <div className="mt-12 flex items-center justify-center gap-1.5 text-[11px] uppercase tracking-[0.22em] text-stone-400">
@@ -197,21 +170,21 @@ export default function TeamPage() {
             <div className="max-w-6xl mx-auto">
               <div className="mb-16 md:mb-20 text-center">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--cyan-deep)]">
-                  Die Crew
+                  Das Studio
                 </span>
                 <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] max-w-2xl mx-auto leading-[1.1]">
-                  Eingespielt. Greifbar.{' '}
+                  Persönlich. Greifbar.{' '}
                   <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                     Verantwortlich.
                   </span>
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-10 lg:gap-8">
+              <div className="flex justify-center">
                 {team.map((m, i) => (
                   <article
                     key={m.name}
-                    className="group flex flex-col items-center text-center"
+                    className="group flex flex-col items-center text-center max-w-md"
                   >
                     {/* Circular portrait */}
                     <div className="relative">
@@ -285,7 +258,7 @@ export default function TeamPage() {
             <div className="max-w-5xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-16">
               <div className="lg:col-span-4">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--cyan-deep)]">
-                  Unsere Zusammenarbeit
+                  Zusammenarbeit
                 </span>
                 <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]">
                   Wie wir{' '}
@@ -295,9 +268,9 @@ export default function TeamPage() {
                   arbeiten.
                 </h2>
                 <p className="mt-6 text-stone-500 leading-relaxed text-[15px]">
-                  Vier Spezialgebiete, eine gemeinsame Linie. Wir glauben nicht
-                  an Hierarchien um ihrer selbst willen — sondern an klare
-                  Verantwortlichkeiten, kurze Wege und ehrliche Kritik im Team.
+                  Als Ein-Personen-Studio arbeite ich mit klarer Struktur:
+                  direkter Kontakt, kurze Wege und ehrliches Feedback in jeder
+                  Projektphase.
                 </p>
               </div>
 
@@ -350,20 +323,20 @@ export default function TeamPage() {
                   {
                     week: 'Woche 1',
                     title: 'Strategie & Konzept',
-                    lead: 'Yukio & Noelle',
-                    body: 'Gemeinsames Strategiegespräch, Wettbewerbs- und SEO-Analyse, Positionierungs-Statement, Conversion-Pfade. Sie wissen am Ende der Woche, worauf Ihre Website zielt.',
+                    lead: 'Kickoff mit Fynn',
+                    body: 'Strategiegespräch, Wettbewerbs- und SEO-Analyse, Positionierungs-Statement, Conversion-Pfade. Sie wissen am Ende der Woche, worauf Ihre Website zielt.',
                   },
                   {
                     week: 'Woche 2 – 4',
                     title: 'Design & Realisation',
-                    lead: 'Fynn & Julian',
+                    lead: 'Umsetzung im Studio',
                     body: 'Art Direction, Wireframes, Premium-Design, technische Umsetzung in Next.js. Sie sehen den Fortschritt in einer Preview-Umgebung und geben strukturiertes Feedback in zwei Runden.',
                   },
                   {
                     week: 'Woche 5 +',
                     title: 'Launch & Sichtbarkeit',
-                    lead: 'Gesamtes Team',
-                    body: 'Live-Gang, lokale SEO-Schärfung, Google-Unternehmensprofil, Performance-Monitoring. 90 Tage iterative Optimierung — solange, bis die Anfragen messbar steigen.',
+                    lead: 'Persönlich begleitet',
+                    body: 'Live-Gang, lokale SEO-Schärfung, Google-Unternehmensprofil, Performance-Monitoring. 90 Tage iterative Optimierung, solange, bis die Anfragen messbar steigen.',
                   },
                 ].map((phase) => (
                   <div
@@ -422,9 +395,9 @@ export default function TeamPage() {
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 text-lg leading-relaxed max-w-xl mx-auto">
-                15 Minuten Strategiegespräch — Sie reden direkt mit Fynn. Kein
-                Verkaufsdruck, keine Standard-Slides. Wenn es passt, ziehen wir
-                den Rest des Teams hinzu.
+                15 Minuten Strategiegespräch, direkt mit Fynn. Kein
+                Verkaufsdruck, keine Standard-Slides. Wir sprechen konkret über
+                Ihr Vorhaben und wie ein Projekt mit Fylu für Sie aussieht.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
                 <Link

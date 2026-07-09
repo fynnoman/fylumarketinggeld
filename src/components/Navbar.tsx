@@ -19,8 +19,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const navLinks = [
-    { label: 'Pakete', href: '/#pakete' },
-    { label: 'Klienten', href: '/#about' },
+    { label: 'Klienten', href: '/#klienten' },
     { label: 'Prozess', href: '/methodik' },
     { label: 'Studio', href: '/team' },
   ];

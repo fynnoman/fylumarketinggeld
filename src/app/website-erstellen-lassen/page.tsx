@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet eine Website bei Fylu?',
-		a: 'Signature ab 3.490 €, Atelier ab 6.490 €, Maison ab 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Für einen schlanken Refresh der bestehenden Präsenz: ab 890 €.',
+		a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten. Auch ein schlanker Refresh der bestehenden Präsenz ist möglich.',
 	},
 	{
 		q: 'Wie lange dauert die Erstellung?',
@@ -100,7 +100,7 @@ export default function WebsiteErstellenLassenPage() {
 							bauen wir Websites mit Handschrift — für Selbstständige,{' '}
 							<Link href="/webdesign-handwerk" className="text-cyan-700 font-medium hover:underline underline-offset-4">Handwerker</Link>,
 							Kanzleien, Praxen und Dienstleister, die einen Auftritt mit
-							Substanz suchen. Ab 3.490 €.
+							Substanz suchen.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.24}>

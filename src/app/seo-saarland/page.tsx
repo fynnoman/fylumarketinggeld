@@ -6,7 +6,7 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet SEO im Saarland bei Fylu?',
-    a: 'Google Business Optimierung ab 290 € einmalig. SEO Foundation ab 890 € einmalig. SEO Betreuung ab 490 € pro Monat. Diese Preise sind Ausgangspunkte für den lokalen Rahmen im Saarland — Wettbewerbsdichte und Zielgruppe fließen in die Kalkulation ein.',
+    a: 'Google Business Optimierung, SEO Foundation und SEO Betreuung sind einzeln buchbar. Konditionen kalibrieren wir individuell im Vorgespräch — Wettbewerbsdichte und Zielgruppe fließen in den Rahmen ein.',
   },
   {
     q: 'Wie lange dauert es, bis Ergebnisse sichtbar sind?',
@@ -34,22 +34,19 @@ const modules = [
   {
     ordinal: 'I',
     label: 'Foundation',
-    price: '890 €',
     cadence: 'einmalig',
     body: 'Keyword-Analyse, technisches Audit, OnPage-Optimierung, Schema-Struktur. Das Fundament für organische Reichweite.',
   },
   {
     ordinal: 'II',
     label: 'Google Business',
-    price: '290 €',
     cadence: 'einmalig',
     body: 'Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache — sauber und komplett.',
   },
   {
     ordinal: 'III',
     label: 'Betreuung',
-    price: '490 €',
-    cadence: 'pro Monat',
+    cadence: 'monatlich',
     body: 'Fortlaufende Optimierung, Content-Feinschliff, Reporting — damit Sichtbarkeit nicht wieder abbricht.',
   },
 ];
@@ -79,7 +76,7 @@ export default function SeoSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Fylu Studio · SEO Saarland',
-            description: 'SEO als Erweiterung Ihrer Fylu-Website. Foundation ab 890 €, Google Business ab 290 €, Betreuung ab 490 € pro Monat. Geführt aus Saarlouis.',
+            description: 'SEO als Erweiterung Ihrer Fylu-Website. Foundation, Google Business und Betreuung — geführt aus Saarlouis.',
             url: 'https://www.fylumarketing.de/seo-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -169,7 +166,7 @@ export default function SeoSaarlandPage() {
                 href="#seo-module"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                <span>Preise ansehen</span>
+                <span>Module ansehen</span>
               </Link>
             </div>
           </FadeInSection>
@@ -252,16 +249,6 @@ export default function SeoSaarlandPage() {
                     {m.body}
                   </p>
                   <div className="mt-auto pt-6 border-t border-dashed border-stone-200">
-                    <div className="flex items-baseline gap-2 mb-4">
-                      <span className="pricing-from">ab</span>
-                      <span className="pricing-numeral text-4xl text-[var(--ink)]">
-                        {m.price.replace(' €', '')}
-                      </span>
-                      <span className="font-display italic text-xl text-[var(--cyan-deep)]">€</span>
-                      {m.cadence === 'pro Monat' && (
-                        <span className="ml-1 text-[11px] uppercase tracking-[0.18em] text-stone-500">/ Monat</span>
-                      )}
-                    </div>
                     <span className="text-[10px] uppercase tracking-[0.22em] text-stone-500">
                       {m.cadence}
                     </span>
@@ -271,7 +258,7 @@ export default function SeoSaarlandPage() {
             ))}
           </div>
           <p className="mt-10 text-center text-[11px] uppercase tracking-[0.22em] text-stone-500">
-            Alle Preise zzgl. USt. · Ausgangspunkte, keine Preisschilder
+            Konditionen individuell im Vorgespräch
           </p>
         </div>
       </section>

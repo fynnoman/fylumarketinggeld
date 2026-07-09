@@ -6,11 +6,11 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet Google Ads bei Fylu?',
-    a: 'Setup ab 690 € einmalig (Konto- und Kampagnenaufbau, Keyword-Recherche, Conversion-Tracking). Betreuung ab 390 € pro Monat (wöchentliche Optimierung, A/B-Tests, klares Monatsreporting). Werbebudget zusätzlich, unabhängig gesteuert.',
+    a: 'Setup (Konto- und Kampagnenaufbau, Keyword-Recherche, Conversion-Tracking) und Betreuung (wöchentliche Optimierung, A/B-Tests, klares Monatsreporting) sind einzeln buchbar. Werbebudget zusätzlich, unabhängig gesteuert. Konditionen individuell im Vorgespräch.',
   },
   {
     q: 'Wie viel Werbebudget brauche ich?',
-    a: 'Das hängt von Region, Wettbewerb und Zielkanälen ab. Für lokale Saarland-Kampagnen empfehlen wir typischerweise ein Startbudget zwischen 500 und 2.000 € pro Monat — den konkreten Rahmen besprechen wir im Vorgespräch, damit von Anfang an klare Erwartungen stehen.',
+    a: 'Das hängt von Region, Wettbewerb und Zielkanälen ab. Den konkreten Rahmen besprechen wir im Vorgespräch, damit von Anfang an klare Erwartungen stehen.',
   },
   {
     q: 'Wann sehe ich Ergebnisse?',
@@ -34,15 +34,13 @@ const modules = [
   {
     ordinal: 'I',
     label: 'Setup',
-    price: '690',
     cadence: 'einmalig',
     body: 'Konto- und Kampagnenaufbau, Keyword-Recherche, Struktur, Conversion-Tracking. Bereit zum Start binnen weniger Tage.',
   },
   {
     ordinal: 'II',
     label: 'Betreuung',
-    price: '390',
-    cadence: 'pro Monat',
+    cadence: 'monatlich',
     body: 'Wöchentliche Optimierung, A/B-Tests, klares Monatsreporting. Werbebudget zusätzlich, unabhängig gesteuert.',
   },
 ];
@@ -72,7 +70,7 @@ export default function GoogleAdsSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Fylu Studio · Google Ads Saarland',
-            description: 'Google Ads als Erweiterung Ihrer Fylu-Website. Setup ab 690 €, Betreuung ab 390 € pro Monat.',
+            description: 'Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — geführt aus Saarlouis.',
             url: 'https://www.fylumarketing.de/google-ads-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -161,7 +159,7 @@ export default function GoogleAdsSaarlandPage() {
                 href="#ads-module"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                <span>Preise ansehen</span>
+                <span>Module ansehen</span>
               </Link>
             </div>
           </FadeInSection>
@@ -246,16 +244,6 @@ export default function GoogleAdsSaarlandPage() {
                     {m.body}
                   </p>
                   <div className="mt-auto pt-6 border-t border-dashed border-stone-200">
-                    <div className="flex items-baseline gap-2 mb-4">
-                      <span className="pricing-from">ab</span>
-                      <span className="pricing-numeral text-4xl text-[var(--ink)]">
-                        {m.price}
-                      </span>
-                      <span className="font-display italic text-xl text-[var(--cyan-deep)]">€</span>
-                      {m.cadence === 'pro Monat' && (
-                        <span className="ml-1 text-[11px] uppercase tracking-[0.18em] text-stone-500">/ Monat</span>
-                      )}
-                    </div>
                     <span className="text-[10px] uppercase tracking-[0.22em] text-stone-500">
                       {m.cadence}
                     </span>
@@ -265,7 +253,7 @@ export default function GoogleAdsSaarlandPage() {
             ))}
           </div>
           <p className="mt-10 text-center text-[11px] uppercase tracking-[0.22em] text-stone-500">
-            Alle Preise zzgl. USt. · Werbebudget zusätzlich · Ausgangspunkte, keine Preisschilder
+            Werbebudget zusätzlich · Konditionen individuell im Vorgespräch
           </p>
         </div>
       </section>

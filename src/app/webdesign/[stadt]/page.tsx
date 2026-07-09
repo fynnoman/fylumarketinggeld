@@ -14,7 +14,7 @@ const SITE = "https://www.fylumarketing.de";
 const faqs = (city: string) => [
   {
     q: `Was kostet eine Fylu-Website in ${city}?`,
-    a: "Signature ab 3.490 €, Atelier ab 6.490 €, Maison ab 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Alle Beträge zzgl. USt.",
+    a: "Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten.",
   },
   {
     q: "Wie lange dauert ein Projekt?",
@@ -22,7 +22,7 @@ const faqs = (city: string) => [
   },
   {
     q: "Werde ich bei Google gefunden?",
-    a: "Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation ab 890 €, SEO Betreuung ab 490 €/Monat sowie Google Ads Setup ab 690 €.",
+    a: "Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation, SEO Betreuung sowie Google Ads Setup — Konditionen individuell im Vorgespräch.",
   },
   {
     q: "Ist die Website mobil optimiert?",
@@ -175,7 +175,6 @@ export default async function RegionPage({
                 closes: "16:00",
               },
             ],
-            currenciesAccepted: "EUR",
             areaServed: [
               { "@type": "City", name: region.city },
               ...region.nearbyCities.map((c) => ({ "@type": "City", name: c })),

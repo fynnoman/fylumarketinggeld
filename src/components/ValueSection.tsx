@@ -165,7 +165,7 @@ export default function ValueSection() {
                 Kuratierte Konditionen
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Jedes Projekt wird persönlich kalkuliert. Der Ausgangspreis steht — der Umfang folgt der Substanz, nicht dem Formular.
+                Jedes Projekt wird persönlich kalkuliert. Der Rahmen entsteht im Vorgespräch — der Umfang folgt der Substanz, nicht dem Formular.
               </p>
             </div>
           </motion.div>

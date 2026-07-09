@@ -32,7 +32,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
-  description: "Webdesign, SEO und Google Ads aus Saarlouis. Wir bauen Ihre Website und sorgen dafür, dass Google Sie findet. Fixpreis, persönlich betreut, in 14 Tagen live.",
+  description: "Webdesign, SEO und Google Ads aus Saarlouis. Wir bauen Ihre Website und sorgen dafür, dass Google Sie findet. Persönlich betreut, in 14 Tagen live.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Studio Saarlouis",
   publisher: "Fylu",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
-    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, mit klarer Preisstruktur und persönlicher Betreuung.",
+    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, persönlich betreut.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Studio",
     locale: "de_DE",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
-    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, Fixpreis, persönlich betreut.",
+    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, persönlich betreut.",
     images: ["/hero-background.webp"],
   },
   keywords: [
@@ -189,7 +189,6 @@ export default function RootLayout({
                 "AI-Integration",
                 "IT-Dienstleistung",
               ],
-              currenciesAccepted: "EUR",
               paymentAccepted: ["Überweisung", "PayPal", "Kreditkarte"],
               areaServed: [
                 { "@type": "State", name: "Saarland" },
@@ -258,211 +257,6 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/fynn-schulz/",
                 "https://g.page/fylumarketing",
               ],
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Fylu Studio · Pakete und Einzelleistungen",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    name: "Signature — Editorial Website",
-                    description:
-                      "Bis zu fünf editorial gestaltete Seiten, mobile-first Typografie, technische SEO-Basis, 60 Tage Studio-Begleitung. Der stille Auftritt.",
-                    price: "3490",
-                    priceCurrency: "EUR",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      price: "3490",
-                      priceCurrency: "EUR",
-                      valueAddedTaxIncluded: false,
-                    },
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/buchen",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Signature Website",
-                      serviceType: "Editorial Webdesign",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Atelier — Verkaufsarchitektur",
-                    description:
-                      "Bis zu zehn Seiten mit individueller Verkaufsarchitektur, lokales SEO-Framework, Google-Business-Präsenz, 90 Tage Studio-Begleitung. Handschrift statt Vorlage.",
-                    price: "6490",
-                    priceCurrency: "EUR",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      price: "6490",
-                      priceCurrency: "EUR",
-                      valueAddedTaxIncluded: false,
-                    },
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/buchen",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Atelier Website",
-                      serviceType: "Editorial Webdesign",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Maison — Werk",
-                    description:
-                      "Umfassende maßgefertigte Website mit individuellen Interaktionen, Redaktions- und Content-System, SEO-Foundation für Skalierung, sechs Monate Studio-Begleitung. Kein Auftritt — ein Werk.",
-                    price: "9190",
-                    priceCurrency: "EUR",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      price: "9190",
-                      priceCurrency: "EUR",
-                      valueAddedTaxIncluded: false,
-                    },
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/buchen",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Maison Website",
-                      serviceType: "Editorial Webdesign",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Google Business Optimierung",
-                    description:
-                      "Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache — sauber und komplett.",
-                    price: "290",
-                    priceCurrency: "EUR",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/seo-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Google Business Profil Setup",
-                      serviceType: "Local SEO",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "SEO Foundation",
-                    description:
-                      "Keyword-Analyse, technisches SEO-Audit, OnPage-Optimierung, Schema-Struktur. Das Fundament für organische Reichweite.",
-                    price: "890",
-                    priceCurrency: "EUR",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/seo-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "SEO Foundation",
-                      serviceType: "SEO",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "SEO Betreuung",
-                    description:
-                      "Fortlaufende Optimierung, monatliches Reporting, Content-Feinschliff — damit Sichtbarkeit nicht wieder abbricht.",
-                    price: "490",
-                    priceCurrency: "EUR",
-                    priceSpecification: {
-                      "@type": "UnitPriceSpecification",
-                      price: "490",
-                      priceCurrency: "EUR",
-                      referenceQuantity: {
-                        "@type": "QuantitativeValue",
-                        value: "1",
-                        unitCode: "MON",
-                      },
-                    },
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/seo-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "SEO Betreuung",
-                      serviceType: "SEO",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Google Ads Setup",
-                    description:
-                      "Konto- und Kampagnenaufbau, Keyword-Recherche, Conversion-Tracking. Bereit zum Start binnen weniger Tage.",
-                    price: "690",
-                    priceCurrency: "EUR",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/google-ads-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Google Ads Setup",
-                      serviceType: "SEA",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Google Ads Betreuung",
-                    description:
-                      "Wöchentliche Optimierung, A/B-Tests, klares Monatsreporting. Werbebudget zusätzlich, unabhängig gesteuert.",
-                    price: "390",
-                    priceCurrency: "EUR",
-                    priceSpecification: {
-                      "@type": "UnitPriceSpecification",
-                      price: "390",
-                      priceCurrency: "EUR",
-                      referenceQuantity: {
-                        "@type": "QuantitativeValue",
-                        value: "1",
-                        unitCode: "MON",
-                      },
-                    },
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/google-ads-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Google Ads Betreuung",
-                      serviceType: "SEA",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Website Refresh",
-                    description:
-                      "Design- und Text-Refresh Ihrer bestehenden Website — für Häuser, die noch keinen kompletten Neubau brauchen.",
-                    price: "890",
-                    priceCurrency: "EUR",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/webdesign-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Website Refresh",
-                      serviceType: "Editorial Webdesign",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Software & Web-App",
-                    description:
-                      "Maßgeschneiderte Web-Apps, interne Systeme, ERP- und CRM-Vorhaben. Rahmen und Preis nach persönlicher Discovery-Phase.",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/software-saarland",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Softwareentwicklung",
-                      serviceType: "Software Development",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "App-Entwicklung",
-                    description:
-                      "Web-Apps, PWAs und native iOS/Android-Apps mit React Native. Preis nach persönlicher Discovery-Phase.",
-                    availability: "https://schema.org/InStock",
-                    url: "https://www.fylumarketing.de/app-entwickeln-lassen",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "App-Entwicklung",
-                      serviceType: "Mobile Application Development",
-                    },
-                  },
-                ],
-              },
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5.0",
@@ -559,7 +353,7 @@ export default function RootLayout({
                   name: "Was kostet eine Fylu-Website?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Der Ausgangspreis für das Signature-Paket liegt bei 3.490 €. Atelier beginnt bei 6.490 €, Maison bei 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Alle Preise verstehen sich zzgl. USt.",
+                    text: "Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Konditionen kommunizieren wir transparent im Vorgespräch — keine versteckten Kosten, keine Stundensatz-Abrechnung.",
                   },
                 },
                 {
@@ -583,7 +377,7 @@ export default function RootLayout({
                   name: "Gibt es auch kleinere Pakete für SEO oder Google Ads?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Ja. Google Business Optimierung ab 290 €, SEO Foundation ab 890 €, SEO Betreuung ab 490 € pro Monat, Google Ads Setup ab 690 €, Google Ads Betreuung ab 390 € pro Monat, Website Refresh ab 890 €. Diese Pakete sind als Erweiterungen der Website gedacht oder einzeln buchbar.",
+                    text: "Ja. Google Business Optimierung, SEO Foundation, SEO Betreuung, Google Ads Setup, Google Ads Betreuung und Website Refresh sind als Erweiterungen der Website gedacht oder einzeln buchbar. Konditionen individuell im Vorgespräch.",
                   },
                 },
                 {

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Ads Saarland · Fylu Studio · Setup ab 690 € | Betreuung ab 390 €/Monat",
+  title: "Google Ads Saarland · Fylu Studio · Setup und Betreuung",
   description:
-    "Google Ads als Erweiterung Ihrer Fylu-Website. Setup ab 690 €, Betreuung ab 390 € pro Monat — kuratiert aus einem Boutique-Studio in Saarlouis.",
+    "Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — kuratiert aus einem Boutique-Studio in Saarlouis.",
   alternates: {
     canonical: "/google-ads-saarland",
   },
   openGraph: {
     title: "Google Ads Saarland · Editorial Studio | Fylu",
     description:
-      "Google Ads Setup ab 690 €, Betreuung ab 390 € / Monat. Erweiterung Ihrer Fylu-Website.",
+      "Google Ads Setup und laufende Betreuung. Erweiterung Ihrer Fylu-Website.",
     url: "https://www.fylumarketing.de/google-ads-saarland",
     siteName: "Fylu Studio",
     locale: "de_DE",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Google Ads Saarland · Editorial Studio | Fylu",
-    description: "Setup ab 690 €, Betreuung ab 390 € / Monat.",
+    description: "Setup und laufende Betreuung — aus Saarlouis.",
     images: ["/hero-background.webp"],
   },
 };

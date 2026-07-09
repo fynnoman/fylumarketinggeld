@@ -8,7 +8,7 @@ const smoothEase = [0.22, 1, 0.36, 1] as const;
 const faqs = [
 	{
 		q: 'Was kostet eine Fylu-Website für Handwerker?',
-		a: 'Signature ab 3.490 €, Atelier ab 6.490 €, Maison ab 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch. Für einen schlanken Refresh Ihrer bestehenden Website: ab 890 €.',
+		a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten. Auch ein schlanker Refresh einer bestehenden Website ist möglich.',
 	},
 	{
 		q: 'Ich habe keine Zeit, mich zu kümmern — wie läuft das ab?',
@@ -126,7 +126,7 @@ export default function WebdesignHandwerkPage() {
 							Ein Fylu-Auftritt für Ihren Meisterbetrieb. Editorial gestaltet,
 							mobile-first, technisch sauber. Für Maler, Elektriker,
 							SHK-Betriebe, Dachdecker, Schreiner, Fliesenleger, Gartenbauer und
-							alle Gewerke, die einen Auftritt mit Substanz suchen — ab 3.490 €.
+							alle Gewerke, die einen Auftritt mit Substanz suchen.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.24}>

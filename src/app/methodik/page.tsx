@@ -119,7 +119,6 @@ export default function MethodikPage() {
     name: 'Das Fylu Sichtbarkeits-System – 5 Schritte zur Marktführerschaft im Saarland',
     description:
       'Bewährtes 5-Schritte-System für Webdesign, lokales SEO und Google Ads im Saarland. Vom Marktscan zur skalierbaren Anfragenmaschine in 90 Tagen.',
-    estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: '4500' },
     totalTime: 'P90D',
     step: steps.map((s, i) => ({
       '@type': 'HowToStep',

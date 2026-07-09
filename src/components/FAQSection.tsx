@@ -5,36 +5,28 @@ import { useRef, useState } from 'react';
 
 const faqs = [
   {
-    q: 'Was kostet eine Fylu-Website?',
-    a: 'Der Ausgangspreis für das Signature-Paket liegt bei 3.490 €. Das Atelier-Paket startet bei 6.490 €, das Maison-Paket bei 9.190 €. Diese Preise sind Ausgangspunkte — der endgültige Rahmen entsteht im Vorgespräch, in dem wir Substanz und Anspruch Ihres Vorhabens verstehen. Alle Preise verstehen sich zzgl. USt.',
+    q: 'Wie läuft ein Projekt mit Fylu ab?',
+    a: 'Alles beginnt mit einem kurzen Vorgespräch. Wir hören zu, klären Ziel, Zielgruppe und Umfang, und legen dann einen konkreten Zeitplan mit klaren Meilensteinen fest. Vom Briefing bis zum Live-Gang bleibt ein direkter Ansprechpartner an Ihrer Seite.',
   },
   {
-    q: 'Warum nur zwölf Klienten pro Jahr?',
-    a: 'Weniger Projekte pro Jahr bedeuten tiefere Verantwortung pro Projekt. Ein Fylu-Auftritt entsteht in Handschrift, nicht am Fließband. Der bewusst kleine Kalender ist keine Marketing-Aussage, sondern eine Werkstatt-Entscheidung — sie schützt Qualität, Aufmerksamkeit und Erreichbarkeit.',
+    q: 'Wie lange dauert es, bis meine Website live ist?',
+    a: 'Eine typische Website geht innerhalb von zwei bis vier Wochen live. Umfangreichere Vorhaben mit SEO-Aufbau, Google Ads und mehreren Unterseiten planen wir mit vier bis sechs Wochen. Danach folgen neunzig Tage Begleitung, in denen wir Wirkung und Sichtbarkeit weiter feilen.',
   },
   {
     q: 'Was unterscheidet Fylu von anderen Studios im Saarland?',
-    a: 'Fylu ist bewusst als Boutique-Studio positioniert. Sie sprechen direkt mit dem Studio-Lead — nicht mit einer Account-Manager-Kette. Jede Website ist editorial gestaltet, nicht aus einem Template zusammengesetzt. Und der Kalender ist bewusst klein gehalten, damit jedes Projekt die Tiefe bekommt, die es verdient.',
+    a: 'Fylu ist ein persönlich geführtes Studio aus Saarlouis. Sie sprechen direkt mit dem Studio-Lead, nicht mit einer Account-Manager-Kette. Jede Website ist individuell gestaltet, nicht aus einem Template zusammengesetzt. Und der Kalender ist bewusst klein gehalten, damit jedes Projekt die Tiefe bekommt, die es verdient.',
   },
   {
-    q: 'Bekomme ich auch SEO, Ads oder Software?',
-    a: 'Ja — als Erweiterungen der Website. Kleinere Pakete haben feste Ausgangspreise (Google Business ab 290 €, SEO Foundation ab 890 €, Google Ads Setup ab 690 €, SEO- oder Ads-Betreuung ab 490 bzw. 390 € pro Monat). Software- und App-Vorhaben besprechen wir persönlich, weil sie sich nicht sinnvoll pauschalieren lassen.',
-  },
-  {
-    q: 'Wie lange dauert ein Projekt?',
-    a: 'Das Signature-Paket geht in etwa zwei bis vier Wochen live. Atelier und Maison planen wir mit vier bis sechs Wochen — von Briefing bis Launch mit klaren Meilensteinen. Nach Live-Gang folgen neunzig Tage Studio-Begleitung, in denen wir die Wirkung feilen, bis sie dem Anspruch entspricht.',
-  },
-  {
-    q: 'Was passiert nach dem Launch?',
-    a: 'Neunzig Tage Studio-Begleitung sind bei Signature, Atelier und Maison Teil des Pakets. Danach entscheiden Sie: Übernahme der Pflege im eigenen Haus, monatliche Studio-Betreuung als zubuchbare Leistung oder eine iterative Erweiterung. Wir binden niemanden in Jahresverträge.',
+    q: 'Bekomme ich auch SEO, Google Ads oder Software?',
+    a: 'Ja. Neben der Website unterstützen wir bei lokalem SEO im Saarland, Google-Unternehmensprofil-Optimierung, Google-Ads-Kampagnen und individueller Software- oder App-Entwicklung. Umfang und Struktur klären wir im Vorgespräch, weil sich diese Themen nicht sinnvoll pauschalieren lassen.',
   },
   {
     q: 'Für welche Häuser arbeitet Fylu?',
-    a: 'Für Unternehmen im Saarland, die einen digitalen Auftritt mit Substanz suchen — vom Handwerksbetrieb über Kanzleien und regional führende Gastronomen bis zu Häusern mit nationaler Ambition. Und für internationale Klienten, die eine deutsche Handschrift für ihren Markt suchen.',
+    a: 'Für Unternehmen im Saarland, die einen digitalen Auftritt mit Substanz suchen: vom Handwerksbetrieb über Kanzleien und regional führende Gastronomen bis zu Häusern mit nationaler Ambition. Und für internationale Klienten, die eine deutsche Handschrift für ihren Markt suchen.',
   },
   {
     q: 'Wann kann ein Vorgespräch stattfinden?',
-    a: 'Vorgespräche dauern etwa fünfzehn Minuten und finden nach Absprache statt — persönlich am Telefon oder per Video. Wir hören zu, bevor wir antworten. Wenn wir zueinander passen, folgt ein konkretes Angebot binnen weniger Tage.',
+    a: 'Vorgespräche dauern etwa fünfzehn Minuten und finden nach Absprache statt, persönlich am Telefon oder per Video. Wir hören zu, bevor wir antworten. Wenn wir zueinander passen, folgt ein konkretes Angebot binnen weniger Tage.',
   },
 ];
 

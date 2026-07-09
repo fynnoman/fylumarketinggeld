@@ -102,12 +102,6 @@ export default function AppEntwickelnLassenPage() {
               '@type': 'Organization',
               '@id': 'https://www.fylumarketing.de/#organization',
             },
-            offers: {
-              '@type': 'AggregateOffer',
-              lowPrice: '8900',
-              highPrice: '50000',
-              offerCount: 4,
-            },
             areaServed: [
               { '@type': 'State', name: 'Saarland' },
               { '@type': 'Country', name: 'Deutschland' },
