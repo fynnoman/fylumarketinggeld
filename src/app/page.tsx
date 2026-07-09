@@ -16,7 +16,6 @@ export default function Home() {
       <HeroSection />
       <CaseStudyShowcase />
       <ValueSection />
-      <PricingSection />
       <FAQSection />
       <FinalCTASection />
 
