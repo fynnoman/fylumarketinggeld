@@ -74,7 +74,7 @@ export default function ProblemSolutionSection() {
           className="mb-3"
         >
           <span className="font-display italic text-[var(--amber-soft)] text-2xl md:text-3xl">
-            §I
+            §01
           </span>
           <span className="ml-3 text-[11px] uppercase tracking-[0.32em] text-stone-400 font-medium">
             Diagnose
@@ -170,7 +170,7 @@ export default function ProblemSolutionSection() {
 
               <div className="relative">
                 <div className="flex items-baseline gap-3 mb-8">
-                  <span className="font-display italic text-[var(--amber)] text-2xl">§Ib</span>
+                  <span className="font-display italic text-[var(--amber)] text-2xl">§01b</span>
                   <span className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold">
                     Therapie
                   </span>

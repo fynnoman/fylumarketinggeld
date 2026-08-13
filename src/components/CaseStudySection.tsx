@@ -73,7 +73,7 @@ export default function CaseStudySection() {
           className="mb-3"
         >
           <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">
-            §III
+            §03
           </span>
           <span className="ml-3 text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
             Zahlen

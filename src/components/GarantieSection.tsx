@@ -73,7 +73,7 @@ export default function GarantieSection() {
           >
             <div className="mb-6 inline-flex items-center gap-3 px-4 py-2 rounded-md border border-[var(--cyan-deep)]/30 -rotate-2">
               <span className="font-display italic text-[var(--cyan-deep)] text-xl leading-none">
-                §VII
+                §07
               </span>
               <span className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-semibold">
                 Versprechen

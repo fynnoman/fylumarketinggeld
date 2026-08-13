@@ -5,7 +5,7 @@ import Script from 'next/script';
 import { useRef } from 'react';
 
 const CALENDLY_URL =
-  'https://calendly.com/fylumarketing/website-analyse?background_color=faf9f6&text_color=0c0e10&primary_color=0e7490&hide_gdpr_banner=1&hide_event_type_details=0';
+  'https://calendly.com/fynn-taskeyapp/fylu-marketing-kostenloses-erstgesprach?background_color=faf9f6&text_color=0c0e10&primary_color=0e7490&hide_gdpr_banner=1&hide_event_type_details=0';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -51,7 +51,7 @@ export default function CalendlySection() {
         >
           <div className="mb-6 flex items-baseline gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §IV
+              §04
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Analyse buchen

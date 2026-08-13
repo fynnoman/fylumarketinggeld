@@ -103,7 +103,7 @@ export default function MethodikSection() {
         >
           <div className="mb-6 flex items-baseline justify-center gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §VI
+              §06
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Der Fylu-Prozess

@@ -34,7 +34,7 @@ export default function FullscreenVideoSection() {
             className="mb-8 flex items-baseline justify-center gap-3"
           >
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §X
+              §10
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Manifest

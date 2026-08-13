@@ -125,9 +125,7 @@ export default function HeroSection() {
         >
           <span>Cover</span>
           <span className="h-px w-8 bg-stone-500/60" />
-          <span>Ausgabe I</span>
-          <span className="hidden md:inline h-px w-8 bg-stone-500/60" />
-          <span className="hidden md:inline font-mono tracking-[0.24em]">MMXXVI</span>
+          <span className="font-mono tracking-[0.24em]">2026</span>
         </motion.div>
       </div>
 
@@ -136,18 +134,6 @@ export default function HeroSection() {
 
       {/* Headline block — bottom-left, editorial */}
       <div className="absolute inset-x-8 md:left-14 md:right-auto md:max-w-[62vw] xl:max-w-[70rem] bottom-24 md:bottom-16 lg:bottom-20 z-10">
-        <motion.div
-          initial={{ opacity: 0, x: -14 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.15, ease }}
-          className="mb-6 md:mb-8 flex items-center gap-3"
-        >
-          <span className="h-px w-10 bg-stone-300/70" />
-          <span className="text-[10px] tracking-[0.4em] uppercase text-stone-300/85 font-medium">
-            Positionierung · MMXXVI
-          </span>
-        </motion.div>
-
         <h1 className="font-semibold tracking-[-0.045em] leading-[0.9] text-white">
           <WordReveal
             words={headlineLine1}
@@ -249,7 +235,7 @@ export default function HeroSection() {
         </span>
         <span className="mt-2 h-px w-14 bg-stone-400/40 self-end" />
         <span className="mt-1 text-[9px] font-mono tracking-[0.24em] text-stone-400/60">
-          PHOTO · N°01 / MMXXVI
+          Photo · N°01 / 2026
         </span>
       </motion.div>
 

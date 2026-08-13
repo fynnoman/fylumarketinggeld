@@ -171,7 +171,7 @@ export default function GoogleAdsSaarlandPage() {
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
             <div className="mb-6 flex items-baseline gap-3">
-              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§I</span>
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§01</span>
               <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
                 Positionierung
               </span>
@@ -208,7 +208,7 @@ export default function GoogleAdsSaarlandPage() {
           <FadeInSection>
             <div className="text-center mb-14">
               <div className="mb-6 flex items-baseline justify-center gap-3">
-                <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§II</span>
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§02</span>
                 <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
                   Die Module
                 </span>
@@ -263,7 +263,7 @@ export default function GoogleAdsSaarlandPage() {
         <div className="max-w-3xl mx-auto">
           <FadeInSection>
             <div className="mb-6 flex items-baseline gap-3">
-              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§III</span>
+              <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§03</span>
               <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
                 Fragen
               </span>
