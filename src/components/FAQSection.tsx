@@ -6,27 +6,27 @@ import { useRef, useState } from 'react';
 const faqs = [
   {
     q: 'Wie läuft ein Projekt mit Fylu ab?',
-    a: 'Alles beginnt mit einem kurzen Vorgespräch. Wir hören zu, klären Ziel, Zielgruppe und Umfang, und legen dann einen konkreten Zeitplan mit klaren Meilensteinen fest. Vom Briefing bis zum Live-Gang bleibt ein direkter Ansprechpartner an Ihrer Seite.',
+    a: 'Am Anfang steht die Analyse: Wir zeigen konkret, warum Ihre aktuelle Website Besucher verliert. Passt es, wird der Entwurf zum Beweis — Ziel, Zielgruppe und Verkaufsarchitektur werden dort sichtbar. Vom Briefing bis zum Live-Gang: ein Ansprechpartner.',
   },
   {
     q: 'Wie lange dauert es, bis meine Website live ist?',
-    a: 'Eine typische Website geht innerhalb von zwei bis vier Wochen live. Umfangreichere Vorhaben mit SEO-Aufbau, Google Ads und mehreren Unterseiten planen wir mit vier bis sechs Wochen. Danach folgen neunzig Tage Begleitung, in denen wir Wirkung und Sichtbarkeit weiter feilen.',
+    a: 'Zwei bis vier Wochen. Grössere Vorhaben mit SEO-Aufbau, Ads und mehreren Unterseiten: vier bis sechs. Danach 90 Tage Begleitung.',
   },
   {
     q: 'Was unterscheidet Fylu von anderen Studios im Saarland?',
-    a: 'Fylu ist ein persönlich geführtes Studio aus Saarlouis. Sie sprechen direkt mit dem Studio-Lead, nicht mit einer Account-Manager-Kette. Jede Website ist individuell gestaltet, nicht aus einem Template zusammengesetzt. Und der Kalender ist bewusst klein gehalten, damit jedes Projekt die Tiefe bekommt, die es verdient.',
+    a: 'Persönlich geführtes Studio aus Saarlouis. Direkt mit dem Studio-Lead, keine Account-Manager-Kette. Individuell gestaltet, nie aus Templates. Bewusst kleiner Kalender — jedes Projekt bekommt Tiefe.',
   },
   {
     q: 'Bekomme ich auch SEO, Google Ads oder Software?',
-    a: 'Ja. Neben der Website unterstützen wir bei lokalem SEO im Saarland, Google-Unternehmensprofil-Optimierung, Google-Ads-Kampagnen und individueller Software- oder App-Entwicklung. Umfang und Struktur klären wir im Vorgespräch, weil sich diese Themen nicht sinnvoll pauschalieren lassen.',
+    a: 'Ja. Lokales SEO Saarland, Google-Unternehmensprofil, Google Ads und individuelle Software- oder App-Entwicklung. Umfang klären wir im Vorgespräch.',
   },
   {
     q: 'Für welche Häuser arbeitet Fylu?',
-    a: 'Für Unternehmen im Saarland, die einen digitalen Auftritt mit Substanz suchen: vom Handwerksbetrieb über Kanzleien und regional führende Gastronomen bis zu Häusern mit nationaler Ambition. Und für internationale Klienten, die eine deutsche Handschrift für ihren Markt suchen.',
+    a: 'Etablierte Unternehmen, für die eine Website wirtschaftlich zählt und ein einzelner Kunde einen relevanten Wert hat — hochwertige Handwerksbetriebe, Kanzleien, Praxen, Berater, B2B-Dienstleister. Vom Saarland aus, in ganz Deutschland und international.',
   },
   {
     q: 'Wann kann ein Vorgespräch stattfinden?',
-    a: 'Vorgespräche dauern etwa fünfzehn Minuten und finden nach Absprache statt, persönlich am Telefon oder per Video. Wir hören zu, bevor wir antworten. Wenn wir zueinander passen, folgt ein konkretes Angebot binnen weniger Tage.',
+    a: 'Etwa 15 Minuten, telefonisch oder per Video. Wir hören zu, bevor wir antworten. Passt es, folgt binnen weniger Tage ein konkretes Angebot.',
   },
 ];
 
@@ -38,9 +38,31 @@ export default function FAQSection() {
   return (
     <section
       ref={ref}
-      className="relative py-28 md:py-40 bg-[var(--background-warm)] overflow-hidden"
+      className="relative py-28 md:py-40 bg-[var(--background-warm)] overflow-hidden isolate"
       aria-labelledby="faq-heading"
     >
+      {/* Atmosphere */}
+      <div className="absolute inset-0 -z-10">
+        <div
+          aria-hidden
+          className="glass-bloom-cyan absolute top-[10%] left-[8%] w-[36vw] h-[36vw] max-w-[440px] max-h-[440px] rounded-full opacity-80"
+        />
+        <div
+          aria-hidden
+          className="glass-bloom-warm absolute bottom-[8%] right-[6%] w-[30vw] h-[30vw] max-w-[380px] max-h-[380px] rounded-full opacity-70"
+        />
+      </div>
+
+      {/* Big background outline label */}
+      <div
+        aria-hidden
+        className="absolute -bottom-[6vw] left-[-4vw] pointer-events-none select-none"
+      >
+        <div className="text-outline font-display italic font-normal text-[22vw] leading-[0.85] opacity-30">
+          Fragen
+        </div>
+      </div>
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto">
           <motion.div
@@ -59,16 +81,13 @@ export default function FAQSection() {
             </div>
             <h2
               id="faq-heading"
-              className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.2rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
+              className="text-[3rem] leading-[0.94] sm:text-6xl md:text-7xl lg:text-[6.5rem] font-semibold text-[var(--ink)] tracking-[-0.045em]"
             >
               Ehrlich{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                 beantwortet.
               </span>
             </h2>
-            <p className="text-stone-600 text-base md:text-lg mt-6 leading-relaxed">
-              Die Fragen, die uns Klienten regelmäßig stellen.
-            </p>
           </motion.div>
 
           <div className="space-y-3">
@@ -78,11 +97,12 @@ export default function FAQSection() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] }}
-                className="bg-white rounded-2xl border border-stone-200/70 overflow-hidden hover:border-cyan-200 transition-colors"
+                className="relative glass rounded-2xl overflow-hidden"
               >
+                <span className="glass-edge" aria-hidden />
                 <button
                   onClick={() => setOpen(open === i ? null : i)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-stone-50/60 transition-colors group"
+                  className="relative w-full text-left px-6 py-5 flex items-center justify-between gap-4 hover:bg-white/25 transition-colors group"
                   aria-expanded={open === i}
                   aria-controls={`faq-panel-${i}`}
                 >
@@ -91,7 +111,7 @@ export default function FAQSection() {
                     <span className="font-medium text-[var(--ink)] text-base md:text-[17px] tracking-tight">{faq.q}</span>
                   </span>
                   <svg
-                    className={`w-5 h-5 text-cyan-500 flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-cyan-600 flex-shrink-0 transition-transform duration-300 ${
                       open === i ? 'rotate-45' : ''
                     }`}
                     fill="none"
@@ -114,7 +134,7 @@ export default function FAQSection() {
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                      className="overflow-hidden"
+                      className="relative overflow-hidden"
                     >
                       <div className="px-6 pb-5 text-stone-700 leading-relaxed">{faq.a}</div>
                     </motion.div>
@@ -133,11 +153,11 @@ export default function FAQSection() {
             Ihre Frage ist nicht dabei?{' '}
             <a
               href="mailto:kontakt@fylumarketing.de"
-              className="text-cyan-600 hover:text-cyan-700 font-semibold underline underline-offset-4"
+              className="text-cyan-700 hover:text-cyan-800 font-semibold underline underline-offset-4"
             >
               Schreiben Sie uns
             </a>
-            {' '}— wir antworten binnen weniger Stunden persönlich.
+            .
           </motion.div>
         </div>
       </div>

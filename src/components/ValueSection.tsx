@@ -15,10 +15,10 @@ export default function ValueSection() {
       ref={ref}
       className="relative py-28 md:py-36 px-5 md:px-8 bg-[var(--background-warm)] overflow-hidden isolate"
     >
-      {/* Atmosphere */}
+      {/* Atmosphere — coloured blobs that refract through the glass tiles */}
       <div className="absolute inset-0 -z-10">
         <div
-          className="absolute inset-0 opacity-[0.4]"
+          className="absolute inset-0 opacity-[0.35]"
           style={{
             backgroundImage:
               'radial-gradient(circle, rgba(12,14,16,0.07) 1px, transparent 1.4px)',
@@ -30,11 +30,12 @@ export default function ValueSection() {
           }}
         />
         <div
-          className="absolute top-0 right-0 w-[60vw] h-[50vw] opacity-90"
-          style={{
-            background:
-              'radial-gradient(50% 50% at 70% 30%, rgba(6,182,212,0.16), transparent 70%)',
-          }}
+          aria-hidden
+          className="glass-bloom-cyan absolute top-[8%] right-[4%] w-[48vw] h-[48vw] max-w-[620px] max-h-[620px] rounded-full"
+        />
+        <div
+          aria-hidden
+          className="glass-bloom-warm absolute bottom-[10%] left-[6%] w-[36vw] h-[36vw] max-w-[420px] max-h-[420px] rounded-full opacity-70"
         />
         <div className="noise-overlay opacity-30" />
       </div>
@@ -62,34 +63,31 @@ export default function ValueSection() {
             </span>
           </h2>
           <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Sie sprechen mit der Person, die Ihre Website konzipiert, gestaltet
-            und sichtbar macht. Direkter Draht, kurze Wege, klare Verantwortung.
+            Eine Person konzipiert, gestaltet und macht Ihre Website sichtbar. Kurze Wege, klare Verantwortung.
           </p>
         </motion.div>
 
         {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-5 auto-rows-[minmax(220px,auto)]">
-          {/* Tile 1 — Hero tile (large, dark) */}
+          {/* Tile 1 — Hero tile (large, ink glass) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.05, ease }}
-            className="relative md:col-span-4 md:row-span-2 rounded-3xl bg-[var(--ink)] text-white p-8 md:p-10 overflow-hidden group"
+            className="relative md:col-span-4 md:row-span-2 rounded-3xl glass-ink text-white p-8 md:p-10 overflow-hidden group"
           >
-            {/* Cyan glow — static */}
+            <span className="glass-edge glass-edge-dark" aria-hidden />
+            {/* Cyan bloom behind the glass, feels like light refracting */}
             <div
-              className="absolute -top-20 -right-20 w-[420px] h-[420px] rounded-full opacity-75"
-              style={{
-                background:
-                  'radial-gradient(circle, rgba(6,182,212,0.45), transparent 60%)',
-              }}
+              aria-hidden
+              className="glass-bloom-cyan absolute -top-24 -right-24 w-[460px] h-[460px] rounded-full opacity-90"
             />
-            {/* Grain */}
+            <div className="glass-caustic" aria-hidden />
             <div className="noise-overlay opacity-40 mix-blend-overlay" />
 
             <div className="relative h-full flex flex-col justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/8 border border-white/12 mb-6">
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full glass-chip-ink mb-6">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
@@ -105,8 +103,7 @@ export default function ValueSection() {
                   </span>
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-md">
-                  Zwölf Klienten pro Jahr. Direkter Draht, kein Account-Management,
-                  keine Ticket-Warteschlangen.
+                  Zwölf Klienten pro Jahr. Direkter Draht — kein Ticket, kein Umweg.
                 </p>
               </div>
 
@@ -145,11 +142,12 @@ export default function ValueSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.15, ease }}
-            className="relative md:col-span-2 rounded-3xl bg-white border border-stone-200/80 p-7 overflow-hidden group hover:border-cyan-200 transition-colors"
+            className="relative md:col-span-2 rounded-3xl glass p-7 overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/0 to-cyan-50/0 group-hover:from-cyan-50/60 group-hover:to-transparent transition-all duration-500" />
+            <span className="glass-edge" aria-hidden />
+            <div aria-hidden className="glass-bloom-cyan absolute -bottom-20 -right-16 w-64 h-64 rounded-full opacity-0 group-hover:opacity-70 transition-opacity duration-500" />
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-stone-100 group-hover:bg-cyan-50 transition-colors mb-5">
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-white/60 backdrop-blur-md border border-white/70 group-hover:border-cyan-200 transition-colors mb-5">
                 <svg className="w-5 h-5 text-stone-700 group-hover:text-cyan-700 transition-colors" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2v20M5 9h10c1.5 0 3 1 3 3s-1.5 3-3 3H7c-1.5 0-3 1-3 3s1.5 3 3 3h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -158,7 +156,7 @@ export default function ValueSection() {
                 Kuratierte Konditionen
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Jedes Projekt wird persönlich kalkuliert. Der Rahmen entsteht im Vorgespräch — der Umfang folgt der Substanz, nicht dem Formular.
+                Persönlich kalkuliert. Der Umfang folgt der Substanz, nicht dem Formular.
               </p>
             </div>
           </motion.div>
@@ -168,11 +166,12 @@ export default function ValueSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.22, ease }}
-            className="relative md:col-span-2 rounded-3xl bg-white border border-stone-200/80 p-7 overflow-hidden group hover:border-cyan-200 transition-colors"
+            className="relative md:col-span-2 rounded-3xl glass p-7 overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/0 to-cyan-50/0 group-hover:from-cyan-50/60 group-hover:to-transparent transition-all duration-500" />
+            <span className="glass-edge" aria-hidden />
+            <div aria-hidden className="glass-bloom-warm absolute -top-20 -left-16 w-64 h-64 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-stone-100 group-hover:bg-cyan-50 transition-colors mb-5">
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-white/60 backdrop-blur-md border border-white/70 group-hover:border-cyan-200 transition-colors mb-5">
                 <svg className="w-5 h-5 text-stone-700 group-hover:text-cyan-700 transition-colors" viewBox="0 0 24 24" fill="none">
                   <path d="M12 13a4 4 0 100-8 4 4 0 000 8zM4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -181,8 +180,7 @@ export default function ValueSection() {
                 Direkter Draht
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Sie sprechen mit dem Studio-Lead — Strategie, Design und Umsetzung
-                in einer Handschrift. Keine Telefonkette, keine Übersetzungsverluste.
+                Sie sprechen mit dem Studio-Lead. Strategie, Design, Umsetzung — eine Handschrift.
               </p>
             </div>
           </motion.div>
@@ -192,11 +190,13 @@ export default function ValueSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3, ease }}
-            className="relative md:col-span-4 rounded-3xl border border-stone-200/80 p-7 md:p-9 overflow-hidden group bg-gradient-to-br from-white to-stone-50"
+            className="relative md:col-span-4 rounded-3xl glass p-7 md:p-9 overflow-hidden group"
           >
-            <div className="grid md:grid-cols-2 gap-6 items-center">
+            <span className="glass-edge" aria-hidden />
+            <div aria-hidden className="glass-bloom-cyan absolute -bottom-24 right-[10%] w-72 h-72 rounded-full opacity-60" />
+            <div className="relative grid md:grid-cols-2 gap-6 items-center">
               <div>
-                <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-cyan-50 mb-5">
+                <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-white/70 backdrop-blur-md border border-cyan-100 mb-5">
                   <svg className="w-5 h-5 text-cyan-700" viewBox="0 0 24 24" fill="none">
                     <path d="M3 17l6-6 4 4 8-8M14 7h7v7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -208,9 +208,7 @@ export default function ValueSection() {
                   </span>
                 </h3>
                 <p className="text-sm text-stone-600 leading-relaxed mt-3 max-w-md">
-                  Jede Website wird auf konkrete Kennzahlen ausgerichtet — Anfragen,
-                  Anrufe, sortierte Kaufentscheidungen. Mit neunzig Tagen Iteration
-                  nach Live-Gang.
+                  Anfragen, Anrufe, sortierte Kaufentscheidungen. 90 Tage Iteration nach Live-Gang.
                 </p>
               </div>
               {/* Mini chart */}
@@ -225,11 +223,11 @@ export default function ValueSection() {
                       delay: 0.5 + i * 0.05,
                       ease,
                     }}
-                    className="flex-1 rounded-t-md bg-gradient-to-t from-cyan-500 to-cyan-300"
+                    className="flex-1 rounded-t-md bg-gradient-to-t from-cyan-500 to-cyan-300 shadow-[0_0_18px_-4px_rgba(6,182,212,0.6)]"
                     style={{ minHeight: '8px' }}
                   />
                 ))}
-                <div className="absolute -top-1 right-0 px-2 py-0.5 rounded-md bg-[var(--ink)] text-white text-[10px] font-semibold">
+                <div className="absolute -top-1 right-0 px-2 py-0.5 rounded-md glass-chip-ink text-white text-[10px] font-semibold">
                   +184% Anfragen
                 </div>
               </div>

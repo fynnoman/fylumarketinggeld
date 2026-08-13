@@ -317,3 +317,567 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Liquid Glass system — warm light, tuned for cream/paper backdrop   */
+/* Real frosted panels with specular edges, refracted highlights,     */
+/* subtle inner glow. Layered so tiles read as glass, not gradients.  */
+/* ------------------------------------------------------------------ */
+
+/* Base panel — the workhorse. Use on cards, tiles, chips.
+   Combine with .glass-edge for the specular rim highlight. */
+.glass {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.52) 45%,
+    rgba(250, 249, 246, 0.62) 100%
+  );
+  -webkit-backdrop-filter: blur(22px) saturate(1.35);
+  backdrop-filter: blur(22px) saturate(1.35);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 -1px 0 rgba(12, 14, 16, 0.04) inset,
+    0 20px 50px -24px rgba(12, 14, 16, 0.22),
+    0 8px 18px -10px rgba(12, 14, 16, 0.10);
+}
+
+/* Denser panel — for hero anchor pieces that need more presence. */
+.glass-strong {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.88) 0%,
+    rgba(255, 255, 255, 0.68) 40%,
+    rgba(250, 249, 246, 0.78) 100%
+  );
+  -webkit-backdrop-filter: blur(28px) saturate(1.4);
+  backdrop-filter: blur(28px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 -1px 0 rgba(12, 14, 16, 0.05) inset,
+    0 32px 70px -28px rgba(12, 14, 16, 0.28),
+    0 12px 26px -14px rgba(12, 14, 16, 0.12);
+}
+
+/* Airy panel — for large fields where the backdrop should breathe through. */
+.glass-thin {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(250, 249, 246, 0.34) 100%
+  );
+  -webkit-backdrop-filter: blur(16px) saturate(1.25);
+  backdrop-filter: blur(16px) saturate(1.25);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 12px 32px -18px rgba(12, 14, 16, 0.14);
+}
+
+/* Dark glass — for the Ink hero tile and dark section CTA. */
+.glass-ink {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 22, 26, 0.72) 0%,
+    rgba(12, 14, 16, 0.62) 50%,
+    rgba(8, 10, 12, 0.78) 100%
+  );
+  -webkit-backdrop-filter: blur(22px) saturate(1.5);
+  backdrop-filter: blur(22px) saturate(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.35) inset,
+    0 32px 70px -28px rgba(0, 0, 0, 0.55),
+    0 8px 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+/* Cyan-tinted glass — for CTA slabs where cyan should read through. */
+.glass-cyan {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(207, 244, 251, 0.72) 0%,
+    rgba(186, 230, 253, 0.5) 50%,
+    rgba(207, 250, 254, 0.65) 100%
+  );
+  -webkit-backdrop-filter: blur(24px) saturate(1.55);
+  backdrop-filter: blur(24px) saturate(1.55);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 -1px 0 rgba(14, 116, 144, 0.08) inset,
+    0 24px 60px -22px rgba(14, 116, 144, 0.35),
+    0 8px 22px -12px rgba(14, 116, 144, 0.2);
+}
+
+/* Specular rim — layer on top of any .glass* element for the iOS glass
+   highlight on the upper edge. Place inside the element as an absolute
+   child, e.g. <span class="glass-edge" aria-hidden />. */
+.glass-edge {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.glass-edge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0.25) 82%,
+    rgba(255, 255, 255, 0.55) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+.glass-edge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 40%;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: blur(4px);
+  opacity: 0.65;
+  transform: translateY(-2px);
+}
+
+/* Dark variant of the specular rim, for use on .glass-ink */
+.glass-edge-dark::before {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.08) 25%,
+    rgba(255, 255, 255, 0) 55%,
+    rgba(6, 182, 212, 0.18) 82%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+.glass-edge-dark::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
+
+/* Chip — pill-shaped glass badge. Set border-radius: 999px on parent. */
+.glass-chip {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.78) 0%,
+    rgba(255, 255, 255, 0.58) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(1.35);
+  backdrop-filter: blur(18px) saturate(1.35);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 6px 18px -8px rgba(12, 14, 16, 0.18);
+}
+
+/* Ink chip — dark glass pill. */
+.glass-chip-ink {
+  background: linear-gradient(
+    135deg,
+    rgba(20, 22, 26, 0.55) 0%,
+    rgba(12, 14, 16, 0.45) 100%
+  );
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.16) inset,
+    0 6px 18px -8px rgba(0, 0, 0, 0.35);
+}
+
+/* Glass button — pressable pill with specular sheen. Use as
+   <button class="btn-glass"><span class="btn-glass-shine" />Label</button> */
+.btn-glass {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.88) 0%,
+    rgba(255, 255, 255, 0.62) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 -1px 0 rgba(12, 14, 16, 0.06) inset,
+    0 14px 34px -14px rgba(12, 14, 16, 0.28),
+    0 4px 12px -6px rgba(12, 14, 16, 0.14);
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 200ms ease-out;
+}
+.btn-glass:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 -1px 0 rgba(12, 14, 16, 0.06) inset,
+    0 22px 44px -14px rgba(12, 14, 16, 0.32),
+    0 6px 14px -6px rgba(12, 14, 16, 0.18);
+}
+.btn-glass:active {
+  transform: scale(0.97);
+}
+
+/* Ink variant of glass button — dark base, cyan sheen */
+.btn-glass-ink {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 30, 34, 0.95) 0%,
+    rgba(12, 14, 16, 0.98) 100%
+  );
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.5) inset,
+    0 16px 40px -12px rgba(6, 182, 212, 0.35),
+    0 8px 20px -10px rgba(12, 14, 16, 0.55);
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 200ms ease-out;
+}
+.btn-glass-ink:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.22) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.5) inset,
+    0 24px 52px -14px rgba(6, 182, 212, 0.5),
+    0 10px 24px -12px rgba(12, 14, 16, 0.6);
+}
+.btn-glass-ink:active {
+  transform: scale(0.97);
+}
+
+/* Cyan variant — for primary CTA on dark section */
+.btn-glass-cyan {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 211, 238, 0.98) 0%,
+    rgba(6, 182, 212, 1) 100%
+  );
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 -1px 0 rgba(14, 116, 144, 0.4) inset,
+    0 20px 50px -14px rgba(6, 182, 212, 0.6),
+    0 8px 20px -10px rgba(14, 116, 144, 0.4);
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 200ms ease-out;
+}
+.btn-glass-cyan:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 -1px 0 rgba(14, 116, 144, 0.4) inset,
+    0 28px 60px -16px rgba(6, 182, 212, 0.75),
+    0 10px 24px -12px rgba(14, 116, 144, 0.5);
+}
+.btn-glass-cyan:active {
+  transform: scale(0.97);
+}
+
+/* Slow diagonal sheen — a highlight streak that traverses the button on
+   hover. Layer as an absolute child, e.g. <span class="btn-glass-shine" />. */
+.btn-glass-shine {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.btn-glass-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  left: -50%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  transform: skewX(-18deg);
+  transition: left 700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-glass:hover .btn-glass-shine::before,
+.btn-glass-ink:hover .btn-glass-shine::before,
+.btn-glass-cyan:hover .btn-glass-shine::before {
+  left: 130%;
+}
+
+/* Ambient blob — the soft colour source that lives *behind* the glass.
+   Absolute-positioned. Combines cyan + warm amber for optical depth. */
+.glass-bloom-cyan {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(6, 182, 212, 0.35) 0%,
+    rgba(6, 182, 212, 0.14) 45%,
+    transparent 75%
+  );
+  filter: blur(30px);
+}
+.glass-bloom-warm {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(251, 191, 36, 0.28) 0%,
+    rgba(251, 146, 60, 0.14) 45%,
+    transparent 75%
+  );
+  filter: blur(30px);
+}
+
+/* Refracted caustic — a very faint iridescent overlay used sparingly on
+   large glass hero pieces. */
+.glass-caustic {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+  background: conic-gradient(
+    from 210deg at 65% 35%,
+    rgba(6, 182, 212, 0) 0deg,
+    rgba(6, 182, 212, 0.25) 90deg,
+    rgba(251, 191, 36, 0.18) 200deg,
+    rgba(6, 182, 212, 0.14) 300deg,
+    rgba(6, 182, 212, 0) 360deg
+  );
+  filter: blur(28px);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .glass-strong,
+  .glass-thin,
+  .glass-cyan {
+    background: rgba(255, 255, 255, 0.97);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .glass-ink {
+    background: rgba(12, 14, 16, 0.97);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Cinema system — full-screen hero aurora, huge type, scroll effects */
+/* ------------------------------------------------------------------ */
+
+/* Aurora — three drifting coloured blobs that live behind the hero.
+   No JS, GPU-accelerated. Very slow rotation + scale for organic feel. */
+.aurora {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  will-change: transform;
+  mix-blend-mode: screen;
+}
+.aurora-1 {
+  top: -20%;
+  left: -10%;
+  width: 70vw;
+  height: 70vw;
+  max-width: 900px;
+  max-height: 900px;
+  background: radial-gradient(
+    circle,
+    rgba(6, 182, 212, 0.55) 0%,
+    rgba(6, 182, 212, 0.2) 40%,
+    transparent 70%
+  );
+  animation: aurora-drift-1 22s ease-in-out infinite alternate;
+}
+.aurora-2 {
+  bottom: -25%;
+  right: -15%;
+  width: 80vw;
+  height: 80vw;
+  max-width: 1000px;
+  max-height: 1000px;
+  background: radial-gradient(
+    circle,
+    rgba(14, 116, 144, 0.55) 0%,
+    rgba(6, 182, 212, 0.18) 45%,
+    transparent 72%
+  );
+  animation: aurora-drift-2 28s ease-in-out infinite alternate;
+}
+.aurora-3 {
+  top: 30%;
+  right: 20%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  max-height: 650px;
+  background: radial-gradient(
+    circle,
+    rgba(251, 191, 36, 0.25) 0%,
+    rgba(251, 146, 60, 0.12) 50%,
+    transparent 75%
+  );
+  animation: aurora-drift-3 34s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-drift-1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(12vw, 8vh, 0) scale(1.15) rotate(40deg);
+  }
+}
+@keyframes aurora-drift-2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-14vw, -10vh, 0) scale(1.2) rotate(-30deg);
+  }
+}
+@keyframes aurora-drift-3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.85);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate3d(-8vw, 12vh, 0) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Optional dim overlay that keeps text legible over the aurora */
+.aurora-veil {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 90% 70% at 50% 50%,
+    transparent 30%,
+    rgba(8, 9, 11, 0.55) 75%,
+    rgba(8, 9, 11, 0.85) 100%
+  );
+}
+
+/* Grain on top of aurora — organic film feel */
+.aurora-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 260px 260px;
+}
+
+/* Reduced motion: freeze the aurora */
+@media (prefers-reduced-motion: reduce) {
+  .aurora-1,
+  .aurora-2,
+  .aurora-3 {
+    animation: none;
+  }
+}
+
+/* Marquee strip — for the "big label" horizontal scroller */
+@keyframes marquee-slow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.marquee-track {
+  animation: marquee-slow 40s linear infinite;
+  will-change: transform;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Massive display numeral — used in BigMetrics */
+.numeral-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-optical-sizing: auto;
+  letter-spacing: -0.05em;
+  line-height: 0.82;
+}
+
+/* Horizontal scroll strip — snaps between cases */
+.snap-strip {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.snap-strip::-webkit-scrollbar {
+  display: none;
+}
+.snap-strip > * {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/* Big outline heading — huge text stroked, no fill. Editorial cinema. */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.2px rgba(12, 14, 16, 0.28);
+  text-stroke: 1.2px rgba(12, 14, 16, 0.28);
+}
+.text-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.28);
+  text-stroke: 1.2px rgba(255, 255, 255, 0.28);
+}
+
+/* Vertical rule tick — a delicate ruler used on cinema sections */
+.rule-tick {
+  position: relative;
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(180deg, transparent, currentColor 40%, currentColor 60%, transparent);
+  opacity: 0.4;
+}

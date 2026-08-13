@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import CaseStudyShowcase from '@/components/CaseStudyShowcase';
-import ValueSection from '@/components/ValueSection';
+import PinnedManifesto from '@/components/PinnedManifesto';
+import BigMetrics from '@/components/BigMetrics';
+import HorizontalCases from '@/components/HorizontalCases';
+import CalendlySection from '@/components/CalendlySection';
 import FAQSection from '@/components/FAQSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';
@@ -14,8 +16,10 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
-      <CaseStudyShowcase />
-      <ValueSection />
+      <PinnedManifesto />
+      <BigMetrics />
+      <HorizontalCases />
+      <CalendlySection />
       <FAQSection />
       <FinalCTASection />
 
