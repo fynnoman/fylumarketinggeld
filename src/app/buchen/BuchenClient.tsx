@@ -1,8 +1,8 @@
 'use client';
 
-import Script from 'next/script';
 import { motion } from 'framer-motion';
-import { CALENDLY_EMBED_URL, WHATSAPP_URL } from '@/lib/contact';
+import CalendlyEmbed from '@/components/CalendlyEmbed';
+import { WHATSAPP_URL } from '@/lib/contact';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -96,15 +96,7 @@ export default function BuchenClient() {
 							</span>
 						</div>
 
-						<div
-							className="calendly-inline-widget"
-							data-url={CALENDLY_EMBED_URL}
-							style={{
-								minWidth: '280px',
-								height: 'clamp(680px, 90svh, 820px)',
-								background: 'var(--background-warm)',
-							}}
-						/>
+						<CalendlyEmbed />
 					</div>
 				</motion.div>
 
@@ -121,11 +113,6 @@ export default function BuchenClient() {
 					— Antwort meist in unter 30 Minuten.
 				</p>
 			</section>
-
-			<Script
-				src="https://assets.calendly.com/assets/external/widget.js"
-				strategy="lazyOnload"
-			/>
 		</div>
 	);
 }

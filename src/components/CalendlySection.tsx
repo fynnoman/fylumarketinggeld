@@ -1,9 +1,9 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import Script from 'next/script';
 import { useRef } from 'react';
-import { CALENDLY_EMBED_URL, WHATSAPP_URL } from '@/lib/contact';
+import CalendlyEmbed from '@/components/CalendlyEmbed';
+import { WHATSAPP_URL } from '@/lib/contact';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -149,15 +149,7 @@ export default function CalendlySection() {
               </span>
             </div>
 
-            <div
-              className="calendly-inline-widget"
-              data-url={CALENDLY_EMBED_URL}
-              style={{
-                minWidth: '280px',
-                height: 'clamp(680px, 90svh, 820px)',
-                background: 'var(--background-warm)',
-              }}
-            />
+            <CalendlyEmbed />
           </div>
 
           <p className="mt-6 text-center text-xs text-stone-500 tracking-[0.02em]">
@@ -184,10 +176,6 @@ export default function CalendlySection() {
         </div>
       </div>
 
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="lazyOnload"
-      />
     </section>
   );
 }

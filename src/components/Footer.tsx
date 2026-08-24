@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { openConsentSettings } from '@/lib/consent';
 import { WHATSAPP_URL } from '@/lib/contact';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -222,10 +223,17 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Fylu. Alle Rechte vorbehalten ·{' '}
             <span className="font-display italic text-stone-400">made in Saarlouis</span>
           </p>
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap justify-center">
             <Link href="/impressum" className="hover:text-cyan-300 transition-colors">Impressum</Link>
             <Link href="/datenschutz" className="hover:text-cyan-300 transition-colors">Datenschutz</Link>
             <Link href="/agb" className="hover:text-cyan-300 transition-colors">AGB</Link>
+            <button
+              onClick={openConsentSettings}
+              className="hover:text-cyan-300 transition-colors"
+              type="button"
+            >
+              Cookie-Einstellungen
+            </button>
           </div>
         </div>
       </div>
