@@ -30,6 +30,7 @@ export default function Navbar() {
         initial={{ y: -16, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+        style={{ position: 'fixed' }}
         className={`fixed top-3 left-3 right-3 md:top-4 md:left-1/2 md:right-auto md:-translate-x-1/2 md:w-[min(95%,1180px)] z-50 rounded-full glass ${
           isScrolled || menuOpen ? 'glass-strong' : ''
         }`}
