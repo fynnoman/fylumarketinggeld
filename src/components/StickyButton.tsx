@@ -44,7 +44,7 @@ export default function StickyButton() {
             href="/buchen"
             className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-4 rounded-xl font-bold text-base shadow-lg min-h-[52px]"
           >
-            Anfrage senden
+            Termin buchen
           </Link>
         </div>
       </div>

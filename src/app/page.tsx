@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PinnedManifesto />
-      <HorizontalCases />
       <CalendlySection />
+      <HorizontalCases />
       <FAQSection />
       <FinalCTASection />
 

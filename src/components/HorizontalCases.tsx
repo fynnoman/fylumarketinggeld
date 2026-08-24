@@ -125,7 +125,7 @@ export default function HorizontalCases() {
       aria-label="Referenzen"
     >
       {/* Header — editorial */}
-      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8 pt-24 md:pt-32 pb-16 md:pb-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8 pt-16 md:pt-32 pb-10 md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -142,7 +142,7 @@ export default function HorizontalCases() {
               </span>
             </div>
             <h2 className="text-[2.6rem] leading-[0.98] sm:text-6xl md:text-7xl lg:text-[6rem] font-semibold text-[var(--ink)] tracking-[-0.04em]">
-              Häuser,{' '}
+              Unternehmen,{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                 die für sich sprechen
               </span>
@@ -161,7 +161,7 @@ export default function HorizontalCases() {
       </div>
 
       {/* Cases — vertical alternating full-width blocks */}
-      <div className="relative z-10 space-y-28 md:space-y-40 pb-28 md:pb-40">
+      <div className="relative z-10 space-y-20 md:space-y-40 pb-20 md:pb-40">
         {cases.map((c, i) => (
           <CaseBlock key={c.client} data={c} index={i} />
         ))}

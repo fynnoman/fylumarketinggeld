@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import { WHATSAPP_URL } from '@/lib/contact';
 
 const faqs = [
   {
@@ -38,7 +39,7 @@ export default function FAQSection() {
   return (
     <section
       ref={ref}
-      className="relative py-28 md:py-40 bg-[var(--background-warm)] overflow-hidden isolate"
+      className="relative py-20 md:py-40 bg-[var(--background-warm)] overflow-hidden isolate"
       aria-labelledby="faq-heading"
     >
       {/* Atmosphere */}
@@ -152,10 +153,12 @@ export default function FAQSection() {
           >
             Ihre Frage ist nicht dabei?{' '}
             <a
-              href="mailto:kontakt@fylumarketing.de"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-cyan-700 hover:text-cyan-800 font-semibold underline underline-offset-4"
             >
-              Schreiben Sie uns
+              Direkt per WhatsApp schreiben
             </a>
             .
           </motion.div>

@@ -276,7 +276,7 @@ export default async function RegionPage({
               href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 hover:shadow-[0_12px_40px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Anfrage senden
+              Termin buchen
             </Link>
             <Link
               href="/buchen"
@@ -455,7 +455,7 @@ export default async function RegionPage({
               href="/buchen"
               className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-2xl transition-all duration-200 hover:shadow-[0_16px_48px_rgba(6,182,212,0.3)] active:scale-[0.98]"
             >
-              Anfrage senden
+              Termin buchen
             </Link>
             <Link
               href="/buchen"
