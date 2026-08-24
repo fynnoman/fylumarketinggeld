@@ -68,7 +68,7 @@ export default function WhatsAppButton() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="group fixed bottom-24 left-4 md:bottom-6 md:left-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-full pl-3 pr-3 md:pl-4 md:pr-5 py-3 shadow-2xl hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.97]"
+        className="group fixed bottom-5 left-5 md:bottom-6 md:left-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-full pl-3 pr-3 md:pl-4 md:pr-5 py-3 shadow-2xl hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.97]"
       >
         {/* Pulse ring – langsamer Rhythmus */}
         <span
