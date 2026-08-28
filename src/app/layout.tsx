@@ -30,7 +30,10 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
+  title: {
+    default: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
+    template: "%s | Fylu Studio",
+  },
   description: "Webdesign, SEO und Google Ads aus Saarlouis. Wir bauen Ihre Website und sorgen dafür, dass Google Sie findet. Persönlich betreut, in 14 Tagen live.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Studio Saarlouis",
@@ -127,14 +130,39 @@ export default function RootLayout({
                 name: "Fynn Schulz",
                 jobTitle: "Studio-Lead & Editorial Webdesigner",
                 worksFor: { "@id": "https://www.fylumarketing.de/#organization" },
+                description:
+                  "Studio-Lead von Fylu Studio in Saarlouis. Spezialisiert auf editorial gestaltete Websites für hochwertige, etablierte Unternehmen mit klarem Conversion-Fokus. Kombiniert Design-, SEO- und Software-Kompetenz aus einer Hand.",
                 knowsAbout: [
                   "Editorial Webdesign",
-                  "Suchmaschinenoptimierung",
-                  "Google Ads",
-                  "Conversion-Architektur",
+                  "Conversion-Analyse",
+                  "Suchmaschinenoptimierung (SEO)",
                   "Local SEO",
+                  "Google Ads",
+                  "Generative Engine Optimization (GEO)",
+                  "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Structured Data",
+                  "Core Web Vitals",
+                  "Softwareentwicklung",
+                  "AI-Integration",
                 ],
-                url: "https://www.fylumarketing.de",
+                knowsLanguage: ["de", "en"],
+                nationality: { "@type": "Country", name: "Deutschland" },
+                workLocation: {
+                  "@type": "Place",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Saarlouis",
+                    addressRegion: "Saarland",
+                    addressCountry: "DE",
+                  },
+                },
+                sameAs: [
+                  "https://www.linkedin.com/in/fynn-schulz/",
+                  "https://www.instagram.com/fylumarketing/",
+                ],
+                url: "https://www.fylumarketing.de/team",
               },
               address: {
                 "@type": "PostalAddress",
@@ -280,6 +308,19 @@ export default function RootLayout({
                 "Editorial gestaltete Websites, kuratierte SEO- und Ads-Erweiterungen aus einem Boutique-Studio in Saarlouis. Zwölf Klienten pro Jahr.",
               publisher: { "@id": "https://www.fylumarketing.de/#organization" },
               inLanguage: "de-DE",
+              about: [
+                { "@type": "Thing", name: "Webdesign" },
+                { "@type": "Thing", name: "Suchmaschinenoptimierung" },
+                { "@type": "Thing", name: "Google Ads" },
+                { "@type": "Thing", name: "Softwareentwicklung" },
+                { "@type": "Thing", name: "Conversion-Analyse" },
+                { "@type": "Thing", name: "Local SEO" },
+              ],
+              audience: {
+                "@type": "BusinessAudience",
+                audienceType:
+                  "Etablierte, hochwertige B2B-Unternehmen — Kanzleien, Steuerberater, Ärzte, Zahnärzte, Immobilienmakler, Photovoltaik-Anbieter, Gebäudereinigung, Industrie-Mittelstand, hochwertiges Handwerk.",
+              },
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
@@ -337,73 +378,6 @@ export default function RootLayout({
                 availableLanguage: ["de", "en"],
               },
               sameAs: [],
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "Was kostet eine Fylu-Website?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Konditionen kommunizieren wir transparent im Vorgespräch — keine versteckten Kosten, keine Stundensatz-Abrechnung.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Warum nimmt Fylu nur zwölf Klienten pro Jahr an?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Weniger Projekte pro Jahr bedeuten tiefere Verantwortung pro Projekt. Ein Fylu-Auftritt entsteht in Handschrift, nicht am Fließband. Der bewusst kleine Kalender schützt Qualität, Aufmerksamkeit und Erreichbarkeit.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Was unterscheidet Fylu von anderen Studios im Saarland?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Fylu ist bewusst als Boutique-Studio positioniert. Direkte Führung durch den Studio-Lead, editorial gestaltete Websites statt Template-Baukasten und ein bewusst kleiner Kalender — für Häuser, denen ihr Auftritt eine Substanz verdient, die man beim Öffnen der Seite spürt.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Gibt es auch kleinere Pakete für SEO oder Google Ads?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Ja. Google Business Optimierung, SEO Foundation, SEO Betreuung, Google Ads Setup, Google Ads Betreuung und Website Refresh sind als Erweiterungen der Website gedacht oder einzeln buchbar. Konditionen individuell im Vorgespräch.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Wie lange dauert ein Projekt bei Fylu?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Signature-Projekte gehen in etwa zwei bis vier Wochen live. Atelier und Maison sind in vier bis sechs Wochen live. Nach Live-Gang folgen neunzig Tage Studio-Begleitung mit Iteration.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Für welche Städte im Saarland arbeitet Fylu?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Fylu ist in Saarlouis ansässig und begleitet Häuser in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Völklingen, Merzig, St. Ingbert, Dillingen, St. Wendel, Lebach, Püttlingen, Blieskastel und im gesamten Saarland. Remote-Projekte deutschlandweit sowie international ebenfalls möglich.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Was passiert nach dem Launch?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Neunzig Tage Studio-Begleitung sind bei Signature, Atelier und Maison Teil des Pakets. Danach entscheiden Sie: Übernahme der Pflege, monatliche Studio-Betreuung oder iterative Erweiterung. Wir binden niemanden in Jahresverträge.",
-                  },
-                },
-              ],
             }),
           }}
         />

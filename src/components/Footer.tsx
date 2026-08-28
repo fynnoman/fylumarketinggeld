@@ -133,9 +133,25 @@ export default function Footer() {
               <li><Link href="/seo-saarland" className="hover:text-white transition-colors">SEO Saarland</Link></li>
               <li><Link href="/google-ads-saarland" className="hover:text-white transition-colors">Google Ads</Link></li>
               <li><Link href="/website-erstellen-lassen" className="hover:text-white transition-colors">Website erstellen lassen</Link></li>
-              <li><Link href="/webdesign-handwerk" className="hover:text-white transition-colors">Webdesign Handwerk</Link></li>
               <li><Link href="/team" className="hover:text-white transition-colors">Team &amp; Studio</Link></li>
               <li><Link href="/methodik" className="hover:text-white transition-colors">Methodik</Link></li>
+            </ul>
+            <h3 className="text-[10px] font-semibold mt-8 mb-4 text-cyan-300 uppercase tracking-[0.2em]">
+              Tools
+            </h3>
+            <ul className="space-y-2.5 text-sm text-stone-400">
+              <li><Link href="/tools" className="hover:text-white transition-colors">Alle Tools</Link></li>
+              <li><Link href="/tools/website-kosten-rechner" className="hover:text-white transition-colors">Kosten-Rechner</Link></li>
+              <li><Link href="/tools/website-check" className="hover:text-white transition-colors">Website-Analyse</Link></li>
+              <li><Link href="/tools/seo-check" className="hover:text-white transition-colors">SEO-Check</Link></li>
+            </ul>
+            <h3 className="text-[10px] font-semibold mt-8 mb-4 text-cyan-300 uppercase tracking-[0.2em]">
+              Wissen
+            </h3>
+            <ul className="space-y-2.5 text-sm text-stone-400">
+              <li><Link href="/probleme" className="hover:text-white transition-colors">Probleme &amp; Lösungen</Link></li>
+              <li><Link href="/ratgeber" className="hover:text-white transition-colors">Ratgeber</Link></li>
+              <li><Link href="/referenzen" className="hover:text-white transition-colors">Referenzen</Link></li>
             </ul>
           </div>
 
@@ -186,26 +202,20 @@ export default function Footer() {
               Branchen
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2.5 text-sm text-stone-400">
-              <li><Link href="/leistungen/handwerker" className="hover:text-white transition-colors">Handwerker</Link></li>
-              <li><Link href="/leistungen/maler" className="hover:text-white transition-colors">Maler</Link></li>
-              <li><Link href="/leistungen/elektriker" className="hover:text-white transition-colors">Elektriker</Link></li>
-              <li><Link href="/leistungen/dachdecker" className="hover:text-white transition-colors">Dachdecker</Link></li>
-              <li><Link href="/leistungen/shk" className="hover:text-white transition-colors">SHK</Link></li>
-              <li><Link href="/leistungen/schreiner" className="hover:text-white transition-colors">Schreiner</Link></li>
-              <li><Link href="/leistungen/garten-landschaftsbau" className="hover:text-white transition-colors">GaLaBau</Link></li>
-              <li><Link href="/leistungen/restaurant" className="hover:text-white transition-colors">Restaurants</Link></li>
-              <li><Link href="/leistungen/hotel" className="hover:text-white transition-colors">Hotels</Link></li>
               <li><Link href="/leistungen/anwalt" className="hover:text-white transition-colors">Anwälte</Link></li>
               <li><Link href="/leistungen/steuerberater" className="hover:text-white transition-colors">Steuerberater</Link></li>
               <li><Link href="/leistungen/arzt" className="hover:text-white transition-colors">Ärzte</Link></li>
               <li><Link href="/leistungen/zahnarzt" className="hover:text-white transition-colors">Zahnärzte</Link></li>
               <li><Link href="/leistungen/physiotherapie" className="hover:text-white transition-colors">Physiotherapie</Link></li>
-              <li><Link href="/leistungen/friseur" className="hover:text-white transition-colors">Friseure</Link></li>
               <li><Link href="/leistungen/immobilienmakler" className="hover:text-white transition-colors">Immobilienmakler</Link></li>
-              <li><Link href="/leistungen/coach" className="hover:text-white transition-colors">Coaches</Link></li>
-              <li><Link href="/leistungen/fitnessstudio" className="hover:text-white transition-colors">Fitnessstudio</Link></li>
-              <li><Link href="/leistungen/onlineshop" className="hover:text-white transition-colors">Online-Shop</Link></li>
-              <li><Link href="/leistungen/in-14-tagen" className="hover:text-white transition-colors">In 14 Tagen</Link></li>
+              <li><Link href="/leistungen/elektriker" className="hover:text-white transition-colors">Elektriker</Link></li>
+              <li><Link href="/leistungen/dachdecker" className="hover:text-white transition-colors">Dachdecker</Link></li>
+              <li><Link href="/leistungen/shk" className="hover:text-white transition-colors">SHK</Link></li>
+              <li><Link href="/leistungen/schreiner" className="hover:text-white transition-colors">Schreiner</Link></li>
+              <li><Link href="/leistungen/garten-landschaftsbau" className="hover:text-white transition-colors">GaLaBau</Link></li>
+              <li><Link href="/leistungen/maler" className="hover:text-white transition-colors">Maler</Link></li>
+              <li><Link href="/leistungen/heizungsbauer" className="hover:text-white transition-colors">Heizungsbauer</Link></li>
+              <li><Link href="/leistungen/festpreis" className="hover:text-white transition-colors">Festpreis-Projekte</Link></li>
             </ul>
           </div>
         </div>

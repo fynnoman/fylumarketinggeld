@@ -1,3 +1,9 @@
+export type TopicRelated = {
+  href: string;
+  label: string;
+  description?: string;
+};
+
 export type Topic = {
   slug: string;
   h1: string;
@@ -6,29 +12,52 @@ export type Topic = {
   intro: string;
   sections: { title: string; text: string }[];
   faqs: { q: string; a: string }[];
+  indexable?: boolean;
+  relatedTools?: TopicRelated[];
+  relatedProblems?: TopicRelated[];
+  relatedGuides?: TopicRelated[];
 };
+
+// „handwerker“ war zunächst als generisch eingestuft. Strategie-Update 2026-09:
+// Handwerker bleibt strategisch relevant und wird als hochwertige B2B-Branchen-Seite
+// weiterentwickelt — deshalb wieder indexable.
+const OFF_ICP_SLUGS = new Set([
+  "restaurant",
+  "guenstig",
+  "in-14-tagen",
+  "friseur",
+  "hotel",
+  "autohaus",
+  "onlineshop",
+  "coach",
+  "fitnessstudio",
+]);
+
+export function isIndexableTopic(t: Topic): boolean {
+  return t.indexable !== false && !OFF_ICP_SLUGS.has(t.slug);
+}
 
 export const topics: Topic[] = [
   {
     slug: "handwerker",
-    h1: "Website für Handwerker im Saarland",
-    metaTitle: "Website für Handwerker Saarland | Mehr Aufträge online | Fylu",
+    h1: "Website für etablierte Handwerksbetriebe im Saarland",
+    metaTitle: "Website für Handwerksbetriebe im Saarland | Fylu Studio",
     metaDescription:
-      "Websites speziell für Handwerker im Saarland: mobiloptimiert, lokale SEO, Angebotsformular. Mehr Anfragen, weniger Aufwand..",
+      "Websites für etablierte Handwerksbetriebe: hochwertige Auftraggeber gewinnen, Meister-Substanz sichtbar machen, technisch saubere Basis für lokales SEO. Aus Saarlouis.",
     intro:
-      "Als Handwerker im Saarland leben Sie von Empfehlungen – aber neue Kunden suchen heute zuerst online. Mit einer modernen Website werden Sie auf Google gefunden, wenn jemand „Dachdecker Saarbrücken“, „Elektriker Saarlouis“ oder „Maler Merzig“ sucht.",
+      "Etablierte Handwerksbetriebe haben zwei Zielgruppen, die sich fundamental unterscheiden: den privaten Endkunden mit kleinem Auftragsvolumen und den professionellen Auftraggeber (Verwaltung, Facility-Management, gewerbliche Bauträger) mit fünf- bis sechsstelligen Projekten. Ohne saubere Website-Struktur landen beide Gruppen auf derselben austauschbaren Landingpage — und keiner davon fühlt sich richtig angesprochen.",
     sections: [
       {
-        title: "Speziell für Handwerksbetriebe konzipiert",
-        text: "Sie bekommen keine Standard-Website, sondern eine Lösung, die auf Handwerk zugeschnitten ist: Leistungsseiten je Gewerk, Projektgalerie, Bewertungsmodul, Notruf-/Termin-Anfrage und mobiloptimierte Darstellung. So überzeugen Sie Kunden bereits beim ersten Klick.",
+        title: "Substanz statt Handwerker-Standard",
+        text: "Meisterbetrieb, ISO-Zertifikate, RAL-Gütezeichen, langjährige Referenzobjekte, klar dokumentierte Prozesse — das sind die Signale, die professionelle Auftraggeber suchen. Wir bauen die Website so, dass diese Substanz in den ersten fünf Sekunden sichtbar wird und Ihnen die höherwertigen Anfragen bringt.",
       },
       {
-        title: "Lokale Sichtbarkeit in Ihrer Region",
-        text: "Wir optimieren Ihre Website gezielt für Ihre Stadt und Umgebung – Saarbrücken, Saarlouis, Völklingen, Neunkirchen, Homburg, Merzig oder St. Ingbert. Inklusive Google Business Profil, das in Google Maps oben erscheint.",
+        title: "Klar getrennte Zielgruppen-Ansprache",
+        text: "Eigene Struktur für gewerbliche/öffentliche Auftraggeber (Referenzobjekte, Ausschreibungs-Erfahrung, Qualitätsmanagement) und für private Kunden (klare Leistungsübersicht, transparente Beratung). Beide Gruppen finden ihren Weg, ohne dass die Website sich verzettelt.",
       },
       {
-        title: "Klare Konditionen",
-        text: "Keine versteckten Kosten, keine Stundensätze. Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Auf Wunsch inkl. Google Ads-Kampagne für sofort sichtbare Ergebnisse.",
+        title: "Lokale Sichtbarkeit mit Substanz",
+        text: "Optimierung für konkrete Suchbegriffe wie „Elektrotechnik Bürogebäude Saarbrücken“, „Dachdecker Sanierung Saarland“, „Bauinstallation Objektbetreuung Homburg“ — dort wo Auftragswerte hoch und Wettbewerb übersichtlich ist. Inklusive Google-Unternehmensprofil und saubere lokale Signale.",
       },
     ],
     faqs: [
@@ -44,6 +73,21 @@ export const topics: Topic[] = [
         q: "Kann ich Bilder und Projekte selbst hinzufügen?",
         a: "Auf Wunsch erhalten Sie ein einfaches CMS, mit dem Sie Projekte und Bilder selbstständig pflegen können.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
     ],
   },
   {
@@ -118,6 +162,21 @@ export const topics: Topic[] = [
         q: "Wie lange dauert die Erstellung?",
         a: "Typischerweise 3–4 Wochen – inklusive Texte, Design, technischer Umsetzung und SEO.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -238,7 +297,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Zahnarzt-Websites speziell für das Saarland: seriöses Design, Online-Termin, lokale SEO. Mehr qualifizierte Neupatienten in Saarbrücken, Saarlouis und Co.",
     intro:
-      `Neupatienten googeln heute zuerst „Zahnarzt Saarbrücken" oder „Implantologe Saarlouis" – bevor sie überhaupt anrufen. Wer auf Seite 2 landet oder eine veraltete Website hat, verliert genau diese Patienten an die nächstgelegene Praxis.`,
+      `Neupatienten googeln heute zuerst „Zahnarzt Saarbrücken“ oder „Implantologe Saarlouis“ – bevor sie überhaupt anrufen. Wer auf Seite 2 landet oder eine veraltete Website hat, verliert genau diese Patienten an die nächstgelegene Praxis.`,
     sections: [
       {
         title: "Vertrauen ab der ersten Sekunde",
@@ -250,7 +309,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO für Zahnarzt-Suchanfragen",
-        text: `Optimiert für Suchbegriffe wie „Zahnarzt Saarbrücken Notdienst", „Kieferorthopäde Saarlouis", „Implantate Homburg" oder „Bleaching Merzig". Inkl. Google-Unternehmensprofil-Setup und Strategie für mehr 5-Sterne-Bewertungen.`,
+        text: `Optimiert für Suchbegriffe wie „Zahnarzt Saarbrücken Notdienst“, „Kieferorthopäde Saarlouis“, „Implantate Homburg“ oder „Bleaching Merzig“. Inkl. Google-Unternehmensprofil-Setup und Strategie für mehr 5-Sterne-Bewertungen.`,
       },
     ],
     faqs: [
@@ -267,15 +326,30 @@ export const topics: Topic[] = [
         a: "Standard 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Design typischerweise 4–6 Wochen.",
       },
     ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
+    ],
   },
   {
     slug: "anwalt",
     h1: "Website für Anwälte & Kanzleien im Saarland",
     metaTitle: "Website für Anwalt Saarland | Mehr Mandanten online | Fylu",
     metaDescription:
-      "Anwalts- und Kanzlei-Websites im Saarland: seriös, fachgebietsorientiert, mit lokaler SEO. Mehr qualifizierte Mandantenanfragen in Saarbrücken, Saarlouis und ganz Saarland.",
+      "Anwalts- und Kanzlei-Websites im Saarland: seriös, fachgebietsorientiert, mit lokaler SEO. Mehr qualifizierte Mandantenanfragen im gesamten Saarland.",
     intro:
-      `Mandanten googeln heute spezifisch nach „Anwalt Familienrecht Saarbrücken" oder „Fachanwalt Arbeitsrecht Saarlouis". Wer dort nicht oben rankt, wird übersehen – egal wie groß die Reputation ist.`,
+      `Mandanten googeln heute spezifisch nach „Anwalt Familienrecht Saarbrücken“ oder „Fachanwalt Arbeitsrecht Saarlouis“. Wer dort nicht oben rankt, wird übersehen – egal wie groß die Reputation ist.`,
     sections: [
       {
         title: "Seriöses Design mit klarer Spezialisierung",
@@ -301,8 +375,23 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie funktioniert SEO für Anwaltskanzleien?",
-        a: `Wir optimieren pro Fachgebiet und Standort – z.B. „Fachanwalt Arbeitsrecht Saarbrücken". Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
+        a: `Wir optimieren pro Fachgebiet und Standort – z.B. „Fachanwalt Arbeitsrecht Saarbrücken“. Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -324,7 +413,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO für Verkaufsstandorte",
-        text: `Optimierung für Suchbegriffe wie „Haus verkaufen Saarbrücken", „Immobilienmakler Saarlouis", „Wohnung kaufen Homburg". Inkl. Google-Unternehmensprofil und Bewertungsstrategie.`,
+        text: `Optimierung für Suchbegriffe wie „Haus verkaufen Saarbrücken“, „Immobilienmakler Saarlouis“, „Wohnung kaufen Homburg“. Inkl. Google-Unternehmensprofil und Bewertungsstrategie.`,
       },
     ],
     faqs: [
@@ -340,6 +429,21 @@ export const topics: Topic[] = [
         q: "Wie messen wir den Erfolg?",
         a: "Über klar definierte KPIs: Anzahl qualifizierter Eigentümer-Anfragen, Käufer-Leads pro Objekt, Verweildauer auf Objektseiten und Conversion-Rate. Monatliche Reports inklusive.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -361,7 +465,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO & Google Business",
-        text: `Optimierung für „Hausarzt Saarbrücken", „Kardiologe Saarlouis", „Dermatologe Homburg" und vergleichbare Suchbegriffe. Inkl. professionellem Google-Unternehmensprofil mit Fotos, Sprechzeiten und Review-Strategie.`,
+        text: `Optimierung für „Hausarzt Saarbrücken“, „Kardiologe Saarlouis“, „Dermatologe Homburg“ und vergleichbare Suchbegriffe. Inkl. professionellem Google-Unternehmensprofil mit Fotos, Sprechzeiten und Review-Strategie.`,
       },
     ],
     faqs: [
@@ -377,6 +481,21 @@ export const topics: Topic[] = [
         q: "Wie lange dauert die Erstellung?",
         a: "Typischerweise 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Konzept 4–6 Wochen.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -398,7 +517,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale Sichtbarkeit & Bewertungen",
-        text: `Optimierung für „Friseur Saarbrücken", „Balayage Saarlouis", „Männerhaarschnitt Homburg" und vergleichbare Suchbegriffe. Inkl. Google-Unternehmensprofil mit Fotos, Stories und Review-Strategie.`,
+        text: `Optimierung für „Friseur Saarbrücken“, „Balayage Saarlouis“, „Männerhaarschnitt Homburg“ und vergleichbare Suchbegriffe. Inkl. Google-Unternehmensprofil mit Fotos, Stories und Review-Strategie.`,
       },
     ],
     faqs: [
@@ -435,7 +554,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale & touristische SEO",
-        text: `Optimierung für „Hotel Saarbrücken", „Wellnesshotel Bostalsee", „Pension Saarschleife", saisonale Begriffe und Anreise-Routen. Inkl. Google-Profil mit aktuellen Bildern, Bewertungs-Pflege und Story-Inhalten.`,
+        text: `Optimierung für „Hotel Saarbrücken“, „Wellnesshotel Bostalsee“, „Pension Saarschleife“, saisonale Begriffe und Anreise-Routen. Inkl. Google-Profil mit aktuellen Bildern, Bewertungs-Pflege und Story-Inhalten.`,
       },
     ],
     faqs: [
@@ -472,7 +591,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO & Marken-SEO",
-        text: `Optimierung sowohl für „Autohaus Saarbrücken" als auch für markenspezifische Suchen wie „BMW Saarlouis", „Werkstatt Audi Homburg" oder „Reifen wechseln Saarbrücken".`,
+        text: `Optimierung sowohl für „Autohaus Saarbrücken“ als auch für markenspezifische Suchen wie „BMW Saarlouis“, „Werkstatt Audi Homburg“ oder „Reifen wechseln Saarbrücken“.`,
       },
     ],
     faqs: [
@@ -509,7 +628,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO für Elektro-Suchen",
-        text: `Optimierung für „Elektriker Saarbrücken", „PV-Anlage Saarlouis", „Wallbox installieren Homburg" und vergleichbare Suchbegriffe. Plus Schema.org für Notdienst, Öffnungszeiten und Servicegebiete.`,
+        text: `Optimierung für „Elektriker Saarbrücken“, „PV-Anlage Saarlouis“, „Wallbox installieren Homburg“ und vergleichbare Suchbegriffe. Plus Schema.org für Notdienst, Öffnungszeiten und Servicegebiete.`,
       },
     ],
     faqs: [
@@ -525,6 +644,21 @@ export const topics: Topic[] = [
         q: "Lohnt sich Google Ads für mein Gewerk?",
         a: "Für Photovoltaik, Wärmepumpen und E-Mobilität: definitiv ja. Auftragswerte sind hoch, Werbe-Kosten amortisieren sich oft mit dem ersten Lead.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
     ],
   },
   {
@@ -546,7 +680,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO für SHK-Suchanfragen",
-        text: `Optimierung für „Heizungsbauer Saarbrücken", „Wärmepumpe Saarlouis", „Bad sanieren Homburg" und vergleichbare hochpreisige Suchbegriffe. Inkl. Schema.org für lokale Dienstleister.`,
+        text: `Optimierung für „Heizungsbauer Saarbrücken“, „Wärmepumpe Saarlouis“, „Bad sanieren Homburg“ und vergleichbare hochpreisige Suchbegriffe. Inkl. Schema.org für lokale Dienstleister.`,
       },
     ],
     faqs: [
@@ -583,7 +717,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale SEO für Maler-Suchen",
-        text: `Optimierung für „Maler Saarbrücken", „Fassade streichen Saarlouis", „Wohnung renovieren Homburg" und ähnliche Suchbegriffe. Inkl. Google-Unternehmensprofil mit aktuellen Projektbildern.`,
+        text: `Optimierung für „Maler Saarbrücken“, „Fassade streichen Saarlouis“, „Wohnung renovieren Homburg“ und ähnliche Suchbegriffe. Inkl. Google-Unternehmensprofil mit aktuellen Projektbildern.`,
       },
     ],
     faqs: [
@@ -597,7 +731,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kann ich Saisonangebote einbauen?",
-        a: `Ja. Z.B. „Frühjahrsaktion Fassade", „Renovierung in der Nebensaison günstiger" – als Conversion-Booster zu schwachen Jahreszeiten.`,
+        a: `Ja. Z.B. „Frühjahrsaktion Fassade“, „Renovierung in der Nebensaison günstiger“ – als Conversion-Booster zu schwachen Jahreszeiten.`,
       },
     ],
   },
@@ -636,6 +770,21 @@ export const topics: Topic[] = [
         q: "Ist eine Online-Terminbuchung sinnvoll?",
         a: "Definitiv. Patienten buchen gerne abends und am Wochenende – wenn Ihre Praxis geschlossen ist. Online-Buchungen erhöhen die Termin-Auslastung messbar.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -785,6 +934,21 @@ export const topics: Topic[] = [
         a: "Mit lokaler SEO und einem optimierten Google Business Profil definitiv – das ist eine der wichtigsten Suchanfragen für Hausbesitzer.",
       },
     ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+    ],
   },
   {
     slug: "shk",
@@ -821,6 +985,21 @@ export const topics: Topic[] = [
         q: "Lohnt sich ein Wärmepumpen-Bereich?",
         a: "Absolut – Wärmepumpe ist eines der gefragtesten Suchthemen und positioniert Sie als zukunftsorientierter Betrieb.",
       },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
     ],
   },
   {
@@ -895,6 +1074,162 @@ export const topics: Topic[] = [
         q: "Können Sie auch saisonale Aktionen integrieren?",
         a: "Ja – Frühjahrsaktionen, Herbst-Pflanzungen oder Winter-Baumschnitt können prominent eingeblendet werden.",
       },
+    ],
+  },
+  {
+    slug: "photovoltaik",
+    h1: "Website für Photovoltaik-Unternehmen im Saarland",
+    metaTitle: "Website für Photovoltaik-Unternehmen | Qualifizierte Anfragen | Fylu",
+    metaDescription:
+      "Websites für PV-Installateure und Photovoltaik-Anbieter: qualifizierte Anfragen mit Vor-Konfigurator, transparente Förderung, lokale SEO. Für hochwertige B2B-Aufträge.",
+    intro:
+      "Photovoltaik ist einer der wenigen Wachstumsmärkte mit weiterhin steigender Nachfrage und hohen Auftragswerten. Der Engpass ist selten die Nachfrage, sondern die Vorqualifikation: zu viele unqualifizierte Anfragen kosten Vertriebszeit. Eine professionelle Website filtert vorab und produziert Anfragen mit echtem Projektvolumen.",
+    sections: [
+      {
+        title: "Vorqualifikation als Effizienz-Hebel",
+        text: "Ein Online-Konfigurator, der Dachfläche, Verbrauch, Standort und Zielsetzung strukturiert erfasst, spart pro Verkaufsgespräch 30 bis 60 Minuten Erstberatung. Wer nur qualifizierte Anfragen bekommt, wandelt sichtbar mehr Aufträge um — bei gleicher Vertriebskapazität.",
+      },
+      {
+        title: "Förderberatung als Vertrauens-Signal",
+        text: "BEG-Förderung, KfW-Programme, steuerliche Absetzbarkeit: Eigentümer suchen aktiv nach diesen Informationen. Wer sie strukturiert bereitstellt, positioniert sich als kompetenter Ansprechpartner — vor dem ersten Kontakt. Content-Cluster zu Fördermitteln bringt planbar SEO-Traffic mit hoher Kaufabsicht.",
+      },
+      {
+        title: "Lokale SEO für PV-Suchen",
+        text: "Suchen wie „PV-Anlage Saarbrücken“, „Solar Handwerker Saarlouis“, „Wärmepumpe mit Photovoltaik“ haben klare lokale Absicht und hohe Konversionsraten. Google-Unternehmensprofil, LocalBusiness-Schema, klare Servicegebiete und regionale Referenzen sind die Stellhebel.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Wie qualifiziert kann eine Online-Anfrage wirklich sein?",
+        a: "Mit einem sauber gebauten Vor-Konfigurator (Dachfläche, Neigung, Ausrichtung, Verbrauch, Speicher-Interesse, Budget-Rahmen) bekommen Sie zu 80 Prozent Anfragen mit realem Projektvolumen. Nicht jede wird zum Auftrag, aber der Filter-Effekt ist deutlich messbar.",
+      },
+      {
+        q: "Wie funktioniert die Förderberatung als Lead-Magnet?",
+        a: "Eigene Ratgeber-Seiten zu BEG, KfW 458, steuerlichen Vorteilen und Kombinationsförderung. Nutzer, die aktiv nach Förderung suchen, sind in der Entscheidungsphase. Eine strukturierte, sachliche Übersicht positioniert Sie als kompetenten Ansprechpartner.",
+      },
+      {
+        q: "Lohnt sich Google Ads für Photovoltaik?",
+        a: "Ja, in besonderem Maß. Klickpreise sind höher als in vielen anderen Segmenten (typisch 5 bis 15 Euro), aber Auftragswerte auch. Ein einzelner gewonnener Auftrag amortisiert oft mehrere Monate Ads-Budget. Voraussetzung: sauberes Conversion-Tracking und passende Landing-Page.",
+      },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+    ],
+  },
+  {
+    slug: "gebaeudereinigung",
+    h1: "Website für Gebäudereinigungsunternehmen",
+    metaTitle: "Website für Gebäudereinigung | B2B-Aufträge gewinnen | Fylu",
+    metaDescription:
+      "Websites für Gebäudereinigung: professionelle Auftraggeber gewinnen, Zertifikate sichtbar machen, ausschreibungs-fit auftreten. B2B-fokussiert.",
+    intro:
+      "Gebäudereinigung ist einer der wenigen Wachstumsmärkte mit stabilen langfristigen Aufträgen — vorausgesetzt, das Unternehmen kann die richtigen Auftraggeber überzeugen. Verwaltungsgebäude, Industriekomplexe, Facility-Management und öffentliche Ausschreibungen entscheiden meist innerhalb von 60 Sekunden auf der Website, ob ein Anbieter zur Auswahl kommt. Eine austauschbare Website kostet diese Aufträge.",
+    sections: [
+      {
+        title: "Zertifikate und Substanz sichtbar machen",
+        text: "ISO 9001, RAL-Gütezeichen Gebäudereinigung, Meisterbetrieb, Referenzobjekte, Personalstruktur, Fuhrpark: das sind die Signale, die Facility-Manager und Ausschreibungsstellen suchen. Wir bauen die Website so, dass diese Substanz strukturiert dargestellt wird — nicht als PDF-Anhang, sondern als eigene Sektionen die auch von Google indexiert werden.",
+      },
+      {
+        title: "Getrennte Ansprache für unterschiedliche Auftraggeber",
+        text: "Bürogebäude, Industriereinigung, medizinische Einrichtungen, Hotellerie, Wohnungswirtschaft — jede Zielgruppe hat andere Anforderungen (Hygiene-Standards, Schichtzeiten, Freigaben, Vertragsformen). Eigene Landing-Seiten pro Objekttyp erhöhen die Relevanz und die Ausschreibungs-Passung deutlich.",
+      },
+      {
+        title: "Lokale und regionale Sichtbarkeit",
+        text: "Optimierung für konkrete Suchbegriffe wie „Gebäudereinigung Saarbrücken“, „Industriereinigung Saarland“, „Facility-Reinigung Homburg“. Plus Google-Unternehmensprofil, das für Suchen mit Objektbezug prominent erscheint.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Was macht eine gute Gebäudereinigungs-Website aus?",
+        a: "Klare Trennung nach Objekttyp, sichtbare Zertifikate und Referenzen, transparente Beschreibung der Prozesse (Qualitätssicherung, Personalführung, Vertragsmodelle), konkrete Ansprechpartner. Kein Marketing-Blabla, sondern nachprüfbare Substanz.",
+      },
+      {
+        q: "Kann eine Website wirklich B2B-Ausschreibungen bringen?",
+        a: "Ja — als Vor-Qualifikationsfilter. Facility-Manager recherchieren vor Ausschreibung fast immer online, welche Anbieter überhaupt zur Auswahl kommen. Eine Website, die Kompetenz strukturiert zeigt, öffnet die Türen zur Einladung.",
+      },
+      {
+        q: "Wie lange dauert der Aufbau einer solchen Website?",
+        a: "Für eine solide B2B-Website mit klarer Auftraggeber-Struktur typischerweise vier bis acht Wochen. Wenn Zertifikate, Referenzobjekte und Prozessbeschreibungen bereits vorliegen, entsprechend schneller.",
+      },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
+      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+    ],
+  },
+  {
+    slug: "industrie",
+    h1: "Website für Industrieunternehmen im Saarland",
+    metaTitle: "Website für Industrie & Mittelstand | B2B-Vertrieb | Fylu",
+    metaDescription:
+      "Websites für produzierendes Gewerbe und Industrie-Mittelstand: technisch dichte Produktdarstellung, internationale Sichtbarkeit, saubere Vertriebs-Architektur.",
+    intro:
+      "Industriebetriebe verkaufen nicht spontan. Der typische B2B-Kaufprozess dauert Wochen bis Monate, involviert mehrere Entscheider und startet fast immer mit einer Google-Recherche. Wer in dieser Phase nicht substanziell sichtbar ist, wird für relevante Anfragen und Ausschreibungen gar nicht erst in Betracht gezogen — unabhängig von Produktqualität und Reputation im etablierten Umfeld.",
+    sections: [
+      {
+        title: "Produkte und Technologien strukturiert darstellen",
+        text: "Technische Datenblätter, Anwendungsfälle, Zertifizierungen, Compliance-Nachweise: die typischen Kaufkriterien im industriellen B2B-Segment. Wir bauen die Website als strukturiertes Produktverzeichnis mit sauberer Filterlogik und Zugriff auf Detail-Dokumente — indexierbar, aber auch für Fachrecherchen intern nutzbar.",
+      },
+      {
+        title: "Vertriebsarchitektur mit klarer Konversion",
+        text: "Kontaktaufnahme im Industrie-B2B ist selten „Kaufen“-Button. Sinnvolle Konversionen: Datenblatt-Download, technisches Erstgespräch, Produkt-Demo, Angebotsanfrage mit Vorqualifikation. Jede dieser Aktionen wird bewusst gestaltet und getrackt — als eigene Metrik, nicht als Sammel-Formular.",
+      },
+      {
+        title: "Internationale Sichtbarkeit wo relevant",
+        text: "Viele deutsche Industrieunternehmen exportieren 40 bis 80 Prozent. Ohne mehrsprachige Website (DE/EN/FR mindestens) bleibt der Zugang zu internationalen Buying-Centern verschlossen. Wir bauen mehrsprachig mit sauberen hreflang-Signalen — nicht als Übersetzungs-Kosmetik, sondern mit sprachspezifischer Content-Struktur.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Warum brauchen Industrieunternehmen überhaupt eine moderne Website?",
+        a: "Weil auch bei etablierten B2B-Beziehungen die Erst-Recherche neuer Ansprechpartner online passiert. Ein technischer Einkäufer, der 2018 an einen Zulieferer verkauft hat, prüft 2026 als neuer Ansprechpartner die Website — und trifft dort Entscheidungen über Vertrauen und Einladung zu Angeboten.",
+      },
+      {
+        q: "Was ist der Unterschied zu einer Standard-B2B-Website?",
+        a: "Industrie-Websites müssen technische Tiefe zeigen, ohne den Nicht-Ingenieur zu verlieren. Klare Produkt-Kategorien, strukturierte technische Daten, PDF-Datenblätter, Referenzeinsätze mit konkreten Anwendungen. Und das alles mehrsprachig und für lange Vertriebszyklen ausgelegt.",
+      },
+      {
+        q: "Wie lange dauert ein solches Projekt?",
+        a: "Für einen fokussierten Auftritt mit klarer Produktstruktur: sechs bis zehn Wochen. Bei umfangreichem Produktkatalog und mehreren Sprachen: drei bis fünf Monate. Der Löwenanteil ist typischerweise die technische Content-Aufbereitung, nicht die Umsetzung selbst.",
+      },
+    ],
+    relatedTools: [
+      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
+      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
+      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
+    ],
+    relatedProblems: [
+      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
+      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
+      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
+    ],
+    relatedGuides: [
+      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
+      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
     ],
   },
 ];

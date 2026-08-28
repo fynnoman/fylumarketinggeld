@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/webdesign-handwerk",
   },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: { index: false, follow: true },
+  },
   openGraph: {
     title: "Webdesign für Handwerker | Website die Aufträge bringt | Fylu",
     description:

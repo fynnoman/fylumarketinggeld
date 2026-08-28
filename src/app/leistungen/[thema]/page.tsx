@@ -3,12 +3,15 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { topics, getTopicBySlug } from "@/lib/topics";
+import { topics, getTopicBySlug, isIndexableTopic } from "@/lib/topics";
+import { getCasesByIndustry } from "@/lib/cases";
 
 const SITE = "https://www.fylumarketing.de";
 
 function getRelatedTopics(currentSlug: string) {
-  return topics.filter((t) => t.slug !== currentSlug).slice(0, 8);
+  return topics
+    .filter((t) => t.slug !== currentSlug && isIndexableTopic(t))
+    .slice(0, 8);
 }
 
 export function generateStaticParams() {
@@ -24,10 +27,18 @@ export async function generateMetadata({
   const topic = getTopicBySlug(thema);
   if (!topic) return {};
   const url = `${SITE}/leistungen/${topic.slug}`;
+  const indexable = isIndexableTopic(topic);
   return {
     title: topic.metaTitle,
     description: topic.metaDescription,
     alternates: { canonical: url },
+    robots: indexable
+      ? undefined
+      : {
+          index: false,
+          follow: true,
+          googleBot: { index: false, follow: true },
+        },
     openGraph: {
       title: topic.metaTitle,
       description: topic.metaDescription,
@@ -55,6 +66,7 @@ export default async function TopicPage({
 
   const url = `${SITE}/leistungen/${topic.slug}`;
   const relatedTopics = getRelatedTopics(topic.slug);
+  const industryCases = getCasesByIndustry(topic.slug);
 
   return (
     <main>
@@ -194,6 +206,139 @@ export default async function TopicPage({
           </div>
         </div>
       </section>
+
+      {/* Cross-Linking: passende Tools und Wissen — nur wenn kuratiert vorhanden */}
+      {(topic.relatedTools?.length || topic.relatedProblems?.length || topic.relatedGuides?.length) && (
+        <section className="py-20 px-6 bg-white border-t border-stone-200">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10 text-center">
+              <div className="mb-4 flex items-baseline justify-center gap-3">
+                <span className="font-display italic text-cyan-600 text-xl leading-none">§</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Passend zum Thema
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-stone-900 tracking-[-0.02em]">
+                Werkzeuge und Antworten für diese Branche
+              </h2>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-3">
+              {topic.relatedTools && topic.relatedTools.length > 0 && (
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                    Tools
+                  </h3>
+                  <ul className="space-y-3">
+                    {topic.relatedTools.map((t) => (
+                      <li key={t.href}>
+                        <Link
+                          href={t.href}
+                          className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors"
+                        >
+                          <div className="flex items-baseline justify-between gap-2 mb-1">
+                            <span className="text-sm font-semibold text-stone-900">{t.label}</span>
+                            <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                          </div>
+                          {t.description && (
+                            <p className="text-xs text-stone-600 leading-relaxed">{t.description}</p>
+                          )}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {topic.relatedProblems && topic.relatedProblems.length > 0 && (
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                    Probleme
+                  </h3>
+                  <ul className="space-y-3">
+                    {topic.relatedProblems.map((p) => (
+                      <li key={p.href}>
+                        <Link
+                          href={p.href}
+                          className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors"
+                        >
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span className="text-sm font-semibold text-stone-900">{p.label}</span>
+                            <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {topic.relatedGuides && topic.relatedGuides.length > 0 && (
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                    Ratgeber
+                  </h3>
+                  <ul className="space-y-3">
+                    {topic.relatedGuides.map((g) => (
+                      <li key={g.href}>
+                        <Link
+                          href={g.href}
+                          className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors"
+                        >
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span className="text-sm font-semibold text-stone-900">{g.label}</span>
+                            <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Referenzen zu dieser Branche — nur wenn kuratierte Cases existieren */}
+      {industryCases.length > 0 && (
+        <section className="py-16 md:py-20 px-6 bg-white border-t border-stone-200">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-10 text-center">
+              <div className="mb-4 flex items-baseline justify-center gap-3">
+                <span className="font-display italic text-cyan-600 text-xl leading-none">§</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Referenzen aus der Branche
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-stone-900 tracking-[-0.02em]">
+                Umgesetzte Fylu-Projekte für vergleichbare Häuser
+              </h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {industryCases.map((cs) => (
+                <Link
+                  key={cs.slug}
+                  href={`/referenzen/${cs.slug}`}
+                  className="group relative rounded-2xl border border-stone-200 bg-white p-5 hover:border-cyan-300 transition-colors"
+                >
+                  <div className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-2">
+                    {cs.eyebrow}
+                  </div>
+                  <h3 className="text-lg font-semibold text-stone-900 mb-2 leading-tight">
+                    {cs.h1}
+                  </h3>
+                  <p className="text-sm text-stone-600 leading-relaxed mb-3">{cs.hero.lead}</p>
+                  <span className="inline-flex items-center gap-1 text-[13px] font-semibold text-cyan-700">
+                    Zum Case
+                    <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Cross-Linking: weitere Branchen-Leistungen */}
       <section className="py-16 px-6 bg-stone-100 border-t border-stone-200">

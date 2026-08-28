@@ -8,11 +8,33 @@ import FAQSection from '@/components/FAQSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';
 import { regions } from '@/lib/regions';
-import { topics } from '@/lib/topics';
+import { topics, isIndexableTopic } from '@/lib/topics';
+import { homeFaqs } from '@/lib/home-faqs';
 
 export default function Home() {
+  const indexableTopics = topics.filter(isIndexableTopic);
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            '@id': 'https://www.fylumarketing.de/#faqpage',
+            inLanguage: 'de-DE',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['#faq-heading', '[id^="faq-panel-"]'],
+            },
+            mainEntity: homeFaqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }),
+        }}
+      />
       <Navbar />
       <HeroSection />
       <PinnedManifesto />
@@ -74,7 +96,7 @@ export default function Home() {
                 Nach Branche
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-                {topics.map((t) => (
+                {indexableTopics.map((t) => (
                   <Link
                     key={t.slug}
                     href={`/leistungen/${t.slug}`}
@@ -89,8 +111,14 @@ export default function Home() {
                 <Link href="/website-erstellen-lassen" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
                   Website erstellen lassen
                 </Link>
-                <Link href="/webdesign-handwerk" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
-                  Webdesign Handwerk
+                <Link href="/tools/website-kosten-rechner" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
+                  Kosten transparent berechnen
+                </Link>
+                <Link href="/probleme" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
+                  Website-Probleme lösen
+                </Link>
+                <Link href="/ratgeber" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
+                  Ratgeber
                 </Link>
                 <Link href="/buchen" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
                   Vorgespräch buchen

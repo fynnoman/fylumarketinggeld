@@ -120,6 +120,7 @@ export default async function RegionPage({
   const pageFaqs = faqs(region.city);
   const url = `${SITE}/webdesign/${region.slug}`;
   const relatedRegions = getRelatedRegions(region.slug);
+  const isTop = region.tier === "top";
 
   return (
     <main>
@@ -467,6 +468,126 @@ export default async function RegionPage({
         </div>
       </section>
 
+      {/* Werkzeuge und Antworten — nur für Top-Städte, um SEO-Bestand nicht zu verwässern */}
+      {isTop && (
+        <section className="py-20 px-6 bg-white border-t border-stone-200">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10 text-center">
+              <div className="mb-4 flex items-baseline justify-center gap-3">
+                <span className="font-display italic text-cyan-600 text-xl leading-none">§</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Vor dem Gespräch
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-stone-900 tracking-[-0.02em]">
+                Werkzeuge und Antworten für Ihr Vorhaben in {region.city}
+              </h2>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-3">
+              <div>
+                <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                  Tools
+                </h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/tools/website-check" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2 mb-1">
+                        <span className="text-sm font-semibold text-stone-900">Website-Analyse</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                      <p className="text-xs text-stone-600 leading-relaxed">Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt.</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/website-kosten-rechner" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2 mb-1">
+                        <span className="text-sm font-semibold text-stone-900">Kosten-Rechner</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                      <p className="text-xs text-stone-600 leading-relaxed">Investitions-Spanne für Ihr Vorhaben in zwei Minuten.</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/seo-check" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2 mb-1">
+                        <span className="text-sm font-semibold text-stone-900">SEO-Check</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                      <p className="text-xs text-stone-600 leading-relaxed">Priorisierte SEO-Findings mit konkreter Handlungsempfehlung.</p>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                  Probleme
+                </h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/probleme/website-bekommt-keine-anfragen" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Website bekommt keine Anfragen</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/probleme/website-bei-google-nicht-gefunden" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Bei Google nicht gefunden</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/probleme/website-conversion-verbessern" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Conversion verbessern</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
+                  Ratgeber
+                </h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/ratgeber/website-kosten" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Was kostet eine Website?</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ratgeber/sichtbarkeit-bei-google-verbessern" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Bei Google sichtbar werden</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ratgeber/website-relaunch" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-semibold text-stone-900">Website-Relaunch: sinnvoll?</span>
+                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Cross-Linking: weitere Städte im Saarland */}
       <section className="py-16 px-6 bg-stone-100 border-t border-stone-200">
         <div className="max-w-5xl mx-auto">
@@ -491,7 +612,7 @@ export default async function RegionPage({
             <Link href="/seo-saarland" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">SEO Saarland</Link>
             <Link href="/google-ads-saarland" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Google Ads Saarland</Link>
             <Link href="/website-erstellen-lassen" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Website erstellen lassen</Link>
-            <Link href="/webdesign-handwerk" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Webdesign Handwerk</Link>
+            <Link href="/tools/website-check" className="px-4 py-2 bg-white border border-stone-200 rounded-full text-stone-600 hover:border-cyan-500 hover:text-cyan-600 transition-colors">Website-Analyse</Link>
           </div>
         </div>
       </section>

@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "optimize:img": "node scripts/optimize-images.mjs"
+    "optimize:img": "node scripts/optimize-images.mjs",
+    "check:seo": "node scripts/seo-quality-gate.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
+    "cheerio": "^1.2.0",
     "framer-motion": "^12.34.0",
     "next": "16.1.6",
     "nodemailer": "^8.0.10",
