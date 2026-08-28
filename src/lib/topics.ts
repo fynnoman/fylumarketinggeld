@@ -18,9 +18,17 @@ export type Topic = {
   relatedGuides?: TopicRelated[];
 };
 
-// „handwerker“ war zunächst als generisch eingestuft. Strategie-Update 2026-09:
-// Handwerker bleibt strategisch relevant und wird als hochwertige B2B-Branchen-Seite
-// weiterentwickelt — deshalb wieder indexable.
+// Off-ICP: passt nicht zur B2B-Positionierung ODER redundant/generisch für den
+// aktuellen Fokus. Off-ICP-Topics werden noindex, aus der Sitemap entfernt und
+// auf der Home nicht mehr verlinkt (bleiben aber erreichbar).
+//
+// Historie:
+// - 2026-08 initial: restaurant, guenstig, in-14-tagen, friseur, hotel,
+//   autohaus, onlineshop, coach, fitnessstudio (Consumer-Fokus, nicht ICP).
+// - 2026-09 Update: handwerker WIEDER indexable (hochwertige B2B-Ausrichtung).
+// - 2026-09 Konsolidierung: festpreis (Konditionen-Slug, kein Branchen),
+//   heizungsbauer (Duplikat zu SHK), maler/schreiner/garten-landschaftsbau
+//   (generische Handwerks-Slugs — wird von handwerker-Landing abgedeckt).
 const OFF_ICP_SLUGS = new Set([
   "restaurant",
   "guenstig",
@@ -31,6 +39,11 @@ const OFF_ICP_SLUGS = new Set([
   "onlineshop",
   "coach",
   "fitnessstudio",
+  "festpreis",
+  "heizungsbauer",
+  "maler",
+  "schreiner",
+  "garten-landschaftsbau",
 ]);
 
 export function isIndexableTopic(t: Topic): boolean {

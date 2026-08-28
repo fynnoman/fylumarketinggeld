@@ -33,7 +33,7 @@ export const guides: GuidePage[] = [
       "Was kostet eine Website wirklich? Transparente Aufschlüsselung nach Projektklasse, Umfang und Funktionsbedarf — inkl. konkreter Preisspannen und ehrlichen Preistreibern.",
     h1: "Was kostet eine Website? Transparente Spannen, ehrliche Preistreiber.",
     shortAnswer:
-      "Für professionelle B2B-Websites bewegen sich seriöse Angebote je nach Umfang und Design-Tiefe zwischen 3.500 und 25.000 Euro netto. Kompaktere Auftritte auch darunter, individuelle Vorhaben mit Sonderfunktionen darüber. Wer eine „450-Euro-Website“ verkauft, verkauft in der Regel etwas anderes.",
+      "Für professionelle B2B-Websites im Fylu-Rahmen bewegen sich Angebote je nach Umfang und Design-Tiefe zwischen 800 und 3.500 Euro netto. Der Kernrahmen (etablierter B2B-Mittelstand, klare Verkaufsarchitektur) liegt typischerweise bei 1.200–2.500 Euro. Wer eine „150-Euro-Website“ verkauft, verkauft in der Regel etwas anderes.",
     intro:
       "Die Frage „was kostet eine Website“ bekommt selten eine ehrliche Antwort — meistens, weil sie strukturell schwer zu beantworten ist. Zu viele Variablen: Umfang, Design-Tiefe, Content-System, Funktionsbedarf, SEO-Investition, Sprachen, Wartungsmodell. Dieser Artikel legt die Rechnung offen und macht die Spannen greifbar.",
     sections: [
@@ -56,15 +56,15 @@ export const guides: GuidePage[] = [
     ],
     examples: [
       {
-        title: "Kompakter B2B-Auftritt (etwa 3.500 – 6.500 €)",
-        text: "5–7 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
+        title: "Kompakter B2B-Auftritt (etwa 800 – 1.400 €)",
+        text: "3–5 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
       },
       {
-        title: "Vollständige Studio-Website (etwa 7.000 – 15.000 €)",
-        text: "8–15 Seiten, Premium- oder Signature-Design, individuelle Bildwelt, erweiterte SEO-Foundation, mehrstufige Formulare, ggf. zweite Sprache, 90-Tage-Begleitung. Der übliche Rahmen für etablierte Mittelständler.",
+        title: "Vollständige Studio-Website (etwa 1.400 – 2.500 €)",
+        text: "6–12 Seiten, Premium-Design, eigene Bildwelt, erweiterte SEO-Foundation, mehrstufige Formulare, ggf. zweite Sprache, 90-Tage-Begleitung. Der übliche Rahmen für etablierte Mittelständler.",
       },
       {
-        title: "Individueller Auftritt mit Sonderfunktionen (ab 15.000 €)",
+        title: "Individueller Auftritt mit Sonderfunktionen (ab 2.500 €)",
         text: "Umfangreiche Seitenzahl, headless CMS, Rechner oder Konfigurator, mehrere Sprachen, Integrations- und Automatisierungsschnittstellen. Für Vorhaben mit klarem digitalen Vertriebsanspruch oder komplexem Portfolio.",
       },
     ],
@@ -76,16 +76,16 @@ export const guides: GuidePage[] = [
     },
     faqs: [
       {
-        q: "Warum ist eine 500-Euro-Website meistens keine gute Idee?",
+        q: "Warum ist eine 150-Euro-Website meistens keine gute Idee?",
         a: "Weil sich in dieser Klasse fast immer verstecken: Templates ohne Zielgruppen-Anpassung, Standard-Texte, keine SEO-Basis, kein Ansprechpartner nach Live-Gang. Für ein persönliches Portfolio funktioniert das. Für ein Unternehmen, das Neukunden über die Website gewinnen will, meist nicht.",
       },
       {
         q: "Was kostet die laufende Pflege einer Website?",
-        a: "Übliche Größenordnungen: 40 bis 200 Euro pro Monat für Hosting, Updates und kleine inhaltliche Anpassungen. Eigene SEO-Betreuung oder aktive Content-Arbeit kommt separat obendrauf und wird transparent kalkuliert.",
+        a: "Übliche Größenordnungen: 20 bis 60 Euro pro Monat für Hosting, Updates und kleine inhaltliche Anpassungen. Eigene SEO-Betreuung oder aktive Content-Arbeit kommt separat obendrauf und wird transparent kalkuliert.",
       },
       {
         q: "Ist eine Website mit Rechner oder Konfigurator deutlich teurer?",
-        a: "Ja, meist um 2.000 bis 8.000 Euro zusätzlich — je nach Komplexität, Anzahl Regeln und Design. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
+        a: "Ja, meist um 300 bis 800 Euro zusätzlich — je nach Komplexität, Anzahl Regeln und Design. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
       },
       {
         q: "Was macht der Kosten-Rechner konkret?",

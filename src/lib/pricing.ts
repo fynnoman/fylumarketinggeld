@@ -27,62 +27,63 @@ export type CalculatorResult = {
   timelineWeeks: { from: number; to: number };
 };
 
-// Basiswerte pro Feld — bewusst zentral gehalten, damit Anpassungen an einer
-// einzigen Stelle passieren. Keine ratings verstreut über UI und API.
+// Basiswerte pro Feld — kalibriert auf Fylu-Preisrahmen (2026-09):
+// realistische Spanne 800–3.500 € netto, Kernkunden ~1.200–2.500 €.
+// Alle Anpassungen zentral, damit UI und API konsistent bleiben.
 const SEITEN_BASE: Record<CalculatorInput["seiten"], number> = {
-  "3-5": 3200,
-  "6-10": 5200,
-  "11-20": 8400,
-  "20+": 13500,
+  "3-5": 900,
+  "6-10": 1150,
+  "11-20": 1500,
+  "20+": 1900,
 };
 
 const DESIGN_MULT: Record<CalculatorInput["designLevel"], number> = {
   standard: 1.0,
-  premium: 1.35,
-  signature: 1.75,
+  premium: 1.15,
+  signature: 1.3,
 };
 
 const CMS_ADD: Record<CalculatorInput["cms"], number> = {
   none: 0,
-  basic: 900,
-  headless: 3200,
+  basic: 80,
+  headless: 200,
 };
 
 const SEO_ADD: Record<CalculatorInput["seo"], number> = {
   none: 0,
-  basic: 800,
-  advanced: 2400,
+  basic: 120,
+  advanced: 300,
 };
 
 const MEHRSPRACHIG_ADD: Record<CalculatorInput["mehrsprachig"], number> = {
   no: 0,
-  two: 1400,
-  three_plus: 2800,
+  two: 150,
+  three_plus: 300,
 };
 
 const FORMULARE_ADD: Record<CalculatorInput["formulare"], number> = {
   simple: 0,
-  multistep: 700,
-  logic: 1600,
+  multistep: 80,
+  logic: 180,
 };
 
 const INTEGRATIONEN_ADD: Record<CalculatorInput["integrationen"], number> = {
   none: 0,
-  few: 900,
-  many: 2400,
+  few: 100,
+  many: 250,
 };
 
 const SHOP_ADD: Record<CalculatorInput["shop"], number> = {
   none: 0,
-  small: 2800,
-  medium: 6500,
-  large: 14000,
+  small: 250,
+  medium: 500,
+  large: 800,
 };
 
 const CUSTOM_ADD: Record<CalculatorInput["customFunctions"], number> = {
   none: 0,
-  some: 1800,
-  many: 5500,
+  some: 180,
+  many: 500,
 };
 
 export function calculate(input: CalculatorInput): CalculatorResult {
@@ -122,10 +123,10 @@ export function calculate(input: CalculatorInput): CalculatorResult {
 }
 
 function classifyProject(point: number, input: CalculatorInput): ProjectClass {
-  if (input.shop === "large" || input.customFunctions === "many" || point > 22000) {
+  if (input.shop === "large" || input.customFunctions === "many" || point > 2800) {
     return "maison";
   }
-  if (point > 10500 || input.designLevel === "signature" || input.shop === "medium") {
+  if (point > 1600 || input.designLevel === "signature" || input.shop === "medium") {
     return "atelier";
   }
   return "signature";

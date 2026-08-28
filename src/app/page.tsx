@@ -13,6 +13,9 @@ import { homeFaqs } from '@/lib/home-faqs';
 
 export default function Home() {
   const indexableTopics = topics.filter(isIndexableTopic);
+  // Nur Top-5-Städte auf der Home verlinken — die 24 Extended-Städte sind noindex,
+  // eine prominente Verlinkung würde widersprüchliche Signale an Google senden.
+  const topRegions = regions.filter((r) => r.tier === "top");
   return (
     <main>
       <script
@@ -67,7 +70,7 @@ export default function Home() {
                 Nach Stadt
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-                {regions.map((r) => (
+                {topRegions.map((r) => (
                   <Link
                     key={r.slug}
                     href={`/webdesign/${r.slug}`}
