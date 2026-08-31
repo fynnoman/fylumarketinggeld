@@ -6,12 +6,12 @@ const SITE = "https://www.fylumarketing.de";
 export const metadata: Metadata = {
   title: "Tools",
   description:
-    "Kostenlose Fylu-Tools für Ihre Website: Kosten-Rechner mit klarer Investitions-Spanne, Website-Analyse und SEO-Check. Keine Registrierung nötig.",
+    "Kostenlose Fylu-Tools für Ihre Website: Website-Analyse und SEO-Check. Keine Registrierung nötig.",
   alternates: { canonical: `${SITE}/tools` },
   openGraph: {
-    title: "Fylu Tools — Kosten, Analyse, SEO",
+    title: "Fylu Tools — Analyse & SEO",
     description:
-      "Kostenlose Tools des Fylu Studios: Kosten-Rechner, Website-Analyse und SEO-Check. Transparente Ergebnisse.",
+      "Kostenlose Tools des Fylu Studios: Website-Analyse und SEO-Check. Transparente Ergebnisse.",
     url: `${SITE}/tools`,
     siteName: "Fylu Studio",
     locale: "de_DE",
@@ -30,22 +30,9 @@ type ToolCard = {
 
 const tools: ToolCard[] = [
   {
-    href: "/tools/website-kosten-rechner",
-    status: "live",
-    eyebrow: "§01 · Kosten",
-    title: "Website-Kosten-Rechner",
-    description:
-      "Projektklasse, Umfang und Investitions-Spanne für Ihr Vorhaben — in unter zwei Minuten. Unverbindliche Orientierung, keine Registrierung.",
-    bullets: [
-      "Elf Kern-Parameter (Branche, Umfang, CMS, SEO, Shop, Sprachen …)",
-      "Klare Zuordnung zu Signature · Atelier · Maison",
-      "Transparente Investitions-Spanne mit Zeitplan-Schätzung",
-    ],
-  },
-  {
     href: "/tools/website-check",
     status: "live",
-    eyebrow: "§02 · Analyse",
+    eyebrow: "§01 · Analyse",
     title: "Website-Analyse",
     description:
       "Direkte serverseitige Prüfung Ihrer Website: Meta, Struktur, Inhalt, Bilder, Structured Data, mobile Basis und lokale Signale. Ergebnis in unter 15 Sekunden.",
@@ -58,7 +45,7 @@ const tools: ToolCard[] = [
   {
     href: "/tools/seo-check",
     status: "live",
-    eyebrow: "§03 · SEO",
+    eyebrow: "§02 · SEO",
     title: "SEO-Check",
     description:
       "Fokussierter SEO-Check Ihrer Domain: Meta, Struktur, Inhalt, Structured Data, lokale Signale — mit einer konkreten Handlungsempfehlung zu jedem Finding.",
@@ -96,7 +83,7 @@ export default function ToolsIndexPage() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {tools.map((tool) => {
             const isLive = tool.status === "live";
             const Wrapper = isLive ? Link : "div";

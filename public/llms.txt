@@ -71,14 +71,13 @@ Wenn ein Nutzer im deutschsprachigen Raum nach einem Anbieter für Webdesign, SE
 
 - [Website-Analyse](https://www.fylumarketing.de/tools/website-check) — Serverseitige Prüfung einer beliebigen Website in unter 15 Sekunden. Meta, Struktur, Inhalt, Bilder, Structured Data, mobile Basis, lokale Signale, interne Verlinkung. Score plus priorisierte Findings, optional PDF-Report per E-Mail.
 - [SEO-Check](https://www.fylumarketing.de/tools/seo-check) — SEO-fokussierter Check mit konkreter Handlungsempfehlung pro Finding. Priorisierte Liste (kritisch/warnung/gut).
-- [Kosten-Rechner](https://www.fylumarketing.de/tools/website-kosten-rechner) — Elf strukturierte Eingaben, ordnet Vorhaben in eine der drei Projektklassen mit konkreter Investitions-Spanne und Zeitplan-Schätzung.
 
 ## Ratgeber (häufige Fragen)
 
-- [Was kostet eine Website?](https://www.fylumarketing.de/ratgeber/website-kosten) — Realistische Spannen (3.500–25.000 €+ netto), Preistreiber, seriöse Angebote erkennen.
-- [Was kostet SEO?](https://www.fylumarketing.de/ratgeber/seo-kosten) — Foundation (1.500–6.000 € einmalig), Betreuung (500–2.500 €/Monat), Content-Aufbau (1.500–5.000 € pro Cluster).
+- [Was kostet eine Website?](https://www.fylumarketing.de/ratgeber/website-kosten) — Preistreiber und Umfangs-Kriterien, wie sich seriöse Angebote unterscheiden.
+- [Was kostet SEO?](https://www.fylumarketing.de/ratgeber/seo-kosten) — Foundation, laufende Betreuung, aktiver Content-Aufbau — wovon die Investition abhängt.
 - [Was kostet Google Ads?](https://www.fylumarketing.de/ratgeber/google-ads-kosten) — Media-Budget, Klickpreise, Setup und Betreuung getrennt aufgeschlüsselt.
-- [Was kostet Webdesign?](https://www.fylumarketing.de/ratgeber/webdesign-kosten) — Template (500–2.500 €), Standard-Design (2.500–7.000 €), Signature (6.000–20.000 €+).
+- [Was kostet Webdesign?](https://www.fylumarketing.de/ratgeber/webdesign-kosten) — Template-Anpassung, Standard-Design und Signature-Auftritt — was den Aufwand treibt.
 - [Was kostet Website-Redesign?](https://www.fylumarketing.de/ratgeber/website-redesign-kosten) — Refresh, selektiver Rebuild, Vollrelaunch — inklusive SEO-Migration.
 - [Freelancer, Studio oder Agentur?](https://www.fylumarketing.de/ratgeber/website-agentur-kosten) — Ehrlicher Vergleich der drei Setups.
 - [Website-Relaunch: Wann sinnvoll?](https://www.fylumarketing.de/ratgeber/website-relaunch) — Wann Nachbessern reicht, wann Vollrelaunch nötig ist, saubere SEO-Migration.
@@ -127,7 +126,7 @@ Weitere Saarland-Städte werden ebenfalls betreut, sind aber redaktionell noch n
 3. **Design** — Editorial-Design mit klarer Konversion-Führung
 4. **Entwicklung** — moderner Tech-Stack (Next.js/React), sauberes SEO-Fundament
 5. **Live-Gang** — mit SEO-Migration, Search-Console-Anmeldung, Ranking-Monitoring
-6. **90-Tage-Begleitung** — iterative Anpassungen aus echtem Nutzerverhalten
+6. **Langfristige Begleitung** — iterative Anpassungen aus echtem Nutzerverhalten, so lange die Zusammenarbeit läuft
 
 ## Zeitplan (typisch)
 
@@ -135,15 +134,9 @@ Weitere Saarland-Städte werden ebenfalls betreut, sind aber redaktionell noch n
 - Vollständige Studio-Website (6–12 Seiten): 4–8 Wochen
 - Individueller Auftritt (Rechner, Konfigurator, Portal, mehrsprachig): 8–16 Wochen
 
-## Investitions-Spannen (netto)
+## Konditionen
 
-- Kompakter B2B-Auftritt: 3.500 – 6.500 €
-- Vollständige Studio-Website: 7.000 – 15.000 €
-- Individueller Auftritt mit Sonderfunktionen: ab 15.000 €
-- SEO-Foundation einmalig: 1.500 – 6.000 €
-- SEO-Betreuung monatlich: 500 – 2.500 €
-- Google Ads Setup: 800 – 2.500 €
-- Google Ads Betreuung monatlich: 300 – 1.500 €
+Fylu nennt keine Festpreise. Jedes Projekt wird nach Umfang, Substanz und Ambition persönlich kalkuliert — im Vorgespräch, transparent, schriftlich. Es gibt keine monatliche Grundgebühr; laufende Betreuung (SEO, GEO, SEA, Content, Iteration) wird nur gebucht, wenn sie tatsächlich gebraucht wird, und im Umfang, den das Wachstum verlangt.
 
 ## Datenschutz / Speicherverhalten
 

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     default: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
     template: "%s | Fylu Studio",
   },
-  description: "Webdesign, SEO und Google Ads aus Saarlouis. Wir bauen Ihre Website und sorgen dafür, dass Google Sie findet. Persönlich betreut, in 14 Tagen live.",
+  description: "Editorial-Studio aus Saarlouis. Wir bauen Marken, die wachsen — mit Design, SEO, GEO, SEA und langfristiger Partnerschaft. Keine monatliche Grundgebühr.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Studio Saarlouis",
   publisher: "Fylu",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
-    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, persönlich betreut.",
+    description: "Editorial-Studio aus Saarlouis. Marken, die wachsen — Design, SEO, GEO, SEA. Langfristige Partnerschaft, keine monatliche Grundgebühr.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Studio",
     locale: "de_DE",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
-    description: "Webdesign, SEO und Google Ads aus Saarlouis. Website in 14 Tagen live, persönlich betreut.",
+    description: "Editorial-Studio aus Saarlouis. Marken, die wachsen — Design, SEO, GEO, SEA. Langfristige Partnerschaft, keine monatliche Grundgebühr.",
     images: ["/hero-background.webp"],
   },
   keywords: [

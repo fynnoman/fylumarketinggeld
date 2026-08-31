@@ -141,7 +141,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm text-stone-400">
               <li><Link href="/tools" className="hover:text-white transition-colors">Alle Tools</Link></li>
-              <li><Link href="/tools/website-kosten-rechner" className="hover:text-white transition-colors">Kosten-Rechner</Link></li>
               <li><Link href="/tools/website-check" className="hover:text-white transition-colors">Website-Analyse</Link></li>
               <li><Link href="/tools/seo-check" className="hover:text-white transition-colors">SEO-Check</Link></li>
             </ul>
@@ -215,7 +214,6 @@ export default function Footer() {
               <li><Link href="/leistungen/garten-landschaftsbau" className="hover:text-white transition-colors">GaLaBau</Link></li>
               <li><Link href="/leistungen/maler" className="hover:text-white transition-colors">Maler</Link></li>
               <li><Link href="/leistungen/heizungsbauer" className="hover:text-white transition-colors">Heizungsbauer</Link></li>
-              <li><Link href="/leistungen/festpreis" className="hover:text-white transition-colors">Festpreis-Projekte</Link></li>
             </ul>
           </div>
         </div>

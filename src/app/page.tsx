@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import PinnedManifesto from '@/components/PinnedManifesto';
+import LeistungenSection from '@/components/LeistungenSection';
 import HorizontalCases from '@/components/HorizontalCases';
 import CalendlySection from '@/components/CalendlySection';
 import FAQSection from '@/components/FAQSection';
@@ -41,6 +42,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PinnedManifesto />
+      <LeistungenSection />
       <CalendlySection />
       <HorizontalCases />
       <FAQSection />
@@ -113,9 +115,6 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-2">
                 <Link href="/website-erstellen-lassen" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
                   Website erstellen lassen
-                </Link>
-                <Link href="/tools/website-kosten-rechner" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
-                  Kosten transparent berechnen
                 </Link>
                 <Link href="/probleme" className="px-3 py-1.5 bg-white border border-stone-200 rounded-full text-xs font-medium text-[var(--ink)] hover:border-cyan-200 transition-colors">
                   Website-Probleme lösen

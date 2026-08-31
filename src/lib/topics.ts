@@ -29,17 +29,18 @@ export type Topic = {
 // - 2026-09 Konsolidierung: festpreis (Konditionen-Slug, kein Branchen),
 //   heizungsbauer (Duplikat zu SHK), maler/schreiner/garten-landschaftsbau
 //   (generische Handwerks-Slugs — wird von handwerker-Landing abgedeckt).
+// - 2026-08-31 Removal: festpreis und in-14-tagen Topics komplett entfernt
+//   (Positionierung: keine Festpreise, keine Speed-Claims — Editorial +
+//   langfristige Partnerschaft).
 const OFF_ICP_SLUGS = new Set([
   "restaurant",
   "guenstig",
-  "in-14-tagen",
   "friseur",
   "hotel",
   "autohaus",
   "onlineshop",
   "coach",
   "fitnessstudio",
-  "festpreis",
   "heizungsbauer",
   "maler",
   "schreiner",
@@ -90,7 +91,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -178,7 +178,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -230,80 +229,6 @@ export const topics: Topic[] = [
     ],
   },
   {
-    slug: "festpreis",
-    h1: "Website mit transparenten Konditionen im Saarland",
-    metaTitle: "Website mit transparenten Konditionen Saarland | Fylu",
-    metaDescription:
-      "Website mit transparenten Konditionen: keine versteckten Kosten, klare Pakete, persönliche Betreuung im Saarland. Jetzt unverbindlich anfragen.",
-    intro:
-      "Stundensatz-Abrechnungen sind das größte Risiko bei Web-Projekten. Bei uns arbeiten Sie zu klaren, transparenten Konditionen – Sie kennen Leistungsumfang und Konditionen, bevor wir starten.",
-    sections: [
-      {
-        title: "Transparente Pakete",
-        text: "Jedes Projekt wird vorab transparent und schriftlich kalkuliert — nichts entsteht überraschend auf der Rechnung.",
-      },
-      {
-        title: "Schriftliche Leistungsbeschreibung",
-        text: "Sie erhalten ein Angebot mit detaillierter Leistungsliste: Anzahl der Seiten, Funktionen, SEO-Umfang, Hosting-Dauer und Support. So gibt es kein Vertun.",
-      },
-      {
-        title: "Was vereinbart ist, gilt.",
-        text: "Auch wenn die Umsetzung länger dauert: Die vereinbarten Konditionen bleiben. Sie tragen kein Projektrisiko. Punkt.",
-      },
-    ],
-    faqs: [
-      {
-        q: "Was ist im Angebot enthalten?",
-        a: "Komplettes Design, technische Umsetzung, lokale SEO-Basis, Google Business-Einrichtung, mobile Optimierung und Hosting (je nach Paket 2–4 Monate inkl.).",
-      },
-      {
-        q: "Was passiert bei nachträglichen Wünschen?",
-        a: "Sie erhalten vorab eine kostenlose Kalkulation. Sie entscheiden, ob die Erweiterung umgesetzt wird – immer zu klaren, transparenten Konditionen.",
-      },
-      {
-        q: "Wie verbindlich ist das Angebot?",
-        a: "Verbindlich. Es steht schriftlich und gilt für den vereinbarten Leistungsumfang.",
-      },
-    ],
-  },
-  {
-    slug: "in-14-tagen",
-    h1: "Website in 14 Tagen im Saarland",
-    metaTitle: "Website in 14 Tagen Saarland | Express | Fylu",
-    metaDescription:
-      "Express-Website in nur 14 Tagen: professionell, mobiloptimiert, mit lokaler SEO. Für Unternehmen im Saarland.",
-    intro:
-      "Sie brauchen schnell eine professionelle Website? Mit dem Express-Prozess geht Ihre neue Website in 14 Tagen online – ohne Qualitätsverlust und mit allen Kernfunktionen, die Ihr Unternehmen braucht.",
-    sections: [
-      {
-        title: "Strukturierter 14-Tage-Prozess",
-        text: "Tag 1–2: Briefing & Konzept. Tag 3–5: Erstes Design. Tag 6–10: Umsetzung. Tag 11–13: Feedback & Feintuning. Tag 14: Launch. Klar getaktet, ohne Endlosschleifen.",
-      },
-      {
-        title: "Volle Qualität, keine Abkürzungen",
-        text: "Mobile-first Design, lokale SEO, Google Business und sauberer Code sind Standard – auch im Express-Prozess.",
-      },
-      {
-        title: "Voraussetzung: Sie sind ebenfalls schnell",
-        text: "Damit der Plan aufgeht, brauchen wir Ihre Texte, Bilder und Feedbacks innerhalb von 24 Stunden. Wenn Sie liefern, halten wir den Termin – garantiert.",
-      },
-    ],
-    faqs: [
-      {
-        q: "Geht das wirklich in 14 Tagen?",
-        a: "Ja – wenn Sie bei Briefing und Feedback ebenfalls innerhalb von 24 Stunden reagieren. Andernfalls verschiebt sich der Launch entsprechend.",
-      },
-      {
-        q: "Kostet der Express-Service extra?",
-        a: "Nein. Die vereinbarten Konditionen bleiben — Sie zahlen keinen Aufpreis für das Tempo.",
-      },
-      {
-        q: "Wie viele Seiten umfasst die Express-Website?",
-        a: "Im Standard bis zu 6 Seiten. Mehr ist möglich, kann aber den 14-Tage-Termin verschieben.",
-      },
-    ],
-  },
-  {
     slug: "zahnarzt",
     h1: "Website für Zahnärzte im Saarland",
     metaTitle: "Website für Zahnarzt Saarland | Mehr Neupatienten online | Fylu",
@@ -341,7 +266,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -393,7 +317,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -445,7 +368,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -497,7 +419,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -661,7 +582,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -786,7 +706,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [
@@ -950,7 +869,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -1002,7 +920,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -1128,7 +1045,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -1180,7 +1096,6 @@ export const topics: Topic[] = [
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
     ],
     relatedProblems: [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
@@ -1231,7 +1146,6 @@ export const topics: Topic[] = [
     ],
     relatedTools: [
       { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/website-kosten-rechner", label: "Kosten-Rechner", description: "Investitions-Spanne für Ihr Vorhaben in zwei Minuten." },
       { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
     ],
     relatedProblems: [

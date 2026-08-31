@@ -39,7 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/google-ads-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/website-erstellen-lassen`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/tools`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/tools/website-kosten-rechner`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${baseUrl}/tools/website-check`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/tools/seo-check`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/probleme`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },

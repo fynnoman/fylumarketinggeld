@@ -37,7 +37,6 @@ type Body = {
 // Menschliche Bezeichnungen für die Bestätigungsmail — kein Marketing-Text,
 // nur klare Zuordnung.
 const TOOL_LABELS: Record<string, string> = {
-  "website-kosten-rechner": "Website-Kosten-Rechner",
   "website-check": "Website-Analyse",
   "seo-check": "SEO-Check",
 };

@@ -34,7 +34,7 @@ const faqs = (city: string) => [
   },
   {
     q: "Was passiert nach dem Launch?",
-    a: "Zwischen 60 und 180 Tagen Studio-Begleitung sind je nach Paket enthalten. Iteration, Reporting, Feinschliff. Danach entscheiden Sie, ob wir weiter begleiten oder Sie im eigenen Haus übernehmen.",
+    a: "Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig — Iteration, SEO, GEO, SEA, Reporting, Feinschliff, neue Landingpages. Keine monatliche Grundgebühr, ihr bucht Betreuung im Umfang, den euer Wachstum verlangt. Ihr entscheidet, wie lange wir zusammenarbeiten.",
   },
 ];
 
@@ -57,7 +57,7 @@ const steps = [
   },
   {
     title: "Iteration",
-    text: "Bis zu sechs Monate Studio-Begleitung nach Live-Gang. Zeit für Substanz, nicht für Theorie.",
+    text: "Langfristige Studio-Begleitung nach Live-Gang. Wir bleiben, so lange ihr wachst — Zeit für Substanz, nicht für Theorie.",
   },
 ];
 
@@ -497,15 +497,6 @@ export default async function RegionPage({
                         <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
                       </div>
                       <p className="text-xs text-stone-600 leading-relaxed">Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt.</p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/website-kosten-rechner" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
-                      <div className="flex items-baseline justify-between gap-2 mb-1">
-                        <span className="text-sm font-semibold text-stone-900">Kosten-Rechner</span>
-                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
-                      </div>
-                      <p className="text-xs text-stone-600 leading-relaxed">Investitions-Spanne für Ihr Vorhaben in zwei Minuten.</p>
                     </Link>
                   </li>
                   <li>

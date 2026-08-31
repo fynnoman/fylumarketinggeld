@@ -3,7 +3,7 @@
 // → passendes Tool → Vorgespräch als Eskalation.
 
 export type ProblemToolLink = {
-  href: "/tools/website-check" | "/tools/seo-check" | "/tools/website-kosten-rechner";
+  href: "/tools/website-check" | "/tools/seo-check" | "/buchen";
   label: string;
   reason: string;
 };

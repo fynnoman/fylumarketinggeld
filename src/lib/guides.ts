@@ -4,7 +4,7 @@
 // passendes Tool → Vorgespräch als Eskalation.
 
 export type GuideToolLink = {
-  href: "/tools/website-check" | "/tools/seo-check" | "/tools/website-kosten-rechner";
+  href: "/tools/website-check" | "/tools/seo-check" | "/buchen";
   label: string;
   reason: string;
 };
@@ -28,14 +28,14 @@ export type GuidePage = {
 export const guides: GuidePage[] = [
   {
     slug: "website-kosten",
-    metaTitle: "Was kostet eine Website? Spannen und Preistreiber 2026 | Fylu",
+    metaTitle: "Was kostet eine Website? Preistreiber und Projektklassen 2026 | Fylu",
     metaDescription:
-      "Was kostet eine Website wirklich? Transparente Aufschlüsselung nach Projektklasse, Umfang und Funktionsbedarf — inkl. konkreter Preisspannen und ehrlichen Preistreibern.",
-    h1: "Was kostet eine Website? Transparente Spannen, ehrliche Preistreiber.",
+      "Was kostet eine Website wirklich? Transparente Aufschlüsselung nach Projektklasse, Umfang und Funktionsbedarf — mit den ehrlichen Preistreibern statt Pauschal-Zahlen.",
+    h1: "Was kostet eine Website? Ehrliche Preistreiber statt Pauschal-Zahlen.",
     shortAnswer:
-      "Für professionelle B2B-Websites im Fylu-Rahmen bewegen sich Angebote je nach Umfang und Design-Tiefe zwischen 800 und 3.500 Euro netto. Der Kernrahmen (etablierter B2B-Mittelstand, klare Verkaufsarchitektur) liegt typischerweise bei 1.200–2.500 Euro. Wer eine „150-Euro-Website“ verkauft, verkauft in der Regel etwas anderes.",
+      "Eine seriöse Antwort beginnt nicht mit einer Zahl, sondern mit Fragen: Wie tief ist die Konzeption, wie individuell die Gestaltung, wie umfangreich der Content, wie ausgeprägt Funktionen und SEO-Anspruch? Wer eine ultrabillige Website verkauft, verkauft in der Regel etwas anderes — Template-Kosmetik statt Vertriebswerkzeug.",
     intro:
-      "Die Frage „was kostet eine Website“ bekommt selten eine ehrliche Antwort — meistens, weil sie strukturell schwer zu beantworten ist. Zu viele Variablen: Umfang, Design-Tiefe, Content-System, Funktionsbedarf, SEO-Investition, Sprachen, Wartungsmodell. Dieser Artikel legt die Rechnung offen und macht die Spannen greifbar.",
+      "Die Frage „was kostet eine Website“ bekommt selten eine ehrliche Antwort — meistens, weil sie strukturell schwer zu beantworten ist. Zu viele Variablen: Umfang, Design-Tiefe, Content-System, Funktionsbedarf, SEO-Investition, Sprachen, Wartungsmodell. Dieser Artikel legt die Rechnung offen und macht sichtbar, was den Aufwand wirklich treibt.",
     sections: [
       {
         title: "Warum die Spannen so groß sind",
@@ -56,40 +56,40 @@ export const guides: GuidePage[] = [
     ],
     examples: [
       {
-        title: "Kompakter B2B-Auftritt (etwa 800 – 1.400 €)",
+        title: "Kompakter B2B-Auftritt",
         text: "3–5 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
       },
       {
-        title: "Vollständige Studio-Website (etwa 1.400 – 2.500 €)",
+        title: "Vollständige Studio-Website",
         text: "6–12 Seiten, Premium-Design, eigene Bildwelt, erweiterte SEO-Foundation, mehrstufige Formulare, ggf. zweite Sprache, 90-Tage-Begleitung. Der übliche Rahmen für etablierte Mittelständler.",
       },
       {
-        title: "Individueller Auftritt mit Sonderfunktionen (ab 2.500 €)",
+        title: "Individueller Auftritt mit Sonderfunktionen",
         text: "Umfangreiche Seitenzahl, headless CMS, Rechner oder Konfigurator, mehrere Sprachen, Integrations- und Automatisierungsschnittstellen. Für Vorhaben mit klarem digitalen Vertriebsanspruch oder komplexem Portfolio.",
       },
     ],
     tool: {
-      href: "/tools/website-kosten-rechner",
-      label: "Kosten-Rechner öffnen",
+      href: "/buchen",
+      label: "Vorgespräch buchen",
       reason:
-        "In unter zwei Minuten die eigene Projektklasse und Investitions-Spanne einordnen — ohne Registrierung.",
+        "Kein Kalkulator, kein Fragebogen — ein fünfzehnminütiges Gespräch, in dem wir das Vorhaben einordnen und den passenden Rahmen skizzieren.",
     },
     faqs: [
       {
-        q: "Warum ist eine 150-Euro-Website meistens keine gute Idee?",
+        q: "Warum ist eine ultrabillige Website meistens keine gute Idee?",
         a: "Weil sich in dieser Klasse fast immer verstecken: Templates ohne Zielgruppen-Anpassung, Standard-Texte, keine SEO-Basis, kein Ansprechpartner nach Live-Gang. Für ein persönliches Portfolio funktioniert das. Für ein Unternehmen, das Neukunden über die Website gewinnen will, meist nicht.",
       },
       {
-        q: "Was kostet die laufende Pflege einer Website?",
-        a: "Übliche Größenordnungen: 20 bis 60 Euro pro Monat für Hosting, Updates und kleine inhaltliche Anpassungen. Eigene SEO-Betreuung oder aktive Content-Arbeit kommt separat obendrauf und wird transparent kalkuliert.",
+        q: "Was fällt für die laufende Pflege einer Website an?",
+        a: "Laufende Pflege umfasst Hosting, Updates und kleine inhaltliche Anpassungen. Der Aufwand skaliert mit Umfang und Änderungsfrequenz. Eigene SEO-Betreuung oder aktive Content-Arbeit ist eine separate Leistung und wird eigenständig kalkuliert.",
       },
       {
-        q: "Ist eine Website mit Rechner oder Konfigurator deutlich teurer?",
-        a: "Ja, meist um 300 bis 800 Euro zusätzlich — je nach Komplexität, Anzahl Regeln und Design. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
+        q: "Ist eine Website mit Rechner oder Konfigurator deutlich aufwändiger?",
+        a: "Ja, spürbar — je nach Komplexität, Anzahl Regeln, Design und Integrationstiefe. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
       },
       {
-        q: "Was macht der Kosten-Rechner konkret?",
-        a: "Er nimmt elf strukturierte Eingaben (Branche, Umfang, Design-Tiefe, Sprachen, Shop, Funktionen …) und ordnet Ihr Vorhaben in eine der drei Projektklassen ein — plus konkrete Investitions-Spanne und Zeitplan-Schätzung. Basis sind reale Fylu-Projekte.",
+        q: "Wie ordne ich mein Vorhaben in eine Projektklasse ein?",
+        a: "Über eine strukturierte Bestandsaufnahme: Branche, Umfang, Design-Tiefe, Sprachen, Shop, Funktionen. Die Kombination dieser Faktoren entscheidet, welche Klasse (kompakter Auftritt, vollständige Studio-Website oder individueller Auftritt mit Sonderfunktionen) sinnvoll ist — plus eine ehrliche Zeitplan-Einordnung.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -182,10 +182,10 @@ export const guides: GuidePage[] = [
     slug: "seo-kosten",
     metaTitle: "Was kostet SEO? Foundation, Betreuung, Content-Aufbau | Fylu",
     metaDescription:
-      "Was kostet SEO wirklich? Transparente Aufschlüsselung zwischen einmaliger Foundation, laufender Betreuung und aktivem Content-Aufbau — mit konkreten Preisspannen.",
-    h1: "Was kostet SEO? Ehrliche Rahmen für Foundation, Betreuung und Content-Aufbau.",
+      "Was kostet SEO wirklich? Transparente Aufschlüsselung zwischen einmaliger Foundation, laufender Betreuung und aktivem Content-Aufbau — mit den Faktoren, die den Aufwand treiben.",
+    h1: "Was kostet SEO? Ehrliche Ebenen für Foundation, Betreuung und Content-Aufbau.",
     shortAnswer:
-      "Einmalige SEO-Foundation für eine mittelgroße Website: typischerweise 1.500 bis 6.000 Euro. Laufende Betreuung: 500 bis 2.500 Euro pro Monat, je nach Umfang. Aktiver Content-Aufbau kommt separat, oft in Zwei-bis-Vier-Monats-Sprints kalkuliert.",
+      "SEO-Investitionen zerfallen in drei Ebenen: einmalige Foundation, laufende Betreuung und aktiver Content-Aufbau. Jede Ebene hat einen eigenen Aufwandsrahmen. Wer die drei sauber trennt und weiß, welche Fragen im Angebot beantwortet sein müssen, kann Anbieter erstmals wirklich vergleichen.",
     intro:
       "SEO-Kosten schwanken deutlich stärker als Website-Kosten — und werden oft undurchsichtig kommuniziert. Der Grund: SEO ist keine einmalige Leistung, sondern eine Kombination aus Foundation, laufender Betreuung und aktivem Content-Aufbau. Wer die drei Ebenen trennt, kann Angebote endlich vergleichen.",
     sections: [
@@ -203,20 +203,20 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Wann sich aktive Content-Investition lohnt",
-        text: "Wenn Sie in einem umkämpften Markt Position gewinnen wollen — nicht halten. Content-Aufbau ist der Hebel für neue Rankings, die vorher nicht existierten. Rechnen Sie mit 1.500 bis 5.000 Euro pro Content-Cluster (Hub + 5 bis 10 Detail-Pages). Wirkungslatenz: drei bis sechs Monate bis zu sichtbaren Rankings.",
+        text: "Wenn Sie in einem umkämpften Markt Position gewinnen wollen — nicht halten. Content-Aufbau ist der Hebel für neue Rankings, die vorher nicht existierten. Ein Cluster umfasst typischerweise eine Hub-Page plus fünf bis zehn Detail-Pages; Aufwand und Rahmen richten sich nach Recherchetiefe, Wettbewerb und Anspruch an die Ausarbeitung. Wirkungslatenz: drei bis sechs Monate bis zu sichtbaren Rankings.",
       },
     ],
     examples: [
       {
-        title: "Foundation für mittelgroße B2B-Website (1.500 – 3.500 €)",
+        title: "Foundation für mittelgroße B2B-Website",
         text: "Technischer Audit, saubere technische Basis, Structured Data auf allen Kern-URLs, Meta-Optimierung, Google-Unternehmensprofil, Sitemap, robots.txt, Basis-Monitoring aufgesetzt. Einmalig, danach hält es typischerweise 12 bis 18 Monate ohne strukturellen Nacharbeit.",
       },
       {
-        title: "Laufende Betreuung mittleren Umfangs (500 – 1.200 € pro Monat)",
+        title: "Laufende Betreuung mittleren Umfangs",
         text: "Monatliches Reporting, Position-Monitoring 15 bis 30 Kern-Keywords, kleine Content-Anpassungen, GBP-Pflege, kleinere technische Fixes. Passend für Unternehmen mit stabilem Ranking, das gehalten und moderat ausgebaut werden soll.",
       },
       {
-        title: "Aktiver Content-Aufbau (1.500 – 4.000 € pro Cluster)",
+        title: "Aktiver Content-Aufbau je Cluster",
         text: "Hub-Page plus 5 bis 10 substanzielle Detail-Pages zu einem Kern-Thema, alle intern verlinkt, mit sauberer Meta- und Schema-Struktur. Wirkungslatenz drei bis sechs Monate. Passend für gezielte Positionierungs-Angriffe in neuen Themen.",
       },
     ],
@@ -228,12 +228,12 @@ export const guides: GuidePage[] = [
     },
     faqs: [
       {
-        q: "Warum sind SEO-Preise so unterschiedlich?",
-        a: "Weil SEO drei sehr unterschiedliche Leistungen zusammenfasst (Foundation, Betreuung, Content-Aufbau) und Anbieter unterschiedliche Kombinationen daraus verkaufen. Ein „SEO-Paket für 200 Euro pro Monat“ deckt meist nur eine der Ebenen — oder deckt gar nichts wirklich Substantielles.",
+        q: "Warum sind SEO-Angebote so unterschiedlich?",
+        a: "Weil SEO drei sehr unterschiedliche Leistungen zusammenfasst (Foundation, Betreuung, Content-Aufbau) und Anbieter unterschiedliche Kombinationen daraus verkaufen. Sehr niedrig kalkulierte SEO-Pakete decken meist nur eine der Ebenen — oder gar nichts wirklich Substantielles. Fragen Sie explizit, welche Ebene abgedeckt ist und in welcher Tiefe.",
       },
       {
-        q: "Lohnt sich günstige SEO-Betreuung?",
-        a: "Unter 400 Euro pro Monat ist meist keine echte Betreuung — sondern automatisierte Reports ohne strategische Auswertung. Wer wirklich Ranking gewinnen will, braucht mindestens die 500- bis 1.000-Euro-Klasse mit aktiver Analyse.",
+        q: "Woran erkenne ich echte SEO-Betreuung?",
+        a: "Sehr niedrig kalkulierte Betreuungspakete liefern meist automatisierte Reports ohne strategische Auswertung. Echte Betreuung heißt: monatliche Analyse der Search-Console-Daten, Ableitungen für den nächsten Monat, gepflegtes Position-Monitoring, verantwortliche Ansprechperson. Wenn das im Angebot nicht steht, steht es meist auch nicht in der Leistung.",
       },
       {
         q: "Wie schnell sehe ich Ergebnisse einer SEO-Investition?",
@@ -247,10 +247,10 @@ export const guides: GuidePage[] = [
     slug: "google-ads-kosten",
     metaTitle: "Was kostet Google Ads? Budget, Klickpreise, Konditionen | Fylu",
     metaDescription:
-      "Was kostet Google Ads wirklich? Realistische Budget-Rahmen, was Klickpreise treibt und wann sich Ads lohnen — plus transparente Angaben zu Agentur- und Betreuungskosten.",
-    h1: "Was kostet Google Ads? Media-Budget, Agentur, Klickpreise — ehrlich aufgeschlüsselt.",
+      "Was kostet Google Ads wirklich? Wie sich Media-Budget, Setup und Betreuung sauber trennen, was Klickpreise treibt und wann sich Ads für welches Geschäftsmodell lohnen.",
+    h1: "Was kostet Google Ads? Media-Budget, Agentur, Klickpreise — sauber getrennt.",
     shortAnswer:
-      "Sinnvolles monatliches Media-Budget für lokale B2B-Kampagnen: 500 bis 3.000 Euro. Für kompetitivere Segmente (Wärmepumpen, Photovoltaik, hochwertige Kanzleien): 2.000 bis 10.000 Euro. Agentur-Setup einmalig: 800 bis 2.500 Euro. Laufende Betreuung: 300 bis 1.500 Euro pro Monat.",
+      "Google-Ads-Investitionen bestehen aus drei Blöcken, die getrennt betrachtet werden müssen: dem Media-Budget (was Google für Klicks bekommt), dem einmaligen Setup (Konto-Struktur, Tracking, erste Kampagnen) und der laufenden Betreuung. Der sinnvolle Rahmen hängt vor allem vom Wettbewerb im Suchbegriff, der Zielregion und der wirtschaftlichen Wertigkeit eines Leads ab.",
     intro:
       "„Was kostet Google Ads“ ist eine unbeantwortbare Frage — außer man trennt Media-Budget von Agentur-Kosten und beides von der Wirtschaftlichkeit. Dieser Artikel legt die drei Ebenen offen und macht klar, wann sich Ads für welches Geschäftsmodell rechnen.",
     sections: [
@@ -260,45 +260,45 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was Klickpreise wirklich treibt",
-        text: "Vier Faktoren: Wettbewerb im Suchbegriff (Photovoltaik-Klicks über 8 Euro, allgemeine Info-Suchen unter 1 Euro), Qualitäts-Score (technisch saubere Anzeigen + passende Landingpage senken den Klickpreis um bis zu 50 Prozent), Zielregion (Klicks in urbanen Zentren teurer als in ländlichen Regionen), Zeit (Morgens andere Preise als abends). Wer die Faktoren versteht, senkt Klickpreise systematisch.",
+        text: "Vier Faktoren: Wettbewerb im Suchbegriff (kompetitive Segmente wie Photovoltaik liegen um ein Vielfaches über allgemeinen Info-Suchen), Qualitäts-Score (technisch saubere Anzeigen und passende Landingpage senken den Klickpreis spürbar), Zielregion (urbane Zentren teurer als ländliche Regionen), Zeit (Tageszeiten variieren). Wer die Faktoren versteht, senkt Klickpreise systematisch.",
       },
       {
         title: "Wann sich Google Ads rechnen",
-        text: "Grundregel: pro qualifizierten Lead sollten die Ad-Kosten deutlich unter der Marge des Erstauftrags liegen. Bei Aufträgen ab 3.000 Euro Marge sind Ads für Lead-Kosten bis 100 Euro selbst in umkämpften Segmenten wirtschaftlich. Bei kleineren Auftragsvolumen wird die Rechnung eng — dann lohnt sich Ads meist nur mit sehr präziser Targeting-Strategie.",
+        text: "Grundregel: die Kosten pro qualifiziertem Lead müssen deutlich unter der Marge des Erstauftrags liegen. Bei hohen Auftragsmargen tragen Ads auch in umkämpften Segmenten. Bei kleineren Auftragswerten wird die Rechnung eng — dann lohnt sich Ads meist nur mit sehr präziser Targeting-Strategie. Vor dem Start immer die Marge pro Erstauftrag ehrlich kalkulieren.",
       },
       {
-        title: "Setup-Fehler, die Geld verbrennen",
-        text: "Kein Conversion-Tracking (dann sieht man nicht, welche Klicks Leads bringen), zu breite Match-Types (dann werden Klicks für irrelevante Suchen bezahlt), keine Landing-Page-Optimierung (dann konvertieren die teuren Klicks nicht), keine Ausschluss-Keyword-Pflege (dann läuft Budget in Suchen wie „gratis“ oder „selber machen“). Jeder Punkt spart mittelfristig einen vier- bis fünfstelligen Betrag pro Jahr.",
+        title: "Setup-Fehler, die Budget verbrennen",
+        text: "Kein Conversion-Tracking (dann sieht man nicht, welche Klicks Leads bringen), zu breite Match-Types (dann werden Klicks für irrelevante Suchen bezahlt), keine Landing-Page-Optimierung (dann konvertieren die teuren Klicks nicht), keine Ausschluss-Keyword-Pflege (dann läuft Budget in Suchen wie „gratis“ oder „selber machen“). Jeder dieser Punkte kostet über ein Jahr gerechnet spürbar mehr, als eine saubere Betreuung insgesamt kalkuliert wäre.",
       },
     ],
     examples: [
       {
-        title: "Lokale B2B-Kampagne, mittlerer Wettbewerb (Media 500 – 1.500 €/Monat)",
-        text: "Beispiele: Steuerberater in einer mittelgroßen Stadt, Immobilienmakler, spezialisiertes Handwerk. Bei sauberer Landingpage-Optimierung realistisch 15 bis 40 qualifizierte Anfragen pro Monat.",
+        title: "Lokale B2B-Kampagne, mittlerer Wettbewerb",
+        text: "Beispiele: Steuerberater in einer mittelgroßen Stadt, Immobilienmakler, spezialisiertes Handwerk. Moderate Klickpreise, planbares Volumen. Bei sauberer Landingpage-Optimierung realistisch 15 bis 40 qualifizierte Anfragen pro Monat.",
       },
       {
-        title: "Kompetitive B2B-Kampagne (Media 2.000 – 8.000 €/Monat)",
-        text: "Beispiele: Photovoltaik-Installation, Wärmepumpen, Fachanwälte in Top-Positionen. Höhere Klickpreise, aber auch entsprechend höhere Auftragswerte. Bei sauberer Ausrichtung amortisiert sich das Budget oft mit dem ersten Auftrag.",
+        title: "Kompetitive B2B-Kampagne",
+        text: "Beispiele: Photovoltaik-Installation, Wärmepumpen, Fachanwälte in Top-Positionen. Deutlich höhere Klickpreise, aber auch entsprechend höhere Auftragswerte. Bei sauberer Ausrichtung amortisiert sich der Media-Einsatz oft mit dem ersten Auftrag.",
       },
       {
-        title: "Setup + laufende Betreuung (Setup 800 – 2.500 €, Betreuung 300 – 1.500 €/Monat)",
-        text: "Setup: Konto-Struktur, Conversion-Tracking, erste Kampagnen, Landing-Anpassungen. Betreuung: monatliche Optimierung, A/B-Tests, Budget-Steuerung, Reporting. Ohne Betreuung verpuffen die meisten Setups nach 4 bis 8 Wochen.",
+        title: "Setup und laufende Betreuung",
+        text: "Setup: Konto-Struktur, Conversion-Tracking, erste Kampagnen, Landing-Anpassungen. Betreuung: monatliche Optimierung, A/B-Tests, Budget-Steuerung, Reporting. Der Aufwand skaliert mit Kampagnen-Anzahl, Zielgruppen und Reporting-Tiefe. Ohne Betreuung verpuffen die meisten Setups nach 4 bis 8 Wochen.",
       },
     ],
     tool: {
-      href: "/tools/website-kosten-rechner",
-      label: "Kosten-Rechner öffnen",
+      href: "/buchen",
+      label: "Vorgespräch buchen",
       reason:
-        "Wenn Sie parallel zur Ads-Kampagne die Landingpage neu bauen oder erweitern wollen: der Kosten-Rechner zeigt in zwei Minuten die realistische Investitions-Spanne.",
+        "Wenn Sie parallel zur Ads-Kampagne die Landingpage neu bauen oder erweitern wollen: fünfzehn Minuten reichen, um Rahmen und nächste Schritte zu skizzieren.",
     },
     faqs: [
       {
         q: "Was ist ein guter Klickpreis?",
-        a: "Kommt komplett auf den Suchbegriff an. Lokale B2B-Suchen: 1 bis 4 Euro. Kompetitive Suchen wie Photovoltaik: 5 bis 15 Euro. Sinnvoller ist die Frage nach den Kosten pro Lead — die trennt Wirtschaftlichkeit von Klickpreis-Kosmetik.",
+        a: "Kommt komplett auf den Suchbegriff an. Lokale B2B-Suchen liegen deutlich niedriger als kompetitive Suchen wie Photovoltaik oder Wärmepumpen. Sinnvoller ist ohnehin die Frage nach den Kosten pro qualifiziertem Lead — die trennt Wirtschaftlichkeit von Klickpreis-Kosmetik.",
       },
       {
         q: "Kann ich Google Ads selbst machen?",
-        a: "Ja, aber die Lernkurve ist steil. Ohne fundiertes Wissen über Match-Types, Qualitäts-Score, Ausschluss-Keywords, Landing-Page-Optimierung und Conversion-Tracking verbrennen die meisten Selbstverwalter in den ersten Monaten deutlich mehr Budget als eine professionelle Betreuung gekostet hätte.",
+        a: "Ja, aber die Lernkurve ist steil. Ohne fundiertes Wissen über Match-Types, Qualitäts-Score, Ausschluss-Keywords, Landing-Page-Optimierung und Conversion-Tracking verbrennen die meisten Selbstverwalter in den ersten Monaten spürbar mehr Media-Budget, als eine professionelle Betreuung insgesamt gekostet hätte.",
       },
       {
         q: "Wie messe ich, ob sich Ads lohnen?",
@@ -312,12 +312,12 @@ export const guides: GuidePage[] = [
     slug: "webdesign-kosten",
     metaTitle: "Was kostet Webdesign? Template vs. Standard vs. individuell | Fylu",
     metaDescription:
-      "Der Unterschied zwischen Template, Standard-Design und individueller Gestaltung — mit realistischen Preisspannen und den echten Preistreibern.",
+      "Der Unterschied zwischen Template, Standard-Design und individueller Gestaltung — mit den echten Preistreibern und dem Blick darauf, wo Konzeption und Recherche den Aufwand bestimmen.",
     h1: "Was kostet Webdesign? Der ehrliche Vergleich zwischen Template, Standard und individueller Gestaltung.",
     shortAnswer:
-      "Template-Anpassung: 500 bis 2.500 Euro. Standard-Design mit eigener Bildwelt: 2.500 bis 7.000 Euro. Individuelles Webdesign (Signature): 6.000 bis 20.000 Euro. Der Preisunterschied liegt fast vollständig in Konzeptions-Tiefe und individueller Gestaltung — nicht in der Programmierung.",
+      "Webdesign zerfällt in drei Klassen: Template-Anpassung, Standard-Design mit eigener Bildwelt und individuelles Signature-Design. Der Aufwand-Unterschied zwischen den Klassen liegt fast vollständig in Konzeptions-Tiefe, Recherche und individueller Gestaltung — nicht in der Programmierung. Wer die richtige Klasse für sein Vorhaben wählt, entscheidet über das Verhältnis von Investition und Wirkung.",
     intro:
-      "Webdesign-Kosten werden am häufigsten missverstanden — weil der Preisunterschied zwischen einem Template-Setup für 800 Euro und einer individuellen Studio-Arbeit für 15.000 Euro nicht in der Programmierung liegt, sondern in Konzeption, Recherche und Gestaltung. Wer den Unterschied kennt, kann bewusst entscheiden.",
+      "Webdesign-Kosten werden am häufigsten missverstanden — weil der Aufwand-Unterschied zwischen einer Template-Anpassung und einer individuellen Studio-Arbeit nicht in der Programmierung liegt, sondern in Konzeption, Recherche und Gestaltung. Ein individueller Auftritt entsteht in einem Vielfachen der Arbeitsstunden eines Template-Setups. Wer den Unterschied kennt, kann bewusst entscheiden.",
     sections: [
       {
         title: "Template, Standard, Signature — die drei Klassen",
@@ -325,7 +325,7 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Wann Template ausreicht",
-        text: "Für Portfolio-Websites, sehr kleine lokale Angebote oder Testkampagnen — wenn die Website nicht der primäre Vertriebskanal ist. Wer aus der Website Kunden gewinnen will, wird mit Templates fast immer unterhalb des Wettbewerbs bleiben. Die 800 Euro sparen dann jährlich zehntausende an entgangenen Anfragen.",
+        text: "Für Portfolio-Websites, sehr kleine lokale Angebote oder Testkampagnen — wenn die Website nicht der primäre Vertriebskanal ist. Wer aus der Website Kunden gewinnen will, wird mit Templates fast immer unterhalb des Wettbewerbs bleiben. Die scheinbare Ersparnis in der Initial-Investition wiegt selten die dauerhaft entgangenen Anfragen auf.",
       },
       {
         title: "Wann Standard-Design der richtige Mittelweg ist",
@@ -338,23 +338,23 @@ export const guides: GuidePage[] = [
     ],
     examples: [
       {
-        title: "Template-Anpassung (500 – 2.500 €)",
+        title: "Template-Anpassung",
         text: "Bestehende Themes (Divi, Elementor, ready-made Next.js-Themes) werden auf Firma angepasst: Logo, Farben, Texte, Bilder. Schnell live, wirtschaftlich, aber austauschbar in der Wirkung.",
       },
       {
-        title: "Standard-Design (2.500 – 7.000 €)",
+        title: "Standard-Design",
         text: "Eigenes Layout, eigene Bildwelt (oft mit Bildbibliotheken), klare Content-Struktur, mobile-first, SEO-Basis. Passend für die meisten etablierten Mittelständler mit klarem Angebot.",
       },
       {
-        title: "Signature-Design (6.000 – 20.000 €)",
+        title: "Signature-Design",
         text: "Individuelle Gestaltung, eigenes Fotoshooting, editorial-orientierte Struktur, tiefe Content-Arbeit, ausgeprägte Typografie- und Farbwelt. Für Unternehmen, die aus dem Auftritt Vertrauen und Positionierung ableiten.",
       },
     ],
     tool: {
-      href: "/tools/website-kosten-rechner",
-      label: "Kosten-Rechner öffnen",
+      href: "/buchen",
+      label: "Vorgespräch buchen",
       reason:
-        "Elf strukturierte Fragen, direkte Einordnung in eine der drei Klassen — inklusive konkreter Investitions-Spanne.",
+        "Fünfzehn Minuten, direkt mit dem Studio-Lead. Wir hören zu, ordnen ein und skizzieren den passenden Rahmen — ohne Verkaufsdruck.",
     },
     faqs: [
       {
@@ -375,14 +375,14 @@ export const guides: GuidePage[] = [
   },
   {
     slug: "website-agentur-kosten",
-    metaTitle: "Was kostet eine Website bei Freelancer, Studio oder Agentur? | Fylu",
+    metaTitle: "Website bei Freelancer, Studio oder Agentur? Ehrlicher Vergleich | Fylu",
     metaDescription:
-      "Freelancer, Studio oder Agentur? Was jeweils realistische Preise sind, was den Preisunterschied begründet und wann welches Setup zu Ihrem Vorhaben passt.",
+      "Freelancer, Studio oder Agentur? Was den Aufwand-Unterschied strukturell erklärt, worauf Sie im Angebot achten sollten und wann welches Setup zu Ihrem Vorhaben passt.",
     h1: "Was kostet eine Website bei Freelancer, Studio oder Agentur? Ehrlicher Vergleich.",
     shortAnswer:
-      "Freelancer: 1.000 bis 6.000 Euro. Studio: 4.000 bis 20.000 Euro. Klassische Agentur: 8.000 bis 40.000 Euro und mehr. Der Preisunterschied liegt in Prozess-Tiefe, Team-Größe, Substanz der Konzeption und Betreuungsverantwortung.",
+      "Freelancer, Studio und klassische Agentur liegen in deutlich unterschiedlichen Aufwand-Klassen. Der Unterschied liegt nicht in Geldgier, sondern in Prozess-Tiefe, Team-Größe, Substanz der Konzeption und Betreuungsverantwortung. Welches Setup sinnvoll ist, hängt von Vorhaben, Anspruch und Governance-Bedarf ab — nicht von einer Zahl im Angebot.",
     intro:
-      "Freelancer, Studio, Agentur — dieselbe Website kann in den drei Setups fundamental unterschiedlich viel kosten. Der Grund ist nicht Geldgier, sondern strukturell: unterschiedliche Prozesstiefe, unterschiedliche Konzeptions-Substanz, unterschiedliche Betreuungsverantwortung. Wer die Unterschiede kennt, wählt bewusst.",
+      "Freelancer, Studio, Agentur — dieselbe Website kann in den drei Setups fundamental unterschiedlich viel Aufwand bedeuten. Der Grund ist nicht Geldgier, sondern strukturell: unterschiedliche Prozesstiefe, unterschiedliche Konzeptions-Substanz, unterschiedliche Betreuungsverantwortung. Wer die Unterschiede kennt, wählt bewusst.",
     sections: [
       {
         title: "Was ein Freelancer bietet — und was nicht",
@@ -390,45 +390,45 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was ein Studio bietet",
-        text: "Ein Studio arbeitet meist mit zwei bis fünf Menschen, spezialisiert auf hochwertige Umsetzung. Vorteil: Kombinierte Skills (Design + Entwicklung + Copy + SEO), verlässliche Prozesse, weniger Ausfallrisiko, tiefere Konzeption. Nachteil gegenüber Freelancer: höhere Preisklasse. Passend für etablierte Unternehmen mit klarem Anspruch, denen der Auftritt wichtig ist.",
+        text: "Ein Studio arbeitet meist mit zwei bis fünf Menschen, spezialisiert auf hochwertige Umsetzung. Vorteil: Kombinierte Skills (Design + Entwicklung + Copy + SEO), verlässliche Prozesse, weniger Ausfallrisiko, tiefere Konzeption. Nachteil gegenüber Freelancer: höhere Investition. Passend für etablierte Unternehmen mit klarem Anspruch, denen der Auftritt wichtig ist.",
       },
       {
         title: "Was eine Agentur bietet",
-        text: "Klassische Agenturen (15+ Mitarbeiter) bieten umfangreiche Prozesse, oft mit dedizierten Account-Managern, strategischer Beratung und Kapazität für Großprojekte. Nachteil: höhere Preisklasse, längere Kommunikationswege, weniger direkter Draht zum eigentlichen Umsetzer. Passend für Konzerne, komplexe Multi-Sprach-Projekte oder Ausschreibungspflichtige Vorhaben.",
+        text: "Klassische Agenturen (15+ Mitarbeiter) bieten umfangreiche Prozesse, oft mit dedizierten Account-Managern, strategischer Beratung und Kapazität für Großprojekte. Nachteil: höhere Investition durch Overhead-Struktur, längere Kommunikationswege, weniger direkter Draht zum eigentlichen Umsetzer. Passend für Konzerne, komplexe Multi-Sprach-Projekte oder ausschreibungspflichtige Vorhaben.",
       },
       {
         title: "Worauf Sie beim Vergleich achten sollten",
-        text: "Nicht die Preisklasse allein, sondern was konkret enthalten ist. Fragen Sie: Wer arbeitet konkret an meinem Projekt? Wie viele Design-Iterationen sind drin? Wer verantwortet die Texte? Was passiert nach dem Live-Gang? Wie sind Zusatz-Wünsche kalkuliert? Die Antworten machen Preise erst wirklich vergleichbar.",
+        text: "Nicht die Angebotshöhe allein, sondern was konkret enthalten ist. Fragen Sie: Wer arbeitet konkret an meinem Projekt? Wie viele Design-Iterationen sind drin? Wer verantwortet die Texte? Was passiert nach dem Live-Gang? Wie sind Zusatz-Wünsche kalkuliert? Die Antworten machen Angebote erst wirklich vergleichbar.",
       },
     ],
     examples: [
       {
-        title: "Freelancer für lokale Handwerksfirma (1.000 – 3.500 €)",
+        title: "Freelancer für lokale Handwerksfirma",
         text: "Klassische WordPress- oder Wix-Umsetzung mit Template-Anpassung, drei bis sechs Seiten, Kontaktformular, mobile-optimiert. Schnell live, funktional, aber ohne strategische Konzeption.",
       },
       {
-        title: "Studio für etablierten Mittelständler (5.000 – 12.000 €)",
+        title: "Studio für etablierten Mittelständler",
         text: "Individuelles Design, 8 bis 15 Seiten, eigene Bildwelt, klare Verkaufsarchitektur, SEO-Foundation, mobile-first, 90-Tage-Begleitung. Der übliche Rahmen für ambitionierte B2B-Auftritte.",
       },
       {
-        title: "Agentur für Konzern oder komplexes Projekt (15.000 – 60.000 €)",
+        title: "Agentur für Konzern oder komplexes Projekt",
         text: "Strategische Beratung, mehrsprachig, komplexe Integrations- und Approval-Prozesse, dediziertes Account-Management, umfangreiche Governance. Passend für Multi-Stakeholder-Projekte mit klaren Compliance-Anforderungen.",
       },
     ],
     tool: {
-      href: "/tools/website-kosten-rechner",
-      label: "Kosten-Rechner öffnen",
+      href: "/buchen",
+      label: "Vorgespräch buchen",
       reason:
-        "Ordnen Sie Ihr Vorhaben ein: Projektklasse, Umfang, Investitions-Spanne — unabhängig davon, welchen Anbietertyp Sie am Ende wählen.",
+        "Ordnen Sie Ihr Vorhaben mit uns ein — Rahmen, Umfang, nächste Schritte. Unabhängig davon, welchen Anbietertyp Sie am Ende wählen.",
     },
     faqs: [
       {
         q: "Ist ein Studio immer besser als ein Freelancer?",
-        a: "Nein. Für kleine, klar umrissene Projekte kann ein guter Freelancer die schnellere und günstigere Antwort sein. Ein Studio lohnt sich, wenn Konzeption, Substanz und Betreuung eine Rolle spielen — und das Projekt eine bestimmte Größe hat.",
+        a: "Nein. Für kleine, klar umrissene Projekte kann ein guter Freelancer die schnellere und wirtschaftlichere Antwort sein. Ein Studio lohnt sich, wenn Konzeption, Substanz und Betreuung eine Rolle spielen — und das Projekt eine bestimmte Größe hat.",
       },
       {
-        q: "Warum ist eine große Agentur so viel teurer?",
-        a: "Weil sie andere Overhead-Strukturen finanzieren muss (Account-Manager, Strategen, Consulting-Ebene, größere Räume, mehr Prozesse). Für Konzern-Projekte ist das gerechtfertigt, für Mittelstands-Website meist überdimensioniert.",
+        q: "Warum ist eine große Agentur so viel aufwändiger?",
+        a: "Weil sie andere Overhead-Strukturen finanzieren muss (Account-Manager, Strategen, Consulting-Ebene, größere Räume, mehr Prozesse). Für Konzern-Projekte ist das gerechtfertigt, für eine Mittelstands-Website meist überdimensioniert.",
       },
       {
         q: "Wie erkenne ich einen guten Anbieter unabhängig vom Typ?",
@@ -440,21 +440,21 @@ export const guides: GuidePage[] = [
   },
   {
     slug: "website-redesign-kosten",
-    metaTitle: "Was kostet ein Website-Redesign? Rahmen und SEO-Sicherung | Fylu",
+    metaTitle: "Website-Redesign: Rahmen, Tiefen und SEO-Sicherung | Fylu",
     metaDescription:
-      "Was kostet ein Website-Redesign? Der Unterschied zwischen Refresh und Vollrelaunch, was den Preis treibt und wie Sie SEO-Substanz durch den Prozess sichern.",
-    h1: "Was kostet ein Website-Redesign? Rahmen, Preistreiber und die SEO-Fallen.",
+      "Website-Redesign: Der Unterschied zwischen Refresh, selektivem Rebuild und Vollrelaunch, was den Aufwand treibt und wie Sie SEO-Substanz durch den Prozess sichern.",
+    h1: "Website-Redesign: Tiefen, Aufwand-Treiber und die SEO-Fallen.",
     shortAnswer:
-      "Design-Refresh mit gleicher Struktur: 1.500 bis 5.000 Euro. Selektiver Rebuild einzelner Sections: 3.000 bis 10.000 Euro. Vollständiger Relaunch mit neuer Struktur: 6.000 bis 25.000 Euro. Aufwand für saubere SEO-Migration kommt bei den letzten beiden Optionen dazu.",
+      "Ein Redesign zerfällt in drei Tiefen: reiner Design-Refresh mit gleicher Struktur, selektiver Rebuild einzelner Sections und vollständiger Relaunch mit neuer Struktur. Der Aufwand-Unterschied zwischen den Tiefen ist erheblich. Bei Rebuild und Vollrelaunch kommt zusätzlich die saubere SEO-Migration als eigene Position dazu.",
     intro:
-      "Ein Redesign ist selten die Frage „ja oder nein“, sondern „welche Tiefe“. Und genau darin liegen die größten Preisunterschiede: von einem reinen visuellen Refresh bis zum kompletten Neuaufbau ist der Faktor mindestens fünf. Wer die Tiefe bewusst wählt, spart oft mehrere Tausend Euro.",
+      "Ein Redesign ist selten die Frage „ja oder nein“, sondern „welche Tiefe“. Und genau darin liegen die größten Aufwand-Unterschiede: von einem reinen visuellen Refresh bis zum kompletten Neuaufbau ist der Faktor mindestens fünf. Wer die Tiefe bewusst wählt, spart erheblichen Aufwand und vermeidet SEO-Risiken.",
     sections: [
       {
         title: "Refresh, selektiver Rebuild, Vollrelaunch",
         text: "Refresh: gleiche Struktur, gleiche URLs, aktualisiertes Design und aktualisierte Copy. Selektiver Rebuild: bestimmte Sections werden neu gebaut, der Rest bleibt. Vollrelaunch: neue Struktur, neue URLs, neues Design, neuer Content. Jede Option löst andere Probleme — und kostet entsprechend anders.",
       },
       {
-        title: "Was den Preis wirklich treibt",
+        title: "Was den Aufwand wirklich treibt",
         text: "Erstens: Design-Tiefe (Refresh vs. neu). Zweitens: Content-Migration (wie viel muss übernommen, wie viel neu geschrieben werden?). Drittens: SEO-Sicherung (Redirect-Konzept, Search-Console-Migration, Monitoring). Viertens: technische Basis (bleibt das CMS oder wird migriert?). Fünftens: neue Funktionen (Rechner, Konfiguratoren, Portale).",
       },
       {
@@ -468,15 +468,15 @@ export const guides: GuidePage[] = [
     ],
     examples: [
       {
-        title: "Reiner Design-Refresh (1.500 – 4.000 €)",
-        text: "Gleiche Seiten, gleiche URLs, aktualisiertes Farb- und Type-System, überarbeitete Bildwelt, moderisierte Copy. Wirkt in vier bis sechs Wochen, kein SEO-Risiko.",
+        title: "Reiner Design-Refresh",
+        text: "Gleiche Seiten, gleiche URLs, aktualisiertes Farb- und Type-System, überarbeitete Bildwelt, modernisierte Copy. Wirkt in vier bis sechs Wochen, kein SEO-Risiko.",
       },
       {
-        title: "Selektiver Rebuild (3.000 – 8.000 €)",
+        title: "Selektiver Rebuild",
         text: "Bestimmte Sections werden komplett neu gebaut (etwa Hero, Kontakt-Flow, Portfolio), der Rest der Seite bleibt. Wirtschaftlich, gezielt wirksam, geringes SEO-Risiko.",
       },
       {
-        title: "Vollrelaunch mit SEO-Migration (6.000 – 25.000 €)",
+        title: "Vollrelaunch mit SEO-Migration",
         text: "Neue Struktur, neue URLs, neues Design, saubere 301-Migration, 90-Tage-Monitoring. Passend, wenn drei oder mehr Achsen (Design, Struktur, Technik, Positionierung) nicht mehr tragen.",
       },
     ],
@@ -496,8 +496,8 @@ export const guides: GuidePage[] = [
         a: "Ja, das ist meist die klügere Option. Landing-Seiten und Portfolio zuerst, Kontakt- und About-Seite später, Blog zuletzt. Reduziert Risiko und verteilt Aufwand.",
       },
       {
-        q: "Was ist teurer: Refresh oder Vollrelaunch bei gleichem Ergebnis?",
-        a: "Vollrelaunch fast immer. Refresh ist wirtschaftlicher, solange technische Basis und Struktur noch tragen. Sobald sie nicht mehr tragen, wird Refresh zur teureren Notlösung — dann ist Vollrelaunch der klügere Kaufpreis.",
+        q: "Was ist aufwändiger: Refresh oder Vollrelaunch bei gleichem Ergebnis?",
+        a: "Vollrelaunch fast immer. Refresh ist wirtschaftlicher, solange technische Basis und Struktur noch tragen. Sobald sie nicht mehr tragen, wird Refresh zur aufwändigeren Notlösung — dann ist der Vollrelaunch die klügere Investition.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -647,10 +647,10 @@ export const guides: GuidePage[] = [
       },
     ],
     tool: {
-      href: "/tools/website-kosten-rechner",
-      label: "Kosten-Rechner öffnen",
+      href: "/buchen",
+      label: "Vorgespräch buchen",
       reason:
-        "Kombination aus Kosten- und Zeitplan-Schätzung für Ihr konkretes Vorhaben — in unter zwei Minuten, ohne Registrierung.",
+        "Rahmen und Zeitplan für Ihr konkretes Vorhaben — in einem persönlichen Fünfzehn-Minuten-Gespräch mit dem Studio-Lead.",
     },
     faqs: [
       {

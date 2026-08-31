@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Was passiert nach dem Launch?',
-    a: 'Zwischen 60 und 180 Tagen Studio-Begleitung sind je nach Paket enthalten. Iteration, Reporting, Feinschliff. Danach entscheiden Sie, ob wir weiter begleiten oder Sie im eigenen Haus übernehmen.',
+    a: 'Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig — Iteration, SEO, GEO, SEA, Reporting, Feinschliff, neue Landingpages. Keine monatliche Grundgebühr, ihr bucht Betreuung im Umfang, den euer Wachstum verlangt. Ihr entscheidet, wie lange wir zusammenarbeiten.',
   },
   {
     q: 'Kann ich Inhalte selbst pflegen?',
