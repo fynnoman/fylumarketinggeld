@@ -39,6 +39,42 @@ export default function Home() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/#webpage',
+            url: 'https://www.fylumarketing.de/',
+            name: 'Fylu Studio · Editorial Webdesign, SEO und Software aus dem Saarland',
+            description:
+              'Fylu Studio, Saarlouis: editorial gestaltete Websites, SEO- und Google-Ads-Erweiterungen, Softwareentwicklung. Konzentriert auf etablierte, hochwertige Unternehmen — bewusst begrenzt auf zwölf Klienten pro Jahr.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            about: { '@id': 'https://www.fylumarketing.de/#organization' },
+            primaryImageOfPage: {
+              '@type': 'ImageObject',
+              url: 'https://www.fylumarketing.de/herob.png',
+              width: 1200,
+              height: 630,
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]', '#faq-heading', '[id^="faq-panel-"]'],
+            },
+            significantLink: [
+              'https://www.fylumarketing.de/webdesign-saarland',
+              'https://www.fylumarketing.de/seo-saarland',
+              'https://www.fylumarketing.de/google-ads-saarland',
+              'https://www.fylumarketing.de/software-saarland',
+              'https://www.fylumarketing.de/methodik',
+              'https://www.fylumarketing.de/team',
+              'https://www.fylumarketing.de/buchen',
+            ],
+          }),
+        }}
+      />
       <Navbar />
       <HeroSection />
       <PinnedManifesto />

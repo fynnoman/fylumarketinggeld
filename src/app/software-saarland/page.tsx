@@ -166,12 +166,35 @@ export default function SoftwareSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
             })),
+          }),
+        }}
+      />
+
+      {/* WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/software-saarland#webpage',
+            url: 'https://www.fylumarketing.de/software-saarland',
+            name: 'Software Saarland · Fylu Studio',
+            description:
+              'Softwareentwicklung aus dem Saarland: Custom Software, Web-Apps, SaaS, ERP/CRM, API- und AI-Integration. Modernes Fundament (Next.js, React, TypeScript, Node.js, Python, PostgreSQL).',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            about: { '@type': 'Thing', name: 'Softwareentwicklung' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
           }),
         }}
       />
@@ -215,7 +238,7 @@ export default function SoftwareSaarlandPage() {
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
               Maßgeschneiderte Software als eigenständige Disziplin oder als
               Erweiterung Ihres Fylu-Auftritts. Web-Apps, ERP- und CRM-Systeme,
               interne Tools, API-Integrationen, Automatisierungen und AI-gestützte

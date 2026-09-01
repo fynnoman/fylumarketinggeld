@@ -99,6 +99,11 @@ export default async function ProblemPage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            inLanguage: "de-DE",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
             mainEntity: p.faqs.map((f) => ({
               "@type": "Question",
               name: f.q,
@@ -140,7 +145,7 @@ export default async function ProblemPage({
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.02] mb-8">
               {p.h1}
             </h1>
-            <p className="text-lg md:text-xl text-stone-700 leading-relaxed">{p.intro}</p>
+            <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed">{p.intro}</p>
 
             {/* Key Finding Card */}
             <div className="mt-10 relative overflow-hidden rounded-3xl bg-white p-6 md:p-8 border border-stone-200/70 shadow-[0_8px_40px_rgba(12,14,16,0.04)]">
@@ -231,6 +236,44 @@ export default async function ProblemPage({
             </div>
           </div>
         </section>
+
+        {/* Wie Fylu bei diesem Problem hilft — nur wenn serviceLinks kuratiert */}
+        {p.serviceLinks && p.serviceLinks.length > 0 && (
+          <section className="py-16 md:py-20 px-6">
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-10 flex items-baseline gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl leading-none">
+                  §d
+                </span>
+                <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em]">
+                  Wie Fylu bei diesem Problem hilft
+                </h2>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {p.serviceLinks.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-cyan-200 transition-colors"
+                  >
+                    <span className="glass-edge" aria-hidden />
+                    <div className="relative">
+                      <div className="mb-2 flex items-baseline justify-between gap-2">
+                        <h3 className="text-base md:text-lg font-semibold text-[var(--ink)]">
+                          {s.label}
+                        </h3>
+                        <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-0.5">
+                          →
+                        </span>
+                      </div>
+                      <p className="text-sm text-stone-600 leading-relaxed">{s.reason}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Tool CTA */}
         <section className="py-16 md:py-20 px-6">

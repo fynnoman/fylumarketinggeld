@@ -115,6 +115,61 @@ export default function WebdesignSaarlandPage() {
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
             geo: { '@type': 'GeoCoordinates', latitude: 49.3133, longitude: 6.7525 },
             areaServed: [{ '@type': 'State', name: 'Saarland' }, { '@type': 'Country', name: 'Deutschland' }],
+            parentOrganization: { '@id': 'https://www.fylumarketing.de/#organization' },
+          }),
+        }}
+      />
+      {/* Service + WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            '@id': 'https://www.fylumarketing.de/webdesign-saarland#service',
+            name: 'Editorial Webdesign Saarland',
+            description:
+              'Editorial gestaltete Websites aus Saarlouis. Drei Projektklassen (Signature, Atelier, Maison). Individuell konzipiert, mit klarer Verkaufsarchitektur und modernem technischen Fundament (Next.js, React, TypeScript).',
+            serviceType: 'Webdesign',
+            url: 'https://www.fylumarketing.de/webdesign-saarland',
+            provider: { '@id': 'https://www.fylumarketing.de/#organization' },
+            areaServed: [
+              { '@type': 'State', name: 'Saarland' },
+              { '@type': 'Country', name: 'Deutschland' },
+            ],
+            offers: {
+              '@type': 'Offer',
+              availability: 'https://schema.org/InStock',
+              url: 'https://www.fylumarketing.de/buchen',
+              priceSpecification: {
+                '@type': 'PriceSpecification',
+                priceCurrency: 'EUR',
+                description:
+                  'Drei Projektklassen (Signature, Atelier, Maison). Kalkulation individuell im Vorgespräch, keine monatliche Grundgebühr.',
+              },
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/webdesign-saarland#webpage',
+            url: 'https://www.fylumarketing.de/webdesign-saarland',
+            name: 'Webdesign Saarland · Editorial gestaltete Websites',
+            description:
+              'Editorial gestaltete Websites aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            mainEntity: { '@id': 'https://www.fylumarketing.de/webdesign-saarland#service' },
+            about: { '@type': 'Thing', name: 'Editorial Webdesign' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
           }),
         }}
       />
@@ -125,7 +180,7 @@ export default function WebdesignSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
@@ -188,7 +243,7 @@ export default function WebdesignSaarlandPage() {
           </FadeInSection>
 
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.15rem] text-stone-600 leading-relaxed max-w-2xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.15rem] text-stone-600 leading-relaxed max-w-2xl">
               Fylu ist ein Boutique-Webdesign-Studio aus Saarlouis. Wir begleiten
               zwölf Häuser pro Jahr — im Saarland, bundesweit und international.
               Editorial gestaltete Auftritte mit Substanz. Kein Template, kein Fließband.

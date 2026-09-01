@@ -42,6 +42,65 @@ export default function WebsiteCheckPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "@id": `${URL}#tool`,
+            name: "Fylu Website-Analyse",
+            description:
+              "Serverseitige Website-Analyse: prüft Meta-Tags, H1, Canonical, Alt-Texte, Structured Data, mobile Basis, lokale Signale und weitere technische sowie inhaltliche Merkmale in unter 15 Sekunden. Ergebnisse direkt sichtbar, keine Registrierung, keine Datenspeicherung.",
+            url: URL,
+            applicationCategory: "WebApplication",
+            applicationSubCategory: "SEO- und Website-Analyse",
+            operatingSystem: "Web",
+            browserRequirements: "Requires JavaScript. Requires HTML5.",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              category: "free",
+            },
+            featureList: [
+              "Meta-Tag-Analyse (Title, Description, Canonical)",
+              "Heading-Struktur (H1, H2, H3)",
+              "Bilder-Analyse (Alt-Text-Abdeckung, Größenoptimierung)",
+              "Structured-Data-Prüfung",
+              "Mobile-Basis (Viewport, Touchtarget)",
+              "Lokale SEO-Signale",
+              "Priorisierte Findings",
+              "Optionaler PDF-Report per E-Mail",
+            ],
+            provider: { "@id": `${SITE}/#organization` },
+            isPartOf: { "@id": `${SITE}/#website` },
+            inLanguage: "de-DE",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${URL}#webpage`,
+            url: URL,
+            name: "Website-Analyse",
+            description:
+              "Kostenlose serverseitige Website-Analyse — direkt sichtbar, ohne Registrierung, ohne Datenspeicherung.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            mainEntity: { "@id": `${URL}#tool` },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
+          }),
+        }}
+      />
       <section className="relative py-24 md:py-32 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-14 md:mb-20 text-center">
@@ -60,7 +119,7 @@ export default function WebsiteCheckPage() {
               </span>
               .
             </h1>
-            <p className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+            <p data-speakable className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               Ein Klick, alle relevanten Signale sichtbar: Meta, Struktur, Inhalte, Bilder,
               Structured Data, mobile Basis, lokale Signale. Keine Registrierung. Ihre Ergebnisse
               werden nicht gespeichert.

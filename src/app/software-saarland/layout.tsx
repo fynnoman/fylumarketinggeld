@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Software Saarland – Fylu Studio",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Software Saarland · Fylu Studio",
     description: "Custom Software als Erweiterung des Fylu-Studios.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
 };
 

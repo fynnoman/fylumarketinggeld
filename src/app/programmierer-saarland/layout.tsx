@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     description:
       "Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack. Projekte zu transparenten Konditionen für Unternehmen im Saarland.",
     url: "https://www.fylumarketing.de/programmierer-saarland",
-    siteName: "Fylu Webdesign & Software",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Programmierer Saarland – Fylu aus Saarlouis",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Programmierer Saarland | Fylu aus Saarlouis",
     description: "Webentwickler & Software-Entwickler aus dem Saarland. Transparente Konditionen statt Stundensatz.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
 };
 

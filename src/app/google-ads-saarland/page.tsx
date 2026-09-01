@@ -75,6 +75,7 @@ export default function GoogleAdsSaarlandPage() {
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
+            parentOrganization: { '@id': 'https://www.fylumarketing.de/#organization' },
           }),
         }}
       />
@@ -83,7 +84,60 @@ export default function GoogleAdsSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'Service',
+            '@id': 'https://www.fylumarketing.de/google-ads-saarland#service',
+            name: 'Google Ads Saarland',
+            description:
+              'Google-Ads-Setup, laufende Betreuung, Conversion-Tracking und Landing-Page-Optimierung aus Saarlouis. Fokus auf qualifizierte Anfragen, nicht auf bloße Klicks.',
+            serviceType: 'Google Ads',
+            url: 'https://www.fylumarketing.de/google-ads-saarland',
+            provider: { '@id': 'https://www.fylumarketing.de/#organization' },
+            areaServed: [
+              { '@type': 'State', name: 'Saarland' },
+              { '@type': 'Country', name: 'Deutschland' },
+            ],
+            offers: {
+              '@type': 'Offer',
+              availability: 'https://schema.org/InStock',
+              url: 'https://www.fylumarketing.de/buchen',
+              priceSpecification: {
+                '@type': 'PriceSpecification',
+                priceCurrency: 'EUR',
+                description:
+                  'Media-Budget, Setup und laufende Betreuung werden getrennt kalkuliert. Individuell im Vorgespräch.',
+              },
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/google-ads-saarland#webpage',
+            url: 'https://www.fylumarketing.de/google-ads-saarland',
+            name: 'Google Ads Saarland · Fylu Studio',
+            description:
+              'Google Ads aus Saarlouis: Setup, laufende Betreuung, Conversion-Tracking und Landing-Page-Optimierung für qualifizierte Anfragen.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            mainEntity: { '@id': 'https://www.fylumarketing.de/google-ads-saarland#service' },
+            about: { '@type': 'Thing', name: 'Google Ads / SEA' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
@@ -140,7 +194,7 @@ export default function GoogleAdsSaarlandPage() {
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
               Sofortige Reichweite für Menschen, die bereits nach Ihrer Leistung
               suchen. Kuratiert aus Saarlouis — als bezahlte Ergänzung zur
               Fylu-Website, klar geführt und messbar gerahmt.

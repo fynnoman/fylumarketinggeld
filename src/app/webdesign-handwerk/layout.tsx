@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     description:
       "Webdesign speziell für Handwerksbetriebe: modern, mobiloptimiert & bei Google sichtbar..",
     url: "https://www.fylumarketing.de/webdesign-handwerk",
-    siteName: "Fylu Webdesign",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Webdesign für Handwerker – Fylu Marketing aus dem Saarland",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Webdesign Handwerk | Mehr Aufträge | Fylu",
     description: "Webdesign speziell für Handwerksbetriebe – mobiloptimiert, lokal SEO-optimiert.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
 };
 

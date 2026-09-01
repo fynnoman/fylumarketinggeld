@@ -55,7 +55,60 @@ export default function WebsiteErstellenLassenPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						'@context': 'https://schema.org',
-						'@type': 'FAQPage',
+						'@type': 'Service',
+						'@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service',
+						name: 'Website erstellen lassen (Fylu Studio)',
+						description:
+							'Individuell konzipierte, editorial gestaltete Website. Drei Projektklassen (Signature, Atelier, Maison) für kompakte, vollständige und individuelle Vorhaben. Transparente Konditionen, keine monatliche Grundgebühr.',
+						serviceType: 'Webdesign & Website-Erstellung',
+						url: 'https://www.fylumarketing.de/website-erstellen-lassen',
+						provider: { '@id': 'https://www.fylumarketing.de/#organization' },
+						areaServed: [
+							{ '@type': 'State', name: 'Saarland' },
+							{ '@type': 'Country', name: 'Deutschland' },
+						],
+						offers: {
+							'@type': 'Offer',
+							availability: 'https://schema.org/InStock',
+							url: 'https://www.fylumarketing.de/buchen',
+							priceSpecification: {
+								'@type': 'PriceSpecification',
+								priceCurrency: 'EUR',
+								description:
+									'Individuell kalkuliert nach Umfang, Design-Tiefe und Funktionsbedarf. Transparent im Vorgespräch.',
+							},
+						},
+					}),
+				}}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'WebPage',
+						'@id': 'https://www.fylumarketing.de/website-erstellen-lassen#webpage',
+						url: 'https://www.fylumarketing.de/website-erstellen-lassen',
+						name: 'Website erstellen lassen · Fylu Studio',
+						description:
+							'Website erstellen lassen aus dem Fylu Studio in Saarlouis: editorial gestaltet, individuell konzipiert, transparent kalkuliert.',
+						inLanguage: 'de-DE',
+						isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+						mainEntity: { '@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service' },
+						about: { '@type': 'Thing', name: 'Website-Erstellung' },
+						speakable: {
+							'@type': 'SpeakableSpecification',
+							cssSelector: ['h1', '[data-speakable]'],
+						},
+					}),
+				}}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
 						mainEntity: faqs.map((f) => ({
 							'@type': 'Question',
 							name: f.q,

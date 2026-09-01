@@ -9,6 +9,12 @@ export type GuideToolLink = {
   reason: string;
 };
 
+export type GuideServiceLink = {
+  href: string; // interner Pfad zu einer Fylu-Leistungsseite
+  label: string;
+  reason: string; // wie die Fylu-Leistung an das Ratgeber-Thema anschließt
+};
+
 export type GuidePage = {
   slug: string;
   metaTitle: string;
@@ -20,6 +26,7 @@ export type GuidePage = {
   examples?: { title: string; text: string }[];
   process?: { step: number; title: string; text: string }[];
   tool: GuideToolLink;
+  serviceLinks?: GuideServiceLink[]; // optional: passende Fylu-Leistungen
   faqs: { q: string; a: string }[];
   publishedAt: string;
   updatedAt: string;
@@ -74,6 +81,20 @@ export const guides: GuidePage[] = [
       reason:
         "Kein Kalkulator, kein Fragebogen — ein fünfzehnminütiges Gespräch, in dem wir das Vorhaben einordnen und den passenden Rahmen skizzieren.",
     },
+    serviceLinks: [
+      {
+        href: "/website-erstellen-lassen",
+        label: "Website erstellen lassen",
+        reason:
+          "Individuell konzipierter Auftritt in drei Projektklassen (Signature, Atelier, Maison). Transparente Kalkulation im Vorgespräch, keine monatliche Grundgebühr.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Editorial Webdesign aus dem Saarland",
+        reason:
+          "Wenn Sie einen persönlichen Ansprechpartner statt Account-Manager-Kette wollen: geführt aus Saarlouis, zwölf Klienten pro Jahr, direkte Verantwortung des Studio-Leads.",
+      },
+    ],
     faqs: [
       {
         q: "Warum ist eine ultrabillige Website meistens keine gute Idee?",
@@ -157,6 +178,20 @@ export const guides: GuidePage[] = [
       reason:
         "Prüft, wo Ihre aktuelle Website tatsächlich hakt — als Basis für die Frage, ob Nachbessern reicht oder ein Relaunch sinnvoll wird.",
     },
+    serviceLinks: [
+      {
+        href: "/website-erstellen-lassen",
+        label: "Relaunch mit sauberer SEO-Migration",
+        reason:
+          "Fylu setzt den Relaunch mit Ziel- und Verkaufsarchitektur voran, migriert Content und URLs mit 301-Weiterleitungen und überwacht die Sichtbarkeit in den ersten Wochen nach Live-Gang.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Selektiver Rebuild statt Vollrelaunch",
+        reason:
+          "Wenn nur einzelne Sections überaltert sind: gezielter Rebuild von Hero, Kontakt-Flow oder Service-Seiten, wirtschaftlich unter zwei Monaten machbar.",
+      },
+    ],
     faqs: [
       {
         q: "Wie lange dauert ein Website-Relaunch typischerweise?",
@@ -226,6 +261,20 @@ export const guides: GuidePage[] = [
       reason:
         "Zeigt in unter 15 Sekunden, wo Ihre Website SEO-mäßig aktuell steht — sinnvolle Basis, bevor Sie in Foundation oder Content-Aufbau investieren.",
     },
+    serviceLinks: [
+      {
+        href: "/seo-saarland",
+        label: "SEO Saarland",
+        reason:
+          "Fylu deckt alle drei Ebenen ab: einmalige Foundation, laufende Betreuung und aktiven Content-Aufbau als Cluster. Transparent kalkuliert je Ebene.",
+      },
+      {
+        href: "/seo-agentur-saarland",
+        label: "SEO-Agentur Saarland",
+        reason:
+          "Laufende SEO-Betreuung mit echter Search-Console-Auswertung, kontinuierlicher Content-Pflege und regelmäßigen Reports statt Reporting-Kosmetik.",
+      },
+    ],
     faqs: [
       {
         q: "Warum sind SEO-Angebote so unterschiedlich?",
@@ -291,6 +340,20 @@ export const guides: GuidePage[] = [
       reason:
         "Wenn Sie parallel zur Ads-Kampagne die Landingpage neu bauen oder erweitern wollen: fünfzehn Minuten reichen, um Rahmen und nächste Schritte zu skizzieren.",
     },
+    serviceLinks: [
+      {
+        href: "/google-ads-saarland",
+        label: "Google Ads Saarland",
+        reason:
+          "Setup, laufende Betreuung, Conversion-Tracking und Landing-Page-Optimierung aus einer Hand. Fokus auf qualifizierte Anfragen statt bloße Klicks.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Landing-Page-Optimierung",
+        reason:
+          "Wenn die Ads bereits laufen, aber der teure Traffic nicht umschlägt: gezielte Landing-Page-Optimierung mit klarer Hero-Klarheit, mehrfachen CTAs und reduziertem Formular.",
+      },
+    ],
     faqs: [
       {
         q: "Was ist ein guter Klickpreis?",
@@ -356,6 +419,20 @@ export const guides: GuidePage[] = [
       reason:
         "Fünfzehn Minuten, direkt mit dem Studio-Lead. Wir hören zu, ordnen ein und skizzieren den passenden Rahmen — ohne Verkaufsdruck.",
     },
+    serviceLinks: [
+      {
+        href: "/webdesign-saarland",
+        label: "Editorial Webdesign aus dem Saarland",
+        reason:
+          "Fylu liefert individuell gestaltete Websites in drei Projektklassen. Editorial-Design statt Template-Anpassung, mit klarer Verkaufsarchitektur und modernem technischen Fundament.",
+      },
+      {
+        href: "/website-erstellen-lassen",
+        label: "Website erstellen lassen",
+        reason:
+          "Vom kompakten Auftritt bis zum individuellen Auftritt mit Sonderfunktionen. Transparente Kalkulation im Vorgespräch, kein Baukasten, keine monatliche Grundgebühr.",
+      },
+    ],
     faqs: [
       {
         q: "Warum kostet ein individuelles Webdesign ein Vielfaches eines Templates?",
@@ -421,6 +498,20 @@ export const guides: GuidePage[] = [
       reason:
         "Ordnen Sie Ihr Vorhaben mit uns ein — Rahmen, Umfang, nächste Schritte. Unabhängig davon, welchen Anbietertyp Sie am Ende wählen.",
     },
+    serviceLinks: [
+      {
+        href: "/webdesign-saarland",
+        label: "Studio-Modell in der Praxis",
+        reason:
+          "Fylu ist ein Boutique-Studio: direkte Führung durch den Studio-Lead, zwölf Klienten pro Jahr, tiefe Verantwortung pro Projekt. Persönlicher Ansprechpartner statt Agentur-Overhead.",
+      },
+      {
+        href: "/seo-agentur-saarland",
+        label: "SEO-Agentur Saarland",
+        reason:
+          "Wenn Sie einen langfristigen Partner für SEO suchen: laufende Betreuung mit Content-Aufbau, Search-Console-Analyse und Off-Page-Signalen, geführt aus dem Studio.",
+      },
+    ],
     faqs: [
       {
         q: "Ist ein Studio immer besser als ein Freelancer?",
@@ -486,6 +577,20 @@ export const guides: GuidePage[] = [
       reason:
         "Prüft technische Basis und Content-Substanz Ihrer aktuellen Website — als objektive Grundlage für die Entscheidung zwischen Refresh, Rebuild und Vollrelaunch.",
     },
+    serviceLinks: [
+      {
+        href: "/website-erstellen-lassen",
+        label: "Vollrelaunch mit SEO-Sicherung",
+        reason:
+          "Für vollständige Neuaufbauten: Ziel- und Verkaufsarchitektur, Content-Migration, 301-Weiterleitungen und Search-Console-Migration gehören zum Auslieferungsstandard.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Refresh oder selektiver Rebuild",
+        reason:
+          "Wenn nur einzelne Achsen (Design, Sprache, Hero) veraltet sind: gezielter Refresh statt teurer Vollrelaunch, in wenigen Wochen wirksam.",
+      },
+    ],
     faqs: [
       {
         q: "Verliere ich Rankings beim Relaunch?",
@@ -569,6 +674,20 @@ export const guides: GuidePage[] = [
       reason:
         "Prüft in unter 15 Sekunden, wo Ihre Website in den drei SEO-Achsen aktuell steht — als Ausgangspunkt für einen realistischen Aufbauplan.",
     },
+    serviceLinks: [
+      {
+        href: "/seo-saarland",
+        label: "SEO Saarland",
+        reason:
+          "Fylu baut die SEO-Basis systematisch auf: technische Foundation, Local-SEO-Signale, Content-Cluster für Ihre Suchintention. Auch für AI-Suchsysteme (Google AI Overviews, ChatGPT Search, Perplexity) optimiert.",
+      },
+      {
+        href: "/google-ads-saarland",
+        label: "Google Ads für schnellere Sichtbarkeit",
+        reason:
+          "Wenn Sie parallel zur SEO-Latenz sofort sichtbar sein wollen: Google-Ads-Setup mit Conversion-Tracking und Landing-Page-Optimierung, damit bezahlter Traffic tatsächlich in Anfragen umschlägt.",
+      },
+    ],
     faqs: [
       {
         q: "Wie schnell rankt eine neue Website?",
@@ -652,6 +771,20 @@ export const guides: GuidePage[] = [
       reason:
         "Rahmen und Zeitplan für Ihr konkretes Vorhaben — in einem persönlichen Fünfzehn-Minuten-Gespräch mit dem Studio-Lead.",
     },
+    serviceLinks: [
+      {
+        href: "/website-erstellen-lassen",
+        label: "Website erstellen lassen",
+        reason:
+          "Vom kompakten Auftritt (2 bis 4 Wochen) bis zum individuellen Vorhaben mit Sonderfunktionen (8 bis 16 Wochen). Zeitplan wird im Vorgespräch realistisch eingeordnet.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Editorial Webdesign aus dem Saarland",
+        reason:
+          "Direkte Führung durch den Studio-Lead statt Account-Manager-Kette. Feedback-Zyklen bleiben kurz, Entscheidungen fallen ohne interne Freigabeschleifen.",
+      },
+    ],
     faqs: [
       {
         q: "Was ist das Minimum für eine seriöse Website?",

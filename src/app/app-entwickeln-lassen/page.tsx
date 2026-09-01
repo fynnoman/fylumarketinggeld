@@ -116,12 +116,35 @@ export default function AppEntwickelnLassenPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
             })),
+          }),
+        }}
+      />
+
+      {/* WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/app-entwickeln-lassen#webpage',
+            url: 'https://www.fylumarketing.de/app-entwickeln-lassen',
+            name: 'App entwickeln lassen · Fylu Studio',
+            description:
+              'App-Entwicklung aus dem Saarland: Web-Apps, PWAs, iOS und Android (React Native, Expo, Capacitor). Von Konzeption über UI/UX bis Deployment aus einer Hand.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            about: { '@type': 'Thing', name: 'App-Entwicklung' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
           }),
         }}
       />
@@ -164,7 +187,7 @@ export default function AppEntwickelnLassenPage() {
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
               Web-Apps, PWAs, iOS und Android — entwickelt aus Saarlouis. Mit
               einem Stack, der auch in fünf Jahren noch wartbar ist (React Native,
               Next.js, TypeScript, Cloud-Native). App-Store-fertig, mit Studio-Begleitung.

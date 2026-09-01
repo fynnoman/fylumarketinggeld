@@ -43,7 +43,7 @@ export async function generateMetadata({
       title: topic.metaTitle,
       description: topic.metaDescription,
       url,
-      siteName: "Fylu Marketing",
+      siteName: "Fylu Studio",
       locale: "de_DE",
       type: "website",
     },
@@ -79,8 +79,7 @@ export default async function TopicPage({
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: SITE },
-              { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE}/buchen` },
-              { "@type": "ListItem", position: 3, name: topic.h1, item: url },
+              { "@type": "ListItem", position: 2, name: topic.h1, item: url },
             ],
           }),
         }}
@@ -91,17 +90,29 @@ export default async function TopicPage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
+            "@id": `${url}#service`,
             name: topic.h1,
             description: topic.metaDescription,
+            serviceType: "Webdesign",
+            url,
             provider: { "@id": "https://www.fylumarketing.de/#organization" },
             areaServed: [
               { "@type": "State", name: "Saarland" },
               { "@type": "Country", name: "Deutschland" },
             ],
+            audience: {
+              "@type": "BusinessAudience",
+              audienceType: topic.h1,
+            },
             offers: {
               "@type": "Offer",
               availability: "https://schema.org/InStock",
               url: `${SITE}/buchen`,
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                priceCurrency: "EUR",
+                description: "Individuell kalkuliert nach Umfang und Anspruch. Kostenloses Vorgespräch.",
+              },
             },
           }),
         }}
@@ -112,6 +123,11 @@ export default async function TopicPage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            inLanguage: "de-DE",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
             mainEntity: topic.faqs.map((f) => ({
               "@type": "Question",
               name: f.q,
@@ -139,7 +155,7 @@ export default async function TopicPage({
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
             {topic.h1}
           </h1>
-          <p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
+          <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
             {topic.intro}
           </p>
           <div className="flex flex-wrap gap-4">

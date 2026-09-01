@@ -104,12 +104,35 @@ export default function ProgrammiererSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
             })),
+          }),
+        }}
+      />
+
+      {/* WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/programmierer-saarland#webpage',
+            url: 'https://www.fylumarketing.de/programmierer-saarland',
+            name: 'Programmierer Saarland · Fylu Studio',
+            description:
+              'Programmierung und Softwareentwicklung aus dem Saarland: Full-Stack (React, Next.js, TypeScript, Node.js, Python), Custom Software, ERP/CRM, SaaS, API- und AI-Integration.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            about: { '@type': 'Thing', name: 'Programmierung / Softwareentwicklung' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
           }),
         }}
       />
@@ -153,7 +176,7 @@ export default function ProgrammiererSaarlandPage() {
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
               Full-Stack-Entwicklung für Unternehmen in Saarbrücken, Saarlouis, Merzig,
               Neunkirchen, Homburg und im übrigen Saarland. Moderner Tech-Stack
               (TypeScript, React, Next.js, Node.js, Python), erfahrene Hand,

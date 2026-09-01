@@ -15,10 +15,55 @@ export const metadata: Metadata = {
 
 export default function ReferencesIndex() {
   const hasCases = cases.length > 0;
+  const url = `${SITE}/referenzen`;
 
   return (
     <>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+              { "@type": "ListItem", position: 2, name: "Referenzen", item: url },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": `${url}#collection`,
+            url,
+            name: "Fylu Referenzen",
+            description:
+              "Ausgewählte Fylu-Projekte: Ausgangslage, Weg, messbares Ergebnis. Nur reale Kunden, nur reale Zahlen. Konkrete Referenzen werden im Erstgespräch besprochen.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            about: { "@type": "Thing", name: "Kundenprojekte und Fallstudien des Fylu Studios" },
+            ...(hasCases && {
+              mainEntity: {
+                "@type": "ItemList",
+                numberOfItems: cases.length,
+                itemListOrder: "https://schema.org/ItemListUnordered",
+                itemListElement: cases.map((c, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  url: `${SITE}/referenzen/${c.slug}`,
+                  name: c.h1,
+                  description: c.hero.lead,
+                })),
+              },
+            }),
+          }),
+        }}
+      />
       <main className="min-h-screen bg-[var(--background-warm)]">
         <section className="relative py-24 md:py-32 px-6">
           <div className="max-w-5xl mx-auto">

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     description:
       "Website erstellen lassen: professionell, mobiloptimiert & SEO-ready., fertig in 2-3 Wochen.",
     url: "https://www.fylumarketing.de/website-erstellen-lassen",
-    siteName: "Fylu Webdesign",
+    siteName: "Fylu Studio",
     locale: "de_DE",
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Website erstellen lassen – Transparente Konditionen mit Fylu",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Website erstellen lassen | Professionell | Fylu",
     description: "Website erstellen lassen: professionell, mobiloptimiert & SEO-ready.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
 };
 

@@ -83,7 +83,7 @@ export default function WebdesignHandwerkPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						'@context': 'https://schema.org',
-						'@type': 'FAQPage',
+						'@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
 						mainEntity: faqs.map((f) => ({
 							'@type': 'Question',
 							name: f.q,

@@ -99,6 +99,11 @@ export default async function GuidePage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            inLanguage: "de-DE",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
             mainEntity: g.faqs.map((f) => ({
               "@type": "Question",
               name: f.q,
@@ -155,7 +160,7 @@ export default async function GuidePage({
               </div>
             </div>
 
-            <p className="text-lg md:text-xl text-stone-700 leading-relaxed">{g.intro}</p>
+            <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed">{g.intro}</p>
           </div>
         </section>
 
@@ -230,6 +235,44 @@ export default async function GuidePage({
                   </li>
                 ))}
               </ol>
+            </div>
+          </section>
+        )}
+
+        {/* Passende Fylu-Leistungen — nur wenn serviceLinks kuratiert */}
+        {g.serviceLinks && g.serviceLinks.length > 0 && (
+          <section className="py-16 md:py-20 px-6">
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-10 flex items-baseline gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl leading-none">
+                  §
+                </span>
+                <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em]">
+                  Passende Fylu-Leistungen
+                </h2>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {g.serviceLinks.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-cyan-200 transition-colors"
+                  >
+                    <span className="glass-edge" aria-hidden />
+                    <div className="relative">
+                      <div className="mb-2 flex items-baseline justify-between gap-2">
+                        <h3 className="text-base md:text-lg font-semibold text-[var(--ink)]">
+                          {s.label}
+                        </h3>
+                        <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-0.5">
+                          →
+                        </span>
+                      </div>
+                      <p className="text-sm text-stone-600 leading-relaxed">{s.reason}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </section>
         )}

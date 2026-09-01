@@ -8,6 +8,12 @@ export type ProblemToolLink = {
   reason: string;
 };
 
+export type ProblemServiceLink = {
+  href: string; // interner Pfad zu einer Fylu-Leistungsseite
+  label: string;
+  reason: string; // wie Fylu bei diesem Problem konkret hilft
+};
+
 export type ProblemPage = {
   slug: string;
   metaTitle: string;
@@ -19,6 +25,7 @@ export type ProblemPage = {
   diagnostics: { title: string; text: string }[]; // 3-5 selbst-prüfbare Punkte
   solutions: { title: string; text: string }[]; // 3-4 konkrete Ansätze
   tool: ProblemToolLink;
+  serviceLinks?: ProblemServiceLink[]; // optional: passende Fylu-Leistungen
   faqs: { q: string; a: string }[]; // 3-5
   publishedAt: string; // ISO
   updatedAt: string; // ISO
@@ -99,6 +106,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Prüft in unter 15 Sekunden serverseitig Meta, Struktur, Content-Tiefe, CTA-Anzahl und mobile Basis Ihrer Website. Zeigt priorisiert, wo die größten Bremsen sitzen.",
     },
+    serviceLinks: [
+      {
+        href: "/webdesign-saarland",
+        label: "Webdesign & Conversion-Architektur",
+        reason:
+          "Wenn die Analyse Verkaufsarchitektur, Hero-Klarheit oder Vertrauenssignale als Bruch identifiziert: Fylu baut die Startseite mit klarem Nutzenversprechen, mehrfachen CTAs und substanziellen Vertrauensbausteinen neu auf.",
+      },
+      {
+        href: "/website-erstellen-lassen",
+        label: "Neue Website erstellen lassen",
+        reason:
+          "Wenn Refresh nicht reicht: individuell konzipierter Auftritt mit Editorial-Design, sauberer Verkaufsstruktur und modernem technischen Fundament. Transparente Konditionen, kein Baukasten.",
+      },
+    ],
     faqs: [
       {
         q: "Woran erkenne ich schnell, ob es an Traffic oder an Conversion liegt?",
@@ -194,6 +215,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Zeigt priorisiert, welche SEO-Grundsignale bei Ihrer Domain fehlen — inklusive konkreter Handlungsempfehlung pro Finding.",
     },
+    serviceLinks: [
+      {
+        href: "/seo-saarland",
+        label: "SEO Saarland",
+        reason:
+          "Fylu baut die SEO-Basis systematisch: technische Foundation (Indexierung, Structured Data, Core Web Vitals), Local-SEO-Signale, Content-Cluster für die Suchbegriffe, die wirklich zu Ihrem Geschäft passen.",
+      },
+      {
+        href: "/seo-agentur-saarland",
+        label: "SEO-Agentur Saarland",
+        reason:
+          "Laufende SEO-Betreuung aus dem Studio, ohne Reporting-Kosmetik. Monitoring, Content-Aufbau und technische Iteration auf Basis echter Search-Console-Daten.",
+      },
+    ],
     faqs: [
       {
         q: "Wie lange dauert es, bis eine neue Website bei Google erscheint?",
@@ -277,6 +312,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Misst die Server-Antwortzeit, HTML-Größe und weitere technische Signale Ihrer Website direkt — plus 20 weitere Checks.",
     },
+    serviceLinks: [
+      {
+        href: "/webdesign-saarland",
+        label: "Webdesign auf modernem Fundament",
+        reason:
+          "Wenn die Basis nicht mehr trägt: Fylu baut Websites auf Next.js/React mit automatischer Bildoptimierung, sauberem Code-Splitting und Edge-Deployment. Core Web Vitals gehören zum Auslieferungsstandard.",
+      },
+      {
+        href: "/software-saarland",
+        label: "Software & Custom-Backend",
+        reason:
+          "Wenn die Performance-Bremse im Backend, in einer Datenbank oder in einer Integration sitzt: Fylu analysiert und ersetzt den Engpass gezielt statt die Symptome zu kaschieren.",
+      },
+    ],
     faqs: [
       {
         q: "Ist Ladezeit wirklich ein SEO-Ranking-Faktor?",
@@ -360,6 +409,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Misst technische Basis und redaktionelle Substanz — als objektive Grundlage für die Entscheidung zwischen Refresh und Relaunch.",
     },
+    serviceLinks: [
+      {
+        href: "/website-erstellen-lassen",
+        label: "Neue Website erstellen lassen",
+        reason:
+          "Wenn drei oder mehr Achsen betroffen sind: Fylu setzt den Relaunch mit sauberer Zielgruppen- und Verkaufsarchitektur um, inklusive Content-Migration, 301-Weiterleitungen und SEO-Sicherung.",
+      },
+      {
+        href: "/webdesign-saarland",
+        label: "Webdesign-Refresh",
+        reason:
+          "Wenn nur Design und Sprache haken, die technische Basis aber trägt: gezielter Refresh mit aktualisierter Bildwelt, überarbeitetem Farb- und Typografiesystem und geschärfter Copy.",
+      },
+    ],
     faqs: [
       {
         q: "Wie oft sollte man eine Website modernisieren?",
@@ -447,6 +510,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Prüft Hero-Struktur, CTA-Anzahl, Content-Substanz und mehr — priorisiert nach Impact auf die Anfragen.",
     },
+    serviceLinks: [
+      {
+        href: "/webdesign-saarland",
+        label: "Conversion-orientiertes Webdesign",
+        reason:
+          "Fylu setzt die vier Hebel operativ um: Hero mit Klarheits-Reihenfolge, CTA-Wiederholung nach jedem Hauptabschnitt, echte Vertrauenssignale, reduziertes Anfrageformular.",
+      },
+      {
+        href: "/google-ads-saarland",
+        label: "Google Ads mit Landing-Page-Optimierung",
+        reason:
+          "Wenn Sie bezahlten Traffic auf die Website leiten: Fylu koppelt Ads-Setup und Landing-Page-Optimierung, damit teurer Traffic auch tatsächlich in qualifizierte Anfragen umschlägt.",
+      },
+    ],
     faqs: [
       {
         q: "Wie schnell wirken Conversion-Änderungen?",
@@ -534,6 +611,20 @@ export const problems: ProblemPage[] = [
       reason:
         "Zeigt in unter 15 Sekunden priorisiert, an welcher der drei SEO-Achsen Ihre Website tatsächlich hakt — mit konkreter Handlungsempfehlung pro Finding.",
     },
+    serviceLinks: [
+      {
+        href: "/seo-saarland",
+        label: "SEO Saarland",
+        reason:
+          "Fylu deckt alle drei Achsen ab: technische Foundation (Core Web Vitals, Structured Data, Canonicals), Content-Cluster für Ihre Suchintention, laufende Betreuung mit echter Search-Console-Analyse.",
+      },
+      {
+        href: "/seo-agentur-saarland",
+        label: "SEO-Agentur Saarland",
+        reason:
+          "Wenn Sie eine langfristige Partnerschaft für Sichtbarkeit suchen: laufende SEO-Betreuung inklusive Content-Aufbau und Off-Page-Signale, geführt aus dem Studio, ohne Reporting-Kosmetik.",
+      },
+    ],
     faqs: [
       {
         q: "Wie lange dauert es, bis SEO-Arbeit sichtbare Rankings bringt?",

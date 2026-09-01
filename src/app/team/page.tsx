@@ -70,27 +70,77 @@ const principles = [
 const SITE = 'https://www.fylumarketing.de';
 
 export default function TeamPage() {
+  const url = `${SITE}/team`;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
-      { '@type': 'ListItem', position: 2, name: 'Team', item: `${SITE}/team` },
+      { '@type': 'ListItem', position: 2, name: 'Team', item: url },
     ],
   };
 
-  const orgSchema = {
+  const profilePageSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Fylu',
-    url: SITE,
-    logo: `${SITE}/logo-fylu.webp`,
-    employee: team.map((m) => ({
-      '@type': 'Person',
-      name: m.name,
-      jobTitle: m.role,
-      worksFor: { '@type': 'Organization', name: 'Fylu' },
-    })),
+    '@type': 'ProfilePage',
+    '@id': `${url}#profilepage`,
+    url,
+    name: 'Studio · Die Menschen hinter Fylu',
+    description:
+      'Das Fylu Studio in Saarlouis. Direkt geführt vom Studio-Lead, ohne Account-Manager-Kette. Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
+    inLanguage: 'de-DE',
+    isPartOf: { '@id': `${SITE}/#website` },
+    about: { '@id': `${SITE}/#fynn-schulz` },
+    mainEntity: { '@id': `${SITE}/#fynn-schulz` },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '[data-speakable]'],
+    },
+  };
+
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${SITE}/#fynn-schulz`,
+    name: 'Fynn Schulz',
+    givenName: 'Fynn',
+    familyName: 'Schulz',
+    jobTitle: 'Studio-Lead & Editorial Webdesigner',
+    description:
+      'Gründer und Studio-Lead von Fylu Studio in Saarlouis. Verantwortet jedes Projekt von Strategie über Design bis Umsetzung persönlich. Über fünf Jahre Erfahrung in Webdesign, Marken-Aufbau und lokalem Marketing.',
+    image: `${SITE}${team[0].image}`,
+    url,
+    worksFor: { '@id': `${SITE}/#organization` },
+    knowsAbout: [
+      'Editorial Webdesign',
+      'Conversion-Analyse',
+      'Suchmaschinenoptimierung (SEO)',
+      'Local SEO',
+      'Google Ads',
+      'Generative Engine Optimization (GEO)',
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Structured Data',
+      'Core Web Vitals',
+      'Softwareentwicklung',
+      'AI-Integration',
+    ],
+    knowsLanguage: ['de', 'en'],
+    nationality: { '@type': 'Country', name: 'Deutschland' },
+    workLocation: {
+      '@type': 'Place',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Saarlouis',
+        addressRegion: 'Saarland',
+        addressCountry: 'DE',
+      },
+    },
+    sameAs: [
+      'https://www.linkedin.com/in/fynn-schulz/',
+      'https://www.instagram.com/fylumarketing/',
+    ],
   };
 
   return (
@@ -102,7 +152,11 @@ export default function TeamPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
 
       <main className="bg-white text-[var(--ink)]">
@@ -149,7 +203,7 @@ export default function TeamPage() {
                 Kein Mittelmaß.
               </h1>
 
-              <p className="mt-9 text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+              <p data-speakable className="mt-9 text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
                 Hinter Fylu steht keine Agentur mit Account-Manager-Kette und
                 outgesourcter Produktion. Sondern ein Ein-Personen-Studio aus
                 Saarlouis: Strategie, Design, Code und Sichtbarkeit aus einer

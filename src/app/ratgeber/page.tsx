@@ -14,9 +14,52 @@ export const metadata: Metadata = {
 };
 
 export default function GuidesIndex() {
+  const url = `${SITE}/ratgeber`;
   return (
     <>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": `${url}#collection`,
+            url,
+            name: "Website-Ratgeber",
+            description:
+              "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen aus dem Fylu Studio.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            about: { "@type": "Thing", name: "Website-Kosten, Relaunch, SEO und Investitionsentscheidungen" },
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: guides.length,
+              itemListOrder: "https://schema.org/ItemListUnordered",
+              itemListElement: guides.map((g, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                url: `${SITE}/ratgeber/${g.slug}`,
+                name: g.h1,
+                description: g.shortAnswer,
+              })),
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+              { "@type": "ListItem", position: 2, name: "Ratgeber", item: url },
+            ],
+          }),
+        }}
+      />
       <main className="min-h-screen bg-[var(--background-warm)]">
         <section className="relative py-24 md:py-32 px-6">
           <div className="max-w-4xl mx-auto">

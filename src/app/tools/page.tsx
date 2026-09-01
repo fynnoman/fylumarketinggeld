@@ -58,8 +58,53 @@ const tools: ToolCard[] = [
 ];
 
 export default function ToolsIndexPage() {
+  const url = `${SITE}/tools`;
   return (
-    <section className="relative py-24 md:py-32 px-6">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+              { "@type": "ListItem", position: 2, name: "Tools", item: url },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": `${url}#collection`,
+            url,
+            name: "Fylu Tools",
+            description:
+              "Kostenlose Fylu-Tools zur Analyse einer Website: Website-Analyse und SEO-Check. Serverseitige Prüfung in unter 15 Sekunden, keine Registrierung, keine Datenspeicherung.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            about: { "@type": "Thing", name: "Kostenlose Website- und SEO-Analyse" },
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: tools.filter((t) => t.status === "live").length,
+              itemListElement: tools
+                .filter((t) => t.status === "live")
+                .map((t, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  url: `${SITE}${t.href}`,
+                  name: t.title,
+                  description: t.description,
+                })),
+            },
+          }),
+        }}
+      />
+      <section className="relative py-24 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="mb-14 md:mb-20 text-center">
           <div className="mb-6 flex items-baseline justify-center gap-3">
@@ -141,5 +186,6 @@ export default function ToolsIndexPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

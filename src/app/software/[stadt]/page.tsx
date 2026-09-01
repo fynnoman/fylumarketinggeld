@@ -62,7 +62,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "Fylu Webdesign & Software",
+      siteName: "Fylu Studio",
       locale: "de_DE",
       type: "website",
     },
@@ -130,12 +130,32 @@ export default async function SoftwareCityPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': `${url}#webpage`,
+            url,
+            name: `Software ${region.city} · Fylu Studio`,
+            description: `Softwareentwicklung für Unternehmen in ${region.city}: Web-Apps, ERP, CRM, API- und AI-Integration. Aus Saarlouis, modern kalkuliert, transparente Konditionen.`,
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': `${SITE}/#website` },
+            about: { '@type': 'Thing', name: `Softwareentwicklung ${region.city}` },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
           }),
         }}
       />
@@ -181,7 +201,7 @@ export default async function SoftwareCityPage({
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.1}>
-            <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
+            <p data-speakable className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
               Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack und transparenten Konditionen statt Stundensatz. {region.intro}
             </p>
           </FadeInSection>

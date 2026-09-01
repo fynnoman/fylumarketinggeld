@@ -113,19 +113,67 @@ export default function MethodikPage() {
     ],
   };
 
+  const url = `${SITE}/methodik`;
+
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
+    '@id': `${url}#howto`,
     name: 'Das Fylu Sichtbarkeits-System – 5 Schritte zur Marktführerschaft im Saarland',
     description:
       'Bewährtes 5-Schritte-System für Webdesign, lokales SEO und Google Ads im Saarland. Vom Marktscan zur skalierbaren Anfragenmaschine in 90 Tagen.',
     totalTime: 'P90D',
+    inLanguage: 'de-DE',
     step: steps.map((s, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
       name: `${s.number}: ${s.title}`,
       text: s.body.join(' '),
+      itemListElement: s.deliverables.map((d) => ({
+        '@type': 'HowToDirection',
+        text: d,
+      })),
     })),
+  };
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    headline: 'Der Fylu-Prozess: Fünf Kapitel von Analyse bis Wirkung',
+    description:
+      'Methodik des Fylu Studios: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Ein editorial geführter 5-Schritte-Prozess für Webdesign, SEO und Google Ads im Saarland.',
+    mainEntityOfPage: url,
+    inLanguage: 'de-DE',
+    author: { '@id': `${SITE}/#fynn-schulz` },
+    publisher: { '@id': `${SITE}/#organization` },
+    about: [
+      { '@type': 'Thing', name: 'Editorial Webdesign' },
+      { '@type': 'Thing', name: 'Local SEO' },
+      { '@type': 'Thing', name: 'Google Ads' },
+      { '@type': 'Thing', name: 'Conversion-Analyse' },
+    ],
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '[data-speakable]'],
+    },
+  };
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: 'Der Fylu-Prozess · Fünf Kapitel',
+    description:
+      'Fünf Kapitel von Analyse bis Wirkung: der Fylu-Prozess für editoriale Websites, lokales SEO und Google Ads. Aus Saarlouis.',
+    inLanguage: 'de-DE',
+    isPartOf: { '@id': `${SITE}/#website` },
+    mainEntity: { '@id': `${url}#howto` },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '[data-speakable]'],
+    },
   };
 
   return (
@@ -138,6 +186,14 @@ export default function MethodikPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <main className="bg-white">
         {/* Hero */}
@@ -153,7 +209,7 @@ export default function MethodikPage() {
                 Das Fylu{' '}
                 <span className="text-cyan-600">Sichtbarkeits-System</span>
               </h1>
-              <p className="text-lg md:text-xl text-stone-700 leading-relaxed max-w-3xl mx-auto">
+              <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed max-w-3xl mx-auto">
                 Unser bewährtes 5-Schritte-System für Saarländer Unternehmen — vom ersten
                 Marktscan bis zur skalierbaren Anfragenmaschine. Keine Bauchentscheidungen, keine
                 Standard-Templates, keine Versprechen ohne Beweis.

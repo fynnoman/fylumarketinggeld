@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Fylu Studio, Webdesign und SEO aus Saarlouis",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Webdesign & SEO im Saarland | Fylu Studio Saarlouis",
     description: "Editorial-Studio aus Saarlouis. Marken, die wachsen — Design, SEO, GEO, SEA. Langfristige Partnerschaft, keine monatliche Grundgebühr.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
   keywords: [
     "Webdesign Saarland",
@@ -120,7 +120,7 @@ export default function RootLayout({
                 width: 512,
                 height: 512,
               },
-              image: "https://www.fylumarketing.de/hero-background.webp",
+              image: "https://www.fylumarketing.de/herob.png",
               telephone: "+4915168488999",
               email: "kontakt@fylumarketing.de",
               foundingDate: "2024",
@@ -284,14 +284,81 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/fynn-schulz/",
                 "https://g.page/fylumarketing",
               ],
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "5.0",
-                bestRating: "5",
-                worstRating: "1",
-                reviewCount: "20",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Fylu Studio Leistungen",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      "@id": "https://www.fylumarketing.de/#service-webdesign",
+                      name: "Editorial Webdesign & Website-Erstellung",
+                      description:
+                        "Individuell gestaltete, technisch moderne Websites (Next.js, React, TypeScript) für etablierte, hochwertige Unternehmen. Drei Projektklassen: Signature, Atelier, Maison. Ohne monatliche Grundgebühr.",
+                      serviceType: "Webdesign",
+                      provider: { "@id": "https://www.fylumarketing.de/#organization" },
+                      areaServed: [
+                        { "@type": "State", name: "Saarland" },
+                        { "@type": "Country", name: "Deutschland" },
+                      ],
+                      url: "https://www.fylumarketing.de/webdesign-saarland",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      "@id": "https://www.fylumarketing.de/#service-seo",
+                      name: "SEO & Local SEO",
+                      description:
+                        "Technische Foundation, laufende Betreuung und aktiver Content-Aufbau (Cluster-Struktur). Inklusive Local SEO, Google-Unternehmensprofil, strukturierte Daten. Auch für AI-Suchsysteme (GEO) optimiert.",
+                      serviceType: "Suchmaschinenoptimierung",
+                      provider: { "@id": "https://www.fylumarketing.de/#organization" },
+                      areaServed: [
+                        { "@type": "State", name: "Saarland" },
+                        { "@type": "Country", name: "Deutschland" },
+                      ],
+                      url: "https://www.fylumarketing.de/seo-saarland",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      "@id": "https://www.fylumarketing.de/#service-google-ads",
+                      name: "Google Ads & Conversion-Tracking",
+                      description:
+                        "Kampagnen-Setup, laufende Betreuung, Conversion-Tracking und Landing-Page-Optimierung. Fokus auf qualifizierte Anfragen statt bloße Klicks.",
+                      serviceType: "Google Ads",
+                      provider: { "@id": "https://www.fylumarketing.de/#organization" },
+                      areaServed: [
+                        { "@type": "State", name: "Saarland" },
+                        { "@type": "Country", name: "Deutschland" },
+                      ],
+                      url: "https://www.fylumarketing.de/google-ads-saarland",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      "@id": "https://www.fylumarketing.de/#service-software",
+                      name: "Softwareentwicklung, Web-Apps & AI-Integration",
+                      description:
+                        "Custom Software, Web-Apps, SaaS, ERP/CRM, API- und AI-Integration. Modernes Fundament (Next.js, React, TypeScript, Node.js, Python, PostgreSQL, OpenAI/Anthropic APIs).",
+                      serviceType: "Softwareentwicklung",
+                      provider: { "@id": "https://www.fylumarketing.de/#organization" },
+                      areaServed: [
+                        { "@type": "State", name: "Saarland" },
+                        { "@type": "Country", name: "Deutschland" },
+                      ],
+                      url: "https://www.fylumarketing.de/software-saarland",
+                    },
+                  },
+                ],
               },
-              slogan: "Editorial Webdesign aus dem Saarland — mit einer Handschrift, die bleibt.",
+              slogan: "Editorial Webdesign aus dem Saarland, mit einer Handschrift, die bleibt.",
             }),
           }}
         />
@@ -329,55 +396,6 @@ export default function RootLayout({
                 },
                 "query-input": "required name=search_term_string",
               },
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Fylu Studio · Editorial Webdesign Saarland",
-              url: "https://www.fylumarketing.de",
-              inLanguage: "de-DE",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate: "https://www.fylumarketing.de/?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Fylu Studio",
-              alternateName: "Fylu Marketing",
-              url: "https://www.fylumarketing.de",
-              logo: "https://www.fylumarketing.de/logo-fylu.webp",
-              founder: {
-                "@type": "Person",
-                name: "Fynn Schulz",
-                jobTitle: "Studio-Lead",
-                worksFor: { "@type": "Organization", name: "Fylu Studio" },
-              },
-              foundingLocation: { "@type": "Place", name: "Saarlouis, Saarland, Deutschland" },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+4915168488999",
-                contactType: "customer service",
-                email: "kontakt@fylumarketing.de",
-                areaServed: ["DE"],
-                availableLanguage: ["de", "en"],
-              },
-              sameAs: [],
             }),
           }}
         />

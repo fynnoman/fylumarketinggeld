@@ -160,7 +160,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.35, ease }}
           className="mt-9 md:mt-11 max-w-xl"
         >
-          <p className="text-sm md:text-base text-stone-200/90 leading-relaxed">
+          <p data-speakable className="text-sm md:text-base text-stone-200/90 leading-relaxed">
             Wir analysieren, warum Ihre Website Besucher verliert — und zeigen
             Ihnen im Entwurf, wie daraus Kunden werden.
           </p>

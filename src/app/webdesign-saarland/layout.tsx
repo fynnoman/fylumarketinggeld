@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero-background.webp",
+        url: "/herob.png",
         width: 1200,
         height: 630,
         alt: "Fylu Studio – Editorial Webdesign aus Saarlouis",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Webdesign Saarland · Editorial Studio | Fylu",
     description:
       "Editorial gestaltete Websites aus Saarlouis. Zwölf Klienten pro Jahr.",
-    images: ["/hero-background.webp"],
+    images: ["/herob.png"],
   },
 };
 

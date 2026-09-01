@@ -96,7 +96,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "Fylu Marketing",
+      siteName: "Fylu Studio",
       locale: "de_DE",
       type: "website",
     },
@@ -151,7 +151,7 @@ export default async function RegionPage({
             url,
             telephone: "+4915168488999",
             email: "kontakt@fylumarketing.de",
-            image: "https://www.fylumarketing.de/hero-background.webp",
+            image: "https://www.fylumarketing.de/herob.png",
             logo: "https://www.fylumarketing.de/logo-fylu.webp",
             address: {
               "@type": "PostalAddress",
@@ -186,17 +186,11 @@ export default async function RegionPage({
               geoMidpoint: { "@type": "GeoCoordinates", latitude: region.lat, longitude: region.lng },
               geoRadius: "30000",
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "5.0",
-              bestRating: "5",
-              worstRating: "1",
-              reviewCount: "20",
-            },
             sameAs: [
               "https://www.instagram.com/fylumarketing/",
               "https://www.linkedin.com/in/fynn-schulz/",
             ],
+            parentOrganization: { "@id": `${SITE}/#organization` },
           }),
         }}
       />
@@ -240,11 +234,36 @@ export default async function RegionPage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            inLanguage: "de-DE",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
             mainEntity: pageFaqs.map((f) => ({
               "@type": "Question",
               name: f.q,
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${url}#webpage`,
+            url,
+            name: `Webdesign ${region.city} · Fylu Studio`,
+            description: `Editorial gestaltete Websites für Unternehmen in ${region.city}. Aus Saarlouis, mit lokaler SEO und persönlicher Betreuung.`,
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            about: { "@type": "Thing", name: `Webdesign ${region.city}` },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
           }),
         }}
       />
@@ -269,7 +288,7 @@ export default async function RegionPage({
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
             Webdesign {region.city} – Websites, die Kunden bringen
           </h1>
-          <p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
+          <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
             {region.intro}
           </p>
           <div className="flex flex-wrap gap-4">

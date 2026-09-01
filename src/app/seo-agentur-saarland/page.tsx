@@ -28,9 +28,12 @@ export default function SeoAgenturSaarlandPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
+            "@id": `${URL}#service`,
             name: "SEO-Agentur Saarland",
             description:
               "SEO-Foundation, Content-Aufbau, Local SEO und laufende Betreuung — aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit.",
+            serviceType: "Suchmaschinenoptimierung",
+            url: URL,
             provider: { "@id": `${SITE}/#organization` },
             areaServed: [
               { "@type": "State", name: "Saarland" },
@@ -40,7 +43,34 @@ export default function SeoAgenturSaarlandPage() {
               "@type": "Offer",
               availability: "https://schema.org/InStock",
               url: `${SITE}/buchen`,
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                priceCurrency: "EUR",
+                description: "Individuell kalkuliert nach Foundation, laufender Betreuung und aktivem Content-Aufbau. Keine monatliche Grundgebühr.",
+              },
             },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${URL}#webpage`,
+            url: URL,
+            name: "SEO-Agentur Saarland",
+            description:
+              "SEO-Agentur aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit. Foundation, Content-Aufbau, Local SEO, laufende Betreuung.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            about: { "@type": "Thing", name: "Suchmaschinenoptimierung (SEO)" },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
+            mainEntity: { "@id": `${URL}#service` },
           }),
         }}
       />
@@ -77,7 +107,7 @@ export default function SeoAgenturSaarlandPage() {
               </span>
               .
             </h1>
-            <p className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8">
+            <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8">
               Wir arbeiten für etablierte Unternehmen, für die Sichtbarkeit ein klarer
               Business-Case ist — nicht Marketing-Kosmetik. Foundation, Content-Aufbau,
               Local SEO und laufende Betreuung aus Saarlouis, transparent kalkuliert.

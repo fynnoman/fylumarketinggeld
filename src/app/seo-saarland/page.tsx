@@ -81,6 +81,7 @@ export default function SeoSaarlandPage() {
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
+            parentOrganization: { '@id': 'https://www.fylumarketing.de/#organization' },
           }),
         }}
       />
@@ -89,7 +90,60 @@ export default function SeoSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage',
+            '@type': 'Service',
+            '@id': 'https://www.fylumarketing.de/seo-saarland#service',
+            name: 'SEO Saarland',
+            description:
+              'SEO-Foundation, laufende Betreuung, aktiver Content-Aufbau und Local SEO aus Saarlouis. Auch für AI-Suchsysteme (Google AI Overviews, ChatGPT Search, Perplexity) optimiert.',
+            serviceType: 'Suchmaschinenoptimierung',
+            url: 'https://www.fylumarketing.de/seo-saarland',
+            provider: { '@id': 'https://www.fylumarketing.de/#organization' },
+            areaServed: [
+              { '@type': 'State', name: 'Saarland' },
+              { '@type': 'Country', name: 'Deutschland' },
+            ],
+            offers: {
+              '@type': 'Offer',
+              availability: 'https://schema.org/InStock',
+              url: 'https://www.fylumarketing.de/buchen',
+              priceSpecification: {
+                '@type': 'PriceSpecification',
+                priceCurrency: 'EUR',
+                description:
+                  'Foundation, laufende Betreuung und Content-Aufbau werden je Ebene transparent kalkuliert. Keine monatliche Grundgebühr.',
+              },
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': 'https://www.fylumarketing.de/seo-saarland#webpage',
+            url: 'https://www.fylumarketing.de/seo-saarland',
+            name: 'SEO Saarland · Fylu Studio',
+            description:
+              'SEO aus Saarlouis als Erweiterung Ihrer Website. Foundation, Betreuung und Content-Aufbau, auch für AI-Suchsysteme.',
+            inLanguage: 'de-DE',
+            isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
+            mainEntity: { '@id': 'https://www.fylumarketing.de/seo-saarland#service' },
+            about: { '@type': 'Thing', name: 'Suchmaschinenoptimierung (SEO)' },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', '[data-speakable]'],
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
@@ -146,7 +200,7 @@ export default function SeoSaarlandPage() {
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
-            <p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
+            <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
               Sichtbarkeit für Suchbegriffe, die Ihre Klienten tatsächlich
               eingeben. Kuratiert aus Saarlouis — als Erweiterung des
               Fylu-Auftritts oder als eigenständiges Modul für ein Haus, das seine

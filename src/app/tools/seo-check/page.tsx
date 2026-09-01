@@ -42,6 +42,64 @@ export default function SeoCheckPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "@id": `${URL}#tool`,
+            name: "Fylu SEO-Check",
+            description:
+              "SEO-fokussierter Check einer beliebigen Domain: prüft Meta-Tags, Heading-Struktur, Content-Substanz, Structured Data und lokale Signale. Jedes Finding kommt mit konkreter Handlungsempfehlung, priorisiert nach Impact. Keine Registrierung, keine Datenspeicherung.",
+            url: URL,
+            applicationCategory: "WebApplication",
+            applicationSubCategory: "SEO-Analyse",
+            operatingSystem: "Web",
+            browserRequirements: "Requires JavaScript. Requires HTML5.",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              category: "free",
+            },
+            featureList: [
+              "SEO-fokussierte Findings",
+              "Konkrete Handlungsempfehlung pro Finding",
+              "Priorisierung nach Impact (kritisch / warnung / gut)",
+              "Meta-, Heading- und Content-Analyse",
+              "Structured-Data-Prüfung",
+              "Lokale SEO-Signale",
+              "Optionaler PDF-Report per E-Mail",
+            ],
+            provider: { "@id": `${SITE}/#organization` },
+            isPartOf: { "@id": `${SITE}/#website` },
+            inLanguage: "de-DE",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${URL}#webpage`,
+            url: URL,
+            name: "SEO-Check",
+            description:
+              "Kostenloser SEO-Check mit priorisierten Findings und konkreter Handlungsempfehlung pro Finding.",
+            inLanguage: "de-DE",
+            isPartOf: { "@id": `${SITE}/#website` },
+            mainEntity: { "@id": `${URL}#tool` },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
+          }),
+        }}
+      />
       <section className="relative py-24 md:py-32 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-14 md:mb-20 text-center">
@@ -60,7 +118,7 @@ export default function SeoCheckPage() {
               </span>
               .
             </h1>
-            <p className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+            <p data-speakable className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               Jedes Finding kommt mit einer konkreten Handlungsempfehlung. Priorisiert nach Impact.
               Keine Registrierung, nichts wird gespeichert.
             </p>
