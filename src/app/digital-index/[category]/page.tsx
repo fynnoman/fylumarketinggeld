@@ -379,28 +379,28 @@ export default async function CategoryPage({ params }: PageProps) {
           {/* CTA */}
           <section className="mt-20 overflow-hidden rounded-3xl border border-stone-200 bg-white p-10 shadow-sm sm:p-14">
             <p className="text-[11px] uppercase tracking-[0.28em] text-cyan-700">
-              Digitalanalyse
+              Vorgespräch
             </p>
             <h2 className="mt-4 max-w-2xl font-display text-3xl leading-tight text-[color:var(--ink)] sm:text-5xl">
               Ihr {cat.industry}-Betrieb im Fylu Digital Index.
             </h2>
             <p className="mt-4 max-w-xl text-[color:var(--ink-soft)]">
-              Fylu analysiert Ihre Website, das Google-Unternehmensprofil und
-              die technische Grundlage. Ergebnis: ein Score von 0 bis 100 mit
-              konkreten Handlungsempfehlungen.
+              15 Minuten Vorgespräch mit dem Studio-Lead, persönlich und
+              unverbindlich. Wir klären Ihren Score, die wichtigsten Hebel
+              und ob Fylu für Ihr Vorhaben passt.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/tools/website-check"
+                href="/buchen"
                 className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
               >
-                Kostenlose Digitalanalyse
+                Kostenloses Vorgespräch buchen
               </Link>
               <Link
-                href="/buchen"
+                href="/tools/website-check"
                 className="inline-flex items-center rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-[color:var(--ink)] transition-colors hover:bg-stone-100"
               >
-                Termin vereinbaren
+                Digitalanalyse anfordern
               </Link>
             </div>
           </section>

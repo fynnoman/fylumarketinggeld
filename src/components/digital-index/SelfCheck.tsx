@@ -255,22 +255,29 @@ export default function SelfCheck() {
                   </div>
                 ) : null}
 
-                <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-cyan-200 bg-gradient-to-r from-cyan-50 to-white p-5">
-                  <div>
-                    <p className="font-display text-lg text-[color:var(--ink)]">
-                      Score verbessern.
-                    </p>
-                    <p className="mt-1 text-sm text-[color:var(--ink-soft)]">
-                      Fylu erstellt eine ausführliche Digitalanalyse mit
-                      konkreten Umsetzungsschritten.
-                    </p>
+                <div className="mt-8 rounded-xl border border-cyan-200 bg-gradient-to-r from-cyan-50 to-white p-5 sm:p-6">
+                  <p className="font-display text-lg text-[color:var(--ink)]">
+                    Score verbessern.
+                  </p>
+                  <p className="mt-1 text-sm text-[color:var(--ink-soft)]">
+                    15 Minuten Vorgespräch reichen um zu klären, welche Punkte
+                    Ihren Score real anheben. Persönlich, unverbindlich,
+                    kostenfrei.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <a
+                      href="/buchen"
+                      className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
+                    >
+                      Termin buchen
+                    </a>
+                    <a
+                      href="/tools/website-check"
+                      className="inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 text-sm font-medium text-[color:var(--ink)] transition-colors hover:bg-stone-100"
+                    >
+                      Ausführliche Digitalanalyse
+                    </a>
                   </div>
-                  <a
-                    href="/tools/website-check"
-                    className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
-                  >
-                    Kostenlose Digitalanalyse
-                  </a>
                 </div>
 
                 <p className="mt-4 text-xs text-stone-500">

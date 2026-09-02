@@ -308,15 +308,24 @@ export default async function CompanyPage({ params }: PageProps) {
               Score verbessern.
             </p>
             <p className="mt-2 max-w-2xl text-[color:var(--ink-soft)]">
-              Fylu erstellt eine detaillierte Digitalanalyse und zeigt konkret,
-              welche Schritte den Score anheben. Ohne monatliche Grundgebühr.
+              15 Minuten Vorgespräch mit dem Studio-Lead, konkret zu Ihrem
+              Score und den passenden Hebeln. Persönlich, unverbindlich,
+              kostenfrei.
             </p>
-            <Link
-              href="/tools/website-check"
-              className="mt-4 inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
-            >
-              Kostenlose Fylu-Digitalanalyse
-            </Link>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/buchen"
+                className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
+              >
+                Termin buchen
+              </Link>
+              <Link
+                href="/tools/website-check"
+                className="inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 text-sm font-medium text-[color:var(--ink)] transition-colors hover:bg-stone-100"
+              >
+                Kostenlose Fylu-Digitalanalyse
+              </Link>
+            </div>
           </aside>
 
           <p className="mt-8 text-xs text-stone-500">

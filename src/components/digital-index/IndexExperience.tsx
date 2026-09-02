@@ -467,22 +467,29 @@ export default function IndexExperience({ companies }: Props) {
                               </div>
                             ) : null}
 
-                            <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-cyan-200 bg-gradient-to-r from-cyan-50 to-white p-5">
-                              <div>
-                                <p className="font-display text-lg text-[color:var(--ink)]">
-                                  Score verbessern.
-                                </p>
-                                <p className="mt-1 text-sm text-[color:var(--ink-soft)]">
-                                  Kostenlose Digitalanalyse mit konkreten
-                                  Schritten.
-                                </p>
+                            <div className="mt-8 rounded-xl border border-cyan-200 bg-gradient-to-r from-cyan-50 to-white p-5">
+                              <p className="font-display text-lg text-[color:var(--ink)]">
+                                Score verbessern.
+                              </p>
+                              <p className="mt-1 text-sm text-[color:var(--ink-soft)]">
+                                15 Minuten Vorgespräch, persönlich mit dem
+                                Studio-Lead. Konkrete Hebel für diesen
+                                Score.
+                              </p>
+                              <div className="mt-3 flex flex-wrap gap-3">
+                                <Link
+                                  href="/buchen"
+                                  className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
+                                >
+                                  Termin buchen
+                                </Link>
+                                <Link
+                                  href="/tools/website-check"
+                                  className="inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 text-sm font-medium text-[color:var(--ink)] transition-colors hover:bg-stone-100"
+                                >
+                                  Fylu-Digitalanalyse
+                                </Link>
                               </div>
-                              <Link
-                                href="/tools/website-check"
-                                className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
-                              >
-                                Fylu-Digitalanalyse
-                              </Link>
                             </div>
 
                             <p className="mt-4 text-xs text-stone-500">
@@ -525,16 +532,16 @@ export default function IndexExperience({ companies }: Props) {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/tools/website-check"
+              href="/buchen"
               className="inline-flex items-center rounded-full bg-[color:var(--ink)] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-cyan-700"
             >
-              Kostenlose Digitalanalyse
+              Kostenloses Vorgespräch buchen
             </Link>
             <Link
-              href="/buchen"
+              href="/tools/website-check"
               className="inline-flex items-center rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-[color:var(--ink)] transition-colors hover:bg-stone-100"
             >
-              Termin vereinbaren
+              Kostenlose Digitalanalyse
             </Link>
           </div>
         </section>
