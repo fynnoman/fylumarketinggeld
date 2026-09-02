@@ -46,7 +46,7 @@ export default function ReferencesIndex() {
               "Ausgewählte Fylu-Projekte: Ausgangslage, Weg, messbares Ergebnis. Nur reale Kunden, nur reale Zahlen. Konkrete Referenzen werden im Erstgespräch besprochen.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
-            about: { "@type": "Thing", name: "Kundenprojekte und Fallstudien des Fylu Studios" },
+            about: { "@type": "Thing", name: "Kundenprojekte und Fallstudien des Fylu Marketing" },
             ...(hasCases && {
               mainEntity: {
                 "@type": "ItemList",

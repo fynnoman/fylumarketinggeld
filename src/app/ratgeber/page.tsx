@@ -9,7 +9,7 @@ const SITE = "https://www.fylumarketing.de";
 export const metadata: Metadata = {
   title: "Website-Ratgeber",
   description:
-    "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen — transparent aus dem Fylu Studio.",
+    "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen — transparent aus dem Fylu Marketing.",
   alternates: { canonical: `${SITE}/ratgeber` },
 };
 
@@ -28,7 +28,7 @@ export default function GuidesIndex() {
             url,
             name: "Website-Ratgeber",
             description:
-              "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen aus dem Fylu Studio.",
+              "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen aus dem Fylu Marketing.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             about: { "@type": "Thing", name: "Website-Kosten, Relaunch, SEO und Investitionsentscheidungen" },

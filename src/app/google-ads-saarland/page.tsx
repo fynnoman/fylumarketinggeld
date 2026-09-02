@@ -69,7 +69,7 @@ export default function GoogleAdsSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Fylu Studio · Google Ads Saarland',
+            name: 'Fylu Marketing · Google Ads Saarland',
             description: 'Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — geführt aus Saarlouis.',
             url: 'https://www.fylumarketing.de/google-ads-saarland',
             telephone: '+4915168488999',
@@ -118,7 +118,7 @@ export default function GoogleAdsSaarlandPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/google-ads-saarland#webpage',
             url: 'https://www.fylumarketing.de/google-ads-saarland',
-            name: 'Google Ads Saarland · Fylu Studio',
+            name: 'Google Ads Saarland · Fylu Marketing',
             description:
               'Google Ads aus Saarlouis: Setup, laufende Betreuung, Conversion-Tracking und Landing-Page-Optimierung für qualifizierte Anfragen.',
             inLanguage: 'de-DE',

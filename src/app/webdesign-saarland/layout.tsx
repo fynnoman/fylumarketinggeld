@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Ein Boutique-Studio aus Saarlouis. Editorial gestaltete Websites — Signature, Atelier, Maison. Zwölf Klienten pro Jahr.",
     url: "https://www.fylumarketing.de/webdesign-saarland",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Fylu Studio – Editorial Webdesign aus Saarlouis",
+        alt: "Fylu Marketing – Editorial Webdesign aus Saarlouis",
       },
     ],
   },

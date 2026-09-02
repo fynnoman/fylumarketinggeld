@@ -8,12 +8,12 @@ import { WHATSAPP_URL } from '@/lib/contact';
 export const metadata: Metadata = {
   title: 'Studio · Die Menschen hinter Fylu · Editorial Webdesign Saarland',
   description:
-    'Das Fylu Studio — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift. Ein eingespieltes Studio aus Saarlouis, direkt geführt, ohne Account-Manager-Kette.',
+    'Das Fylu Marketing — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift. Ein eingespieltes Studio aus Saarlouis, direkt geführt, ohne Account-Manager-Kette.',
   alternates: { canonical: '/team' },
   openGraph: {
     title: 'Studio · Fylu Editorial Webdesign',
     description:
-      'Lernen Sie das Fylu-Studio kennen — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
+      'Lernen Sie das Fylu Marketing kennen — Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
     url: 'https://www.fylumarketing.de/team',
     type: 'website',
     locale: 'de_DE',
@@ -87,7 +87,7 @@ export default function TeamPage() {
     url,
     name: 'Studio · Die Menschen hinter Fylu',
     description:
-      'Das Fylu Studio in Saarlouis. Direkt geführt vom Studio-Lead, ohne Account-Manager-Kette. Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
+      'Das Fylu Marketing in Saarlouis. Direkt geführt vom Studio-Lead, ohne Account-Manager-Kette. Strategie, Design, Code und Sichtbarkeit unter einer Handschrift.',
     inLanguage: 'de-DE',
     isPartOf: { '@id': `${SITE}/#website` },
     about: { '@id': `${SITE}/#fynn-schulz` },
@@ -107,7 +107,7 @@ export default function TeamPage() {
     familyName: 'Schulz',
     jobTitle: 'Studio-Lead & Editorial Webdesigner',
     description:
-      'Gründer und Studio-Lead von Fylu Studio in Saarlouis. Verantwortet jedes Projekt von Strategie über Design bis Umsetzung persönlich. Über fünf Jahre Erfahrung in Webdesign, Marken-Aufbau und lokalem Marketing.',
+      'Gründer und Studio-Lead von Fylu Marketing in Saarlouis. Verantwortet jedes Projekt von Strategie über Design bis Umsetzung persönlich. Über fünf Jahre Erfahrung in Webdesign, Marken-Aufbau und lokalem Marketing.',
     image: `${SITE}${team[0].image}`,
     url,
     worksFor: { '@id': `${SITE}/#organization` },
@@ -433,7 +433,7 @@ export default function TeamPage() {
                 </span>
               </blockquote>
               <p className="mt-8 text-[11px] uppercase tracking-[0.24em] text-stone-400 font-medium">
-                Fynn Schulz · Inhaber, Fylu Studio
+                Fynn Schulz · Inhaber, Fylu Marketing
               </p>
             </div>
           </div>

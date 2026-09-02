@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Fylu Tools",
   },
   description:
-    "Kostenlose Analyse- und Kalkulations-Tools des Fylu Studios: Website-Analyse, Kosten-Rechner, SEO-Check. Transparente Ergebnisse, ohne Registrierung.",
+    "Kostenlose Analyse- und Kalkulations-Tools des Fylu Marketing: Website-Analyse, Kosten-Rechner, SEO-Check. Transparente Ergebnisse, ohne Registrierung.",
 };
 
 export default function ToolsLayout({ children }: { children: React.ReactNode }) {

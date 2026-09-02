@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     description:
       "Jedes Finding kommt mit einer konkreten Handlungsempfehlung. Direkt sichtbar, ohne Registrierung.",
     url: URL,
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO-Check | Fylu Studio",
+    title: "SEO-Check | Fylu Marketing",
     description: "SEO-Check mit konkreten Handlungsempfehlungen pro Finding.",
   },
 };

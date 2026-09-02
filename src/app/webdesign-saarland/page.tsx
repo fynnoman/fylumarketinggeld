@@ -107,7 +107,7 @@ export default function WebdesignSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Fylu Studio · Editorial Webdesign Saarland',
+            name: 'Fylu Marketing · Editorial Webdesign Saarland',
             description: 'Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites. Zwölf Klienten pro Jahr.',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
             telephone: '+4915168488999',

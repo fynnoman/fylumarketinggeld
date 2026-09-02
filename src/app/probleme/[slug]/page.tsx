@@ -28,7 +28,7 @@ export async function generateMetadata({
       title: p.metaTitle,
       description: p.metaDescription,
       url,
-      siteName: "Fylu Studio",
+      siteName: "Fylu Marketing",
       locale: "de_DE",
       type: "article",
     },

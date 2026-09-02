@@ -135,7 +135,7 @@ export default function AppEntwickelnLassenPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/app-entwickeln-lassen#webpage',
             url: 'https://www.fylumarketing.de/app-entwickeln-lassen',
-            name: 'App entwickeln lassen · Fylu Studio',
+            name: 'App entwickeln lassen · Fylu Marketing',
             description:
               'App-Entwicklung aus dem Saarland: Web-Apps, PWAs, iOS und Android (React Native, Expo, Capacitor). Von Konzeption über UI/UX bis Deployment aus einer Hand.',
             inLanguage: 'de-DE',

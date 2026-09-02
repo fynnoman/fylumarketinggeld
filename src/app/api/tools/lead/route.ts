@@ -7,7 +7,7 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY ?? "";
 // Tool-Leads gehen laut User-Vorgabe (2026-08-28) immer an kontakt@fylumarketing.de,
 // unabhängig von MAIL_TO env. Kein Override möglich.
 const MAIL_TO = "kontakt@fylumarketing.de";
-const MAIL_FROM = process.env.MAIL_FROM ?? "Fylu Studio <no-reply@fylumarketing.de>";
+const MAIL_FROM = process.env.MAIL_FROM ?? "Fylu Marketing <no-reply@fylumarketing.de>";
 const REPLY_TO_USER = "kontakt@fylumarketing.de";
 
 const GENERIC_ERROR =
@@ -53,7 +53,7 @@ function buildUserConfirmationHtml(params: {
   return `
     <div style="font-family: Georgia, 'Times New Roman', serif; max-width: 640px; margin: 0 auto; padding: 32px; background: #faf9f6; border-radius: 12px;">
       <div style="border-bottom: 1px solid #d5d7d9; padding-bottom: 20px; margin-bottom: 24px;">
-        <p style="font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: #6b7280; margin: 0 0 6px;">Fylu Studio · Bestätigung</p>
+        <p style="font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: #6b7280; margin: 0 0 6px;">Fylu Marketing · Bestätigung</p>
         <h1 style="font-size: 24px; color: #0c0e10; font-style: italic; font-weight: 400; margin: 0; line-height: 1.2;">Ihre Anfrage ist bei uns angekommen.</h1>
       </div>
 

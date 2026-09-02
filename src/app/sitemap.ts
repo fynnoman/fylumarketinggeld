@@ -4,6 +4,8 @@ import { topics, isIndexableTopic } from "@/lib/topics";
 import { problems } from "@/lib/problems";
 import { guides } from "@/lib/guides";
 import { cases } from "@/lib/cases";
+import { CATEGORIES as digitalIndexCategories } from "@/lib/digital-index";
+import { COMPANIES as digitalIndexCompanies } from "@/lib/digital-index-data";
 
 // Priorität für die wichtigsten Saarland-Städte (Hauptverdienst-Keywords)
 const HIGH_PRIORITY_CITIES = new Set(["saarbruecken", "saarlouis", "neunkirchen", "homburg"]);
@@ -101,6 +103,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const digitalIndexStaticEntries: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/digital-index`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-index/methodik`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.55,
+    },
+  ];
+
+  // Nur Kategorien mit mindestens einer Firma indexieren; leere Kategorien
+  // sind per generateMetadata robots:noindex und würden hier
+  // widersprüchliche Signale senden.
+  const populatedCategorySlugs = new Set(
+    digitalIndexCompanies.map((c) => c.categorySlug),
+  );
+  const companiesByCategory: Record<string, number> = {};
+  for (const c of digitalIndexCompanies) {
+    companiesByCategory[c.categorySlug] =
+      (companiesByCategory[c.categorySlug] ?? 0) + 1;
+  }
+
+  const digitalIndexCategoryEntries: MetadataRoute.Sitemap =
+    digitalIndexCategories
+      .filter((c) => populatedCategorySlugs.has(c.slug))
+      .map((c) => {
+        // Kategorien mit tiefer Substanz (>= 20 Firmen) sind eigenständige
+        // SEO-Landings mit hoher Ranking-Chance und bekommen entsprechend
+        // höhere Priorität. Kleinere Kategorien bleiben Basis-Priorität.
+        const size = companiesByCategory[c.slug] ?? 0;
+        const priority = size >= 20 ? 0.9 : size >= 10 ? 0.85 : 0.8;
+        return {
+          url: `${baseUrl}/digital-index/${c.slug}`,
+          lastModified: new Date(c.updatedAt),
+          changeFrequency: "weekly" as const,
+          priority,
+        };
+      });
+
+  const digitalIndexCompanyEntries: MetadataRoute.Sitemap =
+    digitalIndexCompanies.map((c) => {
+      // Höhere Score-Bänder priorisieren, weil sie mit stärkerer Relevanz
+      // für Nutzer-Anfragen einhergehen und in AI-Antworten eher zitiert
+      // werden. Untere Bänder bleiben niedriger.
+      const score = typeof c.totalOverride === "number" ? c.totalOverride : 0;
+      const priority = score >= 85 ? 0.7 : score >= 70 ? 0.65 : 0.6;
+      return {
+        url: `${baseUrl}/digital-index/${c.categorySlug}/${c.slug}`,
+        lastModified: new Date(c.updatedAt),
+        changeFrequency: "monthly" as const,
+        priority,
+      };
+    });
+
   return [
     ...staticEntries,
     ...regionEntries,
@@ -109,5 +170,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...problemEntries,
     ...guideEntries,
     ...caseEntries,
+    ...digitalIndexStaticEntries,
+    ...digitalIndexCategoryEntries,
+    ...digitalIndexCompanyEntries,
   ];
 }

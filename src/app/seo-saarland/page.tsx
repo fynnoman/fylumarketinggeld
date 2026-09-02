@@ -75,7 +75,7 @@ export default function SeoSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Fylu Studio · SEO Saarland',
+            name: 'Fylu Marketing · SEO Saarland',
             description: 'SEO als Erweiterung Ihrer Fylu-Website. Foundation, Google Business und Betreuung — geführt aus Saarlouis.',
             url: 'https://www.fylumarketing.de/seo-saarland',
             telephone: '+4915168488999',
@@ -124,7 +124,7 @@ export default function SeoSaarlandPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/seo-saarland#webpage',
             url: 'https://www.fylumarketing.de/seo-saarland',
-            name: 'SEO Saarland · Fylu Studio',
+            name: 'SEO Saarland · Fylu Marketing',
             description:
               'SEO aus Saarlouis als Erweiterung Ihrer Website. Foundation, Betreuung und Content-Aufbau, auch für AI-Suchsysteme.',
             inLanguage: 'de-DE',

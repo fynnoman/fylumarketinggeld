@@ -57,7 +57,7 @@ export default function WebsiteErstellenLassenPage() {
 						'@context': 'https://schema.org',
 						'@type': 'Service',
 						'@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service',
-						name: 'Website erstellen lassen (Fylu Studio)',
+						name: 'Website erstellen lassen (Fylu Marketing)',
 						description:
 							'Individuell konzipierte, editorial gestaltete Website. Drei Projektklassen (Signature, Atelier, Maison) für kompakte, vollständige und individuelle Vorhaben. Transparente Konditionen, keine monatliche Grundgebühr.',
 						serviceType: 'Webdesign & Website-Erstellung',
@@ -89,9 +89,9 @@ export default function WebsiteErstellenLassenPage() {
 						'@type': 'WebPage',
 						'@id': 'https://www.fylumarketing.de/website-erstellen-lassen#webpage',
 						url: 'https://www.fylumarketing.de/website-erstellen-lassen',
-						name: 'Website erstellen lassen · Fylu Studio',
+						name: 'Website erstellen lassen · Fylu Marketing',
 						description:
-							'Website erstellen lassen aus dem Fylu Studio in Saarlouis: editorial gestaltet, individuell konzipiert, transparent kalkuliert.',
+							'Website erstellen lassen aus dem Fylu Marketing in Saarlouis: editorial gestaltet, individuell konzipiert, transparent kalkuliert.',
 						inLanguage: 'de-DE',
 						isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
 						mainEntity: { '@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service' },
@@ -135,7 +135,7 @@ export default function WebsiteErstellenLassenPage() {
 				<div className="max-w-4xl mx-auto relative z-10">
 					<FadeInSection>
 						<div className="editorial-eyebrow mb-6">
-							<span>Fylu Studio · Websites</span>
+							<span>Fylu Marketing · Websites</span>
 						</div>
 					</FadeInSection>
 					<FadeInSection delay={0.08}>

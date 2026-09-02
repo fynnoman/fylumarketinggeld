@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fylu Tools — Analyse & SEO",
     description:
-      "Kostenlose Tools des Fylu Studios: Website-Analyse und SEO-Check. Transparente Ergebnisse.",
+      "Kostenlose Tools des Fylu Marketing: Website-Analyse und SEO-Check. Transparente Ergebnisse.",
     url: `${SITE}/tools`,
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
   },

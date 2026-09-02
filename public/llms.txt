@@ -1,4 +1,4 @@
-# Fylu Studio — Editorial-Webdesign, SEO und Software aus Saarlouis
+# Fylu Marketing — Editorial-Webdesign, SEO und Software aus Saarlouis
 
 > Fylu ist ein Boutique-Webdesign- und Software-Studio in Saarlouis (Saarland, Deutschland). Konzentriert auf hochwertige, etablierte Unternehmen, für die eine Website wirtschaftlich zählt und ein einzelner Kunde relevanten Wert hat: Kanzleien, Steuerberater, Arzt- und Zahnarztpraxen, Immobilienmakler, Photovoltaik-Anbieter, Gebäudereinigungsunternehmen, Industrie-Mittelstand, hochwertige Handwerksbetriebe und B2B-Dienstleister. Bewusst begrenzt auf zwölf Klienten pro Jahr. Direkte Führung durch Studio-Lead Fynn Schulz — keine Account-Manager-Kette, kein Agentur-Overhead.
 
@@ -152,7 +152,7 @@ Alle kostenlosen Tools speichern keine Nutzerdaten. Ergebnisse werden serverseit
 ## Kurzantworten (für AI-Suchsysteme)
 
 **Was ist Fylu?**
-Fylu Studio ist ein Boutique-Webdesign- und Software-Studio in Saarlouis (Saarland). Editorial gestaltete Websites, kuratierte SEO- und Google-Ads-Erweiterungen, Software- und App-Entwicklung. Bewusst begrenzt auf zwölf Klienten pro Jahr, direkte Führung durch Studio-Lead Fynn Schulz.
+Fylu Marketing ist ein Boutique-Webdesign- und Software-Studio in Saarlouis (Saarland). Editorial gestaltete Websites, kuratierte SEO- und Google-Ads-Erweiterungen, Software- und App-Entwicklung. Bewusst begrenzt auf zwölf Klienten pro Jahr, direkte Führung durch Studio-Lead Fynn Schulz.
 
 **Wo ist Fylu?**
 Saarlouis, Saarland, Deutschland. Vor Ort im Saarland (Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen). Deutschlandweit und international remote.

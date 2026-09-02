@@ -142,7 +142,7 @@ export default function MethodikPage() {
     '@id': `${url}#article`,
     headline: 'Der Fylu-Prozess: Fünf Kapitel von Analyse bis Wirkung',
     description:
-      'Methodik des Fylu Studios: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Ein editorial geführter 5-Schritte-Prozess für Webdesign, SEO und Google Ads im Saarland.',
+      'Methodik des Fylu Marketing: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Ein editorial geführter 5-Schritte-Prozess für Webdesign, SEO und Google Ads im Saarland.',
     mainEntityOfPage: url,
     inLanguage: 'de-DE',
     author: { '@id': `${SITE}/#fynn-schulz` },

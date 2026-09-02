@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Website erstellen lassen: professionell, mobiloptimiert & SEO-ready., fertig in 2-3 Wochen.",
     url: "https://www.fylumarketing.de/website-erstellen-lassen",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [

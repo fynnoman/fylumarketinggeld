@@ -47,9 +47,9 @@ export default function Home() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/#webpage',
             url: 'https://www.fylumarketing.de/',
-            name: 'Fylu Studio · Editorial Webdesign, SEO und Software aus dem Saarland',
+            name: 'Fylu Marketing · Editorial Webdesign, SEO und Software aus dem Saarland',
             description:
-              'Fylu Studio, Saarlouis: editorial gestaltete Websites, SEO- und Google-Ads-Erweiterungen, Softwareentwicklung. Konzentriert auf etablierte, hochwertige Unternehmen — bewusst begrenzt auf zwölf Klienten pro Jahr.',
+              'Fylu Marketing, Saarlouis: editorial gestaltete Websites, SEO- und Google-Ads-Erweiterungen, Softwareentwicklung. Konzentriert auf etablierte, hochwertige Unternehmen — bewusst begrenzt auf zwölf Klienten pro Jahr.',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
             about: { '@id': 'https://www.fylumarketing.de/#organization' },

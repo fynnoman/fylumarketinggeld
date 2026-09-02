@@ -36,7 +36,7 @@ export const problems: ProblemPage[] = [
     slug: "website-bekommt-keine-anfragen",
     metaTitle: "Website bekommt keine Anfragen? Ursachen und ehrliche Lösungen | Fylu",
     metaDescription:
-      "Ihre Website ist online, aber es kommen keine Anfragen? Fünf typische Ursachen, eine ehrliche Diagnose und konkrete Lösungsansätze — direkt vom Fylu Studio.",
+      "Ihre Website ist online, aber es kommen keine Anfragen? Fünf typische Ursachen, eine ehrliche Diagnose und konkrete Lösungsansätze — direkt vom Fylu Marketing.",
     h1: "Ihre Website bekommt keine Anfragen. Die häufigsten Ursachen und ehrliche Lösungen.",
     intro:
       "Sie haben eine Website. Sie ist bei Google auffindbar. Trotzdem passiert nichts. Der Grund liegt fast nie an einer einzelnen Ursache, sondern an einer Kette aus falscher Ansprache, unklarer Verkaufsarchitektur und technischen Reibungsverlusten. Dieser Artikel geht die Kette Punkt für Punkt durch — damit Sie selbst erkennen, wo der Bruch sitzt.",

@@ -185,7 +185,7 @@ export default function SoftwareSaarlandPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/software-saarland#webpage',
             url: 'https://www.fylumarketing.de/software-saarland',
-            name: 'Software Saarland · Fylu Studio',
+            name: 'Software Saarland · Fylu Marketing',
             description:
               'Softwareentwicklung aus dem Saarland: Custom Software, Web-Apps, SaaS, ERP/CRM, API- und AI-Integration. Modernes Fundament (Next.js, React, TypeScript, Node.js, Python, PostgreSQL).',
             inLanguage: 'de-DE',

@@ -123,7 +123,7 @@ export default function ProgrammiererSaarlandPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/programmierer-saarland#webpage',
             url: 'https://www.fylumarketing.de/programmierer-saarland',
-            name: 'Programmierer Saarland · Fylu Studio',
+            name: 'Programmierer Saarland · Fylu Marketing',
             description:
               'Programmierung und Softwareentwicklung aus dem Saarland: Full-Stack (React, Next.js, TypeScript, Node.js, Python), Custom Software, ERP/CRM, SaaS, API- und AI-Integration.',
             inLanguage: 'de-DE',

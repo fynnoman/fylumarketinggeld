@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO Saarland · Fylu Studio · Erweiterung Ihrer Website",
+  title: "SEO Saarland · Fylu Marketing · Erweiterung Ihrer Website",
   description:
     "SEO als Erweiterung Ihrer Fylu-Website. SEO Foundation, Google Business und SEO Betreuung — kuratiert aus einem Boutique-Studio in Saarlouis.",
   alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "SEO als Erweiterung Ihrer Fylu-Website — geführt aus einem Boutique-Studio in Saarlouis.",
     url: "https://www.fylumarketing.de/seo-saarland",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "SEO Saarland – Fylu Studio",
+        alt: "SEO Saarland – Fylu Marketing",
       },
     ],
   },

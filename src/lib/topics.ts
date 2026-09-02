@@ -55,7 +55,7 @@ export const topics: Topic[] = [
   {
     slug: "handwerker",
     h1: "Website für etablierte Handwerksbetriebe im Saarland",
-    metaTitle: "Website für Handwerksbetriebe im Saarland | Fylu Studio",
+    metaTitle: "Website für Handwerksbetriebe im Saarland | Fylu Marketing",
     metaDescription:
       "Websites für etablierte Handwerksbetriebe: hochwertige Auftraggeber gewinnen, Meister-Substanz sichtbar machen, technisch saubere Basis für lokales SEO. Aus Saarlouis.",
     intro:

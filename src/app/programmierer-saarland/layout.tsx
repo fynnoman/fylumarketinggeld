@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Erfahrener Programmierer aus Saarlouis: Webentwicklung, Software-Entwicklung, Full-Stack. Projekte zu transparenten Konditionen für Unternehmen im Saarland.",
     url: "https://www.fylumarketing.de/programmierer-saarland",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [

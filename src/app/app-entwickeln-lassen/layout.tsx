@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Web-Apps, iOS, Android, PWA — entwickelt im Saarland. Transparente Konditionen statt Stundensatz, moderner Stack, persönliche Betreuung.",
     url: "https://www.fylumarketing.de/app-entwickeln-lassen",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [

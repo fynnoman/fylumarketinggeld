@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       "Webdesign speziell für Handwerksbetriebe: modern, mobiloptimiert & bei Google sichtbar..",
     url: "https://www.fylumarketing.de/webdesign-handwerk",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [

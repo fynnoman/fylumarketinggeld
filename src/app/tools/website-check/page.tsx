@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     description:
       "In unter 15 Sekunden: Score, kritische Probleme, Verbesserungspotenzial und gute Signale Ihrer Website.",
     url: URL,
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website-Analyse | Fylu Studio",
+    title: "Website-Analyse | Fylu Marketing",
     description: "Kostenlose Analyse Ihrer Website — direkt sichtbar, keine Registrierung.",
   },
 };

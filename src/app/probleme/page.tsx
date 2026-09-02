@@ -9,7 +9,7 @@ const SITE = "https://www.fylumarketing.de";
 export const metadata: Metadata = {
   title: "Website-Probleme lösen",
   description:
-    "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen — direkt aus dem Fylu Studio.",
+    "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen — direkt aus dem Fylu Marketing.",
   alternates: { canonical: `${SITE}/probleme` },
 };
 
@@ -28,7 +28,7 @@ export default function ProblemsIndex() {
             url,
             name: "Website-Probleme lösen",
             description:
-              "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen aus dem Fylu Studio.",
+              "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen aus dem Fylu Marketing.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             about: { "@type": "Thing", name: "Website-Probleme und Lösungen" },

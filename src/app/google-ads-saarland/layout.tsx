@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Ads Saarland · Fylu Studio · Setup und Betreuung",
+  title: "Google Ads Saarland · Fylu Marketing · Setup und Betreuung",
   description:
     "Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — kuratiert aus einem Boutique-Studio in Saarlouis.",
   alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Google Ads Setup und laufende Betreuung. Erweiterung Ihrer Fylu-Website.",
     url: "https://www.fylumarketing.de/google-ads-saarland",
-    siteName: "Fylu Studio",
+    siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Google Ads Saarland – Fylu Studio",
+        alt: "Google Ads Saarland – Fylu Marketing",
       },
     ],
   },
