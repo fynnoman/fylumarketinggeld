@@ -17,6 +17,7 @@ type Case = {
   services: string[];
   url: string;
   urlLabel: string;
+  facebookUrl?: string;
 };
 
 const cases: Case[] = [
@@ -71,6 +72,7 @@ const cases: Case[] = [
     services: ['Website', 'Trust-Architektur', 'Lokales SEO'],
     url: 'https://pb-fahrzeugpflege.de',
     urlLabel: 'pb-fahrzeugpflege.de',
+    facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
   },
   {
     client: 'Demir SpeedConnect',
@@ -306,6 +308,19 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             <span>{data.urlLabel}</span>
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>
+
+          {data.facebookUrl && (
+            <a
+              href={data.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
+              aria-label={`${data.client} — Facebook-Post öffnen`}
+            >
+              <span>Facebook-Post ansehen</span>
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          )}
         </div>
       </div>
     </motion.article>
