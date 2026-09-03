@@ -62,7 +62,7 @@ const cases: Case[] = [
   {
     client: 'PB Fahrzeugpflege',
     owner: 'Karsten Becker',
-    image: '/PB.png',
+    image: '/PB.jpg',
     industry: 'Fahrzeugaufbereitung & Keramikversiegelung',
     location: 'Saarlouis · Saarland · Luxemburg',
     title: 'Über 25 Jahre Handwerk, endlich sichtbar.',
