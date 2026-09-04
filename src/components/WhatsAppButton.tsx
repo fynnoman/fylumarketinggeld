@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const WA_NUMBER = '4915168488999';
 const WA_MESSAGE = encodeURIComponent(
-  'Hallo Fylu, ich interessiere mich für Webdesign / SEO / Google Ads im Saarland und hätte ein paar Fragen.'
+  'Hallo Fynn, ich interessiere mich für Webdesign / SEO / Google Ads im Saarland und hätte ein paar Fragen.'
 );
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
