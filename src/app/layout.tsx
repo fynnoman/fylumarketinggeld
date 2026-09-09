@@ -359,6 +359,13 @@ export default function RootLayout({
                 ],
               },
               slogan: "Editorial Webdesign aus dem Saarland, mit einer Handschrift, die bleibt.",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                bestRating: "5",
+                worstRating: "1",
+                reviewCount: "21",
+              },
             }),
           }}
         />
