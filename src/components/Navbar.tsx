@@ -110,16 +110,16 @@ export default function Navbar() {
                 </svg>
                 <span className="relative">Anrufen</span>
               </a>
-              <Link
-                href="/buchen"
+              <a
+                href="/#calendly-embed"
                 className="hidden md:inline-flex group items-center gap-1.5 btn-glass-ink px-4 py-2 rounded-full text-[13px] font-semibold"
               >
                 <span className="btn-glass-shine" aria-hidden />
-                <span className="relative">Platz 2026 prüfen</span>
+                <span className="relative">Platz sichern</span>
                 <span className="relative text-cyan-300 transition-transform duration-300 group-hover:translate-x-0.5">
                   →
                 </span>
-              </Link>
+              </a>
 
               {/* Mobile Hamburger */}
               <button
@@ -210,15 +210,15 @@ export default function Navbar() {
                   transition={{ duration: 0.28, delay: 0.09 + navLinks.length * 0.04, ease: [0.22, 1, 0.36, 1] }}
                   className="mt-1.5"
                 >
-                  <Link
-                    href="/buchen"
+                  <a
+                    href="/#calendly-embed"
                     onClick={() => setMenuOpen(false)}
                     className="group w-full relative overflow-hidden inline-flex items-center justify-center gap-2 btn-glass-ink py-3.5 rounded-2xl font-semibold text-[15px] min-h-[52px]"
                   >
                     <span className="btn-glass-shine" aria-hidden />
-                    <span className="relative">Platz 2026 prüfen</span>
+                    <span className="relative">Platz sichern</span>
                     <span className="relative text-cyan-300 transition-transform group-hover:translate-x-0.5">→</span>
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </motion.div>

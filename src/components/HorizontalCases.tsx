@@ -48,19 +48,6 @@ const cases: Case[] = [
     urlLabel: 'galabau-eifler.de',
   },
   {
-    client: 'Oufa Hairstyling',
-    owner: 'Oufa Youssef',
-    image: '/oufa.png',
-    industry: 'Friseur-Atelier',
-    location: 'Saarbrücken',
-    title: 'Ein Auftritt auf Weltmeister-Niveau.',
-    story:
-      'Oufa Youssef ist Weltmeisterin im Hairstyling. Der bisherige Auftritt hat davon nichts erzählt. Neu: Awards prominent inszeniert, Termin-Buchung ohne Umweg, Social-Anbindung an @oufa_hairstyling — vom Salon zum Atelier mit klarer Positionierung.',
-    services: ['Website', 'Terminbuchung', 'Award-Inszenierung'],
-    url: 'https://www.oufa-hairstyling.de',
-    urlLabel: 'oufa-hairstyling.de',
-  },
-  {
     client: 'PB Fahrzeugpflege',
     owner: 'Karsten Becker',
     image: '/PB.jpg',
@@ -73,45 +60,6 @@ const cases: Case[] = [
     url: 'https://pb-fahrzeugpflege.de',
     urlLabel: 'pb-fahrzeugpflege.de',
     facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
-  },
-  {
-    client: 'Demir SpeedConnect',
-    owner: 'Adem Demir',
-    image: '/demir.png',
-    industry: 'Glasfaser & Tiefbau',
-    location: 'Saarland · Deutschland',
-    title: '+25 % Anfragen bei gleichem Budget.',
-    story:
-      'B2B-Dienstleister im Infrastrukturmarkt mit langen Vertriebszyklen. Klare Verkaufsarchitektur, dominante Typo, direkter CTA — 25 % mehr Anfragen bei identischem Ads-Budget. Und, wichtiger, spürbar bessere Qualität der Anfragen.',
-    services: ['Website', 'Conversion-Architektur', 'B2B-Vertrieb'],
-    url: 'https://demir-speedconnect.de',
-    urlLabel: 'demir-speedconnect.de',
-  },
-  {
-    client: 'Bäckerei Weidmann',
-    owner: 'Frau Weidmann',
-    image: '/weidmann.png',
-    industry: 'Bäckerei & Konditorei',
-    location: 'St. Ingbert',
-    title: 'Traditionsbäckerei mit editorialer Bildsprache.',
-    story:
-      'Handwerk vor Ort sichtbar gemacht — Sortiment, Backstube, Öffnungszeiten und Vor-Ort-Erlebnis in einem ruhigen editorialen Layout. Der Besuch wird zur klaren Handlungsaufforderung, nicht ein weiterer Menüpunkt.',
-    services: ['Website', 'Editorial-Design', 'Lokale Sichtbarkeit'],
-    url: 'https://baeckerei-weidmann.de',
-    urlLabel: 'baeckerei-weidmann.de',
-  },
-  {
-    client: 'Salif Gebäudeservice',
-    owner: 'Salif Ramadan',
-    image: '/salif.png',
-    industry: 'Gebäudeservice',
-    location: 'Pirmasens · Kaiserslautern · Westpfalz',
-    title: 'Neu am Markt — sichtbar auf Augenhöhe.',
-    story:
-      'Junger Gebäudeservice, der von Anfang an nicht wie einer aussehen sollte. Editorial-Auftritt mit dominanter Typo, industriellem Kontrast und klaren Standort-Signalen (Pirmasens · Kaiserslautern · Westpfalz) — sichtbar auf Augenhöhe mit deutlich älteren Mitbewerbern, bereits im ersten Monat mehrere neue Klienten.',
-    services: ['Website', 'Marken-Aufbau', 'Lokale Sichtbarkeit'],
-    url: 'https://www.salif-gebaeudeservice.de',
-    urlLabel: 'salif-gebaeudeservice.de',
   },
 ];
 
@@ -151,13 +99,13 @@ export default function HorizontalCases() {
               .
             </h2>
             <p className="mt-6 md:mt-8 max-w-lg text-base md:text-lg text-stone-600 leading-relaxed">
-              Sieben Klienten. Sieben unterschiedliche Märkte. Ein gemeinsamer Nenner:
+              Drei Klienten. Drei unterschiedliche Märkte. Ein gemeinsamer Nenner:
               Der Auftritt trägt heute, was das Unternehmen tatsächlich ist.
             </p>
           </div>
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-stone-400 font-medium">
             <span className="rule-tick text-stone-400" />
-            <span>Sieben Referenzen · seit 2024</span>
+            <span>Drei Referenzen · seit 2024</span>
           </div>
         </motion.div>
       </div>

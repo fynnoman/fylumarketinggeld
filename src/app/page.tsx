@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import PinnedManifesto from '@/components/PinnedManifesto';
 import LeistungenSection from '@/components/LeistungenSection';
 import HorizontalCases from '@/components/HorizontalCases';
 import CalendlySection from '@/components/CalendlySection';
@@ -77,9 +76,8 @@ export default function Home() {
       />
       <Navbar />
       <HeroSection />
-      <PinnedManifesto />
-      <LeistungenSection />
       <CalendlySection />
+      <LeistungenSection />
       <HorizontalCases />
       <FAQSection />
       <FinalCTASection />
