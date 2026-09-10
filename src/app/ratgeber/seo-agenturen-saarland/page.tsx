@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 import FadeInSection from "@/components/animated/FadeInSection";
 
 export const metadata: Metadata = {
-  title: "SEO-Agenturen im Saarland — Marktübersicht 2026 | Fylu",
+  title: "SEO-Agenturen im Saarland, Marktübersicht 2026 | Fylu",
   description:
-    "Marktübersicht saarländischer SEO-Anbieter 2026: Ausrichtung, Sitz, Stärken. Von Boutique-Studios bis zu klassischen Full-Service-Agenturen — kurz und neutral eingeordnet.",
+    "Marktübersicht saarländischer SEO-Anbieter 2026: Ausrichtung, Sitz, Stärken. Von kleineren Agenturen bis zu klassischen Full-Service-Agenturen, kurz und neutral eingeordnet.",
   alternates: { canonical: "/ratgeber/seo-agenturen-saarland" },
   openGraph: {
-    title: "SEO-Agenturen im Saarland — Marktübersicht 2026 | Fylu",
+    title: "SEO-Agenturen im Saarland, Marktübersicht 2026 | Fylu",
     description:
       "Neutrale Übersicht saarländischer SEO-Anbieter: Ausrichtung, Sitz und was jede Agentur besonders macht.",
     url: "https://www.fylumarketing.de/ratgeber/seo-agenturen-saarland",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO-Agenturen im Saarland — Marktübersicht 2026",
+    title: "SEO-Agenturen im Saarland, Marktübersicht 2026",
     description: "Neutrale Übersicht saarländischer SEO-Anbieter.",
     images: ["/herob.png"],
   },
@@ -38,7 +38,7 @@ type Entry = {
 };
 
 // Marktübersicht: Anbieter, die im saarländischen SEO-Markt aktiv und öffentlich
-// über eine eigene Domain sichtbar sind. Reihenfolge alphabetisch — kein Ranking.
+// über eine eigene Domain sichtbar sind. Reihenfolge alphabetisch, kein Ranking.
 const entries: Entry[] = [
   {
     name: "Ditella",
@@ -50,8 +50,8 @@ const entries: Entry[] = [
   {
     name: "Fylu Marketing",
     location: "Saarlouis",
-    focus: "Editorial-Webdesign, SEO- und GEO-Erweiterung",
-    note: "Boutique-Studio, bewusst begrenzt auf zwölf Klienten pro Jahr. Direkte Führung durch den Studio-Lead. SEO als Erweiterung des Website-Auftritts, nicht als separate Kampagne.",
+    focus: "Webdesign, SEO- und GEO-Erweiterung",
+    note: "Agentur für Unternehmen jeder Phase, die ihre Online-Präsenz aufbauen und skalieren wollen. Direkter Kontakt zum Ansprechpartner. SEO als Erweiterung des Website-Auftritts, nicht als separate Kampagne.",
     homepage: "https://www.fylumarketing.de/seo-saarland",
   },
   {
@@ -101,15 +101,15 @@ const entries: Entry[] = [
 const criteria = [
   {
     label: "Zielgruppen-Fit",
-    body: "Boutique-Studios für etablierte, hochwertige Häuser mit langfristigem Anspruch. Klassische Agenturen für Volumen, Kampagnen und breite Reichweite.",
+    body: "Kleinere Agenturen für Unternehmen mit langfristigem Anspruch und direktem Draht. Klassische Full-Service-Agenturen für Volumen, Kampagnen und breite Reichweite.",
   },
   {
     label: "Ansprechpartner",
-    body: "Bei kleinen Studios direkter Kontakt zu Studio-Lead oder Entwickler. Bei größeren Agenturen häufig Account-Manager mit dahinterliegendem Team.",
+    body: "Bei kleineren Anbietern direkter Kontakt zum Ansprechpartner oder Entwickler. Bei größeren Agenturen häufig Account-Manager mit dahinterliegendem Team.",
   },
   {
     label: "Kombination Design + SEO",
-    body: "Manche Anbieter trennen strikt zwischen Design und SEO. Andere führen beides aus einer Hand — das reduziert Übergabeverluste beim Relaunch.",
+    body: "Manche Anbieter trennen strikt zwischen Design und SEO. Andere führen beides aus einer Hand, das reduziert Übergabeverluste beim Relaunch.",
   },
   {
     label: "GEO-Kompetenz",
@@ -117,7 +117,7 @@ const criteria = [
   },
   {
     label: "Konditionen",
-    body: "Transparente Kalkulation ohne monatliche Grundgebühr vs. klassisches Retainer-Modell. Beide Modelle sind legitim — die Frage ist, was zum Vorhaben passt.",
+    body: "Transparente Kalkulation ohne monatliche Grundgebühr vs. klassisches Retainer-Modell. Beide Modelle sind legitim, die Frage ist, was zum Vorhaben passt.",
   },
 ];
 
@@ -148,7 +148,7 @@ export default function SeoAgenturenSaarlandPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "SEO-Agenturen im Saarland — Marktübersicht 2026",
+            headline: "SEO-Agenturen im Saarland, Marktübersicht 2026",
             description:
               "Neutrale Übersicht saarländischer SEO-Anbieter mit Ausrichtung, Sitz und Kurzbeschreibung. Für Entscheider, die Anbieter im Saarland vergleichen wollen.",
             author: { "@id": "https://www.fylumarketing.de/#fynn-schulz" },
@@ -223,7 +223,7 @@ export default function SeoAgenturenSaarlandPage() {
             </FadeInSection>
             <FadeInSection delay={0.08}>
               <h1 className="text-[2.4rem] leading-[1.05] sm:text-5xl md:text-[3.6rem] lg:text-[4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-                SEO-Agenturen im Saarland —{" "}
+                SEO-Agenturen im Saarland:{" "}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                   neutrale Marktübersicht 2026.
                 </span>
@@ -232,7 +232,7 @@ export default function SeoAgenturenSaarlandPage() {
             <FadeInSection delay={0.16}>
               <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
                 Der saarländische SEO-Markt ist überschaubar und fragmentiert.
-                Diese Übersicht ordnet die aktiven Anbieter alphabetisch ein — mit
+                Diese Übersicht ordnet die aktiven Anbieter alphabetisch ein: mit
                 Sitz, inhaltlicher Ausrichtung und einer kurzen Einschätzung, für
                 welche Situation der jeweilige Anbieter passt. Kein Ranking.
               </p>
@@ -322,7 +322,7 @@ export default function SeoAgenturenSaarlandPage() {
             <FadeInSection>
               <div className="hairline-rule w-24 mx-auto mb-8" />
               <h2 className="text-[2rem] leading-[1.05] sm:text-4xl md:text-[2.6rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-                Passt ein Boutique-Studio zu Ihrem{" "}
+                Passt Fylu Marketing zu Ihrem{" "}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                   Vorhaben?
                 </span>

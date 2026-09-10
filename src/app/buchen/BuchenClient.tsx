@@ -29,18 +29,18 @@ export default function BuchenClient() {
 						}}
 					/>
 					<div className="editorial-eyebrow-inverse justify-center mb-7">
-						<span>Kostenloses Erstgespräch · 15 – 30 Minuten</span>
+						<span>Kostenloses Erstgespräch · 15 bis 30 Minuten</span>
 					</div>
 					<h1 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[4.4rem] font-semibold tracking-[-0.035em] leading-[1.04]">
-						Ein Gespräch —{' '}
+						Ein Gespräch,{' '}
 						<span className="font-display italic font-normal text-cyan-300">
 							keine Verkaufspräsentation.
 						</span>
 					</h1>
 					<p className="mt-8 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
 						Erzählen Sie kurz, was Sie vorhaben. Wir hören zu, bevor wir
-						antworten. Persönliche Rückmeldung binnen 24 Stunden — vom
-						Studio-Lead, nicht aus einer Hotline.
+						antworten. Persönliche Rückmeldung binnen 24 Stunden, direkt
+						von Ihrem Ansprechpartner, nicht aus einer Hotline.
 					</p>
 					<div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
 						<a
@@ -109,8 +109,8 @@ export default function BuchenClient() {
 						className="text-[var(--cyan-deep)] hover:text-[var(--ink)] font-semibold underline underline-offset-4 transition-colors"
 					>
 						Schreiben Sie uns per WhatsApp
-					</a>{' '}
-					— Antwort meist in unter 30 Minuten.
+					</a>
+					. Antwort meist in unter 30 Minuten.
 				</p>
 			</section>
 		</div>

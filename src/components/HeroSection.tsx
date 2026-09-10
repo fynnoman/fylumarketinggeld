@@ -113,7 +113,7 @@ export default function HeroSection() {
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-300" />
           </span>
           <span className="text-[10px] font-medium tracking-[0.34em] uppercase text-stone-200/90">
-            Fylu · Studio Saarlouis
+            Fylu Marketing · Saarlouis
           </span>
         </motion.div>
 
@@ -246,7 +246,7 @@ export default function HeroSection() {
         className="hidden md:flex absolute right-14 bottom-16 z-10 flex-col items-end gap-1.5 text-right"
       >
         <span className="text-[10px] font-medium tracking-[0.34em] uppercase text-stone-300/70">
-          Studio-Lead
+          Ansprechpartner
         </span>
         <span className="text-[11px] font-display italic text-stone-200/90">
           Fynn Schulz · Saarlouis

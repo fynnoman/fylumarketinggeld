@@ -6,15 +6,15 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet SEO im Saarland bei Fylu?',
-    a: 'Google Business Optimierung, SEO Foundation und SEO Betreuung sind einzeln buchbar. Konditionen kalibrieren wir individuell im Vorgespräch — Wettbewerbsdichte und Zielgruppe fließen in den Rahmen ein.',
+    a: 'Google Business Optimierung, SEO Foundation und SEO Betreuung sind einzeln buchbar. Den Rahmen legen wir individuell im Vorgespräch fest. Wettbewerbsdichte und Zielgruppe fließen in die Kalkulation ein.',
   },
   {
     q: 'Wie lange dauert es, bis Ergebnisse sichtbar sind?',
-    a: 'Erste Bewegungen in den Rankings sehen wir in der Regel nach vier bis acht Wochen. Signifikante Verschiebungen — etwa auf die erste Google-Seite — brauchen drei bis sechs Monate. SEO ist Aufbauarbeit, keine Kampagne.',
+    a: 'Erste Bewegungen in den Rankings sehen wir in der Regel nach vier bis acht Wochen. Signifikante Verschiebungen bis auf die erste Google-Seite brauchen drei bis sechs Monate. SEO ist Aufbauarbeit, keine Kampagne.',
   },
   {
     q: 'Ist SEO Teil des Website-Pakets?',
-    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk — sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit — Keyword-Strategie, Content, Google Business, laufende Iteration — buchen Sie als Erweiterung dazu.',
+    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk: sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit (Keyword-Strategie, Content, Google Business, laufende Iteration) buchen Sie als Erweiterung dazu.',
   },
   {
     q: 'Was ist Local SEO?',
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     q: 'Was ist der Unterschied zwischen SEO und Google Ads?',
-    a: 'SEO ist Aufbauarbeit über Monate. Google Ads ist sofort sichtbare Reichweite. Wir empfehlen häufig eine Kombination — Ads für sofortigen Fluss, SEO für die stille Sichtbarkeit, die bleibt.',
+    a: 'SEO ist Aufbauarbeit über Monate. Google Ads ist sofort sichtbare Reichweite. Wir empfehlen häufig eine Kombination: Ads für sofortigen Fluss, SEO für die dauerhafte organische Sichtbarkeit.',
   },
   {
     q: 'Wie messen wir Erfolg?',
-    a: 'Google Search Console und Analytics sind ab Tag eins verbunden. Sie sehen, für welche Begriffe Sie ranken, wie sich Ihre Position verändert und wieviele Anfragen entstehen. Reporting kommt monatlich, in ruhiger Sprache — nicht als Datenwust.',
+    a: 'Google Search Console und Analytics sind ab Tag eins verbunden. Sie sehen, für welche Begriffe Sie ranken, wie sich Ihre Position verändert und wieviele Anfragen entstehen. Reporting kommt monatlich in klarer Sprache.',
   },
 ];
 
@@ -41,13 +41,13 @@ const modules = [
     ordinal: 'II',
     label: 'Google Business',
     cadence: 'einmalig',
-    body: 'Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache — sauber und komplett.',
+    body: 'Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache, sauber und komplett.',
   },
   {
     ordinal: 'III',
     label: 'Betreuung',
     cadence: 'monatlich',
-    body: 'Fortlaufende Optimierung, Content-Feinschliff, Reporting — damit Sichtbarkeit nicht wieder abbricht.',
+    body: 'Fortlaufende Optimierung, Content-Feinschliff, Reporting, damit Sichtbarkeit nicht wieder abbricht.',
   },
 ];
 
@@ -76,7 +76,7 @@ export default function SeoSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Fylu Marketing · SEO Saarland',
-            description: 'SEO als Erweiterung Ihrer Fylu-Website. Foundation, Google Business und Betreuung — geführt aus Saarlouis.',
+            description: 'SEO aus Saarlouis. Foundation, Google Business und laufende Betreuung. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.',
             url: 'https://www.fylumarketing.de/seo-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -106,12 +106,6 @@ export default function SeoSaarlandPage() {
               '@type': 'Offer',
               availability: 'https://schema.org/InStock',
               url: 'https://www.fylumarketing.de/buchen',
-              priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description:
-                  'Foundation, laufende Betreuung und Content-Aufbau werden je Ebene transparent kalkuliert. Keine monatliche Grundgebühr.',
-              },
             },
           }),
         }}
@@ -126,7 +120,7 @@ export default function SeoSaarlandPage() {
             url: 'https://www.fylumarketing.de/seo-saarland',
             name: 'SEO Saarland · Fylu Marketing',
             description:
-              'SEO aus Saarlouis als Erweiterung Ihrer Website. Foundation, Betreuung und Content-Aufbau, auch für AI-Suchsysteme.',
+              'SEO aus Saarlouis. Foundation, Betreuung und Content-Aufbau, auch für AI-Suchsysteme.',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
             mainEntity: { '@id': 'https://www.fylumarketing.de/seo-saarland#service' },
@@ -159,7 +153,7 @@ export default function SeoSaarlandPage() {
           <nav className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
             <Link href="/" className="hover:text-cyan-700 transition-colors">Home</Link>
             <span className="mx-2 text-stone-400">·</span>
-            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Studio</Link>
+            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Webdesign</Link>
             <span className="mx-2 text-stone-400">·</span>
             <span className="text-stone-900 font-medium">SEO Saarland</span>
           </nav>
@@ -188,23 +182,23 @@ export default function SeoSaarlandPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · Sichtbarkeit</span>
+              <span>SEO · Sichtbarkeit</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-              SEO Saarland. Als{' '}
+              SEO Saarland. Sichtbarkeit für{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Erweiterung Ihrer Fylu-Website.
+                Ihr Unternehmen.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
-              Sichtbarkeit für Suchbegriffe, die Ihre Klienten tatsächlich
-              eingeben. Kuratiert aus Saarlouis — als Erweiterung des
-              Fylu-Auftritts oder als eigenständiges Modul für ein Haus, das seine
-              Präsenz stufenweise schärfen möchte.
+              Sichtbarkeit für Suchbegriffe, die Ihre Kunden tatsächlich
+              eingeben. Fylu Marketing hilft Unternehmen jeder Phase, ihre
+              Online-Präsenz aufzubauen und zu skalieren. Aus Saarlouis, als
+              eigenständiges Modul oder als Ergänzung zu Ihrem Fylu-Auftritt.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>
@@ -247,15 +241,15 @@ export default function SeoSaarlandPage() {
           <FadeInSection delay={0.08}>
             <div className="prose prose-lg prose-stone max-w-none mt-10">
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
-                Klienten suchen bei Google — nach „Kanzlei Saarbrücken", „Meisterbetrieb
-                Saarlouis", „Restaurant Merzig". Wer auf Seite eins steht, wird gerufen.
-                Wer nicht, existiert für die Suche praktisch nicht.
+                Kunden suchen bei Google nach „Kanzlei Saarbrücken", „Meisterbetrieb
+                Saarlouis" oder „Restaurant Merzig". Wer auf Seite eins steht, wird
+                gefunden. Wer nicht, existiert für die Suche praktisch nicht.
               </p>
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
-                SEO bei Fylu ist keine schnelle Kampagne, sondern Aufbauarbeit im
-                Hintergrund. Technische Foundation, sauberes Google-Profil, geführte
-                Inhalte. Wir arbeiten nicht in Batches, sondern kuratiert — pro Haus,
-                pro Kontext.
+                SEO bei Fylu Marketing ist keine schnelle Kampagne, sondern
+                Aufbauarbeit im Hintergrund. Technische Foundation, sauberes
+                Google-Profil, geführte Inhalte. Wir arbeiten individuell pro
+                Unternehmen und pro Kontext.
               </p>
             </div>
           </FadeInSection>
@@ -280,7 +274,7 @@ export default function SeoSaarlandPage() {
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Einzeln buchbar oder als abgestimmte Erweiterung Ihres Fylu-Auftritts.
+                Einzeln buchbar oder als abgestimmte Ergänzung zu Ihrem Fylu-Auftritt.
               </p>
             </div>
           </FadeInSection>
@@ -378,7 +372,7 @@ export default function SeoSaarlandPage() {
                 href="/webdesign-saarland"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                <span>Zurück zu den Website-Paketen</span>
+                <span>Zur Webdesign-Übersicht</span>
               </Link>
             </div>
           </FadeInSection>

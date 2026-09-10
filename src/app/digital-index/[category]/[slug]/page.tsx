@@ -308,7 +308,7 @@ export default async function CompanyPage({ params }: PageProps) {
               Score verbessern.
             </p>
             <p className="mt-2 max-w-2xl text-[color:var(--ink-soft)]">
-              15 Minuten Vorgespräch mit dem Studio-Lead, konkret zu Ihrem
+              15 Minuten Vorgespräch mit Ihrem Ansprechpartner, konkret zu Ihrem
               Score und den passenden Hebeln. Persönlich, unverbindlich,
               kostenfrei.
             </p>

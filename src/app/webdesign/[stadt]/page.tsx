@@ -14,50 +14,50 @@ const SITE = "https://www.fylumarketing.de";
 const faqs = (city: string) => [
   {
     q: `Was kostet eine Fylu-Website in ${city}?`,
-    a: "Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten.",
+    a: "Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch, transparent und ohne versteckte Kosten.",
   },
   {
     q: "Wie lange dauert ein Projekt?",
-    a: "Signature-Auftritte gehen in etwa zwei bis vier Wochen live. Atelier und Maison planen wir mit vier bis sechs Wochen. Nach Live-Gang folgen bis zu sechs Monate Studio-Begleitung.",
+    a: "Kleinere Websites gehen in etwa zwei bis vier Wochen live. Umfangreichere Projekte planen wir mit vier bis sechs Wochen. Nach Live-Gang folgt bei Bedarf laufende Betreuung.",
   },
   {
     q: "Werde ich bei Google gefunden?",
-    a: "Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation, SEO Betreuung sowie Google Ads Setup — Konditionen individuell im Vorgespräch.",
+    a: "Jede Fylu-Website enthält eine technische SEO-Basis. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation, SEO Betreuung sowie Google Ads Setup. Konditionen individuell im Vorgespräch.",
   },
   {
     q: "Ist die Website mobil optimiert?",
-    a: "Selbstverständlich. Jeder Fylu-Auftritt wird mobile-first entworfen — auf die Rhythmisierung des Smartphones abgestimmt, dann für Tablet und Desktop erweitert.",
+    a: "Selbstverständlich. Jede Website wird mobile-first entworfen, auf das Smartphone abgestimmt und dann für Tablet und Desktop erweitert.",
   },
   {
     q: "Kann ich Inhalte selbst pflegen?",
-    a: "Auf Wunsch. Wir richten redaktionelle Content-Systeme ein, in denen Sie Texte, Bilder und Kapitel selbst pflegen — ohne die editoriale Handschrift der Seite zu verlieren.",
+    a: "Auf Wunsch. Wir richten Content-Systeme ein, in denen Sie Texte, Bilder und Abschnitte selbst pflegen können.",
   },
   {
     q: "Was passiert nach dem Launch?",
-    a: "Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig — Iteration, SEO, GEO, SEA, Reporting, Feinschliff, neue Landingpages. Keine monatliche Grundgebühr, ihr bucht Betreuung im Umfang, den euer Wachstum verlangt. Ihr entscheidet, wie lange wir zusammenarbeiten.",
+    a: "Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig: Iteration, SEO, GEO, SEA, Reporting, Feinschliff, neue Landingpages. Keine monatliche Grundgebühr, ihr bucht Betreuung im Umfang, den euer Wachstum verlangt. Ihr entscheidet, wie lange wir zusammenarbeiten.",
   },
 ];
 
 const steps = [
   {
     title: "Vorgespräch",
-    text: "Fünfzehn Minuten. Wir hören zu — Substanz Ihres Hauses, aktuelle Präsenz, Anspruch des Vorhabens.",
+    text: "Fünfzehn Minuten. Wir hören zu: Was macht Ihr Unternehmen, wie sieht die aktuelle Präsenz aus, welches Ziel hat das Vorhaben.",
   },
   {
     title: "Positionierung",
-    text: "Rahmen, Verkaufsarchitektur, Content-Map. Kein Template, eine eigene Handschrift.",
+    text: "Rahmen, Verkaufsarchitektur, Content-Map. Kein Template, sondern eine Struktur, die zu Ihrem Unternehmen passt.",
   },
   {
-    title: "Werkbank",
-    text: "Design und Umsetzung mit editorial gestalteter Typografie, technischer SEO-Foundation, spürbarer Rhythmisierung.",
+    title: "Umsetzung",
+    text: "Design und Entwicklung mit sauberer Typografie, technischer SEO-Basis und klarer Navigation.",
   },
   {
     title: "Sichtbarkeit",
-    text: "Lokale Schärfung und Google-Präsenz — für Suchbegriffe, die Klienten tatsächlich eingeben.",
+    text: "Lokale Optimierung und Google-Präsenz für Suchbegriffe, die Ihre Kunden tatsächlich eingeben.",
   },
   {
     title: "Iteration",
-    text: "Langfristige Studio-Begleitung nach Live-Gang. Wir bleiben, so lange ihr wachst — Zeit für Substanz, nicht für Theorie.",
+    text: "Langfristige Begleitung nach Live-Gang. Wir bleiben so lange ihr wachst.",
   },
 ];
 
@@ -147,7 +147,7 @@ export default async function RegionPage({
             "@type": "LocalBusiness",
             "@id": `${url}#localbusiness`,
             name: `Fylu – Webdesign ${region.city}`,
-            description: `Webdesign Agentur aus Saarlouis im Saarland für Unternehmen in ${region.city}. Professionelle Websites, lokale SEO und Google Ads.`,
+            description: `Webdesign-Agentur aus Saarlouis im Saarland für Unternehmen in ${region.city}. Professionelle Websites, lokale SEO und Google Ads.`,
             url,
             telephone: "+4915168488999",
             email: "kontakt@fylumarketing.de",
@@ -202,7 +202,7 @@ export default async function RegionPage({
             "@type": "Service",
             serviceType: "Webdesign",
             name: `Webdesign ${region.city}`,
-            description: `Professionelles Webdesign für Unternehmen in ${region.city} und Umgebung. Moderne Websites, lokale SEO und Google Ads – transparente Konditionen.`,
+            description: `Professionelles Webdesign für Unternehmen in ${region.city} und Umgebung. Moderne Websites, lokale SEO und Google Ads, transparente Konditionen.`,
             provider: { "@id": "https://www.fylumarketing.de/#organization" },
             areaServed: { "@type": "City", name: region.city },
             offers: [
@@ -256,7 +256,7 @@ export default async function RegionPage({
             "@id": `${url}#webpage`,
             url,
             name: `Webdesign ${region.city} · Fylu Marketing`,
-            description: `Editorial gestaltete Websites für Unternehmen in ${region.city}. Aus Saarlouis, mit lokaler SEO und persönlicher Betreuung.`,
+            description: `Moderne Websites für Unternehmen in ${region.city}. Aus Saarlouis, mit lokaler SEO und persönlicher Betreuung.`,
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             about: { "@type": "Thing", name: `Webdesign ${region.city}` },
@@ -286,7 +286,7 @@ export default async function RegionPage({
         <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-40" />
         <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-tight mb-6">
-            Webdesign {region.city} – Websites, die Kunden bringen
+            Webdesign {region.city}: Websites, die Kunden bringen
           </h1>
           <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8 max-w-3xl">
             {region.intro}
@@ -329,7 +329,7 @@ export default async function RegionPage({
         <section className="py-20 md:py-28 px-6 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-10">
-              {region.city} — Wirtschaft, Branchen & lokale Besonderheiten
+              {region.city}: Wirtschaft, Branchen & lokale Besonderheiten
             </h2>
             {region.economy && (
               <p className="text-lg leading-relaxed text-stone-700 mb-8">{region.economy}</p>
@@ -466,7 +466,7 @@ export default async function RegionPage({
             Bereit für Ihre neue Website in {region.city}?
           </h2>
           <p className="text-lg text-stone-600 mb-8">
-            Kostenloser Entwurf innerhalb von 24 Stunden – unverbindlich. Für Unternehmen in {region.city}
+            Kostenloser Entwurf innerhalb von 24 Stunden, unverbindlich. Für Unternehmen in {region.city}
             {region.nearbyCities.length > 0 ? `, ${region.nearbyCities.slice(0, 3).join(", ")}` : ""} und im
             ganzen Saarland.
           </p>

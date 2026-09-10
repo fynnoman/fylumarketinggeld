@@ -473,7 +473,7 @@ export default function IndexExperience({ companies }: Props) {
                               </p>
                               <p className="mt-1 text-sm text-[color:var(--ink-soft)]">
                                 15 Minuten Vorgespräch, persönlich mit dem
-                                Studio-Lead. Konkrete Hebel für diesen
+                                Ansprechpartner. Konkrete Hebel für diesen
                                 Score.
                               </p>
                               <div className="mt-3 flex flex-wrap gap-3">

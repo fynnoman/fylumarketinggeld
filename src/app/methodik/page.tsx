@@ -4,14 +4,14 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Der Fylu-Prozess · Fünf Kapitel · Editorial Webdesign Saarland',
+  title: 'Der Fylu-Prozess · Fünf Schritte · Webdesign und SEO Saarland',
   description:
-    'Fünf Kapitel von der Vorstellung bis zur Wirkung: Vorgespräch, Positionierung, Werkbank, Sichtbarkeit, Iteration. Der Fylu-Prozess für editoriale Websites — geführt aus Saarlouis.',
+    'Fünf Schritte von der Analyse bis zur Skalierung: Marktscan, Strategie, Realisation, Sichtbarkeit, Iteration. Der Fylu-Prozess für Websites und SEO aus Saarlouis.',
   alternates: { canonical: '/methodik' },
   openGraph: {
-    title: 'Der Fylu-Prozess · Fünf Kapitel',
+    title: 'Der Fylu-Prozess · Fünf Schritte',
     description:
-      'Fünf Kapitel — Vorgespräch, Positionierung, Werkbank, Sichtbarkeit, Iteration. Editorial Webdesign aus Saarlouis.',
+      'Fünf Schritte: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Webdesign und SEO aus Saarlouis.',
     url: 'https://www.fylumarketing.de/methodik',
     type: 'article',
     locale: 'de_DE',
@@ -24,9 +24,9 @@ const steps = [
     title: 'Analyse',
     subtitle: 'Saarland-Marktscan & Sichtbarkeits-Audit',
     body: [
-      'Bevor ein Pixel gestaltet wird, machen wir Ihre Ausgangslage transparent. Wir scannen die Top-Wettbewerber in Ihrer Branche im Saarland — wer rankt für welche Suchbegriffe in Saarbrücken, Saarlouis, Homburg oder Völklingen, welche Anzeigen schaltet die Konkurrenz, welche Content-Strategie verfolgt sie.',
+      'Bevor gestaltet wird, machen wir Ihre Ausgangslage transparent. Wir scannen die Top-Wettbewerber in Ihrer Branche im Saarland: wer rankt für welche Suchbegriffe in Saarbrücken, Saarlouis, Homburg oder Völklingen, welche Anzeigen schaltet die Konkurrenz, welche Content-Strategie verfolgt sie.',
       'Parallel prüfen wir Ihre aktuelle Sichtbarkeit bei Google, Bing und in Google Maps, Ihre Klick- und Anfragen-Performance, Ihre technische Foundation und die Conversion-Schwachstellen Ihrer bestehenden Website.',
-      'Sie erhalten am Ende einen klaren, schonungslosen Befund — als PDF, mit konkreten Zahlen, Vergleichsdaten und einer Priorisierung der Hebel.',
+      'Sie erhalten am Ende einen klaren, sachlichen Befund als PDF, mit konkreten Zahlen, Vergleichsdaten und einer Priorisierung der Hebel.',
     ],
     deliverables: [
       'Wettbewerbsanalyse Top-5 lokal',
@@ -40,9 +40,9 @@ const steps = [
     title: 'Strategie',
     subtitle: 'Positionierung & Conversion-Architektur',
     body: [
-      'Auf Basis der Analyse entwickeln wir Ihre konkrete Positionierung gegenüber Ihrer Saarland-Konkurrenz — wo schlagen Sie alle anderen mühelos, wo müssen Sie nachschärfen, welche Zielgruppe ist tatsächlich profitabel.',
-      'Wir definieren die exakten Conversion-Pfade Ihrer neuen Website: Welche Besucher kommen über welche Suchbegriffe rein, welche Frage haben sie, in welcher Reihenfolge müssen Beweise, Argumente und CTAs auf der Seite folgen, damit sie nicht abspringen.',
-      'Das Ergebnis ist ein vollständiges Strategie-Dokument — kein Mood-Board, sondern ein Bauplan mit messbaren Annahmen.',
+      'Auf Basis der Analyse entwickeln wir Ihre konkrete Positionierung gegenüber Ihrer Saarland-Konkurrenz: wo schlagen Sie alle anderen mühelos, wo müssen Sie nachschärfen, welche Zielgruppe ist tatsächlich profitabel.',
+      'Wir definieren die exakten Conversion-Pfade Ihrer neuen Website: welche Besucher über welche Suchbegriffe kommen, welche Frage sie haben, in welcher Reihenfolge Beweise, Argumente und CTAs folgen müssen, damit sie nicht abspringen.',
+      'Das Ergebnis ist ein vollständiges Strategie-Dokument, kein Mood-Board, sondern ein Bauplan mit messbaren Annahmen.',
     ],
     deliverables: [
       'Positionierungs-Statement',
@@ -56,9 +56,9 @@ const steps = [
     title: 'Realisation',
     subtitle: 'Design & Development mit Verkaufsfokus',
     body: [
-      'Wir setzen Ihre Website um — individuell designt, in Premium-Optik, technisch sauber, mit moderner Technologie (Next.js, React, optimierte Bilder, höchste Google-Core-Web-Vitals-Werte) und vollständiger SEO-Foundation: Schema.org-Strukturen, sauberes HTML, robuste Sitemap, Open Graph, schnelle Ladezeiten.',
-      'Jedes visuelle und textliche Element folgt einem klaren Zweck: Anfragen produzieren. Wir arbeiten in festen Sprints mit klaren Feedback-Runden — kein Verzettelung, keine endlosen Korrekturschleifen.',
-      'Sie erhalten regelmäßig sichtbaren Fortschritt in einer Preview-Umgebung — keine 6-Wochen-Black-Box.',
+      'Wir setzen Ihre Website um: individuell designt, technisch sauber, mit moderner Technologie (Next.js, React, optimierte Bilder, hohe Core-Web-Vitals-Werte) und vollständiger SEO-Foundation: Schema.org-Strukturen, sauberes HTML, robuste Sitemap, Open Graph, schnelle Ladezeiten.',
+      'Jedes visuelle und textliche Element folgt einem klaren Zweck: Anfragen produzieren. Wir arbeiten in festen Sprints mit klaren Feedback-Runden, kein Verzetteln, keine endlosen Korrekturschleifen.',
+      'Sie erhalten regelmäßig sichtbaren Fortschritt in einer Preview-Umgebung, keine 6-Wochen-Black-Box.',
     ],
     deliverables: [
       'Individuelles Design (Desktop + Mobile)',
@@ -72,9 +72,9 @@ const steps = [
     title: 'Sichtbarkeit',
     subtitle: 'Lokale SEO-Schärfung & Google Business',
     body: [
-      'Eine technisch perfekte Website ist die Voraussetzung — aber sie reicht nicht. Damit Saarländer Kunden Sie überhaupt finden, optimieren wir Ihre Sichtbarkeit für die Suchbegriffe, die in Saarbrücken, Saarlouis, Neunkirchen, Dillingen und Völklingen tatsächlich eingegeben werden.',
+      'Eine technisch saubere Website ist die Voraussetzung, aber sie reicht nicht. Damit Saarländer Kunden Sie überhaupt finden, optimieren wir Ihre Sichtbarkeit für die Suchbegriffe, die in Saarbrücken, Saarlouis, Neunkirchen, Dillingen und Völklingen tatsächlich eingegeben werden.',
       'Dazu gehören lokal optimierte Landingpages je Standort und Branche, strukturierte Daten für lokale Geschäfte, ein professionell aufgesetztes Google-Unternehmensprofil mit Bildern, Beiträgen, Bewertungsmanagement, sowie lokale Backlink-Strategie über IHK, HWK, Branchenverzeichnisse und Netzwerke.',
-      'Ziel: Wenn jemand im Saarland eine Lösung in Ihrer Branche sucht, taucht Ihr Name auf — bevor die Konkurrenz auch nur Atem holt.',
+      'Ziel: Wenn jemand im Saarland eine Lösung in Ihrer Branche sucht, taucht Ihr Name auf, bevor die Konkurrenz reagiert.',
     ],
     deliverables: [
       'Lokale Landingpages je relevantem Ort',
@@ -88,9 +88,9 @@ const steps = [
     title: 'Skalierung',
     subtitle: '90-Tage-Monitoring & Iteration',
     body: [
-      'Mit dem Live-Gang ist die Arbeit nicht vorbei — sie beginnt erst richtig. In den ersten 90 Tagen messen wir genau, was wirklich Anfragen bringt: welche Seiten konvertieren, welche Suchbegriffe Traffic ziehen, wo Besucher abspringen.',
-      'Auf Basis dieser realen Daten iterieren wir kostenlos: Wir optimieren Texte, schärfen CTAs, bauen Sektionen um, ergänzen fehlende Seiten — bis die Zahlen stimmen. Sollten in 90 Tagen keine messbar höheren Anfragen reinkommen, optimieren wir so lange weiter, ohne dass es Sie etwas kostet.',
-      'Sie zahlen nicht für Theorie — Sie zahlen für ein Ergebnis.',
+      'Mit dem Live-Gang ist die Arbeit nicht vorbei, sie beginnt erst richtig. In den ersten 90 Tagen messen wir genau, was wirklich Anfragen bringt: welche Seiten konvertieren, welche Suchbegriffe Traffic ziehen, wo Besucher abspringen.',
+      'Auf Basis dieser realen Daten iterieren wir laufend: Wir optimieren Texte, schärfen CTAs, bauen Sektionen um, ergänzen fehlende Seiten, bis die Zahlen stimmen. Sollten in 90 Tagen keine messbar höheren Anfragen reinkommen, optimieren wir so lange weiter, ohne dass es Sie etwas kostet.',
+      'Sie zahlen nicht für Theorie, Sie zahlen für ein Ergebnis.',
     ],
     deliverables: [
       '90 Tage gratis Monitoring & Iteration',
@@ -119,7 +119,7 @@ export default function MethodikPage() {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     '@id': `${url}#howto`,
-    name: 'Das Fylu Sichtbarkeits-System – 5 Schritte zur Marktführerschaft im Saarland',
+    name: 'Das Fylu Sichtbarkeits-System, 5 Schritte zur Marktführerschaft im Saarland',
     description:
       'Bewährtes 5-Schritte-System für Webdesign, lokales SEO und Google Ads im Saarland. Vom Marktscan zur skalierbaren Anfragenmaschine in 90 Tagen.',
     totalTime: 'P90D',
@@ -140,15 +140,15 @@ export default function MethodikPage() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     '@id': `${url}#article`,
-    headline: 'Der Fylu-Prozess: Fünf Kapitel von Analyse bis Wirkung',
+    headline: 'Der Fylu-Prozess: Fünf Schritte von Analyse bis Wirkung',
     description:
-      'Methodik des Fylu Marketing: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Ein editorial geführter 5-Schritte-Prozess für Webdesign, SEO und Google Ads im Saarland.',
+      'Methodik von Fylu Marketing: Analyse, Strategie, Realisation, Sichtbarkeit, Skalierung. Ein 5-Schritte-Prozess für Webdesign, SEO und Google Ads im Saarland.',
     mainEntityOfPage: url,
     inLanguage: 'de-DE',
     author: { '@id': `${SITE}/#fynn-schulz` },
     publisher: { '@id': `${SITE}/#organization` },
     about: [
-      { '@type': 'Thing', name: 'Editorial Webdesign' },
+      { '@type': 'Thing', name: 'Webdesign' },
       { '@type': 'Thing', name: 'Local SEO' },
       { '@type': 'Thing', name: 'Google Ads' },
       { '@type': 'Thing', name: 'Conversion-Analyse' },
@@ -164,9 +164,9 @@ export default function MethodikPage() {
     '@type': 'WebPage',
     '@id': `${url}#webpage`,
     url,
-    name: 'Der Fylu-Prozess · Fünf Kapitel',
+    name: 'Der Fylu-Prozess · Fünf Schritte',
     description:
-      'Fünf Kapitel von Analyse bis Wirkung: der Fylu-Prozess für editoriale Websites, lokales SEO und Google Ads. Aus Saarlouis.',
+      'Fünf Schritte von Analyse bis Wirkung: der Fylu-Prozess für Websites, lokales SEO und Google Ads. Aus Saarlouis.',
     inLanguage: 'de-DE',
     isPartOf: { '@id': `${SITE}/#website` },
     mainEntity: { '@id': `${url}#howto` },
@@ -210,7 +210,7 @@ export default function MethodikPage() {
                 <span className="text-cyan-600">Sichtbarkeits-System</span>
               </h1>
               <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed max-w-3xl mx-auto">
-                Unser bewährtes 5-Schritte-System für Saarländer Unternehmen — vom ersten
+                Unser bewährtes 5-Schritte-System für Unternehmen jeder Phase: vom ersten
                 Marktscan bis zur skalierbaren Anfragenmaschine. Keine Bauchentscheidungen, keine
                 Standard-Templates, keine Versprechen ohne Beweis.
               </p>

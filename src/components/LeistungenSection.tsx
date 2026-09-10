@@ -10,10 +10,10 @@ type Item = {
   text: string;
 };
 
-const editorial: Item[] = [
-  { title: 'Editorial-Design', text: 'Typografie, Layout und Weißraum, die eure Substanz sichtbar machen — nicht nur Inhalte auf einem Template.' },
-  { title: 'Marken-Storytelling', text: 'Ein Auftritt, der eine klare Haltung transportiert und in fünf Sekunden erklärt, wofür ihr steht.' },
-  { title: 'Bildsprache & Foto-Direction', text: 'Auf Wunsch beauftragen wir Fotografen und begleiten das Shooting — damit die Bildwelt zu eurem Auftritt passt.' },
+const designItems: Item[] = [
+  { title: 'Design', text: 'Typografie, Layout und Weißraum machen euren Auftritt klar. Kein Template, sondern eine Seite, die zu euch passt.' },
+  { title: 'Positionierung', text: 'Ein Auftritt, der in fünf Sekunden erklärt, wofür ihr steht und warum jemand bei euch anfragt.' },
+  { title: 'Bildsprache', text: 'Auf Wunsch organisieren wir Fotografen und begleiten das Shooting, damit die Bildwelt zum Auftritt passt.' },
 ];
 
 const wachstum: Item[] = [
@@ -78,17 +78,17 @@ export default function LeistungenSection() {
               §02
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
-              Was wir für Marken machen
+              Was wir für Unternehmen tun
             </span>
           </div>
           <h2 className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-            Wir bauen keine Websites.{' '}
+            Online sichtbar sein.{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-              Wir bauen Marken, die wachsen.
+              Und daraus Umsatz machen.
             </span>
           </h2>
           <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Von der Gründung bis zur Skalierung. Editorial gestalteter Auftritt, planbares Wachstum über SEO, GEO und SEA, saubere technische Basis. Ein Studio, das mitwächst — statt einer Website, die nach dem Launch verstaubt.
+            Wir helfen Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren. Website, SEO, GEO, Google Ads und Software aus einer Hand. Wir bleiben, solange ihr wachst.
           </p>
 
           {/* Prominent commitment chips */}
@@ -132,23 +132,23 @@ export default function LeistungenSection() {
               <div>
                 <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full glass-chip-ink mb-6">
                   <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-stone-300">
-                    01 · Editorial-Design & Marke
+                    01 · Design & Marke
                   </span>
                 </div>
                 <h3 className="text-3xl md:text-4xl lg:text-[2.7rem] font-semibold leading-[1.08] tracking-[-0.025em] max-w-xl">
-                  Ein Auftritt mit{' '}
+                  Ein Auftritt, den man{' '}
                   <span className="font-display italic font-normal text-cyan-300">
-                    Handschrift
+                    wiedererkennt
                   </span>{' '}
-                  — kein Template mit Logo.
+                  — kein Template mit eurem Logo.
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-lg">
-                  Wir gestalten Marken, die man wiedererkennt. Typografie, Bildsprache, Storytelling. Auf Wunsch mit beauftragten Fotografen für eigene Bildwelten.
+                  Website, Typografie und Bildsprache, die zu eurem Unternehmen passen. Auf Wunsch mit organisierten Fotografen für eigene Bilder.
                 </p>
               </div>
 
               <ul className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-5 pt-6 border-t border-white/10">
-                {editorial.map((item, i) => (
+                {designItems.map((item, i) => (
                   <li key={i}>
                     <div className="text-[11px] uppercase tracking-[0.22em] text-cyan-300/80 font-medium mb-2">
                       {item.title}
@@ -286,7 +286,7 @@ export default function LeistungenSection() {
                 .
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-3">
-                Keine Wartungsknebel, keine monatliche Grundgebühr. Ihr bucht Betreuung nur dann, wenn ihr sie braucht — im Umfang, den euer Wachstum verlangt. Konditionen persönlich, transparent, ohne Formular.
+                Keine Wartungsknebel, keine monatliche Grundgebühr. Ihr bucht Betreuung dann, wenn ihr sie braucht — im Umfang, den euer Wachstum verlangt. Konditionen persönlich und transparent.
               </p>
             </div>
           </motion.div>

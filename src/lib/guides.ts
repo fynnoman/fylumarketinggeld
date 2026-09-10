@@ -37,20 +37,20 @@ export const guides: GuidePage[] = [
     slug: "website-kosten",
     metaTitle: "Was kostet eine Website? Preistreiber und Projektklassen 2026 | Fylu",
     metaDescription:
-      "Was kostet eine Website wirklich? Transparente Aufschlüsselung nach Projektklasse, Umfang und Funktionsbedarf — mit den ehrlichen Preistreibern statt Pauschal-Zahlen.",
+      "Was kostet eine Website wirklich? Transparente Aufschlüsselung nach Projektklasse, Umfang und Funktionsbedarf, mit den ehrlichen Preistreibern statt Pauschal-Zahlen.",
     h1: "Was kostet eine Website? Ehrliche Preistreiber statt Pauschal-Zahlen.",
     shortAnswer:
-      "Eine seriöse Antwort beginnt nicht mit einer Zahl, sondern mit Fragen: Wie tief ist die Konzeption, wie individuell die Gestaltung, wie umfangreich der Content, wie ausgeprägt Funktionen und SEO-Anspruch? Wer eine ultrabillige Website verkauft, verkauft in der Regel etwas anderes — Template-Kosmetik statt Vertriebswerkzeug.",
+      "Eine seriöse Antwort beginnt nicht mit einer Zahl, sondern mit Fragen: Wie tief ist die Konzeption, wie individuell die Gestaltung, wie umfangreich der Content, wie ausgeprägt Funktionen und SEO-Anspruch? Wer eine ultrabillige Website verkauft, verkauft in der Regel etwas anderes, Template-Kosmetik statt Vertriebswerkzeug.",
     intro:
-      "Die Frage „was kostet eine Website“ bekommt selten eine ehrliche Antwort — meistens, weil sie strukturell schwer zu beantworten ist. Zu viele Variablen: Umfang, Design-Tiefe, Content-System, Funktionsbedarf, SEO-Investition, Sprachen, Wartungsmodell. Dieser Artikel legt die Rechnung offen und macht sichtbar, was den Aufwand wirklich treibt.",
+      "Die Frage „was kostet eine Website“ bekommt selten eine ehrliche Antwort, meistens, weil sie strukturell schwer zu beantworten ist. Zu viele Variablen: Umfang, Design-Tiefe, Content-System, Funktionsbedarf, SEO-Investition, Sprachen, Wartungsmodell. Dieser Artikel legt die Rechnung offen und macht sichtbar, was den Aufwand wirklich treibt.",
     sections: [
       {
         title: "Warum die Spannen so groß sind",
-        text: "Eine Website ist kein Produkt mit festem Bauplan, sondern eine Zusammensetzung aus Konzeption, Design, Entwicklung, Content-Struktur und laufender Substanz. Zwei Projekte mit gleicher Seitenanzahl können sich in Aufwand um Faktor drei unterscheiden — je nachdem, wie tief Zielgruppen-Konzeption, Content-Aufbau und individuelle Gestaltung gehen. Wer eine seriöse Antwort will, muss zuerst über Zielgruppe und Nutzen sprechen, nicht über Seitenzahl.",
+        text: "Eine Website ist kein Produkt mit festem Bauplan, sondern eine Zusammensetzung aus Konzeption, Design, Entwicklung, Content-Struktur und laufender Substanz. Zwei Projekte mit gleicher Seitenanzahl können sich in Aufwand um Faktor drei unterscheiden, je nachdem, wie tief Zielgruppen-Konzeption, Content-Aufbau und individuelle Gestaltung gehen. Wer eine seriöse Antwort will, muss zuerst über Zielgruppe und Nutzen sprechen, nicht über Seitenzahl.",
       },
       {
         title: "Die vier großen Preistreiber",
-        text: "Erstens: Design-Tiefe. Ein Standard-Layout ist deutlich schneller gebaut als ein editorial-individueller Auftritt. Zweitens: Content-Umfang. Zwanzig Seiten mit substanziellem Text und eigener Bildwelt brauchen einen anderen Aufwand als fünf. Drittens: Funktionsbedarf. Rechner, Konfiguratoren, Portale, Shops verlangen jeweils eigenes Konzept und eigene Entwicklung. Viertens: SEO-Investition. Eine SEO-Foundation als Beiwerk kostet wenig — ein aktiv aufgebauter SEO-Cluster über mehrere Monate deutlich mehr, bringt dafür planbar Sichtbarkeit.",
+        text: "Erstens: Design-Tiefe. Ein Standard-Layout ist deutlich schneller gebaut als ein individueller Auftritt. Zweitens: Content-Umfang. Zwanzig Seiten mit substanziellem Text und eigener Bildwelt brauchen einen anderen Aufwand als fünf. Drittens: Funktionsbedarf. Rechner, Konfiguratoren, Portale, Shops verlangen jeweils eigenes Konzept und eigene Entwicklung. Viertens: SEO-Investition. Eine SEO-Foundation als Beiwerk kostet wenig, ein aktiv aufgebauter SEO-Cluster über mehrere Monate deutlich mehr, bringt dafür planbar Sichtbarkeit.",
       },
       {
         title: "Woran erkennen Sie ein seriöses Angebot",
@@ -58,7 +58,7 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was Sie beim Vergleich beachten sollten",
-        text: "Zwei Angebote in derselben Preisklasse können sich fundamental unterscheiden. Ein Studio, das die eigene Konzeptions- und Design-Phase transparent macht, arbeitet anders als eine Agentur, die Templates anpasst. Fragen Sie: Wer arbeitet konkret an meinem Projekt? Wie sieht der Prozess aus? Was passiert, wenn ich später ändern will? Die Antworten trennen langfristige Partner von einmaligen Dienstleistern.",
+        text: "Zwei Angebote in derselben Preisklasse können sich fundamental unterscheiden. Eine Agentur, die die eigene Konzeptions- und Design-Phase transparent macht, arbeitet anders als eine, die nur Templates anpasst. Fragen Sie: Wer arbeitet konkret an meinem Projekt? Wie sieht der Prozess aus? Was passiert, wenn ich später ändern will? Die Antworten trennen langfristige Partner von einmaligen Dienstleistern.",
       },
     ],
     examples: [
@@ -67,8 +67,8 @@ export const guides: GuidePage[] = [
         text: "3–5 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
       },
       {
-        title: "Vollständige Studio-Website",
-        text: "6–12 Seiten, Premium-Design, eigene Bildwelt, erweiterte SEO-Foundation, mehrstufige Formulare, ggf. zweite Sprache, 90-Tage-Begleitung. Der übliche Rahmen für etablierte Mittelständler.",
+        title: "Vollständige Firmenwebsite",
+        text: "6 bis 12 Seiten, hochwertiges Design, eigene Bildwelt, erweiterte SEO-Foundation, mehrstufige Formulare, ggf. zweite Sprache, 90-Tage-Begleitung. Der übliche Rahmen für etablierte Mittelständler.",
       },
       {
         title: "Individueller Auftritt mit Sonderfunktionen",
@@ -79,20 +79,20 @@ export const guides: GuidePage[] = [
       href: "/buchen",
       label: "Vorgespräch buchen",
       reason:
-        "Kein Kalkulator, kein Fragebogen — ein fünfzehnminütiges Gespräch, in dem wir das Vorhaben einordnen und den passenden Rahmen skizzieren.",
+        "Kein Kalkulator, kein Fragebogen, ein fünfzehnminütiges Gespräch, in dem wir das Vorhaben einordnen und den passenden Rahmen skizzieren.",
     },
     serviceLinks: [
       {
         href: "/website-erstellen-lassen",
         label: "Website erstellen lassen",
         reason:
-          "Individuell konzipierter Auftritt in drei Projektklassen (Signature, Atelier, Maison). Transparente Kalkulation im Vorgespräch, keine monatliche Grundgebühr.",
+          "Individuell konzipierter Auftritt in mehreren Projektklassen. Transparente Kalkulation im Vorgespräch, keine monatliche Grundgebühr.",
       },
       {
         href: "/webdesign-saarland",
-        label: "Editorial Webdesign aus dem Saarland",
+        label: "Webdesign aus dem Saarland",
         reason:
-          "Wenn Sie einen persönlichen Ansprechpartner statt Account-Manager-Kette wollen: geführt aus Saarlouis, zwölf Klienten pro Jahr, direkte Verantwortung des Studio-Leads.",
+          "Wenn Sie einen persönlichen Ansprechpartner statt Account-Manager-Kette wollen: geführt aus Saarlouis, direkte Verantwortung Ihres Ansprechpartners.",
       },
     ],
     faqs: [
@@ -106,11 +106,11 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Ist eine Website mit Rechner oder Konfigurator deutlich aufwändiger?",
-        a: "Ja, spürbar — je nach Komplexität, Anzahl Regeln, Design und Integrationstiefe. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
+        a: "Ja, spürbar, je nach Komplexität, Anzahl Regeln, Design und Integrationstiefe. Der Return: qualifiziertere Anfragen, weil Nutzer sich vor dem Erstkontakt selbst orientieren.",
       },
       {
         q: "Wie ordne ich mein Vorhaben in eine Projektklasse ein?",
-        a: "Über eine strukturierte Bestandsaufnahme: Branche, Umfang, Design-Tiefe, Sprachen, Shop, Funktionen. Die Kombination dieser Faktoren entscheidet, welche Klasse (kompakter Auftritt, vollständige Studio-Website oder individueller Auftritt mit Sonderfunktionen) sinnvoll ist — plus eine ehrliche Zeitplan-Einordnung.",
+        a: "Über eine strukturierte Bestandsaufnahme: Branche, Umfang, Design-Tiefe, Sprachen, Shop, Funktionen. Die Kombination dieser Faktoren entscheidet, welche Klasse (kompakter Auftritt, vollständige Firmenwebsite oder individueller Auftritt mit Sonderfunktionen) sinnvoll ist, plus eine ehrliche Zeitplan-Einordnung.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -125,19 +125,19 @@ export const guides: GuidePage[] = [
     shortAnswer:
       "Ein Relaunch lohnt, wenn die aktuelle Website an mindestens zwei von drei Achsen nicht mehr trägt: Design (wirkt nicht mehr zeitgemäß), Struktur (keine klare Verkaufsarchitektur), Technik (langsam, unwartbar, veraltet). Wenn nur eine Achse hakt, ist gezieltes Nachbessern meist die schnellere und günstigere Antwort.",
     intro:
-      "Der Website-Relaunch ist die teuerste Entscheidung im Website-Lebenszyklus — und auch die häufigste Fehlentscheidung. Nicht jede unbefriedigende Website braucht einen kompletten Neuaufbau. Manchmal reichen zwei Wochen Conversion-Optimierung und ein neues Bildkonzept. Dieser Artikel hilft, die richtige Frage zu stellen.",
+      "Der Website-Relaunch ist die teuerste Entscheidung im Website-Lebenszyklus, und auch die häufigste Fehlentscheidung. Nicht jede unbefriedigende Website braucht einen kompletten Neuaufbau. Manchmal reichen zwei Wochen Conversion-Optimierung und ein neues Bildkonzept. Dieser Artikel hilft, die richtige Frage zu stellen.",
     sections: [
       {
         title: "Wann ein Relaunch wirklich sinnvoll ist",
-        text: "Drei Signale, die zusammen einen Relaunch rechtfertigen: Erstens, die Website wirkt zeitlich versetzt (Design aus einer anderen Ära, Corporate Wording, das nicht mehr zur Firma passt). Zweitens, die Struktur passt nicht mehr zum Geschäft — Leistungen wurden ergänzt, Zielgruppen haben sich verschoben, die IA ist nicht mehr auflösbar. Drittens, die technische Basis limitiert die Weiterentwicklung — veraltetes CMS, unmögliche Performance-Optimierung, kein sauberer mobile-first-Ansatz.",
+        text: "Drei Signale, die zusammen einen Relaunch rechtfertigen: Erstens, die Website wirkt zeitlich versetzt (Design aus einer anderen Ära, Corporate Wording, das nicht mehr zur Firma passt). Zweitens, die Struktur passt nicht mehr zum Geschäft, Leistungen wurden ergänzt, Zielgruppen haben sich verschoben, die IA ist nicht mehr auflösbar. Drittens, die technische Basis limitiert die Weiterentwicklung, veraltetes CMS, unmögliche Performance-Optimierung, kein sauberer mobile-first-Ansatz.",
       },
       {
         title: "Wann Nachbessern die klügere Antwort ist",
-        text: "Wenn nur eine Achse hakt — etwa der Hero-Bereich schwach ist oder die Formulare abbrechen — sollte man dort chirurgisch eingreifen. Ein kompletter Relaunch bindet drei bis sechs Monate Aufmerksamkeit und kostet meist das Fünf- bis Zehnfache einer gezielten Optimierung. Wer schon eine solide technische Basis hat, verliert bei einem Relaunch außerdem oft die aufgebauten SEO-Rankings, wenn URL-Struktur und Content-Cluster nicht sauber migriert werden.",
+        text: "Wenn nur eine Achse hakt, etwa der Hero-Bereich schwach ist oder die Formulare abbrechen, sollte man dort chirurgisch eingreifen. Ein kompletter Relaunch bindet drei bis sechs Monate Aufmerksamkeit und kostet meist das Fünf- bis Zehnfache einer gezielten Optimierung. Wer schon eine solide technische Basis hat, verliert bei einem Relaunch außerdem oft die aufgebauten SEO-Rankings, wenn URL-Struktur und Content-Cluster nicht sauber migriert werden.",
       },
       {
         title: "Die typischen Fallstricke",
-        text: "Erstens: SEO-Verlust durch fehlende oder fehlerhafte 301-Weiterleitungen. Zweitens: Design-Fixierung ohne Verkaufsarchitektur — schön, aber wirkungslos. Drittens: fehlende Content-Migration, wenn wertvolle bestehende Landing-Pages nicht mit übergehen. Viertens: unrealistische Zeitpläne, bei denen die Feedback-Kapazität der Auftraggeberseite unterschätzt wird. Fünftens: kein sauberer Live-Gang mit Sichtbarkeits-Monitoring in den ersten Wochen.",
+        text: "Erstens: SEO-Verlust durch fehlende oder fehlerhafte 301-Weiterleitungen. Zweitens: Design-Fixierung ohne Verkaufsarchitektur, schön, aber wirkungslos. Drittens: fehlende Content-Migration, wenn wertvolle bestehende Landing-Pages nicht mit übergehen. Viertens: unrealistische Zeitpläne, bei denen die Feedback-Kapazität der Auftraggeberseite unterschätzt wird. Fünftens: kein sauberer Live-Gang mit Sichtbarkeits-Monitoring in den ersten Wochen.",
       },
     ],
     process: [
@@ -159,7 +159,7 @@ export const guides: GuidePage[] = [
       {
         step: 4,
         title: "Design & Entwicklung",
-        text: "Erst wenn die drei ersten Schritte sitzen, wird gestaltet. Editorial oder Standard — je nach Anspruch. Iterationen bewusst getaktet, nicht endlos.",
+        text: "Erst wenn die drei ersten Schritte sitzen, wird gestaltet. Individuell oder Standard, je nach Anspruch. Iterationen bewusst getaktet, nicht endlos.",
       },
       {
         step: 5,
@@ -169,14 +169,14 @@ export const guides: GuidePage[] = [
       {
         step: 6,
         title: "Begleitung nach Live-Gang",
-        text: "In den ersten 90 Tagen entstehen die eigentlichen Optimierungserkenntnisse — aus echtem Nutzerverhalten. Ein sauberer Relaunch endet nicht mit Launch, sondern mit dokumentierter Iteration.",
+        text: "In den ersten 90 Tagen entstehen die eigentlichen Optimierungserkenntnisse, aus echtem Nutzerverhalten. Ein sauberer Relaunch endet nicht mit Launch, sondern mit dokumentierter Iteration.",
       },
     ],
     tool: {
       href: "/tools/website-check",
       label: "Website-Analyse starten",
       reason:
-        "Prüft, wo Ihre aktuelle Website tatsächlich hakt — als Basis für die Frage, ob Nachbessern reicht oder ein Relaunch sinnvoll wird.",
+        "Prüft, wo Ihre aktuelle Website tatsächlich hakt, als Basis für die Frage, ob Nachbessern reicht oder ein Relaunch sinnvoll wird.",
     },
     serviceLinks: [
       {
@@ -217,12 +217,12 @@ export const guides: GuidePage[] = [
     slug: "seo-kosten",
     metaTitle: "Was kostet SEO? Foundation, Betreuung, Content-Aufbau | Fylu",
     metaDescription:
-      "Was kostet SEO wirklich? Transparente Aufschlüsselung zwischen einmaliger Foundation, laufender Betreuung und aktivem Content-Aufbau — mit den Faktoren, die den Aufwand treiben.",
+      "Was kostet SEO wirklich? Transparente Aufschlüsselung zwischen einmaliger Foundation, laufender Betreuung und aktivem Content-Aufbau, mit den Faktoren, die den Aufwand treiben.",
     h1: "Was kostet SEO? Ehrliche Ebenen für Foundation, Betreuung und Content-Aufbau.",
     shortAnswer:
       "SEO-Investitionen zerfallen in drei Ebenen: einmalige Foundation, laufende Betreuung und aktiver Content-Aufbau. Jede Ebene hat einen eigenen Aufwandsrahmen. Wer die drei sauber trennt und weiß, welche Fragen im Angebot beantwortet sein müssen, kann Anbieter erstmals wirklich vergleichen.",
     intro:
-      "SEO-Kosten schwanken deutlich stärker als Website-Kosten — und werden oft undurchsichtig kommuniziert. Der Grund: SEO ist keine einmalige Leistung, sondern eine Kombination aus Foundation, laufender Betreuung und aktivem Content-Aufbau. Wer die drei Ebenen trennt, kann Angebote endlich vergleichen.",
+      "SEO-Kosten schwanken deutlich stärker als Website-Kosten, und werden oft undurchsichtig kommuniziert. Der Grund: SEO ist keine einmalige Leistung, sondern eine Kombination aus Foundation, laufender Betreuung und aktivem Content-Aufbau. Wer die drei Ebenen trennt, kann Angebote endlich vergleichen.",
     sections: [
       {
         title: "Die drei Kosten-Ebenen von SEO",
@@ -234,11 +234,11 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was laufende Betreuung tatsächlich leistet",
-        text: "Monatliche Search-Console-Auswertung, Position-Monitoring der Kern-Keywords, kleine Content-Anpassungen, technisches Monitoring, Ranking-Report. In dieser Ebene sitzt die kontinuierliche Verbesserung — ohne die veraltet auch die beste Foundation nach 12 Monaten.",
+        text: "Monatliche Search-Console-Auswertung, Position-Monitoring der Kern-Keywords, kleine Content-Anpassungen, technisches Monitoring, Ranking-Report. In dieser Ebene sitzt die kontinuierliche Verbesserung, ohne die veraltet auch die beste Foundation nach 12 Monaten.",
       },
       {
         title: "Wann sich aktive Content-Investition lohnt",
-        text: "Wenn Sie in einem umkämpften Markt Position gewinnen wollen — nicht halten. Content-Aufbau ist der Hebel für neue Rankings, die vorher nicht existierten. Ein Cluster umfasst typischerweise eine Hub-Page plus fünf bis zehn Detail-Pages; Aufwand und Rahmen richten sich nach Recherchetiefe, Wettbewerb und Anspruch an die Ausarbeitung. Wirkungslatenz: drei bis sechs Monate bis zu sichtbaren Rankings.",
+        text: "Wenn Sie in einem umkämpften Markt Position gewinnen wollen, nicht halten. Content-Aufbau ist der Hebel für neue Rankings, die vorher nicht existierten. Ein Cluster umfasst typischerweise eine Hub-Page plus fünf bis zehn Detail-Pages; Aufwand und Rahmen richten sich nach Recherchetiefe, Wettbewerb und Anspruch an die Ausarbeitung. Wirkungslatenz: drei bis sechs Monate bis zu sichtbaren Rankings.",
       },
     ],
     examples: [
@@ -259,7 +259,7 @@ export const guides: GuidePage[] = [
       href: "/tools/seo-check",
       label: "SEO-Check starten",
       reason:
-        "Zeigt in unter 15 Sekunden, wo Ihre Website SEO-mäßig aktuell steht — sinnvolle Basis, bevor Sie in Foundation oder Content-Aufbau investieren.",
+        "Zeigt in unter 15 Sekunden, wo Ihre Website SEO-mäßig aktuell steht, sinnvolle Basis, bevor Sie in Foundation oder Content-Aufbau investieren.",
     },
     serviceLinks: [
       {
@@ -278,7 +278,7 @@ export const guides: GuidePage[] = [
     faqs: [
       {
         q: "Warum sind SEO-Angebote so unterschiedlich?",
-        a: "Weil SEO drei sehr unterschiedliche Leistungen zusammenfasst (Foundation, Betreuung, Content-Aufbau) und Anbieter unterschiedliche Kombinationen daraus verkaufen. Sehr niedrig kalkulierte SEO-Pakete decken meist nur eine der Ebenen — oder gar nichts wirklich Substantielles. Fragen Sie explizit, welche Ebene abgedeckt ist und in welcher Tiefe.",
+        a: "Weil SEO drei sehr unterschiedliche Leistungen zusammenfasst (Foundation, Betreuung, Content-Aufbau) und Anbieter unterschiedliche Kombinationen daraus verkaufen. Sehr niedrig kalkulierte SEO-Pakete decken meist nur eine der Ebenen, oder gar nichts wirklich Substantielles. Fragen Sie explizit, welche Ebene abgedeckt ist und in welcher Tiefe.",
       },
       {
         q: "Woran erkenne ich echte SEO-Betreuung?",
@@ -297,11 +297,11 @@ export const guides: GuidePage[] = [
     metaTitle: "Was kostet Google Ads? Budget, Klickpreise, Konditionen | Fylu",
     metaDescription:
       "Was kostet Google Ads wirklich? Wie sich Media-Budget, Setup und Betreuung sauber trennen, was Klickpreise treibt und wann sich Ads für welches Geschäftsmodell lohnen.",
-    h1: "Was kostet Google Ads? Media-Budget, Agentur, Klickpreise — sauber getrennt.",
+    h1: "Was kostet Google Ads? Media-Budget, Agentur, Klickpreise, sauber getrennt.",
     shortAnswer:
       "Google-Ads-Investitionen bestehen aus drei Blöcken, die getrennt betrachtet werden müssen: dem Media-Budget (was Google für Klicks bekommt), dem einmaligen Setup (Konto-Struktur, Tracking, erste Kampagnen) und der laufenden Betreuung. Der sinnvolle Rahmen hängt vor allem vom Wettbewerb im Suchbegriff, der Zielregion und der wirtschaftlichen Wertigkeit eines Leads ab.",
     intro:
-      "„Was kostet Google Ads“ ist eine unbeantwortbare Frage — außer man trennt Media-Budget von Agentur-Kosten und beides von der Wirtschaftlichkeit. Dieser Artikel legt die drei Ebenen offen und macht klar, wann sich Ads für welches Geschäftsmodell rechnen.",
+      "„Was kostet Google Ads“ ist eine unbeantwortbare Frage, außer man trennt Media-Budget von Agentur-Kosten und beides von der Wirtschaftlichkeit. Dieser Artikel legt die drei Ebenen offen und macht klar, wann sich Ads für welches Geschäftsmodell rechnen.",
     sections: [
       {
         title: "Die drei Kosten-Ebenen von Google Ads",
@@ -313,7 +313,7 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Wann sich Google Ads rechnen",
-        text: "Grundregel: die Kosten pro qualifiziertem Lead müssen deutlich unter der Marge des Erstauftrags liegen. Bei hohen Auftragsmargen tragen Ads auch in umkämpften Segmenten. Bei kleineren Auftragswerten wird die Rechnung eng — dann lohnt sich Ads meist nur mit sehr präziser Targeting-Strategie. Vor dem Start immer die Marge pro Erstauftrag ehrlich kalkulieren.",
+        text: "Grundregel: die Kosten pro qualifiziertem Lead müssen deutlich unter der Marge des Erstauftrags liegen. Bei hohen Auftragsmargen tragen Ads auch in umkämpften Segmenten. Bei kleineren Auftragswerten wird die Rechnung eng, dann lohnt sich Ads meist nur mit sehr präziser Targeting-Strategie. Vor dem Start immer die Marge pro Erstauftrag ehrlich kalkulieren.",
       },
       {
         title: "Setup-Fehler, die Budget verbrennen",
@@ -357,7 +357,7 @@ export const guides: GuidePage[] = [
     faqs: [
       {
         q: "Was ist ein guter Klickpreis?",
-        a: "Kommt komplett auf den Suchbegriff an. Lokale B2B-Suchen liegen deutlich niedriger als kompetitive Suchen wie Photovoltaik oder Wärmepumpen. Sinnvoller ist ohnehin die Frage nach den Kosten pro qualifiziertem Lead — die trennt Wirtschaftlichkeit von Klickpreis-Kosmetik.",
+        a: "Kommt komplett auf den Suchbegriff an. Lokale B2B-Suchen liegen deutlich niedriger als kompetitive Suchen wie Photovoltaik oder Wärmepumpen. Sinnvoller ist ohnehin die Frage nach den Kosten pro qualifiziertem Lead, die trennt Wirtschaftlichkeit von Klickpreis-Kosmetik.",
       },
       {
         q: "Kann ich Google Ads selbst machen?",
@@ -365,7 +365,7 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Wie messe ich, ob sich Ads lohnen?",
-        a: "Über sauberes Conversion-Tracking (Lead-Formular, Anruf, Kalender-Buchung), dokumentiert im Ads-Konto. Kosten pro Lead ausrechnen, mit Marge pro Kunde vergleichen. Wenn drei bis fünf Prozent der Leads in Kunden konvertieren, muss der Lead deutlich unter der Marge pro Kunde liegen — sonst zahlt die Kampagne drauf.",
+        a: "Über sauberes Conversion-Tracking (Lead-Formular, Anruf, Kalender-Buchung), dokumentiert im Ads-Konto. Kosten pro Lead ausrechnen, mit Marge pro Kunde vergleichen. Wenn drei bis fünf Prozent der Leads in Kunden konvertieren, muss der Lead deutlich unter der Marge pro Kunde liegen, sonst zahlt die Kampagne drauf.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -375,28 +375,28 @@ export const guides: GuidePage[] = [
     slug: "webdesign-kosten",
     metaTitle: "Was kostet Webdesign? Template vs. Standard vs. individuell | Fylu",
     metaDescription:
-      "Der Unterschied zwischen Template, Standard-Design und individueller Gestaltung — mit den echten Preistreibern und dem Blick darauf, wo Konzeption und Recherche den Aufwand bestimmen.",
+      "Der Unterschied zwischen Template, Standard-Design und individueller Gestaltung, mit den echten Preistreibern und dem Blick darauf, wo Konzeption und Recherche den Aufwand bestimmen.",
     h1: "Was kostet Webdesign? Der ehrliche Vergleich zwischen Template, Standard und individueller Gestaltung.",
     shortAnswer:
-      "Webdesign zerfällt in drei Klassen: Template-Anpassung, Standard-Design mit eigener Bildwelt und individuelles Signature-Design. Der Aufwand-Unterschied zwischen den Klassen liegt fast vollständig in Konzeptions-Tiefe, Recherche und individueller Gestaltung — nicht in der Programmierung. Wer die richtige Klasse für sein Vorhaben wählt, entscheidet über das Verhältnis von Investition und Wirkung.",
+      "Webdesign zerfällt in drei Klassen: Template-Anpassung, Standard-Design mit eigener Bildwelt und vollständig individuelles Design. Der Aufwand-Unterschied zwischen den Klassen liegt fast vollständig in Konzeptions-Tiefe, Recherche und individueller Gestaltung, nicht in der Programmierung. Wer die richtige Klasse für sein Vorhaben wählt, entscheidet über das Verhältnis von Investition und Wirkung.",
     intro:
-      "Webdesign-Kosten werden am häufigsten missverstanden — weil der Aufwand-Unterschied zwischen einer Template-Anpassung und einer individuellen Studio-Arbeit nicht in der Programmierung liegt, sondern in Konzeption, Recherche und Gestaltung. Ein individueller Auftritt entsteht in einem Vielfachen der Arbeitsstunden eines Template-Setups. Wer den Unterschied kennt, kann bewusst entscheiden.",
+      "Webdesign-Kosten werden am häufigsten missverstanden, weil der Aufwand-Unterschied zwischen einer Template-Anpassung und einer vollständig individuellen Arbeit nicht in der Programmierung liegt, sondern in Konzeption, Recherche und Gestaltung. Ein individueller Auftritt entsteht in einem Vielfachen der Arbeitsstunden eines Template-Setups. Wer den Unterschied kennt, kann bewusst entscheiden.",
     sections: [
       {
-        title: "Template, Standard, Signature — die drei Klassen",
-        text: "Template-Anpassung heißt: bestehende Vorlage wird auf Firma zugeschnitten. Standard-Design heißt: eigenes Layout, aber mit gängigen Sektionen und Modulen. Signature heißt: individuelle Konzeption, eigene Bildwelt, editorial gestaltet. Jede Klasse hat ihre Berechtigung — und ihren eigenen Kostenrahmen.",
+        title: "Template, Standard, individuell: die drei Klassen",
+        text: "Template-Anpassung heißt: bestehende Vorlage wird auf Firma zugeschnitten. Standard-Design heißt: eigenes Layout, aber mit gängigen Sektionen und Modulen. Individuelles Design heißt: eigene Konzeption, eigene Bildwelt, vollständig gestaltet. Jede Klasse hat ihre Berechtigung und ihren eigenen Kostenrahmen.",
       },
       {
         title: "Wann Template ausreicht",
-        text: "Für Portfolio-Websites, sehr kleine lokale Angebote oder Testkampagnen — wenn die Website nicht der primäre Vertriebskanal ist. Wer aus der Website Kunden gewinnen will, wird mit Templates fast immer unterhalb des Wettbewerbs bleiben. Die scheinbare Ersparnis in der Initial-Investition wiegt selten die dauerhaft entgangenen Anfragen auf.",
+        text: "Für Portfolio-Websites, sehr kleine lokale Angebote oder Testkampagnen, wenn die Website nicht der primäre Vertriebskanal ist. Wer aus der Website Kunden gewinnen will, wird mit Templates fast immer unterhalb des Wettbewerbs bleiben. Die scheinbare Ersparnis in der Initial-Investition wiegt selten die dauerhaft entgangenen Anfragen auf.",
       },
       {
         title: "Wann Standard-Design der richtige Mittelweg ist",
-        text: "Für etablierte Mittelständler mit klarem Angebot, die eine solide, professionelle Website brauchen — aber keinen editorial-individuellen Auftritt. Standard-Design mit eigener Bildwelt und klarer Verkaufsarchitektur wirkt in den meisten B2B-Segmenten überzeugend.",
+        text: "Für etablierte Mittelständler mit klarem Angebot, die eine solide, professionelle Website brauchen, aber keinen vollständig individuellen Auftritt. Standard-Design mit eigener Bildwelt und klarer Verkaufsarchitektur wirkt in den meisten B2B-Segmenten überzeugend.",
       },
       {
-        title: "Wann Signature-Design sich rechnet",
-        text: "Für Unternehmen, deren Website Teil des Markenversprechens ist — hochwertige Kanzleien, Premium-Handwerk, ambitionierte B2B-Dienstleister. Die individuelle Gestaltung wirkt als Vertrauens- und Positionierungshebel. Der ROI zeigt sich nicht in Klickzahlen, sondern in der Qualität der Anfragen und Aufträge.",
+        title: "Wann individuelles Design sich rechnet",
+        text: "Für Unternehmen, deren Website Teil des Markenversprechens ist: hochwertige Kanzleien, spezialisiertes Handwerk, ambitionierte B2B-Dienstleister. Die individuelle Gestaltung wirkt als Vertrauens- und Positionierungshebel. Der ROI zeigt sich nicht in Klickzahlen, sondern in der Qualität der Anfragen und Aufträge.",
       },
     ],
     examples: [
@@ -409,22 +409,22 @@ export const guides: GuidePage[] = [
         text: "Eigenes Layout, eigene Bildwelt (oft mit Bildbibliotheken), klare Content-Struktur, mobile-first, SEO-Basis. Passend für die meisten etablierten Mittelständler mit klarem Angebot.",
       },
       {
-        title: "Signature-Design",
-        text: "Individuelle Gestaltung, eigenes Fotoshooting, editorial-orientierte Struktur, tiefe Content-Arbeit, ausgeprägte Typografie- und Farbwelt. Für Unternehmen, die aus dem Auftritt Vertrauen und Positionierung ableiten.",
+        title: "Individuelles Design",
+        text: "Vollständig individuelle Gestaltung, eigenes Fotoshooting, klare Struktur, tiefe Content-Arbeit, ausgeprägte Typografie- und Farbwelt. Für Unternehmen, die aus dem Auftritt Vertrauen und Positionierung ableiten.",
       },
     ],
     tool: {
       href: "/buchen",
       label: "Vorgespräch buchen",
       reason:
-        "Fünfzehn Minuten, direkt mit dem Studio-Lead. Wir hören zu, ordnen ein und skizzieren den passenden Rahmen — ohne Verkaufsdruck.",
+        "Fünfzehn Minuten, direkt mit Ihrem Ansprechpartner. Wir hören zu, ordnen ein und skizzieren den passenden Rahmen, ohne Verkaufsdruck.",
     },
     serviceLinks: [
       {
         href: "/webdesign-saarland",
-        label: "Editorial Webdesign aus dem Saarland",
+        label: "Webdesign aus dem Saarland",
         reason:
-          "Fylu liefert individuell gestaltete Websites in drei Projektklassen. Editorial-Design statt Template-Anpassung, mit klarer Verkaufsarchitektur und modernem technischen Fundament.",
+          "Fylu Marketing liefert individuell gestaltete Websites in mehreren Projektklassen. Individuelles Design statt Template-Anpassung, mit klarer Verkaufsarchitektur und modernem technischen Fundament.",
       },
       {
         href: "/website-erstellen-lassen",
@@ -440,11 +440,11 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Kann ich mit einem Template starten und später upgraden?",
-        a: "Technisch ja, wirtschaftlich meist nicht. Ein späteres Upgrade kostet fast so viel wie ein neuer Signature-Auftritt — plus verlorene Zeit mit dem Zwischenschritt. Wenn Sie wissen, wo Sie hinwollen, direkt dort anfangen.",
+        a: "Technisch ja, wirtschaftlich meist nicht. Ein späteres Upgrade kostet fast so viel wie ein neuer individueller Auftritt, plus verlorene Zeit mit dem Zwischenschritt. Wenn Sie wissen, wo Sie hinwollen, direkt dort anfangen.",
       },
       {
         q: "Wer verantwortet die Texte bei einem Webdesign-Projekt?",
-        a: "Standardmäßig der Kunde. Manche Studios (auch Fylu) bieten Copy-Begleitung an — als eigene Leistung mit eigenem Kostenrahmen. Wer keine Copy-Ressourcen intern hat, sollte das früh im Angebot klären.",
+        a: "Standardmäßig der Kunde. Manche Agenturen (auch Fylu Marketing) bieten Copy-Begleitung an als eigene Leistung mit eigenem Kostenrahmen. Wer keine Copy-Ressourcen intern hat, sollte das früh im Angebot klären.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -452,25 +452,25 @@ export const guides: GuidePage[] = [
   },
   {
     slug: "website-agentur-kosten",
-    metaTitle: "Website bei Freelancer, Studio oder Agentur? Ehrlicher Vergleich | Fylu",
+    metaTitle: "Website bei Freelancer, kleiner oder klassischer Agentur? Ehrlicher Vergleich | Fylu",
     metaDescription:
-      "Freelancer, Studio oder Agentur? Was den Aufwand-Unterschied strukturell erklärt, worauf Sie im Angebot achten sollten und wann welches Setup zu Ihrem Vorhaben passt.",
-    h1: "Was kostet eine Website bei Freelancer, Studio oder Agentur? Ehrlicher Vergleich.",
+      "Freelancer, kleine spezialisierte Agentur oder klassische Full-Service-Agentur? Was den Aufwand-Unterschied strukturell erklärt, worauf Sie im Angebot achten sollten und wann welches Setup zu Ihrem Vorhaben passt.",
+    h1: "Was kostet eine Website bei Freelancer, kleiner oder klassischer Agentur? Ehrlicher Vergleich.",
     shortAnswer:
-      "Freelancer, Studio und klassische Agentur liegen in deutlich unterschiedlichen Aufwand-Klassen. Der Unterschied liegt nicht in Geldgier, sondern in Prozess-Tiefe, Team-Größe, Substanz der Konzeption und Betreuungsverantwortung. Welches Setup sinnvoll ist, hängt von Vorhaben, Anspruch und Governance-Bedarf ab — nicht von einer Zahl im Angebot.",
+      "Freelancer, kleine spezialisierte Agentur und klassische Full-Service-Agentur liegen in deutlich unterschiedlichen Aufwand-Klassen. Der Unterschied liegt nicht in Geldgier, sondern in Prozess-Tiefe, Team-Größe, Substanz der Konzeption und Betreuungsverantwortung. Welches Setup sinnvoll ist, hängt von Vorhaben, Anspruch und Governance-Bedarf ab, nicht von einer Zahl im Angebot.",
     intro:
-      "Freelancer, Studio, Agentur — dieselbe Website kann in den drei Setups fundamental unterschiedlich viel Aufwand bedeuten. Der Grund ist nicht Geldgier, sondern strukturell: unterschiedliche Prozesstiefe, unterschiedliche Konzeptions-Substanz, unterschiedliche Betreuungsverantwortung. Wer die Unterschiede kennt, wählt bewusst.",
+      "Freelancer, kleine Agentur, Full-Service-Agentur: dieselbe Website kann in den drei Setups fundamental unterschiedlich viel Aufwand bedeuten. Der Grund ist nicht Geldgier, sondern strukturell: unterschiedliche Prozesstiefe, unterschiedliche Konzeptions-Substanz, unterschiedliche Betreuungsverantwortung. Wer die Unterschiede kennt, wählt bewusst.",
     sections: [
       {
-        title: "Was ein Freelancer bietet — und was nicht",
+        title: "Was ein Freelancer bietet, und was nicht",
         text: "Ein einzelner Freelancer liefert schnell, meist günstig und mit direkter Kommunikation. Was fehlt: umfassende Konzeption, Redundanz bei Ausfall, breites Skillset (Copy, Foto, SEO, Ads aus einer Hand). Passend für kleine Projekte mit klarem Umfang und wenig strategischem Beratungsbedarf.",
       },
       {
-        title: "Was ein Studio bietet",
-        text: "Ein Studio arbeitet meist mit zwei bis fünf Menschen, spezialisiert auf hochwertige Umsetzung. Vorteil: Kombinierte Skills (Design + Entwicklung + Copy + SEO), verlässliche Prozesse, weniger Ausfallrisiko, tiefere Konzeption. Nachteil gegenüber Freelancer: höhere Investition. Passend für etablierte Unternehmen mit klarem Anspruch, denen der Auftritt wichtig ist.",
+        title: "Was eine kleine spezialisierte Agentur bietet",
+        text: "Eine kleine spezialisierte Agentur arbeitet meist mit zwei bis fünf Menschen und ist fokussiert auf hochwertige Umsetzung. Vorteil: kombinierte Skills (Design, Entwicklung, Copy, SEO), verlässliche Prozesse, weniger Ausfallrisiko, tiefere Konzeption. Nachteil gegenüber Freelancer: höhere Investition. Passend für etablierte Unternehmen mit klarem Anspruch, denen der Auftritt wichtig ist.",
       },
       {
-        title: "Was eine Agentur bietet",
+        title: "Was eine klassische Full-Service-Agentur bietet",
         text: "Klassische Agenturen (15+ Mitarbeiter) bieten umfangreiche Prozesse, oft mit dedizierten Account-Managern, strategischer Beratung und Kapazität für Großprojekte. Nachteil: höhere Investition durch Overhead-Struktur, längere Kommunikationswege, weniger direkter Draht zum eigentlichen Umsetzer. Passend für Konzerne, komplexe Multi-Sprach-Projekte oder ausschreibungspflichtige Vorhaben.",
       },
       {
@@ -484,11 +484,11 @@ export const guides: GuidePage[] = [
         text: "Klassische WordPress- oder Wix-Umsetzung mit Template-Anpassung, drei bis sechs Seiten, Kontaktformular, mobile-optimiert. Schnell live, funktional, aber ohne strategische Konzeption.",
       },
       {
-        title: "Studio für etablierten Mittelständler",
+        title: "Kleine Agentur für etablierten Mittelständler",
         text: "Individuelles Design, 8 bis 15 Seiten, eigene Bildwelt, klare Verkaufsarchitektur, SEO-Foundation, mobile-first, 90-Tage-Begleitung. Der übliche Rahmen für ambitionierte B2B-Auftritte.",
       },
       {
-        title: "Agentur für Konzern oder komplexes Projekt",
+        title: "Full-Service-Agentur für Konzern oder komplexes Projekt",
         text: "Strategische Beratung, mehrsprachig, komplexe Integrations- und Approval-Prozesse, dediziertes Account-Management, umfangreiche Governance. Passend für Multi-Stakeholder-Projekte mit klaren Compliance-Anforderungen.",
       },
     ],
@@ -496,29 +496,29 @@ export const guides: GuidePage[] = [
       href: "/buchen",
       label: "Vorgespräch buchen",
       reason:
-        "Ordnen Sie Ihr Vorhaben mit uns ein — Rahmen, Umfang, nächste Schritte. Unabhängig davon, welchen Anbietertyp Sie am Ende wählen.",
+        "Ordnen Sie Ihr Vorhaben mit uns ein, Rahmen, Umfang, nächste Schritte. Unabhängig davon, welchen Anbietertyp Sie am Ende wählen.",
     },
     serviceLinks: [
       {
         href: "/webdesign-saarland",
-        label: "Studio-Modell in der Praxis",
+        label: "Kleine Agentur in der Praxis",
         reason:
-          "Fylu ist ein Boutique-Studio: direkte Führung durch den Studio-Lead, zwölf Klienten pro Jahr, tiefe Verantwortung pro Projekt. Persönlicher Ansprechpartner statt Agentur-Overhead.",
+          "Fylu Marketing ist eine kleine spezialisierte Agentur: direkte Verantwortung Ihres Ansprechpartners, tiefe Verantwortung pro Projekt. Persönlicher Draht statt Overhead-Struktur.",
       },
       {
         href: "/seo-agentur-saarland",
         label: "SEO-Agentur Saarland",
         reason:
-          "Wenn Sie einen langfristigen Partner für SEO suchen: laufende Betreuung mit Content-Aufbau, Search-Console-Analyse und Off-Page-Signalen, geführt aus dem Studio.",
+          "Wenn Sie einen langfristigen Partner für SEO suchen: laufende Betreuung mit Content-Aufbau, Search-Console-Analyse und Off-Page-Signalen.",
       },
     ],
     faqs: [
       {
-        q: "Ist ein Studio immer besser als ein Freelancer?",
-        a: "Nein. Für kleine, klar umrissene Projekte kann ein guter Freelancer die schnellere und wirtschaftlichere Antwort sein. Ein Studio lohnt sich, wenn Konzeption, Substanz und Betreuung eine Rolle spielen — und das Projekt eine bestimmte Größe hat.",
+        q: "Ist eine kleine Agentur immer besser als ein Freelancer?",
+        a: "Nein. Für kleine, klar umrissene Projekte kann ein guter Freelancer die schnellere und wirtschaftlichere Antwort sein. Eine kleine Agentur lohnt sich, wenn Konzeption, Substanz und Betreuung eine Rolle spielen und das Projekt eine bestimmte Größe hat.",
       },
       {
-        q: "Warum ist eine große Agentur so viel aufwändiger?",
+        q: "Warum ist eine große Full-Service-Agentur so viel aufwändiger?",
         a: "Weil sie andere Overhead-Strukturen finanzieren muss (Account-Manager, Strategen, Consulting-Ebene, größere Räume, mehr Prozesse). Für Konzern-Projekte ist das gerechtfertigt, für eine Mittelstands-Website meist überdimensioniert.",
       },
       {
@@ -542,7 +542,7 @@ export const guides: GuidePage[] = [
     sections: [
       {
         title: "Refresh, selektiver Rebuild, Vollrelaunch",
-        text: "Refresh: gleiche Struktur, gleiche URLs, aktualisiertes Design und aktualisierte Copy. Selektiver Rebuild: bestimmte Sections werden neu gebaut, der Rest bleibt. Vollrelaunch: neue Struktur, neue URLs, neues Design, neuer Content. Jede Option löst andere Probleme — und kostet entsprechend anders.",
+        text: "Refresh: gleiche Struktur, gleiche URLs, aktualisiertes Design und aktualisierte Copy. Selektiver Rebuild: bestimmte Sections werden neu gebaut, der Rest bleibt. Vollrelaunch: neue Struktur, neue URLs, neues Design, neuer Content. Jede Option löst andere Probleme, und kostet entsprechend anders.",
       },
       {
         title: "Was den Aufwand wirklich treibt",
@@ -575,7 +575,7 @@ export const guides: GuidePage[] = [
       href: "/tools/website-check",
       label: "Website-Analyse starten",
       reason:
-        "Prüft technische Basis und Content-Substanz Ihrer aktuellen Website — als objektive Grundlage für die Entscheidung zwischen Refresh, Rebuild und Vollrelaunch.",
+        "Prüft technische Basis und Content-Substanz Ihrer aktuellen Website, als objektive Grundlage für die Entscheidung zwischen Refresh, Rebuild und Vollrelaunch.",
     },
     serviceLinks: [
       {
@@ -602,7 +602,7 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Was ist aufwändiger: Refresh oder Vollrelaunch bei gleichem Ergebnis?",
-        a: "Vollrelaunch fast immer. Refresh ist wirtschaftlicher, solange technische Basis und Struktur noch tragen. Sobald sie nicht mehr tragen, wird Refresh zur aufwändigeren Notlösung — dann ist der Vollrelaunch die klügere Investition.",
+        a: "Vollrelaunch fast immer. Refresh ist wirtschaftlicher, solange technische Basis und Struktur noch tragen. Sobald sie nicht mehr tragen, wird Refresh zur aufwändigeren Notlösung, dann ist der Vollrelaunch die klügere Investition.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -612,12 +612,12 @@ export const guides: GuidePage[] = [
     slug: "sichtbarkeit-bei-google-verbessern",
     metaTitle: "Bei Google sichtbar werden: Realistischer Plan in 12 Wochen | Fylu",
     metaDescription:
-      "So werden Sie bei Google sichtbar: die drei SEO-Achsen und ein realistischer 12-Wochen-Plan für Aufbau — ohne Tricks, ohne Blackbox.",
+      "So werden Sie bei Google sichtbar: die drei SEO-Achsen und ein realistischer 12-Wochen-Plan für Aufbau, ohne Tricks, ohne Blackbox.",
     h1: "Bei Google sichtbar werden. Ein realistischer 12-Wochen-Plan.",
     shortAnswer:
       "Sichtbarkeit entsteht aus drei Achsen: substanzieller Content, sauberer Technik, Domain-Vertrauen. In 12 Wochen lässt sich eine solide Basis aufbauen; erste sichtbare Rankings folgen typischerweise nach drei bis sechs Monaten, stabile Positionen nach 9 bis 18 Monaten.",
     intro:
-      "„Wie werde ich bei Google sichtbar?“ ist die häufigste SEO-Frage — und wird am häufigsten mit vagen Antworten bedient. Dieser Artikel gibt einen realistischen 12-Wochen-Aufbauplan, mit klarer Erwartung, was in dieser Zeit machbar ist und was länger braucht.",
+      "„Wie werde ich bei Google sichtbar?“ ist die häufigste SEO-Frage, und wird am häufigsten mit vagen Antworten bedient. Dieser Artikel gibt einen realistischen 12-Wochen-Aufbauplan, mit klarer Erwartung, was in dieser Zeit machbar ist und was länger braucht.",
     sections: [
       {
         title: "Was Google tatsächlich rankt",
@@ -629,11 +629,11 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was in 12 Wochen realistisch machbar ist",
-        text: "Foundation komplett: technische Basis auf sauberem Stand, Meta-Optimierung aller Kern-URLs, Google-Unternehmensprofil professionell aufgesetzt, drei bis fünf substanzielle Landing-Pages neu gebaut oder überarbeitet, ein Content-Cluster begonnen. Sichtbare Rankings noch selten — Wirkungslatenz drei bis sechs Monate — aber Basis für alles Weitere.",
+        text: "Foundation komplett: technische Basis auf sauberem Stand, Meta-Optimierung aller Kern-URLs, Google-Unternehmensprofil professionell aufgesetzt, drei bis fünf substanzielle Landing-Pages neu gebaut oder überarbeitet, ein Content-Cluster begonnen. Sichtbare Rankings noch selten, Wirkungslatenz drei bis sechs Monate, aber Basis für alles Weitere.",
       },
       {
         title: "Was länger dauert",
-        text: "Backlink-Aufbau, Domain-Vertrauen, Etablierung in kompetitiven Suchen. Wer in einem umkämpften Markt oben ranken will, arbeitet über 12 bis 24 Monate systematisch — mit Content, Fach-Publikationen, Partner-Verlinkungen, Presse. SEO ist ein langsam, aber verlässlich wachsender Vermögenswert.",
+        text: "Backlink-Aufbau, Domain-Vertrauen, Etablierung in kompetitiven Suchen. Wer in einem umkämpften Markt oben ranken will, arbeitet über 12 bis 24 Monate systematisch, mit Content, Fach-Publikationen, Partner-Verlinkungen, Presse. SEO ist ein langsam, aber verlässlich wachsender Vermögenswert.",
       },
     ],
     process: [
@@ -672,7 +672,7 @@ export const guides: GuidePage[] = [
       href: "/tools/seo-check",
       label: "SEO-Check starten",
       reason:
-        "Prüft in unter 15 Sekunden, wo Ihre Website in den drei SEO-Achsen aktuell steht — als Ausgangspunkt für einen realistischen Aufbauplan.",
+        "Prüft in unter 15 Sekunden, wo Ihre Website in den drei SEO-Achsen aktuell steht, als Ausgangspunkt für einen realistischen Aufbauplan.",
     },
     serviceLinks: [
       {
@@ -695,11 +695,11 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Kann ich mit SEO alleine Kunden gewinnen?",
-        a: "Ja — mittelfristig sogar sehr zuverlässig. Kurzfristig sind Google Ads schneller. Die Kombination beider (SEO als langfristiger Vermögenswert, Ads als kurzfristiger Beschleuniger) ist meist die wirtschaftlichste Strategie.",
+        a: "Ja, mittelfristig sogar sehr zuverlässig. Kurzfristig sind Google Ads schneller. Die Kombination beider (SEO als langfristiger Vermögenswert, Ads als kurzfristiger Beschleuniger) ist meist die wirtschaftlichste Strategie.",
       },
       {
         q: "Was passiert, wenn ich SEO-Arbeit unterbreche?",
-        a: "Nicht viel im ersten Halbjahr — bestehende Rankings bleiben meist stabil, solange die technische Basis stimmt. Nach 12 Monaten ohne Content-Pflege setzt langsamer Erosionsprozess ein. Wettbewerb rankt neuer, aktueller Content besser.",
+        a: "Nicht viel im ersten Halbjahr, bestehende Rankings bleiben meist stabil, solange die technische Basis stimmt. Nach 12 Monaten ohne Content-Pflege setzt langsamer Erosionsprozess ein. Wettbewerb rankt neuer, aktueller Content besser.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -709,12 +709,12 @@ export const guides: GuidePage[] = [
     slug: "wie-lange-dauert-eine-website",
     metaTitle: "Wie lange dauert eine Website? Zeitpläne je Projektklasse | Fylu",
     metaDescription:
-      "Wie lange dauert eine neue Website wirklich? Realistische Zeitpläne für kompakte, mittlere und individuelle Vorhaben — plus die häufigsten Verzögerungs-Fallen.",
+      "Wie lange dauert eine neue Website wirklich? Realistische Zeitpläne für kompakte, mittlere und individuelle Vorhaben, plus die häufigsten Verzögerungs-Fallen.",
     h1: "Wie lange dauert eine neue Website? Realistische Zeitpläne je Projektklasse.",
     shortAnswer:
-      "Kompakter Auftritt (3 bis 5 Seiten): 2 bis 4 Wochen. Vollständige Studio-Website (6 bis 12 Seiten): 4 bis 8 Wochen. Individueller Auftritt mit Sonderfunktionen: 8 bis 16 Wochen. Die tatsächliche Dauer hängt fast immer stärker von Ihrer Rolle als Auftraggeber ab als von der Umsetzung.",
+      "Kompakter Auftritt (3 bis 5 Seiten): 2 bis 4 Wochen. Vollständige Firmenwebsite (6 bis 12 Seiten): 4 bis 8 Wochen. Individueller Auftritt mit Sonderfunktionen: 8 bis 16 Wochen. Die tatsächliche Dauer hängt fast immer stärker von Ihrer Rolle als Auftraggeber ab als von der Umsetzung.",
     intro:
-      "Fast alle Website-Projekte sind früher liefer bar als die Auftraggeber denken — und dauern trotzdem länger als angekündigt. Der Grund liegt selten in der Umsetzung, sondern in Feedback-Zyklen, Content-Bereitstellung und Entscheidungswegen. Wer die Dynamik versteht, plant realistisch.",
+      "Fast alle Website-Projekte sind früher liefer bar als die Auftraggeber denken, und dauern trotzdem länger als angekündigt. Der Grund liegt selten in der Umsetzung, sondern in Feedback-Zyklen, Content-Bereitstellung und Entscheidungswegen. Wer die Dynamik versteht, plant realistisch.",
     sections: [
       {
         title: "Was die tatsächliche Dauer beeinflusst",
@@ -722,7 +722,7 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Ihre Rolle als Auftraggeber",
-        text: "Feedback-Zyklen sind der wichtigste Zeitfaktor. Wer innerhalb von 24 bis 48 Stunden zurückgibt, erlebt Projekte, die zügig durchlaufen. Wer eine Woche pro Feedback-Runde braucht, verlängert das Projekt um Wochen — bei üblichen fünf bis acht Iterationen sind das schnell zwei zusätzliche Monate.",
+        text: "Feedback-Zyklen sind der wichtigste Zeitfaktor. Wer innerhalb von 24 bis 48 Stunden zurückgibt, erlebt Projekte, die zügig durchlaufen. Wer eine Woche pro Feedback-Runde braucht, verlängert das Projekt um Wochen, bei üblichen fünf bis acht Iterationen sind das schnell zwei zusätzliche Monate.",
       },
       {
         title: "Typische Verzögerungs-Fallen",
@@ -730,7 +730,7 @@ export const guides: GuidePage[] = [
       },
       {
         title: "Was Sie tun können, um schnell zu bleiben",
-        text: "Content-Verantwortung vor Projektstart klären. Feedback-Fenster in den ersten Wochen blocken. Interne Freigeber früh benennen. Bei Zusatzwünschen bewusst entscheiden zwischen „jetzt einbauen“ und „nach Live-Gang“. Und: dem Studio vertrauen, wenn es zu inhaltlicher Fokussierung rät — die häufigste Verzögerung ist die Frage „müssen wir das nicht auch noch mit rein?“",
+        text: "Content-Verantwortung vor Projektstart klären. Feedback-Fenster in den ersten Wochen blocken. Interne Freigeber früh benennen. Bei Zusatzwünschen bewusst entscheiden zwischen „jetzt einbauen“ und „nach Live-Gang“. Und: der Agentur vertrauen, wenn sie zu inhaltlicher Fokussierung rät. Die häufigste Verzögerung ist die Frage „müssen wir das nicht auch noch mit rein?“",
       },
     ],
     process: [
@@ -769,7 +769,7 @@ export const guides: GuidePage[] = [
       href: "/buchen",
       label: "Vorgespräch buchen",
       reason:
-        "Rahmen und Zeitplan für Ihr konkretes Vorhaben — in einem persönlichen Fünfzehn-Minuten-Gespräch mit dem Studio-Lead.",
+        "Rahmen und Zeitplan für Ihr konkretes Vorhaben in einem persönlichen Fünfzehn-Minuten-Gespräch mit Ihrem Ansprechpartner.",
     },
     serviceLinks: [
       {
@@ -780,9 +780,9 @@ export const guides: GuidePage[] = [
       },
       {
         href: "/webdesign-saarland",
-        label: "Editorial Webdesign aus dem Saarland",
+        label: "Webdesign aus dem Saarland",
         reason:
-          "Direkte Führung durch den Studio-Lead statt Account-Manager-Kette. Feedback-Zyklen bleiben kurz, Entscheidungen fallen ohne interne Freigabeschleifen.",
+          "Direkte Verantwortung Ihres Ansprechpartners statt Account-Manager-Kette. Feedback-Zyklen bleiben kurz, Entscheidungen fallen ohne interne Freigabeschleifen.",
       },
     ],
     faqs: [
@@ -796,7 +796,7 @@ export const guides: GuidePage[] = [
       },
       {
         q: "Verlängern sich Zeitpläne oft?",
-        a: "Fast immer — meist wegen Content-Verzögerungen auf Auftraggeberseite oder wegen wachsendem Umfang während der Umsetzung. Ein gutes Studio macht diese Faktoren transparent und rechnet Konsequenzen ehrlich in Woche 1 durch.",
+        a: "Fast immer. Meist wegen Content-Verzögerungen auf Auftraggeberseite oder wegen wachsendem Umfang während der Umsetzung. Eine gute Agentur macht diese Faktoren transparent und rechnet Konsequenzen ehrlich in Woche 1 durch.",
       },
     ],
     publishedAt: "2026-08-28",

@@ -5,12 +5,12 @@ import FadeInSection from '@/components/animated/FadeInSection';
 
 const faqs = [
   {
-    q: 'Was ist GEO — Generative Engine Optimization?',
+    q: 'Was ist GEO (Generative Engine Optimization)?',
     a: 'GEO ist die gezielte Aufbereitung einer Website, damit sie von KI-Suchsystemen wie ChatGPT Search, Perplexity, Google AI Overviews und Microsoft Copilot als Quelle erkannt, zitiert und empfohlen wird. Anders als klassisches SEO zählt hier weniger die Ranking-Position und mehr die Zitierbarkeit einzelner Absätze.',
   },
   {
     q: 'Ersetzt GEO klassisches SEO?',
-    a: 'Nein. GEO baut auf einer sauberen SEO-Foundation auf. Ohne indexierbare Seiten, saubere Struktur und lesbare Inhalte findet auch keine KI etwas. GEO ist eine Erweiterung — kein Ersatz.',
+    a: 'Nein. GEO baut auf einer sauberen SEO-Foundation auf. Ohne indexierbare Seiten, saubere Struktur und lesbare Inhalte findet auch keine KI etwas. GEO ist eine Erweiterung, kein Ersatz.',
   },
   {
     q: 'Für welche KI-Systeme optimiert Fylu?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'Woran erkennt man Zitierbarkeit?',
-    a: 'An standalone geschriebenen Absätzen, konkreten Zahlen mit Quelle, definierten Entitäten, aktuellen Datumsangaben und einer Struktur, die einzelne Passagen ohne Kontext verständlich macht. Wir schreiben nicht für Modelle — wir schreiben so, dass Modelle wie Menschen den Sinn ohne zusätzliche Recherche greifen können.',
+    a: 'An standalone geschriebenen Absätzen, konkreten Zahlen mit Quelle, definierten Entitäten, aktuellen Datumsangaben und einer Struktur, die einzelne Passagen ohne Kontext verständlich macht. Wir schreiben nicht für Modelle, sondern so, dass Modelle wie Menschen den Sinn ohne zusätzliche Recherche greifen können.',
   },
   {
     q: 'Wie messen wir GEO-Erfolg?',
@@ -26,11 +26,11 @@ const faqs = [
   },
   {
     q: 'Braucht meine Website eine llms.txt?',
-    a: 'Sie hilft — vor allem für Modelle, die dieses Format lesen. Für Googles eigene KI-Features ist llms.txt aktuell nicht relevant. Für Perplexity und einige andere Systeme ist eine gut gepflegte llms.txt ein günstiger Vorteil.',
+    a: 'Sie hilft, vor allem für Modelle, die dieses Format lesen. Für Googles eigene KI-Features ist llms.txt aktuell nicht relevant. Für Perplexity und einige andere Systeme ist eine gut gepflegte llms.txt ein günstiger Vorteil.',
   },
   {
     q: 'Wie lange dauert es, bis GEO wirkt?',
-    a: 'Erste Zitate sind bei gut aufgestellten Seiten in wenigen Wochen sichtbar. Aufbau von Share of Voice gegen etablierte Wettbewerber braucht drei bis sechs Monate — analog zu klassischer SEO, teils schneller wenn die Foundation stimmt.',
+    a: 'Erste Zitate sind bei gut aufgestellten Seiten in wenigen Wochen sichtbar. Aufbau von Share of Voice gegen etablierte Wettbewerber braucht drei bis sechs Monate, analog zu klassischer SEO und teils schneller, wenn die Foundation stimmt.',
   },
 ];
 
@@ -103,7 +103,7 @@ export default function GeoSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             '@id': 'https://www.fylumarketing.de/geo-saarland#service',
-            name: 'GEO Saarland — Generative Engine Optimization',
+            name: 'GEO Saarland · Generative Engine Optimization',
             description:
               'Sichtbarkeit in KI-Suchsystemen: ChatGPT Search, Perplexity, Google AI Overviews, Copilot. Foundation, Content-Aufbau und Messung aus Saarlouis.',
             serviceType: 'Generative Engine Optimization',
@@ -117,12 +117,6 @@ export default function GeoSaarlandPage() {
               '@type': 'Offer',
               availability: 'https://schema.org/InStock',
               url: 'https://www.fylumarketing.de/buchen',
-              priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description:
-                  'Foundation, Content-Aufbau und Messung werden je Ebene transparent kalkuliert. Keine monatliche Grundgebühr.',
-              },
             },
           }),
         }}
@@ -201,7 +195,7 @@ export default function GeoSaarlandPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · KI-Sichtbarkeit</span>
+              <span>GEO · KI-Sichtbarkeit</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
@@ -251,7 +245,7 @@ export default function GeoSaarlandPage() {
               </span>
             </div>
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Klienten fragen längst KI —{' '}
+              Kunden fragen längst KI,{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                 bevor sie Google öffnen.
               </span>
@@ -260,7 +254,7 @@ export default function GeoSaarlandPage() {
           <FadeInSection delay={0.08}>
             <div className="prose prose-lg prose-stone max-w-none mt-10">
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
-                „Wer macht gutes Webdesign im Saarland?“ — solche Prompts stellen
+                „Wer macht gutes Webdesign im Saarland?“ Solche Prompts stellen
                 Entscheider heute in ChatGPT, Perplexity oder direkt in Googles
                 AI-Antworten. Was das Modell dort antwortet, entscheidet, ob Sie in
                 die engere Auswahl kommen. Klassisches SEO reicht nicht mehr aus,
@@ -268,10 +262,10 @@ export default function GeoSaarlandPage() {
                 stattfinden.
               </p>
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
-                GEO bei Fylu ist kein zusätzlicher Trick, sondern eine saubere
-                Erweiterung der SEO-Foundation. Wir gestalten Inhalte so, dass sie
-                für KI-Systeme extrahierbar sind. Wir setzen strukturierte Daten,
-                die tatsächlich gelesen werden. Und wir messen, was in den
+                GEO bei Fylu Marketing ist kein zusätzlicher Trick, sondern eine
+                saubere Erweiterung der SEO-Foundation. Wir gestalten Inhalte so,
+                dass sie für KI-Systeme extrahierbar sind. Wir setzen strukturierte
+                Daten, die tatsächlich gelesen werden. Und wir messen, was in den
                 relevanten Prompts passiert.
               </p>
             </div>
@@ -337,7 +331,7 @@ export default function GeoSaarlandPage() {
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Einzeln buchbar oder als abgestimmte Erweiterung Ihres Fylu-Auftritts.
+                Einzeln buchbar oder als abgestimmte Ergänzung zu Ihrem Fylu-Auftritt.
               </p>
             </div>
           </FadeInSection>

@@ -34,7 +34,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Klienten', href: '/#klienten' },
     { label: 'Prozess', href: '/methodik' },
-    { label: 'Studio', href: '/team' },
+    { label: 'Über mich', href: '/team' },
   ];
 
   return (
@@ -59,15 +59,15 @@ export default function Navbar() {
             >
               <Image
                 src="/logo-fylu.webp"
-                alt="Fylu Webdesign Saarland – Logo"
+                alt="Fylu Marketing Saarland – Logo"
                 width={120}
                 height={40}
                 priority
                 className="h-9 w-auto"
               />
               <span className="hidden sm:flex items-center gap-1.5 text-[10px] uppercase tracking-[0.22em] text-stone-400 font-medium border-l border-stone-200/70 pl-2.5">
-                <span className="font-display italic normal-case text-[13px] tracking-normal text-stone-500 group-hover:text-cyan-700 transition-colors">
-                  Studio
+                <span className="font-display normal-case text-[13px] tracking-normal text-stone-500 group-hover:text-cyan-700 transition-colors">
+                  Marketing
                 </span>
                 <span className="text-stone-300">·</span>
                 <span>Saarland</span>

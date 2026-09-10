@@ -34,17 +34,17 @@ export const metadata: Metadata = {
     default: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
     template: "%s | Fylu Marketing",
   },
-  description: "Editorial-Studio aus Saarlouis. Wir bauen Marken, die wachsen — mit Design, SEO, GEO, SEA und langfristiger Partnerschaft. Keine monatliche Grundgebühr.",
+  description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Marketing Saarlouis",
-  publisher: "Fylu",
+  publisher: "Fylu Marketing",
   metadataBase: new URL("https://www.fylumarketing.de"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
-    description: "Editorial-Studio aus Saarlouis. Marken, die wachsen — Design, SEO, GEO, SEA. Langfristige Partnerschaft, keine monatliche Grundgebühr.",
+    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase — von der ersten Präsenz bis zur Skalierung.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
-    description: "Editorial-Studio aus Saarlouis. Marken, die wachsen — Design, SEO, GEO, SEA. Langfristige Partnerschaft, keine monatliche Grundgebühr.",
+    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase.",
     images: ["/herob.png"],
   },
   keywords: [
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   verification: {
     google: "Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU",
   },
-  category: "Editorial Webdesign Studio",
+  category: "Webdesign & Online-Marketing Agentur",
 };
 
 export default function RootLayout({
@@ -108,11 +108,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": ["ProfessionalService", "LocalBusiness", "WebDesignCompany"],
               "@id": "https://www.fylumarketing.de/#organization",
-              name: "Fylu Marketing – Editorial Webdesign Saarland",
+              name: "Fylu Marketing – Webdesign, SEO & Software aus dem Saarland",
               alternateName: "Fylu",
-              legalName: "Fylu – Fynn Schulz",
+              legalName: "Fylu Marketing – Fynn Schulz",
               description:
-                "Fylu ist ein Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites, kuratierte SEO- und Google-Ads-Erweiterungen sowie Software- und App-Entwicklung. Bewusst begrenzt auf zwölf Klienten pro Jahr — geführt aus dem Saarland für Häuser in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und im gesamten Saarland sowie deutschlandweit.",
+                "Fylu Marketing ist eine Agentur aus Saarlouis für Website, SEO, Google Ads und Softwareentwicklung. Wir helfen Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren — im Saarland, in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und deutschlandweit.",
               url: "https://www.fylumarketing.de",
               logo: {
                 "@type": "ImageObject",
@@ -128,12 +128,12 @@ export default function RootLayout({
                 "@type": "Person",
                 "@id": "https://www.fylumarketing.de/#fynn-schulz",
                 name: "Fynn Schulz",
-                jobTitle: "Studio-Lead & Editorial Webdesigner",
+                jobTitle: "Gründer & Ansprechpartner",
                 worksFor: { "@id": "https://www.fylumarketing.de/#organization" },
                 description:
-                  "Studio-Lead von Fylu Marketing in Saarlouis. Spezialisiert auf editorial gestaltete Websites für hochwertige, etablierte Unternehmen mit klarem Conversion-Fokus. Kombiniert Design-, SEO- und Software-Kompetenz aus einer Hand.",
+                  "Gründer und Ansprechpartner von Fylu Marketing in Saarlouis. Verantwortet Website, SEO, Google Ads und Softwareentwicklung für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung.",
                 knowsAbout: [
-                  "Editorial Webdesign",
+                  "Webdesign",
                   "Conversion-Analyse",
                   "Suchmaschinenoptimierung (SEO)",
                   "Local SEO",
@@ -293,9 +293,9 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       "@id": "https://www.fylumarketing.de/#service-webdesign",
-                      name: "Editorial Webdesign & Website-Erstellung",
+                      name: "Webdesign & Website-Erstellung",
                       description:
-                        "Individuell gestaltete, technisch moderne Websites (Next.js, React, TypeScript) für etablierte, hochwertige Unternehmen. Drei Projektklassen: Signature, Atelier, Maison. Ohne monatliche Grundgebühr.",
+                        "Individuell gestaltete, technisch moderne Websites (Next.js, React, TypeScript) für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung. Keine monatliche Grundgebühr.",
                       serviceType: "Webdesign",
                       provider: { "@id": "https://www.fylumarketing.de/#organization" },
                       areaServed: [
@@ -358,7 +358,7 @@ export default function RootLayout({
                   },
                 ],
               },
-              slogan: "Editorial Webdesign aus dem Saarland, mit einer Handschrift, die bleibt.",
+              slogan: "Website, SEO und Software aus dem Saarland — für Unternehmen jeder Phase.",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5.0",
@@ -377,9 +377,9 @@ export default function RootLayout({
               "@type": "WebSite",
               "@id": "https://www.fylumarketing.de/#website",
               url: "https://www.fylumarketing.de",
-              name: "Fylu Marketing · Editorial Webdesign Saarland",
+              name: "Fylu Marketing · Webdesign, SEO & Software Saarland",
               description:
-                "Editorial gestaltete Websites, kuratierte SEO- und Ads-Erweiterungen aus einem Boutique-Studio in Saarlouis. Zwölf Klienten pro Jahr.",
+                "Website, SEO, Google Ads und Software aus Saarlouis. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.",
               publisher: { "@id": "https://www.fylumarketing.de/#organization" },
               inLanguage: "de-DE",
               about: [
@@ -393,7 +393,7 @@ export default function RootLayout({
               audience: {
                 "@type": "BusinessAudience",
                 audienceType:
-                  "Etablierte, hochwertige B2B-Unternehmen — Kanzleien, Steuerberater, Ärzte, Zahnärzte, Immobilienmakler, Photovoltaik-Anbieter, Gebäudereinigung, Industrie-Mittelstand, hochwertiges Handwerk.",
+                  "Unternehmen jeder Phase mit Bedarf an Online-Sichtbarkeit — Handwerk, Dienstleister, Kanzleien, Praxen, Steuerberater, Immobilienmakler, B2B-Mittelstand, Start-ups und etablierte Betriebe.",
               },
               potentialAction: {
                 "@type": "SearchAction",

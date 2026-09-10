@@ -3,32 +3,30 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FadeInSection from '@/components/animated/FadeInSection';
 
-const smoothEase = [0.22, 1, 0.36, 1] as const;
-
 const faqs = [
 	{
-		q: 'Was kostet eine Website bei Fylu?',
-		a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten. Auch ein schlanker Refresh der bestehenden Präsenz ist möglich.',
+		q: 'Was kostet eine Website bei Fylu Marketing?',
+		a: 'Jedes Projekt wird individuell auf Umfang, Zielsetzung und Funktionsbedarf zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch, transparent und ohne versteckte Kosten. Auch ein schlanker Refresh einer bestehenden Präsenz ist möglich.',
 	},
 	{
-		q: 'Wie lange dauert die Erstellung?',
-		a: 'Signature-Projekte in etwa zwei bis vier Wochen. Atelier und Maison vier bis sechs Wochen. Nach Live-Gang folgen bis zu sechs Monate Studio-Begleitung mit Iteration.',
+		q: 'Wie lange dauert die Umsetzung?',
+		a: 'Kompakte Auftritte sind in etwa zwei bis vier Wochen live. Umfangreichere Projekte mit mehr Seiten, Funktionen oder redaktioneller Arbeit dauern vier bis sechs Wochen. Der genaue Zeitrahmen wird nach dem Vorgespräch verbindlich festgelegt.',
 	},
 	{
 		q: 'Kann ich Inhalte selbst ändern?',
-		a: 'Ja, auf Wunsch richten wir ein Content-Management-System ein, mit dem Sie Texte und Bilder selbst aktualisieren können. Alternativ übernehmen wir Änderungen für Sie — schnell, unkompliziert und zu fairen Stundensätzen.',
+		a: 'Ja. Auf Wunsch richten wir ein Content-Management-System ein, mit dem Texte und Bilder selbst aktualisiert werden. Alternativ übernehmen wir Änderungen schnell und zu fairen Konditionen.',
 	},
 	{
-		q: 'Was brauche ich um loszulegen?',
-		a: 'Eigentlich nur 15 Minuten Ihrer Zeit für ein kurzes Gespräch. Wir brauchen ein Verständnis für Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Texte, Bilder und alles weitere können wir gemeinsam erarbeiten oder wir übernehmen die Erstellung für Sie.',
+		q: 'Was brauche ich, um loszulegen?',
+		a: 'Rund 15 Minuten für ein kurzes Gespräch. Wir brauchen ein Verständnis für Ihr Geschäft, Ihre Zielgruppe und Ihre Ziele. Texte, Bilder und weitere Inhalte können wir gemeinsam erarbeiten oder vollständig übernehmen.',
 	},
 	{
 		q: 'Ist ein Online-Shop möglich?',
-		a: 'Ja, wir können E-Commerce-Funktionalität in Ihre Website integrieren. Von einfachen Produktseiten bis zu vollständigen Online-Shops mit Warenkorb und Bezahlung — alles ist möglich. Sprechen Sie uns einfach an und wir finden die passende Lösung.',
+		a: 'Ja. Von einfachen Produktseiten bis zu vollständigen Shops mit Warenkorb, Bezahlung und Versand ist alles möglich. Die passende Lösung klären wir im Vorgespräch.',
 	},
 	{
 		q: 'Kümmern Sie sich auch um Hosting und Domain?',
-		a: 'Ja, wir kümmern uns um alles Technische. Domain-Registrierung, Hosting-Setup, SSL-Zertifikat, E-Mail-Einrichtung — Sie müssen sich um nichts kümmern. Je nach Paket sind 2 bis 4 Monate Hosting bereits inklusive.',
+		a: 'Ja. Wir übernehmen Domain-Registrierung, Hosting-Setup, SSL-Zertifikat und E-Mail-Einrichtung. Die technische Seite läuft vollständig über uns.',
 	},
 ];
 
@@ -59,7 +57,7 @@ export default function WebsiteErstellenLassenPage() {
 						'@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service',
 						name: 'Website erstellen lassen (Fylu Marketing)',
 						description:
-							'Individuell konzipierte, editorial gestaltete Website. Drei Projektklassen (Signature, Atelier, Maison) für kompakte, vollständige und individuelle Vorhaben. Transparente Konditionen, keine monatliche Grundgebühr.',
+							'Individuell konzipierte Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung.',
 						serviceType: 'Webdesign & Website-Erstellung',
 						url: 'https://www.fylumarketing.de/website-erstellen-lassen',
 						provider: { '@id': 'https://www.fylumarketing.de/#organization' },
@@ -67,17 +65,6 @@ export default function WebsiteErstellenLassenPage() {
 							{ '@type': 'State', name: 'Saarland' },
 							{ '@type': 'Country', name: 'Deutschland' },
 						],
-						offers: {
-							'@type': 'Offer',
-							availability: 'https://schema.org/InStock',
-							url: 'https://www.fylumarketing.de/buchen',
-							priceSpecification: {
-								'@type': 'PriceSpecification',
-								priceCurrency: 'EUR',
-								description:
-									'Individuell kalkuliert nach Umfang, Design-Tiefe und Funktionsbedarf. Transparent im Vorgespräch.',
-							},
-						},
 					}),
 				}}
 			/>
@@ -91,7 +78,7 @@ export default function WebsiteErstellenLassenPage() {
 						url: 'https://www.fylumarketing.de/website-erstellen-lassen',
 						name: 'Website erstellen lassen · Fylu Marketing',
 						description:
-							'Website erstellen lassen aus dem Fylu Marketing in Saarlouis: editorial gestaltet, individuell konzipiert, transparent kalkuliert.',
+							'Website erstellen lassen bei Fylu Marketing aus Saarlouis. Individuell konzipiert, technisch sauber, auf Conversion ausgelegt.',
 						inLanguage: 'de-DE',
 						isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
 						mainEntity: { '@id': 'https://www.fylumarketing.de/website-erstellen-lassen#service' },
@@ -108,7 +95,9 @@ export default function WebsiteErstellenLassenPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						'@context': 'https://schema.org',
-						'@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
+						'@type': 'FAQPage',
+						inLanguage: 'de-DE',
+						speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
 						mainEntity: faqs.map((f) => ({
 							'@type': 'Question',
 							name: f.q,
@@ -140,20 +129,18 @@ export default function WebsiteErstellenLassenPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.08}>
 						<h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-							Website erstellen lassen —{' '}
+							Website erstellen lassen.{' '}
 							<span className="font-display italic font-normal text-[var(--cyan-deep)]">
-								editorial statt Template.
+								Aus Besuchern werden Kunden.
 							</span>
 						</h1>
 					</FadeInSection>
 					<FadeInSection delay={0.16}>
 						<p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-							Ein Fylu-Auftritt ist keine Baukasten-Seite. Als{' '}
-							<Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Editorial-Studio aus Saarlouis</Link>{' '}
-							bauen wir Websites mit Handschrift — für Selbstständige,{' '}
-							<Link href="/webdesign-handwerk" className="text-cyan-700 font-medium hover:underline underline-offset-4">Handwerker</Link>,
-							Kanzleien, Praxen und Dienstleister, die einen Auftritt mit
-							Substanz suchen.
+							Fylu Marketing baut Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung. Als{' '}
+							<Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Agentur aus Saarlouis</Link>{' '}
+							arbeiten wir mit Selbstständigen,{' '}
+							<Link href="/webdesign-handwerk" className="text-cyan-700 font-medium hover:underline underline-offset-4">Handwerkern</Link>, Kanzleien, Praxen und Dienstleistern, die ihre Online-Präsenz messbar besser aufstellen wollen.
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={0.24}>
@@ -166,10 +153,10 @@ export default function WebsiteErstellenLassenPage() {
 								<span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
 							</Link>
 							<Link
-								href="/webdesign-saarland"
+								href="/methodik"
 								className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
 							>
-								<span>Alle Pakete</span>
+								<span>Unsere Methodik</span>
 							</Link>
 						</div>
 					</FadeInSection>
@@ -181,62 +168,32 @@ export default function WebsiteErstellenLassenPage() {
 				<div className="max-w-4xl mx-auto">
 					<FadeInSection>
 						<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-							Warum Sie Ihre Website professionell erstellen lassen sollten
+							Warum eine professionelle Website
 						</h2>
 					</FadeInSection>
 					<FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Vielleicht haben Sie mit dem Gedanken gespielt, Ihre Website selbst zu bauen — mit Wix, Jimdo oder einem WordPress-Theme. Das klingt verlockend: wenig Kosten, alles selbst in der Hand. Doch die Realität sieht anders aus. Baukasten-Websites sind bei Google praktisch unsichtbar. Die Ladezeiten sind langsam, die SEO-Möglichkeiten stark eingeschränkt und das Design sieht wie tausend andere Seiten aus. Was anfangs günstig wirkt, wird langfristig teurer: Monatsgebühren summieren sich, Premium-Features kosten extra und die Zeit, die Sie investieren, fehlt Ihrem Kerngeschäft.
+							Baukasten-Systeme wie Wix, Jimdo oder generische WordPress-Themes wirken zunächst günstig. In der Praxis kosten sie Zeit, Ranking und Umsatz. Ladezeiten sind langsam, technische SEO-Möglichkeiten begrenzt, und das Design gleicht sich mit tausenden anderen Seiten. Monatliche Gebühren, Premium-Add-ons und der eigene Zeitaufwand summieren sich, während der Nutzen für das Kerngeschäft ausbleibt.
 						</p>
 						<p>
-							Eine professionell erstellte Website hingegen ist eine Investition, die sich bezahlt macht. Sie wird für Ihr Unternehmen maßgeschneidert, rankt bei Google, lädt blitzschnell und verwandelt Besucher in Kunden. Statt Stunden mit einem Baukasten zu kämpfen, investieren Sie 15 Minuten in ein Gespräch mit uns — und erhalten eine Website, die tatsächlich funktioniert. Unsere Kunden berichten regelmäßig von einer Verdopplung bis Vervierfachung ihrer Online-Anfragen nach dem Website-Relaunch.
+							Eine professionell erstellte Website ist eine Investition, die sich rechnet. Sie ist auf Ihr Unternehmen zugeschnitten, rankt bei Google, lädt schnell und ist auf Conversion ausgelegt. Statt Stunden im Baukasten investieren Sie 15 Minuten in ein Gespräch und erhalten eine Website, die tatsächlich Anfragen bringt. Unsere Kunden berichten regelmäßig von einer Verdopplung bis Vervierfachung ihrer Online-Anfragen nach dem Relaunch.
 						</p>
 					</FadeInSection>
 				</div>
 			</section>
 
-			{/* Kosten */}
+			{/* Prozess */}
 			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-						Was kostet es eine Website erstellen zu lassen?
-					</h2>
-					<div className="prose prose-lg prose-stone max-w-none mb-10">
-						<p>
-							Transparenz ist uns wichtig. Deshalb gibt es bei uns keine versteckten Kosten und keine bösen Überraschungen. Der Preis Ihrer Website hängt von drei Faktoren ab: der Anzahl der Seiten, den gewünschten Funktionen und dem Umfang der SEO-Optimierung. Hier ist ein ehrlicher Überblick unserer Pakete:
-						</p>
-					</div>
-					<div className="grid md:grid-cols-3 gap-6 mb-10">
-						{[
-							{ name: 'Basismodell', price: 'Auf Anfrage', desc: 'Bis 3 Seiten, mobiloptimiert, SEO-Basis, Kontaktformular, 1 Korrekturschleife. Perfekt für den Start.' },
-							{ name: 'Fortgeschritten', price: 'Auf Anfrage', desc: 'Bis 6 Seiten, verkaufsoptimiert, erweiterte SEO, Google Business, 2 Monate Hosting inklusive.', highlight: true },
-							{ name: 'Professionell', price: 'Auf Anfrage', desc: 'Unbegrenzte Seiten, Premium-Design, intensives SEO, Conversion-Tuning, 4 Monate Hosting inklusive.' },
-						].map((pkg, i) => (
-							<div key={i} className={`p-6 rounded-xl border ${pkg.highlight ? 'border-cyan-500 bg-cyan-50' : 'border-stone-200 bg-white'}`}>
-								<h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
-								<p className="text-3xl font-extrabold text-cyan-600 mb-3">{pkg.price}</p>
-								<p className="text-stone-600 text-sm">{pkg.desc}</p>
-							</div>
-						))}
-					</div>
-					<p className="text-stone-600">
-						Individuelle Lösungen mit E-Commerce, Buchungssystemen oder besonderen Anforderungen erhalten ein maßgeschneidertes Angebot. <Link href="/buchen" className="text-cyan-500 font-semibold hover:text-cyan-700">Alle Details ansehen.</Link>
-					</p>
-				</div>
-			</section>
-
-			{/* Prozess */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
-				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
-						Unser Prozess — In 4 Schritten zu Ihrer neuen Website
+						Unser Prozess. In 4 Schritten zur neuen Website.
 					</h2>
 					<div className="space-y-10">
 						{[
-							{ title: 'Kurzes Briefing', text: 'In einem 15-minütigen Gespräch lernen wir uns kennen. Wir verstehen Ihr Geschäft, Ihre Zielgruppe und Ihre Wünsche. Kein Papierkram, kein Aufwand für Sie.' },
-							{ title: 'Kostenloser Entwurf in 24h', text: 'Innerhalb eines Tages erhalten Sie einen ersten Design-Entwurf — kostenlos und unverbindlich. So sehen Sie sofort, wie Ihre neue Website aussehen könnte, bevor Sie sich entscheiden.' },
-							{ title: 'Umsetzung & Optimierung', text: 'Nach Ihrem Feedback bauen wir die komplette Website: responsives Design, schnelle Ladezeiten, SEO-Optimierung, Rechtstexte, Kontaktformular — alles inklusive. Zeitrahmen: 2 bis 3 Wochen.' },
-							{ title: 'Launch & Support', text: 'Ihre Website geht live. Wir kümmern uns um Hosting, Domain und alles Technische. Und danach? Bleiben wir Ihr Ansprechpartner für Änderungen und Updates.' },
+							{ title: 'Kurzes Briefing', text: 'In einem 15-minütigen Gespräch lernen wir Ihr Geschäft, Ihre Zielgruppe und Ihre Ziele kennen. Kein Papierkram, kein Aufwand.' },
+							{ title: 'Kostenloser Entwurf in 24h', text: 'Innerhalb eines Tages erhalten Sie einen ersten Design-Entwurf, kostenlos und unverbindlich. Sie sehen sofort, wie Ihre neue Website aussehen kann, bevor Sie sich entscheiden.' },
+							{ title: 'Umsetzung und Optimierung', text: 'Nach Ihrem Feedback bauen wir die komplette Website: responsives Design, schnelle Ladezeiten, SEO-Optimierung, Rechtstexte, Kontaktformular. Zeitrahmen typischerweise 2 bis 4 Wochen.' },
+							{ title: 'Launch und Betreuung', text: 'Ihre Website geht live. Wir übernehmen Hosting, Domain und alles Technische. Danach bleiben wir Ansprechpartner für Änderungen, Updates und Weiterentwicklung.' },
 						].map((step, i) => (
 							<div key={i} className="relative pl-12">
 								<div className="absolute left-0 top-1 w-8 h-8 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-sm">{i + 1}</div>
@@ -249,42 +206,42 @@ export default function WebsiteErstellenLassenPage() {
 			</section>
 
 			{/* Was enthalten ist */}
-			<section className="py-20 md:py-28 px-6 bg-white">
+			<section className="py-20 md:py-28 px-6 bg-stone-50">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
 						Was in jeder Website enthalten ist
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Unabhängig vom gewählten Paket ist jede Website mit den wichtigsten Grundlagen ausgestattet: Responsive Design für perfekte Darstellung auf allen Geräten, <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">SEO-Grundoptimierung</Link> damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung für sichere Verbindungen, ein professionelles Kontaktformular für Anfragen, optimierte Ladezeiten unter 3 Sekunden und auf Wunsch Google Analytics Anbindung zur Erfolgsmessung. Für noch schnellere Ergebnisse empfehlen wir ergänzend <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads</Link>. Jede Website wird individuell für Ihr Unternehmen gestaltet — keine Templates, kein Einheitsbrei.
+							Unabhängig vom Umfang enthält jede Website die wichtigsten Grundlagen: responsives Design für saubere Darstellung auf allen Geräten, <Link href="/seo-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">SEO-Grundoptimierung</Link>, damit Google Ihre Seite findet, rechtssichere Texte für Impressum und Datenschutz, SSL-Verschlüsselung, ein professionelles Kontaktformular, Ladezeiten unter 3 Sekunden und auf Wunsch Google-Analytics-Anbindung zur Erfolgsmessung. Für schnellere Ergebnisse ergänzen wir bei Bedarf mit <Link href="/google-ads-saarland" className="text-cyan-600 font-semibold hover:text-cyan-700 underline-offset-2 hover:underline">Google Ads</Link>. Jede Website wird individuell für Ihr Unternehmen gestaltet, ohne Templates und ohne Einheitsbrei.
 						</p>
 					</div>
 				</div>
 			</section>
 
 			{/* Für wen */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
+			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
 						Für wen ist das richtig?
 					</h2>
 					<div className="prose prose-lg prose-stone max-w-none">
 						<p>
-							Unsere Websites sind ideal für Handwerker, die online Aufträge gewinnen wollen, für Ärzte und Therapeuten die neue Patienten ansprechen, für Restaurants und Cafés die Reservierungen steigern möchten, für Coaches und Berater die sich professionell positionieren wollen, für Einzelhändler die ihre lokale Sichtbarkeit erhöhen und für Dienstleister jeder Art, die eine professionelle Online-Präsenz brauchen. Kurz gesagt: Für jeden, der mit seiner Website Kunden gewinnen will — statt nur eine digitale Visitenkarte zu haben.
+							Unsere Websites eignen sich für Handwerksbetriebe, die online Aufträge gewinnen wollen, für Ärzte und Therapeuten, die neue Patienten ansprechen, für Kanzleien, die Mandate qualifizieren, für Coaches und Berater, die sich professionell positionieren, für Einzelhändler, die ihre lokale Sichtbarkeit erhöhen, und für Dienstleister jeder Art, die eine belastbare Online-Präsenz brauchen. Kurz gesagt: für Unternehmen jeder Phase, die mit ihrer Website tatsächlich Kunden gewinnen wollen, statt nur eine digitale Visitenkarte zu haben.
 						</p>
 					</div>
 				</div>
 			</section>
 
 			{/* FAQ */}
-			<section className="py-20 md:py-28 px-6 bg-white">
+			<section className="py-20 md:py-28 px-6 bg-stone-50">
 				<div className="max-w-4xl mx-auto">
 					<h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-12">
 						Häufige Fragen
 					</h2>
 					<div className="space-y-6">
 						{faqs.map((faq, i) => (
-							<FadeInSection key={i} delay={i * 0.06} className="bg-stone-50 p-6 rounded-xl border border-stone-200">
+							<FadeInSection key={i} delay={i * 0.06} className="bg-white p-6 rounded-xl border border-stone-200">
 								<h3 className="text-lg font-bold text-stone-900 mb-2">{faq.q}</h3>
 								<p className="text-stone-600 leading-relaxed">{faq.a}</p>
 							</FadeInSection>
@@ -294,17 +251,17 @@ export default function WebsiteErstellenLassenPage() {
 			</section>
 
 			{/* CTA */}
-			<section className="py-20 md:py-28 px-6 bg-stone-50">
+			<section className="py-20 md:py-28 px-6 bg-white">
 				<div className="max-w-3xl mx-auto text-center">
 					<div className="hairline-rule w-24 mx-auto mb-8" />
 					<h2 className="text-[2rem] md:text-[2.6rem] font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.05] mb-6">
-						Bereit für einen{' '}
+						Bereit für eine Website,{' '}
 						<span className="font-display italic font-normal text-[var(--cyan-deep)]">
-							Auftritt, der bleibt?
+							die Kunden bringt?
 						</span>
 					</h2>
 					<p className="text-lg text-stone-600 mb-8 leading-relaxed">
-						Fünfzehn Minuten Vorgespräch. Wir hören zu, bevor wir antworten.
+						Fünfzehn Minuten Vorgespräch. Wir hören zu, bevor wir konzipieren.
 					</p>
 					<Link
 						href="/buchen"
@@ -314,7 +271,9 @@ export default function WebsiteErstellenLassenPage() {
 						<span className="text-cyan-400">→</span>
 					</Link>
 					<div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-stone-500">
-						<Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Studio-Übersicht</Link>
+						<Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Webdesign Saarland</Link>
+						<span className="text-stone-300">·</span>
+						<Link href="/methodik" className="hover:text-cyan-700 transition-colors">Methodik</Link>
 						<span className="text-stone-300">·</span>
 						<Link href="/seo-saarland" className="hover:text-cyan-700 transition-colors">SEO</Link>
 						<span className="text-stone-300">·</span>

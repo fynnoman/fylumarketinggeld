@@ -5,28 +5,28 @@ import FadeInSection from '@/components/animated/FadeInSection';
 
 const faqs = [
   {
-    q: 'Was kostet ein Fylu-Auftritt im Saarland?',
-    a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Der endgültige Rahmen entsteht im Vorgespräch — transparent, ohne versteckte Kosten.',
+    q: 'Was kostet eine Website bei Fylu Marketing?',
+    a: 'Jedes Projekt wird individuell auf Umfang und Zielsetzung zugeschnitten. Den konkreten Rahmen klären wir transparent im Vorgespräch. Keine versteckten Kosten, keine monatliche Grundgebühr.',
   },
   {
     q: 'Wie lange dauert ein Projekt?',
-    a: 'Signature-Auftritte gehen in etwa zwei bis vier Wochen live. Atelier und Maison planen wir mit vier bis sechs Wochen. Nach Live-Gang folgen bis zu sechs Monate Studio-Begleitung.',
+    a: 'Ein kompakter Auftritt geht in etwa zwei bis vier Wochen live. Umfangreichere Websites planen wir mit vier bis sechs Wochen. Nach dem Launch begleiten wir euch weiter, so lange es Sinn ergibt.',
   },
   {
     q: 'Ist eine Fylu-Website mobil optimiert?',
-    a: 'Selbstverständlich. Jeder Auftritt wird mobile-first entworfen — auf die Rhythmisierung des Smartphones abgestimmt, dann für Tablet und Desktop erweitert. Auch aus SEO-Gründen unverhandelbar.',
+    a: 'Ja. Jede Seite wird mobile-first entwickelt und anschließend für Tablet und Desktop erweitert. Das ist Standard bei uns und aus SEO-Sicht ohnehin unverzichtbar.',
   },
   {
     q: 'Werde ich bei Google gefunden?',
-    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation. Für tiefere Sichtbarkeit gibt es die Add-Ons SEO Foundation, SEO Betreuung sowie Google Ads Setup — Konditionen individuell im Vorgespräch.',
+    a: 'Jede Website bekommt ein technisch sauberes SEO-Fundament. Für tiefergehende Sichtbarkeit bieten wir zusätzlich SEO-Betreuung und Google Ads. Konditionen individuell im Vorgespräch.',
   },
   {
     q: 'Was passiert nach dem Launch?',
-    a: 'Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig — Iteration, SEO, GEO, SEA, Reporting, Feinschliff, neue Landingpages. Keine monatliche Grundgebühr, ihr bucht Betreuung im Umfang, den euer Wachstum verlangt. Ihr entscheidet, wie lange wir zusammenarbeiten.',
+    a: 'Nach dem Launch fängt die eigentliche Arbeit an. Wir begleiten euch langfristig mit Iteration, SEO, GEO, SEA, Reporting und neuen Landingpages. Keine monatliche Grundgebühr. Ihr bucht Betreuung im Umfang, den euer Wachstum verlangt, und entscheidet, wie lange wir zusammenarbeiten.',
   },
   {
     q: 'Kann ich Inhalte selbst pflegen?',
-    a: 'Auf Wunsch. Wir richten redaktionelle Content-Systeme ein, in denen Sie Texte, Bilder und Kapitel selbst pflegen — ohne die editoriale Handschrift der Seite zu verlieren.',
+    a: 'Auf Wunsch richten wir ein Content-System ein, in dem ihr Texte, Bilder und ganze Sektionen selbst pflegen könnt, ohne die Qualität der Seite zu beeinträchtigen.',
   },
 ];
 
@@ -34,49 +34,49 @@ const chapters = [
   {
     ordinal: 'I',
     title: 'Vorgespräch',
-    body: 'Fünfzehn Minuten, in denen wir zuhören: Substanz Ihres Hauses, aktuelle Präsenz, Anspruch des Vorhabens.',
+    body: 'Fünfzehn Minuten. Wir hören zu: Was macht euer Unternehmen aus, wo steht ihr online, welches Ziel soll die neue Website erreichen.',
   },
   {
     ordinal: 'II',
-    title: 'Positionierung',
-    body: 'Rahmen, Verkaufsarchitektur, Content-Map. Kein Template — eine eigene Handschrift.',
+    title: 'Strategie',
+    body: 'Positionierung, Zielgruppen, Verkaufslogik und Content-Struktur. Kein Template, sondern eine Website, die zu eurem Unternehmen passt.',
   },
   {
     ordinal: 'III',
-    title: 'Werkbank',
-    body: 'Design und Umsetzung. Editoriale Typografie, technische SEO-Foundation, spürbare Rhythmisierung.',
+    title: 'Umsetzung',
+    body: 'Design und Entwicklung mit modernem Stack (Next.js, React, TypeScript). Klare Typografie, saubere Performance, technische SEO-Basis.',
   },
   {
     ordinal: 'IV',
     title: 'Sichtbarkeit',
-    body: 'Lokale Schärfung, Google-Profil und strukturierte Daten — Sichtbarkeit für Begriffe, die Klienten tatsächlich eingeben.',
+    body: 'Lokale und überregionale SEO-Basis, Google-Profil, strukturierte Daten. Sichtbarkeit für Suchbegriffe, die euch echte Anfragen bringen.',
   },
   {
     ordinal: 'V',
     title: 'Iteration',
-    body: 'Neunzig Tage Studio-Begleitung nach Live-Gang. Zeit für Substanz, nicht für Theorie.',
+    body: 'Nach dem Launch begleiten wir euch weiter. Anpassungen, neue Landingpages, laufende Optimierung — im Umfang, den euer Wachstum verlangt.',
   },
 ];
 
-const packages = [
+const leistungen = [
   {
     ordinal: 'I',
-    name: 'Signature',
-    positioning: 'Der stille Auftritt.',
-    body: 'Bis zu fünf editorial gestaltete Seiten, technische SEO-Basis, 60 Tage Betreuung. Für Häuser, die still nach vorne treten wollen.',
+    name: 'Neuer Auftritt',
+    positioning: 'Für Unternehmen, die zum ersten Mal online sichtbar werden.',
+    body: 'Kompakte, klar strukturierte Website mit allen relevanten Seiten. Technische SEO-Basis, mobile-first, sauberes Fundament für weiteres Wachstum.',
   },
   {
     ordinal: 'II',
-    name: 'Atelier',
-    positioning: 'Handschrift statt Vorlage.',
-    body: 'Bis zu zehn Seiten mit individueller Verkaufsarchitektur, lokales SEO-Framework, Google Business, 90 Tage Iteration.',
+    name: 'Relaunch',
+    positioning: 'Wenn die bestehende Seite nicht mehr trägt.',
+    body: 'Vollständiger Relaunch mit neuer Struktur, Verkaufslogik und moderner Umsetzung. Lokales SEO-Framework, Google Business, Redirects sauber gesetzt.',
     highlight: true,
   },
   {
     ordinal: 'III',
-    name: 'Maison',
-    positioning: 'Kein Auftritt. Ein Werk.',
-    body: 'Umfassende, maßgefertigte Website mit Redaktionssystem, SEO-Foundation für Skalierung und sechs Monaten Studio-Begleitung.',
+    name: 'Skalierung',
+    positioning: 'Für etablierte Unternehmen mit Wachstumszielen.',
+    body: 'Umfangreiche Website mit Redaktionssystem, mehrsprachiger Struktur bei Bedarf und SEO-Fundament, das für Skalierung ausgelegt ist. Laufende Betreuung nach Launch.',
   },
 ];
 
@@ -107,8 +107,9 @@ export default function WebdesignSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Fylu Marketing · Editorial Webdesign Saarland',
-            description: 'Boutique-Webdesign-Studio aus Saarlouis. Editorial gestaltete Websites. Zwölf Klienten pro Jahr.',
+            name: 'Fylu Marketing · Webdesign Saarland',
+            description:
+              'Marketing-Agentur aus Saarlouis. Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase im Saarland und deutschlandweit.',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -127,9 +128,9 @@ export default function WebdesignSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'Service',
             '@id': 'https://www.fylumarketing.de/webdesign-saarland#service',
-            name: 'Editorial Webdesign Saarland',
+            name: 'Webdesign Saarland',
             description:
-              'Editorial gestaltete Websites aus Saarlouis. Drei Projektklassen (Signature, Atelier, Maison). Individuell konzipiert, mit klarer Verkaufsarchitektur und modernem technischen Fundament (Next.js, React, TypeScript).',
+              'Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase: neuer Auftritt, Relaunch oder Skalierung. Moderner technischer Stack (Next.js, React, TypeScript), sauberes SEO-Fundament, langfristige Betreuung.',
             serviceType: 'Webdesign',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
             provider: { '@id': 'https://www.fylumarketing.de/#organization' },
@@ -137,17 +138,6 @@ export default function WebdesignSaarlandPage() {
               { '@type': 'State', name: 'Saarland' },
               { '@type': 'Country', name: 'Deutschland' },
             ],
-            offers: {
-              '@type': 'Offer',
-              availability: 'https://schema.org/InStock',
-              url: 'https://www.fylumarketing.de/buchen',
-              priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description:
-                  'Drei Projektklassen (Signature, Atelier, Maison). Kalkulation individuell im Vorgespräch, keine monatliche Grundgebühr.',
-              },
-            },
           }),
         }}
       />
@@ -159,13 +149,13 @@ export default function WebdesignSaarlandPage() {
             '@type': 'WebPage',
             '@id': 'https://www.fylumarketing.de/webdesign-saarland#webpage',
             url: 'https://www.fylumarketing.de/webdesign-saarland',
-            name: 'Webdesign Saarland · Editorial gestaltete Websites',
+            name: 'Webdesign Saarland · Websites, die aus Besuchern Kunden machen',
             description:
-              'Editorial gestaltete Websites aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit.',
+              'Webdesign aus Saarlouis für Unternehmen jeder Phase. Vom ersten Auftritt bis zur Skalierung.',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
             mainEntity: { '@id': 'https://www.fylumarketing.de/webdesign-saarland#service' },
-            about: { '@type': 'Thing', name: 'Editorial Webdesign' },
+            about: { '@type': 'Thing', name: 'Webdesign' },
             speakable: {
               '@type': 'SpeakableSpecification',
               cssSelector: ['h1', '[data-speakable]'],
@@ -228,25 +218,26 @@ export default function WebdesignSaarlandPage() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-500" />
               </span>
               <span className="text-[11px] font-medium tracking-[0.22em] uppercase text-stone-700">
-                Studio Saarlouis · 12 Klienten / Jahr · 3 Plätze 2026
+                Fylu Marketing · Saarlouis · Kapazität für 2026
               </span>
             </div>
           </FadeInSection>
 
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.8rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[0.98] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-              Webdesign Saarland — mit einer{' '}
+              Webdesign Saarland{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Handschrift, die bleibt.
+                für Unternehmen jeder Phase.
               </span>
             </h1>
           </FadeInSection>
 
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.15rem] text-stone-600 leading-relaxed max-w-2xl">
-              Fylu ist ein Boutique-Webdesign-Studio aus Saarlouis. Wir begleiten
-              zwölf Häuser pro Jahr — im Saarland, bundesweit und international.
-              Editorial gestaltete Auftritte mit Substanz. Kein Template, kein Fließband.
+              Wir bauen Websites, die aus Besuchern Kunden machen. Vom ersten
+              Auftritt bis zur Skalierung, im Saarland und deutschlandweit.
+              Fylu Marketing ist eure Agentur aus Saarlouis für sichtbare,
+              messbar wirksame Online-Präsenz.
             </p>
           </FadeInSection>
 
@@ -256,14 +247,14 @@ export default function WebdesignSaarlandPage() {
                 href="/buchen"
                 className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
               >
-                <span>Platz für 2026 prüfen</span>
+                <span>Vorgespräch buchen</span>
                 <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
               </Link>
               <Link
-                href="#pakete-saarland"
+                href="#leistungen-saarland"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                <span>Pakete ansehen</span>
+                <span>Leistungen ansehen</span>
               </Link>
             </div>
           </FadeInSection>
@@ -281,27 +272,25 @@ export default function WebdesignSaarlandPage() {
               </span>
             </div>
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Warum ein{' '}
+              Websites, die{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Boutique-Studio
-              </span>{' '}
-              statt einer Agentur?
+                messbar wirken.
+              </span>
             </h2>
           </FadeInSection>
           <FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none mt-10 leading-relaxed">
             <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
-              Ein Auftritt ist keine Nebensache. Er ist die stille Antwort auf eine
-              laute Frage: <em>Kann man diesem Haus vertrauen?</em> Über 75 % der
-              Nutzer beurteilen die Glaubwürdigkeit eines Unternehmens anhand
-              seines Auftritts. Ein Auftritt aus einem Template ist eine Antwort im
-              Chor. Ein Auftritt mit Handschrift ist eine eigene Stimme.
+              Über 75 Prozent der Nutzer beurteilen die Glaubwürdigkeit eines
+              Unternehmens anhand seiner Website. Eine Seite aus dem Baukasten
+              wirkt austauschbar. Eine Website, die klar strukturiert, schnell
+              und auf Conversion ausgelegt ist, bringt echte Anfragen.
             </p>
             <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
-              Fylu arbeitet mit einer bewusst kleinen Zahl an Klienten. Zwölf pro
-              Jahr. Direkter Draht zum Studio-Lead. Editoriale Gestaltung statt
-              Baukasten. Für Häuser vom saarländischen Handwerksbetrieb bis zum
-              internationalen SaaS-Haus — verbindend ist der Anspruch, digitale
-              Präsenz mit Substanz zu bauen, nicht mit Lautstärke.
+              Fylu Marketing arbeitet für Unternehmen in jeder Phase. Vom
+              regionalen Handwerksbetrieb, der zum ersten Mal online sichtbar
+              wird, bis zum wachsenden SaaS-Unternehmen, das skalieren will.
+              Direkter Ansprechpartner, moderner technischer Stack, klare
+              Kommunikation. Kein Fließband, kein Overhead.
             </p>
           </FadeInSection>
         </div>
@@ -318,9 +307,9 @@ export default function WebdesignSaarlandPage() {
               </span>
             </div>
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Fünf Kapitel — von der{' '}
+              Fünf Schritte{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Vorstellung bis zur Wirkung.
+                zur fertigen Website.
               </span>
             </h2>
           </FadeInSection>
@@ -331,7 +320,7 @@ export default function WebdesignSaarlandPage() {
                 <div className="bg-white rounded-3xl p-8 border border-stone-200/70 premium-lift h-full">
                   <div className="flex items-start justify-between mb-5">
                     <span className="text-[10px] uppercase tracking-[0.28em] text-stone-500">
-                      Kapitel {c.ordinal}
+                      Schritt {c.ordinal}
                     </span>
                     <span className="font-display italic text-3xl text-[var(--cyan-deep)] leading-none">
                       {c.ordinal}
@@ -363,72 +352,85 @@ export default function WebdesignSaarlandPage() {
         </div>
       </section>
 
-      {/* Pakete */}
-      <section id="pakete-saarland" className="py-24 md:py-32 px-5 md:px-8 bg-white">
+      {/* Leistungen */}
+      <section id="leistungen-saarland" className="py-24 md:py-32 px-5 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <div className="text-center mb-14">
               <div className="mb-6 flex items-baseline justify-center gap-3">
                 <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§03</span>
                 <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
-                  Die Pakete
+                  Leistungen
                 </span>
               </div>
               <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-                Drei Zugänge zu einer{' '}
+                Für Unternehmen in{' '}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                  Fylu-Website.
+                  jeder Phase.
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Drei Zugänge, ein Anspruch. Der endgültige Rahmen entsteht
-                individuell im Vorgespräch.
+                Ob erster Auftritt, Relaunch oder Skalierung. Der konkrete
+                Rahmen entsteht individuell im Vorgespräch.
               </p>
             </div>
           </FadeInSection>
 
           <div className="grid md:grid-cols-3 gap-5">
-            {packages.map((pkg, i) => (
-              <FadeInSection key={pkg.name} delay={0.1 + i * 0.08}>
+            {leistungen.map((item, i) => (
+              <FadeInSection key={item.name} delay={0.1 + i * 0.08}>
                 <div
                   className={`p-8 rounded-3xl border premium-lift h-full flex flex-col ${
-                    pkg.highlight
+                    item.highlight
                       ? 'bg-[var(--ink)] text-white border-transparent shadow-[0_30px_80px_-30px_rgba(14,116,144,0.5)]'
                       : 'bg-white border-stone-200/70'
                   }`}
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div>
-                      <div className={`text-[10px] uppercase tracking-[0.28em] mb-2 ${pkg.highlight ? 'text-stone-300' : 'text-stone-500'}`}>
-                        Kapitel {pkg.ordinal}
+                      <div className={`text-[10px] uppercase tracking-[0.28em] mb-2 ${item.highlight ? 'text-stone-300' : 'text-stone-500'}`}>
+                        Phase {item.ordinal}
                       </div>
-                      <h3 className={`font-display italic text-3xl md:text-[2.4rem] leading-none ${pkg.highlight ? 'text-cyan-200' : 'text-[var(--ink)]'}`}>
-                        {pkg.name}
+                      <h3 className={`font-display italic text-3xl md:text-[2.4rem] leading-none ${item.highlight ? 'text-cyan-200' : 'text-[var(--ink)]'}`}>
+                        {item.name}
                       </h3>
                     </div>
                   </div>
-                  <p className={`font-display italic text-lg mb-3 ${pkg.highlight ? 'text-white' : 'text-[var(--ink)]'}`}>
-                    {pkg.positioning}
+                  <p className={`font-display italic text-lg mb-3 ${item.highlight ? 'text-white' : 'text-[var(--ink)]'}`}>
+                    {item.positioning}
                   </p>
-                  <p className={`text-[0.95rem] leading-relaxed mb-6 ${pkg.highlight ? 'text-stone-300' : 'text-stone-600'}`}>
-                    {pkg.body}
+                  <p className={`text-[0.95rem] leading-relaxed mb-6 ${item.highlight ? 'text-stone-300' : 'text-stone-600'}`}>
+                    {item.body}
                   </p>
-                  <div className={`mt-auto pt-6 border-t border-dashed ${pkg.highlight ? 'border-white/20' : 'border-stone-200'}`}>
+                  <div className={`mt-auto pt-6 border-t border-dashed ${item.highlight ? 'border-white/20' : 'border-stone-200'}`}>
                     <Link
                       href="/buchen"
                       className={`inline-flex w-full items-center justify-center gap-2 px-4 py-3 rounded-full text-[13px] font-semibold transition-all duration-300 ${
-                        pkg.highlight
+                        item.highlight
                           ? 'bg-cyan-500 hover:bg-cyan-400 text-white'
                           : 'bg-[var(--ink)] hover:bg-black text-white'
                       }`}
                     >
-                      <span>{pkg.name} anfragen</span>
+                      <span>Anfragen</span>
                       <span>→</span>
                     </Link>
                   </div>
                 </div>
               </FadeInSection>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/team"
+              className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
+            >
+              <span className="relative">
+                Ansprechpartner kennenlernen
+                <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
+              </span>
+              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -474,13 +476,13 @@ export default function WebdesignSaarlandPage() {
           <FadeInSection>
             <div className="hairline-rule w-24 mx-auto mb-8" />
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Bereit für einen{' '}
+              Bereit für eine Website, die{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Auftritt, der bleibt?
+                arbeitet?
               </span>
             </h2>
             <p className="mt-6 text-stone-600 text-lg leading-relaxed">
-              Vorgespräch, 15 Minuten. Wir hören zu, bevor wir antworten.
+              Vorgespräch, 15 Minuten. Wir hören zu, bevor wir vorschlagen.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
               <Link

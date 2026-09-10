@@ -36,10 +36,10 @@ export const problems: ProblemPage[] = [
     slug: "website-bekommt-keine-anfragen",
     metaTitle: "Website bekommt keine Anfragen? Ursachen und ehrliche Lösungen | Fylu",
     metaDescription:
-      "Ihre Website ist online, aber es kommen keine Anfragen? Fünf typische Ursachen, eine ehrliche Diagnose und konkrete Lösungsansätze — direkt vom Fylu Marketing.",
+      "Ihre Website ist online, aber es kommen keine Anfragen? Fünf typische Ursachen, eine ehrliche Diagnose und konkrete Lösungsansätze, direkt vom Fylu Marketing.",
     h1: "Ihre Website bekommt keine Anfragen. Die häufigsten Ursachen und ehrliche Lösungen.",
     intro:
-      "Sie haben eine Website. Sie ist bei Google auffindbar. Trotzdem passiert nichts. Der Grund liegt fast nie an einer einzelnen Ursache, sondern an einer Kette aus falscher Ansprache, unklarer Verkaufsarchitektur und technischen Reibungsverlusten. Dieser Artikel geht die Kette Punkt für Punkt durch — damit Sie selbst erkennen, wo der Bruch sitzt.",
+      "Sie haben eine Website. Sie ist bei Google auffindbar. Trotzdem passiert nichts. Der Grund liegt fast nie an einer einzelnen Ursache, sondern an einer Kette aus falscher Ansprache, unklarer Verkaufsarchitektur und technischen Reibungsverlusten. Dieser Artikel geht die Kette Punkt für Punkt durch, damit Sie selbst erkennen, wo der Bruch sitzt.",
     keyFinding:
       "In neun von zehn Fällen fehlen nicht Besucher, sondern die Übersetzung von Besuch zu Anfrage. Wer das Problem an der Traffic-Seite sucht, investiert oft am falschen Ende.",
     causes: [
@@ -61,7 +61,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Technische Reibung frisst Conversions",
-        text: "Langsame Ladezeit, fehlende mobile Optimierung, ein Formular mit vierzehn Feldern — jede dieser Reibungsquellen kostet Anfragen. Google Search Console zeigt Ihnen mobile Usability-Probleme, PageSpeed Insights die Ladezeit. Beides sind Signale, die Nutzer spüren, ohne sie benennen zu können.",
+        text: "Langsame Ladezeit, fehlende mobile Optimierung, ein Formular mit vierzehn Feldern, jede dieser Reibungsquellen kostet Anfragen. Google Search Console zeigt Ihnen mobile Usability-Probleme, PageSpeed Insights die Ladezeit. Beides sind Signale, die Nutzer spüren, ohne sie benennen zu können.",
       },
     ],
     diagnostics: [
@@ -117,7 +117,7 @@ export const problems: ProblemPage[] = [
         href: "/website-erstellen-lassen",
         label: "Neue Website erstellen lassen",
         reason:
-          "Wenn Refresh nicht reicht: individuell konzipierter Auftritt mit Editorial-Design, sauberer Verkaufsstruktur und modernem technischen Fundament. Transparente Konditionen, kein Baukasten.",
+          "Wenn Refresh nicht reicht: individuell konzipierter Auftritt mit sauberer Verkaufsstruktur und modernem technischen Fundament. Transparente Konditionen, kein Baukasten.",
       },
     ],
     faqs: [
@@ -131,7 +131,7 @@ export const problems: ProblemPage[] = [
       },
       {
         q: "Wie schnell wirken Änderungen an der Conversion-Architektur?",
-        a: "Sichtbar in zwei bis vier Wochen, sofern Traffic vorhanden ist. Änderungen an CTA, Formular und Hero-Bereich brauchen keine SEO-Latenz — sie wirken sofort für alle bestehenden Besucher.",
+        a: "Sichtbar in zwei bis vier Wochen, sofern Traffic vorhanden ist. Änderungen an CTA, Formular und Hero-Bereich brauchen keine SEO-Latenz, sie wirken sofort für alle bestehenden Besucher.",
       },
       {
         q: "Wie geht Fylu bei einer Website-ohne-Anfragen-Analyse konkret vor?",
@@ -145,7 +145,7 @@ export const problems: ProblemPage[] = [
     slug: "website-bei-google-nicht-gefunden",
     metaTitle: "Website bei Google nicht gefunden? So finden Sie die Ursache | Fylu",
     metaDescription:
-      "Ihre Website erscheint bei Google nicht? Die häufigsten Ursachen von Indexierung bis SEO-Struktur — und der Weg zurück in die Sichtbarkeit.",
+      "Ihre Website erscheint bei Google nicht? Die häufigsten Ursachen von Indexierung bis SEO-Struktur, und der Weg zurück in die Sichtbarkeit.",
     h1: "Ihre Website ist bei Google nicht auffindbar. Ursachen und der Weg zurück in die Sichtbarkeit.",
     intro:
       "„Wir werden bei Google einfach nicht gefunden“ ist eines der häufigsten Sätze in Erstgesprächen. Die Ursache ist selten das viel zitierte „SEO-Problem“, sondern eine Kombination aus technischen Signalen, unklaren Inhalten und fehlendem Vertrauen der Domain. Dieser Artikel geht die Diagnose systematisch durch.",
@@ -154,7 +154,7 @@ export const problems: ProblemPage[] = [
     causes: [
       {
         title: "Die Seite ist gar nicht indexiert",
-        text: "Ein versehentlich gesetztes noindex-Meta-Tag, eine blockierende robots.txt oder eine Seite, die Google noch nie besucht hat — das sind die drei häufigsten Gründe, warum eine URL komplett fehlt. Google Search Console („URL-Prüfung“) zeigt für jede URL, ob sie indexiert ist und warum nicht.",
+        text: "Ein versehentlich gesetztes noindex-Meta-Tag, eine blockierende robots.txt oder eine Seite, die Google noch nie besucht hat, das sind die drei häufigsten Gründe, warum eine URL komplett fehlt. Google Search Console („URL-Prüfung“) zeigt für jede URL, ob sie indexiert ist und warum nicht.",
       },
       {
         title: "Die Seite konkurriert um die falschen Suchbegriffe",
@@ -162,7 +162,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Der Content ist zu dünn",
-        text: "Landingpages mit 200 Wörtern und drei generischen Absätzen bewertet Google als „thin content“. Für Rankings in kompetitiven Suchen sind 500 bis 1500 Wörter mit echter Substanz nötig — Beispiele, Zahlen, klar strukturierte Antworten.",
+        text: "Landingpages mit 200 Wörtern und drei generischen Absätzen bewertet Google als „thin content“. Für Rankings in kompetitiven Suchen sind 500 bis 1500 Wörter mit echter Substanz nötig, Beispiele, Zahlen, klar strukturierte Antworten.",
       },
       {
         title: "Es fehlen lokale Signale",
@@ -170,13 +170,13 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Die Domain hat kein Vertrauen aufgebaut",
-        text: "Neue Domains ohne Backlinks brauchen typischerweise sechs bis zwölf Monate, bis erste Rankings stabil sind. Ohne verlinkende Fachartikel, Partner-Websites oder Presseerwähnungen bleibt das Ranking schwach — auch wenn technisch alles stimmt.",
+        text: "Neue Domains ohne Backlinks brauchen typischerweise sechs bis zwölf Monate, bis erste Rankings stabil sind. Ohne verlinkende Fachartikel, Partner-Websites oder Presseerwähnungen bleibt das Ranking schwach, auch wenn technisch alles stimmt.",
       },
     ],
     diagnostics: [
       {
         title: "Site-Suche in Google",
-        text: "Geben Sie in Google „site:ihre-domain.de“ ein. Sind Ihre wichtigsten Seiten dort? Falls nicht, sind sie nicht indexiert — dann ist das das primäre Problem, nicht Ranking.",
+        text: "Geben Sie in Google „site:ihre-domain.de“ ein. Sind Ihre wichtigsten Seiten dort? Falls nicht, sind sie nicht indexiert, dann ist das das primäre Problem, nicht Ranking.",
       },
       {
         title: "URL-Prüfung in der Search Console",
@@ -188,7 +188,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Suchbegriffe testen",
-        text: "Suchen Sie exakt die Begriffe, für die Sie ranken wollen — und die Long-Tail-Varianten. Sind Sie auf den Top-Positionen, in den Ergebnissen weiter hinten oder gar nicht auffindbar? Das trennt SEO-Struktur- von Content-Problemen.",
+        text: "Suchen Sie exakt die Begriffe, für die Sie ranken wollen, und die Long-Tail-Varianten. Sind Sie auf den Top-Positionen, in den Ergebnissen weiter hinten oder gar nicht auffindbar? Das trennt SEO-Struktur- von Content-Problemen.",
       },
     ],
     solutions: [
@@ -198,7 +198,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Content-Struktur an echte Suchintention ausrichten",
-        text: "Jede Landing braucht einen klaren Suchbegriff, den sie primär bedient — und eine Antwort, die dazu ausreichend Tiefe hat. Ein Artikel „unsere Leistungen“ rankt nirgendwo. Ein Artikel „Website-Kosten für Handwerksbetriebe in Sachsen“ hat eine reale Chance.",
+        text: "Jede Landing braucht einen klaren Suchbegriff, den sie primär bedient, und eine Antwort, die dazu ausreichend Tiefe hat. Ein Artikel „unsere Leistungen“ rankt nirgendwo. Ein Artikel „Website-Kosten für Handwerksbetriebe in Sachsen“ hat eine reale Chance.",
       },
       {
         title: "Lokale SEO systematisch aufbauen",
@@ -206,14 +206,14 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Substanz statt Tricks",
-        text: "Keyword-Stuffing, gekaufte Backlinks und dünner AI-Content sind kurzfristige Wetten mit hohem Downside-Risiko. Nachhaltige Rankings entstehen aus Inhalten, die Nutzer tatsächlich weiterbringen — und aus einer sauberen technischen Basis.",
+        text: "Keyword-Stuffing, gekaufte Backlinks und dünner AI-Content sind kurzfristige Wetten mit hohem Downside-Risiko. Nachhaltige Rankings entstehen aus Inhalten, die Nutzer tatsächlich weiterbringen, und aus einer sauberen technischen Basis.",
       },
     ],
     tool: {
       href: "/tools/seo-check",
       label: "SEO-Check starten",
       reason:
-        "Zeigt priorisiert, welche SEO-Grundsignale bei Ihrer Domain fehlen — inklusive konkreter Handlungsempfehlung pro Finding.",
+        "Zeigt priorisiert, welche SEO-Grundsignale bei Ihrer Domain fehlen, inklusive konkreter Handlungsempfehlung pro Finding.",
     },
     serviceLinks: [
       {
@@ -226,13 +226,13 @@ export const problems: ProblemPage[] = [
         href: "/seo-agentur-saarland",
         label: "SEO-Agentur Saarland",
         reason:
-          "Laufende SEO-Betreuung aus dem Studio, ohne Reporting-Kosmetik. Monitoring, Content-Aufbau und technische Iteration auf Basis echter Search-Console-Daten.",
+          "Laufende SEO-Betreuung ohne Reporting-Kosmetik. Monitoring, Content-Aufbau und technische Iteration auf Basis echter Search-Console-Daten.",
       },
     ],
     faqs: [
       {
         q: "Wie lange dauert es, bis eine neue Website bei Google erscheint?",
-        a: "Erste Indexierung typischerweise innerhalb weniger Tage bis Wochen — vorausgesetzt, die Seite ist erreichbar, indexierbar und über eine Sitemap in der Google Search Console angemeldet.",
+        a: "Erste Indexierung typischerweise innerhalb weniger Tage bis Wochen, vorausgesetzt, die Seite ist erreichbar, indexierbar und über eine Sitemap in der Google Search Console angemeldet.",
       },
       {
         q: "Was ist wichtiger: Backlinks oder Content?",
@@ -263,7 +263,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Zu viel JavaScript",
-        text: "Analytics-Tools, Chat-Widgets, Cookie-Banner, A/B-Test-Skripte, Social-Media-Embeds — jedes für sich wirkt harmlos. In Summe blockieren sie den Hauptthread des Browsers und verzögern die Interaktivität. Regelmäßiges Aufräumen ist Pflicht.",
+        text: "Analytics-Tools, Chat-Widgets, Cookie-Banner, A/B-Test-Skripte, Social-Media-Embeds, jedes für sich wirkt harmlos. In Summe blockieren sie den Hauptthread des Browsers und verzögern die Interaktivität. Regelmäßiges Aufräumen ist Pflicht.",
       },
       {
         title: "Fehlendes Caching",
@@ -277,7 +277,7 @@ export const problems: ProblemPage[] = [
     diagnostics: [
       {
         title: "PageSpeed Insights",
-        text: "pagespeed.web.dev — kostenlos direkt von Google. Zeigt Ladezeit-Metriken (LCP, INP, CLS), priorisiert Probleme und schlägt konkrete Maßnahmen vor.",
+        text: "pagespeed.web.dev, kostenlos direkt von Google. Zeigt Ladezeit-Metriken (LCP, INP, CLS), priorisiert Probleme und schlägt konkrete Maßnahmen vor.",
       },
       {
         title: "Chrome DevTools „Netzwerk“-Tab",
@@ -303,14 +303,14 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Hosting hinterfragen",
-        text: "Shared Hosting für 5 Euro pro Monat ist selten ausreichend für ernsthafte Business-Websites. Ein modernes Setup (etwa Vercel oder ein solider VPS mit CDN) macht bei mittelgroßen Websites einen sichtbaren Unterschied.",
+        text: "Sehr günstiges Shared Hosting ist selten ausreichend für ernsthafte Business-Websites. Ein modernes Setup (etwa Vercel oder ein solider VPS mit CDN) macht bei mittelgroßen Websites einen sichtbaren Unterschied.",
       },
     ],
     tool: {
       href: "/tools/website-check",
       label: "Website-Analyse starten",
       reason:
-        "Misst die Server-Antwortzeit, HTML-Größe und weitere technische Signale Ihrer Website direkt — plus 20 weitere Checks.",
+        "Misst die Server-Antwortzeit, HTML-Größe und weitere technische Signale Ihrer Website direkt, plus 20 weitere Checks.",
     },
     serviceLinks: [
       {
@@ -329,7 +329,7 @@ export const problems: ProblemPage[] = [
     faqs: [
       {
         q: "Ist Ladezeit wirklich ein SEO-Ranking-Faktor?",
-        a: "Ja, seit den Core Web Vitals (LCP, INP, CLS) messbar und dokumentiert. Google bevorzugt in umkämpften Suchen die schnelleren Alternativen — bei sonst vergleichbarer Content-Qualität.",
+        a: "Ja, seit den Core Web Vitals (LCP, INP, CLS) messbar und dokumentiert. Google bevorzugt in umkämpften Suchen die schnelleren Alternativen, bei sonst vergleichbarer Content-Qualität.",
       },
       {
         q: "Was ist eine „gute“ Ladezeit?",
@@ -350,7 +350,7 @@ export const problems: ProblemPage[] = [
       "Ihre Website wirkt aus einer anderen Zeit? Wir zeigen die vier Alterungs-Achsen, wie Sie den Handlungsbedarf einschätzen und wann ein Refresh reicht.",
     h1: "Ihre Website wirkt aus einer anderen Zeit. Wann Modernisierung reicht, wann Neuaufbau nötig wird.",
     intro:
-      "Eine Website altert an vier Fronten gleichzeitig: Gestaltung, Sprache, Technik und strategische Passform. Selten sind alle vier gleichweit vom heutigen Standard entfernt. Wer den Handlungsbedarf richtig einschätzt, spart oft mehrere Tausend Euro und Monate Zeit.",
+      "Eine Website altert an vier Fronten gleichzeitig: Gestaltung, Sprache, Technik und strategische Passform. Selten sind alle vier gleichweit vom heutigen Standard entfernt. Wer den Handlungsbedarf richtig einschätzt, spart oft deutlichen Aufwand und Monate Zeit.",
     keyFinding:
       "Erst prüfen, an welchen der vier Achsen die Website tatsächlich hakt. Ein Vollrelaunch ist selten die richtige Antwort auf eine einzelne veraltete Achse.",
     causes: [
@@ -360,7 +360,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Die Sprache passt nicht mehr zum Unternehmen",
-        text: "Firmen entwickeln sich weiter, ihre Websites bleiben oft am ursprünglichen Wording hängen. „Wir sind Ihr innovativer Partner“ aus der Gründungsphase liest sich zehn Jahre später wie eine Karikatur — und schließt genau die Zielkunden aus, die inzwischen erreicht werden sollen.",
+        text: "Firmen entwickeln sich weiter, ihre Websites bleiben oft am ursprünglichen Wording hängen. „Wir sind Ihr innovativer Partner“ aus der Gründungsphase liest sich zehn Jahre später wie eine Karikatur, und schließt genau die Zielkunden aus, die inzwischen erreicht werden sollen.",
       },
       {
         title: "Die technische Basis limitiert Weiterentwicklung",
@@ -378,7 +378,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Mobile-Absprung in der Analyse",
-        text: "Google Analytics oder ähnliche Tools zeigen den mobilen Bounce Rate. Über 60 Prozent auf der Startseite ist ein deutliches Warnsignal — dann verlieren Sie mobile Besucher, bevor sie überhaupt etwas erfahren.",
+        text: "Google Analytics oder ähnliche Tools zeigen den mobilen Bounce Rate. Über 60 Prozent auf der Startseite ist ein deutliches Warnsignal, dann verlieren Sie mobile Besucher, bevor sie überhaupt etwas erfahren.",
       },
       {
         title: "Framework- und CMS-Alter prüfen",
@@ -400,14 +400,14 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Vollständiger Relaunch mit Zielarchitektur",
-        text: "Wenn drei oder mehr Achsen betroffen sind, ist ein Relaunch die klügere Antwort. Wichtig: mit klarer Zielgruppen- und Verkaufsarchitektur beginnen, nicht mit Design-Moods. Sonst wird die neue Website in drei Jahren wieder veraltet — an denselben Achsen.",
+        text: "Wenn drei oder mehr Achsen betroffen sind, ist ein Relaunch die klügere Antwort. Wichtig: mit klarer Zielgruppen- und Verkaufsarchitektur beginnen, nicht mit Design-Moods. Sonst wird die neue Website in drei Jahren wieder veraltet, an denselben Achsen.",
       },
     ],
     tool: {
       href: "/tools/website-check",
       label: "Website-Analyse starten",
       reason:
-        "Misst technische Basis und redaktionelle Substanz — als objektive Grundlage für die Entscheidung zwischen Refresh und Relaunch.",
+        "Misst technische Basis und redaktionelle Substanz, als objektive Grundlage für die Entscheidung zwischen Refresh und Relaunch.",
     },
     serviceLinks: [
       {
@@ -444,24 +444,24 @@ export const problems: ProblemPage[] = [
     slug: "website-conversion-verbessern",
     metaTitle: "Website-Conversion verbessern: Vier Hebel für mehr Anfragen | Fylu",
     metaDescription:
-      "Traffic haben Sie, Anfragen nicht? Die vier Conversion-Hebel, die in etablierten B2B-Websites am zuverlässigsten wirken — und wie Sie sie systematisch anwenden.",
+      "Traffic haben Sie, Anfragen nicht? Die vier Conversion-Hebel, die in etablierten B2B-Websites am zuverlässigsten wirken, und wie Sie sie systematisch anwenden.",
     h1: "Website-Conversion verbessern. Die vier Hebel für messbar bessere Ergebnisse.",
     intro:
-      "Conversion-Optimierung ist kein Rätselwerk. In etablierten B2B-Websites entscheiden immer wieder dieselben vier Hebel darüber, ob aus Besuch eine Anfrage wird. Wer diese systematisch angeht, produziert planbar bessere Ergebnisse — ohne den kompletten Auftritt neu bauen zu müssen.",
+      "Conversion-Optimierung ist kein Rätselwerk. In etablierten B2B-Websites entscheiden immer wieder dieselben vier Hebel darüber, ob aus Besuch eine Anfrage wird. Wer diese systematisch angeht, produziert planbar bessere Ergebnisse, ohne den kompletten Auftritt neu bauen zu müssen.",
     keyFinding:
       "Fast alle Conversion-Probleme haben eine dieser vier Wurzeln: unklare Hero-Botschaft, zu wenig CTAs, dünne Vertrauenssignale, zu hoher Formular-Aufwand. Wer alle vier prüft, findet den Bruch.",
     causes: [
       {
         title: "Die Hero-Botschaft ist nicht klar genug",
-        text: "In fünf Sekunden muss ein Besucher wissen: Für wen ist die Website, welches Problem löst sie, was ist der nächste Schritt. Fehlt eine dieser drei Antworten oben, entstehen keine Anfragen — egal wie schön der Rest gestaltet ist.",
+        text: "In fünf Sekunden muss ein Besucher wissen: Für wen ist die Website, welches Problem löst sie, was ist der nächste Schritt. Fehlt eine dieser drei Antworten oben, entstehen keine Anfragen, egal wie schön der Rest gestaltet ist.",
       },
       {
         title: "Der CTA taucht zu selten und zu spät auf",
-        text: "Ein Call-to-Action im Hero und am Seitenende reicht nicht. Jede größere Sektion braucht einen Anschluss-CTA — sonst verlieren Sie Besucher, die sich nach einem starken Abschnitt eigentlich melden würden.",
+        text: "Ein Call-to-Action im Hero und am Seitenende reicht nicht. Jede größere Sektion braucht einen Anschluss-CTA, sonst verlieren Sie Besucher, die sich nach einem starken Abschnitt eigentlich melden würden.",
       },
       {
         title: "Vertrauenssignale sind zu dünn oder generisch",
-        text: "Stockfotos, generische Icons und Aussagen wie „Ihr zuverlässiger Partner“ bauen kein Vertrauen auf — im Gegenteil. Zwei echte Kundenstimmen mit Namen, ein konkretes Ergebnis, das Team als Menschen sichtbar. Substanz statt Marketing.",
+        text: "Stockfotos, generische Icons und Aussagen wie „Ihr zuverlässiger Partner“ bauen kein Vertrauen auf, im Gegenteil. Zwei echte Kundenstimmen mit Namen, ein konkretes Ergebnis, das Team als Menschen sichtbar. Substanz statt Marketing.",
       },
       {
         title: "Das Formular verlangt zu viel",
@@ -508,7 +508,7 @@ export const problems: ProblemPage[] = [
       href: "/tools/website-check",
       label: "Website-Analyse starten",
       reason:
-        "Prüft Hero-Struktur, CTA-Anzahl, Content-Substanz und mehr — priorisiert nach Impact auf die Anfragen.",
+        "Prüft Hero-Struktur, CTA-Anzahl, Content-Substanz und mehr, priorisiert nach Impact auf die Anfragen.",
     },
     serviceLinks: [
       {
@@ -527,7 +527,7 @@ export const problems: ProblemPage[] = [
     faqs: [
       {
         q: "Wie schnell wirken Conversion-Änderungen?",
-        a: "Sofort. Änderungen an Hero, CTA und Formular brauchen keine SEO-Latenz — sie wirken für alle bestehenden Besucher ab der ersten Minute nach dem Deployment. Messbare Effekte sind meist innerhalb von zwei bis vier Wochen sichtbar.",
+        a: "Sofort. Änderungen an Hero, CTA und Formular brauchen keine SEO-Latenz, sie wirken für alle bestehenden Besucher ab der ersten Minute nach dem Deployment. Messbare Effekte sind meist innerhalb von zwei bis vier Wochen sichtbar.",
       },
       {
         q: "Ist A/B-Testing für kleine Websites sinnvoll?",
@@ -535,7 +535,7 @@ export const problems: ProblemPage[] = [
       },
       {
         q: "Woran erkenne ich, welcher der vier Hebel bei mir am meisten bringt?",
-        a: "Beginnen Sie mit dem Fünf-Sekunden-Test — wenn Klarheit fehlt, ist Hero der größte Hebel. Ansonsten: Formular-Feldzahl reduzieren bringt meist am schnellsten sichtbare Effekte.",
+        a: "Beginnen Sie mit dem Fünf-Sekunden-Test, wenn Klarheit fehlt, ist Hero der größte Hebel. Ansonsten: Formular-Feldzahl reduzieren bringt meist am schnellsten sichtbare Effekte.",
       },
     ],
     publishedAt: "2026-08-28",
@@ -554,7 +554,7 @@ export const problems: ProblemPage[] = [
     causes: [
       {
         title: "Content ohne Substanz",
-        text: "Landingpages mit 200 Wörtern generischem Text ranken in kompetitiven Suchen nicht — und werden von AI-Suchmaschinen (Google AI Overviews, Perplexity) noch weniger zitiert. Google und AI belohnen Inhalte, die einer konkreten Suchintention eine substanzielle, klar strukturierte Antwort geben.",
+        text: "Landingpages mit 200 Wörtern generischem Text ranken in kompetitiven Suchen nicht, und werden von AI-Suchmaschinen (Google AI Overviews, Perplexity) noch weniger zitiert. Google und AI belohnen Inhalte, die einer konkreten Suchintention eine substanzielle, klar strukturierte Antwort geben.",
       },
       {
         title: "Fehlende oder unklare Suchintention",
@@ -566,7 +566,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Domain hat kein Vertrauen aufgebaut",
-        text: "Ohne verlinkende Fachseiten, ohne Presseerwähnungen, ohne konsistente Erwähnung in relevanten Verzeichnissen bleibt eine Domain ranking-schwach — auch bei perfektem Content und sauberer Technik. Backlink-Aufbau ist der langsamste, aber langfristig entscheidendste Hebel.",
+        text: "Ohne verlinkende Fachseiten, ohne Presseerwähnungen, ohne konsistente Erwähnung in relevanten Verzeichnissen bleibt eine Domain ranking-schwach, auch bei perfektem Content und sauberer Technik. Backlink-Aufbau ist der langsamste, aber langfristig entscheidendste Hebel.",
       },
     ],
     diagnostics: [
@@ -594,7 +594,7 @@ export const problems: ProblemPage[] = [
       },
       {
         title: "Technische Basis systematisch schließen",
-        text: "Reihenfolge: HTTPS, Core Web Vitals, mobile-Basis, Structured Data (Organization/LocalBusiness/FAQPage), Canonicals, saubere Sitemap. Jeder dieser Punkte ist entweder ok oder nicht — es gibt kein „ein bisschen“.",
+        text: "Reihenfolge: HTTPS, Core Web Vitals, mobile-Basis, Structured Data (Organization/LocalBusiness/FAQPage), Canonicals, saubere Sitemap. Jeder dieser Punkte ist entweder ok oder nicht, es gibt kein „ein bisschen“.",
       },
       {
         title: "Off-Page systematisch aufbauen",
@@ -609,7 +609,7 @@ export const problems: ProblemPage[] = [
       href: "/tools/seo-check",
       label: "SEO-Check starten",
       reason:
-        "Zeigt in unter 15 Sekunden priorisiert, an welcher der drei SEO-Achsen Ihre Website tatsächlich hakt — mit konkreter Handlungsempfehlung pro Finding.",
+        "Zeigt in unter 15 Sekunden priorisiert, an welcher der drei SEO-Achsen Ihre Website tatsächlich hakt, mit konkreter Handlungsempfehlung pro Finding.",
     },
     serviceLinks: [
       {
@@ -622,7 +622,7 @@ export const problems: ProblemPage[] = [
         href: "/seo-agentur-saarland",
         label: "SEO-Agentur Saarland",
         reason:
-          "Wenn Sie eine langfristige Partnerschaft für Sichtbarkeit suchen: laufende SEO-Betreuung inklusive Content-Aufbau und Off-Page-Signale, geführt aus dem Studio, ohne Reporting-Kosmetik.",
+          "Wenn Sie eine langfristige Partnerschaft für Sichtbarkeit suchen: laufende SEO-Betreuung inklusive Content-Aufbau und Off-Page-Signale, ohne Reporting-Kosmetik.",
       },
     ],
     faqs: [
@@ -632,7 +632,7 @@ export const problems: ProblemPage[] = [
       },
       {
         q: "Sind AI Overviews das Ende klassischer SEO?",
-        a: "Nein — sondern eine Verschärfung. AI Overviews bevorzugen strukturierte, klar beantwortete Inhalte. Wer schon heute Substanz liefert, gewinnt in AI-Suche eher als in klassischer SEO.",
+        a: "Nein, sondern eine Verschärfung. AI Overviews bevorzugen strukturierte, klar beantwortete Inhalte. Wer schon heute Substanz liefert, gewinnt in AI-Suche eher als in klassischer SEO.",
       },
       {
         q: "Was ist wichtiger: Content oder Backlinks?",

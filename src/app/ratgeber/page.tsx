@@ -9,7 +9,7 @@ const SITE = "https://www.fylumarketing.de";
 export const metadata: Metadata = {
   title: "Website-Ratgeber",
   description:
-    "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen — transparent aus dem Fylu Marketing.",
+    "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen. Transparent von Fylu Marketing.",
   alternates: { canonical: `${SITE}/ratgeber` },
 };
 
@@ -28,7 +28,7 @@ export default function GuidesIndex() {
             url,
             name: "Website-Ratgeber",
             description:
-              "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen aus dem Fylu Marketing.",
+              "Ratgeber-Artikel rund um Website-Kosten, Relaunch, Erstellung und Investitionsentscheidungen von Fylu Marketing.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             about: { "@type": "Thing", name: "Website-Kosten, Relaunch, SEO und Investitionsentscheidungen" },
@@ -81,8 +81,8 @@ export default function GuidesIndex() {
               </h1>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                 Ratgeber-Artikel zu Website-Kosten, Relaunch, Erstellung und den
-                Entscheidungen davor. Keine SEO-Textbausteine — echte Antworten aus der
-                Studio-Praxis.
+                Entscheidungen davor. Keine SEO-Textbausteine, echte Antworten aus der
+                Praxis.
               </p>
             </div>
             <div className="grid gap-4 md:grid-cols-2">

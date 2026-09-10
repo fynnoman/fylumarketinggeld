@@ -239,7 +239,7 @@ export default function ProblemSolutionSection() {
                     — gehalten.
                   </span>
                   <span className="text-[10px] uppercase tracking-[0.22em] text-stone-400">
-                    Fylu · Studio Saarlouis
+                    Fylu Marketing · Saarlouis
                   </span>
                 </div>
               </div>

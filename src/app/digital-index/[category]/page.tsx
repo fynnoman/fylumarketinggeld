@@ -203,7 +203,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 month: "long",
                 year: "numeric",
               })}
-              . Redaktionell geführt durch das Fylu Marketing Saarlouis.
+              . Redaktionell geführt durch Fylu Marketing aus Saarlouis.
             </p>
           </header>
 
@@ -385,7 +385,7 @@ export default async function CategoryPage({ params }: PageProps) {
               Ihr {cat.industry}-Betrieb im Fylu Digital Index.
             </h2>
             <p className="mt-4 max-w-xl text-[color:var(--ink-soft)]">
-              15 Minuten Vorgespräch mit dem Studio-Lead, persönlich und
+              15 Minuten Vorgespräch mit Ihrem Ansprechpartner, persönlich und
               unverbindlich. Wir klären Ihren Score, die wichtigsten Hebel
               und ob Fylu für Ihr Vorhaben passt.
             </p>

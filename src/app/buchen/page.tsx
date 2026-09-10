@@ -7,7 +7,7 @@ const URL = `${SITE}/buchen`;
 export const metadata: Metadata = {
 	title: 'Kostenloses Erstgespräch buchen · Fylu Marketing Saarlouis',
 	description:
-		'Kostenloses Erstgespräch mit dem Studio-Lead. 15 – 30 Minuten. Persönlich, unverbindlich — direkt Termin buchen oder per WhatsApp schreiben.',
+		'Kostenloses Erstgespräch mit Ihrem Ansprechpartner. 15 bis 30 Minuten. Persönlich, unverbindlich, direkt Termin buchen oder per WhatsApp schreiben.',
 	robots: { index: true, follow: true },
 };
 
@@ -37,7 +37,7 @@ export default function BuchenPage() {
 						url: URL,
 						name: 'Kostenloses Erstgespräch buchen',
 						description:
-							'Kostenloses 15- bis 30-minütiges Erstgespräch direkt mit dem Studio-Lead. Persönlich, unverbindlich, ohne Verkaufsdruck. Terminbuchung online oder per WhatsApp.',
+							'Kostenloses 15- bis 30-minütiges Erstgespräch direkt mit Ihrem Ansprechpartner. Persönlich, unverbindlich, ohne Verkaufsdruck. Terminbuchung online oder per WhatsApp.',
 						inLanguage: 'de-DE',
 						isPartOf: { '@id': `${SITE}/#website` },
 						about: { '@id': `${SITE}/#organization` },
@@ -72,20 +72,13 @@ export default function BuchenPage() {
 						'@id': `${URL}#erstgespraech`,
 						name: 'Kostenloses Erstgespräch (Fylu Marketing)',
 						description:
-							'Fünfzehn- bis dreißigminütiges Vorgespräch mit Studio-Lead Fynn Schulz. Wir hören zu, ordnen das Vorhaben ein, skizzieren Rahmen und nächste Schritte. Unverbindlich, kostenfrei.',
+							'Fünfzehn- bis dreißigminütiges Vorgespräch mit Ihrem Ansprechpartner Fynn Schulz. Wir hören zu, ordnen das Vorhaben ein, skizzieren Rahmen und nächste Schritte. Unverbindlich, kostenfrei.',
 						serviceType: 'Erstberatung / Discovery Call',
 						provider: { '@id': `${SITE}/#organization` },
 						areaServed: [
 							{ '@type': 'State', name: 'Saarland' },
 							{ '@type': 'Country', name: 'Deutschland' },
 						],
-						offers: {
-							'@type': 'Offer',
-							price: '0',
-							priceCurrency: 'EUR',
-							availability: 'https://schema.org/InStock',
-							url: URL,
-						},
 					}),
 				}}
 			/>

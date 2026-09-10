@@ -180,7 +180,7 @@ export default function ValueSection() {
                 Direkter Draht
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-2">
-                Sie sprechen mit dem Studio-Lead. Strategie, Design, Umsetzung — eine Handschrift.
+                Sie sprechen direkt mit dem Ansprechpartner. Strategie, Design und Umsetzung in einer Hand.
               </p>
             </div>
           </motion.div>

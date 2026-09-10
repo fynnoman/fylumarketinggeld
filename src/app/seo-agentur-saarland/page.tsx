@@ -31,7 +31,7 @@ export default function SeoAgenturSaarlandPage() {
             "@id": `${URL}#service`,
             name: "SEO-Agentur Saarland",
             description:
-              "SEO-Foundation, Content-Aufbau, Local SEO und laufende Betreuung — aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit.",
+              "SEO-Foundation, Content-Aufbau, Local SEO und laufende Betreuung aus Saarlouis. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.",
             serviceType: "Suchmaschinenoptimierung",
             url: URL,
             provider: { "@id": `${SITE}/#organization` },
@@ -43,11 +43,6 @@ export default function SeoAgenturSaarlandPage() {
               "@type": "Offer",
               availability: "https://schema.org/InStock",
               url: `${SITE}/buchen`,
-              priceSpecification: {
-                "@type": "PriceSpecification",
-                priceCurrency: "EUR",
-                description: "Individuell kalkuliert nach Foundation, laufender Betreuung und aktivem Content-Aufbau. Keine monatliche Grundgebühr.",
-              },
             },
           }),
         }}
@@ -62,7 +57,7 @@ export default function SeoAgenturSaarlandPage() {
             url: URL,
             name: "SEO-Agentur Saarland",
             description:
-              "SEO-Agentur aus Saarlouis für etablierte Unternehmen im Saarland und deutschlandweit. Foundation, Content-Aufbau, Local SEO, laufende Betreuung.",
+              "SEO-Agentur aus Saarlouis für Unternehmen jeder Phase im Saarland und deutschlandweit. Foundation, Content-Aufbau, Local SEO, laufende Betreuung.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             about: { "@type": "Thing", name: "Suchmaschinenoptimierung (SEO)" },
@@ -101,16 +96,16 @@ export default function SeoAgenturSaarlandPage() {
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.02] mb-8">
-              SEO aus dem Saarland, ehrlich kalkuliert{" "}
+              SEO-Agentur aus dem Saarland,{" "}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                und nachvollziehbar aufgebaut
+                nachvollziehbar aufgebaut
               </span>
               .
             </h1>
             <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8">
-              Wir arbeiten für etablierte Unternehmen, für die Sichtbarkeit ein klarer
-              Business-Case ist — nicht Marketing-Kosmetik. Foundation, Content-Aufbau,
-              Local SEO und laufende Betreuung aus Saarlouis, transparent kalkuliert.
+              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
+              aufzubauen und zu skalieren. Foundation, Content-Aufbau, Local SEO und
+              laufende Betreuung aus Saarlouis, transparent kalkuliert.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -202,7 +197,7 @@ export default function SeoAgenturSaarlandPage() {
           </div>
         </section>
 
-        {/* Für welche Häuser wir arbeiten */}
+        {/* Für welche Unternehmen wir arbeiten */}
         <section className="py-16 md:py-20 px-6">
           <div className="max-w-3xl mx-auto">
             <div className="mb-6 flex items-baseline gap-3">
@@ -210,19 +205,19 @@ export default function SeoAgenturSaarlandPage() {
                 §b
               </span>
               <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em]">
-                Für welche Häuser wir SEO machen
+                Für welche Unternehmen wir SEO machen
               </h2>
             </div>
             <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
               <p>
-                Wir arbeiten für etablierte Unternehmen, bei denen ein einzelner Kunde
-                relevanten Wert hat: Kanzleien, Steuerberater, Arzt- und Zahnarztpraxen,
+                Wir arbeiten für Unternehmen, bei denen ein einzelner Kunde relevanten
+                Wert hat: Kanzleien, Steuerberater, Arzt- und Zahnarztpraxen,
                 Immobilienmakler, hochwertige Handwerksbetriebe, Photovoltaik-Anbieter,
                 Gebäudereinigungsunternehmen, Industrie-Mittelstand und B2B-Dienstleister.
               </p>
               <p>
                 Für Consumer-Kleinkram, Gastro oder reine Reichweiten-Themen sind wir nicht
-                die richtige Adresse — dort funktionieren andere Modelle besser.
+                die richtige Adresse. Dort funktionieren andere Modelle besser.
               </p>
             </div>
           </div>
@@ -245,7 +240,7 @@ export default function SeoAgenturSaarlandPage() {
                 </h2>
                 <p className="text-stone-700 leading-relaxed mb-6">
                   Unser SEO-Check prüft in unter 15 Sekunden Meta, Struktur, Inhalt, Structured
-                  Data und lokale Signale Ihrer Domain — mit konkreter Handlungsempfehlung pro
+                  Data und lokale Signale Ihrer Domain, mit konkreter Handlungsempfehlung pro
                   Finding. Keine Registrierung, nichts wird gespeichert.
                 </p>
                 <Link
@@ -275,14 +270,13 @@ export default function SeoAgenturSaarlandPage() {
               <p>
                 Technische Fixes wirken in wenigen Wochen. Content-Investitionen brauchen
                 drei bis sechs Monate bis zur Ranking-Sichtbarkeit. Backlink-Aufbau wirkt
-                über sechs bis zwölf Monate. SEO ist ein Marathon, kein Sprint — und
-                jeder, der Ihnen etwas anderes verspricht, verkauft Ihnen eine Illusion.
+                über sechs bis zwölf Monate. SEO ist ein Marathon, kein Sprint. Wer
+                Ihnen etwas anderes verspricht, verkauft Ihnen eine Illusion.
               </p>
               <p>
                 Konkrete Konditionen für Foundation, Betreuung und Content-Aufbau
-                besprechen wir im Vorgespräch. Kein Standard-Paket, das nur bei uns
-                funktioniert — Umfang und Reihenfolge orientieren sich an Ihrem
-                tatsächlichen Bedarf.
+                besprechen wir im Vorgespräch. Umfang und Reihenfolge orientieren sich
+                an Ihrem tatsächlichen Bedarf.
               </p>
             </div>
             <div className="mt-8">

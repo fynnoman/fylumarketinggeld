@@ -6,23 +6,23 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet ein Programmierer im Saarland?',
-    a: 'Wir arbeiten projektbasiert mit transparenten Konditionen — definiert nach einer kostenlosen Discovery-Phase. Sie wissen vorher, was es kostet: keine offene Rechnung, keine Stunden-Schätzungen. Konditionen je nach Projektumfang — anrufen und persönlich besprechen.',
+    a: 'Wir arbeiten projektbasiert mit transparenten Konditionen, definiert nach einer kostenlosen Discovery-Phase. Sie wissen vorher, was es kostet: keine offene Rechnung, keine Stunden-Schätzungen. Konditionen je nach Projektumfang, anrufen und persönlich besprechen.',
   },
   {
     q: 'Bist du Freelancer oder eine Agentur?',
-    a: 'Hybride Struktur. Kern ist ein festes Team rund um Fynn Schulz (Inhaber, Saarlouis). Für spezialisierte Disziplinen (z.B. Cloud-Infrastruktur, AI-Integration, mobile Native-Apps) ziehen wir geprüfte Spezialisten aus unserem Netzwerk hinzu. Sie haben aber immer einen festen Ansprechpartner.',
+    a: 'Fylu Marketing ist eine Agentur mit hybrider Struktur. Kern ist ein festes Team rund um Fynn Schulz (Inhaber, Saarlouis). Für spezialisierte Disziplinen (z.B. Cloud-Infrastruktur, AI-Integration, mobile Native-Apps) ziehen wir geprüfte Spezialisten aus unserem Netzwerk hinzu. Sie haben aber immer einen festen Ansprechpartner.',
   },
   {
     q: 'Welche Programmiersprachen und Frameworks beherrscht ihr?',
-    a: 'Primary Stack: TypeScript, React, Next.js, Node.js, Python (FastAPI). Datenbanken: PostgreSQL, SQLite, Supabase, Redis. Cloud: Vercel, AWS, Cloudflare. Mobile: React Native, PWA. AI: OpenAI API, Anthropic API, LangChain, Vector-Datenbanken. Wir wählen Tools, die in 5 Jahren noch wartbar sind — keine Hype-Sprachen.',
+    a: 'Primary Stack: TypeScript, React, Next.js, Node.js, Python (FastAPI). Datenbanken: PostgreSQL, SQLite, Supabase, Redis. Cloud: Vercel, AWS, Cloudflare. Mobile: React Native, PWA. AI: OpenAI API, Anthropic API, LangChain, Vector-Datenbanken. Wir wählen Tools, die in 5 Jahren noch wartbar sind: keine Hype-Sprachen.',
   },
   {
     q: 'Macht ihr auch kleine Aufträge oder nur große Projekte?',
-    a: 'Beides. Kleine Projekte (Landingpage mit Custom-Logik, API-Integration, Browser-Plugin) und größere Software-Projekte. Stundenweise Unterstützung („nur mal kurz das fixen") machen wir nicht — das funktioniert für beide Seiten nicht. Umfang besprechen wir vorab persönlich.',
+    a: 'Beides. Kleine Projekte (Landingpage mit Custom-Logik, API-Integration, Browser-Plugin) und größere Software-Projekte. Stundenweise Unterstützung („nur mal kurz das fixen") machen wir nicht, das funktioniert für beide Seiten nicht. Umfang besprechen wir vorab persönlich.',
   },
   {
     q: 'Arbeitet ihr remote oder vor Ort?',
-    a: 'Standardmäßig remote — moderne Tools machen das problemlos und meistens effizienter. Kick-off-Meetings und kritische Workshops finden auf Wunsch vor Ort statt: Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert, Dillingen oder im gesamten Saarland. Außerhalb der Region auf Anfrage.',
+    a: 'Standardmäßig remote, moderne Tools machen das problemlos und meistens effizienter. Kick-off-Meetings und kritische Workshops finden auf Wunsch vor Ort statt: Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert oder im gesamten Saarland. Außerhalb der Region auf Anfrage.',
   },
   {
     q: 'Bekomme ich den Source Code?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Macht ihr auch Wordpress, Shopify oder andere CMS-Lösungen?',
-    a: 'Nein — bewusst nicht. Wir bauen Custom Code mit Next.js und Co. Wenn Sie eine Wordpress-Lösung suchen, sind Sie bei klassischen Saarland-Agenturen besser aufgehoben. Wir kommen ins Spiel, wenn Sie schnelle Performance, hohe Sicherheit, individuelle Funktionalität oder Integration mit anderen Systemen brauchen.',
+    a: 'Nein, bewusst nicht. Wir bauen Custom Code mit Next.js und Co. Wenn Sie eine Wordpress-Lösung suchen, sind Sie bei klassischen Saarland-Agenturen besser aufgehoben. Wir kommen ins Spiel, wenn Sie schnelle Performance, hohe Sicherheit, individuelle Funktionalität oder Integration mit anderen Systemen brauchen.',
   },
 ];
 
@@ -164,25 +164,26 @@ export default function ProgrammiererSaarlandPage() {
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · Entwicklung</span>
+              <span>Leistung · Entwicklung</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
-              Programmierer aus dem Saarland —{' '}
+              Programmierer aus dem Saarland,{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                mit einer Handschrift, die trägt.
+                der sauber baut.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-              Full-Stack-Entwicklung für Unternehmen in Saarbrücken, Saarlouis, Merzig,
-              Neunkirchen, Homburg und im übrigen Saarland. Moderner Tech-Stack
-              (TypeScript, React, Next.js, Node.js, Python), erfahrene Hand,
-              kuratierte Rahmen. Brauchen Sie{' '}
+              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
+              aufzubauen und zu skalieren. Full-Stack-Entwicklung für Unternehmen in
+              Saarbrücken, Saarlouis, Merzig, Neunkirchen, Homburg und im übrigen
+              Saarland. Moderner Tech-Stack (TypeScript, React, Next.js, Node.js,
+              Python), sauber gebaut, klar dokumentiert. Brauchen Sie{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link> oder{' '}
-              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Editorial Webdesign</Link>? Alles aus einer Hand.
+              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link>? Alles aus einer Hand.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>
@@ -216,10 +217,10 @@ export default function ProgrammiererSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
             <p>
-              Wir sind Full-Stack-Programmierer mit Schwerpunkt Web. Heißt: Wir können sowohl Ihr Frontend (das, was der User sieht) als auch Ihr Backend (Datenbank, Logik, APIs) als auch Ihre Infrastruktur (Hosting, Deployment, Monitoring) bauen — alles aus einer Hand. Das ist der Unterschied zu spezialisierten Freelancern, bei denen Sie für jede Disziplin jemand anders brauchen.
+              Wir sind Full-Stack-Programmierer mit Schwerpunkt Web. Heißt: Wir können sowohl Ihr Frontend (das, was der User sieht) als auch Ihr Backend (Datenbank, Logik, APIs) als auch Ihre Infrastruktur (Hosting, Deployment, Monitoring) bauen, alles aus einer Hand. Das ist der Unterschied zu spezialisierten Freelancern, bei denen Sie für jede Disziplin jemand anders brauchen.
             </p>
             <p>
-              Konkret bedeutet das: Wir bauen Web-Apps für Unternehmen, interne Tools, die manuelle Prozesse automatisieren, REST/GraphQL-APIs, die Ihre bestehenden Systeme verbinden, Browser-Plugins und Chrome-Extensions, Customer-Portale, in denen Ihre Kunden Daten einsehen oder Dokumente herunterladen können, Performance-Optimierung bestehender Websites, AI-Integration (ChatGPT, Claude, Embeddings) und vieles mehr. Wenn Sie ein konkretes Problem haben, das mit Code lösbar ist — sehr wahrscheinlich können wir helfen.
+              Konkret bedeutet das: Wir bauen Web-Apps für Unternehmen, interne Tools, die manuelle Prozesse automatisieren, REST/GraphQL-APIs, die Ihre bestehenden Systeme verbinden, Browser-Plugins und Chrome-Extensions, Customer-Portale, in denen Ihre Kunden Daten einsehen oder Dokumente herunterladen können, Performance-Optimierung bestehender Websites, AI-Integration (ChatGPT, Claude, Embeddings) und vieles mehr. Wenn Sie ein konkretes Problem haben, das mit Code lösbar ist, sehr wahrscheinlich können wir helfen.
             </p>
             <p>
               Was wir bewusst <em>nicht</em> machen: Wordpress-Customizing, klassische CMS-Plugins, Salesforce-Implementierung, SAP-Anpassung. Dafür gibt es im Saarland spezialisierte Agenturen, die das besser können als wir.

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Webdesign Saarland · Editorial Studio · Signature / Atelier / Maison | Fylu",
+  title: "Webdesign Saarland · Websites, die aus Besuchern Kunden machen | Fylu Marketing",
   description:
-    "Editorial Webdesign aus Saarlouis. Zwölf Klienten pro Jahr. Signature, Atelier und Maison — für Häuser im Saarland und international, die einen Auftritt mit Substanz wollen.",
+    "Webdesign aus Saarlouis für Unternehmen jeder Phase. Vom ersten Auftritt bis zur Skalierung. Sachlich, effizient, conversion-orientiert.",
   alternates: {
     canonical: "/webdesign-saarland",
   },
   openGraph: {
-    title: "Webdesign Saarland · Editorial Studio | Fylu",
+    title: "Webdesign Saarland | Fylu Marketing",
     description:
-      "Ein Boutique-Studio aus Saarlouis. Editorial gestaltete Websites — Signature, Atelier, Maison. Zwölf Klienten pro Jahr.",
+      "Wir bauen Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase im Saarland und deutschlandweit.",
     url: "https://www.fylumarketing.de/webdesign-saarland",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -20,15 +20,15 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Fylu Marketing – Editorial Webdesign aus Saarlouis",
+        alt: "Fylu Marketing · Webdesign aus Saarlouis",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign Saarland · Editorial Studio | Fylu",
+    title: "Webdesign Saarland | Fylu Marketing",
     description:
-      "Editorial gestaltete Websites aus Saarlouis. Zwölf Klienten pro Jahr.",
+      "Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase.",
     images: ["/herob.png"],
   },
 };

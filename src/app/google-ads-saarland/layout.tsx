@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Google Ads Saarland · Fylu Marketing · Setup und Betreuung",
   description:
-    "Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — kuratiert aus einem Boutique-Studio in Saarlouis.",
+    "Google Ads aus Saarlouis: Setup und laufende Betreuung. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.",
   alternates: {
     canonical: "/google-ads-saarland",
   },
   openGraph: {
-    title: "Google Ads Saarland · Editorial Studio | Fylu",
+    title: "Google Ads Saarland · Fylu Marketing",
     description:
-      "Google Ads Setup und laufende Betreuung. Erweiterung Ihrer Fylu-Website.",
+      "Google Ads Setup und laufende Betreuung aus Saarlouis.",
     url: "https://www.fylumarketing.de/google-ads-saarland",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Google Ads Saarland – Fylu Marketing",
+        alt: "Google Ads Saarland Fylu Marketing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Google Ads Saarland · Editorial Studio | Fylu",
-    description: "Setup und laufende Betreuung — aus Saarlouis.",
+    title: "Google Ads Saarland · Fylu Marketing",
+    description: "Setup und laufende Betreuung aus Saarlouis.",
     images: ["/herob.png"],
   },
 };

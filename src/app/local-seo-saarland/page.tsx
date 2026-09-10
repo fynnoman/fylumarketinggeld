@@ -6,23 +6,23 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was ist Local SEO?',
-    a: 'Local SEO ist die gezielte Optimierung Ihrer digitalen Präsenz für Suchanfragen mit lokalem Bezug — „Kanzlei Saarbrücken", „Zahnarzt Merzig", „Handwerker Saarlouis". Kernstück ist das Google-Unternehmensprofil, ergänzt durch NAP-Konsistenz, lokale Backlinks, Reviews und strukturierte Daten auf der Website.',
+    a: 'Local SEO ist die gezielte Optimierung Ihrer digitalen Präsenz für Suchanfragen mit lokalem Bezug wie „Kanzlei Saarbrücken", „Zahnarzt Merzig" oder „Handwerker Saarlouis". Kernstück ist das Google-Unternehmensprofil, ergänzt durch NAP-Konsistenz, lokale Backlinks, Reviews und strukturierte Daten auf der Website.',
   },
   {
     q: 'Was ist NAP-Konsistenz?',
-    a: 'NAP steht für Name, Address, Phone. Die drei Angaben müssen im Google-Unternehmensprofil, im Impressum, in strukturierten Daten und in allen Branchenverzeichnissen exakt identisch sein — bis hin zu Schreibweise, Abkürzungen und Formatierung der Telefonnummer. Konsistenz ist die Voraussetzung dafür, dass Google Ihre Entität eindeutig auflöst.',
+    a: 'NAP steht für Name, Address, Phone. Die drei Angaben müssen im Google-Unternehmensprofil, im Impressum, in strukturierten Daten und in allen Branchenverzeichnissen exakt identisch sein, bis hin zu Schreibweise, Abkürzungen und Formatierung der Telefonnummer. Konsistenz ist die Voraussetzung dafür, dass Google Ihre Entität eindeutig auflöst.',
   },
   {
     q: 'Wie wichtig ist das Google-Unternehmensprofil?',
-    a: 'Signale aus dem Google-Unternehmensprofil zählen zu den stärksten Faktoren für die Sichtbarkeit im lokalen Ranking und im Map Pack. Ohne vollständiges Profil ist eine Top-Platzierung bei lokalen Suchanfragen faktisch ausgeschlossen — auch wenn die Website technisch einwandfrei ist.',
+    a: 'Signale aus dem Google-Unternehmensprofil zählen zu den stärksten Faktoren für die Sichtbarkeit im lokalen Ranking und im Map Pack. Ohne vollständiges Profil ist eine Top-Platzierung bei lokalen Suchanfragen faktisch ausgeschlossen, auch wenn die Website technisch einwandfrei ist.',
   },
   {
     q: 'Wie sammelt man Bewertungen richtig?',
-    a: 'Persönliche Bitte am Projektende, QR-Code oder Link nach dem Termin, E-Mail an Bestandskunden. Nicht erlaubt sind Anreize (Rabatte, Gutscheine, Geschenke), Review-Gating (nur Zufriedene fragen) oder inhaltliche Vorgaben. Beides führt zu Löschung und im schlimmsten Fall zu einer Abmahnung nach UWG.',
+    a: 'Persönliche Bitte am Projektende, QR-Code oder Link nach dem Termin, E-Mail an Bestandskunden. Nicht erlaubt sind Anreize (Rabatte, Gutscheine, Geschenke), Review-Gating (nur Zufriedene fragen) oder inhaltliche Vorgaben. Verstöße führen zu Löschung und im schlimmsten Fall zu einer Abmahnung nach UWG.',
   },
   {
     q: 'Welche Verzeichnisse zählen 2026 noch?',
-    a: 'Pflicht: Google, Bing Places, Apple Business Connect. Hoch relevant für DACH: Gelbe Seiten, Das Örtliche, 11880, Cylex, meinestadt.de. Für B2B zusätzlich LinkedIn und XING. Wichtig ist Konsistenz und die Bereinigung veralteter Einträge — nicht die schiere Zahl.',
+    a: 'Pflicht: Google, Bing Places, Apple Business Connect. Hoch relevant für DACH: Gelbe Seiten, Das Örtliche, 11880, Cylex, meinestadt.de. Für B2B zusätzlich LinkedIn und XING. Wichtig ist Konsistenz und die Bereinigung veralteter Einträge, nicht die schiere Zahl.',
   },
   {
     q: 'Wie schnell wirkt Local SEO?',
@@ -51,7 +51,7 @@ const modules = [
     ordinal: 'III',
     label: 'Review-Engine',
     cadence: 'laufend',
-    body: 'Prozess zur systematischen Sammlung von Google-Bewertungen — rechtssicher, ohne Anreize, mit Antwortquote nahe 100 Prozent. Aktive Beantwortung binnen 48 Stunden.',
+    body: 'Prozess zur systematischen Sammlung von Google-Bewertungen: rechtssicher, ohne Anreize, mit Antwortquote nahe 100 Prozent. Aktive Beantwortung binnen 48 Stunden.',
   },
 ];
 
@@ -74,7 +74,7 @@ const rankingFactors = [
   {
     label: 'Links',
     weight: '15 %',
-    body: 'Lokale und thematisch relevante Backlinks — Presse, Verbände, Kunden, Partner, lokales Sponsoring.',
+    body: 'Lokale und thematisch relevante Backlinks: Presse, Verbände, Kunden, Partner, lokales Sponsoring.',
   },
   {
     label: 'Verhaltenssignale',
@@ -115,7 +115,7 @@ export default function LocalSeoSaarlandPage() {
             '@id': 'https://www.fylumarketing.de/local-seo-saarland#service',
             name: 'Local SEO Saarland',
             description:
-              'Google-Unternehmensprofil, NAP-Konsistenz, Reviews und lokale Signale. Local SEO als Erweiterung Ihrer Website — aus Saarlouis.',
+              'Google-Unternehmensprofil, NAP-Konsistenz, Reviews und lokale Signale aus Saarlouis. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.',
             serviceType: 'Local SEO',
             url: 'https://www.fylumarketing.de/local-seo-saarland',
             provider: { '@id': 'https://www.fylumarketing.de/#organization' },
@@ -127,12 +127,6 @@ export default function LocalSeoSaarlandPage() {
               '@type': 'Offer',
               availability: 'https://schema.org/InStock',
               url: 'https://www.fylumarketing.de/buchen',
-              priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description:
-                  'GBP-Aufbau, NAP-Consistency und Review-Engine werden je Ebene transparent kalkuliert. Keine monatliche Grundgebühr.',
-              },
             },
           }),
         }}
@@ -147,7 +141,7 @@ export default function LocalSeoSaarlandPage() {
             url: 'https://www.fylumarketing.de/local-seo-saarland',
             name: 'Local SEO Saarland · Fylu Marketing',
             description:
-              'Google-Unternehmensprofil, NAP-Konsistenz, Reviews und lokale Backlinks aus Saarlouis. Als Erweiterung Ihrer Fylu-Website.',
+              'Google-Unternehmensprofil, NAP-Konsistenz, Reviews und lokale Backlinks aus Saarlouis.',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
             mainEntity: { '@id': 'https://www.fylumarketing.de/local-seo-saarland#service' },
@@ -211,7 +205,7 @@ export default function LocalSeoSaarlandPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · Lokale Sichtbarkeit</span>
+              <span>Local SEO · Lokale Sichtbarkeit</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
@@ -261,7 +255,7 @@ export default function LocalSeoSaarlandPage() {
               </span>
             </div>
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Sechs Signalblöcke —{' '}
+              Sechs Signalblöcke,{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
                 nach Gewicht sortiert.
               </span>
@@ -307,7 +301,7 @@ export default function LocalSeoSaarlandPage() {
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Einzeln buchbar oder als abgestimmte Erweiterung Ihres Fylu-Auftritts.
+                Einzeln buchbar oder als abgestimmte Ergänzung zu Ihrem Fylu-Auftritt.
               </p>
             </div>
           </FadeInSection>

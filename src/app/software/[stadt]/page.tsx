@@ -11,7 +11,7 @@ const SITE = "https://www.fylumarketing.de";
 const softwareFaqs = (city: string) => [
   {
     q: `Was kostet Softwareentwicklung in ${city}?`,
-    a: `Für Unternehmen in ${city} und Umgebung arbeiten wir mit transparenten Konditionen. Kleine Tools, mittelgroße Custom-Software oder komplexe Plattformen — wir kalkulieren jedes Projekt nach Discovery-Phase. Stundensätze und versteckte Folgekosten gibt es bei uns nicht.`,
+    a: `Für Unternehmen in ${city} und Umgebung arbeiten wir mit transparenten Konditionen. Kleine Tools, mittelgroße Custom-Software oder komplexe Plattformen: Wir kalkulieren jedes Projekt nach Discovery-Phase. Stundensätze und versteckte Folgekosten gibt es bei uns nicht.`,
   },
   {
     q: `Welche Software entwickelt ihr für Unternehmen in ${city}?`,
@@ -19,15 +19,15 @@ const softwareFaqs = (city: string) => [
   },
   {
     q: `Seid ihr in ${city} vor Ort oder remote?`,
-    a: `Unser Studio sitzt in Saarlouis — von dort sind alle Saarländer Orte inklusive ${city} in wenigen Minuten erreichbar. Standardmäßig arbeiten wir remote (effizienter, schneller), für Kick-off-Meetings und kritische Workshops kommen wir auf Wunsch vor Ort.`,
+    a: `Fylu Marketing sitzt in Saarlouis, von dort sind alle Saarländer Orte inklusive ${city} in wenigen Minuten erreichbar. Standardmäßig arbeiten wir remote (effizienter, schneller), für Kick-off-Meetings und kritische Workshops kommen wir auf Wunsch vor Ort.`,
   },
   {
     q: `Mit welchen Technologien arbeitet ihr?`,
-    a: `Moderner Tech-Stack: TypeScript, React, Next.js, Node.js, Python, PostgreSQL. Cloud: Vercel, AWS, Cloudflare. AI: OpenAI, Anthropic. Wir wählen Tools, die auch in 5 Jahren wartbar sind — keine Hype-Sprachen, keine Microsoft-90er-Stack.`,
+    a: `Moderner Tech-Stack: TypeScript, React, Next.js, Node.js, Python, PostgreSQL. Cloud: Vercel, AWS, Cloudflare. AI: OpenAI, Anthropic. Wir wählen Tools, die auch in 5 Jahren wartbar sind: keine Hype-Sprachen, kein Microsoft-90er-Stack.`,
   },
   {
     q: `Wie schnell kann ein Projekt für mein Unternehmen aus ${city} starten?`,
-    a: `Nach einem 30-Minuten-Discovery-Call (kostenlos) starten wir typischerweise innerhalb von 7–14 Tagen mit der Konzeptphase. Pro Monat nehmen wir maximal 3 neue Software-Projekte an.`,
+    a: `Nach einem 30-Minuten-Discovery-Call (kostenlos) starten wir typischerweise innerhalb von 7 bis 14 Tagen mit der Konzeptphase. Pro Monat nehmen wir maximal 3 neue Software-Projekte an.`,
   },
 ];
 
@@ -202,7 +202,7 @@ export default async function SoftwareCityPage({
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <p data-speakable className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl">
-              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung — entwickelt aus Saarlouis, mit modernem Tech-Stack und transparenten Konditionen statt Stundensatz. {region.intro}
+              Custom-Software, Web-Apps, ERP- und CRM-Lösungen für {region.city} und Umgebung, entwickelt aus Saarlouis, mit modernem Tech-Stack und transparenten Konditionen statt Stundensatz. {region.intro}
             </p>
           </FadeInSection>
           <FadeInSection delay={0.2}>
@@ -247,7 +247,7 @@ export default async function SoftwareCityPage({
               <p key={i}>{p}</p>
             ))}
             <p>
-              Genau hier setzen wir an: Wir bauen die Software, die im Hintergrund läuft und Ihr Unternehmen in {region.city} skalierbar macht — vom internen Tool, das manuelle Excel-Listen ersetzt, über das Kundenportal mit Login bis zur kompletten ERP-Lösung mit Buchhaltungs-Schnittstelle.
+              Genau hier setzen wir an: Wir bauen die Software, die im Hintergrund läuft und Ihr Unternehmen in {region.city} skalierbar macht. Vom internen Tool, das manuelle Excel-Listen ersetzt, über das Kundenportal mit Login bis zur kompletten ERP-Lösung mit Buchhaltungs-Schnittstelle.
             </p>
           </FadeInSection>
         </div>
@@ -258,7 +258,7 @@ export default async function SoftwareCityPage({
         <section className="py-20 md:py-28 px-5 md:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-10">
-              {region.city} — Wirtschaft, Branchen & Software-Realität
+              {region.city}: Wirtschaft, Branchen & Software-Realität
             </h2>
             {region.economy && (
               <p className="text-lg leading-relaxed text-stone-700 mb-8">{region.economy}</p>
@@ -312,12 +312,12 @@ export default async function SoftwareCityPage({
           </FadeInSection>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Web-Apps & SaaS', body: `Vollständige Webanwendungen mit Login, Datenbank und Bezahlung — für Unternehmen in ${region.city}.` },
+              { title: 'Web-Apps & SaaS', body: `Vollständige Webanwendungen mit Login, Datenbank und Bezahlung für Unternehmen in ${region.city}.` },
               { title: 'Interne Tools', body: 'Custom-Software, die Excel und manuelle Prozesse ersetzt. Spart Zeit, reduziert Fehler.' },
-              { title: 'ERP & CRM', body: `Modulare Unternehmens-Software für Vertrieb, Buchhaltung, Kundenverwaltung — auf den Mittelstand in ${region.city} zugeschnitten.` },
-              { title: 'API-Integration', body: 'DATEV, lexoffice, Stripe, HubSpot — wir verbinden Ihre Systeme automatisch.' },
-              { title: 'Automatisierung', body: 'Lead-Verteilung, Rechnungsstellung, Reporting — manuelle Arbeit reduzieren.' },
-              { title: 'AI-Integration', body: 'ChatGPT, Claude, Embeddings — moderne KI sinnvoll in Ihre Software einbauen.' },
+              { title: 'ERP & CRM', body: `Modulare Unternehmens-Software für Vertrieb, Buchhaltung, Kundenverwaltung, auf den Mittelstand in ${region.city} zugeschnitten.` },
+              { title: 'API-Integration', body: 'DATEV, lexoffice, Stripe, HubSpot: Wir verbinden Ihre Systeme automatisch.' },
+              { title: 'Automatisierung', body: 'Lead-Verteilung, Rechnungsstellung, Reporting: manuelle Arbeit reduzieren.' },
+              { title: 'AI-Integration', body: 'ChatGPT, Claude, Embeddings: moderne KI sinnvoll in Ihre Software einbauen.' },
             ].map((s, i) => (
               <FadeInSection key={s.title} delay={i * 0.05}>
                 <article className="h-full bg-[var(--background-warm)] rounded-3xl border border-stone-200/70 p-6">
@@ -344,7 +344,7 @@ export default async function SoftwareCityPage({
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-semibold text-[var(--ink)] tracking-[-0.035em] leading-[1.05] mb-12 max-w-3xl">
-              Software in {region.city} —{' '}
+              Software in {region.city}:{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">die Basics.</span>
             </h2>
           </FadeInSection>

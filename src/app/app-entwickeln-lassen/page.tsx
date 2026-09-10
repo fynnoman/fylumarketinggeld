@@ -6,19 +6,19 @@ import FadeInSection from '@/components/animated/FadeInSection';
 const faqs = [
   {
     q: 'Was kostet es, eine App entwickeln zu lassen?',
-    a: 'Die Konditionen hängen stark vom Funktionsumfang ab — einfache PWA, mittelgroße Apps mit mehreren Modulen oder komplexe SaaS-/Marketplace-Apps. Wir arbeiten mit transparenten Konditionen — keine Stundensätze, keine Überraschungen. Konkrete Einschätzung nach einem 15-Minuten-Gespräch.',
+    a: 'Die Konditionen hängen stark vom Funktionsumfang ab: einfache PWA, mittelgroße Apps mit mehreren Modulen oder komplexe SaaS-/Marketplace-Apps. Wir arbeiten mit transparenten Konditionen, keine Stundensätze, keine Überraschungen. Konkrete Einschätzung nach einem 15-Minuten-Gespräch.',
   },
   {
-    q: 'iOS, Android oder Web-App — was passt für mein Projekt?',
-    a: 'Faustregel: Web-App / PWA, wenn die App ein Tool ist und vor allem auf dem Schreibtisch genutzt wird (z.B. CRM, ERP, internes Dashboard). Native App (React Native für iOS + Android gleichzeitig), wenn Push-Notifications, Kamera, GPS, Offline-Modus oder App-Store-Präsenz wichtig sind. Wir empfehlen ehrlich basierend auf Ihrem Use-Case — auch wenn Sie die billigere Variante brauchen.',
+    q: 'iOS, Android oder Web-App: was passt für mein Projekt?',
+    a: 'Faustregel: Web-App / PWA, wenn die App ein Tool ist und vor allem auf dem Schreibtisch genutzt wird (z.B. CRM, ERP, internes Dashboard). Native App (React Native für iOS + Android gleichzeitig), wenn Push-Notifications, Kamera, GPS, Offline-Modus oder App-Store-Präsenz wichtig sind. Wir empfehlen ehrlich basierend auf Ihrem Use-Case, auch wenn Sie die günstigere Variante brauchen.',
   },
   {
     q: 'Wie lange dauert die App-Entwicklung?',
-    a: 'MVP / einfache Web-App: 6–10 Wochen. Mittelgroße App: 3–5 Monate. Komplexe Plattform: 6–12 Monate. Alle Projekte werden in 2-Wochen-Sprints umgesetzt, mit funktionsfähigen Zwischenständen — Sie sehen Fortschritt regelmäßig, nicht erst am Ende.',
+    a: 'MVP / einfache Web-App: 6 bis 10 Wochen. Mittelgroße App: 3 bis 5 Monate. Komplexe Plattform: 6 bis 12 Monate. Alle Projekte werden in 2-Wochen-Sprints umgesetzt, mit funktionsfähigen Zwischenständen. Sie sehen Fortschritt regelmäßig, nicht erst am Ende.',
   },
   {
     q: 'Bekomme ich eine App-Store-Veröffentlichung mit?',
-    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess — inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im Paket enthalten.',
+    a: 'Ja. Für native Apps übernehmen wir den kompletten Apple App Store und Google Play Store Submission-Prozess, inklusive Screenshots, App-Beschreibung, Privacy-Policy-Setup und Beantwortung von Reviewer-Rückfragen. Erste Submission ist im Umfang enthalten.',
   },
   {
     q: 'Was passiert nach dem Launch?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Habt ihr App-Referenzen?',
-    a: 'Ja. Taskey ist eine SaaS-Web-App, die wir für die Gebäudereinigungsbranche entwickelt haben — produktiv im Einsatz, mehrere hundert Nutzer. Weitere Web-Apps und PWAs für Saarländer und deutsche Mittelständler. Konkrete Cases auf Anfrage.',
+    a: 'Ja. Taskey ist eine SaaS-Web-App, die wir für die Gebäudereinigungsbranche entwickelt haben, produktiv im Einsatz, mehrere hundert Nutzer. Weitere Web-Apps und PWAs für Saarländer und deutsche Mittelständler. Konkrete Cases auf Anfrage.',
   },
 ];
 
@@ -175,23 +175,25 @@ export default function AppEntwickelnLassenPage() {
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · App-Entwicklung</span>
+              <span>Leistung · App-Entwicklung</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
-              App entwickeln lassen —{' '}
+              App entwickeln lassen{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                als Erweiterung des Studios.
+                von Fylu Marketing.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-              Web-Apps, PWAs, iOS und Android — entwickelt aus Saarlouis. Mit
-              einem Stack, der auch in fünf Jahren noch wartbar ist (React Native,
-              Next.js, TypeScript, Cloud-Native). App-Store-fertig, mit Studio-Begleitung.
-              Kuratierter Rahmen pro Vorhaben. Mehr Tiefe zur{' '}
+              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
+              aufzubauen und zu skalieren. Web-Apps, PWAs, iOS und Android,
+              entwickelt aus Saarlouis. Mit einem Stack, der auch in fünf Jahren
+              noch wartbar ist (React Native, Next.js, TypeScript, Cloud-Native).
+              App-Store-fertig, mit laufender Begleitung nach Live-Gang. Mehr Tiefe
+              zur{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link>.
             </p>
           </FadeInSection>

@@ -28,9 +28,9 @@ export type Topic = {
 // - 2026-09 Update: handwerker WIEDER indexable (hochwertige B2B-Ausrichtung).
 // - 2026-09 Konsolidierung: festpreis (Konditionen-Slug, kein Branchen),
 //   heizungsbauer (Duplikat zu SHK), maler/schreiner/garten-landschaftsbau
-//   (generische Handwerks-Slugs — wird von handwerker-Landing abgedeckt).
+//   (generische Handwerks-Slugs, wird von handwerker-Landing abgedeckt).
 // - 2026-08-31 Removal: festpreis und in-14-tagen Topics komplett entfernt
-//   (Positionierung: keine Festpreise, keine Speed-Claims — Editorial +
+//   (Positionierung: keine Festpreise, keine Speed-Claims;
 //   langfristige Partnerschaft).
 const OFF_ICP_SLUGS = new Set([
   "restaurant",
@@ -59,11 +59,11 @@ export const topics: Topic[] = [
     metaDescription:
       "Websites für etablierte Handwerksbetriebe: hochwertige Auftraggeber gewinnen, Meister-Substanz sichtbar machen, technisch saubere Basis für lokales SEO. Aus Saarlouis.",
     intro:
-      "Etablierte Handwerksbetriebe haben zwei Zielgruppen, die sich fundamental unterscheiden: den privaten Endkunden mit kleinem Auftragsvolumen und den professionellen Auftraggeber (Verwaltung, Facility-Management, gewerbliche Bauträger) mit fünf- bis sechsstelligen Projekten. Ohne saubere Website-Struktur landen beide Gruppen auf derselben austauschbaren Landingpage — und keiner davon fühlt sich richtig angesprochen.",
+      "Etablierte Handwerksbetriebe haben zwei Zielgruppen, die sich fundamental unterscheiden: den privaten Endkunden mit kleinem Auftragsvolumen und den professionellen Auftraggeber (Verwaltung, Facility-Management, gewerbliche Bauträger) mit fünf- bis sechsstelligen Projekten. Ohne saubere Website-Struktur landen beide Gruppen auf derselben austauschbaren Landingpage, und keiner davon fühlt sich richtig angesprochen.",
     sections: [
       {
         title: "Substanz statt Handwerker-Standard",
-        text: "Meisterbetrieb, ISO-Zertifikate, RAL-Gütezeichen, langjährige Referenzobjekte, klar dokumentierte Prozesse — das sind die Signale, die professionelle Auftraggeber suchen. Wir bauen die Website so, dass diese Substanz in den ersten fünf Sekunden sichtbar wird und Ihnen die höherwertigen Anfragen bringt.",
+        text: "Meisterbetrieb, ISO-Zertifikate, RAL-Gütezeichen, langjährige Referenzobjekte, klar dokumentierte Prozesse, das sind die Signale, die professionelle Auftraggeber suchen. Wir bauen die Website so, dass diese Substanz in den ersten fünf Sekunden sichtbar wird und Ihnen die höherwertigen Anfragen bringt.",
       },
       {
         title: "Klar getrennte Zielgruppen-Ansprache",
@@ -71,17 +71,17 @@ export const topics: Topic[] = [
       },
       {
         title: "Lokale Sichtbarkeit mit Substanz",
-        text: "Optimierung für konkrete Suchbegriffe wie „Elektrotechnik Bürogebäude Saarbrücken“, „Dachdecker Sanierung Saarland“, „Bauinstallation Objektbetreuung Homburg“ — dort wo Auftragswerte hoch und Wettbewerb übersichtlich ist. Inklusive Google-Unternehmensprofil und saubere lokale Signale.",
+        text: "Optimierung für konkrete Suchbegriffe wie „Elektrotechnik Bürogebäude Saarbrücken“, „Dachdecker Sanierung Saarland“, „Bauinstallation Objektbetreuung Homburg“, dort wo Auftragswerte hoch und Wettbewerb übersichtlich ist. Inklusive Google-Unternehmensprofil und saubere lokale Signale.",
       },
     ],
     faqs: [
       {
         q: "Was kostet eine Website für meinen Handwerksbetrieb?",
-        a: "Wir kalkulieren jedes Projekt individuell nach Umfang und Funktionsbedarf. Rufen Sie uns an oder senden Sie eine Anfrage — innerhalb von 24 Stunden bekommen Sie eine transparente Einschätzung.",
+        a: "Wir kalkulieren jedes Projekt individuell nach Umfang und Funktionsbedarf. Rufen Sie uns an oder senden Sie eine Anfrage, innerhalb von 24 Stunden bekommen Sie eine transparente Einschätzung.",
       },
       {
         q: "Werde ich damit bei Google gefunden?",
-        a: "Ja. Lokale SEO und Google Business sind fester Bestandteil – auf Wunsch ergänzt durch laufende SEO-Betreuung oder Google Ads.",
+        a: "Ja. Lokale SEO und Google Business sind fester Bestandteil, auf Wunsch ergänzt durch laufende SEO-Betreuung oder Google Ads.",
       },
       {
         q: "Kann ich Bilder und Projekte selbst hinzufügen?",
@@ -110,11 +110,11 @@ export const topics: Topic[] = [
     metaDescription:
       "Restaurant-Websites mit Online-Reservierung, Speisekarte und lokaler SEO. Mehr Gäste in Saarbrücken, Saarlouis & Co..",
     intro:
-      "Eine Restaurant-Website soll Hunger machen – und gleichzeitig Reservierungen bringen. Wir entwickeln Websites, die Ihr Restaurant emotional inszenieren und gleichzeitig technisch sauber für Google und mobile Nutzer optimiert sind.",
+      "Eine Restaurant-Website soll Hunger machen, und gleichzeitig Reservierungen bringen. Wir entwickeln Websites, die Ihr Restaurant emotional inszenieren und gleichzeitig technisch sauber für Google und mobile Nutzer optimiert sind.",
     sections: [
       {
         title: "Online-Reservierung & digitale Speisekarte",
-        text: "Direkte Tischreservierung ohne Drittanbieter-Provision, digitale Speisekarte mit QR-Code für Tische und Updates in Echtzeit. Ihre Gäste finden, was sie suchen – schnell und ohne Frust.",
+        text: "Direkte Tischreservierung ohne Drittanbieter-Provision, digitale Speisekarte mit QR-Code für Tische und Updates in Echtzeit. Ihre Gäste finden, was sie suchen, schnell und ohne Frust.",
       },
       {
         title: "Mobil. Schnell. Lokal.",
@@ -122,7 +122,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Google Maps & Bewertungen",
-        text: "Wir richten Ihr Google Business Profil professionell ein, damit Sie in Maps und in der lokalen Suche prominent erscheinen – inklusive Strategie für mehr und bessere Bewertungen.",
+        text: "Wir richten Ihr Google Business Profil professionell ein, damit Sie in Maps und in der lokalen Suche prominent erscheinen, inklusive Strategie für mehr und bessere Bewertungen.",
       },
     ],
     faqs: [
@@ -136,7 +136,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Gibt es eine Anbindung an Online-Reservierungssysteme?",
-        a: "Ja, gängige Systeme wie OpenTable oder Quandoo lassen sich integrieren – oder wir nutzen ein eigenes Formular ohne Provision.",
+        a: "Ja, gängige Systeme wie OpenTable oder Quandoo lassen sich integrieren, oder wir nutzen ein eigenes Formular ohne Provision.",
       },
     ],
   },
@@ -147,11 +147,11 @@ export const topics: Topic[] = [
     metaDescription:
       "Websites für Steuerberater & Kanzleien im Saarland: seriös, mandantenfokussiert, mit lokaler SEO. Mandanten gewinnen, Vertrauen stärken..",
     intro:
-      "Steuerberater leben von Vertrauen. Ihre Website muss Kompetenz, Diskretion und Erreichbarkeit innerhalb weniger Sekunden vermitteln – sonst entscheidet sich der Mandant für die Kanzlei nebenan.",
+      "Steuerberater leben von Vertrauen. Ihre Website muss Kompetenz, Diskretion und Erreichbarkeit innerhalb weniger Sekunden vermitteln, sonst entscheidet sich der Mandant für die Kanzlei nebenan.",
     sections: [
       {
         title: "Seriöses Design, klare Botschaft",
-        text: "Wir entwickeln ein modernes, ruhiges Design, das Ihre Kanzlei professionell positioniert. Klare Strukturen für Leistungen, Branchen und Team – ohne überflüssige Spielereien.",
+        text: "Wir entwickeln ein modernes, ruhiges Design, das Ihre Kanzlei professionell positioniert. Klare Strukturen für Leistungen, Branchen und Team, ohne überflüssige Spielereien.",
       },
       {
         title: "Mandantenportal & Online-Termin",
@@ -173,7 +173,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie lange dauert die Erstellung?",
-        a: "Typischerweise 3–4 Wochen – inklusive Texte, Design, technischer Umsetzung und SEO.",
+        a: "Typischerweise 3–4 Wochen, inklusive Texte, Design, technischer Umsetzung und SEO.",
       },
     ],
     relatedTools: [
@@ -187,7 +187,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -196,35 +196,35 @@ export const topics: Topic[] = [
     h1: "Webdesigner günstig im Saarland",
     metaTitle: "Webdesigner günstig Saarland | Transparente Konditionen | Fylu",
     metaDescription:
-      "Professionelle Websites zu klaren, transparenten Konditionen — entwickelt von einem eingespielten Studio aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
+      "Professionelle Websites zu klaren, transparenten Konditionen. Entwickelt von einem eingespielten Team aus Saarlouis. Transparent, mobiloptimiert, SEO inklusive.",
     intro:
-      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zu klaren, transparenten Konditionen — mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
+      "Effizient kalkuliert, kompromisslos umgesetzt. Wir liefern professionelle Websites zu klaren, transparenten Konditionen, mit der gleichen technischen und gestalterischen Substanz, die unsere größeren Projekte auszeichnet.",
     sections: [
       {
-        title: "Transparente Konditionen — ohne Überraschungen",
+        title: "Transparente Konditionen ohne Überraschungen",
         text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
       },
       {
-        title: "Studio statt Agentur-Overhead",
-        text: "Sie arbeiten direkt mit dem Team, das Ihre Website auch konzipiert, gestaltet und baut — Strategie, Design und Entwicklung aus einer Hand. Kurze Wege, schnelle Entscheidungen, faire Preise.",
+        title: "Direkter Draht statt Agentur-Overhead",
+        text: "Sie arbeiten direkt mit dem Team, das Ihre Website auch konzipiert, gestaltet und baut. Strategie, Design und Entwicklung aus einer Hand. Kurze Wege, schnelle Entscheidungen, faire Konditionen.",
       },
       {
         title: "Volle Substanz im günstigsten Paket",
-        text: "Mobile-first Design, technisches SEO, Sicherheit, höchste Core-Web-Vitals-Werte und sauberer Code sind in jedem Paket Standard. Effizient kalkuliert heißt bei uns: nichts weggelassen, sondern klug priorisiert.",
+        text: "Mobile-first Design, technisches SEO, Sicherheit, hohe Core-Web-Vitals-Werte und sauberer Code sind in jedem Paket Standard. Effizient kalkuliert heißt bei uns: nichts weggelassen, sondern klug priorisiert.",
       },
     ],
     faqs: [
       {
         q: "Was ist im Angebot enthalten?",
-        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen ein schriftliches Angebot mit klarer Leistungsbeschreibung — bevor wir starten.",
+        a: "Strategie-Gespräch, individuelles Design, technische Umsetzung, SEO-Foundation, Google-Unternehmensprofil-Setup, Hosting im ersten Jahr und Live-Gang. Sie bekommen ein schriftliches Angebot mit klarer Leistungsbeschreibung, bevor wir starten.",
       },
       {
         q: "Gibt es versteckte Kosten?",
-        a: "Nein. Was im Angebot steht, ist der Preis. Erweiterungen (zusätzliche Seiten, Sonderfunktionen, laufende Betreuung) kalkulieren wir transparent als separate Position — Sie entscheiden, ob Sie sie buchen.",
+        a: "Nein. Was im Angebot steht, ist der Preis. Erweiterungen (zusätzliche Seiten, Sonderfunktionen, laufende Betreuung) kalkulieren wir transparent als separate Position, Sie entscheiden, ob Sie sie buchen.",
       },
       {
         q: "Was kostet die laufende Pflege?",
-        a: "Wahlweise pro Vorgang oder als Monatspaket — beides immer transparent vorab kalkuliert. Wir binden Sie nicht in Knebelverträge: monatlich kündbar, mit klarer Leistungsbeschreibung.",
+        a: "Wahlweise pro Vorgang oder als Monatspaket, beides immer transparent vorab kalkuliert. Wir binden Sie nicht in Knebelverträge: monatlich kündbar, mit klarer Leistungsbeschreibung.",
       },
     ],
   },
@@ -235,15 +235,15 @@ export const topics: Topic[] = [
     metaDescription:
       "Zahnarzt-Websites speziell für das Saarland: seriöses Design, Online-Termin, lokale SEO. Mehr qualifizierte Neupatienten in Saarbrücken, Saarlouis und Co.",
     intro:
-      `Neupatienten googeln heute zuerst „Zahnarzt Saarbrücken“ oder „Implantologe Saarlouis“ – bevor sie überhaupt anrufen. Wer auf Seite 2 landet oder eine veraltete Website hat, verliert genau diese Patienten an die nächstgelegene Praxis.`,
+      `Neupatienten googeln heute zuerst „Zahnarzt Saarbrücken“ oder „Implantologe Saarlouis“, bevor sie überhaupt anrufen. Wer auf Seite 2 landet oder eine veraltete Website hat, verliert genau diese Patienten an die nächstgelegene Praxis.`,
     sections: [
       {
         title: "Vertrauen ab der ersten Sekunde",
-        text: "Eine Zahnarzt-Website hat genau 5 Sekunden, um Vertrauen aufzubauen. Wir entwickeln modernes, ruhiges Design mit klarem Leistungs-Fokus, Team-Vorstellung, Behandlungs-Beschreibungen und seriöser Bildsprache – ohne übertriebene Werbe-Tonalität.",
+        text: "Eine Zahnarzt-Website hat genau 5 Sekunden, um Vertrauen aufzubauen. Wir entwickeln modernes, ruhiges Design mit klarem Leistungs-Fokus, Team-Vorstellung, Behandlungs-Beschreibungen und seriöser Bildsprache, ohne übertriebene Werbe-Tonalität.",
       },
       {
         title: "Online-Termin & DSGVO-konformer Kontakt",
-        text: "Patienten wollen heute online buchen. Wir integrieren entweder ein eigenes sicheres Formular oder gängige Tools wie Doctolib, jameda oder samedi – immer DSGVO-konform und barrierearm.",
+        text: "Patienten wollen heute online buchen. Wir integrieren entweder ein eigenes sicheres Formular oder gängige Tools wie Doctolib, jameda oder samedi, immer DSGVO-konform und barrierearm.",
       },
       {
         title: "Lokale SEO für Zahnarzt-Suchanfragen",
@@ -253,7 +253,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Welche Online-Termin-Systeme können integriert werden?",
-        a: "Wir integrieren gängige Systeme wie Doctolib, jameda, samedi oder Dampsoft Online – alternativ auch ein eigenes sicheres Formular ohne Drittanbieter-Provision.",
+        a: "Wir integrieren gängige Systeme wie Doctolib, jameda, samedi oder Dampsoft Online, alternativ auch ein eigenes sicheres Formular ohne Drittanbieter-Provision.",
       },
       {
         q: "Ist die Website rechtssicher (HWG, Berufsordnung)?",
@@ -275,7 +275,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -286,15 +286,15 @@ export const topics: Topic[] = [
     metaDescription:
       "Anwalts- und Kanzlei-Websites im Saarland: seriös, fachgebietsorientiert, mit lokaler SEO. Mehr qualifizierte Mandantenanfragen im gesamten Saarland.",
     intro:
-      `Mandanten googeln heute spezifisch nach „Anwalt Familienrecht Saarbrücken“ oder „Fachanwalt Arbeitsrecht Saarlouis“. Wer dort nicht oben rankt, wird übersehen – egal wie groß die Reputation ist.`,
+      `Mandanten googeln heute spezifisch nach „Anwalt Familienrecht Saarbrücken“ oder „Fachanwalt Arbeitsrecht Saarlouis“. Wer dort nicht oben rankt, wird übersehen, egal wie groß die Reputation ist.`,
     sections: [
       {
         title: "Seriöses Design mit klarer Spezialisierung",
-        text: "Wir entwickeln Kanzlei-Websites, die Kompetenz, Diskretion und Erreichbarkeit innerhalb von Sekunden vermitteln. Pro Fachgebiet eine eigene Seite – inkl. Beispielfälle, FAQ und Honorarmodell-Transparenz.",
+        text: "Wir entwickeln Kanzlei-Websites, die Kompetenz, Diskretion und Erreichbarkeit innerhalb von Sekunden vermitteln. Pro Fachgebiet eine eigene Seite, inkl. Beispielfälle, FAQ und Honorarmodell-Transparenz.",
       },
       {
         title: "Lokale Mandanten gewinnen",
-        text: "Optimierung für relevante Suchbegriffe – nach Fachgebiet, Stadt und Spezialisierung. Inklusive Google-Unternehmensprofil, Schema.org für rechtliche Dienstleister und sauberer Linkstruktur.",
+        text: "Optimierung für relevante Suchbegriffe, nach Fachgebiet, Stadt und Spezialisierung. Inklusive Google-Unternehmensprofil, Schema.org für rechtliche Dienstleister und sauberer Linkstruktur.",
       },
       {
         title: "BRAO-konform & DSGVO-sicher",
@@ -304,7 +304,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Ist die Website BRAO-konform?",
-        a: "Ja. Wir achten auf alle berufsrechtlichen Anforderungen für anwaltliche Außendarstellung – inkl. korrekter Fachanwaltsbezeichnungen, Pflichtangaben und sachlicher Tonalität.",
+        a: "Ja. Wir achten auf alle berufsrechtlichen Anforderungen für anwaltliche Außendarstellung, inkl. korrekter Fachanwaltsbezeichnungen, Pflichtangaben und sachlicher Tonalität.",
       },
       {
         q: "Können Sie ein Mandantenportal integrieren?",
@@ -312,7 +312,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie funktioniert SEO für Anwaltskanzleien?",
-        a: `Wir optimieren pro Fachgebiet und Standort – z.B. „Fachanwalt Arbeitsrecht Saarbrücken“. Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
+        a: `Wir optimieren pro Fachgebiet und Standort, z.B. „Fachanwalt Arbeitsrecht Saarbrücken“. Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
       },
     ],
     relatedTools: [
@@ -326,7 +326,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -337,7 +337,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Immobilienmakler-Websites im Saarland: Premium-Design, Objekt-Präsentation, Lead-Generierung. Mehr Eigentümer-Anfragen und Käufer-Leads.",
     intro:
-      "Immobilienmakler verdienen ihr Geld zweimal: einmal beim Eigentümer (Auftrag) und einmal beim Käufer (Provision). Eine starke Website muss beide Zielgruppen gleichzeitig überzeugen – und das mit einem einzigen Auftritt.",
+      "Immobilienmakler verdienen ihr Geld zweimal: einmal beim Eigentümer (Auftrag) und einmal beim Käufer (Provision). Eine starke Website muss beide Zielgruppen gleichzeitig überzeugen, und das mit einem einzigen Auftritt.",
     sections: [
       {
         title: "Premium-Objektpräsentation",
@@ -359,7 +359,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kann ich eine Online-Immobilienbewertung anbieten?",
-        a: "Ja. Wir integrieren entweder eine eigene Bewertungslogik oder Drittanbieter-Tools – als Lead-Magnet für Eigentümer-Akquise.",
+        a: "Ja. Wir integrieren entweder eine eigene Bewertungslogik oder Drittanbieter-Tools, als Lead-Magnet für Eigentümer-Akquise.",
       },
       {
         q: "Wie messen wir den Erfolg?",
@@ -377,7 +377,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -388,7 +388,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Arztpraxis-Websites im Saarland: seriöses Design, Online-Termin, barrierearm, DSGVO-konform. Mehr Patientenanfragen in Saarbrücken, Saarlouis und ganz Saarland.",
     intro:
-      "Patienten suchen heute zuerst online nach Ärzten – auch wenn sie schon einen Termin haben. Eine veraltete Praxis-Website kostet Sie Vertrauen, Neupatienten und im Zweifel auch bestehende Patienten.",
+      "Patienten suchen heute zuerst online nach Ärzten, auch wenn sie schon einen Termin haben. Eine veraltete Praxis-Website kostet Sie Vertrauen, Neupatienten und im Zweifel auch bestehende Patienten.",
     sections: [
       {
         title: "Patientenzentriertes Design",
@@ -410,7 +410,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kann ich Patientenformulare digital ausfüllen lassen?",
-        a: "Ja. Wir integrieren digitale Anamnese-Bögen, Datenschutzformulare und Erstkontakt-Fragebögen – sicher, schnell und papierlos.",
+        a: "Ja. Wir integrieren digitale Anamnese-Bögen, Datenschutzformulare und Erstkontakt-Fragebögen, sicher, schnell und papierlos.",
       },
       {
         q: "Wie lange dauert die Erstellung?",
@@ -428,7 +428,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -443,7 +443,7 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Visuelle Inszenierung mit Stil",
-        text: "Hochwertige Galerie mit Vorher/Nachher, Team-Vorstellung mit Persönlichkeit, Service-Übersicht mit Preisen. Klar, premium, modern – ohne Klischee-Bildwelt.",
+        text: "Hochwertige Galerie mit Vorher/Nachher, Team-Vorstellung mit Persönlichkeit, Service-Übersicht mit Preisen. Klar, premium, modern, ohne Klischee-Bildwelt.",
       },
       {
         title: "Online-Terminbuchung ohne Provision",
@@ -457,11 +457,11 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Welche Buchungssysteme können integriert werden?",
-        a: "Treatwell, Shore, Booksy, Resmio oder eigenes Buchungsformular – immer ohne versteckte Drittanbieter-Provision.",
+        a: "Treatwell, Shore, Booksy, Resmio oder eigenes Buchungsformular, immer ohne versteckte Drittanbieter-Provision.",
       },
       {
         q: "Bekomme ich auch Instagram-Anbindung?",
-        a: "Ja. Wir binden Ihren Instagram-Feed automatisch ein – damit Ihre Website immer aktuelle Stylings zeigt, ohne dass Sie doppelt posten müssen.",
+        a: "Ja. Wir binden Ihren Instagram-Feed automatisch ein, damit Ihre Website immer aktuelle Stylings zeigt, ohne dass Sie doppelt posten müssen.",
       },
       {
         q: "Wie kann ich neue Kunden gezielt gewinnen?",
@@ -476,11 +476,11 @@ export const topics: Topic[] = [
     metaDescription:
       "Hotel- und Pension-Websites im Saarland: Direktbuchungen ohne Provision, Premium-Bilder, lokale SEO. Mehr Gäste in Saarbrücken, an der Saarschleife, im Bostalsee-Umfeld.",
     intro:
-      "Jede Buchung über booking.com oder Expedia kostet 15–25 % Provision. Eine starke eigene Website holt Gäste direkt zu Ihnen – und macht aus der Provisions-Falle einen messbaren Profithebel.",
+      "Jede Buchung über booking.com oder Expedia kostet 15–25 % Provision. Eine starke eigene Website holt Gäste direkt zu Ihnen, und macht aus der Provisions-Falle einen messbaren Profithebel.",
     sections: [
       {
         title: "Direktbuchung ohne Provisionsfalle",
-        text: "Eigene Buchungs-Engine direkt auf der Website integriert. Gäste buchen direkt, Sie sparen die OTA-Provision von Booking, HRS & Co. — ein deutlicher Mehrertrag pro Jahr.",
+        text: "Eigene Buchungs-Engine direkt auf der Website integriert. Gäste buchen direkt, Sie sparen die OTA-Provision von Booking, HRS & Co., ein deutlicher Mehrertrag pro Jahr.",
       },
       {
         title: "Premium-Inszenierung",
@@ -494,7 +494,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Welche Buchungssysteme können integriert werden?",
-        a: "Mews, Cultuzz, hotline, Booking.com Channel Manager, Sirvoy oder eine eigene Buchungslogik – je nach Größe und Anforderungen.",
+        a: "Mews, Cultuzz, hotline, Booking.com Channel Manager, Sirvoy oder eine eigene Buchungslogik, je nach Größe und Anforderungen.",
       },
       {
         q: "Kann ich saisonale Pakete anbieten?",
@@ -502,7 +502,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Was passiert mit meinen bestehenden OTA-Buchungen?",
-        a: "Die laufen weiter – wir senken nur Ihren Abhängigkeitsgrad. Ziel: 30–50 % Direktbuchungen statt 100 % OTA.",
+        a: "Die laufen weiter, wir senken nur Ihren Abhängigkeitsgrad. Ziel: 30–50 % Direktbuchungen statt 100 % OTA.",
       },
     ],
   },
@@ -513,7 +513,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Autohaus-Websites im Saarland: Fahrzeugbestand, Werkstatt-Termin, Inzahlungnahme-Rechner, lokale SEO. Mehr Verkaufs- und Werkstatt-Leads in Saarbrücken, Saarlouis und ganz Saarland.",
     intro:
-      "Autokäufer recherchieren heute zu 95 % online, bevor sie das erste Mal das Autohaus betreten. Wer dort nicht sichtbar ist, verliert Käufer an Online-Plattformen und Mitbewerber – noch bevor das Verkaufsgespräch überhaupt stattfindet.",
+      "Autokäufer recherchieren heute zu 95 % online, bevor sie das erste Mal das Autohaus betreten. Wer dort nicht sichtbar ist, verliert Käufer an Online-Plattformen und Mitbewerber, noch bevor das Verkaufsgespräch überhaupt stattfindet.",
     sections: [
       {
         title: "Fahrzeugbestand mit Conversion-Fokus",
@@ -531,7 +531,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Können Sie meinen Fahrzeugbestand automatisch synchronisieren?",
-        a: "Ja, wir integrieren Schnittstellen zu DAT, mobile.de, AutoScout24 und herstellereigenen Systemen – Bestand updated sich automatisch.",
+        a: "Ja, wir integrieren Schnittstellen zu DAT, mobile.de, AutoScout24 und herstellereigenen Systemen, Bestand updated sich automatisch.",
       },
       {
         q: "Kann ich einen Finanzierungs- oder Leasingrechner einbauen?",
@@ -550,7 +550,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Elektriker- und Elektroinstallateur-Websites im Saarland: Notdienst-Anfrage, Photovoltaik-Lead-Magnet, lokale SEO. Mehr private und gewerbliche Aufträge.",
     intro:
-      "Elektriker sind in der besten Marktlage seit Jahrzehnten – Photovoltaik, E-Mobilität, Wärmepumpen, Smart Home. Doch wer online nicht sichtbar ist, bekommt nur die alten Empfehlungs-Aufträge ab, nicht die neuen, gut zahlenden Premium-Anfragen.",
+      "Elektriker sind in der besten Marktlage seit Jahrzehnten, Photovoltaik, E-Mobilität, Wärmepumpen, Smart Home. Doch wer online nicht sichtbar ist, bekommt nur die alten Empfehlungs-Aufträge ab, nicht die neuen, gut zahlenden Premium-Anfragen.",
     sections: [
       {
         title: "Photovoltaik- & Wärmepumpen-Lead-Generator",
@@ -568,7 +568,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Kann ich Photovoltaik-Anfragen filtern?",
-        a: "Ja. Wir bauen eine Vor-Qualifikations-Logik (Dachfläche, Verbrauch, Standort) – Sie bekommen nur ernsthafte Anfragen mit ausreichendem Projektvolumen.",
+        a: "Ja. Wir bauen eine Vor-Qualifikations-Logik (Dachfläche, Verbrauch, Standort), Sie bekommen nur ernsthafte Anfragen mit ausreichendem Projektvolumen.",
       },
       {
         q: "Wie funktioniert die Notdienst-Anfrage?",
@@ -601,15 +601,15 @@ export const topics: Topic[] = [
     metaDescription:
       "Heizungsbauer- und SHK-Websites im Saarland: Wärmepumpen-Anfragen, Heizung tauschen, Förderberatung, lokale SEO. Mehr qualifizierte Privat- und Gewerbeanfragen.",
     intro:
-      "SHK-Betriebe haben aktuell die höchste Nachfrage seit Jahrzehnten – Wärmepumpen, Heizungstausch, Bad-Sanierung, Förderberatung. Das Problem: Die meisten Betriebe arbeiten am Limit und nehmen die falschen Aufträge an. Eine kluge Website filtert: nur noch profitable Anfragen kommen rein.",
+      "SHK-Betriebe haben aktuell die höchste Nachfrage seit Jahrzehnten, Wärmepumpen, Heizungstausch, Bad-Sanierung, Förderberatung. Das Problem: Die meisten Betriebe arbeiten am Limit und nehmen die falschen Aufträge an. Eine kluge Website filtert: nur noch profitable Anfragen kommen rein.",
     sections: [
       {
         title: "Wärmepumpen- & Heizungs-Konfigurator",
-        text: "Online-Konfigurator für Wärmepumpe (Gebäudegröße, Bestandsheizung, Wärmebedarf), Heizungstausch und Bad-Sanierung. Qualifizierte Anfragen mit Vor-Daten – kein Cold-Call-Aufwand mehr.",
+        text: "Online-Konfigurator für Wärmepumpe (Gebäudegröße, Bestandsheizung, Wärmebedarf), Heizungstausch und Bad-Sanierung. Qualifizierte Anfragen mit Vor-Daten, kein Cold-Call-Aufwand mehr.",
       },
       {
         title: "Förderberatung als Lead-Magnet",
-        text: "Eigene Seite zur BEG-Förderung, KfW-Zuschüssen und steuerlichen Vorteilen. Kunden suchen gezielt danach – Sie werden gefunden, bevor die Konkurrenz auch nur Atem holt.",
+        text: "Eigene Seite zur BEG-Förderung, KfW-Zuschüssen und steuerlichen Vorteilen. Kunden suchen gezielt danach, Sie werden gefunden, bevor die Konkurrenz auch nur Atem holt.",
       },
       {
         title: "Lokale SEO für SHK-Suchanfragen",
@@ -623,11 +623,11 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie eine Online-Förderberatung anbieten?",
-        a: "Ja. Eigene Seiten zu BEG, KfW 458, KfW 261 und steuerlichen Vorteilen – als Conversion-Magneten für Eigentümer in Entscheidungsphase.",
+        a: "Ja. Eigene Seiten zu BEG, KfW 458, KfW 261 und steuerlichen Vorteilen, als Conversion-Magneten für Eigentümer in Entscheidungsphase.",
       },
       {
         q: "Lohnt sich Google Ads bei voller Auftragslage?",
-        a: "Ja – aber gezielt: nur für die hochpreisigsten Leistungen (Wärmepumpen, große Sanierungen, Premium-Bäder). So filtern Sie über die Werbung gleich auf profitable Aufträge.",
+        a: "Ja, aber gezielt: nur für die hochpreisigsten Leistungen (Wärmepumpen, große Sanierungen, Premium-Bäder). So filtern Sie über die Werbung gleich auf profitable Aufträge.",
       },
     ],
   },
@@ -638,7 +638,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Maler- und Lackierer-Websites im Saarland: Vorher/Nachher-Galerie, Online-Anfrage, lokale SEO. Mehr Aufträge für Innen, Außen und Fassade.",
     intro:
-      "Maler-Aufträge entscheiden sich heute online. Wer eine moderne Website mit Vorher/Nachher-Bildern, klarer Leistungsübersicht und einfacher Anfrage hat, gewinnt Aufträge, die früher per Empfehlung kamen – und ist nicht mehr von Schwankungen abhängig.",
+      "Maler-Aufträge entscheiden sich heute online. Wer eine moderne Website mit Vorher/Nachher-Bildern, klarer Leistungsübersicht und einfacher Anfrage hat, gewinnt Aufträge, die früher per Empfehlung kamen, und ist nicht mehr von Schwankungen abhängig.",
     sections: [
       {
         title: "Premium-Galerie mit Vorher/Nachher",
@@ -656,7 +656,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Wie bekomme ich gute Bilder ohne Aufwand?",
-        a: "Auf Wunsch organisieren wir ein professionelles Foto-Shooting Ihrer schönsten Projekte – einmalig, langfristig nutzbar. Oder wir bringen Ihre vorhandenen Handy-Fotos auf Web-Qualität.",
+        a: "Auf Wunsch organisieren wir ein professionelles Foto-Shooting Ihrer schönsten Projekte, einmalig, langfristig nutzbar. Oder wir bringen Ihre vorhandenen Handy-Fotos auf Web-Qualität.",
       },
       {
         q: "Lohnt sich SEO oder Google Ads für mein Gewerk?",
@@ -664,7 +664,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kann ich Saisonangebote einbauen?",
-        a: `Ja. Z.B. „Frühjahrsaktion Fassade“, „Renovierung in der Nebensaison günstiger“ – als Conversion-Booster zu schwachen Jahreszeiten.`,
+        a: `Ja. Z.B. „Frühjahrsaktion Fassade“, „Renovierung in der Nebensaison günstiger“, als Conversion-Booster zu schwachen Jahreszeiten.`,
       },
     ],
   },
@@ -675,11 +675,11 @@ export const topics: Topic[] = [
     metaDescription:
       "Physio-Websites im Saarland: patientenorientiert, mit Online-Terminbuchung und lokaler SEO. Mehr Patienten in Saarbrücken, Saarlouis & Co..",
     intro:
-      "Patienten suchen Physiotherapeuten heute online – „Physiotherapie in meiner Nähe“, „Krankengymnastik Saarbrücken“, „Manuelle Therapie Saarlouis“. Eine moderne Website ist entscheidend für volle Terminkalender.",
+      "Patienten suchen Physiotherapeuten heute online, „Physiotherapie in meiner Nähe“, „Krankengymnastik Saarbrücken“, „Manuelle Therapie Saarlouis“. Eine moderne Website ist entscheidend für volle Terminkalender.",
     sections: [
       {
         title: "Klare Leistungsübersicht",
-        text: "Krankengymnastik, Manuelle Therapie, Lymphdrainage, KG-ZNS, Massage, Kinesio-Taping – übersichtlich dargestellt mit nachvollziehbaren Erklärungen für Patienten.",
+        text: "Krankengymnastik, Manuelle Therapie, Lymphdrainage, KG-ZNS, Massage, Kinesio-Taping, übersichtlich dargestellt mit nachvollziehbaren Erklärungen für Patienten.",
       },
       {
         title: "Termin-Anfrage ohne Hürden",
@@ -701,7 +701,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Ist eine Online-Terminbuchung sinnvoll?",
-        a: "Definitiv. Patienten buchen gerne abends und am Wochenende – wenn Ihre Praxis geschlossen ist. Online-Buchungen erhöhen die Termin-Auslastung messbar.",
+        a: "Definitiv. Patienten buchen gerne abends und am Wochenende, wenn Ihre Praxis geschlossen ist. Online-Buchungen erhöhen die Termin-Auslastung messbar.",
       },
     ],
     relatedTools: [
@@ -715,7 +715,7 @@ export const topics: Topic[] = [
     ],
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
@@ -726,7 +726,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Online-Shop aus dem Saarland: professionell, mobiloptimiert, mit SEO und Conversion-Optimierung. Shopify, WooCommerce oder individuell.",
     intro:
-      "Ein Online-Shop ist mehr als ein digitales Schaufenster – er ist Ihr 24/7-Vertrieb. Damit das funktioniert, braucht es das richtige System, eine starke SEO-Basis und eine Conversion-Strategie, die wirklich verkauft.",
+      "Ein Online-Shop ist mehr als ein digitales Schaufenster, er ist Ihr 24/7-Vertrieb. Damit das funktioniert, braucht es das richtige System, eine starke SEO-Basis und eine Conversion-Strategie, die wirklich verkauft.",
     sections: [
       {
         title: "Das passende System für Ihr Business",
@@ -744,7 +744,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet ein Online-Shop?",
-        a: "Standard-Shopify-Setup. Umfangreichere Lösungen mit individuellen Funktionen – je nach Sortimentsgröße und Anforderungen.",
+        a: "Standard-Shopify-Setup. Umfangreichere Lösungen mit individuellen Funktionen, je nach Sortimentsgröße und Anforderungen.",
       },
       {
         q: "Welches System ist das beste?",
@@ -752,7 +752,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie auch das Marketing übernehmen?",
-        a: "Ja, wir bieten Google Ads und SEO-Betreuung an – ein Shop ohne Traffic verkauft nichts.",
+        a: "Ja, wir bieten Google Ads und SEO-Betreuung an, ein Shop ohne Traffic verkauft nichts.",
       },
     ],
   },
@@ -763,7 +763,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Coach-Websites im Saarland: persönlich, conversion-stark, mit SEO und Klienten-Strategie. inklusive kostenlosem Entwurf in 24h.",
     intro:
-      "Als Coach oder Berater verkaufen Sie Vertrauen. Ihre Website ist der erste Eindruck, den potenzielle Klienten von Ihnen bekommen – sie muss Persönlichkeit, Kompetenz und ein klares Angebot transportieren.",
+      "Als Coach oder Berater verkaufen Sie Vertrauen. Ihre Website ist der erste Eindruck, den potenzielle Klienten von Ihnen bekommen, sie muss Persönlichkeit, Kompetenz und ein klares Angebot transportieren.",
     sections: [
       {
         title: "Persönliche Positionierung",
@@ -785,7 +785,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Brauche ich einen Blog?",
-        a: "Empfehlenswert – ein Blog ist langfristig das stärkste SEO-Werkzeug für Coaches und positioniert Sie als Experten in Ihrer Nische.",
+        a: "Empfehlenswert, ein Blog ist langfristig das stärkste SEO-Werkzeug für Coaches und positioniert Sie als Experten in Ihrer Nische.",
       },
       {
         q: "Wie wichtig sind Testimonials?",
@@ -808,7 +808,7 @@ export const topics: Topic[] = [
       },
       {
         title: "Mitgliedschaftsmodell & Probetraining",
-        text: "Transparente Preise, klare Tarifübersicht und ein einfaches Anmeldeformular fürs Probetraining – mit möglichst wenig Klicks zum Erstkontakt.",
+        text: "Transparente Preise, klare Tarifübersicht und ein einfaches Anmeldeformular fürs Probetraining, mit möglichst wenig Klicks zum Erstkontakt.",
       },
       {
         title: "Kursplan & lokale SEO",
@@ -826,7 +826,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie wichtig ist Instagram-Integration?",
-        a: "Sehr wichtig – Fitness ist eine visuelle Branche. Ein Instagram-Feed bringt Leben in die Website.",
+        a: "Sehr wichtig, Fitness ist eine visuelle Branche. Ein Instagram-Feed bringt Leben in die Website.",
       },
     ],
   },
@@ -837,7 +837,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Dachdecker-Websites im Saarland: mit Projektgalerie, lokaler SEO und schnellem Anfrageformular. Mehr Aufträge in Saarbrücken & Co..",
     intro:
-      "Dachdecker leben von Sichtbarkeit – sowohl auf dem Dach als auch online. „Dachdecker Saarbrücken“, „Dachreparatur Saarlouis“, „Flachdach Neunkirchen“ sind tägliche Suchanfragen, bei denen Sie ganz oben stehen müssen.",
+      "Dachdecker leben von Sichtbarkeit, sowohl auf dem Dach als auch online. „Dachdecker Saarbrücken“, „Dachreparatur Saarlouis“, „Flachdach Neunkirchen“ sind tägliche Suchanfragen, bei denen Sie ganz oben stehen müssen.",
     sections: [
       {
         title: "Projektgalerie mit Wirkung",
@@ -859,11 +859,11 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie meine Baustellenfotos aufbereiten?",
-        a: "Ja. Eine professionelle Bildaufbereitung gehört zum Service – damit Ihre Projekte optimal zur Geltung kommen.",
+        a: "Ja. Eine professionelle Bildaufbereitung gehört zum Service, damit Ihre Projekte optimal zur Geltung kommen.",
       },
       {
         q: "Werde ich für „Dachdecker in meiner Nähe“ gefunden?",
-        a: "Mit lokaler SEO und einem optimierten Google Business Profil definitiv – das ist eine der wichtigsten Suchanfragen für Hausbesitzer.",
+        a: "Mit lokaler SEO und einem optimierten Google Business Profil definitiv, das ist eine der wichtigsten Suchanfragen für Hausbesitzer.",
       },
     ],
     relatedTools: [
@@ -888,11 +888,11 @@ export const topics: Topic[] = [
     metaDescription:
       "SHK-Websites im Saarland: mit Notdienst, Energieberatung und lokaler SEO. Mehr Aufträge für Sanitär, Heizung und Klima..",
     intro:
-      "SHK-Betriebe sind gefragt wie nie – Wärmepumpen, Heizungsmodernisierung, Bäder, Solar. Eine professionelle Website ist heute entscheidend, um die Auftragsflut sinnvoll zu kanalisieren und die richtigen Kunden anzusprechen.",
+      "SHK-Betriebe sind gefragt wie nie, Wärmepumpen, Heizungsmodernisierung, Bäder, Solar. Eine professionelle Website ist heute entscheidend, um die Auftragsflut sinnvoll zu kanalisieren und die richtigen Kunden anzusprechen.",
     sections: [
       {
         title: "Klare Leistungsbereiche",
-        text: "Sanitär, Heizung (inkl. Wärmepumpe), Klima, Energieberatung, Bäder, Solar – jede Leistung übersichtlich mit eigener Seite und passender SEO.",
+        text: "Sanitär, Heizung (inkl. Wärmepumpe), Klima, Energieberatung, Bäder, Solar, jede Leistung übersichtlich mit eigener Seite und passender SEO.",
       },
       {
         title: "Förder-Beratung als Magnet",
@@ -914,7 +914,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Lohnt sich ein Wärmepumpen-Bereich?",
-        a: "Absolut – Wärmepumpe ist eines der gefragtesten Suchthemen und positioniert Sie als zukunftsorientierter Betrieb.",
+        a: "Absolut, Wärmepumpe ist eines der gefragtesten Suchthemen und positioniert Sie als zukunftsorientierter Betrieb.",
       },
     ],
     relatedTools: [
@@ -939,7 +939,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Schreiner-Websites im Saarland: mit Projektgalerie, Leistungen und lokaler SEO. Mehr Aufträge für individuelle Möbel & Innenausbau..",
     intro:
-      "Schreiner und Tischler verkaufen Handwerkskunst. Ihre Website muss das transportieren – mit hochwertigen Bildern, einer klaren Leistungsübersicht und einer SEO-Basis, die für lokale Suchen wie „Schreiner Saarlouis“ oder „Tischler Saarbrücken“ rankt.",
+      "Schreiner und Tischler verkaufen Handwerkskunst. Ihre Website muss das transportieren, mit hochwertigen Bildern, einer klaren Leistungsübersicht und einer SEO-Basis, die für lokale Suchen wie „Schreiner Saarlouis“ oder „Tischler Saarbrücken“ rankt.",
     sections: [
       {
         title: "Projektgalerie als Verkaufstool",
@@ -947,11 +947,11 @@ export const topics: Topic[] = [
       },
       {
         title: "Klare Leistungsstruktur",
-        text: "Möbelbau, Innenausbau, Türen, Fenster, Küchen, Restaurierung – als eigene Bereiche mit SEO-optimierten Texten.",
+        text: "Möbelbau, Innenausbau, Türen, Fenster, Küchen, Restaurierung, als eigene Bereiche mit SEO-optimierten Texten.",
       },
       {
         title: "Lokale SEO & Bewertungen",
-        text: "Optimierung für lokale Suchanfragen und Google Business Profil mit Bewertungsstrategie – Vertrauen ist im Handwerk alles.",
+        text: "Optimierung für lokale Suchanfragen und Google Business Profil mit Bewertungsstrategie, Vertrauen ist im Handwerk alles.",
       },
     ],
     faqs: [
@@ -961,7 +961,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Können Sie ein 3D-Konfigurator-Tool integrieren?",
-        a: "Auf Anfrage – das ist ein starker Conversion-Hebel für individuelle Möbel.",
+        a: "Auf Anfrage, das ist ein starker Conversion-Hebel für individuelle Möbel.",
       },
       {
         q: "Wie wichtig ist die Bildqualität?",
@@ -980,11 +980,11 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Bildgewaltige Projektgalerie",
-        text: "Vorher-Nachher-Bilder, Gartenanlagen, Terrassen, Teiche, Pflanzungen – hochwertig präsentiert und mobile-optimiert.",
+        text: "Vorher-Nachher-Bilder, Gartenanlagen, Terrassen, Teiche, Pflanzungen, hochwertig präsentiert und mobile-optimiert.",
       },
       {
         title: "Leistungen klar strukturiert",
-        text: "Neuanlage, Gartenpflege, Pflasterarbeiten, Bewässerung, Teichbau, Baumschnitt – jede Leistung mit eigener Seite und lokalem SEO-Fokus.",
+        text: "Neuanlage, Gartenpflege, Pflasterarbeiten, Bewässerung, Teichbau, Baumschnitt, jede Leistung mit eigener Seite und lokalem SEO-Fokus.",
       },
       {
         title: "Saisonale Anfrage-Steuerung",
@@ -998,11 +998,11 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie wichtig sind hochwertige Fotos?",
-        a: "Entscheidend. Gartenbau ist visuell – ohne starke Bilder funktioniert die Website nur halb.",
+        a: "Entscheidend. Gartenbau ist visuell, ohne starke Bilder funktioniert die Website nur halb.",
       },
       {
         q: "Können Sie auch saisonale Aktionen integrieren?",
-        a: "Ja – Frühjahrsaktionen, Herbst-Pflanzungen oder Winter-Baumschnitt können prominent eingeblendet werden.",
+        a: "Ja, Frühjahrsaktionen, Herbst-Pflanzungen oder Winter-Baumschnitt können prominent eingeblendet werden.",
       },
     ],
   },
@@ -1017,11 +1017,11 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Vorqualifikation als Effizienz-Hebel",
-        text: "Ein Online-Konfigurator, der Dachfläche, Verbrauch, Standort und Zielsetzung strukturiert erfasst, spart pro Verkaufsgespräch 30 bis 60 Minuten Erstberatung. Wer nur qualifizierte Anfragen bekommt, wandelt sichtbar mehr Aufträge um — bei gleicher Vertriebskapazität.",
+        text: "Ein Online-Konfigurator, der Dachfläche, Verbrauch, Standort und Zielsetzung strukturiert erfasst, spart pro Verkaufsgespräch 30 bis 60 Minuten Erstberatung. Wer nur qualifizierte Anfragen bekommt, wandelt sichtbar mehr Aufträge um, bei gleicher Vertriebskapazität.",
       },
       {
         title: "Förderberatung als Vertrauens-Signal",
-        text: "BEG-Förderung, KfW-Programme, steuerliche Absetzbarkeit: Eigentümer suchen aktiv nach diesen Informationen. Wer sie strukturiert bereitstellt, positioniert sich als kompetenter Ansprechpartner — vor dem ersten Kontakt. Content-Cluster zu Fördermitteln bringt planbar SEO-Traffic mit hoher Kaufabsicht.",
+        text: "BEG-Förderung, KfW-Programme, steuerliche Absetzbarkeit: Eigentümer suchen aktiv nach diesen Informationen. Wer sie strukturiert bereitstellt, positioniert sich als kompetenter Ansprechpartner, vor dem ersten Kontakt. Content-Cluster zu Fördermitteln bringt planbar SEO-Traffic mit hoher Kaufabsicht.",
       },
       {
         title: "Lokale SEO für PV-Suchen",
@@ -1039,7 +1039,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Lohnt sich Google Ads für Photovoltaik?",
-        a: "Ja, in besonderem Maß. Klickpreise sind höher als in vielen anderen Segmenten (typisch 5 bis 15 Euro), aber Auftragswerte auch. Ein einzelner gewonnener Auftrag amortisiert oft mehrere Monate Ads-Budget. Voraussetzung: sauberes Conversion-Tracking und passende Landing-Page.",
+        a: "Ja, in besonderem Maß. Klickpreise sind höher als in vielen anderen Segmenten, aber Auftragswerte auch. Ein einzelner gewonnener Auftrag amortisiert oft mehrere Monate Ads-Budget. Voraussetzung: sauberes Conversion-Tracking und passende Landing-Page.",
       },
     ],
     relatedTools: [
@@ -1064,15 +1064,15 @@ export const topics: Topic[] = [
     metaDescription:
       "Websites für Gebäudereinigung: professionelle Auftraggeber gewinnen, Zertifikate sichtbar machen, ausschreibungs-fit auftreten. B2B-fokussiert.",
     intro:
-      "Gebäudereinigung ist einer der wenigen Wachstumsmärkte mit stabilen langfristigen Aufträgen — vorausgesetzt, das Unternehmen kann die richtigen Auftraggeber überzeugen. Verwaltungsgebäude, Industriekomplexe, Facility-Management und öffentliche Ausschreibungen entscheiden meist innerhalb von 60 Sekunden auf der Website, ob ein Anbieter zur Auswahl kommt. Eine austauschbare Website kostet diese Aufträge.",
+      "Gebäudereinigung ist einer der wenigen Wachstumsmärkte mit stabilen langfristigen Aufträgen, vorausgesetzt, das Unternehmen kann die richtigen Auftraggeber überzeugen. Verwaltungsgebäude, Industriekomplexe, Facility-Management und öffentliche Ausschreibungen entscheiden meist innerhalb von 60 Sekunden auf der Website, ob ein Anbieter zur Auswahl kommt. Eine austauschbare Website kostet diese Aufträge.",
     sections: [
       {
         title: "Zertifikate und Substanz sichtbar machen",
-        text: "ISO 9001, RAL-Gütezeichen Gebäudereinigung, Meisterbetrieb, Referenzobjekte, Personalstruktur, Fuhrpark: das sind die Signale, die Facility-Manager und Ausschreibungsstellen suchen. Wir bauen die Website so, dass diese Substanz strukturiert dargestellt wird — nicht als PDF-Anhang, sondern als eigene Sektionen die auch von Google indexiert werden.",
+        text: "ISO 9001, RAL-Gütezeichen Gebäudereinigung, Meisterbetrieb, Referenzobjekte, Personalstruktur, Fuhrpark: das sind die Signale, die Facility-Manager und Ausschreibungsstellen suchen. Wir bauen die Website so, dass diese Substanz strukturiert dargestellt wird, nicht als PDF-Anhang, sondern als eigene Sektionen die auch von Google indexiert werden.",
       },
       {
         title: "Getrennte Ansprache für unterschiedliche Auftraggeber",
-        text: "Bürogebäude, Industriereinigung, medizinische Einrichtungen, Hotellerie, Wohnungswirtschaft — jede Zielgruppe hat andere Anforderungen (Hygiene-Standards, Schichtzeiten, Freigaben, Vertragsformen). Eigene Landing-Seiten pro Objekttyp erhöhen die Relevanz und die Ausschreibungs-Passung deutlich.",
+        text: "Bürogebäude, Industriereinigung, medizinische Einrichtungen, Hotellerie, Wohnungswirtschaft, jede Zielgruppe hat andere Anforderungen (Hygiene-Standards, Schichtzeiten, Freigaben, Vertragsformen). Eigene Landing-Seiten pro Objekttyp erhöhen die Relevanz und die Ausschreibungs-Passung deutlich.",
       },
       {
         title: "Lokale und regionale Sichtbarkeit",
@@ -1086,7 +1086,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Kann eine Website wirklich B2B-Ausschreibungen bringen?",
-        a: "Ja — als Vor-Qualifikationsfilter. Facility-Manager recherchieren vor Ausschreibung fast immer online, welche Anbieter überhaupt zur Auswahl kommen. Eine Website, die Kompetenz strukturiert zeigt, öffnet die Türen zur Einladung.",
+        a: "Ja, als Vor-Qualifikationsfilter. Facility-Manager recherchieren vor Ausschreibung fast immer online, welche Anbieter überhaupt zur Auswahl kommen. Eine Website, die Kompetenz strukturiert zeigt, öffnet die Türen zur Einladung.",
       },
       {
         q: "Wie lange dauert der Aufbau einer solchen Website?",
@@ -1105,7 +1105,7 @@ export const topics: Topic[] = [
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
       { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
     ],
   },
   {
@@ -1115,25 +1115,25 @@ export const topics: Topic[] = [
     metaDescription:
       "Websites für produzierendes Gewerbe und Industrie-Mittelstand: technisch dichte Produktdarstellung, internationale Sichtbarkeit, saubere Vertriebs-Architektur.",
     intro:
-      "Industriebetriebe verkaufen nicht spontan. Der typische B2B-Kaufprozess dauert Wochen bis Monate, involviert mehrere Entscheider und startet fast immer mit einer Google-Recherche. Wer in dieser Phase nicht substanziell sichtbar ist, wird für relevante Anfragen und Ausschreibungen gar nicht erst in Betracht gezogen — unabhängig von Produktqualität und Reputation im etablierten Umfeld.",
+      "Industriebetriebe verkaufen nicht spontan. Der typische B2B-Kaufprozess dauert Wochen bis Monate, involviert mehrere Entscheider und startet fast immer mit einer Google-Recherche. Wer in dieser Phase nicht substanziell sichtbar ist, wird für relevante Anfragen und Ausschreibungen gar nicht erst in Betracht gezogen, unabhängig von Produktqualität und Reputation im etablierten Umfeld.",
     sections: [
       {
         title: "Produkte und Technologien strukturiert darstellen",
-        text: "Technische Datenblätter, Anwendungsfälle, Zertifizierungen, Compliance-Nachweise: die typischen Kaufkriterien im industriellen B2B-Segment. Wir bauen die Website als strukturiertes Produktverzeichnis mit sauberer Filterlogik und Zugriff auf Detail-Dokumente — indexierbar, aber auch für Fachrecherchen intern nutzbar.",
+        text: "Technische Datenblätter, Anwendungsfälle, Zertifizierungen, Compliance-Nachweise: die typischen Kaufkriterien im industriellen B2B-Segment. Wir bauen die Website als strukturiertes Produktverzeichnis mit sauberer Filterlogik und Zugriff auf Detail-Dokumente, indexierbar, aber auch für Fachrecherchen intern nutzbar.",
       },
       {
         title: "Vertriebsarchitektur mit klarer Konversion",
-        text: "Kontaktaufnahme im Industrie-B2B ist selten „Kaufen“-Button. Sinnvolle Konversionen: Datenblatt-Download, technisches Erstgespräch, Produkt-Demo, Angebotsanfrage mit Vorqualifikation. Jede dieser Aktionen wird bewusst gestaltet und getrackt — als eigene Metrik, nicht als Sammel-Formular.",
+        text: "Kontaktaufnahme im Industrie-B2B ist selten „Kaufen“-Button. Sinnvolle Konversionen: Datenblatt-Download, technisches Erstgespräch, Produkt-Demo, Angebotsanfrage mit Vorqualifikation. Jede dieser Aktionen wird bewusst gestaltet und getrackt, als eigene Metrik, nicht als Sammel-Formular.",
       },
       {
         title: "Internationale Sichtbarkeit wo relevant",
-        text: "Viele deutsche Industrieunternehmen exportieren 40 bis 80 Prozent. Ohne mehrsprachige Website (DE/EN/FR mindestens) bleibt der Zugang zu internationalen Buying-Centern verschlossen. Wir bauen mehrsprachig mit sauberen hreflang-Signalen — nicht als Übersetzungs-Kosmetik, sondern mit sprachspezifischer Content-Struktur.",
+        text: "Viele deutsche Industrieunternehmen exportieren 40 bis 80 Prozent. Ohne mehrsprachige Website (DE/EN/FR mindestens) bleibt der Zugang zu internationalen Buying-Centern verschlossen. Wir bauen mehrsprachig mit sauberen hreflang-Signalen, nicht als Übersetzungs-Kosmetik, sondern mit sprachspezifischer Content-Struktur.",
       },
     ],
     faqs: [
       {
         q: "Warum brauchen Industrieunternehmen überhaupt eine moderne Website?",
-        a: "Weil auch bei etablierten B2B-Beziehungen die Erst-Recherche neuer Ansprechpartner online passiert. Ein technischer Einkäufer, der 2018 an einen Zulieferer verkauft hat, prüft 2026 als neuer Ansprechpartner die Website — und trifft dort Entscheidungen über Vertrauen und Einladung zu Angeboten.",
+        a: "Weil auch bei etablierten B2B-Beziehungen die Erst-Recherche neuer Ansprechpartner online passiert. Ein technischer Einkäufer, der 2018 an einen Zulieferer verkauft hat, prüft 2026 als neuer Ansprechpartner die Website, und trifft dort Entscheidungen über Vertrauen und Einladung zu Angeboten.",
       },
       {
         q: "Was ist der Unterschied zu einer Standard-B2B-Website?",
@@ -1156,7 +1156,7 @@ export const topics: Topic[] = [
     relatedGuides: [
       { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
       { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer, Studio oder Agentur?" },
+      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
     ],
   },
 ];

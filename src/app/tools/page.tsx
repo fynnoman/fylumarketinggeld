@@ -9,9 +9,9 @@ export const metadata: Metadata = {
     "Kostenlose Fylu-Tools für Ihre Website: Website-Analyse und SEO-Check. Keine Registrierung nötig.",
   alternates: { canonical: `${SITE}/tools` },
   openGraph: {
-    title: "Fylu Tools — Analyse & SEO",
+    title: "Fylu Tools, Analyse & SEO",
     description:
-      "Kostenlose Tools des Fylu Marketing: Website-Analyse und SEO-Check. Transparente Ergebnisse.",
+      "Kostenlose Tools von Fylu Marketing: Website-Analyse und SEO-Check. Transparente Ergebnisse.",
     url: `${SITE}/tools`,
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -48,7 +48,7 @@ const tools: ToolCard[] = [
     eyebrow: "§02 · SEO",
     title: "SEO-Check",
     description:
-      "Fokussierter SEO-Check Ihrer Domain: Meta, Struktur, Inhalt, Structured Data, lokale Signale — mit einer konkreten Handlungsempfehlung zu jedem Finding.",
+      "Fokussierter SEO-Check Ihrer Domain: Meta, Struktur, Inhalt, Structured Data, lokale Signale, mit einer konkreten Handlungsempfehlung zu jedem Finding.",
     bullets: [
       "Priorisierte Findings statt Score-Kosmetik",
       "Konkrete Handlungsempfehlung pro Finding",
@@ -123,8 +123,8 @@ export default function ToolsIndexPage() {
             .
           </h1>
           <p className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-            Drei Werkzeuge, die aus dem Studio-Alltag entstanden sind. Sie liefern Ergebnisse
-            direkt — ohne Registrierung. Wenn Sie danach mehr wollen, sagen Sie Bescheid.
+            Zwei Werkzeuge aus der Praxis. Sie liefern Ergebnisse
+            direkt, ohne Registrierung. Wenn Sie danach mehr wollen, sagen Sie Bescheid.
           </p>
         </div>
 

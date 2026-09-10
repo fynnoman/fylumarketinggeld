@@ -14,19 +14,19 @@ const faqs = [
   },
   {
     q: 'Wann sehe ich Ergebnisse?',
-    a: 'Anzeigen laufen binnen 24 Stunden. Die erste Feinoptimierung dauert etwa zwei bis vier Wochen — in dieser Phase sammeln wir Daten und schärfen die Kampagne. Nach einem Monat stehen belastbare Zahlen und ein sortiertes Set-up.',
+    a: 'Anzeigen laufen binnen 24 Stunden. Die erste Feinoptimierung dauert etwa zwei bis vier Wochen. In dieser Phase sammeln wir Daten und schärfen die Kampagne. Nach einem Monat stehen belastbare Zahlen und ein sortiertes Set-up.',
   },
   {
     q: 'Ist Google Ads Teil des Website-Pakets?',
-    a: 'Nein. Google Ads wird bewusst als Erweiterung angeboten — jedes Haus entscheidet, ob und wann bezahlte Reichweite Sinn ergibt. Häufig ergibt eine Kombination aus Website, Ads und SEO die stimmigste Wirkung.',
+    a: 'Nein. Google Ads wird bewusst als Ergänzung angeboten. Jedes Unternehmen entscheidet, ob und wann bezahlte Reichweite Sinn ergibt. Häufig ergibt eine Kombination aus Website, Ads und SEO die stimmigste Wirkung.',
   },
   {
     q: 'Was ist der Unterschied zu SEO?',
-    a: 'SEO ist Aufbauarbeit über Monate mit dauerhafter organischer Wirkung. Google Ads ist sofort sichtbare Reichweite, bezahlt und flexibel steuerbar. Beide Disziplinen ergänzen sich — Ads für den sofortigen Fluss, SEO für die stille Sichtbarkeit, die bleibt.',
+    a: 'SEO ist Aufbauarbeit über Monate mit dauerhafter organischer Wirkung. Google Ads ist sofort sichtbare Reichweite, bezahlt und flexibel steuerbar. Beide Disziplinen ergänzen sich: Ads für den sofortigen Fluss, SEO für die dauerhafte Sichtbarkeit.',
   },
   {
     q: 'Was passiert, wenn ich Ads pausiere?',
-    a: 'Sobald Kampagnen pausiert werden, verschwinden die Anzeigen. Deshalb empfehlen wir häufig parallel eine SEO-Erweiterung — ein Sicherheitsnetz, falls das Ads-Budget später zurückgefahren werden soll.',
+    a: 'Sobald Kampagnen pausiert werden, verschwinden die Anzeigen. Deshalb empfehlen wir häufig parallel eine SEO-Erweiterung als Sicherheitsnetz, falls das Ads-Budget später zurückgefahren werden soll.',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function GoogleAdsSaarlandPage() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Fylu Marketing · Google Ads Saarland',
-            description: 'Google Ads als Erweiterung Ihrer Fylu-Website. Setup und laufende Betreuung — geführt aus Saarlouis.',
+            description: 'Google Ads aus Saarlouis. Setup und laufende Betreuung. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.',
             url: 'https://www.fylumarketing.de/google-ads-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
@@ -100,12 +100,6 @@ export default function GoogleAdsSaarlandPage() {
               '@type': 'Offer',
               availability: 'https://schema.org/InStock',
               url: 'https://www.fylumarketing.de/buchen',
-              priceSpecification: {
-                '@type': 'PriceSpecification',
-                priceCurrency: 'EUR',
-                description:
-                  'Media-Budget, Setup und laufende Betreuung werden getrennt kalkuliert. Individuell im Vorgespräch.',
-              },
             },
           }),
         }}
@@ -153,7 +147,7 @@ export default function GoogleAdsSaarlandPage() {
           <nav className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
             <Link href="/" className="hover:text-cyan-700 transition-colors">Home</Link>
             <span className="mx-2 text-stone-400">·</span>
-            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Studio</Link>
+            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Webdesign</Link>
             <span className="mx-2 text-stone-400">·</span>
             <span className="text-stone-900 font-medium">Google Ads Saarland</span>
           </nav>
@@ -182,22 +176,23 @@ export default function GoogleAdsSaarlandPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · Bezahlte Reichweite</span>
+              <span>Google Ads · Bezahlte Reichweite</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-              Google Ads Saarland. Als{' '}
+              Google Ads Saarland. Reichweite ab{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Erweiterung Ihrer Fylu-Website.
+                Tag eins.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
               Sofortige Reichweite für Menschen, die bereits nach Ihrer Leistung
-              suchen. Kuratiert aus Saarlouis — als bezahlte Ergänzung zur
-              Fylu-Website, klar geführt und messbar gerahmt.
+              suchen. Fylu Marketing hilft Unternehmen jeder Phase, ihre
+              Online-Präsenz aufzubauen und zu skalieren. Aus Saarlouis, klar
+              geführt und messbar gerahmt.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>
@@ -242,13 +237,13 @@ export default function GoogleAdsSaarlandPage() {
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
                 Wer bei Google „Kanzlei Saarbrücken" oder „Handwerker Saarlouis"
                 eingibt, hat bereits eine Absicht. Google Ads führt Ihre Präsenz
-                genau dort hin, wo diese Absicht landet — oberhalb der organischen
+                genau dort hin, wo diese Absicht landet: oberhalb der organischen
                 Ergebnisse, sichtbar ab Tag eins.
               </p>
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
                 Anders als bei Social Ads unterbricht Google Ads keine Aufmerksamkeit,
                 sondern trifft eine bestehende. Deshalb ist der Kanal für lokale
-                Häuser häufig der effizienteste — und deshalb bauen wir ihn kuratiert,
+                Unternehmen häufig der effizienteste. Wir bauen ihn strukturiert auf,
                 nicht auf Autopilot.
               </p>
             </div>
@@ -373,7 +368,7 @@ export default function GoogleAdsSaarlandPage() {
                 href="/webdesign-saarland"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
-                <span>Zurück zu den Website-Paketen</span>
+                <span>Zur Webdesign-Übersicht</span>
               </Link>
             </div>
           </FadeInSection>

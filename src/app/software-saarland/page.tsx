@@ -11,11 +11,11 @@ const faqs = [
   },
   {
     q: 'Welche Tech-Stacks setzt ihr ein?',
-    a: 'Frontend: React, Next.js, TypeScript, Tailwind. Backend: Node.js, Express, Python (FastAPI), tRPC. Datenbanken: PostgreSQL, Supabase, Redis. Infrastruktur: Vercel, AWS, Docker. Wir wählen pragmatisch — kein Hype, sondern erprobte Technologien, die auch in 5 Jahren noch wartbar sind.',
+    a: 'Frontend: React, Next.js, TypeScript, Tailwind. Backend: Node.js, Express, Python (FastAPI), tRPC. Datenbanken: PostgreSQL, Supabase, Redis. Infrastruktur: Vercel, AWS, Docker. Wir wählen pragmatisch: kein Hype, sondern erprobte Technologien, die auch in 5 Jahren noch wartbar sind.',
   },
   {
     q: 'Was kostet die Entwicklung einer Custom Software?',
-    a: 'Wir kalkulieren jedes Projekt nach einer Discovery-Phase mit transparenten Konditionen — keine Stundensätze, keine Überraschungen. Wir starten oft mit einem kleinen Modul und skalieren von dort. Konkrete Einschätzung im 15-Minuten-Gespräch.',
+    a: 'Wir kalkulieren jedes Projekt nach einer Discovery-Phase mit transparenten Konditionen: keine Stundensätze, keine Überraschungen. Wir starten oft mit einem kleinen Modul und skalieren von dort. Konkrete Einschätzung im 15-Minuten-Gespräch.',
   },
   {
     q: 'Habt ihr Referenzen im Software-Bereich?',
@@ -23,19 +23,19 @@ const faqs = [
   },
   {
     q: 'Wie unterscheidet ihr euch von klassischen IT-Dienstleistern aus dem Saarland?',
-    a: 'Drei Punkte. Erstens: Wir kommen aus Webdesign + Marketing — Software ist bei uns immer auch User-Experience, nicht nur Backend-Logik. Zweitens: Kein 40-Mann-Apparat, kein Account-Manager-Theater — Sie sprechen direkt mit dem Entwickler. Drittens: Wir denken in Produkten und Conversions, nicht in Tickets und Tagessätzen.',
+    a: 'Drei Punkte. Erstens: Wir kommen aus Webdesign und Marketing, Software ist bei uns immer auch User-Experience, nicht nur Backend-Logik. Zweitens: Kein 40-Mann-Apparat, kein Account-Manager-Theater, Sie sprechen direkt mit dem Entwickler. Drittens: Wir denken in Produkten und Conversions, nicht in Tickets und Tagessätzen.',
   },
   {
-    q: 'Macht ihr auch Wartung & laufende Weiterentwicklung?',
+    q: 'Macht ihr auch Wartung und laufende Weiterentwicklung?',
     a: 'Ja. Jede Lösung bekommt einen Service-Level (Wartung, Bugfixes, Updates). Auf Wunsch übernehmen wir auch laufende Feature-Entwicklung als monatlich gebuchtes Entwickler-Retainer-Modell. Transparente Sprint-Planung, monatliches Reporting.',
   },
   {
     q: 'Arbeitet ihr nur im Saarland oder auch deutschlandweit?',
-    a: 'Sitz: Saarlouis. Hauptmarkt: Saarland (Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert, Dillingen). Wir arbeiten aber regelmäßig deutschland- und EU-weit, und betreuen aktuell einen Kunden in den USA. Remote-Setup ist von Tag 1 sauber aufgesetzt.',
+    a: 'Sitz: Saarlouis. Hauptmarkt: Saarland (Saarbrücken, Saarlouis, Neunkirchen, Dillingen, Merzig, Völklingen, St. Ingbert). Wir arbeiten aber regelmäßig deutschland- und EU-weit, und betreuen aktuell einen Kunden in den USA. Remote-Setup ist von Tag 1 sauber aufgesetzt.',
   },
   {
     q: 'Wie schnell könnt ihr starten?',
-    a: 'Pro Monat nehmen wir maximal drei neue Software-Projekte an. Nach einem 30-Minuten-Discovery-Call (kostenlos) starten wir typischerweise innerhalb von 7–14 Tagen mit der Konzeptphase.',
+    a: 'Pro Monat nehmen wir maximal drei neue Software-Projekte an. Nach einem 30-Minuten-Discovery-Call (kostenlos) starten wir typischerweise innerhalb von 7 bis 14 Tagen mit der Konzeptphase.',
   },
 ];
 
@@ -57,7 +57,7 @@ const services = [
   },
   {
     title: 'API-Integration & Schnittstellen',
-    body: 'Wir verbinden Ihre Systeme: DATEV, lexoffice, Stripe, Klaviyo, HubSpot, Notion — automatisch, in Echtzeit, ohne Copy-Paste.',
+    body: 'Wir verbinden Ihre Systeme: DATEV, lexoffice, Stripe, Klaviyo, HubSpot, Notion. Automatisch, in Echtzeit, ohne Copy-Paste.',
     tech: 'REST · GraphQL · Webhooks · Zapier · Make',
   },
   {
@@ -75,15 +75,15 @@ const services = [
 const process = [
   {
     title: 'Discovery & Audit',
-    text: 'Kostenloses 30-Minuten-Gespräch. Wir verstehen Ihr Problem, Ihre Prozesse und Ihre Ziele — bevor irgendwas gebaut wird.',
+    text: 'Kostenloses 30-Minuten-Gespräch. Wir verstehen Ihr Problem, Ihre Prozesse und Ihre Ziele, bevor irgendwas gebaut wird.',
   },
   {
     title: 'Konzept & verbindliche Konditionen',
-    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen ein verbindliches Angebot — keine Stundensätze, keine bösen Überraschungen.',
+    text: 'Wir definieren Scope, Architektur und Meilensteine. Sie bekommen ein verbindliches Angebot: keine Stundensätze, keine bösen Überraschungen.',
   },
   {
     title: 'Iterative Entwicklung',
-    text: 'In 1–2-Wochen-Sprints. Sie sehen Fortschritt regelmäßig, nicht erst nach 6 Monaten. Feedback fließt direkt ein.',
+    text: 'In 1 bis 2-Wochen-Sprints. Sie sehen Fortschritt regelmäßig, nicht erst nach 6 Monaten. Feedback fließt direkt ein.',
   },
   {
     title: 'Launch & Übergabe',
@@ -187,7 +187,7 @@ export default function SoftwareSaarlandPage() {
             url: 'https://www.fylumarketing.de/software-saarland',
             name: 'Software Saarland · Fylu Marketing',
             description:
-              'Softwareentwicklung aus dem Saarland: Custom Software, Web-Apps, SaaS, ERP/CRM, API- und AI-Integration. Modernes Fundament (Next.js, React, TypeScript, Node.js, Python, PostgreSQL).',
+              'Softwareentwicklung aus dem Saarland: Custom Software, Web-Apps, SaaS, ERP/CRM, API- und AI-Integration. Moderner Stack (Next.js, React, TypeScript, Node.js, Python, PostgreSQL).',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
             about: { '@type': 'Thing', name: 'Softwareentwicklung' },
@@ -226,25 +226,26 @@ export default function SoftwareSaarlandPage() {
         <div className="max-w-5xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>Erweiterung · Software</span>
+              <span>Leistung · Software</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em] max-w-4xl">
-              Software Saarland — als{' '}
+              Software Saarland{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Erweiterung des Studios.
+                von Fylu Marketing.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-              Maßgeschneiderte Software als eigenständige Disziplin oder als
-              Erweiterung Ihres Fylu-Auftritts. Web-Apps, ERP- und CRM-Systeme,
-              interne Tools, API-Integrationen, Automatisierungen und AI-gestützte
-              Vorhaben — kuratiert aus Saarlouis, mit einer Handschrift, die auch
-              in fünf Jahren noch wartbar ist. Zurück zum{' '}
-              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Fylu Webdesign Studio</Link>.
+              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
+              aufzubauen und zu skalieren. Maßgeschneiderte Software als
+              eigenständige Disziplin oder als Ergänzung Ihrer Website: Web-Apps,
+              ERP- und CRM-Systeme, interne Tools, API-Integrationen,
+              Automatisierungen und AI-gestützte Vorhaben. Aus Saarlouis, mit einem
+              Stack, der auch in fünf Jahren noch wartbar ist. Zurück zu{' '}
+              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign Saarland</Link>.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>
@@ -323,10 +324,10 @@ export default function SoftwareSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.08} className="prose prose-lg prose-stone max-w-none">
             <p>
-              Klassische IT-Dienstleister im Saarland kommen oft aus der Microsoft-Ecke der 2000er — SAP, Sharepoint, Access-Datenbanken. Funktioniert, aber wirkt veraltet und ist teuer im Betrieb. Auf der anderen Seite gibt es Großstadt-Agenturen aus Berlin oder München mit modernem Stack, aber hohen Tagessätzen und langen Wartezeiten für ein Discovery-Gespräch.
+              Klassische IT-Dienstleister im Saarland kommen oft aus der Microsoft-Ecke der 2000er: SAP, Sharepoint, Access-Datenbanken. Funktioniert, aber wirkt veraltet und ist teuer im Betrieb. Auf der anderen Seite gibt es Großstadt-Agenturen aus Berlin oder München mit modernem Stack, aber hohen Tagessätzen und langen Wartezeiten für ein Discovery-Gespräch.
             </p>
             <p>
-              Fylu sitzt dazwischen: <strong>moderner Tech-Stack</strong> (React, TypeScript, Postgres, Cloud-Native), <strong>regionale Erreichbarkeit</strong> (Saarlouis als Zentrum für Saarbrücken, Merzig, Dillingen, Neunkirchen, Homburg), <strong>faire Konditionen</strong>. Aktuell betreuen wir Software-Kunden vom Saarländer Handwerksbetrieb mit Excel-Problem bis zum SaaS-Startup mit 50.000 Nutzern.
+              Fylu Marketing sitzt dazwischen: <strong>moderner Tech-Stack</strong> (React, TypeScript, Postgres, Cloud-Native), <strong>regionale Erreichbarkeit</strong> (Saarlouis als Zentrum für Saarbrücken, Merzig, Dillingen, Neunkirchen, Homburg), <strong>faire Konditionen</strong>. Aktuell betreuen wir Software-Kunden vom Saarländer Handwerksbetrieb mit Excel-Problem bis zum SaaS-Startup mit 50.000 Nutzern.
             </p>
             <p>
               Das Resultat: Sie bekommen Berlin-Niveau, ohne Berlin zu bezahlen, mit jemand, der im Zweifel innerhalb von 90 Minuten persönlich bei Ihnen vor Ort sein kann.
