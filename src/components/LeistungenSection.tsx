@@ -12,8 +12,8 @@ type Item = {
 
 const designItems: Item[] = [
   { title: 'Design', text: 'Typografie, Layout und Weißraum machen euren Auftritt klar. Kein Template, sondern eine Seite, die zu euch passt.' },
-  { title: 'Positionierung', text: 'Ein Auftritt, der in fünf Sekunden erklärt, wofür ihr steht und warum jemand bei euch anfragt.' },
-  { title: 'Bildsprache', text: 'Auf Wunsch organisieren wir Fotografen und begleiten das Shooting, damit die Bildwelt zum Auftritt passt.' },
+  { title: '3D-Websites', text: 'Interaktive 3D-Elemente für Auftritte, die aus der Masse herausstechen. Wenn es zur Marke passt.' },
+  { title: 'Fotografie', text: 'Wir organisieren Fotografen und begleiten das Shooting, damit die Bildwelt zum Auftritt passt.' },
 ];
 
 const wachstum: Item[] = [
@@ -143,7 +143,7 @@ export default function LeistungenSection() {
                   — kein Template mit eurem Logo.
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-lg">
-                  Website, Typografie und Bildsprache, die zu eurem Unternehmen passen. Auf Wunsch mit organisierten Fotografen für eigene Bilder.
+                  Website, 3D-Elemente, Typografie und eigene Fotografie durch unsere Partner-Fotografen. Alles auf eure Marke abgestimmt.
                 </p>
               </div>
 

@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import LeistungenSection from '@/components/LeistungenSection';
+import MarkenaufbauSection from '@/components/MarkenaufbauSection';
 import HorizontalCases from '@/components/HorizontalCases';
 import CalendlySection from '@/components/CalendlySection';
 import FAQSection from '@/components/FAQSection';
@@ -69,6 +70,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <LeistungenSection />
+      <MarkenaufbauSection />
       <HorizontalCases />
       <FAQSection />
       <CalendlySection />
