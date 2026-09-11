@@ -69,11 +69,11 @@ export default function Home() {
       />
       <Navbar />
       <HeroSection />
+      <CalendlySection />
       <LeistungenSection />
       <MarkenaufbauSection />
       <HorizontalCases />
       <FAQSection />
-      <CalendlySection />
       <Footer />
     </main>
   );
