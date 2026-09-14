@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Programmierer Saarland – Fylu aus Saarlouis",
+        alt: "Programmierer Saarland | Fylu aus Saarlouis",
       },
     ],
   },

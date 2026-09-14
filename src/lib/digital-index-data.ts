@@ -1,4 +1,4 @@
-// Fylu Digital Index – aggregierte Firmen-Datenquelle.
+// Fylu Digital Index, aggregierte Firmen-Datenquelle.
 //
 // Die einzelnen Branchen-Datensätze liegen in `./digital-index-companies/*.ts`,
 // damit große Datenmengen pro Branche wartbar bleiben. Dieses Modul

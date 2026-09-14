@@ -33,7 +33,7 @@ const caseStudies = [
     metricLabel: 'Zuwendung',
     title: 'Ein Serviceanbieter. Jetzt vielgefragt.',
     description:
-      'Besucher bleiben länger und wenden sich häufiger — knapp verdoppeltes Interesse.',
+      'Besucher bleiben länger und wenden sich häufiger, knapp verdoppeltes Interesse.',
     industry: 'Serviceanbieter',
     note: 'Vom Verlassen zur Zuwendung.',
   },
@@ -65,7 +65,7 @@ export default function CaseStudySection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8">
-        {/* Header — different intro: lowercase tag + huge type */}
+        {/* Header, different intro: lowercase tag + huge type */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -101,7 +101,7 @@ export default function CaseStudySection() {
         </motion.h2>
       </div>
 
-      {/* Cases — full-bleed editorial blocks */}
+      {/* Cases, full-bleed editorial blocks */}
       <div className="relative z-10 mt-20 md:mt-28 space-y-24 md:space-y-40">
         {caseStudies.map((study, i) => {
           const isOdd = i % 2 === 1;
@@ -119,7 +119,7 @@ export default function CaseStudySection() {
                   isOdd ? 'lg:[direction:rtl]' : ''
                 }`}
               >
-                {/* Number side — bleeds off the edge */}
+                {/* Number side, bleeds off the edge */}
                 <div
                   className={`lg:col-span-7 relative ${
                     isOdd ? 'lg:[direction:ltr]' : ''

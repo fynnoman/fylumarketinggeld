@@ -25,14 +25,14 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Webdesign für Handwerker – Fylu Marketing aus dem Saarland",
+        alt: "Webdesign für Handwerker | Fylu Marketing aus dem Saarland",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Webdesign Handwerk | Mehr Aufträge | Fylu",
-    description: "Webdesign speziell für Handwerksbetriebe – mobiloptimiert, lokal SEO-optimiert.",
+    description: "Webdesign speziell für Handwerksbetriebe, mobiloptimiert, lokal SEO-optimiert.",
     images: ["/herob.png"],
   },
 };

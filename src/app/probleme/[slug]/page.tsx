@@ -237,7 +237,7 @@ export default async function ProblemPage({
           </div>
         </section>
 
-        {/* Wie Fylu bei diesem Problem hilft — nur wenn serviceLinks kuratiert */}
+        {/* Wie Fylu bei diesem Problem hilft, nur wenn serviceLinks kuratiert */}
         {p.serviceLinks && p.serviceLinks.length > 0 && (
           <section className="py-16 md:py-20 px-6">
             <div className="max-w-3xl mx-auto">

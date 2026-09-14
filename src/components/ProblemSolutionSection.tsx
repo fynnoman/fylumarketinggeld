@@ -15,7 +15,7 @@ const problems = [
   },
   {
     short: 'Mobil zerbricht',
-    long: 'Mobile Besucher wenden sich ab, bevor die Seite überhaupt gelesen wurde — keine Führung, kein Rhythmus.',
+    long: 'Mobile Besucher wenden sich ab, bevor die Seite überhaupt gelesen wurde: keine Führung, kein Rhythmus.',
   },
   {
     short: 'Ohne Sog',
@@ -66,7 +66,7 @@ export default function ProblemSolutionSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        {/* Editorial chapter intro — no pill, just type */}
+        {/* Editorial chapter intro, no pill, just type */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -81,7 +81,7 @@ export default function ProblemSolutionSection() {
           </span>
         </motion.div>
 
-        {/* Massive headline — brutalist scale */}
+        {/* Massive headline, brutalist scale */}
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -96,7 +96,7 @@ export default function ProblemSolutionSection() {
         </motion.h2>
 
         <div className="mt-20 md:mt-28 grid lg:grid-cols-12 gap-12 lg:gap-16">
-          {/* LEFT — Problems, struck through by hand */}
+          {/* LEFT, Problems, struck through by hand */}
           <div className="lg:col-span-5">
             <div className="mb-10 flex items-baseline gap-3">
               <span className="font-display italic text-stone-500 text-xl">a.</span>
@@ -145,7 +145,7 @@ export default function ProblemSolutionSection() {
               className="mt-12 ml-16 max-w-xs"
             >
               <p className="font-hand text-2xl text-[var(--amber-soft)] leading-tight">
-                und ehrlich — kaum ein Haus mag es aussprechen.
+                und ehrlich, kaum ein Haus mag es aussprechen.
               </p>
               <HandArrow
                 className="w-24 h-12 text-[var(--amber-soft)] mt-1 ml-8"
@@ -156,7 +156,7 @@ export default function ProblemSolutionSection() {
             </motion.div>
           </div>
 
-          {/* RIGHT — Solution card on cream paper */}
+          {/* RIGHT, Solution card on cream paper */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -188,7 +188,7 @@ export default function ProblemSolutionSection() {
                       inView={isInView}
                     />
                   </span>{' '}
-                  — nicht bloß existieren.
+                  , nicht bloß existieren.
                 </h3>
 
                 <p className="mt-7 text-stone-700 text-base md:text-lg leading-relaxed max-w-xl">
@@ -196,7 +196,7 @@ export default function ProblemSolutionSection() {
                   <span className="font-semibold text-[var(--ink)]">
                     Werkzeug, das für Sie steht
                   </span>
-                  {' '}— in Klarheit, Substanz und Wirkung.
+                  , in Klarheit, Substanz und Wirkung.
                 </p>
 
                 {/* Outcome tags */}
@@ -236,7 +236,7 @@ export default function ProblemSolutionSection() {
                 {/* Handwritten signature-like note */}
                 <div className="mt-10 pt-6 border-t border-stone-200/70 flex items-baseline gap-3">
                   <span className="font-hand text-xl text-[var(--amber)] leading-none">
-                    — gehalten.
+                    gehalten.
                   </span>
                   <span className="text-[10px] uppercase tracking-[0.22em] text-stone-400">
                     Fylu Marketing · Saarlouis

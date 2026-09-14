@@ -54,7 +54,7 @@ const chapters = [
   {
     ordinal: 'V',
     title: 'Iteration',
-    body: 'Nach dem Launch begleiten wir euch weiter. Anpassungen, neue Landingpages, laufende Optimierung — im Umfang, den euer Wachstum verlangt.',
+    body: 'Nach dem Launch begleiten wir euch weiter. Anpassungen, neue Landingpages, laufende Optimierung, im Umfang, den euer Wachstum verlangt.',
   },
 ];
 

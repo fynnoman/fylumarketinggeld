@@ -9,16 +9,16 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const steps = [
   {
     number: '01',
-    duration: 'Tag 1 – 3',
+    duration: 'Tag 1-3',
     title: 'Vorgespräch',
     subtitle: 'Verstehen, wofür Sie stehen',
     body:
-      'Wir hören zu, bevor wir zeichnen. Wir prüfen den Markt, die aktuelle Präsenz und die Substanz Ihres Hauses — und teilen einen ehrlichen Befund, ohne Schönfärberei.',
+      'Wir hören zu, bevor wir zeichnen. Wir prüfen den Markt, die aktuelle Präsenz und die Substanz Ihres Hauses und teilen einen ehrlichen Befund, ohne Schönfärberei.',
     deliverable: 'Marktbild · Präsenz-Befund · Briefing',
   },
   {
     number: '02',
-    duration: 'Tag 4 – 7',
+    duration: 'Tag 4-7',
     title: 'Positionierung',
     subtitle: 'Rahmen und Verkaufsarchitektur',
     body:
@@ -27,7 +27,7 @@ const steps = [
   },
   {
     number: '03',
-    duration: 'Tag 8 – 21',
+    duration: 'Tag 8-21',
     title: 'Werkbank',
     subtitle: 'Design und Umsetzung mit Handschrift',
     body:
@@ -36,16 +36,16 @@ const steps = [
   },
   {
     number: '04',
-    duration: 'Tag 22 – 28',
+    duration: 'Tag 22-28',
     title: 'Sichtbarkeit',
     subtitle: 'Lokale Schärfung und Google-Präsenz',
     body:
-      'Wir schärfen Ihre Sichtbarkeit für die Begriffe, die Klienten im Saarland tatsächlich eingeben — über lokales SEO, strukturierte Daten und ein Google-Profil, das dem Auftritt entspricht.',
+      'Wir schärfen Ihre Sichtbarkeit für die Begriffe, die Klienten im Saarland tatsächlich eingeben: über lokales SEO, strukturierte Daten und ein Google-Profil, das dem Auftritt entspricht.',
     deliverable: 'Lokales SEO · Google-Profil · Snippets',
   },
   {
     number: '05',
-    duration: 'Tag 29 – 90',
+    duration: 'Tag 29-90',
     title: 'Iteration',
     subtitle: 'Neunzig Tage Studio-Begleitung',
     body:
@@ -113,7 +113,7 @@ export default function MethodikSection() {
             id="methodik-heading"
             className="text-[2.4rem] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]"
           >
-            Fünf Kapitel — von der{' '}
+            Fünf Kapitel, von der{' '}
             <span className="font-display italic font-normal text-[var(--cyan-deep)]">
               Vorstellung bis zur Wirkung.
             </span>
@@ -149,7 +149,7 @@ export default function MethodikSection() {
                   transition={{ duration: 0.7, ease }}
                   className="relative grid md:grid-cols-2 gap-6 md:gap-12 items-start"
                 >
-                  {/* Milestone dot — pulsing */}
+                  {/* Milestone dot, pulsing */}
                   <div className="absolute left-[14px] md:left-1/2 top-2 md:-translate-x-1/2 z-10">
                     <span className="relative flex h-6 w-6 items-center justify-center">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-40" />

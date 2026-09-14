@@ -47,7 +47,7 @@ export type CaseStudy = {
 };
 
 // Hier reale Cases eintragen. Beispiel-Struktur siehe README oder als
-// Blueprint den Typ oben. Leer lassen ist ausdrücklich ok — die Übersicht
+// Blueprint den Typ oben. Leer lassen ist ausdrücklich ok, die Übersicht
 // zeigt dann eine sinnvolle redaktionelle Nachricht statt einer leeren
 // Grid-Ansicht.
 export const cases: CaseStudy[] = [];

@@ -64,7 +64,7 @@ export const guides: GuidePage[] = [
     examples: [
       {
         title: "Kompakter B2B-Auftritt",
-        text: "3–5 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
+        text: "3-5 Seiten, Standard-Design, redaktionelles CMS, SEO-Basis, mobile Optimierung, transparentes Hosting. Ausreichend für kleinere Kanzleien, spezialisierte Handwerksbetriebe oder etablierte Freiberufler mit klarem Angebot.",
       },
       {
         title: "Vollständige Firmenwebsite",

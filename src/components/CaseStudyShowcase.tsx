@@ -37,7 +37,7 @@ const cases: CaseStudy[] = [
     metricUnit: '%',
     metricLabel: 'sortiertere Anfragen',
     story:
-      'Klare Verkaufsarchitektur — 25 % mehr Anfragen bei gleichem Budget. Und sichtbar bessere Qualität.',
+      'Klare Verkaufsarchitektur, 25 % mehr Anfragen bei gleichem Budget. Und sichtbar bessere Qualität.',
     services: ['Website', 'Conversion-Architektur', 'SEO-Foundation'],
   },
   {
@@ -48,7 +48,7 @@ const cases: CaseStudy[] = [
     metric: 'Bootstrap',
     metricLabel: 'ohne Startkapital · voll skaliert',
     story:
-      'Eine der härtesten Vertriebsdisziplinen — Gebäudereiniger von neuer Software überzeugen. Seit Ads-Setup und Premium-Auftritt auf Augenhöhe mit Etablierten.',
+      'Eine der härtesten Vertriebsdisziplinen: Gebäudereiniger von neuer Software überzeugen. Seit Ads-Setup und Premium-Auftritt auf Augenhöhe mit Etablierten.',
     services: ['Website', 'Google Ads', 'Marken-Architektur'],
   },
   {
@@ -59,7 +59,7 @@ const cases: CaseStudy[] = [
     metric: 'Top 3',
     metricLabel: 'Anbieter Köln & Düsseldorf · 12 Monate',
     story:
-      'Vom regionalen Mitbewerber zur ersten Wahl. Premium-Auftritt, lokales SEO, geführte Kampagne — in zwölf Monaten in die Spitzengruppe.',
+      'Vom regionalen Mitbewerber zur ersten Wahl. Premium-Auftritt, lokales SEO, geführte Kampagne, in zwölf Monaten in die Spitzengruppe.',
     services: ['Website', 'Lokales SEO', 'Google Ads'],
   },
 ];
@@ -101,7 +101,7 @@ export default function CaseStudyShowcase() {
       className="relative py-24 md:py-32 bg-white overflow-hidden scroll-mt-24 isolate"
       aria-labelledby="case-showcase-heading"
     >
-      {/* Atmosphere — behind glass */}
+      {/* Atmosphere, behind glass */}
       <div className="absolute inset-0 grid-background opacity-25 pointer-events-none" />
       <div
         aria-hidden
@@ -143,7 +143,7 @@ export default function CaseStudyShowcase() {
           </p>
         </motion.div>
 
-        {/* Showcase — ink glass slab */}
+        {/* Showcase, ink glass slab */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -184,7 +184,7 @@ export default function CaseStudyShowcase() {
             {/* Main content grid */}
             <div className="relative z-10 grid lg:grid-cols-12 gap-6 lg:gap-8 px-6 md:px-10 py-10 md:py-14 min-h-[460px] md:min-h-[420px]">
               <AnimatePresence mode="wait">
-                {/* LEFT — Client card as glass-strong */}
+                {/* LEFT, Client card as glass-strong */}
                 <motion.div
                   key={`left-${index}`}
                   initial={{ opacity: 0, x: -30 }}
@@ -258,7 +258,7 @@ export default function CaseStudyShowcase() {
               </AnimatePresence>
 
               <AnimatePresence mode="wait">
-                {/* RIGHT — Result */}
+                {/* RIGHT, Result */}
                 <motion.div
                   key={`right-${index}`}
                   initial={{ opacity: 0, x: 30 }}

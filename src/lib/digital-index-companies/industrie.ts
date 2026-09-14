@@ -50,7 +50,7 @@ const rows: CompactRow[] = [
   ["HYDAC International GmbH", "Saarland", 76, "Hydraulik und Industrie, ca. 1.700 Beschäftigte im Saarland"],
   ["Festo AG & Co. KG", "Saarland", 75, "Automatisierung, ca. 2.200 Beschäftigte im Saarland"],
   ["Schaeffler Technologies AG & Co. KG", "Saarland", 74, "Automotive und Maschinenbau, ca. 2.000 Beschäftigte im Saarland"],
-  ["Robert Bosch GmbH – Werk Homburg", "Homburg", 73, "Automotive und Industrie, ca. 3.200 Beschäftigte im Saarland"],
+  ["Robert Bosch GmbH | Werk Homburg", "Homburg", 73, "Automotive und Industrie, ca. 3.200 Beschäftigte im Saarland"],
 ];
 
 export const COMPANIES_INDUSTRIE = build(rows, "industrie-saarland");

@@ -3,7 +3,7 @@ export type FAQ = { q: string; a: string };
 export const homeFaqs: FAQ[] = [
   {
     q: 'Wie läuft ein Projekt mit Fylu Marketing ab?',
-    a: 'Am Anfang steht die Analyse: Wir zeigen konkret, warum Ihre aktuelle Website Besucher verliert. Passt es, geht es in die Umsetzung — Ziel, Zielgruppe und Struktur werden im Entwurf sichtbar. Vom Briefing bis zum Live-Gang haben Sie einen festen Ansprechpartner.',
+    a: 'Am Anfang steht die Analyse: Wir zeigen konkret, warum Ihre aktuelle Website Besucher verliert. Passt es, geht es in die Umsetzung. Ziel, Zielgruppe und Struktur werden im Entwurf sichtbar. Vom Briefing bis zum Live-Gang haben Sie einen festen Ansprechpartner.',
   },
   {
     q: 'Wie lange dauert es, bis meine Website live ist?',
@@ -15,11 +15,11 @@ export const homeFaqs: FAQ[] = [
   },
   {
     q: 'Bekomme ich auch SEO, Google Ads oder Software?',
-    a: 'Ja. Website, lokales SEO, Google-Unternehmensprofil, Google Ads und individuelle Software- oder App-Entwicklung — alles aus einer Hand. Umfang klären wir im Vorgespräch.',
+    a: 'Ja. Website, lokales SEO, Google-Unternehmensprofil, Google Ads und individuelle Software- oder App-Entwicklung, alles aus einer Hand. Umfang klären wir im Vorgespräch.',
   },
   {
     q: 'Für welche Unternehmen arbeitet Fylu Marketing?',
-    a: 'Für Unternehmen jeder Phase, denen ihre Online-Präsenz wirtschaftlich wichtig ist — vom Start-up bis zum etablierten Betrieb. Handwerk, Kanzleien, Praxen, Berater, B2B-Dienstleister. Vom Saarland aus, deutschlandweit.',
+    a: 'Für Unternehmen jeder Phase, denen ihre Online-Präsenz wirtschaftlich wichtig ist: vom Start-up bis zum etablierten Betrieb. Handwerk, Kanzleien, Praxen, Berater, B2B-Dienstleister. Vom Saarland aus, deutschlandweit.',
   },
   {
     q: 'Wann kann ein Vorgespräch stattfinden?',

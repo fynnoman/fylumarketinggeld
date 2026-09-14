@@ -9,7 +9,7 @@ type CommonProps = {
   inView?: boolean;
 };
 
-// Wobbly hand-drawn underline — three slightly different strokes
+// Wobbly hand-drawn underline, three slightly different strokes
 export function HandUnderline({
   className = '',
   color = 'currentColor',
@@ -76,7 +76,7 @@ export function HandCircle({
   );
 }
 
-// Curvy hand-drawn arrow — pointing right + slight down
+// Curvy hand-drawn arrow, pointing right + slight down
 export function HandArrow({
   className = '',
   color = 'currentColor',

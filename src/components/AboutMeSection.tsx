@@ -39,7 +39,7 @@ export default function AboutMeSection() {
 
       <div className="container mx-auto px-5 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
-          {/* LEFT — Portrait composition */}
+          {/* LEFT, Portrait composition */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -61,7 +61,7 @@ export default function AboutMeSection() {
                 <div className="relative w-full aspect-[4/5] overflow-hidden bg-stone-100">
                   <Image
                     src="/64bb3620-f0df-4887-a72b-6f4e69750fd8.webp"
-                    alt="Fynn Schulz – Inhaber & Strategie bei Fylu"
+                    alt="Fynn Schulz | Inhaber & Strategie bei Fylu"
                     fill
                     className="object-cover"
                     loading="lazy"
@@ -79,7 +79,7 @@ export default function AboutMeSection() {
                 </div>
               </motion.div>
 
-              {/* Floating chip — top-right */}
+              {/* Floating chip, top-right */}
               <motion.div
                 initial={{ opacity: 0, y: -8, rotate: 6 }}
                 animate={isInView ? { opacity: 1, y: 0, rotate: 6 } : {}}
@@ -95,7 +95,7 @@ export default function AboutMeSection() {
                 </span>
               </motion.div>
 
-              {/* Floating chip — bottom-left */}
+              {/* Floating chip, bottom-left */}
               <motion.div
                 initial={{ opacity: 0, y: 8, rotate: -5 }}
                 animate={isInView ? { opacity: 1, y: 0, rotate: -5 } : {}}
@@ -112,7 +112,7 @@ export default function AboutMeSection() {
                 </span>
               </motion.div>
 
-              {/* Handwritten margin note — pointing at the photo */}
+              {/* Handwritten margin note, pointing at the photo */}
               <motion.div
                 initial={{ opacity: 0, x: -20, rotate: -6 }}
                 animate={isInView ? { opacity: 1, x: 0, rotate: -6 } : {}}
@@ -134,7 +134,7 @@ export default function AboutMeSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT — Editorial copy */}
+          {/* RIGHT, Editorial copy */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -164,13 +164,13 @@ export default function AboutMeSection() {
               </span>
             </h2>
 
-            {/* Lead paragraph — editorial pull-style */}
+            {/* Lead paragraph, editorial pull-style */}
             <p className="mt-7 text-xl md:text-[1.35rem] leading-[1.55] text-stone-800 max-w-2xl font-light">
               Wir bauen Auftritte, die nicht{' '}
               <span className="line-through decoration-stone-300 decoration-1 text-stone-400">
                 schöner aussehen
               </span>{' '}
-              — sondern spürbar sind. Mit der Substanz eines Ateliers, geführt aus
+              , sondern spürbar sind. Mit der Substanz eines Ateliers, geführt aus
               einem kleinen Studio in Saarlouis.
             </p>
 
@@ -181,7 +181,7 @@ export default function AboutMeSection() {
                 <span className="font-medium text-stone-800">
                   unabhängiges Studio aus Saarlouis
                 </span>{' '}
-                — wir begleiten Häuser vom saarländischen Mittelstand bis zum
+                . Wir begleiten Häuser vom saarländischen Mittelstand bis zum
                 internationalen SaaS-Haus. Was verbindet: der Anspruch, digitale
                 Auftritte mit Substanz zu bauen, nicht mit Lautstärke.
               </p>
@@ -241,7 +241,7 @@ export default function AboutMeSection() {
                     <div className="text-sm md:text-base text-stone-500 leading-relaxed space-y-4 mt-6 pr-2 max-w-2xl border-l border-stone-200 pl-5">
                       <p>
                         Fylu ist aus Handwerk entstanden. Websites bauen, Code
-                        beherrschen, Performance verstehen, Marketing lesen können —
+                        beherrschen, Performance verstehen, Marketing lesen können.
                         über mehrere Jahre wurde aus konsequenter Praxis erst ein
                         festes Portfolio, dann 2025 ein Studio unter eigenem Namen.
                       </p>

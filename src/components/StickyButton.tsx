@@ -7,7 +7,7 @@ const PHONE = '+4915168488999';
 export default function StickyButton() {
   return (
     <>
-      {/* Desktop: top right — Anruf + Anfrage */}
+      {/* Desktop: top right, Anruf + Anfrage */}
       <div className="hidden md:flex fixed top-6 right-6 z-50 items-center gap-2">
         <a
           href={`tel:${PHONE}`}
@@ -27,7 +27,7 @@ export default function StickyButton() {
         </Link>
       </div>
 
-      {/* Mobile: bottom bar — Anruf gleichwertig daneben */}
+      {/* Mobile: bottom bar, Anruf gleichwertig daneben */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-white/95 backdrop-blur-md border-t border-stone-100 shadow-2xl">
         <div className="flex items-stretch gap-2">
           <a

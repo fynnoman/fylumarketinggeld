@@ -257,7 +257,7 @@ export default function AdminPage() {
                       )}
                     </div>
                     <p className="text-xs text-stone-500 truncate mb-1">
-                      {msg.projectType || msg.message || '—'}
+                      {msg.projectType || msg.message || '-'}
                     </p>
                     <p className="text-xs text-stone-600">{formatDate(msg.createdAt)}</p>
                   </motion.button>

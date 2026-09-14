@@ -1,4 +1,4 @@
-// Fylu Digital Index – Datenmodell, Score-Logik und Kategorien.
+// Fylu Digital Index, Datenmodell, Score-Logik und Kategorien.
 //
 // Alle Daten leben statisch in `digital-index-data.ts`. Es gibt keine
 // Datenbank, keinen externen API-Call und kein Storage. Sub-Scores werden

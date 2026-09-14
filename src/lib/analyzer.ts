@@ -407,22 +407,22 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // TITLE
   if (!i.meta.title) {
-    c.push(critical("meta-title-missing", "meta", "Meta-Title fehlt", "Ohne Title kann Google die Seite nicht sinnvoll darstellen.", "Setzen Sie im <head> ein <title>-Element mit 45–60 Zeichen. Das wichtigste Keyword nach vorne, den Marken-/Firmennamen ans Ende."));
+    c.push(critical("meta-title-missing", "meta", "Meta-Title fehlt", "Ohne Title kann Google die Seite nicht sinnvoll darstellen.", "Setzen Sie im <head> ein <title>-Element mit 45-60 Zeichen. Das wichtigste Keyword nach vorne, den Marken-/Firmennamen ans Ende."));
   } else if (i.meta.titleLength < 30) {
-    c.push(warn("meta-title-short", "meta", "Meta-Title sehr kurz", `Der Title hat ${i.meta.titleLength} Zeichen. Empfohlen sind 45–60.`, "Ergänzen Sie den Title um das primäre Keyword und ggf. den Standort, ohne über 60 Zeichen zu gehen."));
+    c.push(warn("meta-title-short", "meta", "Meta-Title sehr kurz", `Der Title hat ${i.meta.titleLength} Zeichen. Empfohlen sind 45-60.`, "Ergänzen Sie den Title um das primäre Keyword und ggf. den Standort, ohne über 60 Zeichen zu gehen."));
   } else if (i.meta.titleLength > 65) {
-    c.push(warn("meta-title-long", "meta", "Meta-Title zu lang", `Mit ${i.meta.titleLength} Zeichen wird der Title in den SERPs abgeschnitten.`, "Kürzen Sie auf 50–60 Zeichen. Wichtigstes Keyword nach vorne, dann Nutzenversprechen, dann Marke."));
+    c.push(warn("meta-title-long", "meta", "Meta-Title zu lang", `Mit ${i.meta.titleLength} Zeichen wird der Title in den SERPs abgeschnitten.`, "Kürzen Sie auf 50-60 Zeichen. Wichtigstes Keyword nach vorne, dann Nutzenversprechen, dann Marke."));
   } else {
-    c.push(good("meta-title-ok", "meta", "Meta-Title Länge passt", `${i.meta.titleLength} Zeichen — sauber im empfohlenen Bereich.`));
+    c.push(good("meta-title-ok", "meta", "Meta-Title Länge passt", `${i.meta.titleLength} Zeichen, sauber im empfohlenen Bereich.`));
   }
 
   // DESCRIPTION
   if (!i.meta.description) {
-    c.push(warn("meta-description-missing", "meta", "Meta-Description fehlt", "Google generiert dann automatisch ein Snippet — schlechter für die Klickrate.", "Schreiben Sie eine Description mit 120–158 Zeichen, die Nutzen und Handlungsaufforderung enthält."));
+    c.push(warn("meta-description-missing", "meta", "Meta-Description fehlt", "Google generiert dann automatisch ein Snippet, schlechter für die Klickrate.", "Schreiben Sie eine Description mit 120-158 Zeichen, die Nutzen und Handlungsaufforderung enthält."));
   } else if (i.meta.descriptionLength < 90) {
-    c.push(warn("meta-description-short", "meta", "Meta-Description sehr kurz", `${i.meta.descriptionLength} Zeichen. Empfohlen: 120–158.`, "Erweitern Sie die Description um konkreten Nutzen und Handlungsimpuls (z. B. „Jetzt Erstgespräch buchen“)."));
+    c.push(warn("meta-description-short", "meta", "Meta-Description sehr kurz", `${i.meta.descriptionLength} Zeichen. Empfohlen: 120-158.`, "Erweitern Sie die Description um konkreten Nutzen und Handlungsimpuls (z. B. „Jetzt Erstgespräch buchen“)."));
   } else if (i.meta.descriptionLength > 170) {
-    c.push(warn("meta-description-long", "meta", "Meta-Description zu lang", `${i.meta.descriptionLength} Zeichen — wird gekürzt angezeigt.`, "Kürzen Sie auf max. 158 Zeichen. Die wichtigste Aussage in den ersten 100 Zeichen unterbringen."));
+    c.push(warn("meta-description-long", "meta", "Meta-Description zu lang", `${i.meta.descriptionLength} Zeichen, wird gekürzt angezeigt.`, "Kürzen Sie auf max. 158 Zeichen. Die wichtigste Aussage in den ersten 100 Zeichen unterbringen."));
   } else {
     c.push(good("meta-description-ok", "meta", "Meta-Description Länge passt", `${i.meta.descriptionLength} Zeichen.`));
   }
@@ -455,7 +455,7 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // HTTPS
   if (!i.technical.isHttps) {
-    c.push(critical("https-missing", "technical", "Kein HTTPS", "Die Seite läuft auf http — Google rankt http-Seiten schlechter, Browser markieren sie als unsicher.", "Aktivieren Sie ein SSL-Zertifikat (z. B. Let's Encrypt) und leiten Sie alle http-URLs per 301 auf https um."));
+    c.push(critical("https-missing", "technical", "Kein HTTPS", "Die Seite läuft auf http, Google rankt http-Seiten schlechter, Browser markieren sie als unsicher.", "Aktivieren Sie ein SSL-Zertifikat (z. B. Let's Encrypt) und leiten Sie alle http-URLs per 301 auf https um."));
   } else {
     c.push(good("https-ok", "technical", "HTTPS aktiv", "Verbindung ist verschlüsselt."));
   }
@@ -472,7 +472,7 @@ function runChecks(i: CheckInput): CheckResult[] {
   // HTML SIZE
   const kb = Math.round(i.technical.htmlBytes / 1024);
   if (kb > 400) {
-    c.push(warn("html-large", "technical", "HTML sehr groß", `${kb} KB — schwer für langsame Verbindungen.`, "Reduzieren Sie Inline-Scripts, laden Sie große Bibliotheken erst nach dem First Paint und lagern Sie umfangreiche Datenstrukturen in APIs aus."));
+    c.push(warn("html-large", "technical", "HTML sehr groß", `${kb} KB, schwer für langsame Verbindungen.`, "Reduzieren Sie Inline-Scripts, laden Sie große Bibliotheken erst nach dem First Paint und lagern Sie umfangreiche Datenstrukturen in APIs aus."));
   } else {
     c.push(good("html-size-ok", "technical", "HTML-Größe angemessen", `${kb} KB.`));
   }
@@ -488,14 +488,14 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // H2
   if (i.headings.h2Count === 0 && i.content.wordCount > 300) {
-    c.push(warn("h2-missing", "heading", "Keine H2-Struktur", "Bei einem größeren Text sollten H2-Zwischenüberschriften den Inhalt gliedern.", "Gliedern Sie den Text in 3–6 Sinnabschnitte, jeweils mit einer H2 überschrieben, die eine Long-Tail-Suchvariante aufgreift."));
+    c.push(warn("h2-missing", "heading", "Keine H2-Struktur", "Bei einem größeren Text sollten H2-Zwischenüberschriften den Inhalt gliedern.", "Gliedern Sie den Text in 3-6 Sinnabschnitte, jeweils mit einer H2 überschrieben, die eine Long-Tail-Suchvariante aufgreift."));
   } else if (i.headings.h2Count > 0) {
     c.push(good("h2-ok", "heading", "H2-Struktur vorhanden", `${i.headings.h2Count} Zwischenüberschriften.`));
   }
 
   // IMAGES
   if (i.images.total === 0) {
-    c.push(warn("images-none", "images", "Keine Bilder gefunden", "Nur Text — visuelle Elemente helfen bei Vertrauen und Verweildauer.", "Ergänzen Sie 1–3 visuelle Elemente: Team-Foto, Projekt-Ergebnis oder Service-Illustration."));
+    c.push(warn("images-none", "images", "Keine Bilder gefunden", "Nur Text, visuelle Elemente helfen bei Vertrauen und Verweildauer.", "Ergänzen Sie 1-3 visuelle Elemente: Team-Foto, Projekt-Ergebnis oder Service-Illustration."));
   } else if (i.images.missingAlt > 0) {
     const pct = Math.round((i.images.missingAlt / i.images.total) * 100);
     const sev: Severity = pct > 40 ? "critical" : "warning";
@@ -513,9 +513,9 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // CONTENT
   if (i.content.wordCount < 200) {
-    c.push(critical("content-thin", "content", "Sehr wenig Text", `Nur ${i.content.wordCount} Wörter — Google bewertet die Seite als „thin content“.`, "Bauen Sie den Text auf mindestens 400–600 Wörter aus: Problem, Lösung, Nutzen, Ablauf, Antworten auf typische Fragen."));
+    c.push(critical("content-thin", "content", "Sehr wenig Text", `Nur ${i.content.wordCount} Wörter, Google bewertet die Seite als „thin content“.`, "Bauen Sie den Text auf mindestens 400-600 Wörter aus: Problem, Lösung, Nutzen, Ablauf, Antworten auf typische Fragen."));
   } else if (i.content.wordCount < 400) {
-    c.push(warn("content-short", "content", "Wenig Text", `${i.content.wordCount} Wörter. Für Landing- oder Ratgeberseiten meist zu wenig.`, "Ergänzen Sie 2–3 Sinnabschnitte mit konkreten Beispielen, Zahlen oder einem Ablaufschema."));
+    c.push(warn("content-short", "content", "Wenig Text", `${i.content.wordCount} Wörter. Für Landing- oder Ratgeberseiten meist zu wenig.`, "Ergänzen Sie 2-3 Sinnabschnitte mit konkreten Beispielen, Zahlen oder einem Ablaufschema."));
   } else {
     c.push(good("content-ok", "content", "Ausreichend Text", `${i.content.wordCount} Wörter.`));
   }
@@ -531,14 +531,14 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // OG / TWITTER
   if (!i.meta.ogTitle || !i.meta.ogImage) {
-    c.push(warn("og-partial", "meta", "Open-Graph unvollständig", "OG-Title oder OG-Image fehlt — Social-Media-Vorschauen wirken damit generisch.", "Ergänzen Sie <meta property=\"og:title\">, <meta property=\"og:description\"> und <meta property=\"og:image\"> mit einem 1200×630-Bild."));
+    c.push(warn("og-partial", "meta", "Open-Graph unvollständig", "OG-Title oder OG-Image fehlt, Social-Media-Vorschauen wirken damit generisch.", "Ergänzen Sie <meta property=\"og:title\">, <meta property=\"og:description\"> und <meta property=\"og:image\"> mit einem 1200×630-Bild."));
   } else {
     c.push(good("og-ok", "meta", "Open-Graph vollständig", "Title + Bild sind gesetzt."));
   }
 
   // STRUCTURED DATA
   if (!i.technical.hasSchemaOrg) {
-    c.push(warn("schema-missing", "structured-data", "Keine Structured Data", "Kein JSON-LD gefunden — Rich Results sind damit ausgeschlossen.", "Fügen Sie mindestens Organization- oder LocalBusiness-Schema als JSON-LD ein. Bei FAQs zusätzlich FAQPage-Schema."));
+    c.push(warn("schema-missing", "structured-data", "Keine Structured Data", "Kein JSON-LD gefunden, Rich Results sind damit ausgeschlossen.", "Fügen Sie mindestens Organization- oder LocalBusiness-Schema als JSON-LD ein. Bei FAQs zusätzlich FAQPage-Schema."));
   } else {
     c.push(good("schema-ok", "structured-data", "Structured Data vorhanden", i.technical.schemaTypes.slice(0, 6).join(", ") || "Typ unbekannt"));
   }
@@ -552,7 +552,7 @@ function runChecks(i: CheckInput): CheckResult[] {
 
   // INTERNAL LINKS
   if (i.links.internal < 3) {
-    c.push(critical("links-internal-few", "links", "Sehr wenige interne Links", `Nur ${i.links.internal} interne Verlinkungen gefunden. Ohne Linknetz kann Google die Themen-Autorität der Seite kaum erkennen.`, "Verlinken Sie zu drei bis acht thematisch passenden Seiten Ihrer Site — Kern-Leistungen, verwandte Ratgeber, konkrete Case Studies."));
+    c.push(critical("links-internal-few", "links", "Sehr wenige interne Links", `Nur ${i.links.internal} interne Verlinkungen gefunden. Ohne Linknetz kann Google die Themen-Autorität der Seite kaum erkennen.`, "Verlinken Sie zu drei bis acht thematisch passenden Seiten Ihrer Site, Kern-Leistungen, verwandte Ratgeber, konkrete Case Studies."));
   } else if (i.links.internal < 6) {
     c.push(warn("links-internal-thin", "links", "Wenige interne Links", `${i.links.internal} interne Verlinkungen. Empfehlung: fünf bis zehn pro substanzieller Seite.`, "Ergänzen Sie thematisch passende Verweise auf verwandte Landing-Pages, Ratgeber oder Case Studies."));
   } else {

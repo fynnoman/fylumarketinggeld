@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "Website erstellen lassen – Transparente Konditionen mit Fylu",
+        alt: "Website erstellen lassen | Transparente Konditionen mit Fylu",
       },
     ],
   },

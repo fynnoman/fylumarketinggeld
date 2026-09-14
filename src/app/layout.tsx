@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     default: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
     template: "%s | Fylu Marketing",
   },
-  description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung.",
+  description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Marketing Saarlouis",
   publisher: "Fylu Marketing",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
-    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase — von der ersten Präsenz bis zur Skalierung.",
+    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase, von der ersten Präsenz bis zur Skalierung.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -108,11 +108,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": ["ProfessionalService", "LocalBusiness", "WebDesignCompany"],
               "@id": "https://www.fylumarketing.de/#organization",
-              name: "Fylu Marketing – Webdesign, SEO & Software aus dem Saarland",
+              name: "Fylu Marketing | Webdesign, SEO & Software aus dem Saarland",
               alternateName: "Fylu",
-              legalName: "Fylu Marketing – Fynn Schulz",
+              legalName: "Fylu Marketing | Fynn Schulz",
               description:
-                "Fylu Marketing ist eine Agentur aus Saarlouis für Website, SEO, Google Ads und Softwareentwicklung. Wir helfen Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren — im Saarland, in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und deutschlandweit.",
+                "Fylu Marketing ist eine Agentur aus Saarlouis für Website, SEO, Google Ads und Softwareentwicklung. Wir helfen Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren: im Saarland, in Saarbrücken, Saarlouis, Neunkirchen, Homburg, Merzig, Völklingen, St. Ingbert, Dillingen und deutschlandweit.",
               url: "https://www.fylumarketing.de",
               logo: {
                 "@type": "ImageObject",
@@ -131,7 +131,7 @@ export default function RootLayout({
                 jobTitle: "Gründer & Ansprechpartner",
                 worksFor: { "@id": "https://www.fylumarketing.de/#organization" },
                 description:
-                  "Gründer und Ansprechpartner von Fylu Marketing in Saarlouis. Verantwortet Website, SEO, Google Ads und Softwareentwicklung für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung.",
+                  "Gründer und Ansprechpartner von Fylu Marketing in Saarlouis. Verantwortet Website, SEO, Google Ads und Softwareentwicklung für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung.",
                 knowsAbout: [
                   "Webdesign",
                   "Conversion-Analyse",
@@ -147,7 +147,7 @@ export default function RootLayout({
                   "Softwareentwicklung",
                   "AI-Integration",
                 ],
-                knowsLanguage: ["de", "en"],
+                knowsLanguage: ["de"],
                 nationality: { "@type": "Country", name: "Deutschland" },
                 workLocation: {
                   "@type": "Place",
@@ -295,7 +295,7 @@ export default function RootLayout({
                       "@id": "https://www.fylumarketing.de/#service-webdesign",
                       name: "Webdesign & Website-Erstellung",
                       description:
-                        "Individuell gestaltete, technisch moderne Websites (Next.js, React, TypeScript) für Unternehmen jeder Phase — vom ersten Auftritt bis zur Skalierung. Keine monatliche Grundgebühr.",
+                        "Individuell gestaltete, technisch moderne Websites (Next.js, React, TypeScript) für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung. Keine monatliche Grundgebühr.",
                       serviceType: "Webdesign",
                       provider: { "@id": "https://www.fylumarketing.de/#organization" },
                       areaServed: [
@@ -358,7 +358,7 @@ export default function RootLayout({
                   },
                 ],
               },
-              slogan: "Website, SEO und Software aus dem Saarland — für Unternehmen jeder Phase.",
+              slogan: "Website, SEO und Software aus dem Saarland, für Unternehmen jeder Phase.",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5.0",
@@ -393,7 +393,7 @@ export default function RootLayout({
               audience: {
                 "@type": "BusinessAudience",
                 audienceType:
-                  "Unternehmen jeder Phase mit Bedarf an Online-Sichtbarkeit — Handwerk, Dienstleister, Kanzleien, Praxen, Steuerberater, Immobilienmakler, B2B-Mittelstand, Start-ups und etablierte Betriebe.",
+                  "Unternehmen jeder Phase mit Bedarf an Online-Sichtbarkeit: Handwerk, Dienstleister, Kanzleien, Praxen, Steuerberater, Immobilienmakler, B2B-Mittelstand, Start-ups und etablierte Betriebe.",
               },
               potentialAction: {
                 "@type": "SearchAction",

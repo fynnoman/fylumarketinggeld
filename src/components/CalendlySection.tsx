@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const benefits = [
   {
     title: 'Persönliches Gespräch',
-    body: 'Wir hören zu, bevor wir antworten — was Sie vorhaben, wo Sie stehen, was Ihre Website heute leistet.',
+    body: 'Wir hören zu, bevor wir antworten: was Sie vorhaben, wo Sie stehen, was Ihre Website heute leistet.',
   },
   {
     title: 'Konkrete Einschätzung',
@@ -66,8 +66,8 @@ export default function CalendlySection() {
             .
           </h2>
           <p className="mt-6 md:mt-8 max-w-xl text-base md:text-lg text-stone-600 leading-relaxed">
-            15 – 30 Minuten. Kostenlos und unverbindlich. Wir hören zu, geben
-            eine ehrliche Einschätzung — direkt im Gespräch, nicht in einem
+            15 bis 30 Minuten. Kostenlos und unverbindlich. Wir hören zu, geben
+            eine ehrliche Einschätzung, direkt im Gespräch, nicht in einem
             PDF drei Tage später.
           </p>
 

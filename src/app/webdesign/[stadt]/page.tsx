@@ -86,7 +86,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: url },
-    // Extended-Tier-Städte aus dem Index halten — der Content überlappt zu stark
+    // Extended-Tier-Städte aus dem Index halten, der Content überlappt zu stark
     // mit den Top-5 (Audit-Befund: 99,85 % Duplicate). Hochstufen auf "top",
     // sobald die Page unique Inhalte bekommt.
     robots: isTop
@@ -146,7 +146,7 @@ export default async function RegionPage({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "@id": `${url}#localbusiness`,
-            name: `Fylu – Webdesign ${region.city}`,
+            name: `Fylu | Webdesign ${region.city}`,
             description: `Webdesign-Agentur aus Saarlouis im Saarland für Unternehmen in ${region.city}. Professionelle Websites, lokale SEO und Google Ads.`,
             url,
             telephone: "+4915168488999",
@@ -322,7 +322,7 @@ export default async function RegionPage({
         </div>
       </section>
 
-      {/* Stadt-spezifisches Profil — nur für Top-Tier-Städte mit unique Content.
+      {/* Stadt-spezifisches Profil, nur für Top-Tier-Städte mit unique Content.
           Diese Sektion existiert genau aus dem Grund: Google sieht hier
           stadtspezifische Substanz statt generischem Webdesign-Boilerplate. */}
       {region.tier === "top" && (region.economy || region.topIndustries || region.localFact) && (
@@ -487,7 +487,7 @@ export default async function RegionPage({
         </div>
       </section>
 
-      {/* Werkzeuge und Antworten — nur für Top-Städte, um SEO-Bestand nicht zu verwässern */}
+      {/* Werkzeuge und Antworten, nur für Top-Städte, um SEO-Bestand nicht zu verwässern */}
       {isTop && (
         <section className="py-20 px-6 bg-white border-t border-stone-200">
           <div className="max-w-5xl mx-auto">

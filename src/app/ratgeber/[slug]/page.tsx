@@ -239,7 +239,7 @@ export default async function GuidePage({
           </section>
         )}
 
-        {/* Passende Fylu-Leistungen — nur wenn serviceLinks kuratiert */}
+        {/* Passende Fylu-Leistungen, nur wenn serviceLinks kuratiert */}
         {g.serviceLinks && g.serviceLinks.length > 0 && (
           <section className="py-16 md:py-20 px-6">
             <div className="max-w-3xl mx-auto">

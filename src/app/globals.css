@@ -11,7 +11,7 @@
   --cyan-deep: #0e7490;
   --silver: #c0c0c0;
   --silver-light: #e5e7eb;
-  /* Second accent — warm amber for tension against cyan */
+  /* Second accent, warm amber for tension against cyan */
   --amber: #c2410c;
   --amber-soft: #fed7aa;
   --cream: #faf3e6;
@@ -54,18 +54,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
 }
 
-/* Editorial display utility — Fraunces */
+/* Editorial display utility, Fraunces */
 .font-display {
   font-family: var(--font-fraunces), Georgia, 'Times New Roman', serif;
   font-optical-sizing: auto;
 }
 
-/* Handwritten utility — Caveat */
+/* Handwritten utility, Caveat */
 .font-hand {
   font-family: var(--font-caveat), 'Comic Sans MS', cursive;
 }
 
-/* Faint paper texture line — a 2px scribble */
+/* Faint paper texture line, a 2px scribble */
 .paper-line {
   background-image:
     repeating-linear-gradient(
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     );
 }
 
-/* Noise overlay — adds organic film grain to atmospheric backgrounds */
+/* Noise overlay, adds organic film grain to atmospheric backgrounds */
 .noise-overlay {
   position: absolute;
   inset: 0;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 220px 220px;
 }
 
-/* Cyan bloom — soft radial glow used in hero atmosphere */
+/* Cyan bloom, soft radial glow used in hero atmosphere */
 .bloom-cyan {
   background: radial-gradient(
     60% 55% at 75% 28%,
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------------------------------------------------ */
-/* Editorial premium utilities — Maison / Atelier / Signature system  */
+/* Editorial premium utilities, Maison / Atelier / Signature system  */
 /* ------------------------------------------------------------------ */
 
 /* Hairline top-rule used above eyebrows on premium pages */
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, transparent 0%, rgba(12, 14, 16, 0.24) 20%, rgba(12, 14, 16, 0.24) 80%, transparent 100%);
 }
 
-/* Editorial eyebrow — thin, wide-tracked capitals with a leading rule */
+/* Editorial eyebrow, thin, wide-tracked capitals with a leading rule */
 .editorial-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.55;
 }
 
-/* Silver metallic accent — for pricing badges and quiet marks */
+/* Silver metallic accent, for pricing badges and quiet marks */
 .metal-silver {
   background: linear-gradient(135deg, #f2f3f4 0%, #d5d7d9 30%, #f5f6f7 55%, #b8babd 80%, #dfe0e2 100%);
   color: rgba(12, 14, 16, 0.75);
@@ -202,13 +202,13 @@ h1, h2, h3, h4, h5, h6 {
   color: transparent;
 }
 
-/* Cyan foil — subtle metallic cyan for the top-tier "Maison" package */
+/* Cyan foil, subtle metallic cyan for the top-tier "Maison" package */
 .metal-cyan {
   background: linear-gradient(135deg, rgba(8, 145, 178, 0.9) 0%, rgba(6, 182, 212, 0.75) 40%, rgba(14, 116, 144, 0.95) 80%);
   color: #ffffff;
 }
 
-/* Vertical text label — used on premium side markers */
+/* Vertical text label, used on premium side markers */
 .vertical-label {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-/* Number-with-fraunces block — for pricing displays */
+/* Number-with-fraunces block, for pricing displays */
 .pricing-numeral {
   font-family: var(--font-fraunces), Georgia, serif;
   font-weight: 300;
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 40px 100px -30px rgba(12, 14, 16, 0.28);
 }
 
-/* Client logo marquee – GPU-beschleunigt, unabhängig vom Scroll */
+/* Client logo marquee, GPU-beschleunigt, unabhängig vom Scroll */
 @keyframes marquee-x {
   0% {
     transform: translate3d(0, 0, 0);
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   animation-play-state: paused;
 }
 
-/* WhatsApp button – langsamer Pulse mit Pause */
+/* WhatsApp button, langsamer Pulse mit Pause */
 @keyframes wa-pulse {
   0% {
     transform: scale(1);
@@ -319,12 +319,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------------------------------------------------ */
-/* Liquid Glass system — warm light, tuned for cream/paper backdrop   */
+/* Liquid Glass system, warm light, tuned for cream/paper backdrop   */
 /* Real frosted panels with specular edges, refracted highlights,     */
 /* subtle inner glow. Layered so tiles read as glass, not gradients.  */
 /* ------------------------------------------------------------------ */
 
-/* Base panel — the workhorse. Use on cards, tiles, chips.
+/* Base panel, the workhorse. Use on cards, tiles, chips.
    Combine with .glass-edge for the specular rim highlight. */
 .glass {
   position: relative;
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
     0 8px 18px -10px rgba(12, 14, 16, 0.10);
 }
 
-/* Denser panel — for hero anchor pieces that need more presence. */
+/* Denser panel, for hero anchor pieces that need more presence. */
 .glass-strong {
   position: relative;
   background: linear-gradient(
@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     0 12px 26px -14px rgba(12, 14, 16, 0.12);
 }
 
-/* Airy panel — for large fields where the backdrop should breathe through. */
+/* Airy panel, for large fields where the backdrop should breathe through. */
 .glass-thin {
   position: relative;
   background: linear-gradient(
@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
     0 12px 32px -18px rgba(12, 14, 16, 0.14);
 }
 
-/* Dark glass — for the Ink hero tile and dark section CTA. */
+/* Dark glass, for the Ink hero tile and dark section CTA. */
 .glass-ink {
   position: relative;
   background: linear-gradient(
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
     0 8px 20px -10px rgba(0, 0, 0, 0.35);
 }
 
-/* Cyan-tinted glass — for CTA slabs where cyan should read through. */
+/* Cyan-tinted glass, for CTA slabs where cyan should read through. */
 .glass-cyan {
   position: relative;
   background: linear-gradient(
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     0 8px 22px -12px rgba(14, 116, 144, 0.2);
 }
 
-/* Specular rim — layer on top of any .glass* element for the iOS glass
+/* Specular rim, layer on top of any .glass* element for the iOS glass
    highlight on the upper edge. Place inside the element as an absolute
    child, e.g. <span class="glass-edge" aria-hidden />. */
 .glass-edge {
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.5;
 }
 
-/* Chip — pill-shaped glass badge. Set border-radius: 999px on parent. */
+/* Chip, pill-shaped glass badge. Set border-radius: 999px on parent. */
 .glass-chip {
   background: linear-gradient(
     135deg,
@@ -501,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
     0 6px 18px -8px rgba(12, 14, 16, 0.18);
 }
 
-/* Ink chip — dark glass pill. */
+/* Ink chip, dark glass pill. */
 .glass-chip-ink {
   background: linear-gradient(
     135deg,
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
     0 6px 18px -8px rgba(0, 0, 0, 0.35);
 }
 
-/* Glass button — pressable pill with specular sheen. Use as
+/* Glass button, pressable pill with specular sheen. Use as
    <button class="btn-glass"><span class="btn-glass-shine" />Label</button> */
 .btn-glass {
   position: relative;
@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.97);
 }
 
-/* Ink variant of glass button — dark base, cyan sheen */
+/* Ink variant of glass button, dark base, cyan sheen */
 .btn-glass-ink {
   position: relative;
   overflow: hidden;
@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.97);
 }
 
-/* Cyan variant — for primary CTA on dark section */
+/* Cyan variant, for primary CTA on dark section */
 .btn-glass-cyan {
   position: relative;
   overflow: hidden;
@@ -614,7 +614,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.97);
 }
 
-/* Slow diagonal sheen — a highlight streak that traverses the button on
+/* Slow diagonal sheen, a highlight streak that traverses the button on
    hover. Layer as an absolute child, e.g. <span class="btn-glass-shine" />. */
 .btn-glass-shine {
   position: absolute;
@@ -645,7 +645,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 130%;
 }
 
-/* Ambient blob — the soft colour source that lives *behind* the glass.
+/* Ambient blob, the soft colour source that lives *behind* the glass.
    Absolute-positioned. Combines cyan + warm amber for optical depth. */
 .glass-bloom-cyan {
   background: radial-gradient(
@@ -666,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(30px);
 }
 
-/* Refracted caustic — a very faint iridescent overlay used sparingly on
+/* Refracted caustic, a very faint iridescent overlay used sparingly on
    large glass hero pieces. */
 .glass-caustic {
   position: absolute;
@@ -703,10 +703,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------------------------------------------------ */
-/* Cinema system — full-screen hero aurora, huge type, scroll effects */
+/* Cinema system, full-screen hero aurora, huge type, scroll effects */
 /* ------------------------------------------------------------------ */
 
-/* Aurora — three drifting coloured blobs that live behind the hero.
+/* Aurora, three drifting coloured blobs that live behind the hero.
    No JS, GPU-accelerated. Very slow rotation + scale for organic feel. */
 .aurora {
   position: absolute;
@@ -800,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
   );
 }
 
-/* Grain on top of aurora — organic film feel */
+/* Grain on top of aurora, organic film feel */
 .aurora-grain {
   position: absolute;
   inset: 0;
@@ -819,7 +819,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Marquee strip — for the "big label" horizontal scroller */
+/* Marquee strip, for the "big label" horizontal scroller */
 @keyframes marquee-slow {
   0% {
     transform: translate3d(0, 0, 0);
@@ -836,7 +836,7 @@ h1, h2, h3, h4, h5, h6 {
   animation-play-state: paused;
 }
 
-/* Massive display numeral — used in BigMetrics */
+/* Massive display numeral, used in BigMetrics */
 .numeral-display {
   font-family: var(--font-fraunces), Georgia, serif;
   font-weight: 300;
@@ -846,7 +846,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.82;
 }
 
-/* Horizontal scroll strip — snaps between cases */
+/* Horizontal scroll strip, snaps between cases */
 .snap-strip {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -860,7 +860,7 @@ h1, h2, h3, h4, h5, h6 {
   scroll-snap-stop: always;
 }
 
-/* Big outline heading — huge text stroked, no fill. Editorial cinema. */
+/* Big outline heading, huge text stroked, no fill. Editorial cinema. */
 .text-outline {
   color: transparent;
   -webkit-text-stroke: 1.2px rgba(12, 14, 16, 0.28);
@@ -872,7 +872,7 @@ h1, h2, h3, h4, h5, h6 {
   text-stroke: 1.2px rgba(255, 255, 255, 0.28);
 }
 
-/* Vertical rule tick — a delicate ruler used on cinema sections */
+/* Vertical rule tick, a delicate ruler used on cinema sections */
 .rule-tick {
   position: relative;
   display: inline-block;

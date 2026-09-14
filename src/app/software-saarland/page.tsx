@@ -120,7 +120,7 @@ export default function SoftwareSaarlandPage() {
         }}
       />
 
-      {/* Service Schema — Software Development */}
+      {/* Service Schema: Software Development */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

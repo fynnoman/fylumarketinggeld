@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Kostenlose technische und redaktionelle Website-Analyse: Meta, Struktur, Inhalte, Bilder, Structured Data, mobile Basis, lokale Signale. Direkt sichtbar, ohne Registrierung.",
   alternates: { canonical: URL },
   openGraph: {
-    title: "Website-Analyse — direkt sichtbar, ohne Registrierung",
+    title: "Website-Analyse | direkt sichtbar, ohne Registrierung",
     description:
       "In unter 15 Sekunden: Score, kritische Probleme, Verbesserungspotenzial und gute Signale Ihrer Website.",
     url: URL,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Website-Analyse | Fylu Marketing",
-    description: "Kostenlose Analyse Ihrer Website — direkt sichtbar, keine Registrierung.",
+    description: "Kostenlose Analyse Ihrer Website, direkt sichtbar, keine Registrierung.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function WebsiteCheckPage() {
             url: URL,
             name: "Website-Analyse",
             description:
-              "Kostenlose serverseitige Website-Analyse — direkt sichtbar, ohne Registrierung, ohne Datenspeicherung.",
+              "Kostenlose serverseitige Website-Analyse, direkt sichtbar, ohne Registrierung, ohne Datenspeicherung.",
             inLanguage: "de-DE",
             isPartOf: { "@id": `${SITE}/#website` },
             mainEntity: { "@id": `${URL}#tool` },
@@ -133,7 +133,7 @@ export default function WebsiteCheckPage() {
               <span className="font-medium text-stone-700">Zur Analyse:</span> Wir laden die
               eingegebene Seite einmal serverseitig, prüfen sie im Detail und zeigen die Ergebnisse
               direkt an. Weder Ihre URL noch das Ergebnis wird gespeichert. Wenn Sie einen
-              PDF-Report per E-Mail möchten, geben Sie freiwillig Ihre E-Mail-Adresse an — nur diese
+              PDF-Report per E-Mail möchten, geben Sie freiwillig Ihre E-Mail-Adresse an, nur diese
               wird an unser Postfach übermittelt.
             </p>
           </div>

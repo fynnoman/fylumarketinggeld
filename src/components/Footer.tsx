@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo-fylu.webp"
-                alt="Fylu Marketing – Logo"
+                alt="Fylu Marketing | Logo"
                 width={132}
                 height={44}
                 className="h-11 w-auto"
@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
             <p className="text-stone-400 text-sm leading-relaxed max-w-sm mb-6">
               Fylu Marketing aus Saarlouis. Websites, SEO, Google Ads und
-              Software für Unternehmen jeder Phase — vom ersten Auftritt bis
+              Software für Unternehmen jeder Phase, vom ersten Auftritt bis
               zur Skalierung.
             </p>
             <div className="space-y-2 text-sm">

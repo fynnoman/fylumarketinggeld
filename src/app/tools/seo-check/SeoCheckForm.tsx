@@ -251,7 +251,7 @@ function ResultView({
                 Vollständigen Report per E-Mail erhalten.
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Wir schicken Ihnen die Prioritätenliste inkl. Handlungsempfehlungen als PDF —
+                Wir schicken Ihnen die Prioritätenliste inkl. Handlungsempfehlungen als PDF,
                 praktisch, um sie intern zu teilen. Nur Ihre E-Mail wird übermittelt.
               </p>
             </div>
@@ -286,7 +286,7 @@ function ResultView({
             Erhalten
           </div>
           <p className="text-stone-800 font-medium">
-            Danke — der Report ist unterwegs. Wir melden uns innerhalb eines Werktags.
+            Danke, der Report ist unterwegs. Wir melden uns innerhalb eines Werktags.
           </p>
         </div>
       )}

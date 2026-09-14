@@ -49,7 +49,7 @@ export default function HeroSection() {
 
   return (
     <section
-      aria-label="Fylu — Cover"
+      aria-label="Fylu Cover"
       className="relative min-h-[100svh] w-full overflow-hidden bg-[var(--ink)] text-[#f7f4ee] isolate"
     >
       {/* Photo layer */}
@@ -100,7 +100,7 @@ export default function HeroSection() {
         className="pointer-events-none absolute inset-4 md:inset-8 border border-white/[0.09]"
       />
 
-      {/* Top row — masthead + issue meta */}
+      {/* Top row, masthead + issue meta */}
       <div className="absolute inset-x-8 top-8 md:inset-x-14 md:top-14 z-10 flex items-start justify-between gap-6">
         <motion.div
           initial={{ opacity: 0, y: -8 }}
@@ -132,7 +132,7 @@ export default function HeroSection() {
       {/* Corner ticks */}
       <CornerTicks />
 
-      {/* Headline block — bottom-left, editorial */}
+      {/* Headline block, bottom-left, editorial */}
       <div className="absolute inset-x-8 md:left-14 md:right-auto md:max-w-[62vw] xl:max-w-[70rem] bottom-24 md:bottom-16 lg:bottom-20 z-10">
         <h1 className="font-semibold tracking-[-0.045em] leading-[0.9] text-white">
           <WordReveal
@@ -161,7 +161,7 @@ export default function HeroSection() {
           className="mt-9 md:mt-11 max-w-xl"
         >
           <p data-speakable className="text-sm md:text-base text-stone-200/90 leading-relaxed">
-            Wir analysieren, warum Ihre Website Besucher verliert — und zeigen
+            Wir analysieren, warum Ihre Website Besucher verliert und zeigen
             Ihnen im Entwurf, wie daraus Kunden werden.
           </p>
         </motion.div>
@@ -238,7 +238,7 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Bottom-right — photo caption */}
+      {/* Bottom-right, photo caption */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

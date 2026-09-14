@@ -1,4 +1,4 @@
-// Fylu Digital Index – Kategorien-Datenquelle.
+// Fylu Digital Index, Kategorien-Datenquelle.
 //
 // Jede Kategorie kombiniert Branche + Region. Der Slug matcht das
 // primäre SEO-Ziel: "beste [branche] saarland". H1 und Meta werden
@@ -92,7 +92,7 @@ export const CATEGORIES: Category[] = [
     slug: "handwerker-saarland",
     industry: "Handwerksbetrieb",
     industryPlural: "Handwerksbetriebe",
-    intro: `Ranking hochwertiger Handwerksbetriebe im Saarland nach digitaler Sichtbarkeit — Schreiner, Maler, Fliesenleger, Holzbau, Trockenbau. Bewertet werden Website, Google-Präsenz, technische Grundlagen und Conversion-Qualität. Jede Firma erhält einen Fylu Digital Score von 0 bis 100.`,
+    intro: `Ranking hochwertiger Handwerksbetriebe im Saarland nach digitaler Sichtbarkeit: Schreiner, Maler, Fliesenleger, Holzbau, Trockenbau. Bewertet werden Website, Google-Präsenz, technische Grundlagen und Conversion-Qualität. Jede Firma erhält einen Fylu Digital Score von 0 bis 100.`,
   }),
   make({
     slug: "gebaeudereinigung-saarland",

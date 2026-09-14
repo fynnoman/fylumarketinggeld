@@ -59,7 +59,7 @@ export default function Navbar() {
             >
               <Image
                 src="/logo-fylu.webp"
-                alt="Fylu Marketing Saarland – Logo"
+                alt="Fylu Marketing Saarland | Logo"
                 width={120}
                 height={40}
                 priority
@@ -142,11 +142,11 @@ export default function Navbar() {
         </div>
       </motion.nav>
 
-      {/* Mobile Dropdown Panel — separate from pill nav so it doesn't warp the rounded-full shape */}
+      {/* Mobile Dropdown Panel, separate from pill nav so it doesn't warp the rounded-full shape */}
       <AnimatePresence>
         {menuOpen && (
           <>
-            {/* Backdrop — dims page + closes menu on tap */}
+            {/* Backdrop, dims page + closes menu on tap */}
             <motion.button
               type="button"
               aria-hidden

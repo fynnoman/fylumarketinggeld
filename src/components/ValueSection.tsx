@@ -15,7 +15,7 @@ export default function ValueSection() {
       ref={ref}
       className="relative py-28 md:py-36 px-5 md:px-8 bg-[var(--background-warm)] overflow-hidden isolate"
     >
-      {/* Atmosphere — coloured blobs that refract through the glass tiles */}
+      {/* Atmosphere, coloured blobs that refract through the glass tiles */}
       <div className="absolute inset-0 -z-10">
         <div
           className="absolute inset-0 opacity-[0.35]"
@@ -69,7 +69,7 @@ export default function ValueSection() {
 
         {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-5 auto-rows-[minmax(220px,auto)]">
-          {/* Tile 1 — Hero tile (large, ink glass) */}
+          {/* Tile 1, Hero tile (large, ink glass) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -103,7 +103,7 @@ export default function ValueSection() {
                   </span>
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-md">
-                  Zwölf Klienten pro Jahr. Direkter Draht — kein Ticket, kein Umweg.
+                  Zwölf Klienten pro Jahr. Direkter Draht, kein Ticket, kein Umweg.
                 </p>
               </div>
 
@@ -137,7 +137,7 @@ export default function ValueSection() {
             </div>
           </motion.div>
 
-          {/* Tile 2 — Faire Preise */}
+          {/* Tile 2, Faire Preise */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -161,7 +161,7 @@ export default function ValueSection() {
             </div>
           </motion.div>
 
-          {/* Tile 3 — Direkter Draht */}
+          {/* Tile 3, Direkter Draht */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -185,7 +185,7 @@ export default function ValueSection() {
             </div>
           </motion.div>
 
-          {/* Tile 4 — Measurable Results, wide */}
+          {/* Tile 4, Measurable Results, wide */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}

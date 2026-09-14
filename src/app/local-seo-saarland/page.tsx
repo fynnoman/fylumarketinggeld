@@ -68,7 +68,7 @@ const rankingFactors = [
   },
   {
     label: 'Bewertungen',
-    weight: '16–20 %',
+    weight: '16-20 %',
     body: 'Anzahl, Frische und Antwortquote der Google-Bewertungen. Frische Reviews aus den letzten 90 Tagen tragen überproportional.',
   },
   {
@@ -78,7 +78,7 @@ const rankingFactors = [
   },
   {
     label: 'Verhaltenssignale',
-    weight: '8–10 %',
+    weight: '8-10 %',
     body: 'Anrufe direkt aus dem Profil, Wegbeschreibungs-Anfragen, Foto-Aufrufe, Klicks auf die Website.',
   },
   {

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Kostenloser SEO-Check mit konkreten Handlungsempfehlungen pro Finding: Meta, Struktur, Inhalt, Structured Data, lokale Signale. Priorisiert nach Impact. Keine Registrierung.",
   alternates: { canonical: URL },
   openGraph: {
-    title: "SEO-Check mit Handlungsempfehlungen — priorisiert nach Impact",
+    title: "SEO-Check mit Handlungsempfehlungen | priorisiert nach Impact",
     description:
       "Jedes Finding kommt mit einer konkreten Handlungsempfehlung. Direkt sichtbar, ohne Registrierung.",
     url: URL,
@@ -130,7 +130,7 @@ export default function SeoCheckPage() {
             <p>
               <span className="font-medium text-stone-700">Unterschied zur Website-Analyse:</span>
               {" "}Der SEO-Check konzentriert sich auf Meta, Struktur, Inhalt, Structured Data und
-              lokale Signale — mit einer expliziten Handlungsempfehlung zu jedem Finding. Für einen
+              lokale Signale, mit einer expliziten Handlungsempfehlung zu jedem Finding. Für einen
               breiteren technischen Blick nutzen Sie{" "}
               <a href="/tools/website-check" className="text-[var(--cyan-deep)] hover:underline">
                 die Website-Analyse

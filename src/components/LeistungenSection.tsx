@@ -17,16 +17,16 @@ const designItems: Item[] = [
 ];
 
 const wachstum: Item[] = [
-  { title: 'SEO', text: 'Technische Basis, Content-Struktur und lokale Sichtbarkeit — geplant über Monate, nicht als einmaliges Häkchen.' },
+  { title: 'SEO', text: 'Technische Basis, Content-Struktur und lokale Sichtbarkeit, geplant über Monate, nicht als einmaliges Häkchen.' },
   { title: 'GEO', text: 'Sichtbarkeit in AI-Antworten (Google AI Overviews, ChatGPT, Perplexity). Passagen-Optimierung, llms.txt, Citation-Signale.' },
   { title: 'SEA', text: 'Google Ads mit sauberem Conversion-Tracking, Budget-Steuerung und ehrlichem Reporting. Keine Vanity-Klicks.' },
   { title: 'Landingpages', text: 'Dedizierte Seiten für Kampagnen, Produkte oder Städte. Auf Conversion gebaut, nicht auf Menge.' },
 ];
 
 const infra: Item[] = [
-  { title: 'API-Anbindungen', text: 'CRM, Buchungssysteme, Warenwirtschaft, Zahlungsanbieter, eigene Datenquellen — sauber integriert, ohne Bastelei.' },
+  { title: 'API-Anbindungen', text: 'CRM, Buchungssysteme, Warenwirtschaft, Zahlungsanbieter, eigene Datenquellen, sauber integriert, ohne Bastelei.' },
   { title: 'Admin-Zugriff für euch', text: 'Ihr könnt Texte, Öffnungszeiten und Bilder selbst pflegen. Für Änderungen an der Struktur sind wir da.' },
-  { title: 'Rechtstexte & DSGVO', text: 'Impressum, Datenschutz, Cookie-Consent, AGB-Struktur — sauber aufgesetzt, damit ihr nicht bei Abmahn-Kanzleien landet.' },
+  { title: 'Rechtstexte & DSGVO', text: 'Impressum, Datenschutz, Cookie-Consent, AGB-Struktur, sauber aufgesetzt, damit ihr nicht bei Abmahn-Kanzleien landet.' },
   { title: 'Hosting & Infrastruktur', text: 'Server in Deutschland, monitoring, Backups, SSL, Performance. Läuft im Hintergrund, ohne dass ihr euch kümmern müsst.' },
 ];
 
@@ -111,9 +111,9 @@ export default function LeistungenSection() {
           </div>
         </motion.div>
 
-        {/* Bento grid — 4 areas */}
+        {/* Bento grid, 4 areas */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-5">
-          {/* Tile A — Editorial-Design (hero, ink glass) */}
+          {/* Tile A, Editorial-Design (hero, ink glass) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -140,7 +140,7 @@ export default function LeistungenSection() {
                   <span className="font-display italic font-normal text-cyan-300">
                     wiedererkennt
                   </span>{' '}
-                  — kein Template mit eurem Logo.
+                  , kein Template mit eurem Logo.
                 </h3>
                 <p className="mt-5 text-stone-300 text-base leading-relaxed max-w-lg">
                   Website, 3D-Elemente, Typografie und eigene Fotografie durch unsere Partner-Fotografen. Alles auf eure Marke abgestimmt.
@@ -162,7 +162,7 @@ export default function LeistungenSection() {
             </div>
           </motion.div>
 
-          {/* Tile B — Wachstum (SEO/GEO/SEA/Landingpages) */}
+          {/* Tile B, Wachstum (SEO/GEO/SEA/Landingpages) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -189,7 +189,7 @@ export default function LeistungenSection() {
                   zu planbarem Umsatz.
                 </h3>
                 <p className="text-sm text-stone-600 leading-relaxed mt-3">
-                  Wir arbeiten SEO, GEO und SEA als System — nicht als getrennte Kanäle. Ihr wachst, wir skalieren mit.
+                  Wir arbeiten SEO, GEO und SEA als System, nicht als getrennte Kanäle. Ihr wachst, wir skalieren mit.
                 </p>
               </div>
 
@@ -211,7 +211,7 @@ export default function LeistungenSection() {
             </div>
           </motion.div>
 
-          {/* Tile C — Technik & Infrastruktur */}
+          {/* Tile C, Technik & Infrastruktur */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -260,7 +260,7 @@ export default function LeistungenSection() {
             </div>
           </motion.div>
 
-          {/* Tile D — Partnerschaft & Konditionen */}
+          {/* Tile D, Partnerschaft & Konditionen */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -286,7 +286,7 @@ export default function LeistungenSection() {
                 .
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed mt-3">
-                Keine Wartungsknebel, keine monatliche Grundgebühr. Ihr bucht Betreuung dann, wenn ihr sie braucht — im Umfang, den euer Wachstum verlangt. Konditionen persönlich und transparent.
+                Keine Wartungsknebel, keine monatliche Grundgebühr. Ihr bucht Betreuung dann, wenn ihr sie braucht, im Umfang, den euer Wachstum verlangt. Konditionen persönlich und transparent.
               </p>
             </div>
           </motion.div>

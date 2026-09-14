@@ -69,7 +69,7 @@ export default function WebdesignHandwerkPage() {
 					__html: JSON.stringify({
 						'@context': 'https://schema.org',
 						'@type': 'LocalBusiness',
-						name: 'Fylu – Webdesign für Handwerker',
+						name: 'Fylu | Webdesign für Handwerker',
 						description: 'Webdesign speziell für Handwerksbetriebe. Modern, mobiloptimiert und bei Google sichtbar..',
 						url: 'https://www.fylumarketing.de/webdesign-handwerk',
 						telephone: '+4915168488999',

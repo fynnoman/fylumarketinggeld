@@ -8,11 +8,11 @@ type Props = {
 };
 
 const BANDS = [
-  { min: 0, max: 20, label: "0 – 19", color: "#b91c1c" },
-  { min: 20, max: 40, label: "20 – 39", color: "#c2410c" },
-  { min: 40, max: 60, label: "40 – 59", color: "#b45309" },
-  { min: 60, max: 80, label: "60 – 79", color: "#4d7c0f" },
-  { min: 80, max: 101, label: "80 – 100", color: "#15803d" },
+  { min: 0, max: 20, label: "0-19", color: "#b91c1c" },
+  { min: 20, max: 40, label: "20-39", color: "#c2410c" },
+  { min: 40, max: 60, label: "40-59", color: "#b45309" },
+  { min: 60, max: 80, label: "60-79", color: "#4d7c0f" },
+  { min: 80, max: 101, label: "80-100", color: "#15803d" },
 ];
 
 export default function DistributionChart({ companies }: Props) {

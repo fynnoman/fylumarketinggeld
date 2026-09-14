@@ -1,7 +1,7 @@
 import { build, type CompactRow } from "./_helpers";
 
 // Handwerker als Rest-Sammler für Schreiner, Maler, Fliesen, Holzbau, Trockenbau,
-// Fassade — Gewerke ohne eigene ICP-Kategorie in Runde 1.
+// Fassade, Gewerke ohne eigene ICP-Kategorie in Runde 1.
 
 const rows: CompactRow[] = [
   ["Michael Schorn GmbH", "Saarland", 72, "Nischenleistung Holzbau, regionales SEO"],

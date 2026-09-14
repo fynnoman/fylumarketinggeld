@@ -14,7 +14,7 @@ const GENERIC_ERROR =
   "Ihre Anfrage konnte nicht übermittelt werden. Bitte schreiben Sie uns direkt an kontakt@fylumarketing.de oder rufen Sie an unter +49 151 684 88999.";
 
 function escapeHtml(v: unknown): string {
-  return String(v ?? "—")
+  return String(v ?? "-")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -34,7 +34,7 @@ type Body = {
   details?: string;
 };
 
-// Menschliche Bezeichnungen für die Bestätigungsmail — kein Marketing-Text,
+// Menschliche Bezeichnungen für die Bestätigungsmail, kein Marketing-Text,
 // nur klare Zuordnung.
 const TOOL_LABELS: Record<string, string> = {
   "website-check": "Website-Analyse",
@@ -160,7 +160,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: GENERIC_ERROR }, { status: 500 });
     }
 
-    // Bestätigungsmail an den Nutzer — best effort. Wenn der Send fehlschlägt,
+    // Bestätigungsmail an den Nutzer, best effort. Wenn der Send fehlschlägt,
     // wird das geloggt aber der Request bleibt erfolgreich, weil die Fylu-interne
     // Benachrichtigung bereits durchgekommen ist.
     try {

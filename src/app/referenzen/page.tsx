@@ -85,7 +85,7 @@ export default function ReferencesIndex() {
               </h1>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                 Ausgewählte Fylu-Projekte, ehrlich dokumentiert. Nur reale Zahlen, nur echte
-                Kunden — anonymisiert nur, wo Vertraulichkeit es verlangt.
+                Kunden, anonymisiert nur, wo Vertraulichkeit es verlangt.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export default function ReferencesIndex() {
                     Redaktionell in Vorbereitung
                   </div>
                   <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em] mb-4 max-w-2xl mx-auto">
-                    Ausführliche Case Studies folgen — schrittweise, im Einvernehmen mit den
+                    Ausführliche Case Studies folgen, schrittweise, im Einvernehmen mit den
                     jeweiligen Klienten.
                   </h2>
                   <p className="text-stone-600 leading-relaxed max-w-xl mx-auto mb-8">

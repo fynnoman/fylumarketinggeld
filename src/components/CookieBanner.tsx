@@ -41,7 +41,7 @@ const CATEGORIES: Category[] = [
     purpose:
       'Google Ads Conversion-Tracking. Misst, welche Werbeanzeigen zu Anfragen führen, damit Kampagnen sinnvoll ausgesteuert werden können.',
     provider: 'Google Ireland Limited, Gordon House, Dublin 4, Irland.',
-    cookies: '_gcl_au, _gcl_aw, _ga, _gid — Laufzeit bis 24 Monate.',
+    cookies: '_gcl_au, _gcl_aw, _ga, _gid. Laufzeit bis 24 Monate.',
     legal: 'Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).',
   },
   {
@@ -50,7 +50,7 @@ const CATEGORIES: Category[] = [
     purpose:
       'Einbettung des Calendly-Buchungskalenders für das kostenlose Erstgespräch. Ohne Einwilligung erscheint stattdessen ein Platzhalter, den Sie manuell laden können.',
     provider: 'Calendly LLC, 271 17th St NW, Atlanta, GA, USA. Datenübermittlung in die USA auf Basis der EU-Standardvertragsklauseln.',
-    cookies: '__cf_bm, _calendly_session, _gcl_au — Laufzeit Session bis 12 Monate.',
+    cookies: '__cf_bm, _calendly_session, _gcl_au. Laufzeit Session bis 12 Monate.',
     legal: 'Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 49 Abs. 1 lit. a DSGVO für die USA-Übermittlung.',
   },
 ];

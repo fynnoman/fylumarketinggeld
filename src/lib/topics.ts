@@ -173,7 +173,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie lange dauert die Erstellung?",
-        a: "Typischerweise 3–4 Wochen, inklusive Texte, Design, technischer Umsetzung und SEO.",
+        a: "Typischerweise 3-4 Wochen, inklusive Texte, Design, technischer Umsetzung und SEO.",
       },
     ],
     relatedTools: [
@@ -261,7 +261,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie schnell ist meine Praxis-Website live?",
-        a: "Standard 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Design typischerweise 4–6 Wochen.",
+        a: "Standard 3-4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Design typischerweise 4-6 Wochen.",
       },
     ],
     relatedTools: [
@@ -414,7 +414,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Wie lange dauert die Erstellung?",
-        a: "Typischerweise 3–4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Konzept 4–6 Wochen.",
+        a: "Typischerweise 3-4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Konzept 4-6 Wochen.",
       },
     ],
     relatedTools: [
@@ -476,7 +476,7 @@ export const topics: Topic[] = [
     metaDescription:
       "Hotel- und Pension-Websites im Saarland: Direktbuchungen ohne Provision, Premium-Bilder, lokale SEO. Mehr Gäste in Saarbrücken, an der Saarschleife, im Bostalsee-Umfeld.",
     intro:
-      "Jede Buchung über booking.com oder Expedia kostet 15–25 % Provision. Eine starke eigene Website holt Gäste direkt zu Ihnen, und macht aus der Provisions-Falle einen messbaren Profithebel.",
+      "Jede Buchung über booking.com oder Expedia kostet 15-25 % Provision. Eine starke eigene Website holt Gäste direkt zu Ihnen, und macht aus der Provisions-Falle einen messbaren Profithebel.",
     sections: [
       {
         title: "Direktbuchung ohne Provisionsfalle",
@@ -502,7 +502,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Was passiert mit meinen bestehenden OTA-Buchungen?",
-        a: "Die laufen weiter, wir senken nur Ihren Abhängigkeitsgrad. Ziel: 30–50 % Direktbuchungen statt 100 % OTA.",
+        a: "Die laufen weiter, wir senken nur Ihren Abhängigkeitsgrad. Ziel: 30-50 % Direktbuchungen statt 100 % OTA.",
       },
     ],
   },

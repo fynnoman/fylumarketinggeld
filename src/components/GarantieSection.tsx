@@ -17,7 +17,7 @@ const guarantees = [
     value: '0',
     unit: 'Aufschlag',
     label: 'Iteration',
-    body: 'Wenn die Wirkung dem Anspruch noch nicht folgt, feilen wir weiter — ohne Aufschlag.',
+    body: 'Wenn die Wirkung dem Anspruch noch nicht folgt, feilen wir weiter, ohne Aufschlag.',
   },
   {
     value: '100',
@@ -91,7 +91,7 @@ export default function GarantieSection() {
               für unsere Arbeit ein.
             </h2>
             <p className="mt-7 text-lg md:text-xl text-stone-600 leading-relaxed max-w-3xl mx-auto">
-              Wir bauen keine Präsenz — wir bauen Auftritte, die tragen. Und wenn
+              Wir bauen keine Präsenz, wir bauen Auftritte, die tragen. Und wenn
               die Wirkung dem Anspruch einmal nicht folgt, feilen wir weiter, bis
               das Werk der Handschrift entspricht.
             </p>
@@ -176,7 +176,7 @@ export default function GarantieSection() {
                 </h3>
                 <p className="text-stone-400 text-sm md:text-base mt-4 max-w-xl leading-relaxed">
                   Ein Vorgespräch, um zu prüfen, ob wir zueinander passen. Ohne
-                  Verkaufsdruck, ohne Standard-Slides — wir hören zu, bevor wir
+                  Verkaufsdruck, ohne Standard-Slides. Wir hören zu, bevor wir
                   antworten.
                 </p>
               </div>

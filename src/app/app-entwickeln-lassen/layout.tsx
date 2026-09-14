@@ -10,19 +10,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App entwickeln lassen | App-Entwicklung Saarland | Fylu",
     description:
-      "Web-Apps, iOS, Android, PWA — entwickelt im Saarland. Transparente Konditionen statt Stundensatz, moderner Stack, persönliche Betreuung.",
+      "Web-Apps, iOS, Android, PWA, entwickelt im Saarland. Transparente Konditionen statt Stundensatz, moderner Stack, persönliche Betreuung.",
     url: "https://www.fylumarketing.de/app-entwickeln-lassen",
     siteName: "Fylu Marketing",
     locale: "de_DE",
     type: "website",
     images: [
-      { url: "/herob.png", width: 1200, height: 630, alt: "App entwickeln lassen – Fylu" },
+      { url: "/herob.png", width: 1200, height: 630, alt: "App entwickeln lassen | Fylu" },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "App entwickeln lassen | App-Entwicklung Saarland | Fylu",
-    description: "Web-Apps, iOS, Android, PWA — transparente Konditionen aus dem Saarland.",
+    description: "Web-Apps, iOS, Android, PWA, transparente Konditionen aus dem Saarland.",
     images: ["/herob.png"],
   },
 };

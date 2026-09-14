@@ -144,7 +144,7 @@ export default function ClientLogoBar() {
           </h2>
           <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg mt-6 leading-relaxed">
             Vom saarländischen Handwerksbetrieb über regionale Gastronomie bis zum
-            US-amerikanischen SaaS-Haus — eine Auswahl der Klienten, die wir
+            US-amerikanischen SaaS-Haus, eine Auswahl der Klienten, die wir
             begleiten durften.
           </p>
         </motion.div>
@@ -191,7 +191,7 @@ export default function ClientLogoBar() {
                       <div className="relative w-full h-full max-w-[360px]">
                         <Image
                           src={current.src}
-                          alt={`${current.name} – Kunde von Fylu`}
+                          alt={`${current.name} | Kunde von Fylu`}
                           fill
                           priority
                           sizes="(max-width: 768px) 80vw, 360px"
@@ -275,7 +275,7 @@ export default function ClientLogoBar() {
           className="mt-10 text-center"
         >
           <p className="text-sm text-stone-500 tracking-[0.02em]">
-            Weitere <span className="font-display italic text-stone-700">Klienten seit 2024</span> auf Anfrage — kuratiert nach Passung und Kapazität.
+            Weitere <span className="font-display italic text-stone-700">Klienten seit 2024</span> auf Anfrage, kuratiert nach Passung und Kapazität.
           </p>
         </motion.div>
       </div>

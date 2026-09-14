@@ -9,7 +9,7 @@ const MAIL_TO = process.env.MAIL_TO ?? 'kontakt@fylumarketing.de';
 const MAIL_FROM = process.env.MAIL_FROM ?? 'Fylu Marketing <no-reply@fylumarketing.de>';
 
 function escapeHtml(value: unknown): string {
-  return String(value ?? '—')
+  return String(value ?? '-')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')

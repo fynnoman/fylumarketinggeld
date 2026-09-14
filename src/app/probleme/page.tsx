@@ -9,7 +9,7 @@ const SITE = "https://www.fylumarketing.de";
 export const metadata: Metadata = {
   title: "Website-Probleme lösen",
   description:
-    "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen — direkt aus dem Fylu Marketing.",
+    "Übersicht der häufigsten Website-Probleme mit ehrlichen Diagnosen und konkreten Lösungsansätzen, direkt aus dem Fylu Marketing.",
   alternates: { canonical: `${SITE}/probleme` },
 };
 

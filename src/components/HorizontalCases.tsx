@@ -55,7 +55,7 @@ const cases: Case[] = [
     location: 'Saarlouis · Saarland · Luxemburg',
     title: 'Über 25 Jahre Handwerk, endlich sichtbar.',
     story:
-      'Seit 1997 auf Premium-Fahrzeugaufbereitung spezialisiert — die alte Website hat davon nichts erzählt. Neuer Auftritt mit prominenten Trust-Signalen (4,92/5 · 648 ProvenExpert · 184 Google), klarer Anfrage-Strecke und ruhiger Bildsprache. Von der Fachwerkstatt zur festen Adresse für Sportwagen und Oldtimer.',
+      'Seit 1997 auf Premium-Fahrzeugaufbereitung spezialisiert, die alte Website hat davon nichts erzählt. Neuer Auftritt mit prominenten Trust-Signalen (4,92/5 · 648 ProvenExpert · 184 Google), klarer Anfrage-Strecke und ruhiger Bildsprache. Von der Fachwerkstatt zur festen Adresse für Sportwagen und Oldtimer.',
     services: ['Website', 'Trust-Signale', 'Lokales SEO'],
     url: 'https://pb-fahrzeugpflege.de',
     urlLabel: 'pb-fahrzeugpflege.de',
@@ -74,7 +74,7 @@ export default function HorizontalCases() {
       className="relative bg-[var(--background-warm)] overflow-hidden scroll-mt-24 isolate"
       aria-label="Referenzen"
     >
-      {/* Header — editorial */}
+      {/* Header, editorial */}
       <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8 pt-16 md:pt-32 pb-10 md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -110,7 +110,7 @@ export default function HorizontalCases() {
         </motion.div>
       </div>
 
-      {/* Cases — vertical alternating full-width blocks */}
+      {/* Cases, vertical alternating full-width blocks */}
       <div className="relative z-10 space-y-20 md:space-y-40 pb-20 md:pb-40">
         {cases.map((c, i) => (
           <CaseBlock key={c.client} data={c} index={i} />
@@ -161,9 +161,9 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 1, delay: 0.1, ease }}
             className="group relative block rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-[var(--ink)] shadow-[0_30px_80px_-20px_rgba(12,14,16,0.35)] ring-1 ring-black/5"
-            aria-label={`${data.client} — Website öffnen`}
+            aria-label={`${data.client} | Website öffnen`}
           >
-            {/* Browser chrome — subtle */}
+            {/* Browser chrome, subtle */}
             <div className="relative flex items-center gap-2 px-4 py-3 bg-[var(--ink)]/95 border-b border-white/5">
               <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
               <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
@@ -177,7 +177,7 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             <div className="relative aspect-[16/9] bg-white overflow-hidden">
               <Image
                 src={data.image}
-                alt={`${data.client} — Website Screenshot`}
+                alt={`${data.client} | Website Screenshot`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 900px"
                 className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
@@ -263,7 +263,7 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
-              aria-label={`${data.client} — Facebook-Post öffnen`}
+              aria-label={`${data.client} | Facebook-Post öffnen`}
             >
               <span>Facebook-Post ansehen</span>
               <span className="transition-transform group-hover:translate-x-1">→</span>

@@ -9,7 +9,7 @@ const CITY = 'Saarlouis';
 export const metadata: Metadata = {
   title: 'Über mich · Fynn Schulz · Fylu Marketing Saarlouis',
   description:
-    'Fylu Marketing wird von Fynn Schulz geführt. Website, SEO, Google Ads und Software aus einer Hand — für Unternehmen jeder Phase, die online sichtbar werden und wachsen wollen.',
+    'Fylu Marketing wird von Fynn Schulz geführt. Website, SEO, Google Ads und Software aus einer Hand, für Unternehmen jeder Phase, die online sichtbar werden und wachsen wollen.',
   alternates: { canonical: 'https://www.fylumarketing.de/team' },
   openGraph: {
     title: 'Über mich · Fynn Schulz · Fylu Marketing',
@@ -111,11 +111,11 @@ export default function TeamPage() {
             <ul className="space-y-3 text-stone-700">
               <li className="flex gap-3">
                 <span className="text-[var(--cyan-deep)] mt-1">·</span>
-                <span>Websites, die Besucher zu Anfragen machen — sauber gebaut, mobil zuverlässig, ohne Templates.</span>
+                <span>Websites, die Besucher zu Anfragen machen: sauber gebaut, mobil zuverlässig, ohne Templates.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[var(--cyan-deep)] mt-1">·</span>
-                <span>SEO und Sichtbarkeit auf Google und in AI-Antworten — lokal und überregional.</span>
+                <span>SEO und Sichtbarkeit auf Google und in AI-Antworten, lokal und überregional.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[var(--cyan-deep)] mt-1">·</span>
@@ -123,7 +123,7 @@ export default function TeamPage() {
               </li>
               <li className="flex gap-3">
                 <span className="text-[var(--cyan-deep)] mt-1">·</span>
-                <span>Software und Apps, wenn die Website allein nicht reicht — CRM-Anbindungen, Buchungssysteme, eigene Tools.</span>
+                <span>Software und Apps, wenn die Website allein nicht reicht: CRM-Anbindungen, Buchungssysteme, eigene Tools.</span>
               </li>
             </ul>
           </div>

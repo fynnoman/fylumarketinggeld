@@ -112,7 +112,7 @@ export default function WebsiteCheckForm() {
             </button>
           </div>
           <p className="text-xs text-stone-500 mt-3">
-            Nur öffentliche URLs. Die Analyse dauert typischerweise 5–12 Sekunden.
+            Nur öffentliche URLs. Die Analyse dauert typischerweise 5 bis 12 Sekunden.
           </p>
         </div>
       </form>
@@ -216,7 +216,7 @@ function ResultView({ data, email, setEmail, lead, onSubmit }: ResultViewProps) 
                 Ergebnis als PDF-Report erhalten.
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Wir schicken Ihnen den Report per E-Mail — inklusive Handlungsempfehlungen zu den
+                Wir schicken Ihnen den Report per E-Mail, inklusive Handlungsempfehlungen zu den
                 wichtigsten Problemen. Nur Ihre E-Mail wird übermittelt.
               </p>
             </div>
@@ -253,7 +253,7 @@ function ResultView({ data, email, setEmail, lead, onSubmit }: ResultViewProps) 
             Erhalten
           </div>
           <p className="text-stone-800 font-medium">
-            Danke — der Report ist unterwegs. Wir melden uns innerhalb eines Werktags.
+            Danke, der Report ist unterwegs. Wir melden uns innerhalb eines Werktags.
           </p>
         </div>
       )}
@@ -389,7 +389,7 @@ function MetaCard({ data }: { data: AnalyzerResult }) {
           {rows.map(([label, val]) => (
             <div key={label} className="flex gap-3">
               <dt className="w-40 flex-shrink-0 text-stone-500">{label}</dt>
-              <dd className="flex-1 text-stone-800 break-all">{val ?? <span className="text-stone-400">—</span>}</dd>
+              <dd className="flex-1 text-stone-800 break-all">{val ?? <span className="text-stone-400">-</span>}</dd>
             </div>
           ))}
         </dl>

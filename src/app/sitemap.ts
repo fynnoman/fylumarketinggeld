@@ -9,7 +9,7 @@ import { COMPANIES as digitalIndexCompanies } from "@/lib/digital-index-data";
 
 // Priorität für die wichtigsten Saarland-Städte (Hauptverdienst-Keywords)
 const HIGH_PRIORITY_CITIES = new Set(["saarbruecken", "saarlouis", "neunkirchen", "homburg"]);
-// Wichtigste Branchen (höchste lokale Suchvolumina) — nur ICP-konforme
+// Wichtigste Branchen (höchste lokale Suchvolumina), nur ICP-konforme
 const HIGH_PRIORITY_TOPICS = new Set([
   "anwalt",
   "arzt",
@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/agb`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 
-  // Nur Top-Tier-Städte in die Sitemap aufnehmen — die anderen sind per
+  // Nur Top-Tier-Städte in die Sitemap aufnehmen, die anderen sind per
   // `metadata.robots = noindex` aus dem Index ausgeschlossen, ein Sitemap-
   // Eintrag würde widersprüchliche Signale senden ("crawl this!" vs "don't index").
   const topRegions = regions.filter((r) => r.tier === "top");

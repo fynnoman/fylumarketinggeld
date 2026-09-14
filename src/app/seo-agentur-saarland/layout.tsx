@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: "/seo-agentur-saarland",
   },
   openGraph: {
-    title: "SEO-Agentur Saarland — Fylu Marketing",
+    title: "SEO-Agentur Saarland | Fylu Marketing",
     description:
       "SEO-Foundation, Content-Aufbau, Local SEO und laufende Betreuung aus Saarlouis. Transparente Konditionen, ehrliche Erwartungshaltung.",
     url: "https://www.fylumarketing.de/seo-agentur-saarland",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/herob.png",
         width: 1200,
         height: 630,
-        alt: "SEO-Agentur Saarland — Fylu Marketing",
+        alt: "SEO-Agentur Saarland | Fylu Marketing",
       },
     ],
   },

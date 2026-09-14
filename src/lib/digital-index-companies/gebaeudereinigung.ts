@@ -6,7 +6,7 @@ const rows: CompactRow[] = [
   ["STANDARD Gebäudereinigung Jacobs GmbH", "Saarbrücken", 93, "Etablierter B2B-Anbieter"],
   ["GEMIS GmbH", "Saarbrücken", 92, "Größeres B2B-Potenzial"],
   ["SIS Saar Gebäudeservice GmbH", "Völklingen", 92, "Industrie-Service-Fokus"],
-  ["SIS – Saar-Industrie-Service GmbH", "Völklingen", 91, "Industrie-Service-Fokus"],
+  ["SIS Saar-Industrie-Service GmbH", "Völklingen", 91, "Industrie-Service-Fokus"],
   ["OPTIMUS Gebäude-Service GmbH", "Dillingen", 91, "Wachstumsstarker B2B-Anbieter"],
   ["CELESTA Gebäudereinigung GmbH", "Homburg", 90, "B2B-Facility-Potenzial"],
   ["Express Gebäude Service GmbH", "Saarlouis", 90, "Große Reichweite"],
