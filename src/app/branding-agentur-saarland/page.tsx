@@ -5,53 +5,96 @@ import FadeInSection from '@/components/animated/FadeInSection';
 
 const faqs = [
   {
-    q: 'Was kostet SEO im Saarland bei Fylu?',
-    a: 'Google Business Optimierung, SEO Foundation und SEO Betreuung sind einzeln buchbar. Den Rahmen legen wir individuell im Vorgespräch fest. Wettbewerbsdichte und Zielgruppe fließen in die Kalkulation ein.',
+    q: 'Was macht eine Branding-Agentur genau?',
+    a: 'Eine Branding-Agentur baut die Marke, bevor sie sichtbar wird. Positionierung, Kernbotschaft, Naming, Logo, Farben, Typografie, Bildsprache und Anwendungsrichtlinien. Fylu Marketing führt diese Arbeit als Boutique aus, mit einem festen Ansprechpartner und einem klaren Prozess von Foundation bis Launch.',
   },
   {
-    q: 'Wie lange dauert es, bis Ergebnisse sichtbar sind?',
-    a: 'Erste Bewegungen in den Rankings sehen wir in der Regel nach vier bis acht Wochen. Signifikante Verschiebungen bis auf die erste Google-Seite brauchen drei bis sechs Monate. SEO ist Aufbauarbeit, keine Kampagne.',
+    q: 'Wie unterscheidet sich Branding von Webdesign?',
+    a: 'Webdesign gestaltet einen Kanal, Branding gestaltet die Marke, die durch alle Kanäle geht. Die Website ist Anwendung, das Corporate Design die Grundlage. Bei Fylu Marketing gehören beide Ebenen zusammen, lassen sich aber auch getrennt buchen.',
   },
   {
-    q: 'Ist SEO Teil des Website-Pakets?',
-    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk: sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit (Keyword-Strategie, Content, Google Business, laufende Iteration) buchen Sie als Erweiterung dazu.',
+    q: 'Was kostet Branding bei einer Agentur im Saarland?',
+    a: 'Rahmen und Umfang legen wir individuell im Vorgespräch fest. Ein Corporate Design mit Logo, Farben und Typografie hat eine andere Größenordnung als eine vollständige Markenentwicklung mit Positionierung, Naming und Anwendungssystem. Wir sagen, was ein Projekt tragen muss, und was nicht.',
   },
   {
-    q: 'Was ist Local SEO?',
-    a: 'Local SEO schärft Ihre Präsenz für lokale Suchbegriffe wie „Kanzlei Saarbrücken" oder „Handwerker Saarlouis". Kernstück ist das Google-Unternehmensprofil, ergänzt durch strukturierte Daten, konsistente NAP-Angaben und lokale Signale in Ihrer Website.',
+    q: 'Wie lange dauert ein Branding-Projekt?',
+    a: 'Ein fokussiertes Corporate Design ist in drei bis sechs Wochen umsetzbar. Eine vollständige Markenentwicklung inklusive Positionierung, Naming und Anwendungssystem braucht in der Regel zwei bis vier Monate, abhängig von Abstimmungsrunden und Umfang.',
   },
   {
-    q: 'Was ist der Unterschied zwischen SEO und Google Ads?',
-    a: 'SEO ist Aufbauarbeit über Monate. Google Ads ist sofort sichtbare Reichweite. Wir empfehlen häufig eine Kombination: Ads für sofortigen Fluss, SEO für die dauerhafte organische Sichtbarkeit.',
+    q: 'Muss ich Naming und Logo neu machen, wenn ich schon eine Marke habe?',
+    a: 'Nicht zwingend. Viele Projekte starten mit einem Marken-Refresh: Positionierung schärfen, Bildsprache und Typografie ordnen, ohne Namen oder Logo zu verändern. Ein Neuaufbau lohnt sich, wenn Name, Zielgruppe oder Geschäftsmodell nicht mehr zusammenpassen.',
   },
   {
-    q: 'Wie messen wir Erfolg?',
-    a: 'Google Search Console und Analytics sind ab Tag eins verbunden. Sie sehen, für welche Begriffe Sie ranken, wie sich Ihre Position verändert und wieviele Anfragen entstehen. Reporting kommt monatlich in klarer Sprache.',
+    q: 'Wie hängt Branding mit SEO und AI Search zusammen?',
+    a: 'Eine klare Marke ist die Voraussetzung dafür, dass Suchmaschinen und AI-Suchsysteme Ihr Unternehmen als eigenständige Entität verstehen. Naming, Positionierung, konsistente Angaben über alle Kanäle und strukturierte Daten wirken gemeinsam. Deshalb arbeitet Fylu Marketing Branding, SEO und GEO als zusammenhängendes System.',
   },
 ];
 
 const modules = [
   {
     ordinal: 'I',
-    label: 'Foundation',
-    cadence: 'einmalig',
-    body: 'Keyword-Analyse, technisches Audit, OnPage-Optimierung, Schema-Struktur. Das Fundament für organische Reichweite.',
+    label: 'Positionierung',
+    cadence: 'Foundation',
+    body: 'Zielgruppe, Wettbewerbsumfeld, USP und Kernbotschaft. Ein Satz, der die Marke erklärt, und ein Rahmen, an dem alle weiteren Entscheidungen gemessen werden.',
   },
   {
     ordinal: 'II',
-    label: 'Google Business',
-    cadence: 'einmalig',
-    body: 'Vollständige Einrichtung des Google-Unternehmensprofils. Kategorien, Keywords, Bildsprache, sauber und komplett.',
+    label: 'Identität',
+    cadence: 'Gestaltung',
+    body: 'Naming falls nötig, Logo, Farben, Typografie und Bildsprache. Ein Corporate Design, das visuell zusammenhält und über Jahre trägt.',
   },
   {
     ordinal: 'III',
-    label: 'Betreuung',
-    cadence: 'monatlich',
-    body: 'Fortlaufende Optimierung, Content-Feinschliff, Reporting, damit Sichtbarkeit nicht wieder abbricht.',
+    label: 'Anwendung',
+    cadence: 'Ausrollen',
+    body: 'Brand Guidelines, Website, Print, Geschäftsausstattung, Social und Beschilderung. Die Marke bekommt eine konsistente Anwendung auf allen Kanälen.',
   },
 ];
 
-export default function SeoSaarlandPage() {
+const brandProcess = [
+  {
+    num: '01',
+    title: 'Foundation',
+    text: 'Geschäftsmodell, Zielgruppe, USP und Markenpersönlichkeit. Ein Briefing, das alle weiteren Entscheidungen trägt.',
+  },
+  {
+    num: '02',
+    title: 'Positionierung',
+    text: 'Kernbotschaft, Claim und bei Bedarf Naming, Domain und Handles. Ein Satz, der die Marke erklärt.',
+  },
+  {
+    num: '03',
+    title: 'Identität',
+    text: 'Logo, Farben, Typografie und Bildsprache. Ein Brand Kit, das alle Medien zusammenhält.',
+  },
+  {
+    num: '04',
+    title: 'Touchpoints',
+    text: 'Visitenkarten, Print, Beschilderung, Verpackung, Arbeitskleidung. Alles, was Kunden anfassen.',
+  },
+  {
+    num: '05',
+    title: 'Digitale Präsenz',
+    text: 'Website, E-Mail, Tracking und Rechtstexte. Die Marke bekommt ihre digitale Heimat.',
+  },
+  {
+    num: '06',
+    title: 'Sichtbarkeit',
+    text: 'Google Business, Local SEO, Verzeichnisse und GEO. Die Marke wird auffindbar.',
+  },
+  {
+    num: '07',
+    title: 'Launch',
+    text: 'Fotos, erste Beiträge, Bewertungen, Netzwerk und Eröffnungsaktion. Kein stiller Website-Launch.',
+  },
+  {
+    num: '08',
+    title: 'Wachstum',
+    text: 'SEO, GEO, Ads, Landingpages und Automatisierung. Aus der Marke wird ein Geschäft.',
+  },
+];
+
+export default function BrandingAgenturSaarlandPage() {
   return (
     <main className="bg-white">
       <Navbar />
@@ -64,7 +107,7 @@ export default function SeoSaarlandPage() {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fylumarketing.de' },
-              { '@type': 'ListItem', position: 2, name: 'SEO Saarland', item: 'https://www.fylumarketing.de/seo-saarland' },
+              { '@type': 'ListItem', position: 2, name: 'Branding-Agentur Saarland', item: 'https://www.fylumarketing.de/branding-agentur-saarland' },
             ],
           }),
         }}
@@ -75,9 +118,10 @@ export default function SeoSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Fylu Marketing · SEO Saarland',
-            description: 'SEO aus Saarlouis. Foundation, Google Business und laufende Betreuung. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.',
-            url: 'https://www.fylumarketing.de/seo-saarland',
+            name: 'Fylu Marketing · Branding-Agentur Saarland',
+            description:
+              'Branding-Agentur aus Saarlouis: Positionierung, Naming, Logo, Corporate Design und Markenanwendung aus einer Hand.',
+            url: 'https://www.fylumarketing.de/branding-agentur-saarland',
             telephone: '+4915168488999',
             email: 'kontakt@fylumarketing.de',
             address: { '@type': 'PostalAddress', addressLocality: 'Saarlouis', addressRegion: 'Saarland', addressCountry: 'DE' },
@@ -91,12 +135,12 @@ export default function SeoSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            '@id': 'https://www.fylumarketing.de/seo-saarland#service',
-            name: 'SEO Saarland',
+            '@id': 'https://www.fylumarketing.de/branding-agentur-saarland#service',
+            name: 'Branding & Corporate Design Saarland',
             description:
-              'SEO-Foundation, laufende Betreuung, aktiver Content-Aufbau und Local SEO aus Saarlouis. Auch für AI-Suchsysteme (Google AI Overviews, ChatGPT Search, Perplexity) optimiert.',
-            serviceType: 'Suchmaschinenoptimierung',
-            url: 'https://www.fylumarketing.de/seo-saarland',
+              'Positionierung, Naming, Logo, Corporate Design, Bildsprache und Markenanwendung aus Saarlouis. Für Unternehmen jeder Phase.',
+            serviceType: 'Branding & Corporate Design',
+            url: 'https://www.fylumarketing.de/branding-agentur-saarland',
             provider: { '@id': 'https://www.fylumarketing.de/#organization' },
             areaServed: [
               { '@type': 'State', name: 'Saarland' },
@@ -116,15 +160,15 @@ export default function SeoSaarlandPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            '@id': 'https://www.fylumarketing.de/seo-saarland#webpage',
-            url: 'https://www.fylumarketing.de/seo-saarland',
-            name: 'SEO Saarland · Fylu Marketing',
+            '@id': 'https://www.fylumarketing.de/branding-agentur-saarland#webpage',
+            url: 'https://www.fylumarketing.de/branding-agentur-saarland',
+            name: 'Branding-Agentur Saarland · Fylu Marketing',
             description:
-              'SEO aus Saarlouis. Foundation, Betreuung und Content-Aufbau, auch für AI-Suchsysteme.',
+              'Branding, Corporate Design und Markenaufbau aus Saarlouis. Positionierung, Naming, Logo, Anwendung.',
             inLanguage: 'de-DE',
             isPartOf: { '@id': 'https://www.fylumarketing.de/#website' },
-            mainEntity: { '@id': 'https://www.fylumarketing.de/seo-saarland#service' },
-            about: { '@type': 'Thing', name: 'Suchmaschinenoptimierung (SEO)' },
+            mainEntity: { '@id': 'https://www.fylumarketing.de/branding-agentur-saarland#service' },
+            about: { '@type': 'Thing', name: 'Branding und Corporate Design' },
             speakable: {
               '@type': 'SpeakableSpecification',
               cssSelector: ['h1', '[data-speakable]'],
@@ -137,7 +181,9 @@ export default function SeoSaarlandPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'FAQPage', inLanguage: 'de-DE', speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
+            '@type': 'FAQPage',
+            inLanguage: 'de-DE',
+            speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '[data-speakable]'] },
             mainEntity: faqs.map((f) => ({
               '@type': 'Question',
               name: f.q,
@@ -153,9 +199,9 @@ export default function SeoSaarlandPage() {
           <nav className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
             <Link href="/" className="hover:text-cyan-700 transition-colors">Home</Link>
             <span className="mx-2 text-stone-400">·</span>
-            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Webdesign</Link>
+            <Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Leistungen</Link>
             <span className="mx-2 text-stone-400">·</span>
-            <span className="text-stone-900 font-medium">SEO Saarland</span>
+            <span className="text-stone-900 font-medium">Branding-Agentur Saarland</span>
           </nav>
         </div>
       </div>
@@ -182,23 +228,23 @@ export default function SeoSaarlandPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeInSection>
             <div className="editorial-eyebrow mb-6">
-              <span>SEO · Sichtbarkeit</span>
+              <span>Branding · Corporate Design</span>
             </div>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <h1 className="text-[2.6rem] leading-[1.03] sm:text-5xl md:text-6xl lg:text-[4.4rem] lg:leading-[1] font-semibold text-[var(--ink)] tracking-[-0.035em]">
-              SEO Saarland. Sichtbarkeit für{' '}
+              Branding aus dem Saarland. Für Marken,{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Ihr Unternehmen.
+                die wachsen.
               </span>
             </h1>
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-2xl">
-              Sichtbarkeit für Suchbegriffe, die Ihre Kunden tatsächlich
-              eingeben. Technische Foundation, Content-Aufbau und laufende
-              Betreuung aus Saarlouis, als eigenständiges Modul oder als
-              Ergänzung zu Ihrem Fylu-Auftritt.
+              Positionierung, Naming, Logo, Corporate Design und Markenanwendung
+              aus einer Hand. Fylu Marketing baut Marken, die professionell
+              auftreten und über Jahre tragen. Aus Saarlouis, für Unternehmen
+              im Saarland und deutschlandweit.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>
@@ -207,11 +253,11 @@ export default function SeoSaarlandPage() {
                 href="/buchen"
                 className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
               >
-                <span>Vorgespräch buchen</span>
+                <span>Projekt anfragen</span>
                 <span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
               </Link>
               <Link
-                href="#seo-module"
+                href="#branding-module"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
               >
                 <span>Module ansehen</span>
@@ -232,24 +278,26 @@ export default function SeoSaarlandPage() {
               </span>
             </div>
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
-              Sichtbarkeit ist keine{' '}
+              Eine Marke ist kein Logo. Sie ist{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                Kampagne. Sie ist Aufbauarbeit.
+                eine Entscheidung.
               </span>
             </h2>
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <div className="prose prose-lg prose-stone max-w-none mt-10">
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7]">
-                Kunden suchen bei Google nach „Kanzlei Saarbrücken", „Meisterbetrieb
-                Saarlouis" oder „Restaurant Merzig". Wer auf Seite eins steht, wird
-                gefunden. Wer nicht, existiert für die Suche praktisch nicht.
+                Wer eine Marke aufbaut, entscheidet zuerst, wofür sie steht.
+                Ohne diese Klarheit werden Logo, Website und Kommunikation
+                beliebig, austauschbar und teuer im Unterhalt. Mit Klarheit
+                fällt jede spätere Entscheidung, von der Bildsprache bis zur
+                Preisliste, deutlich einfacher.
               </p>
               <p className="text-stone-700 text-[1.05rem] md:text-[1.1rem] leading-[1.7] mt-6">
-                SEO bei Fylu Marketing ist keine schnelle Kampagne, sondern
-                Aufbauarbeit im Hintergrund. Technische Foundation, sauberes
-                Google-Profil, geführte Inhalte. Wir arbeiten individuell pro
-                Unternehmen und pro Kontext.
+                Fylu Marketing arbeitet in einer festen Reihenfolge:
+                Positionierung vor Identität, Identität vor Anwendung. Kein
+                Logo, das später ein Konzept sucht. Kein Corporate Design,
+                das an der ersten realen Anwendung zerbricht.
               </p>
             </div>
           </FadeInSection>
@@ -257,7 +305,7 @@ export default function SeoSaarlandPage() {
       </section>
 
       {/* Module */}
-      <section id="seo-module" className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
+      <section id="branding-module" className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)]">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <div className="text-center mb-14">
@@ -270,11 +318,11 @@ export default function SeoSaarlandPage() {
               <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
                 Drei Ebenen an{' '}
                 <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                  SEO-Arbeit.
+                  Markenarbeit.
                 </span>
               </h2>
               <p className="mt-6 text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                Einzeln buchbar oder als abgestimmte Ergänzung zu Ihrem Fylu-Auftritt.
+                Einzeln buchbar oder als vollständiger Markenaufbau von Foundation bis Anwendung.
               </p>
             </div>
           </FadeInSection>
@@ -311,8 +359,66 @@ export default function SeoSaarlandPage() {
         </div>
       </section>
 
+      {/* Markenaufbau in 8 Schritten */}
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-white border-t border-stone-200/60">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <div className="mb-14 md:mb-16 max-w-3xl">
+              <div className="mb-6 flex items-baseline gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl">§02b</span>
+                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
+                  Vom Namen zur Marke
+                </span>
+              </div>
+              <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
+                Markenaufbau.{' '}
+                <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                  In acht Schritten.
+                </span>
+              </h2>
+              <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
+                Auch wer nur mit einer Geschäftsidee kommt, verlässt uns mit einer
+                fertigen Marke. Wir bauen Unternehmen vom ersten Namen bis zur
+                skalierbaren Marke in einer klaren Reihenfolge.
+              </p>
+            </div>
+          </FadeInSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+            {brandProcess.map((step, i) => (
+              <FadeInSection key={step.num} delay={0.05 + i * 0.05}>
+                <div className="relative rounded-2xl bg-[var(--background-warm)] border border-stone-200/70 p-6 overflow-hidden group h-full">
+                  <div className="relative">
+                    <div className="flex items-baseline gap-3 mb-3">
+                      <span className="font-display italic text-[var(--cyan-deep)] text-3xl leading-none">
+                        {step.num}
+                      </span>
+                      <span className="h-px flex-1 bg-stone-200/80 translate-y-[-6px]" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-[var(--ink)] tracking-tight mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-[13px] text-stone-600 leading-relaxed">
+                      {step.text}
+                    </p>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+
+          <FadeInSection delay={0.5}>
+            <p className="mt-10 md:mt-12 max-w-3xl text-sm text-stone-500 leading-relaxed">
+              Nicht jede Marke braucht alle acht Schritte. Wir definieren im Briefing,
+              was relevant ist, und arbeiten die passenden Etappen ab. So fühlt sich
+              die Gründung ab Tag eins nach einer fertigen Firma an.
+            </p>
+          </FadeInSection>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-24 md:py-32 px-5 md:px-8 bg-white">
+      <section className="py-24 md:py-32 px-5 md:px-8 bg-[var(--background-warm)] border-t border-stone-200/60">
         <div className="max-w-3xl mx-auto">
           <FadeInSection>
             <div className="mb-6 flex items-baseline gap-3">
@@ -354,7 +460,7 @@ export default function SeoSaarlandPage() {
             <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold text-[var(--ink)] tracking-[-0.03em]">
               Bereit für eine{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                sichtbare Präsenz?
+                Marke, die trägt?
               </span>
             </h2>
             <p className="mt-6 text-stone-600 text-lg leading-relaxed">
@@ -365,7 +471,7 @@ export default function SeoSaarlandPage() {
                 href="/buchen"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)]"
               >
-                <span>Vorgespräch buchen</span>
+                <span>Projekt anfragen</span>
                 <span className="text-cyan-400">→</span>
               </Link>
               <Link

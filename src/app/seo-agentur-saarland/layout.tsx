@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO-Agentur Saarland | Fylu Marketing",
+  title: "SEO-Agentur Saarland | Auswahl, Zusammenarbeit, Erwartungen | Fylu Marketing",
   description:
-    "SEO-Agentur aus dem Saarland: Foundation, Content-Aufbau, Local SEO und laufende Betreuung. Für etablierte Unternehmen mit klarem Business-Case.",
+    "Woran Sie eine seriöse SEO-Agentur im Saarland erkennen, wie eine ehrliche Zusammenarbeit aussieht und wie Fylu Marketing als Ansprechpartner arbeitet. Transparente Konditionen, kein Vertrieb aus der Hotline.",
   alternates: {
     canonical: "/seo-agentur-saarland",
   },
   openGraph: {
-    title: "SEO-Agentur Saarland | Fylu Marketing",
+    title: "SEO-Agentur Saarland | Auswahl, Zusammenarbeit, Erwartungen | Fylu Marketing",
     description:
-      "SEO-Foundation, Content-Aufbau, Local SEO und laufende Betreuung aus Saarlouis. Transparente Konditionen, ehrliche Erwartungshaltung.",
+      "Kriterien für eine seriöse SEO-Agentur im Saarland, ehrliche Zusammenarbeit und transparente Konditionen. Aus Saarlouis.",
     url: "https://www.fylumarketing.de/seo-agentur-saarland",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEO-Agentur Saarland | Fylu Marketing",
-    description: "SEO aus Saarlouis: Foundation, Content-Aufbau, Local SEO, laufende Betreuung.",
+    description: "Kriterien für eine seriöse SEO-Agentur und ehrliche Zusammenarbeit. Saarlouis.",
     images: ["/herob.png"],
   },
 };

@@ -32,7 +32,7 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8">
         <div className="py-16 md:py-20 grid md:grid-cols-12 gap-10 md:gap-8">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo-fylu.webp"
@@ -46,8 +46,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed max-w-sm mb-6">
-              Fylu Marketing aus Saarlouis. Websites, SEO, Google Ads und
-              Software für Unternehmen jeder Phase, vom ersten Auftritt bis
+              Fylu Marketing aus Saarlouis. Marke, Website, SEO, GEO und
+              Google Ads für Unternehmen jeder Phase, vom ersten Auftritt bis
               zur Skalierung.
             </p>
             <div className="space-y-2 text-sm">
@@ -66,22 +66,38 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
+            <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
+              Leistungen
+            </h3>
+            <ul className="space-y-2.5 text-sm text-stone-400">
+              <li><Link href="/marketingagentur-saarland" className="hover:text-white transition-colors">Marketingagentur</Link></li>
+              <li><Link href="/branding-agentur-saarland" className="hover:text-white transition-colors">Branding</Link></li>
+              <li><Link href="/webdesign-saarland" className="hover:text-white transition-colors">Webdesign</Link></li>
+              <li><Link href="/seo-saarland" className="hover:text-white transition-colors">SEO</Link></li>
+              <li><Link href="/geo" className="hover:text-white transition-colors">GEO</Link></li>
+              <li><Link href="/google-ads-saarland" className="hover:text-white transition-colors">Google Ads</Link></li>
+              <li><Link href="/software-saarland" className="hover:text-white transition-colors">Software</Link></li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-3">
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Unterseiten
             </h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm text-stone-400">
-              <li><Link href="/team" className="hover:text-white transition-colors">Über mich</Link></li>
+            <ul className="space-y-2.5 text-sm text-stone-400">
+              <li><Link href="/team" className="hover:text-white transition-colors">Über</Link></li>
               <li><Link href="/methodik" className="hover:text-white transition-colors">Prozess</Link></li>
               <li><Link href="/referenzen" className="hover:text-white transition-colors">Referenzen</Link></li>
               <li><Link href="/ratgeber" className="hover:text-white transition-colors">Ratgeber</Link></li>
               <li><Link href="/probleme" className="hover:text-white transition-colors">Probleme</Link></li>
               <li><Link href="/tools" className="hover:text-white transition-colors">Tools</Link></li>
-              <li><Link href="/buchen" className="hover:text-white transition-colors">Erstgespräch</Link></li>
+              <li><Link href="/digital-index" className="hover:text-white transition-colors">Digital Index</Link></li>
+              <li><Link href="/buchen" className="hover:text-white transition-colors">Projekt anfragen</Link></li>
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h3 className="text-[10px] font-semibold mb-5 text-cyan-300 uppercase tracking-[0.2em]">
               Rechtliches
             </h3>

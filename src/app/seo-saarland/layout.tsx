@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO Saarland · Fylu Marketing",
+  title: "SEO Saarland | Suchmaschinenoptimierung für Unternehmen | Fylu Marketing",
   description:
-    "SEO aus Saarlouis: Foundation, Google Business und laufende Betreuung. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.",
+    "Suchmaschinenoptimierung aus Saarlouis: technische Foundation, Content-Aufbau, Local-Signale und laufende Betreuung. Für Unternehmen jeder Phase.",
   alternates: {
     canonical: "/seo-saarland",
   },
   openGraph: {
-    title: "SEO Saarland · Fylu Marketing",
+    title: "SEO Saarland | Suchmaschinenoptimierung für Unternehmen | Fylu Marketing",
     description:
-      "SEO aus Saarlouis. Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren.",
+      "Foundation, Content, Local-Signale und laufende Betreuung. SEO-Leistung aus Saarlouis für Unternehmen jeder Phase.",
     url: "https://www.fylumarketing.de/seo-saarland",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Saarland · Fylu Marketing",
-    description: "SEO aus Saarlouis. Foundation, Google Business und laufende Betreuung.",
+    title: "SEO Saarland | Fylu Marketing",
+    description: "Foundation, Content, Local-Signale und laufende Betreuung aus Saarlouis.",
     images: ["/herob.png"],
   },
 };

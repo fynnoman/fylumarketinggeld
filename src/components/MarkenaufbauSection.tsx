@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
 import { useRef } from 'react';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -155,6 +156,17 @@ export default function MarkenaufbauSection() {
           <p className="text-sm text-stone-500 leading-relaxed">
             Nicht jede Marke braucht alle acht Schritte. Wir definieren im Briefing, was relevant ist, und arbeiten die passenden Etappen ab. So fühlt sich eure Gründung ab Tag 1 nach einer fertigen Firma an.
           </p>
+          <div className="mt-6">
+            <Link
+              href="/branding-agentur-saarland"
+              className="group inline-flex items-center gap-2 text-[13px] font-semibold text-[var(--ink)] hover:text-[var(--cyan-deep)] transition-colors"
+            >
+              <span className="border-b border-stone-300 group-hover:border-[var(--cyan-deep)] pb-0.5 transition-colors">
+                Zur Branding-Agentur Saarland
+              </span>
+              <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
 import { useRef } from 'react';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -88,7 +89,7 @@ export default function LeistungenSection() {
             </span>
           </h2>
           <p className="mt-7 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Wir helfen Unternehmen jeder Phase, ihre Online-Präsenz aufzubauen und zu skalieren. Website, SEO, GEO, Google Ads und Software aus einer Hand. Wir bleiben, solange ihr wachst.
+            Wir bauen Marke, Website und Sichtbarkeit als zusammenhängendes System. Vom Handwerksbetrieb bis zum Mittelstand, mit einem festen Ansprechpartner, so lange ihr wachst.
           </p>
 
           {/* Prominent commitment chips */}
@@ -159,6 +160,17 @@ export default function LeistungenSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6">
+                <Link
+                  href="/branding-agentur-saarland"
+                  className="group/link inline-flex items-center gap-2 text-[12px] font-semibold text-cyan-300 hover:text-white transition-colors"
+                >
+                  <span className="border-b border-cyan-300/40 group-hover/link:border-white pb-0.5 transition-colors">
+                    Zur Branding-Agentur Saarland
+                  </span>
+                  <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
+                </Link>
+              </div>
             </div>
           </motion.div>
 
@@ -208,6 +220,17 @@ export default function LeistungenSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 pt-6 border-t border-stone-200/70">
+                <Link
+                  href="/geo"
+                  className="group/link inline-flex items-center gap-2 text-[12px] font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
+                >
+                  <span className="border-b border-stone-300 group-hover/link:border-[var(--ink)] pb-0.5 transition-colors">
+                    Zur GEO-Methodik
+                  </span>
+                  <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
+                </Link>
+              </div>
             </div>
           </motion.div>
 
@@ -288,6 +311,17 @@ export default function LeistungenSection() {
               <p className="text-sm text-stone-600 leading-relaxed mt-3">
                 Keine Wartungsknebel, keine monatliche Grundgebühr. Ihr bucht Betreuung dann, wenn ihr sie braucht, im Umfang, den euer Wachstum verlangt. Konditionen persönlich und transparent.
               </p>
+              <div className="mt-6 pt-5 border-t border-stone-200/70">
+                <Link
+                  href="/marketingagentur-saarland"
+                  className="group/link inline-flex items-center gap-2 text-[12px] font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
+                >
+                  <span className="border-b border-stone-300 group-hover/link:border-[var(--ink)] pb-0.5 transition-colors">
+                    Zur Marketingagentur Saarland
+                  </span>
+                  <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>

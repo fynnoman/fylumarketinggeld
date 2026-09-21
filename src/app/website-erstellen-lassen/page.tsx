@@ -137,7 +137,7 @@ export default function WebsiteErstellenLassenPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.16}>
 						<p className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-							Fylu Marketing baut Websites, die aus Besuchern Kunden machen. Für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung. Als{' '}
+							Fylu Marketing baut Websites, die aus Besuchern Kunden machen. Vom ersten Auftritt bis zur skalierbaren Marke. Als{' '}
 							<Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Agentur aus Saarlouis</Link>{' '}
 							arbeiten wir mit Selbstständigen,{' '}
 							<Link href="/webdesign-handwerk" className="text-cyan-700 font-medium hover:underline underline-offset-4">Handwerkern</Link>, Kanzleien, Praxen und Dienstleistern, die ihre Online-Präsenz messbar besser aufstellen wollen.

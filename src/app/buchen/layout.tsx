@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website buchen | Webdesign Auftrag starten | Fylu Saarland",
+  title: "Projekt anfragen | Kostenloses Erstgespräch | Fylu Marketing",
   description:
-    "Starten Sie jetzt Ihr Webdesign-Projekt. Professionelle Website erstellen lassen, für Unternehmen im Saarland und deutschlandweit.",
+    "Starten Sie Ihr Projekt mit Fylu Marketing. Marke, Website, SEO, GEO und Google Ads für Unternehmen im Saarland und deutschlandweit. Persönliches Erstgespräch, unverbindlich.",
   alternates: {
     canonical: "/buchen",
   },

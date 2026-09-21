@@ -4,6 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import CalendlyEmbed from '@/components/CalendlyEmbed';
 import { WHATSAPP_URL } from '@/lib/contact';
+import { trackEvent } from '@/lib/track';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -14,7 +15,7 @@ const benefits = [
   },
   {
     title: 'Konkrete Einschätzung',
-    body: 'Sie bekommen eine ehrliche Bewertung Ihrer aktuellen Website und einen Ausblick, wie daraus mehr Kunden werden.',
+    body: 'Sie bekommen eine ehrliche Einordnung Ihres Vorhabens, ob Marke, Website, Sichtbarkeit oder alles zusammen, und einen Ausblick auf den nächsten Schritt.',
   },
   {
     title: 'Kein Verkaufsgespräch',
@@ -49,7 +50,7 @@ export default function CalendlySection() {
         >
           <div className="mb-6 flex items-baseline gap-3">
             <span className="font-display italic text-[var(--cyan-deep)] text-2xl md:text-3xl leading-none">
-              §02
+              §01
             </span>
             <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
               Erstgespräch buchen
@@ -74,6 +75,7 @@ export default function CalendlySection() {
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <a
               href="#calendly-embed"
+              onClick={() => trackEvent('cta_click', { location: 'home_calendly_section', label: 'termin_waehlen', destination: 'calendly_embed' })}
               className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-[var(--ink)] text-white px-6 py-3.5 text-sm font-semibold tracking-[0.02em] transition-all duration-300 hover:-translate-y-[1px] shadow-[0_20px_50px_-16px_rgba(12,14,16,0.35)] min-h-[52px]"
             >
               <span>Termin wählen</span>
@@ -84,6 +86,7 @@ export default function CalendlySection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Per WhatsApp schreiben"
+              onClick={() => trackEvent('cta_click', { location: 'home_calendly_section', label: 'whatsapp', destination: 'whatsapp' })}
               className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-6 py-3.5 text-sm font-semibold tracking-[0.02em] text-white transition-all duration-300 hover:-translate-y-[1px] shadow-[0_20px_50px_-16px_rgba(37,211,102,0.4)] min-h-[52px]"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden>

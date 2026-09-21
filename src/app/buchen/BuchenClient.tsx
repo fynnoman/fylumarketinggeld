@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import CalendlyEmbed from '@/components/CalendlyEmbed';
 import { WHATSAPP_URL } from '@/lib/contact';
+import { trackEvent } from '@/lib/track';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -45,6 +46,7 @@ export default function BuchenClient() {
 					<div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
 						<a
 							href="#calendly-embed"
+							onClick={() => trackEvent('cta_click', { location: 'buchen', label: 'termin_waehlen', destination: 'calendly_embed' })}
 							className="inline-flex items-center justify-center gap-2 bg-white text-[var(--ink)] font-semibold px-7 py-4 rounded-full shadow-lg hover:bg-cyan-50 transition-all min-h-[52px]"
 						>
 							<span>Termin wählen</span>
@@ -55,6 +57,7 @@ export default function BuchenClient() {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Per WhatsApp schreiben"
+							onClick={() => trackEvent('cta_click', { location: 'buchen', label: 'whatsapp', destination: 'whatsapp' })}
 							className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold px-7 py-4 rounded-full shadow-lg transition-all min-h-[52px]"
 						>
 							<svg

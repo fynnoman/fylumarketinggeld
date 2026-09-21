@@ -227,7 +227,7 @@ export default function WebdesignSaarlandPage() {
             <h1 className="text-[2.8rem] leading-[1.02] sm:text-5xl md:text-6xl lg:text-[4.6rem] lg:leading-[0.98] font-semibold text-[var(--ink)] tracking-[-0.035em]">
               Webdesign Saarland{' '}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                für Unternehmen jeder Phase.
+                für Marken, die wachsen sollen.
               </span>
             </h1>
           </FadeInSection>

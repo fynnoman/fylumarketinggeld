@@ -191,7 +191,7 @@ export default function ClientLogoBar() {
                       <div className="relative w-full h-full max-w-[360px]">
                         <Image
                           src={current.src}
-                          alt={`${current.name} | Kunde von Fylu`}
+                          alt={`Logo ${current.name}${current.industry ? `, ${current.industry}` : ''}, ${current.location} · Referenz Fylu Marketing`}
                           fill
                           priority
                           sizes="(max-width: 768px) 80vw, 360px"

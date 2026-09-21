@@ -3,12 +3,13 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import { WHATSAPP_URL } from '@/lib/contact';
+import { trackEvent } from '@/lib/track';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const headlineLine1 = ['Warum', 'Ihre', 'Website'];
-const headlineLine2 = ['nicht', 'verkauft.'];
-const headlineLine3 = ['Wir', 'ändern', 'das.'];
+const headlineLine1 = ['Wir', 'bauen'];
+const headlineLine2 = ['Marken,'];
+const headlineLine3 = ['die', 'wachsen.'];
 
 function WordReveal({
   words,
@@ -161,8 +162,9 @@ export default function HeroSection() {
           className="mt-9 md:mt-11 max-w-xl"
         >
           <p data-speakable className="text-sm md:text-base text-stone-200/90 leading-relaxed">
-            Wir analysieren, warum Ihre Website Besucher verliert und zeigen
-            Ihnen im Entwurf, wie daraus Kunden werden.
+            Fylu Marketing baut Marken, die professionell auftreten und wachsen.
+            Von Positionierung und Branding über Website bis Sichtbarkeit bei Google
+            und AI Search.
           </p>
         </motion.div>
 
@@ -173,10 +175,11 @@ export default function HeroSection() {
           className="mt-8 md:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
         >
           <a
-            href="#analyse"
+            href="/buchen"
+            onClick={() => trackEvent('cta_click', { location: 'hero', label: 'projekt_anfragen', destination: '/buchen' })}
             className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-6 sm:px-7 py-3.5 text-[13px] md:text-sm font-semibold tracking-[0.06em] text-[var(--ink)] transition-all duration-300 hover:bg-stone-100 hover:-translate-y-[1px] shadow-[0_20px_50px_-16px_rgba(0,0,0,0.55)] min-h-[52px]"
           >
-            <span>Kostenloses Erstgespräch</span>
+            <span>Projekt anfragen</span>
             <svg
               className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1"
               viewBox="0 0 16 16"
@@ -198,6 +201,7 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Per WhatsApp schreiben"
+            onClick={() => trackEvent('cta_click', { location: 'hero', label: 'whatsapp', destination: 'whatsapp' })}
             className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-5 sm:px-6 py-3.5 text-[13px] md:text-sm font-semibold tracking-[0.02em] text-white transition-all duration-300 hover:-translate-y-[1px] shadow-[0_20px_50px_-16px_rgba(37,211,102,0.55)] min-h-[52px]"
           >
             <svg
@@ -230,11 +234,11 @@ export default function HeroSection() {
           transition={{ duration: 0.9, delay: 1.85 }}
           className="hidden sm:flex mt-10 md:mt-14 items-center gap-4 text-[10px] font-medium tracking-[0.34em] uppercase text-stone-400/80"
         >
-          <span>Analyse</span>
+          <span>Marke</span>
           <span className="h-px w-6 bg-stone-500/60" />
-          <span>Strategie</span>
+          <span>Website</span>
           <span className="h-px w-6 bg-stone-500/60" />
-          <span>Umsetzung</span>
+          <span>Wachstum</span>
         </motion.div>
       </div>
 

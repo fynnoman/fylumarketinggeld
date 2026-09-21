@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { trackEvent } from '@/lib/track';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +33,11 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const navLinks = [
-    { label: 'Klienten', href: '/#klienten' },
+    { label: 'Leistungen', href: '/#leistungen' },
+    { label: 'Arbeiten', href: '/#klienten' },
     { label: 'Prozess', href: '/methodik' },
-    { label: 'Über mich', href: '/team' },
+    { label: 'Ratgeber', href: '/ratgeber' },
+    { label: 'Über', href: '/team' },
   ];
 
   return (
@@ -93,6 +96,7 @@ export default function Navbar() {
               <a
                 href="tel:+4915168488999"
                 aria-label="Jetzt anrufen"
+                onClick={() => trackEvent('cta_click', { location: 'navbar_mobile', label: 'anrufen', destination: 'tel' })}
                 className="md:hidden relative overflow-hidden inline-flex items-center justify-center w-10 h-10 rounded-full btn-glass-cyan"
               >
                 <span className="btn-glass-shine" aria-hidden />
@@ -102,6 +106,7 @@ export default function Navbar() {
               </a>
               <a
                 href="tel:+4915168488999"
+                onClick={() => trackEvent('cta_click', { location: 'navbar_desktop', label: 'anrufen', destination: 'tel' })}
                 className="hidden md:inline-flex items-center gap-1.5 btn-glass text-stone-900 px-4 py-2 rounded-full text-[13px] font-semibold"
               >
                 <span className="btn-glass-shine" aria-hidden />
@@ -111,11 +116,12 @@ export default function Navbar() {
                 <span className="relative">Anrufen</span>
               </a>
               <a
-                href="/#calendly-embed"
+                href="/buchen"
+                onClick={() => trackEvent('cta_click', { location: 'navbar_desktop', label: 'projekt_anfragen', destination: '/buchen' })}
                 className="hidden md:inline-flex group items-center gap-1.5 btn-glass-ink px-4 py-2 rounded-full text-[13px] font-semibold"
               >
                 <span className="btn-glass-shine" aria-hidden />
-                <span className="relative">Platz sichern</span>
+                <span className="relative">Projekt anfragen</span>
                 <span className="relative text-cyan-300 transition-transform duration-300 group-hover:translate-x-0.5">
                   →
                 </span>
@@ -192,7 +198,10 @@ export default function Navbar() {
 
                 <motion.a
                   href="tel:+4915168488999"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    trackEvent('cta_click', { location: 'navbar_mobile_menu', label: 'anrufen', destination: 'tel' });
+                    setMenuOpen(false);
+                  }}
                   initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.28, delay: 0.05 + navLinks.length * 0.04, ease: [0.22, 1, 0.36, 1] }}
@@ -211,12 +220,15 @@ export default function Navbar() {
                   className="mt-1.5"
                 >
                   <a
-                    href="/#calendly-embed"
-                    onClick={() => setMenuOpen(false)}
+                    href="/buchen"
+                    onClick={() => {
+                      trackEvent('cta_click', { location: 'navbar_mobile_menu', label: 'projekt_anfragen', destination: '/buchen' });
+                      setMenuOpen(false);
+                    }}
                     className="group w-full relative overflow-hidden inline-flex items-center justify-center gap-2 btn-glass-ink py-3.5 rounded-2xl font-semibold text-[15px] min-h-[52px]"
                   >
                     <span className="btn-glass-shine" aria-hidden />
-                    <span className="relative">Platz sichern</span>
+                    <span className="relative">Projekt anfragen</span>
                     <span className="relative text-cyan-300 transition-transform group-hover:translate-x-0.5">→</span>
                   </a>
                 </motion.div>

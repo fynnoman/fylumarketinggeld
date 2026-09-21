@@ -4,7 +4,9 @@ import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "@/components/CookieBanner";
 import GtagLoader from "@/components/GtagLoader";
 import HiddenTaskeyLink from "@/components/HiddenTaskeyLink";
+import UtmCapture from "@/components/UtmCapture";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { computeAggregateRating } from "@/lib/testimonials";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -98,6 +100,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const aggregateRating = computeAggregateRating();
   return (
     <html lang="de">
       <head>
@@ -359,13 +362,17 @@ export default function RootLayout({
                 ],
               },
               slogan: "Website, SEO und Software aus dem Saarland, für Unternehmen jeder Phase.",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "5.0",
-                bestRating: "5",
-                worstRating: "1",
-                reviewCount: "21",
-              },
+              ...(aggregateRating
+                ? {
+                    aggregateRating: {
+                      "@type": "AggregateRating",
+                      ratingValue: aggregateRating.ratingValue,
+                      reviewCount: aggregateRating.reviewCount,
+                      bestRating: aggregateRating.bestRating,
+                      worstRating: aggregateRating.worstRating,
+                    },
+                  }
+                : {}),
             }),
           }}
         />
@@ -410,6 +417,7 @@ export default function RootLayout({
       <body className={`${fraunces.variable} ${geist.variable} ${caveat.variable} antialiased`}>
         {children}
         <Analytics />
+        <UtmCapture />
         <HiddenTaskeyLink />
         <WhatsAppButton />
         <CookieBanner />

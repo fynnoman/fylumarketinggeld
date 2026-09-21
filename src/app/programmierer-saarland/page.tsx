@@ -177,13 +177,12 @@ export default function ProgrammiererSaarlandPage() {
           </FadeInSection>
           <FadeInSection delay={0.16}>
             <p data-speakable className="mt-8 text-lg md:text-[1.1rem] text-stone-600 leading-relaxed max-w-3xl">
-              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
-              aufzubauen und zu skalieren. Full-Stack-Entwicklung für Unternehmen in
-              Saarbrücken, Saarlouis, Merzig, Neunkirchen, Homburg und im übrigen
-              Saarland. Moderner Tech-Stack (TypeScript, React, Next.js, Node.js,
-              Python), sauber gebaut, klar dokumentiert. Brauchen Sie{' '}
+              Full-Stack-Entwicklung für Unternehmen in Saarbrücken, Saarlouis,
+              Merzig, Neunkirchen, Homburg und im übrigen Saarland. Moderner
+              Tech-Stack (TypeScript, React, Next.js, Node.js, Python), sauber
+              gebaut, klar dokumentiert. Brauchen Sie{' '}
               <Link href="/software-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Software-Entwicklung</Link> oder{' '}
-              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link>? Alles aus einer Hand.
+              <Link href="/webdesign-saarland" className="text-cyan-700 font-medium hover:underline underline-offset-4">Webdesign</Link>? Alles bei einem Ansprechpartner.
             </p>
           </FadeInSection>
           <FadeInSection delay={0.24}>

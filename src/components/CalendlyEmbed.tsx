@@ -1,9 +1,10 @@
 'use client';
 
 import Script from 'next/script';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { openConsentSettings, setConsent, useConsent, useConsentCategory } from '@/lib/consent';
 import { CALENDLY_EMBED_URL } from '@/lib/contact';
+import { readUtmFromSession } from '@/lib/track';
 
 type Props = {
   height?: string;
@@ -13,6 +14,22 @@ export default function CalendlyEmbed({ height = 'clamp(680px, 90svh, 820px)' }:
   const allowed = useConsentCategory('external');
   const { consent } = useConsent();
   const [sessionAllow, setSessionAllow] = useState(false);
+  const [enrichedUrl, setEnrichedUrl] = useState<string>(CALENDLY_EMBED_URL);
+
+  useEffect(() => {
+    const utm = readUtmFromSession();
+    if (!utm) return;
+    try {
+      const url = new URL(CALENDLY_EMBED_URL);
+      for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']) {
+        if (utm[key]) url.searchParams.set(key, utm[key]);
+      }
+      if (utm.landingPath) url.searchParams.set('landing', utm.landingPath);
+      setEnrichedUrl(url.toString());
+    } catch {
+      // ignore
+    }
+  }, []);
 
   const canLoad = allowed || sessionAllow;
 
@@ -71,7 +88,7 @@ export default function CalendlyEmbed({ height = 'clamp(680px, 90svh, 820px)' }:
     <>
       <div
         className="calendly-inline-widget"
-        data-url={CALENDLY_EMBED_URL}
+        data-url={enrichedUrl}
         style={{
           minWidth: '280px',
           height,

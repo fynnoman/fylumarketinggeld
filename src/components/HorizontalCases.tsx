@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRef } from 'react';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -18,6 +19,7 @@ type Case = {
   url: string;
   urlLabel: string;
   facebookUrl?: string;
+  caseSlug?: string; // slug in /referenzen/[slug]; wenn gesetzt, wird intern verlinkt
 };
 
 const cases: Case[] = [
@@ -33,6 +35,7 @@ const cases: Case[] = [
     services: ['Website', 'Marken-Architektur', 'Digitale Tools'],
     url: 'https://mg-gebaeudeservice.de',
     urlLabel: 'mg-gebaeudeservice.de',
+    caseSlug: 'mg-gebaeudeservice',
   },
   {
     client: 'Galabau Eifler',
@@ -46,6 +49,7 @@ const cases: Case[] = [
     services: ['Website', 'Design', 'Projekt-Präsentation'],
     url: 'https://galabau-eifler.de',
     urlLabel: 'galabau-eifler.de',
+    caseSlug: 'galabau-eifler',
   },
   {
     client: 'PB Fahrzeugpflege',
@@ -60,6 +64,7 @@ const cases: Case[] = [
     url: 'https://pb-fahrzeugpflege.de',
     urlLabel: 'pb-fahrzeugpflege.de',
     facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
+    caseSlug: 'pb-fahrzeugpflege',
   },
 ];
 
@@ -152,48 +157,7 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             isOdd ? 'lg:[direction:ltr]' : ''
           }`}
         >
-          <motion.a
-            href={data.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ scale: 0.96 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 1, delay: 0.1, ease }}
-            className="group relative block rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-[var(--ink)] shadow-[0_30px_80px_-20px_rgba(12,14,16,0.35)] ring-1 ring-black/5"
-            aria-label={`${data.client} | Website öffnen`}
-          >
-            {/* Browser chrome, subtle */}
-            <div className="relative flex items-center gap-2 px-4 py-3 bg-[var(--ink)]/95 border-b border-white/5">
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-              <span className="ml-3 text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
-                {data.urlLabel}
-              </span>
-            </div>
-
-            {/* Screenshot */}
-            <div className="relative aspect-[16/9] bg-white overflow-hidden">
-              <Image
-                src={data.image}
-                alt={`${data.client} | Website Screenshot`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 900px"
-                className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
-                priority={index < 2}
-              />
-              {/* Hover veil */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              {/* Hover pill */}
-              <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-[var(--ink)] text-xs font-semibold tracking-[0.02em] shadow-lg">
-                  Website öffnen
-                  <span className="text-[var(--cyan-deep)]">→</span>
-                </span>
-              </div>
-            </div>
-          </motion.a>
+          <CaseCard data={data} index={index} />
         </div>
 
         {/* Text side */}
@@ -247,11 +211,23 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             <span className="text-sm text-stone-700">{data.location}</span>
           </div>
 
+          {data.caseSlug && (
+            <Link
+              href={`/referenzen/${data.caseSlug}`}
+              className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--ink)] hover:text-[var(--cyan-deep)] transition-colors"
+            >
+              <span className="border-b border-stone-300 group-hover:border-[var(--cyan-deep)] pb-0.5 transition-colors">
+                Zur Case Study
+              </span>
+              <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+          )}
+
           <a
             href={data.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
+            className={`group ${data.caseSlug ? 'mt-3' : 'mt-7'} inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors`}
           >
             <span>{data.urlLabel}</span>
             <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -272,5 +248,79 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
         </div>
       </div>
     </motion.article>
+  );
+}
+
+function CaseCard({ data, index }: { data: Case; index: number }) {
+  const inner = (
+    <>
+      {/* Browser chrome, subtle */}
+      <div className="relative flex items-center gap-2 px-4 py-3 bg-[var(--ink)]/95 border-b border-white/5">
+        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+        <span className="ml-3 text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
+          {data.urlLabel}
+        </span>
+      </div>
+
+      {/* Screenshot */}
+      <div className="relative aspect-[16/9] bg-white overflow-hidden">
+        <Image
+          src={data.image}
+          alt={`Website ${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 900px"
+          className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
+          priority={index < 2}
+        />
+        {/* Hover veil */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* Hover pill */}
+        <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-[var(--ink)] text-xs font-semibold tracking-[0.02em] shadow-lg">
+            {data.caseSlug ? 'Zur Case Study' : 'Website öffnen'}
+            <span className="text-[var(--cyan-deep)]">→</span>
+          </span>
+        </div>
+      </div>
+    </>
+  );
+
+  const cardClassName =
+    'group relative block rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-[var(--ink)] shadow-[0_30px_80px_-20px_rgba(12,14,16,0.35)] ring-1 ring-black/5';
+
+  const motionProps = {
+    initial: { scale: 0.96 },
+    whileInView: { scale: 1 },
+    viewport: { once: true, margin: '-100px' as const },
+    transition: { duration: 1, delay: 0.1, ease },
+  };
+
+  if (data.caseSlug) {
+    return (
+      <motion.div {...motionProps}>
+        <Link
+          href={`/referenzen/${data.caseSlug}`}
+          className={cardClassName}
+          aria-label={`${data.client} · Case Study ansehen`}
+        >
+          {inner}
+        </Link>
+      </motion.div>
+    );
+  }
+
+  return (
+    <motion.a
+      href={data.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      {...motionProps}
+      className={cardClassName}
+      aria-label={`${data.client} · Website öffnen`}
+    >
+      {inner}
+    </motion.a>
   );
 }

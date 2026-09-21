@@ -1,12 +1,13 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import LeistungenSection from '@/components/LeistungenSection';
-import MarkenaufbauSection from '@/components/MarkenaufbauSection';
 import HorizontalCases from '@/components/HorizontalCases';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import CalendlySection from '@/components/CalendlySection';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import { homeFaqs } from '@/lib/home-faqs';
+import { testimonials } from '@/lib/testimonials';
 
 export default function Home() {
   return (
@@ -67,12 +68,49 @@ export default function Home() {
           }),
         }}
       />
+      {testimonials.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              '@id': 'https://www.fylumarketing.de/#testimonials',
+              inLanguage: 'de-DE',
+              itemListElement: testimonials.map((t, i) => ({
+                '@type': 'Review',
+                position: i + 1,
+                reviewBody: t.quote,
+                author: {
+                  '@type': 'Person',
+                  name: t.author,
+                  ...(t.role || t.company
+                    ? { jobTitle: [t.role, t.company].filter(Boolean).join(', ') }
+                    : {}),
+                },
+                ...(typeof t.rating === 'number'
+                  ? {
+                      reviewRating: {
+                        '@type': 'Rating',
+                        ratingValue: String(t.rating),
+                        bestRating: '5',
+                        worstRating: '1',
+                      },
+                    }
+                  : {}),
+                ...(t.publishedAt ? { datePublished: t.publishedAt } : {}),
+                itemReviewed: { '@id': 'https://www.fylumarketing.de/#organization' },
+              })),
+            }),
+          }}
+        />
+      )}
       <Navbar />
       <HeroSection />
       <CalendlySection />
       <LeistungenSection />
-      <MarkenaufbauSection />
       <HorizontalCases />
+      <TestimonialsSection />
       <FAQSection />
       <Footer />
     </main>

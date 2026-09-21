@@ -131,6 +131,44 @@ export default async function CaseStudyPage({
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.02] mb-8">
               {c.h1}
             </h1>
+
+            {/* Client meta and services */}
+            <div className="mb-8 flex flex-wrap items-baseline gap-x-4 gap-y-2 text-sm">
+              <span className="text-[var(--ink)] font-semibold">{c.clientName}</span>
+              {c.clientCity && (
+                <>
+                  <span className="text-stone-400">·</span>
+                  <span className="text-stone-600">{c.clientCity}</span>
+                </>
+              )}
+              {c.clientUrl && (
+                <>
+                  <span className="text-stone-400">·</span>
+                  <a
+                    href={c.clientUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--cyan-deep)] hover:text-[var(--ink)] font-semibold underline underline-offset-4"
+                  >
+                    Website öffnen
+                  </a>
+                </>
+              )}
+            </div>
+
+            {c.services && c.services.length > 0 && (
+              <div className="mb-8 flex flex-wrap gap-2">
+                {c.services.map((s) => (
+                  <span
+                    key={s}
+                    className="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] font-medium tracking-[0.02em] text-stone-700"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <div className="relative overflow-hidden rounded-3xl bg-white p-6 md:p-8 border border-stone-200/70 shadow-[0_8px_40px_rgba(12,14,16,0.04)]">
               <div
                 aria-hidden
@@ -305,6 +343,44 @@ export default async function CaseStudyPage({
           </section>
         )}
 
+        {/* Service Links */}
+        {c.serviceLinks && c.serviceLinks.length > 0 && (
+          <section className="py-16 md:py-20 px-6">
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-8 flex items-baseline gap-3">
+                <span className="font-display italic text-[var(--cyan-deep)] text-lg leading-none">
+                  §g
+                </span>
+                <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em]">
+                  Passende Fylu-Leistungen
+                </h2>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {c.serviceLinks.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-cyan-200 transition-colors"
+                  >
+                    <span className="glass-edge" aria-hidden />
+                    <div className="relative">
+                      <div className="mb-2 flex items-baseline justify-between gap-2">
+                        <h3 className="text-base md:text-lg font-semibold text-[var(--ink)]">
+                          {s.label}
+                        </h3>
+                        <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-0.5">
+                          →
+                        </span>
+                      </div>
+                      <p className="text-sm text-stone-600 leading-relaxed">{s.reason}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section className="py-16 md:py-20 px-6">
           <div className="max-w-3xl mx-auto">
@@ -322,25 +398,25 @@ export default async function CaseStudyPage({
                   Klingt vertraut?
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.02em] mb-4">
-                  Prüfen Sie, wo Ihre Website heute steht.
+                  Bereit für eine Marke, die trägt?
                 </h2>
                 <p className="text-stone-300 leading-relaxed mb-6 max-w-xl">
-                  Kostenlose Website-Analyse in unter 15 Sekunden. Ergebnis direkt sichtbar,
-                  ohne Registrierung.
+                  Fünfzehn Minuten Vorgespräch. Wir hören zu, ordnen ein und sagen, was ein
+                  sinnvoller Rahmen für Ihr Vorhaben wäre.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    href="/tools/website-check"
+                    href="/buchen"
                     className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3.5 rounded-full text-[14px] font-semibold transition-colors"
                   >
-                    Website-Analyse starten
+                    Projekt anfragen
                     <span>→</span>
                   </Link>
                   <Link
-                    href="/buchen"
+                    href="/referenzen"
                     className="inline-flex items-center justify-center gap-2 bg-white/8 hover:bg-white/15 text-white px-6 py-3.5 rounded-full text-[14px] font-semibold border border-white/15 transition-colors"
                   >
-                    Vorgespräch buchen
+                    Weitere Referenzen
                   </Link>
                 </div>
               </div>

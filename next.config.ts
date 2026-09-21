@@ -25,6 +25,19 @@ const topicRedirects = [
   { source: "/website-in-14-tagen-saarland", destination: "/leistungen/in-14-tagen" },
 ];
 
+const clusterRedirects = [
+  { source: "/werbeagentur-saarland", destination: "/marketingagentur-saarland" },
+  { source: "/werbe-agentur-saarland", destination: "/marketingagentur-saarland" },
+  { source: "/marketing-agentur-saarland", destination: "/marketingagentur-saarland" },
+  { source: "/digitalagentur-saarland", destination: "/marketingagentur-saarland" },
+  { source: "/kreativagentur-saarland", destination: "/marketingagentur-saarland" },
+  { source: "/branding-saarland", destination: "/branding-agentur-saarland" },
+  { source: "/markenagentur-saarland", destination: "/branding-agentur-saarland" },
+  { source: "/corporate-design-saarland", destination: "/branding-agentur-saarland" },
+  { source: "/geo-agentur", destination: "/geo" },
+  { source: "/generative-engine-optimization", destination: "/geo" },
+];
+
 const nextConfig: NextConfig = {
   compress: true,
   images: {
@@ -46,7 +59,7 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return [...regionRedirects, ...topicRedirects].map((r) => ({
+    return [...regionRedirects, ...topicRedirects, ...clusterRedirects].map((r) => ({
       ...r,
       permanent: true,
     }));

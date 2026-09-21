@@ -96,16 +96,17 @@ export default function SeoAgenturSaarlandPage() {
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[var(--ink)] tracking-[-0.03em] leading-[1.02] mb-8">
-              SEO-Agentur aus dem Saarland,{" "}
+              SEO-Agentur Saarland.{" "}
               <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                nachvollziehbar aufgebaut
+                Woran Sie eine seriöse Agentur erkennen
               </span>
               .
             </h1>
             <p data-speakable className="text-lg md:text-xl text-stone-700 leading-relaxed mb-8">
-              Fylu Marketing hilft Unternehmen jeder Phase, ihre Online-Präsenz
-              aufzubauen und zu skalieren. Foundation, Content-Aufbau, Local SEO und
-              laufende Betreuung aus Saarlouis, transparent kalkuliert.
+              Wie Sie unter den vielen SEO-Anbietern im Saarland eine finden,
+              die transparent kalkuliert, ehrlich einschätzt und langfristig
+              arbeitet. Und wie Fylu Marketing als Ansprechpartner in Saarlouis
+              diese Zusammenarbeit umsetzt.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -140,7 +141,7 @@ export default function SeoAgenturSaarlandPage() {
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em]">
-                Drei Ebenen, klar getrennt kalkuliert
+                So kalkuliert eine seriöse SEO-Agentur, in drei Ebenen
               </h2>
             </div>
             <div className="grid gap-6 md:grid-cols-3">
@@ -210,14 +211,15 @@ export default function SeoAgenturSaarlandPage() {
             </div>
             <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
               <p>
-                Wir arbeiten für Unternehmen, bei denen ein einzelner Kunde relevanten
-                Wert hat: Kanzleien, Steuerberater, Arzt- und Zahnarztpraxen,
-                Immobilienmakler, hochwertige Handwerksbetriebe, Photovoltaik-Anbieter,
-                Gebäudereinigungsunternehmen, Industrie-Mittelstand und B2B-Dienstleister.
+                Wir arbeiten branchenübergreifend, mit Schwerpunkt auf Unternehmen,
+                bei denen digitale Sichtbarkeit wirtschaftlich zählt: Handwerksbetriebe,
+                Kanzleien, Steuerberater, Arzt- und Zahnarztpraxen, Immobilienmakler,
+                Photovoltaik-Anbieter, Gebäudereinigungsunternehmen, Industrie-Mittelstand,
+                B2B-Dienstleister, sowie ausgewählte Gastronomie- und lokale Marken.
               </p>
               <p>
-                Für Consumer-Kleinkram, Gastro oder reine Reichweiten-Themen sind wir nicht
-                die richtige Adresse. Dort funktionieren andere Modelle besser.
+                Ob eine Zusammenarbeit passt, klären wir im Vorgespräch. Wir sagen ehrlich,
+                wenn ein anderes Modell für Ihre Situation besser trägt.
               </p>
             </div>
           </div>
