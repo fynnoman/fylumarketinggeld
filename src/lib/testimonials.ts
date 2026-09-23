@@ -43,6 +43,24 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
+      "Meine Anfrage war eher komplex. Trotzdem hat sich das Team die Zeit genommen, eine individuelle Lösung zu entwickeln. Diese Lösung hat perfekt zu meinen Anforderungen gepasst und konnte direkt umgesetzt werden. Die Mitarbeiter waren sehr freundlich, engagiert und professionell. Klare Empfehlung!",
+    author: "Simon Hilgert",
+    source: "google",
+    rating: 5,
+    // "4 months ago" laut Google Rezension, entspricht ungefähr Mai 2026.
+    publishedAt: "2026-05-23",
+  },
+  {
+    quote:
+      "Ich bin sehr zufrieden! Meine Website ist richtig gut geworden: modern, klar und genau so, wie ich sie mir vorgestellt habe. Die Kommunikation war super entspannt und schnell, ich habe mich sofort gut aufgehoben gefühlt. Ich kann sie definitiv weiterempfehlen 👍",
+    author: "Luca Castronovo",
+    source: "google",
+    rating: 5,
+    // "4 months ago" laut Google Rezension, entspricht ungefähr Mai 2026.
+    publishedAt: "2026-05-23",
+  },
+  {
+    quote:
       "Ich bin sehr zufrieden mit der Arbeit die geleistet wurde, mit der Preisleistung bin ich auch sehr zufrieden. Ich kann diese Seite nur sehr weiterempfehlen.",
     author: "Kevin Eifler",
     role: "Inhaber",
