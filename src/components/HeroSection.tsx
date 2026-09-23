@@ -65,14 +65,6 @@ export default function HeroSection() {
           className="object-cover object-[82%_center] md:object-[85%_center] lg:object-[88%_center] motion-safe:animate-[heroReveal_1.6s_cubic-bezier(0.22,1,0.36,1)_both]"
         />
 
-        {/* Left-to-right ink veil for legibility (covers baked-in branding) */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'linear-gradient(90deg, rgba(6,7,9,1) 0%, rgba(6,7,9,0.98) 38%, rgba(6,7,9,0.78) 55%, rgba(6,7,9,0.28) 76%, rgba(6,7,9,0) 100%)',
-          }}
-        />
         {/* Top and bottom vignettes */}
         <div
           className="absolute inset-x-0 top-0 h-40"
@@ -101,23 +93,8 @@ export default function HeroSection() {
         className="pointer-events-none absolute inset-4 md:inset-8 border border-white/[0.09]"
       />
 
-      {/* Top row, masthead + issue meta */}
-      <div className="absolute inset-x-8 top-8 md:inset-x-14 md:top-14 z-10 flex items-start justify-between gap-6">
-        <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35, ease }}
-          className="flex items-center gap-3 px-3.5 py-1.5 rounded-full backdrop-blur-md bg-white/[0.06] border border-white/[0.14]"
-        >
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-300/70 opacity-70 animate-ping" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-300" />
-          </span>
-          <span className="text-[10px] font-medium tracking-[0.34em] uppercase text-stone-200/90">
-            Fylu Marketing · Saarlouis
-          </span>
-        </motion.div>
-
+      {/* Top row, issue meta */}
+      <div className="absolute inset-x-8 top-8 md:inset-x-14 md:top-14 z-10 flex items-start justify-end gap-6">
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -254,10 +231,6 @@ export default function HeroSection() {
         </span>
         <span className="text-[11px] font-display italic text-stone-200/90">
           Fynn Schulz · Saarlouis
-        </span>
-        <span className="mt-2 h-px w-14 bg-stone-400/40 self-end" />
-        <span className="mt-1 text-[9px] font-mono tracking-[0.24em] text-stone-400/60">
-          Photo · N°01 / 2026
         </span>
       </motion.div>
 
