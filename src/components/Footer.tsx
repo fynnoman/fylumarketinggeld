@@ -71,7 +71,6 @@ export default function Footer() {
               Leistungen
             </h3>
             <ul className="space-y-2.5 text-sm text-stone-400">
-              <li><Link href="/marketingagentur-saarland" className="hover:text-white transition-colors">Marketingagentur</Link></li>
               <li><Link href="/branding-agentur-saarland" className="hover:text-white transition-colors">Branding</Link></li>
               <li><Link href="/webdesign-saarland" className="hover:text-white transition-colors">Webdesign</Link></li>
               <li><Link href="/seo-saarland" className="hover:text-white transition-colors">SEO</Link></li>

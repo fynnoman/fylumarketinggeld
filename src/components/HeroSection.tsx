@@ -29,9 +29,9 @@ function WordReveal({
       {words.map((w, i) => (
         <span key={i} className={`inline-block overflow-hidden py-[0.05em] ${size}`}>
           <motion.span
-            initial={{ y: '105%', filter: 'blur(14px)' }}
-            animate={{ y: '0%', filter: 'blur(0px)' }}
-            transition={{ duration: 1.1, delay: delay + i * 0.08, ease }}
+            initial={{ y: '105%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1 }}
+            transition={{ duration: 0.65, delay: delay + i * 0.06, ease }}
             className={`inline-block ${
               italic ? 'font-display italic font-normal' : ''
             } ${accent ? 'text-[color:var(--accent)]' : ''}`}
@@ -55,15 +55,25 @@ export default function HeroSection() {
     >
       {/* Photo layer */}
       <div aria-hidden className="absolute inset-0 -z-10">
-        <Image
-          src="/hero-fylu.png"
-          alt=""
-          fill
-          priority
-          quality={95}
-          sizes="100vw"
-          className="object-cover object-[82%_center] md:object-[85%_center] lg:object-[88%_center] motion-safe:animate-[heroReveal_1.6s_cubic-bezier(0.22,1,0.36,1)_both]"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 1.04 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease }}
+          className="absolute inset-0"
+        >
+          <Image
+            src="/hero-fylu.png"
+            alt=""
+            fill
+            priority
+            quality={95}
+            sizes="100vw"
+            className="object-cover object-[82%_center] md:object-[85%_center] lg:object-[88%_center]"
+          />
+        </motion.div>
+
+        {/* Dunkles Layer fuer Abdunklung */}
+        <div className="absolute inset-0 bg-black/45" />
 
         {/* Top and bottom vignettes */}
         <div
@@ -89,16 +99,16 @@ export default function HeroSection() {
         aria-hidden
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.4, delay: 0.4 }}
+        transition={{ duration: 0.9, delay: 0.15 }}
         className="pointer-events-none absolute inset-4 md:inset-8 border border-white/[0.09]"
       />
 
       {/* Top row, issue meta */}
       <div className="absolute inset-x-8 top-8 md:inset-x-14 md:top-14 z-10 flex items-start justify-end gap-6">
         <motion.div
-          initial={{ opacity: 0, y: -8 }}
+          initial={{ opacity: 0, y: -6 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5, ease }}
+          transition={{ duration: 0.55, delay: 0.2, ease }}
           className="hidden sm:flex items-center gap-4 text-[10px] font-medium tracking-[0.34em] uppercase text-stone-300/70"
         >
           <span>Cover</span>
@@ -115,27 +125,27 @@ export default function HeroSection() {
         <h1 className="font-semibold tracking-[-0.045em] leading-[0.9] text-white">
           <WordReveal
             words={headlineLine1}
-            delay={0.35}
+            delay={0.15}
             size="text-[10.5vw] sm:text-[8.2vw] md:text-[6.6vw] lg:text-[5.6vw] xl:text-[5rem]"
           />
           <WordReveal
             words={headlineLine2}
-            delay={0.6}
+            delay={0.3}
             italic
             accent
             size="text-[12vw] sm:text-[9.4vw] md:text-[7.6vw] lg:text-[6.4vw] xl:text-[5.75rem]"
           />
           <WordReveal
             words={headlineLine3}
-            delay={0.85}
+            delay={0.45}
             size="text-[10.5vw] sm:text-[8.2vw] md:text-[6.6vw] lg:text-[5.6vw] xl:text-[5rem]"
           />
         </h1>
 
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.35, ease }}
+          transition={{ duration: 0.6, delay: 0.7, ease }}
           className="mt-9 md:mt-11 max-w-xl"
         >
           <p data-speakable className="text-sm md:text-base text-stone-200/90 leading-relaxed">
@@ -146,9 +156,9 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.55, ease }}
+          transition={{ duration: 0.55, delay: 0.85, ease }}
           className="mt-8 md:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
         >
           <a
@@ -208,7 +218,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 1.85 }}
+          transition={{ duration: 0.55, delay: 1.0 }}
           className="hidden sm:flex mt-10 md:mt-14 items-center gap-4 text-[10px] font-medium tracking-[0.34em] uppercase text-stone-400/80"
         >
           <span>Marke</span>
@@ -223,7 +233,7 @@ export default function HeroSection() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 1.7 }}
+        transition={{ duration: 0.55, delay: 0.9 }}
         className="hidden md:flex absolute right-14 bottom-16 z-10 flex-col items-end gap-1.5 text-right"
       >
         <span className="text-[10px] font-medium tracking-[0.34em] uppercase text-stone-300/70">
@@ -239,7 +249,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.0, duration: 0.6 }}
+          transition={{ delay: 1.1, duration: 0.5 }}
           className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2"
         >
           <span className="text-[9px] tracking-[0.5em] uppercase text-stone-400/70">
@@ -256,22 +266,6 @@ export default function HeroSection() {
           </div>
         </motion.div>
       )}
-
-      {/* Keyframes for image reveal */}
-      <style jsx global>{`
-        @keyframes heroReveal {
-          0% {
-            opacity: 0;
-            transform: scale(1.06);
-            filter: blur(6px);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1);
-            filter: blur(0);
-          }
-        }
-      `}</style>
     </section>
   );
 }
@@ -287,9 +281,9 @@ function CornerTicks() {
       ].map((pos, i) => (
         <motion.svg
           key={i}
-          initial={{ opacity: 0, scale: 0.6 }}
+          initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 + i * 0.05, ease }}
+          transition={{ duration: 0.45, delay: 0.25 + i * 0.04, ease }}
           className={`absolute w-4 h-4 md:w-5 md:h-5 text-white/40 ${pos}`}
           viewBox="0 0 20 20"
           fill="none"

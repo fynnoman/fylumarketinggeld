@@ -26,11 +26,6 @@ const topicRedirects = [
 ];
 
 const clusterRedirects = [
-  { source: "/werbeagentur-saarland", destination: "/marketingagentur-saarland" },
-  { source: "/werbe-agentur-saarland", destination: "/marketingagentur-saarland" },
-  { source: "/marketing-agentur-saarland", destination: "/marketingagentur-saarland" },
-  { source: "/digitalagentur-saarland", destination: "/marketingagentur-saarland" },
-  { source: "/kreativagentur-saarland", destination: "/marketingagentur-saarland" },
   { source: "/branding-saarland", destination: "/branding-agentur-saarland" },
   { source: "/markenagentur-saarland", destination: "/branding-agentur-saarland" },
   { source: "/corporate-design-saarland", destination: "/branding-agentur-saarland" },

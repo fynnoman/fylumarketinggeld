@@ -117,11 +117,6 @@ export const cases: CaseStudy[] = [
     relatedIndustry: "gebaeudereinigung",
     serviceLinks: [
       {
-        label: "Marketingagentur Saarland",
-        href: "/marketingagentur-saarland",
-        reason: "Marke, Website und Sichtbarkeit als zusammenhängendes System.",
-      },
-      {
         label: "Branding-Agentur Saarland",
         href: "/branding-agentur-saarland",
         reason: "Positionierung, Identität und Anwendung bei einem Ansprechpartner.",

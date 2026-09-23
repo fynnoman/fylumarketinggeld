@@ -34,7 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${baseUrl}/webdesign-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/branding-agentur-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/marketingagentur-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/software-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/programmierer-saarland`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/app-entwickeln-lassen`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
