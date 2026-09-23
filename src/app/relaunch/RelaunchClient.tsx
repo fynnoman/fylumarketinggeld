@@ -240,15 +240,15 @@ export default function RelaunchClient() {
     <main className="bg-white text-[var(--ink)]">
       {/* Sticky Minimal Header */}
       <header className="sticky top-0 z-40 bg-white/75 backdrop-blur-md border-b border-stone-200/70">
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-10 py-4">
-          <Link href="/relaunch" aria-label="Fylu Marketing" className="flex items-center gap-2">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-10 py-3 md:py-4">
+          <Link href="/relaunch" aria-label="Fylu Marketing" className="flex items-center">
             <Image
-              src="/logo-fylu.webp"
+              src="/logo-fylu-marketing.jpeg"
               alt="Fylu Marketing"
-              width={92}
-              height={28}
+              width={220}
+              height={110}
               priority
-              className="h-6 md:h-7 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-3">
@@ -1051,11 +1051,11 @@ export default function RelaunchClient() {
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[13px]">
           <div className="flex items-center gap-3">
             <Image
-              src="/logo-fylu.webp"
+              src="/logo-fylu-marketing.jpeg"
               alt="Fylu Marketing"
-              width={70}
-              height={22}
-              className="h-5 w-auto opacity-80"
+              width={140}
+              height={70}
+              className="h-8 w-auto opacity-90"
             />
             <span>· Saarlouis</span>
           </div>
