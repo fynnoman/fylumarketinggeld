@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist, Caveat } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "@/components/CookieBanner";
 import GtagLoader from "@/components/GtagLoader";
@@ -22,13 +22,6 @@ const geist = Geist({
   display: "swap",
   variable: "--font-geist",
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-caveat",
-  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -414,7 +407,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${fraunces.variable} ${geist.variable} ${caveat.variable} antialiased`}>
+      <body className={`${fraunces.variable} ${geist.variable} antialiased`}>
         {children}
         <Analytics />
         <UtmCapture />

@@ -62,15 +62,15 @@ export default function HeroSection() {
           priority
           quality={95}
           sizes="100vw"
-          className="object-cover object-[68%_center] md:object-[72%_center] lg:object-[76%_center] motion-safe:animate-[heroReveal_1.6s_cubic-bezier(0.22,1,0.36,1)_both]"
+          className="object-cover object-[82%_center] md:object-[85%_center] lg:object-[88%_center] motion-safe:animate-[heroReveal_1.6s_cubic-bezier(0.22,1,0.36,1)_both]"
         />
 
-        {/* Left-to-right ink veil for legibility */}
+        {/* Left-to-right ink veil for legibility (covers baked-in branding) */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, rgba(6,7,9,0.94) 0%, rgba(6,7,9,0.78) 22%, rgba(6,7,9,0.42) 46%, rgba(6,7,9,0.06) 68%, rgba(6,7,9,0) 100%)',
+              'linear-gradient(90deg, rgba(6,7,9,1) 0%, rgba(6,7,9,0.98) 38%, rgba(6,7,9,0.78) 55%, rgba(6,7,9,0.28) 76%, rgba(6,7,9,0) 100%)',
           }}
         />
         {/* Top and bottom vignettes */}
