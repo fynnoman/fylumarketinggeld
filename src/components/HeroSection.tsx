@@ -56,7 +56,7 @@ export default function HeroSection() {
       {/* Photo layer */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <Image
-          src="/herob.png"
+          src="/hero-fylu.png"
           alt=""
           fill
           priority
