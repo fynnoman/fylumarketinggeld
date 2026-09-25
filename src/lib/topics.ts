@@ -128,7 +128,7 @@ export const topics: Topic[] = [
     faqs: [
       {
         q: "Was kostet eine Restaurant-Website?",
-        a: "Wir kalkulieren das Paket nach gewünschten Funktionen (Speisekarte, Galerie, Online-Reservierung, Eventseiten). Konditionen auf Anfrage.",
+        a: "Wir kalkulieren individuell nach gewünschten Funktionen (Speisekarte, Galerie, Online-Reservierung, Eventseiten). Konditionen auf Anfrage.",
       },
       {
         q: "Kann ich die Speisekarte selbst aktualisieren?",
@@ -202,15 +202,15 @@ export const topics: Topic[] = [
     sections: [
       {
         title: "Transparente Konditionen ohne Überraschungen",
-        text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind im Paket enthalten. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
+        text: "Sie wissen vor dem Start exakt, was Sie bekommen und was es kostet. Hosting, SEO-Basis und Google Business sind immer inklusive. Keine versteckten Folgekosten, keine Stundensatz-Lotterie.",
       },
       {
         title: "Direkter Draht statt Agentur-Overhead",
         text: "Sie arbeiten direkt mit dem Team, das Ihre Website auch konzipiert, gestaltet und baut. Strategie, Design und Entwicklung aus einer Hand. Kurze Wege, schnelle Entscheidungen, faire Konditionen.",
       },
       {
-        title: "Volle Substanz im günstigsten Paket",
-        text: "Mobile-first Design, technisches SEO, Sicherheit, hohe Core-Web-Vitals-Werte und sauberer Code sind in jedem Paket Standard. Effizient kalkuliert heißt bei uns: nichts weggelassen, sondern klug priorisiert.",
+        title: "Volle Substanz von Anfang an",
+        text: "Mobile-first Design, technisches SEO, Sicherheit, hohe Core-Web-Vitals-Werte und sauberer Code sind bei jeder Website Standard. Effizient kalkuliert heißt bei uns: nichts weggelassen, sondern klug priorisiert.",
       },
     ],
     faqs: [
@@ -224,7 +224,7 @@ export const topics: Topic[] = [
       },
       {
         q: "Was kostet die laufende Pflege?",
-        a: "Wahlweise pro Vorgang oder als Monatspaket, beides immer transparent vorab kalkuliert. Wir binden Sie nicht in Knebelverträge: monatlich kündbar, mit klarer Leistungsbeschreibung.",
+        a: "Wahlweise pro Vorgang oder als laufende Betreuung, beides immer transparent vorab kalkuliert. Wir binden Sie nicht in Knebelverträge: monatlich kündbar, mit klarer Leistungsbeschreibung.",
       },
     ],
   },

@@ -113,7 +113,7 @@ export const regions: Region[] = [
       "Webdesign für Neunkirchen und das östliche Saarland, moderne Websites, lokale SEO und Google Ads für Unternehmen, die online sichtbar werden wollen. Mit kostenlosem Entwurf in 24 Stunden.",
     paragraphs: [
       "Neunkirchen ist die zweitgrößte Stadt des Saarlandes und beheimatet eine starke Wirtschaft aus Handel, Handwerk, Industrie und Dienstleistung. Gerade hier entscheidet eine moderne Website darüber, ob neue Kunden Sie finden, oder bei der Konkurrenz landen.",
-      "Wir bauen Ihre Website von Grund auf für Neunkirchen, Spiesen-Elversberg, Schiffweiler und Illingen: lokal optimiert, technisch sauber, schnell und mobil-tauglich. Lokale SEO und Google Business Optimierung sind fester Bestandteil, nicht teures Zusatzpaket.",
+      "Wir bauen Ihre Website von Grund auf für Neunkirchen, Spiesen-Elversberg, Schiffweiler und Illingen: lokal optimiert, technisch sauber, schnell und mobil-tauglich. Lokale SEO und Google Business Optimierung sind fester Bestandteil, keine teure Zusatzleistung.",
       "Persönliche Betreuung, klare Konditionen und ein kostenloser Entwurf in 24 Stunden sorgen dafür, dass Sie genau wissen, was Sie bekommen, bevor Sie sich entscheiden.",
     ],
     nearbyCities: ["Spiesen-Elversberg", "Schiffweiler", "Illingen", "Ottweiler"],

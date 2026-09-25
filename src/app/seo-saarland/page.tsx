@@ -13,8 +13,8 @@ const faqs = [
     a: 'Erste Bewegungen in den Rankings sehen wir in der Regel nach vier bis acht Wochen. Signifikante Verschiebungen bis auf die erste Google-Seite brauchen drei bis sechs Monate. SEO ist Aufbauarbeit, keine Kampagne.',
   },
   {
-    q: 'Ist SEO Teil des Website-Pakets?',
-    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk: sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit (Keyword-Strategie, Content, Google Business, laufende Iteration) buchen Sie als Erweiterung dazu.',
+    q: 'Ist SEO Teil der Website-Entwicklung?',
+    a: 'Jede Fylu-Website enthält eine technische SEO-Foundation ab Werk: sauberer Code, Schema-Struktur, Ladezeit, mobile-first. Die inhaltliche SEO-Arbeit (Keyword-Strategie, Content, Google Business, laufende Iteration) klären wir zusätzlich individuell.',
   },
   {
     q: 'Was ist Local SEO?',

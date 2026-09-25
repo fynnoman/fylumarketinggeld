@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Was passiert nach dem Launch?',
-    a: 'Sie bekommen 30 Tage kostenlosen Bug-Fix-Support nach Live-Gang. Danach: optional Wartungspaket (Updates, Security-Patches, Store-Compliance) oder feature-basierte Weiterentwicklung. Beides transparent monatlich kündbar.',
+    a: 'Sie bekommen 30 Tage kostenlosen Bug-Fix-Support nach Live-Gang. Danach: optional laufende Wartung (Updates, Security-Patches, Store-Compliance) oder feature-basierte Weiterentwicklung. Beides transparent monatlich kündbar.',
   },
   {
     q: 'Gehört mir der App-Code?',

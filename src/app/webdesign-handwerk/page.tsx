@@ -143,7 +143,7 @@ export default function WebdesignHandwerkPage() {
 								href="/webdesign-saarland"
 								className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
 							>
-								<span>Pakete ansehen</span>
+								<span>Mehr erfahren</span>
 							</Link>
 						</div>
 					</FadeInSection>

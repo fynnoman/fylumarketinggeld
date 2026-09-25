@@ -17,7 +17,7 @@ const faqs = [
     a: 'Anzeigen laufen binnen 24 Stunden. Die erste Feinoptimierung dauert etwa zwei bis vier Wochen. In dieser Phase sammeln wir Daten und schärfen die Kampagne. Nach einem Monat stehen belastbare Zahlen und ein sortiertes Set-up.',
   },
   {
-    q: 'Ist Google Ads Teil des Website-Pakets?',
+    q: 'Ist Google Ads Teil der Website-Entwicklung?',
     a: 'Nein. Google Ads wird bewusst als Ergänzung angeboten. Jedes Unternehmen entscheidet, ob und wann bezahlte Reichweite Sinn ergibt. Häufig ergibt eine Kombination aus Website, Ads und SEO die stimmigste Wirkung.',
   },
   {

@@ -205,26 +205,16 @@ export default async function RegionPage({
             description: `Professionelles Webdesign für Unternehmen in ${region.city} und Umgebung. Moderne Websites, lokale SEO und Google Ads, transparente Konditionen.`,
             provider: { "@id": "https://www.fylumarketing.de/#organization" },
             areaServed: { "@type": "City", name: region.city },
-            offers: [
-              {
-                "@type": "Offer",
-                name: "Basismodell",
-                availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/buchen",
+            offers: {
+              "@type": "Offer",
+              availability: "https://schema.org/InStock",
+              url: "https://www.fylumarketing.de/buchen",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                priceCurrency: "EUR",
+                description: "Individuell kalkuliert nach Umfang und Anspruch. Kostenloses Vorgespräch.",
               },
-              {
-                "@type": "Offer",
-                name: "Business",
-                availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/buchen",
-              },
-              {
-                "@type": "Offer",
-                name: "Premium",
-                availability: "https://schema.org/InStock",
-                url: "https://www.fylumarketing.de/buchen",
-              },
-            ],
+            },
           }),
         }}
       />
@@ -392,52 +382,20 @@ export default async function RegionPage({
         </div>
       </section>
 
-      {/* Pakete */}
+      {/* CTA */}
       <section className="py-20 md:py-28 px-6 bg-stone-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">
-            Webdesign-Pakete für Unternehmen in {region.city}
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
+            Website für Ihr Unternehmen in {region.city}
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {[
-              {
-                name: "Basismodell",
-                price: 'Auf Anfrage',
-                pages: "Bis 3 Seiten",
-                desc: "Perfekt für den Start: mobiloptimiert, SEO-Basis und Kontaktformular.",
-              },
-              {
-                name: "Business",
-                price: 'Auf Anfrage',
-                pages: "Bis 6 Seiten",
-                desc: "Verkaufsoptimierte Struktur, lokale SEO und Google Business Einrichtung.",
-                highlight: true,
-              },
-              {
-                name: "Premium",
-                price: 'Auf Anfrage',
-                pages: "Unbegrenzt",
-                desc: "Premium-Design, Performance-Tuning und Conversion-Optimierung.",
-              },
-            ].map((pkg, i) => (
-              <div
-                key={i}
-                className={`p-6 rounded-xl border ${
-                  pkg.highlight ? "border-cyan-500 bg-cyan-50" : "border-stone-200 bg-white"
-                }`}
-              >
-                <h3 className="text-lg font-bold text-stone-900 mb-1">{pkg.name}</h3>
-                <p className="text-3xl font-extrabold text-cyan-600 mb-2">{pkg.price}</p>
-                <p className="text-sm text-stone-500 mb-3">{pkg.pages}</p>
-                <p className="text-stone-600 text-sm">{pkg.desc}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg text-stone-700 leading-relaxed mb-10 max-w-2xl">
+            Jedes Projekt wird individuell auf Ihr Unternehmen zugeschnitten. Umfang, Zielgruppe und Anforderungen klären wir persönlich im Vorgespräch.
+          </p>
           <Link
             href="/buchen"
             className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-200 active:scale-[0.98] inline-block"
           >
-            Alle Pakete ansehen
+            Termin buchen
           </Link>
         </div>
       </section>
