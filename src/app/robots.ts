@@ -10,19 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/admin/", "/buchen/success"],
       },
-      // Bing / Microsoft-Ecosystem explizit erlauben. Bing zieht das gleiche
-      // Allow-Signal auch aus der Wildcard, aber eine explizite Regel setzt
-      // ein staerkeres Crawl-Prioritaetssignal und laesst uns spaeter
-      // Bing-spezifische Direktiven ergaenzen.
-      { userAgent: "Bingbot", allow: "/", disallow: ["/api/", "/admin/", "/buchen/success"] },
-      { userAgent: "msnbot", allow: "/", disallow: ["/api/", "/admin/", "/buchen/success"] },
-      { userAgent: "msnbot-media", allow: "/" },
-      { userAgent: "BingPreview", allow: "/" },
-      { userAgent: "AdIdxBot", allow: "/" },
-      { userAgent: "Slurp", allow: "/", disallow: ["/api/", "/admin/", "/buchen/success"] },
-      { userAgent: "DuckDuckBot", allow: "/" },
-      { userAgent: "YandexBot", allow: "/" },
-      { userAgent: "Seznambot", allow: "/" },
       // AI Crawler explizit erlauben (GEO)
       { userAgent: "GPTBot", allow: "/" },
       { userAgent: "ChatGPT-User", allow: "/" },
