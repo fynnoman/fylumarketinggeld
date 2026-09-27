@@ -74,6 +74,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    // Top-Level-Direktiven fuer <meta name="robots">. Bing/msnbot lesen die
+    // googleBot-Direktiven nicht, deshalb wiederholen wir die Snippet- und
+    // Preview-Rechte hier generisch. Sonst bekommt Bing nur die Default-
+    // Snippet-Laenge und kleine Image-Previews.
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
     googleBot: {
       index: true,
       follow: true,
@@ -84,6 +91,24 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "Ear6kvwbpWM5FoLN6Qfwk5GWOlsTSkpyscKuDedLIcU",
+    ...(process.env.NEXT_PUBLIC_YANDEX_VERIFICATION
+      ? { yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION }
+      : {}),
+    // Bing Webmaster Tools Meta-Verifikation. Token gespiegelt aus
+    // public/BingSiteAuth.xml (Account-Level-Token, verifiziert alle Domains
+    // im selben Bing-WMT-Account). Env-Var kann bei Bedarf uebersteuern.
+    other: {
+      "msvalidate.01":
+        process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ||
+        "19D02976D22C242365B929606C191E0A",
+    },
+  },
+  other: {
+    // IndexNow Key an public/a7f3e2d1c9b8a6f5e4d3c2b1a9e8d7c6.txt gebunden.
+    // Bing + Yandex nutzen diesen Key als Ownership-Proof, um POST-Requests
+    // an https://api.indexnow.org zu akzeptieren und URLs sofort neu zu crawlen.
+    "indexnow": "a7f3e2d1c9b8a6f5e4d3c2b1a9e8d7c6",
+    "content-language": "de-DE",
   },
   category: "Webdesign & Online-Marketing Agentur",
   icons: {
