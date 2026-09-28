@@ -26,10 +26,11 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
+    default: "Website erstellen lassen · Webdesign & SEO Agentur Saarland | Fylu Marketing",
     template: "%s | Fylu Marketing",
   },
-  description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase, vom ersten Auftritt bis zur Skalierung.",
+  description:
+    "Fylu Marketing aus Saarlouis: Website erstellen lassen, Webdesign, SEO Agentur, Google Ads und Softwareentwicklung. Für Unternehmen jeder Phase im Saarland und deutschlandweit.",
   authors: [{ name: "Fynn Schulz", url: "https://www.fylumarketing.de" }],
   creator: "Fylu Marketing Saarlouis",
   publisher: "Fylu Marketing",
@@ -38,8 +39,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
-    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase, von der ersten Präsenz bis zur Skalierung.",
+    title: "Website erstellen lassen · Webdesign & SEO Agentur Saarland | Fylu Marketing",
+    description:
+      "Website erstellen lassen, Webdesign, SEO Agentur, Google Ads und Software aus Saarlouis. Für Unternehmen jeder Phase, von der ersten Präsenz bis zur Skalierung.",
     url: "https://www.fylumarketing.de",
     siteName: "Fylu Marketing",
     locale: "de_DE",
@@ -55,20 +57,35 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webdesign & SEO im Saarland | Fylu Marketing Saarlouis",
-    description: "Fylu Marketing aus Saarlouis. Website, SEO, Google Ads und Software für Unternehmen jeder Phase.",
+    title: "Website erstellen lassen · Webdesign & SEO Agentur Saarland | Fylu Marketing",
+    description:
+      "Website erstellen lassen, Webdesign, SEO Agentur, Google Ads und Software aus Saarlouis. Für Unternehmen jeder Phase.",
     images: ["/herob.png"],
   },
   keywords: [
+    "Website erstellen lassen",
+    "Homepage erstellen lassen",
+    "Webseite erstellen lassen",
+    "Webdesign",
+    "Webdesign Agentur",
+    "SEO Agentur",
+    "SEO Agentur Saarland",
     "Webdesign Saarland",
-    "Webdesigner Saarlouis",
-    "SEO Saarland",
-    "Google Ads Saarland",
-    "Website erstellen lassen Saarland",
+    "Webdesigner Saarland",
+    "Webdesign Saarlouis",
     "Webdesign Saarbrücken",
     "Webdesign Merzig",
     "Webdesign Dillingen",
     "Webdesign Handwerk",
+    "Google Ads Agentur",
+    "Google Ads Saarland",
+    "Website Relaunch",
+    "Landingpage erstellen lassen",
+    "Logo erstellen lassen",
+    "Branding Agentur",
+    "Local SEO",
+    "Softwareentwicklung Saarland",
+    "Programmierer Saarland",
     "Fylu Marketing",
   ],
   robots: {
