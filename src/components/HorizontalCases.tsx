@@ -291,29 +291,6 @@ function CaseCard({ data, index }: { data: Case; index: number }) {
 
   const inner = (
     <>
-      {/* Top strip: Browser-Chrome für Website-Screenshots, Meta-Label für Foto-Shoots */}
-      <div className="relative flex items-center gap-2 px-4 py-3 bg-[var(--ink)]/95 border-b border-white/5">
-        {isPhoto ? (
-          <>
-            <span className="text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 uppercase">
-              Fotoproduktion
-            </span>
-            <span className="ml-auto text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
-              {data.urlLabel}
-            </span>
-          </>
-        ) : (
-          <>
-            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-            <span className="ml-3 text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
-              {data.urlLabel}
-            </span>
-          </>
-        )}
-      </div>
-
       {/* Bildfläche */}
       <div
         className={`relative overflow-hidden ${
