@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { WHATSAPP_URL } from '@/lib/contact';
 import { trackEvent } from '@/lib/track';
@@ -31,7 +31,7 @@ function WordReveal({
           <motion.span
             initial={{ y: '105%', opacity: 0 }}
             animate={{ y: '0%', opacity: 1 }}
-            transition={{ duration: 0.65, delay: delay + i * 0.06, ease }}
+            transition={{ duration: 0.5, delay: delay + i * 0.04, ease }}
             className={`inline-block ${
               italic ? 'font-display italic font-normal' : ''
             } ${accent ? 'text-[color:var(--accent)]' : ''}`}
@@ -46,8 +46,6 @@ function WordReveal({
 }
 
 export default function HeroSection() {
-  const reduceMotion = useReducedMotion();
-
   return (
     <section
       aria-label="Fylu Cover"
@@ -56,9 +54,9 @@ export default function HeroSection() {
       {/* Photo layer */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 1.04 }}
+          initial={{ opacity: 0, scale: 1.03 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, ease }}
+          transition={{ duration: 0.6, ease }}
           className="absolute inset-0"
         >
           <Image
@@ -66,7 +64,8 @@ export default function HeroSection() {
             alt=""
             fill
             priority
-            quality={95}
+            fetchPriority="high"
+            quality={75}
             sizes="100vw"
             className="object-cover object-[82%_center] md:object-[85%_center] lg:object-[88%_center]"
           />
@@ -99,7 +98,7 @@ export default function HeroSection() {
         aria-hidden
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.15 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
         className="pointer-events-none absolute inset-4 md:inset-8 border border-white/[0.09]"
       />
 
@@ -108,7 +107,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: -6 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.2, ease }}
+          transition={{ duration: 0.45, delay: 0.15, ease }}
           className="hidden sm:flex items-center gap-4 text-[10px] font-medium tracking-[0.34em] uppercase text-stone-300/70"
         >
           <span>Cover</span>
@@ -125,19 +124,19 @@ export default function HeroSection() {
         <h1 className="font-semibold tracking-[-0.045em] leading-[0.9] text-white">
           <WordReveal
             words={headlineLine1}
-            delay={0.15}
+            delay={0.08}
             size="text-[10.5vw] sm:text-[8.2vw] md:text-[6.6vw] lg:text-[5.6vw] xl:text-[5rem]"
           />
           <WordReveal
             words={headlineLine2}
-            delay={0.3}
+            delay={0.18}
             italic
             accent
             size="text-[12vw] sm:text-[9.4vw] md:text-[7.6vw] lg:text-[6.4vw] xl:text-[5.75rem]"
           />
           <WordReveal
             words={headlineLine3}
-            delay={0.45}
+            delay={0.28}
             size="text-[10.5vw] sm:text-[8.2vw] md:text-[6.6vw] lg:text-[5.6vw] xl:text-[5rem]"
           />
         </h1>
@@ -145,7 +144,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7, ease }}
+          transition={{ duration: 0.5, delay: 0.42, ease }}
           className="mt-9 md:mt-11 max-w-xl"
         >
           <p data-speakable className="text-sm md:text-base text-stone-200/90 leading-relaxed">
@@ -158,7 +157,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.85, ease }}
+          transition={{ duration: 0.45, delay: 0.52, ease }}
           className="mt-8 md:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
         >
           <a
@@ -218,7 +217,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.55, delay: 1.0 }}
+          transition={{ duration: 0.45, delay: 0.65 }}
           className="hidden sm:flex mt-10 md:mt-14 items-center gap-4 text-[10px] font-medium tracking-[0.34em] uppercase text-stone-400/80"
         >
           <span>Marke</span>
@@ -233,7 +232,7 @@ export default function HeroSection() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.55, delay: 0.9 }}
+        transition={{ duration: 0.45, delay: 0.55 }}
         className="hidden md:flex absolute right-14 bottom-16 z-10 flex-col items-end gap-1.5 text-right"
       >
         <span className="text-[10px] font-medium tracking-[0.34em] uppercase text-stone-300/70">
@@ -244,28 +243,6 @@ export default function HeroSection() {
         </span>
       </motion.div>
 
-      {/* Scroll cue */}
-      {!reduceMotion && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.5 }}
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2"
-        >
-          <span className="text-[9px] tracking-[0.5em] uppercase text-stone-400/70">
-            Scroll
-          </span>
-          <div className="relative w-px h-10 overflow-hidden">
-            <span className="absolute inset-0 bg-white/10" />
-            <motion.span
-              initial={{ y: '-100%' }}
-              animate={{ y: '100%' }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute inset-x-0 h-1/2 bg-gradient-to-b from-transparent via-cyan-300 to-transparent"
-            />
-          </div>
-        </motion.div>
-      )}
     </section>
   );
 }
@@ -283,7 +260,7 @@ function CornerTicks() {
           key={i}
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.45, delay: 0.25 + i * 0.04, ease }}
+          transition={{ duration: 0.35, delay: 0.18 + i * 0.03, ease }}
           className={`absolute w-4 h-4 md:w-5 md:h-5 text-white/40 ${pos}`}
           viewBox="0 0 20 20"
           fill="none"
