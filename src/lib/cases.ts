@@ -51,80 +51,90 @@ export type CaseStudy = {
 
 export const cases: CaseStudy[] = [
   {
-    slug: "mg-gebaeudeservice",
+    slug: "milana-kollmann",
     metaTitle:
-      "MG Gebäudeservice · Marken- und Website-Aufbau im Facility-Markt | Fylu Marketing",
+      "Milana Kollmann · Markenaufbau von der Gründung bis zur Website | Fylu Marketing",
     metaDescription:
-      "Wie MG Gebäudeservice mit einem digital-nativen Auftritt neben etablierten Anbietern in Köln und Düsseldorf nicht mehr klein wirkt. Referenz von Fylu Marketing.",
-    h1: "MG Gebäudeservice: digital-nativer Auftritt in einem konservativen Markt.",
-    eyebrow: "Gebäudeservice · Köln und Düsseldorf",
-    clientName: "MG Gebäudeservice",
-    clientIndustry: "Gebäudeservice und Reinigung",
-    clientCity: "Köln und Düsseldorf",
-    clientUrl: "https://mg-gebaeudeservice.de",
-    publishedAt: "2026-09-21",
-    updatedAt: "2026-09-21",
-    services: ["Markenaufbau", "Website", "Digitale Infrastruktur", "SEO"],
+      "Wie Fylu Marketing die Gründung von Milana Kollmann (Zahnärztliche Abrechnung, Saarlouis) von Name und Logo über Website bis zur Fotoproduktion begleitet hat.",
+    h1: "Milana Kollmann: von der Gründung bis zur eigenen Marke.",
+    eyebrow: "Zahnärztliche Abrechnung · Saarlouis",
+    clientName: "Milana Kollmann",
+    clientIndustry: "Zahnärztliche Abrechnung",
+    clientCity: "Saarlouis",
+    clientUrl: "https://milana-six.vercel.app/",
+    publishedAt: "2026-10-09",
+    updatedAt: "2026-10-09",
+    services: [
+      "Markenaufbau",
+      "Name & Logo",
+      "Website",
+      "Google Unternehmensprofil",
+      "SEO & GEO",
+      "Fotoproduktion",
+    ],
     hero: {
       lead:
-        "Für die Skalierung auf über 260 Fachkräfte brauchte MG einen Auftritt, der Zertifizierungen sichtbar trägt und neben etablierten Anbietern nicht klein wirkt.",
+        "Milana wollte sich eigenständig als Expertin für zahnärztliche Abrechnung aufstellen. Fylu Marketing hat die Gründung von Name und Logo über Website und Google Unternehmensprofil bis zur eigenen Fotoproduktion begleitet.",
     },
     situation:
-      "MG Gebäudeservice betreut mit einem wachsenden Team gewerbliche Kunden in Köln und Düsseldorf. Die vorhandene Präsenz spiegelte das operative Niveau nicht wider und wirkte im direkten Vergleich zu größeren Wettbewerbern unterinvestiert.",
+      "Milana Kollmann wollte in Saarlouis eine eigene Firma für zahnärztliche Abrechnung gründen. Zum Startzeitpunkt gab es noch keinen Namen, kein Logo, keine Website und keine sichtbare Außenwirkung. Die fachliche Grundlage war da, die Marke dazu aber noch nicht.",
     problem:
-      "Im konservativen Facility-Markt zählen Zertifizierungen (ISO 9001, ISO 14001, RAL GZ 902) und institutionelles Auftreten. Wenn Ausschreibungen und Direktkontakte über die Website landen, entscheidet der erste Eindruck in Sekunden. Ein technisch veralteter Auftritt kostet nicht nur Anfragen, sondern auch die Wahrnehmung als seriöser Anbieter.",
+      "Zahnarztpraxen vergeben Abrechnung an externe Dienstleister nach Vertrauen, Präzision und Erreichbarkeit. Ohne klaren Markenauftritt, ohne auffindbare Online-Präsenz und ohne konsistente Außenwirkung hat eine Neugründung in diesem Umfeld sofort einen Startnachteil gegenüber eingeführten Anbietern. Jede Komponente, Name, Logo, Website, Google Unternehmensprofil, Bildwelt, muss von Beginn an zusammengehen.",
     strategy:
-      "Fylu Marketing hat MG als eigenständige Marke behandelt, nicht als weitere Reinigungsfirma. Die Marken-Architektur wurde so ausgelegt, dass Zertifizierungen und Referenzen tragende Elemente werden, nicht Fußnoten. Website und digitale Werkzeuge wurden auf demselben Fundament gebaut, damit interne Prozesse und externer Auftritt sichtbar zusammengehören.",
+      "Fylu Marketing hat die Gründung als Gesamtprojekt behandelt und nicht in Einzelbausteine zerlegt. Name, Logo, Website, Google Unternehmensprofil, SEO und GEO sowie eine eigene Fotoproduktion mit Fotografen wurden auf dasselbe Markenfundament gestellt. Milana wurde durchgängig in jede Entscheidung einbezogen und hat zu jedem Schritt eine kuratierte Auswahl bekommen, nie eine fertige Vorgabe. So entstand eine Marke, die am Ende nicht von außen draufgesetzt wirkt, sondern tatsächlich ihre eigene ist.",
     implementation: [
       {
-        title: "Marken-Architektur",
-        text: "Klare Hierarchie zwischen Leistungsbereichen, Zertifizierungen und Referenzen. Institutioneller Ton in Sprache und Bildwelt, damit Ausschreibungen und Bestandskunden dieselbe Marke lesen.",
+        title: "Markenbasis",
+        text: "Erarbeitung von Name, Logo und visueller Identität. Jede Richtung wurde in mehreren Varianten vorgelegt, damit Milana die Entscheidung tragen kann und die Marke von Anfang an mitträgt.",
       },
       {
         title: "Website",
-        text: "Neu aufgebauter Auftritt mit modernem Stack (Next.js, React, TypeScript). Zertifizierungen, Leistungsbereiche und Referenzen sind zentrale Bausteine der Struktur. Mobile-first, mit sauberer Technik-Foundation für die Zukunft.",
+        text: "Eigenständige Website mit klarer Leistungsstruktur, ruhigem Ton und sauberer technischer Foundation. Die Inhalte adressieren Zahnarztpraxen als Zielgruppe, nicht die breite Masse.",
       },
       {
-        title: "Digitale Werkzeuge",
-        text: "Verzahnung mit internen Prozessen, damit die Website nicht isoliert steht, sondern Teil des operativen Betriebs wird.",
+        title: "Google Unternehmensprofil, SEO und GEO",
+        text: "Aufbau des Google Unternehmensprofils, strukturierte Daten, lokale Signale für Saarlouis sowie GEO-Vorbereitung für die neuen KI-gestützten Such- und Antwortsysteme.",
       },
       {
-        title: "Lokale Sichtbarkeit",
-        text: "Aufbau lokaler Signale für Köln und Düsseldorf, strukturierte Daten, konsistente Angaben über die relevanten Kanäle.",
+        title: "Fotoproduktion",
+        text: "Eigenes Shooting mit Fotografen, abgestimmt auf Marke, Website und Außenauftritt. Bildsprache, Website und Social-Kanäle lesen sich dadurch als eine Einheit.",
+      },
+      {
+        title: "Begleitung und Mitgestaltung",
+        text: "Durchgängige Einbindung über alle Entscheidungen hinweg, jeweils mit Auswahlvarianten. Die Gründerin bleibt die inhaltliche Instanz, Fylu Marketing liefert Rahmen, Varianten und Umsetzung.",
       },
     ],
     outcome: [
       {
-        title: "Wahrnehmung",
-        text: "MG wird im direkten Vergleich zu deutlich größeren Anbietern innerhalb der beiden Kernstädte inzwischen prominenter wahrgenommen. Der Auftritt trägt die operative Realität eines Betriebs mit über 260 Fachkräften.",
+        title: "Markenauftritt",
+        text: "Milana geht als sichtbare, eigenständige Marke an den Markt. Name, Logo, Website, Google Unternehmensprofil und Fotowelt wirken als ein Auftritt, nicht als Sammlung einzelner Bausteine.",
       },
       {
-        title: "Anfragequalität",
-        text: "Anfragen kommen mit klarerem Rahmen, weil die Website Leistungsbereiche und Zertifizierungen vorab beantwortet. Weniger Vorlauf im Vertrieb, sauberere Erstkontakte.",
+        title: "Identifikation",
+        text: "Weil jede Entscheidung gemeinsam getroffen wurde, fühlt sich die Marke für die Gründerin als eigene an. Das trägt in der Kundenkommunikation, im Vertrieb und im weiteren Ausbau.",
       },
     ],
     learnings: [
-      "In konservativen Märkten trägt ein moderner Auftritt am meisten, wenn er institutionell wirkt, nicht auffällig.",
-      "Zertifizierungen als tragende Bausteine der Struktur zu platzieren ändert die Wahrnehmung stärker als jede zusätzliche Landingpage.",
-      "Wenn Website und Werkzeuge aus einem Fundament kommen, wird die Marke im Alltag konsistent, ohne dass es zusätzliche Prozesse braucht.",
+      "Bei Neugründungen zahlt sich eine integrierte Begleitung mehr aus als die Vergabe einzelner Gewerke an unterschiedliche Anbieter.",
+      "Auswahlvarianten statt fertiger Vorgaben erhöhen die Identifikation der Gründerin mit der eigenen Marke erheblich.",
+      "Auch spezialisierte B2B-Nischen profitieren von einer durchdachten Außenwirkung, Vertrauen entsteht nicht erst im Gespräch, sondern bereits im ersten digitalen Eindruck.",
     ],
     screenshots: [
       {
-        src: "/mg-geb%C3%A4ude.png",
-        alt: "MG Gebäudeservice Startseite · Fylu Marketing Referenz",
+        src: "/milana.jpeg",
+        alt: "Milana Kollmann mit dem Fylu Marketing Team · Fylu Marketing Referenz",
       },
     ],
-    relatedIndustry: "gebaeudereinigung",
     serviceLinks: [
       {
         label: "Branding-Agentur Saarland",
         href: "/branding-agentur-saarland",
-        reason: "Positionierung, Identität und Anwendung bei einem Ansprechpartner.",
+        reason: "Positionierung, Name, Logo und visuelle Identität bei einem Ansprechpartner.",
       },
       {
-        label: "SEO Saarland",
-        href: "/seo-saarland",
-        reason: "Technische Foundation, Content und laufende Betreuung.",
+        label: "Local SEO Saarland",
+        href: "/local-seo-saarland",
+        reason: "Google Unternehmensprofil, lokale Signale und laufende Betreuung.",
       },
     ],
   },

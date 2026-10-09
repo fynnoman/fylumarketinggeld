@@ -24,18 +24,18 @@ type Case = {
 
 const cases: Case[] = [
   {
-    client: 'MG Gebäudeservice',
-    owner: 'Gianluca Stira',
-    image: '/mg-geb%C3%A4ude.png',
-    industry: 'Gebäudeservice',
-    location: 'Köln & Düsseldorf',
-    title: 'Digital-nativer Auftritt im konservativen Facility-Markt.',
+    client: 'Milana Kollmann',
+    owner: 'Milana Kollmann',
+    image: '/milana.jpeg',
+    industry: 'Zahnärztliche Abrechnung',
+    location: 'Saarlouis',
+    title: 'Von der Idee zur eigenen Marke in der zahnärztlichen Abrechnung.',
     story:
-      'Für die Skalierung auf über 260 Fachkräfte brauchte MG einen Auftritt, der Zertifizierungen (ISO 9001, ISO 14001, RAL GZ 902) sichtbar trägt und neben etablierten Anbietern nicht klein wirkt. Ergebnis: Top-3-Wahrnehmung in Köln & Düsseldorf innerhalb von zwölf Monaten.',
-    services: ['Website', 'Marken-Architektur', 'Digitale Tools'],
-    url: 'https://mg-gebaeudeservice.de',
-    urlLabel: 'mg-gebaeudeservice.de',
-    caseSlug: 'mg-gebaeudeservice',
+      'Milana wollte sich eigenständig als Expertin für zahnärztliche Abrechnung aufstellen. Fylu Marketing hat die Gründung von vorne bis hinten begleitet: Name, Logo, Website, Google Unternehmensprofil, SEO und GEO sowie eine eigene Fotoproduktion mit Fotografen. Bei jeder Entscheidung bekam Milana eine kuratierte Auswahl, so dass die Marke gemeinsam entstanden ist und wirklich ihre eigene ist.',
+    services: ['Markenaufbau', 'Website', 'SEO & GEO', 'Fotoproduktion'],
+    url: 'https://milana-six.vercel.app/',
+    urlLabel: 'milana-six.vercel.app',
+    caseSlug: 'milana-kollmann',
   },
   {
     client: 'Galabau Eifler',
