@@ -19,7 +19,9 @@ type Case = {
   url: string;
   urlLabel: string;
   facebookUrl?: string;
+  photographer?: { handle: string; instagramUrl: string };
   caseSlug?: string; // slug in /referenzen/[slug]; wenn gesetzt, wird intern verlinkt
+  imageMode?: 'screenshot' | 'photo'; // 'photo' = Portrait-Shoot, nutzt 3:4 Rahmen statt 16:9 Browser-Screenshot
 };
 
 const cases: Case[] = [
@@ -35,7 +37,12 @@ const cases: Case[] = [
     services: ['Markenaufbau', 'Website', 'SEO & GEO', 'Fotoproduktion'],
     url: 'https://milana-six.vercel.app/',
     urlLabel: 'milana-six.vercel.app',
+    photographer: {
+      handle: '@manumr.photo',
+      instagramUrl: 'https://www.instagram.com/manumr.photo/',
+    },
     caseSlug: 'milana-kollmann',
+    imageMode: 'photo',
   },
   {
     client: 'Galabau Eifler',
@@ -245,6 +252,31 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
           )}
+
+          {data.photographer && (
+            <a
+              href={data.photographer.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-3 inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-[var(--cyan-deep)] transition-colors"
+              aria-label={`Fotograf ${data.photographer.handle} auf Instagram öffnen`}
+            >
+              <span className="font-display italic text-stone-500">Fotos von</span>
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.75}
+                viewBox="0 0 24 24"
+                aria-hidden
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              <span>{data.photographer.handle}</span>
+            </a>
+          )}
         </div>
       </div>
     </motion.article>
@@ -252,26 +284,50 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
 }
 
 function CaseCard({ data, index }: { data: Case; index: number }) {
+  const isPhoto = data.imageMode === 'photo';
+  const altText = isPhoto
+    ? `${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`
+    : `Website ${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`;
+
   const inner = (
     <>
-      {/* Browser chrome, subtle */}
+      {/* Top strip: Browser-Chrome für Website-Screenshots, Meta-Label für Foto-Shoots */}
       <div className="relative flex items-center gap-2 px-4 py-3 bg-[var(--ink)]/95 border-b border-white/5">
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="ml-3 text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
-          {data.urlLabel}
-        </span>
+        {isPhoto ? (
+          <>
+            <span className="text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 uppercase">
+              Fotoproduktion
+            </span>
+            <span className="ml-auto text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
+              {data.urlLabel}
+            </span>
+          </>
+        ) : (
+          <>
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+            <span className="ml-3 text-[10px] md:text-[11px] font-mono tracking-[0.14em] text-stone-500 truncate">
+              {data.urlLabel}
+            </span>
+          </>
+        )}
       </div>
 
-      {/* Screenshot */}
-      <div className="relative aspect-[16/9] bg-white overflow-hidden">
+      {/* Bildfläche */}
+      <div
+        className={`relative overflow-hidden ${
+          isPhoto ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[16/9] bg-white'
+        }`}
+      >
         <Image
           src={data.image}
-          alt={`Website ${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`}
+          alt={altText}
           fill
           sizes="(max-width: 1024px) 100vw, 900px"
-          className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
+          className={`transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] ${
+            isPhoto ? 'object-cover object-center' : 'object-cover object-top'
+          }`}
           priority={index < 2}
         />
         {/* Hover veil */}

@@ -271,13 +271,13 @@ export default async function CaseStudyPage({
               <div className="grid gap-6 md:grid-cols-2">
                 {c.screenshots.map((s) => (
                   <figure key={s.src} className="rounded-2xl overflow-hidden border border-stone-200/60 bg-white">
-                    <div className="relative aspect-[4/3] bg-stone-100">
+                    <div className={`relative ${s.portrait ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[4/3] bg-stone-100'}`}>
                       <Image
                         src={s.src}
                         alt={s.alt}
                         fill
                         sizes="(min-width: 768px) 400px, 100vw"
-                        className="object-cover"
+                        className={s.portrait ? 'object-cover object-center' : 'object-cover'}
                       />
                     </div>
                     {s.caption && (
@@ -288,6 +288,32 @@ export default async function CaseStudyPage({
                   </figure>
                 ))}
               </div>
+              {c.photographer && (
+                <div className="mt-6 flex justify-center">
+                  <a
+                    href={c.photographer.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-[var(--cyan-deep)] transition-colors"
+                    aria-label={`Fotograf ${c.photographer.handle} auf Instagram öffnen`}
+                  >
+                    <span className="font-display italic text-stone-500">Fotos von</span>
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={1.75}
+                      viewBox="0 0 24 24"
+                      aria-hidden
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                    <span>{c.photographer.handle}</span>
+                  </a>
+                </div>
+              )}
             </div>
           </section>
         )}

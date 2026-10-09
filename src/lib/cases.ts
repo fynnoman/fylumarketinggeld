@@ -14,6 +14,7 @@ export type CaseScreenshot = {
   src: string; // Pfad unter /public
   alt: string;
   caption?: string;
+  portrait?: boolean; // true = Portrait-Foto (3:4 Rahmen), sonst Screenshot (4:3)
 };
 
 export type CaseSection = {
@@ -45,6 +46,7 @@ export type CaseStudy = {
   outcome: CaseSection[]; // Ergebnisse, nur real und qualitativ, sofern keine Zahlen freigegeben
   learnings: string[]; // Erkenntnisse für den Leser
   screenshots?: CaseScreenshot[];
+  photographer?: { handle: string; instagramUrl: string }; // Fotograf-Credit für Shoot-Bilder
   relatedIndustry?: string; // Slug einer topics.ts-Branche (für Cross-Linking)
   serviceLinks?: { label: string; href: string; reason: string }[]; // passende Folgeleistungen
 };
@@ -123,8 +125,13 @@ export const cases: CaseStudy[] = [
       {
         src: "/milana.jpeg",
         alt: "Milana Kollmann mit dem Fylu Marketing Team · Fylu Marketing Referenz",
+        portrait: true,
       },
     ],
+    photographer: {
+      handle: "@manumr.photo",
+      instagramUrl: "https://www.instagram.com/manumr.photo/",
+    },
     serviceLinks: [
       {
         label: "Branding-Agentur Saarland",
