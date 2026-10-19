@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { topics, getTopicBySlug, isIndexableTopic } from "@/lib/topics";
-import { getCasesByIndustry } from "@/lib/cases";
 
 const SITE = "https://www.fylumarketing.de";
 
@@ -66,7 +65,6 @@ export default async function TopicPage({
 
   const url = `${SITE}/leistungen/${topic.slug}`;
   const relatedTopics = getRelatedTopics(topic.slug);
-  const industryCases = getCasesByIndustry(topic.slug);
 
   return (
     <main>
@@ -317,45 +315,6 @@ export default async function TopicPage({
       )}
 
       {/* Referenzen zu dieser Branche, nur wenn kuratierte Cases existieren */}
-      {industryCases.length > 0 && (
-        <section className="py-16 md:py-20 px-6 bg-white border-t border-stone-200">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-10 text-center">
-              <div className="mb-4 flex items-baseline justify-center gap-3">
-                <span className="font-display italic text-cyan-600 text-xl leading-none">§</span>
-                <span className="text-[11px] uppercase tracking-[0.32em] text-stone-500 font-medium">
-                  Referenzen aus der Branche
-                </span>
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-stone-900 tracking-[-0.02em]">
-                Umgesetzte Fylu-Projekte für vergleichbare Häuser
-              </h2>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {industryCases.map((cs) => (
-                <Link
-                  key={cs.slug}
-                  href={`/referenzen/${cs.slug}`}
-                  className="group relative rounded-2xl border border-stone-200 bg-white p-5 hover:border-cyan-300 transition-colors"
-                >
-                  <div className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-2">
-                    {cs.eyebrow}
-                  </div>
-                  <h3 className="text-lg font-semibold text-stone-900 mb-2 leading-tight">
-                    {cs.h1}
-                  </h3>
-                  <p className="text-sm text-stone-600 leading-relaxed mb-3">{cs.hero.lead}</p>
-                  <span className="inline-flex items-center gap-1 text-[13px] font-semibold text-cyan-700">
-                    Zum Case
-                    <span className="transition-transform group-hover:translate-x-0.5">→</span>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Cross-Linking: weitere Branchen-Leistungen */}
       <section className="py-16 px-6 bg-stone-100 border-t border-stone-200">
         <div className="max-w-5xl mx-auto">

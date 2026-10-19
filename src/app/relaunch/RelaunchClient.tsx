@@ -53,7 +53,7 @@ const cases = [
       'Die vorhandene Präsenz spiegelte das operative Niveau nicht wider und wirkte im direkten Vergleich zu größeren Wettbewerbern unterinvestiert.',
     after:
       'Ein institutioneller Auftritt, der Zertifizierungen und Referenzen als tragende Elemente führt, nicht als Fußnoten.',
-    href: '/referenzen/mg-gebaeudeservice',
+    href: 'https://mg-gebaeudeservice.de',
   },
   {
     name: 'PB Fahrzeugpflege',
@@ -64,7 +64,7 @@ const cases = [
       'Seit 1997 auf Premium-Fahrzeugaufbereitung spezialisiert. Der alte Auftritt hat davon nichts erzählt.',
     after:
       'Ein ruhiger, hochwertiger Auftritt, der die tatsächliche Reputation und die Bewertungslage sichtbar macht.',
-    href: '/referenzen/pb-fahrzeugpflege',
+    href: 'https://pb-fahrzeugpflege.de',
   },
   {
     name: 'Galabau Eifler',
@@ -75,7 +75,7 @@ const cases = [
       'Bild-getriebenes Geschäft ohne saubere Projekt-Galerie. Anfragen kamen ohne Rahmen und ohne Budget-Bezug.',
     after:
       'Zurückhaltende Typografie, geordnete Referenz-Strecke, deutlich sortiertere Anfragen.',
-    href: '/referenzen/galabau-eifler',
+    href: 'https://galabau-eifler.de',
   },
 ];
 
@@ -563,16 +563,18 @@ export default function RelaunchClient() {
                         </div>
                       </div>
 
-                      <Link
+                      <a
                         href={c.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mt-8 group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold text-[14px]"
                       >
                         <span className="relative">
-                          Case ansehen
+                          Website öffnen
                           <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
                         </span>
-                        <span className="transition-transform group-hover:translate-x-0.5">→</span>
-                      </Link>
+                        <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                      </a>
                     </div>
                   </div>
                 </FadeInSection>

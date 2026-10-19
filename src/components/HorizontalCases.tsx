@@ -2,7 +2,6 @@
 
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRef } from 'react';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -20,7 +19,6 @@ type Case = {
   urlLabel: string;
   facebookUrl?: string;
   photographer?: { handle: string; instagramUrl: string };
-  caseSlug?: string; // slug in /referenzen/[slug]; wenn gesetzt, wird intern verlinkt
   imageMode?: 'screenshot' | 'photo'; // 'photo' = Portrait-Shoot, nutzt 3:4 Rahmen statt 16:9 Browser-Screenshot
 };
 
@@ -41,7 +39,6 @@ const cases: Case[] = [
       handle: '@manumr.photo',
       instagramUrl: 'https://www.instagram.com/manumr.photo/',
     },
-    caseSlug: 'milana-kollmann',
     imageMode: 'photo',
   },
   {
@@ -56,7 +53,6 @@ const cases: Case[] = [
     services: ['Website', 'Design', 'Projekt-Präsentation'],
     url: 'https://galabau-eifler.de',
     urlLabel: 'galabau-eifler.de',
-    caseSlug: 'galabau-eifler',
     imageMode: 'photo',
   },
   {
@@ -72,7 +68,6 @@ const cases: Case[] = [
     url: 'https://pb-fahrzeugpflege.de',
     urlLabel: 'pb-fahrzeugpflege.de',
     facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
-    caseSlug: 'pb-fahrzeugpflege',
   },
 ];
 
@@ -219,26 +214,14 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
             <span className="text-sm text-stone-700">{data.location}</span>
           </div>
 
-          {data.caseSlug && (
-            <Link
-              href={`/referenzen/${data.caseSlug}`}
-              className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--ink)] hover:text-[var(--cyan-deep)] transition-colors"
-            >
-              <span className="border-b border-stone-300 group-hover:border-[var(--cyan-deep)] pb-0.5 transition-colors">
-                Zur Case Study
-              </span>
-              <span className="text-[var(--cyan-deep)] transition-transform group-hover:translate-x-1">→</span>
-            </Link>
-          )}
-
           <a
             href={data.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group ${data.caseSlug ? 'mt-3' : 'mt-7'} inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors`}
+            className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
           >
             <span>{data.urlLabel}</span>
-            <span className="transition-transform group-hover:translate-x-1">→</span>
+            <span className="transition-transform group-hover:translate-x-1">↗</span>
           </a>
 
           {data.facebookUrl && (
@@ -313,8 +296,8 @@ function CaseCard({ data, index }: { data: Case; index: number }) {
         {/* Hover pill */}
         <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-[var(--ink)] text-xs font-semibold tracking-[0.02em] shadow-lg">
-            {data.caseSlug ? 'Zur Case Study' : 'Website öffnen'}
-            <span className="text-[var(--cyan-deep)]">→</span>
+            Website öffnen
+            <span className="text-[var(--cyan-deep)]">↗</span>
           </span>
         </div>
       </div>
@@ -330,20 +313,6 @@ function CaseCard({ data, index }: { data: Case; index: number }) {
     viewport: { once: true, margin: '-100px' as const },
     transition: { duration: 1, delay: 0.1, ease },
   };
-
-  if (data.caseSlug) {
-    return (
-      <motion.div {...motionProps}>
-        <Link
-          href={`/referenzen/${data.caseSlug}`}
-          className={cardClassName}
-          aria-label={`${data.client} · Case Study ansehen`}
-        >
-          {inner}
-        </Link>
-      </motion.div>
-    );
-  }
 
   return (
     <motion.a

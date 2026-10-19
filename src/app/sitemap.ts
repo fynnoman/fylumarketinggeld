@@ -3,7 +3,6 @@ import { regions } from "@/lib/regions";
 import { topics, isIndexableTopic } from "@/lib/topics";
 import { problems } from "@/lib/problems";
 import { guides } from "@/lib/guides";
-import { cases } from "@/lib/cases";
 import { CATEGORIES as digitalIndexCategories } from "@/lib/digital-index";
 import { COMPANIES as digitalIndexCompanies } from "@/lib/digital-index-data";
 
@@ -103,13 +102,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const caseEntries: MetadataRoute.Sitemap = cases.map((c) => ({
-    url: `${baseUrl}/referenzen/${c.slug}`,
-    lastModified: new Date(c.updatedAt),
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
-
   const digitalIndexStaticEntries: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/digital-index`,
@@ -176,7 +168,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...topicEntries,
     ...problemEntries,
     ...guideEntries,
-    ...caseEntries,
     ...digitalIndexStaticEntries,
     ...digitalIndexCategoryEntries,
     ...digitalIndexCompanyEntries,
