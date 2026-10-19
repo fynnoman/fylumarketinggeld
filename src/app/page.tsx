@@ -3,7 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import LeistungenSection from '@/components/LeistungenSection';
 import HorizontalCases from '@/components/HorizontalCases';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import CalendlySection from '@/components/CalendlySection';
+import KontaktSection from '@/components/KontaktSection';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import { homeFaqs } from '@/lib/home-faqs';
@@ -107,7 +107,7 @@ export default function Home() {
       )}
       <Navbar />
       <HeroSection />
-      <CalendlySection />
+      <KontaktSection />
       <LeistungenSection />
       <HorizontalCases />
       <TestimonialsSection />

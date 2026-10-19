@@ -52,12 +52,14 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Ich bin sehr zufrieden! Meine Website ist richtig gut geworden: modern, klar und genau so, wie ich sie mir vorgestellt habe. Die Kommunikation war super entspannt und schnell, ich habe mich sofort gut aufgehoben gefühlt. Ich kann sie definitiv weiterempfehlen 👍",
-    author: "Luca Castronovo",
+      "Wir brauchten eine professionelle Website für unser Sportcenter in Kenn. Fylu Marketing hat uns hervorragend unterstützt. Unsere neue Website wirkt hochwertig, ist übersichtlich aufgebaut und spiegelt unser Unternehmen perfekt wider. Besonders gefreut hat uns die unkomplizierte Kommunikation und die Art, wie unsere Wünsche umgesetzt wurden. Vielen Dank für die großartige Zusammenarbeit. Wir empfehlen Fylu Marketing uneingeschränkt weiter!",
+    author: "Boris Cucka",
+    company: "Sportcenter Kenn",
     source: "google",
     rating: 5,
-    // "4 months ago" laut Google Rezension, entspricht ungefähr Mai 2026.
-    publishedAt: "2026-05-23",
+    sourceUrl: "https://share.google/RiiXueYP4FJDJlSh7",
+    // "an hour ago" laut Google Rezension, entspricht dem 19. Oktober 2026.
+    publishedAt: "2026-10-19",
   },
   {
     quote:

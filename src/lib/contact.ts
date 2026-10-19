@@ -1,8 +1,5 @@
-export const CALENDLY_URL =
-  'https://calendly.com/fynn-taskeyapp/fylu-marketing-kostenloses-erstgesprach';
-
-export const CALENDLY_EMBED_URL =
-  'https://calendly.com/fynn-taskeyapp/fylu-marketing-kostenloses-erstgesprach?background_color=faf9f6&text_color=0c0e10&primary_color=0e7490&hide_gdpr_banner=1&hide_event_type_details=0';
+export const PHONE_TEL = '+4915168488999';
+export const PHONE_DISPLAY = '+49 151 684 88999';
 
 export const WHATSAPP_NUMBER = '4915168488999';
 

@@ -2,12 +2,11 @@
 
 import { useEffect, useState } from 'react';
 
-export type ConsentCategory = 'necessary' | 'marketing' | 'external';
+export type ConsentCategory = 'necessary' | 'marketing';
 
 export type Consent = {
   necessary: true;
   marketing: boolean;
-  external: boolean;
   timestamp: number;
   version: 1;
 };
@@ -26,7 +25,6 @@ function readFromStorage(): Consent | null {
     return {
       necessary: true,
       marketing: !!parsed.marketing,
-      external: !!parsed.external,
       timestamp: typeof parsed.timestamp === 'number' ? parsed.timestamp : Date.now(),
       version: 1,
     };
@@ -39,12 +37,11 @@ export function getConsent(): Consent | null {
   return readFromStorage();
 }
 
-export function setConsent(next: { marketing: boolean; external: boolean }) {
+export function setConsent(next: { marketing: boolean }) {
   if (typeof window === 'undefined') return;
   const consent: Consent = {
     necessary: true,
     marketing: !!next.marketing,
-    external: !!next.external,
     timestamp: Date.now(),
     version: 1,
   };
@@ -53,11 +50,11 @@ export function setConsent(next: { marketing: boolean; external: boolean }) {
 }
 
 export function acceptAll() {
-  setConsent({ marketing: true, external: true });
+  setConsent({ marketing: true });
 }
 
 export function rejectAll() {
-  setConsent({ marketing: false, external: false });
+  setConsent({ marketing: false });
 }
 
 export function openConsentSettings() {

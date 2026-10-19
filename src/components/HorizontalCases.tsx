@@ -47,7 +47,7 @@ const cases: Case[] = [
   {
     client: 'Galabau Eifler',
     owner: 'Kevin Eifler',
-    image: '/galabau.png',
+    image: '/galabau-eifler.jpeg',
     industry: 'Garten- & Landschaftsbau',
     location: 'Saarbrücken',
     title: 'Vom Handwerksbetrieb zur wiedererkennbaren Marke.',
@@ -57,6 +57,7 @@ const cases: Case[] = [
     url: 'https://galabau-eifler.de',
     urlLabel: 'galabau-eifler.de',
     caseSlug: 'galabau-eifler',
+    imageMode: 'photo',
   },
   {
     client: 'PB Fahrzeugpflege',

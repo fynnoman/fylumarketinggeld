@@ -346,6 +346,11 @@ export const cases: CaseStudy[] = [
     ],
     screenshots: [
       {
+        src: "/galabau-eifler.jpeg",
+        alt: "Fylu Marketing mit Kevin Eifler von Galabau Eifler · Fylu Marketing Referenz",
+        portrait: true,
+      },
+      {
         src: "/galabau.png",
         alt: "Galabau Eifler Startseite · Fylu Marketing Referenz",
       },

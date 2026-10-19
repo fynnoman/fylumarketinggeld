@@ -5,8 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import FadeInSection from '@/components/animated/FadeInSection';
-import CalendlyEmbed from '@/components/CalendlyEmbed';
-import { CALENDLY_URL, WHATSAPP_URL } from '@/lib/contact';
+import { WHATSAPP_URL } from '@/lib/contact';
 import { trackEvent, readUtmFromSession } from '@/lib/track';
 
 const PHONE_TEL = '+4915168488999';
@@ -114,20 +113,12 @@ const testimonials = [
 
 type FormState = 'idle' | 'sending' | 'success' | 'error';
 
-type ContactTab = 'anfrage' | 'termin';
-
 export default function RelaunchClient() {
   const [state, setState] = useState<FormState>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
   const [formStarted, setFormStarted] = useState(false);
-  const [contactTab, setContactTab] = useState<ContactTab>('anfrage');
   const shouldReduceMotion = useReducedMotion();
   const successRef = useRef<HTMLDivElement | null>(null);
-
-  function switchTab(next: ContactTab) {
-    setContactTab(next);
-    trackEvent('tab_switch', { location: 'relaunch', tab: next });
-  }
 
   useEffect(() => {
     if (state === 'success' && successRef.current) {
@@ -765,26 +756,15 @@ export default function RelaunchClient() {
                   </p>
                   <div className="mt-10 flex flex-wrap justify-center gap-3">
                     <a
-                      href={CALENDLY_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() =>
-                        trackEvent('cta_click', { location: 'success', label: 'calendly' })
-                      }
-                      className="group inline-flex items-center gap-2 rounded-full bg-[var(--ink)] hover:bg-black text-white px-7 py-4 text-[15px] font-semibold shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] transition-all"
-                    >
-                      <span>Direkt einen Termin wählen</span>
-                      <span className="text-cyan-400 transition-transform group-hover:translate-x-0.5">→</span>
-                    </a>
-                    <a
                       href={`tel:${PHONE_TEL}`}
                       onClick={() =>
                         trackEvent('cta_click', { location: 'success', label: 'anrufen' })
                       }
-                      className="inline-flex items-center gap-2 rounded-full bg-white border border-stone-200 hover:border-stone-400 px-6 py-4 text-[15px] font-semibold text-[var(--ink)] transition-colors"
+                      className="group inline-flex items-center gap-2 rounded-full bg-[var(--ink)] hover:bg-black text-white px-7 py-4 text-[15px] font-semibold shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] transition-all"
                     >
                       <PhoneIcon />
-                      <span>Anrufen</span>
+                      <span>Jetzt anrufen</span>
+                      <span className="hidden sm:inline text-stone-300 font-normal">{PHONE_DISPLAY}</span>
                     </a>
                     <a
                       href={WHATSAPP_URL}
@@ -849,59 +829,6 @@ export default function RelaunchClient() {
                 </div>
               </FadeInSection>
 
-              {/* Regler: Anfrage / Termin */}
-              <FadeInSection delay={0.1}>
-                <div className="mt-12 md:mt-14">
-                  <div className="inline-flex items-center gap-1 rounded-full bg-[var(--background-warm)] border border-stone-200/80 p-1.5">
-                    <button
-                      type="button"
-                      onClick={() => switchTab('anfrage')}
-                      aria-pressed={contactTab === 'anfrage'}
-                      className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold transition-all duration-300 ${
-                        contactTab === 'anfrage'
-                          ? 'bg-[var(--ink)] text-white shadow-[0_10px_28px_-14px_rgba(12,14,16,0.55)]'
-                          : 'text-stone-600 hover:text-[var(--ink)]'
-                      }`}
-                    >
-                      Anfrage schreiben
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => switchTab('termin')}
-                      aria-pressed={contactTab === 'termin'}
-                      className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold transition-all duration-300 ${
-                        contactTab === 'termin'
-                          ? 'bg-[var(--ink)] text-white shadow-[0_10px_28px_-14px_rgba(12,14,16,0.55)]'
-                          : 'text-stone-600 hover:text-[var(--ink)]'
-                      }`}
-                    >
-                      Termin buchen
-                    </button>
-                  </div>
-                </div>
-              </FadeInSection>
-
-              {contactTab === 'termin' ? (
-                <FadeInSection delay={0.14}>
-                  <div className="mt-8 relative rounded-2xl md:rounded-3xl overflow-hidden bg-white border border-stone-200/80 shadow-[0_30px_80px_-24px_rgba(12,14,16,0.18)]">
-                    <div className="flex items-center justify-between px-5 md:px-7 py-3 md:py-4 border-b border-stone-200/70 bg-white">
-                      <div className="flex items-center gap-3">
-                        <span className="relative flex h-2 w-2">
-                          <span className="absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-70 animate-ping" />
-                          <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-500" />
-                        </span>
-                        <span className="text-[10px] font-medium tracking-[0.28em] sm:tracking-[0.32em] uppercase text-stone-500">
-                          Verfügbar · Erstgespräch
-                        </span>
-                      </div>
-                      <span className="hidden md:inline text-[10px] font-mono tracking-[0.22em] text-stone-400">
-                        calendly · fylumarketing
-                      </span>
-                    </div>
-                    <CalendlyEmbed height="clamp(680px, 90svh, 820px)" />
-                  </div>
-                </FadeInSection>
-              ) : (
               <FadeInSection delay={0.14}>
                 <form
                   onSubmit={onSubmit}
@@ -1040,7 +967,6 @@ export default function RelaunchClient() {
                   </div>
                 </form>
               </FadeInSection>
-              )}
             </>
           )}
         </div>

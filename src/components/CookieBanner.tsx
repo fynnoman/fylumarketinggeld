@@ -15,7 +15,7 @@ import {
 const ease = [0.22, 1, 0.36, 1] as const;
 
 type Category = {
-  key: 'necessary' | 'marketing' | 'external';
+  key: 'necessary' | 'marketing';
   title: string;
   required?: boolean;
   purpose: string;
@@ -44,27 +44,17 @@ const CATEGORIES: Category[] = [
     cookies: '_gcl_au, _gcl_aw, _ga, _gid. Laufzeit bis 24 Monate.',
     legal: 'Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).',
   },
-  {
-    key: 'external',
-    title: 'Externe Dienste',
-    purpose:
-      'Einbettung des Calendly-Buchungskalenders für das kostenlose Erstgespräch. Ohne Einwilligung erscheint stattdessen ein Platzhalter, den Sie manuell laden können.',
-    provider: 'Calendly LLC, 271 17th St NW, Atlanta, GA, USA. Datenübermittlung in die USA auf Basis der EU-Standardvertragsklauseln.',
-    cookies: '__cf_bm, _calendly_session, _gcl_au. Laufzeit Session bis 12 Monate.',
-    legal: 'Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 49 Abs. 1 lit. a DSGVO für die USA-Übermittlung.',
-  },
 ];
 
 export default function CookieBanner() {
   const { consent, hydrated } = useConsent();
   const [modalOpen, setModalOpen] = useState(false);
-  const [draft, setDraft] = useState({ marketing: false, external: false });
+  const [draft, setDraft] = useState({ marketing: false });
 
   useEffect(() => {
     const openHandler = () => {
       setDraft({
         marketing: consent?.marketing ?? false,
-        external: consent?.external ?? false,
       });
       setModalOpen(true);
     };
@@ -128,12 +118,12 @@ export default function CookieBanner() {
                   id="cookie-banner-title"
                   className="text-[17px] md:text-[18px] font-semibold text-stone-900 tracking-tight leading-snug"
                 >
-                  Cookies &amp; externe Dienste
+                  Cookies &amp; Tracking
                 </h2>
                 <p className="mt-2 text-[13.5px] leading-relaxed text-stone-600">
                   Notwendige Cookies laufen automatisch. Für Google Ads
-                  Conversion-Tracking und das Calendly-Buchungswidget bitten wir
-                  um Ihre Einwilligung. Details unter{' '}
+                  Conversion-Tracking bitten wir um Ihre Einwilligung. Details
+                  unter{' '}
                   <Link
                     href="/datenschutz"
                     className="underline underline-offset-2 text-[var(--cyan-deep)] hover:text-stone-900 transition-colors"
@@ -161,7 +151,7 @@ export default function CookieBanner() {
                     </button>
                     <button
                       onClick={() => {
-                        setDraft({ marketing: false, external: false });
+                        setDraft({ marketing: false });
                         setModalOpen(true);
                       }}
                       className="inline-flex items-center justify-center px-4 py-2.5 rounded-full text-[13px] font-semibold text-stone-700 hover:text-stone-900 hover:bg-white/40 transition-colors"
@@ -252,8 +242,7 @@ export default function CookieBanner() {
                 {CATEGORIES.map((cat) => {
                   const isActive =
                     cat.required ||
-                    (cat.key === 'marketing' && draft.marketing) ||
-                    (cat.key === 'external' && draft.external);
+                    (cat.key === 'marketing' && draft.marketing);
 
                   return (
                     <div
@@ -281,7 +270,6 @@ export default function CookieBanner() {
                           disabled={cat.required}
                           onChange={(next) => {
                             if (cat.key === 'marketing') setDraft((d) => ({ ...d, marketing: next }));
-                            if (cat.key === 'external') setDraft((d) => ({ ...d, external: next }));
                           }}
                           label={cat.title}
                         />

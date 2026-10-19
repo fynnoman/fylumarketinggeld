@@ -431,11 +431,20 @@ export default async function CaseStudyPage({
                   sinnvoller Rahmen für Ihr Vorhaben wäre.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Link
-                    href="/buchen"
+                  <a
+                    href="tel:+4915168488999"
                     className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3.5 rounded-full text-[14px] font-semibold transition-colors"
                   >
-                    Projekt anfragen
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+                    </svg>
+                    Jetzt anrufen
+                  </a>
+                  <Link
+                    href="/buchen"
+                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 rounded-full text-[14px] font-semibold border border-white/20 transition-colors"
+                  >
+                    Anfrage schreiben
                     <span>→</span>
                   </Link>
                   <Link

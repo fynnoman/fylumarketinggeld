@@ -181,15 +181,26 @@ export default function GarantieSection() {
                 </p>
               </div>
 
-              <Link
-                href="/buchen"
-                className="group inline-flex items-center gap-2 whitespace-nowrap text-center bg-white hover:bg-cyan-50 text-[var(--ink)] px-7 py-4 rounded-full font-semibold shadow-[0_14px_40px_-14px_rgba(255,255,255,0.4)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
-              >
-                <span>Vorgespräch buchen</span>
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 whitespace-nowrap">
+                <a
+                  href="tel:+4915168488999"
+                  className="group inline-flex items-center justify-center gap-2 bg-white hover:bg-cyan-50 text-[var(--ink)] px-7 py-4 rounded-full font-semibold shadow-[0_14px_40px_-14px_rgba(255,255,255,0.4)] transition-all duration-300 hover:-translate-y-[1px] active:translate-y-0"
+                >
+                  <svg className="w-4 h-4 text-cyan-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.798a2 2 0 01-.45 1.838L8.09 10.91a16.001 16.001 0 006 6l1.76-1.38a2 2 0 011.838-.45l2.798.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.716 22 2 14.284 2 5V4z" />
+                  </svg>
+                  <span>Jetzt anrufen</span>
+                </a>
+                <Link
+                  href="/buchen"
+                  className="group inline-flex items-center justify-center gap-2 border border-white/25 text-white hover:bg-white/10 px-6 py-4 rounded-full font-semibold transition-all duration-300"
+                >
+                  <span>Anfrage schreiben</span>
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
+                    <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>
