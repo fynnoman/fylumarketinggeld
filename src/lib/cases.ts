@@ -53,6 +53,74 @@ export type CaseStudy = {
 
 export const cases: CaseStudy[] = [
   {
+    slug: "sportcenter-kenn",
+    metaTitle:
+      "Sportcenter Kenn · Neue digitale Präsenz für ein modernes Freizeitzentrum | Fylu Marketing",
+    metaDescription:
+      "Wie das Sportcenter Kenn bei Trier eine digitale Präsenz bekommen hat, die zur modernen Ausrichtung mit Padel und BattleKart passt. Referenz von Fylu Marketing.",
+    h1: "Sportcenter Kenn: neue digitale Präsenz für ein modernes Freizeitzentrum.",
+    eyebrow: "Sport- und Freizeitzentrum · Kenn bei Trier",
+    clientName: "Sportcenter Kenn",
+    clientIndustry: "Sport- und Freizeitzentrum",
+    clientCity: "Kenn bei Trier",
+    clientUrl: "https://www.sportcenterkenn.de",
+    publishedAt: "2026-10-19",
+    updatedAt: "2026-10-19",
+    services: ["Website", "Design", "Digitale Präsenz"],
+    hero: {
+      lead:
+        "Das Sportcenter Kenn hat eine digitale Präsenz bekommen, die wirklich zum Standort passt. Padel, BattleKart, Soccer und Tennis unter einem modernen, ruhig geführten Auftritt.",
+    },
+    situation:
+      "Das Sportcenter Kenn bei Trier ist ein modernes Freizeitzentrum mit Soccer, Tennis, Padel und BattleKart. Die Anlage selbst ist aktuell und breit aufgestellt, der vorherige digitale Auftritt hat dieses Niveau nicht transportiert.",
+    problem:
+      "Wenn ein Center so breit aufgestellt ist, muss die Website das in ruhiger Ordnung zeigen. Sonst wirkt der Standort kleiner, als er tatsächlich ist, und Interessenten verstehen das Angebot erst beim Besuch vor Ort.",
+    strategy:
+      "Fylu Marketing hat den Auftritt so aufgebaut, dass die moderne Ausrichtung des Centers von der ersten Sekunde ablesbar ist. Padel und BattleKart bekommen den Raum, den sie als Alleinstellungsmerkmal verdienen, ohne das klassische Angebot aus Soccer und Tennis in den Hintergrund zu drängen.",
+    implementation: [
+      {
+        title: "Digitale Grundstruktur",
+        text: "Klare Startseite mit sauberer Hierarchie, damit alle Angebote auf einen Blick erfassbar sind.",
+      },
+      {
+        title: "Angebotsdarstellung",
+        text: "Padel, BattleKart, Soccer und Tennis in eigener Logik dargestellt, ohne Vermischung und ohne Reizüberflutung.",
+      },
+      {
+        title: "Kontakt und Buchung",
+        text: "Reduzierter Kontaktweg über die bekannten Mobilnummern, damit Anfragen schnell und ohne Umwege landen.",
+      },
+    ],
+    outcome: [
+      {
+        title: "Positionierung",
+        text: "Das Sportcenter tritt digital so auf, wie es vor Ort wahrgenommen wird: modern, breit aufgestellt und ernst zu nehmen im regionalen Freizeitmarkt.",
+      },
+      {
+        title: "Verständlichkeit",
+        text: "Interessenten erkennen auf der Website sofort, dass es sich nicht um eine klassische Sportanlage handelt, sondern um ein zeitgemäßes Freizeitzentrum mit eigener Note.",
+      },
+    ],
+    learnings: [
+      "Moderne Angebote wie Padel und BattleKart brauchen im digitalen Auftritt eigenen Raum, sonst gehen sie neben dem klassischen Sportangebot unter.",
+      "Ein ruhig geführtes Layout wirkt in der Freizeitbranche hochwertiger als eine Reizflut aus Bildern und Farben.",
+    ],
+    screenshots: [
+      {
+        src: "/sportcenter-kenn.jpeg",
+        alt: "Fylu Marketing beim Sportcenter Kenn mit Konstantin Cucka · Fylu Marketing Referenz",
+        portrait: true,
+      },
+    ],
+    serviceLinks: [
+      {
+        label: "Webdesign Saarland",
+        href: "/webdesign-saarland",
+        reason: "Individuelle Websites mit klarer Struktur und ruhiger Bildführung.",
+      },
+    ],
+  },
+  {
     slug: "milana-kollmann",
     metaTitle:
       "Milana Kollmann · Markenaufbau von der Gründung bis zur Website | Fylu Marketing",
