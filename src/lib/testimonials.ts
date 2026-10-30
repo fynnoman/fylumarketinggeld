@@ -43,12 +43,13 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Meine Anfrage war eher komplex. Trotzdem hat sich das Team die Zeit genommen, eine individuelle Lösung zu entwickeln. Diese Lösung hat perfekt zu meinen Anforderungen gepasst und konnte direkt umgesetzt werden. Die Mitarbeiter waren sehr freundlich, engagiert und professionell. Klare Empfehlung!",
-    author: "Simon Hilgert",
+      "Fynn Schulz von FYLU Marketing betreut unseren gemeinnützigen Verein Kältebus Saarbrücken e.V. erst seit kurzem, hat uns aber schon total mit seinem tollen Service und Fachwissen überzeugt. Schnell, unkompliziert, immer freundlich und hilfsbereit. Wir sind froh, einen solch kompetenten Ansprechpartner an unserer Seite zu wissen.",
+    author: "Willi Kühnreich",
+    role: "Vorstand",
+    company: "Kältebus Saarbrücken e.V.",
     source: "google",
     rating: 5,
-    // "4 months ago" laut Google Rezension, entspricht ungefähr Mai 2026.
-    publishedAt: "2026-05-23",
+    publishedAt: "2026-10-30",
   },
   {
     quote:
