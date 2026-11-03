@@ -33,8 +33,8 @@ const cases: Case[] = [
     story:
       'Milana wollte sich eigenständig als Expertin für zahnärztliche Abrechnung aufstellen. Fylu Marketing hat die Gründung von vorne bis hinten begleitet: Name, Logo, Website, Google Unternehmensprofil, SEO und GEO sowie eine eigene Fotoproduktion mit Fotografen. Bei jeder Entscheidung bekam Milana eine kuratierte Auswahl, so dass die Marke gemeinsam entstanden ist und wirklich ihre eigene ist.',
     services: ['Markenaufbau', 'Website', 'SEO & GEO', 'Fotoproduktion'],
-    url: 'https://milana-six.vercel.app/',
-    urlLabel: 'milana-six.vercel.app',
+    url: 'https://www.mb-zahnabrechnung.de',
+    urlLabel: 'mb-zahnabrechnung.de',
     photographer: {
       handle: '@manumr.photo',
       instagramUrl: 'https://www.instagram.com/manumr.photo/',
