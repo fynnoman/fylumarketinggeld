@@ -31,15 +31,11 @@ function WordReveal({
           <motion.span
             initial={{ y: '105%', opacity: 0 }}
             animate={{ y: '0%', opacity: 1 }}
-            transition={{ duration: 0.55, delay: delay + i * 0.04, ease }}
+            transition={{ duration: 0.5, delay: delay + i * 0.04, ease }}
             className={`inline-block ${
               italic ? 'font-display italic font-normal' : ''
             } ${accent ? 'text-[color:var(--accent)]' : ''}`}
-            style={{
-              willChange: 'transform, opacity',
-              transform: 'translateZ(0)',
-              ...(accent ? ({ ['--accent' as string]: '#7dd3fc' } as React.CSSProperties) : {}),
-            }}
+            style={accent ? ({ ['--accent' as string]: '#7dd3fc' } as React.CSSProperties) : undefined}
           >
             {w}
           </motion.span>
@@ -58,11 +54,10 @@ export default function HeroSection() {
       {/* Photo layer */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 1.015 }}
+          initial={{ opacity: 0, scale: 1.03 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, ease, delay: 0.05 }}
+          transition={{ duration: 0.6, ease }}
           className="absolute inset-0"
-          style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
         >
           <Image
             src="/hero-fylu.png"
