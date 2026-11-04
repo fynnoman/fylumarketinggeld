@@ -145,18 +145,12 @@ export default function WebsiteErstellenLassenPage() {
 					</FadeInSection>
 					<FadeInSection delay={0.24}>
 						<div className="mt-10 flex flex-col sm:flex-row gap-3">
-							<Link
+								<Link
 								href="/buchen"
 								className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-[15px] font-semibold text-white bg-[var(--ink)] hover:bg-black transition-all duration-300 shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] hover:-translate-y-[1px]"
 							>
 								<span>Vorgespräch buchen</span>
 								<span className="text-cyan-400 transition-transform duration-300 group-hover:translate-x-0.5">→</span>
-							</Link>
-							<Link
-								href="/methodik"
-								className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-semibold text-[var(--ink)] bg-white border border-stone-200 hover:border-stone-300 transition-all duration-300"
-							>
-								<span>Unsere Methodik</span>
 							</Link>
 						</div>
 					</FadeInSection>
@@ -273,9 +267,6 @@ export default function WebsiteErstellenLassenPage() {
 					<div className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-stone-500">
 						<Link href="/webdesign-saarland" className="hover:text-cyan-700 transition-colors">Webdesign Saarland</Link>
 						<span className="text-stone-300">·</span>
-						<Link href="/methodik" className="hover:text-cyan-700 transition-colors">Methodik</Link>
-						<span className="text-stone-300">·</span>
-						<Link href="/seo-saarland" className="hover:text-cyan-700 transition-colors">SEO</Link>
 						<span className="text-stone-300">·</span>
 						<Link href="/webdesign-handwerk" className="hover:text-cyan-700 transition-colors">Handwerk</Link>
 					</div>

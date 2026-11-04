@@ -97,11 +97,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-    ],
   },
   {
     slug: "restaurant",
@@ -184,11 +179,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -273,11 +263,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
-    ],
   },
   {
     slug: "anwalt",
@@ -323,11 +308,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -375,11 +355,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
-    ],
   },
   {
     slug: "arzt",
@@ -425,11 +400,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -588,11 +558,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-    ],
   },
   {
     slug: "heizungsbauer",
@@ -712,11 +677,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
     ],
   },
   {
@@ -875,11 +835,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-    ],
   },
   {
     slug: "shk",
@@ -925,11 +880,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
     ],
   },
   {
@@ -1051,11 +1001,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/google-ads-kosten", label: "Was kostet Google Ads?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-    ],
   },
   {
     slug: "gebaeudereinigung",
@@ -1102,11 +1047,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/seo-kosten", label: "Was kostet SEO?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
-    ],
   },
   {
     slug: "industrie",
@@ -1152,11 +1092,6 @@ export const topics: Topic[] = [
       { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
       { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
       { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
-    relatedGuides: [
-      { href: "/ratgeber/website-kosten", label: "Was kostet eine Website?" },
-      { href: "/ratgeber/website-relaunch", label: "Website-Relaunch: Wann sinnvoll?" },
-      { href: "/ratgeber/website-agentur-kosten", label: "Freelancer oder Agentur?" },
     ],
   },
 ];

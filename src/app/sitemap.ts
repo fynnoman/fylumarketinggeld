@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { regions } from "@/lib/regions";
 import { topics, isIndexableTopic } from "@/lib/topics";
 import { problems } from "@/lib/problems";
-import { guides } from "@/lib/guides";
 import { CATEGORIES as digitalIndexCategories } from "@/lib/digital-index";
 import { COMPANIES as digitalIndexCompanies } from "@/lib/digital-index-data";
 
@@ -49,11 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tools/website-check`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/tools/seo-check`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/probleme`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${baseUrl}/ratgeber`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${baseUrl}/ratgeber/seo-agenturen-saarland`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/referenzen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/team`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/methodik`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/buchen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/impressum`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${baseUrl}/datenschutz`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
@@ -91,13 +85,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const problemEntries: MetadataRoute.Sitemap = problems.map((p) => ({
     url: `${baseUrl}/probleme/${p.slug}`,
     lastModified: new Date(p.updatedAt),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
-
-  const guideEntries: MetadataRoute.Sitemap = guides.map((g) => ({
-    url: `${baseUrl}/ratgeber/${g.slug}`,
-    lastModified: new Date(g.updatedAt),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -167,7 +154,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...softwareCityEntries,
     ...topicEntries,
     ...problemEntries,
-    ...guideEntries,
     ...digitalIndexStaticEntries,
     ...digitalIndexCategoryEntries,
     ...digitalIndexCompanyEntries,

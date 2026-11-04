@@ -61,8 +61,6 @@ export default function Home() {
               'https://www.fylumarketing.de/seo-saarland',
               'https://www.fylumarketing.de/google-ads-saarland',
               'https://www.fylumarketing.de/software-saarland',
-              'https://www.fylumarketing.de/methodik',
-              'https://www.fylumarketing.de/team',
               'https://www.fylumarketing.de/buchen',
             ],
           }),

@@ -1,12 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import FadeInSection from '@/components/animated/FadeInSection';
 import { WHATSAPP_URL } from '@/lib/contact';
-import { trackEvent, readUtmFromSession } from '@/lib/track';
+import { trackEvent } from '@/lib/track';
 
 const PHONE_TEL = '+4915168488999';
 const PHONE_DISPLAY = '+49 151 684 88999';
@@ -111,121 +110,10 @@ const testimonials = [
   },
 ];
 
-type FormState = 'idle' | 'sending' | 'success' | 'error';
 
 export default function RelaunchClient() {
-  const [state, setState] = useState<FormState>('idle');
-  const [errorMessage, setErrorMessage] = useState<string>('');
-  const [formStarted, setFormStarted] = useState(false);
   const shouldReduceMotion = useReducedMotion();
-  const successRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (state === 'success' && successRef.current) {
-      successRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      trackEvent('form_success', { location: 'relaunch' });
-    }
-  }, [state]);
-
-  function onFieldFocus() {
-    if (!formStarted) {
-      setFormStarted(true);
-      trackEvent('form_start', { location: 'relaunch' });
-    }
-  }
-
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (state === 'sending') return;
-
-    const form = e.currentTarget;
-    const fd = new FormData(form);
-
-    const firmName = String(fd.get('firmName') || '').trim();
-    const website = String(fd.get('website') || '').trim();
-    const contactName = String(fd.get('contactName') || '').trim();
-    const email = String(fd.get('email') || '').trim();
-    const phone = String(fd.get('phone') || '').trim();
-    const verbessern = String(fd.get('verbessern') || '').trim();
-    const zeitraum = String(fd.get('zeitraum') || '').trim();
-    const groesse = String(fd.get('groesse') || '').trim();
-    const consent = fd.get('consent') === 'on';
-
-    if (!firmName || !website || !contactName || !verbessern) {
-      setState('error');
-      setErrorMessage(
-        'Bitte füllen Sie Unternehmen, Website, Name und Ihr Anliegen aus.',
-      );
-      return;
-    }
-    if (!email && !phone) {
-      setState('error');
-      setErrorMessage('Bitte hinterlegen Sie eine E-Mail oder eine Telefonnummer.');
-      return;
-    }
-    if (!consent) {
-      setState('error');
-      setErrorMessage('Bitte bestätigen Sie die Datenschutzerklärung.');
-      return;
-    }
-
-    setState('sending');
-    trackEvent('form_submit', { location: 'relaunch', verbessern });
-    setErrorMessage('');
-
-    const utm = readUtmFromSession();
-    const utmLine = utm
-      ? `\n\nQuelle: ${Object.entries(utm)
-          .map(([k, v]) => `${k}=${v}`)
-          .join(' · ')}`
-      : '';
-
-    const message = [
-      'Anfrage von Meta-Ads-Landingpage /relaunch',
-      '',
-      `Verbessern: ${verbessern}`,
-      zeitraum ? `Zeitraum: ${zeitraum}` : '',
-      utmLine,
-    ]
-      .filter(Boolean)
-      .join('\n');
-
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          firmName,
-          contactName,
-          email: email || undefined,
-          phone,
-          brancheDetail: website,
-          projectType: 'Digitaler Relaunch',
-          groesse,
-          preferences: zeitraum,
-          message,
-        }),
-      });
-
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        setState('error');
-        setErrorMessage(
-          (data && typeof data.error === 'string' && data.error) ||
-            'Ihre Anfrage konnte nicht übermittelt werden. Bitte schreiben Sie uns direkt an kontakt@fylumarketing.de.',
-        );
-        return;
-      }
-
-      setState('success');
-      form.reset();
-    } catch {
-      setState('error');
-      setErrorMessage(
-        'Ihre Anfrage konnte nicht übermittelt werden. Bitte schreiben Sie uns direkt an kontakt@fylumarketing.de.',
-      );
-    }
-  }
 
   return (
     <main className="bg-white text-[var(--ink)]">
@@ -718,259 +606,64 @@ export default function RelaunchClient() {
         </div>
       </section>
 
-      {/* FORMULAR */}
+      {/* ANFRAGE */}
       <section
         id="anfrage"
         className="relative py-24 md:py-32 lg:py-40 px-5 md:px-10 bg-white text-[var(--ink)] scroll-mt-24 overflow-hidden isolate border-t border-stone-200/70"
       >
-        <div className="absolute inset-0 -z-10">
-          <div
-            className="absolute inset-0 opacity-[0.4]"
-            style={{
-              backgroundImage:
-                'radial-gradient(circle, rgba(12,14,16,0.06) 1px, transparent 1.4px)',
-              backgroundSize: '28px 28px',
-              maskImage:
-                'radial-gradient(ellipse 80% 50% at 50% 0%, black 30%, transparent 80%)',
-              WebkitMaskImage:
-                'radial-gradient(ellipse 80% 50% at 50% 0%, black 30%, transparent 80%)',
-            }}
-          />
-        </div>
-
-        <div className="max-w-[1000px] mx-auto">
-          {state === 'success' ? (
-            <div ref={successRef}>
-              <FadeInSection>
-                <div className="text-center max-w-2xl mx-auto">
-                  <div className="hairline-rule w-24 mx-auto mb-8" />
-                  <div className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-medium mb-6">
-                    Anfrage angekommen
-                  </div>
-                  <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3rem] font-semibold tracking-[-0.03em]">
-                    Vielen Dank.{' '}
-                    <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                      Wir schauen uns Ihren Auftritt an.
-                    </span>
-                  </h2>
-                  <p className="mt-8 text-stone-600 leading-relaxed text-[1.05rem]">
-                    Sie hören persönlich von uns, meist innerhalb von 24 Stunden.
-                  </p>
-                  <div className="mt-10 flex flex-wrap justify-center gap-3">
-                    <a
-                      href={`tel:${PHONE_TEL}`}
-                      onClick={() =>
-                        trackEvent('cta_click', { location: 'success', label: 'anrufen' })
-                      }
-                      className="group inline-flex items-center gap-2 rounded-full bg-[var(--ink)] hover:bg-black text-white px-7 py-4 text-[15px] font-semibold shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] transition-all"
-                    >
-                      <PhoneIcon />
-                      <span>Jetzt anrufen</span>
-                      <span className="hidden sm:inline text-stone-300 font-normal">{PHONE_DISPLAY}</span>
-                    </a>
-                    <a
-                      href={WHATSAPP_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() =>
-                        trackEvent('cta_click', { location: 'success', label: 'whatsapp' })
-                      }
-                      className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-6 py-4 text-[15px] font-semibold text-white transition-colors"
-                    >
-                      <WhatsAppIcon />
-                      <span>WhatsApp</span>
-                    </a>
-                  </div>
-                </div>
-              </FadeInSection>
+        <div className="max-w-[1000px] mx-auto text-center">
+          <FadeInSection>
+            <div className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-medium mb-6">
+              Auftritt kostenlos prüfen lassen
             </div>
-          ) : (
-            <>
-              <FadeInSection>
-                <div className="max-w-2xl">
-                  <div className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-medium mb-6">
-                    Auftritt kostenlos prüfen lassen
-                  </div>
-                  <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold tracking-[-0.03em]">
-                    Ihre Firma ist besser{' '}
-                    <span className="font-display italic font-normal text-[var(--cyan-deep)]">
-                      als Ihre Website?
-                    </span>
-                  </h2>
-                  <p className="mt-6 text-stone-600 leading-relaxed text-[1.05rem] md:text-[1.15rem] max-w-xl">
-                    Dann schauen wir uns an, was sich ändern sollte.
-                  </p>
-                </div>
-              </FadeInSection>
+            <h2 className="text-[2.2rem] leading-[1.05] sm:text-4xl md:text-[3.2rem] font-semibold tracking-[-0.03em]">
+              Ihre Firma ist besser{' '}
+              <span className="font-display italic font-normal text-[var(--cyan-deep)]">
+                als Ihre Website?
+              </span>
+            </h2>
+            <p className="mt-6 text-stone-600 leading-relaxed text-[1.05rem] md:text-[1.15rem] max-w-xl mx-auto">
+              Rufen Sie an oder schreiben Sie per WhatsApp. Persönliche
+              Rückmeldung binnen 24 Stunden, direkt von Ihrem Ansprechpartner.
+            </p>
+          </FadeInSection>
 
-              {/* Sofort-Kontakt Buttons */}
-              <FadeInSection delay={0.06}>
-                <div className="mt-10 flex flex-wrap gap-3">
-                  <a
-                    href={`tel:${PHONE_TEL}`}
-                    onClick={() =>
-                      trackEvent('cta_click', { location: 'anfrage', label: 'anrufen' })
-                    }
-                    className="inline-flex items-center gap-2 rounded-full bg-white border border-stone-200 hover:border-stone-400 px-5 py-3 text-[14px] font-semibold text-[var(--ink)] transition-colors"
-                  >
-                    <PhoneIcon />
-                    <span>{PHONE_DISPLAY}</span>
-                  </a>
-                  <a
-                    href={WHATSAPP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() =>
-                      trackEvent('cta_click', { location: 'anfrage', label: 'whatsapp' })
-                    }
-                    className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-5 py-3 text-[14px] font-semibold text-white transition-colors"
-                  >
-                    <WhatsAppIcon />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-              </FadeInSection>
-
-              <FadeInSection delay={0.14}>
-                <form
-                  onSubmit={onSubmit}
-                  noValidate
-                  className="mt-8 rounded-2xl md:rounded-3xl bg-white border border-stone-200/80 shadow-[0_30px_80px_-24px_rgba(12,14,16,0.15)] p-6 md:p-10 grid gap-6 md:gap-7"
-                >
-                  <div className="grid md:grid-cols-2 gap-6 md:gap-7">
-                    <Field label="Unternehmen" name="firmName" required autoComplete="organization" onFocus={onFieldFocus} />
-                    <Field
-                      label="Website"
-                      name="website"
-                      type="url"
-                      placeholder="https://"
-                      required
-                      autoComplete="url"
-                      onFocus={onFieldFocus}
-                    />
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-6 md:gap-7">
-                    <Field label="Name" name="contactName" required autoComplete="name" onFocus={onFieldFocus} />
-                    <div className="grid grid-cols-2 gap-3">
-                      <Field
-                        label="E-Mail"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        onFocus={onFieldFocus}
-                      />
-                      <Field
-                        label="Telefon"
-                        name="phone"
-                        type="tel"
-                        autoComplete="tel"
-                        onFocus={onFieldFocus}
-                      />
-                    </div>
-                  </div>
-
-                  <fieldset className="mt-2">
-                    <legend className="block text-[11px] uppercase tracking-[0.22em] text-stone-500 font-medium mb-4">
-                      Was möchten Sie verbessern? <span className="text-[var(--cyan-deep)]">*</span>
-                    </legend>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-2.5">
-                      {[
-                        'Website',
-                        'Marke',
-                        'SEO und Sichtbarkeit',
-                        'Gesamter Auftritt',
-                        'Noch nicht sicher',
-                      ].map((opt) => (
-                        <label
-                          key={opt}
-                          className="group relative flex items-center justify-center text-center px-3 py-3 rounded-xl border border-stone-200 bg-white hover:bg-stone-50 hover:border-stone-400 text-[13px] text-stone-700 cursor-pointer transition-colors has-[:checked]:bg-[var(--ink)] has-[:checked]:text-white has-[:checked]:border-[var(--ink)]"
-                        >
-                          <input
-                            type="radio"
-                            name="verbessern"
-                            value={opt}
-                            required
-                            onFocus={onFieldFocus}
-                            className="sr-only"
-                          />
-                          <span>{opt}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </fieldset>
-
-                  <div className="grid md:grid-cols-2 gap-6 md:gap-7">
-                    <SelectField
-                      label="Zeitraum (optional)"
-                      name="zeitraum"
-                      options={[
-                        'So bald wie möglich',
-                        'In den nächsten 1 bis 3 Monaten',
-                        'Später',
-                        'Noch offen',
-                      ]}
-                      onFocus={onFieldFocus}
-                    />
-                    <SelectField
-                      label="Unternehmensgröße (optional)"
-                      name="groesse"
-                      options={[
-                        '1 bis 5 Mitarbeitende',
-                        '6 bis 20 Mitarbeitende',
-                        '21 bis 50 Mitarbeitende',
-                        '51 bis 100 Mitarbeitende',
-                        'über 100 Mitarbeitende',
-                      ]}
-                      onFocus={onFieldFocus}
-                    />
-                  </div>
-
-                  <label className="mt-2 flex items-start gap-3 text-[13px] text-stone-600 leading-relaxed">
-                    <input
-                      type="checkbox"
-                      name="consent"
-                      required
-                      className="mt-1 h-4 w-4 rounded border-stone-300 text-[var(--ink)] focus:ring-cyan-600"
-                    />
-                    <span>
-                      Ich habe die{' '}
-                      <Link
-                        href="/datenschutz"
-                        className="underline decoration-stone-400 underline-offset-2 hover:text-stone-900"
-                      >
-                        Datenschutzerklärung
-                      </Link>{' '}
-                      zur Kenntnis genommen.
-                    </span>
-                  </label>
-
-                  {state === 'error' && errorMessage ? (
-                    <div className="rounded-xl bg-red-50 border border-red-200 text-red-800 text-[13px] px-4 py-3">
-                      {errorMessage}
-                    </div>
-                  ) : null}
-
-                  <div className="pt-2">
-                    <button
-                      type="submit"
-                      disabled={state === 'sending'}
-                      className="group w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[var(--ink)] hover:bg-black text-white px-8 py-4 text-[15px] font-semibold transition-all shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] disabled:opacity-60 disabled:cursor-not-allowed"
-                    >
-                      <span>
-                        {state === 'sending' ? 'Wird gesendet…' : 'Auftritt kostenlos prüfen lassen'}
-                      </span>
-                      {state === 'sending' ? null : (
-                        <span className="text-cyan-400 transition-transform group-hover:translate-x-0.5">→</span>
-                      )}
-                    </button>
-                    <p className="mt-4 text-[12px] text-stone-500">
-                      Kostenlos und unverbindlich. Wir melden uns persönlich.
-                    </p>
-                  </div>
-                </form>
-              </FadeInSection>
-            </>
-          )}
+          <FadeInSection delay={0.06}>
+            <div className="mt-10 flex flex-wrap gap-3 justify-center">
+              <a
+                href={`tel:${PHONE_TEL}`}
+                onClick={() =>
+                  trackEvent('cta_click', { location: 'anfrage', label: 'anrufen' })
+                }
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--ink)] hover:bg-black text-white px-7 py-4 text-[15px] font-semibold shadow-[0_14px_40px_-14px_rgba(12,14,16,0.55)] transition-colors"
+              >
+                <PhoneIcon />
+                <span>Jetzt anrufen</span>
+                <span className="hidden sm:inline text-stone-300 font-normal">{PHONE_DISPLAY}</span>
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent('cta_click', { location: 'anfrage', label: 'whatsapp' })
+                }
+                className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] px-7 py-4 text-[15px] font-semibold text-white transition-colors"
+              >
+                <WhatsAppIcon />
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href="mailto:kontakt@fylumarketing.de"
+                onClick={() =>
+                  trackEvent('cta_click', { location: 'anfrage', label: 'email' })
+                }
+                className="inline-flex items-center gap-2 rounded-full bg-white border border-stone-200 hover:border-stone-400 px-7 py-4 text-[15px] font-semibold text-[var(--ink)] transition-colors"
+              >
+                <span>kontakt@fylumarketing.de</span>
+              </a>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
@@ -1017,44 +710,42 @@ export default function RelaunchClient() {
       </footer>
 
       {/* STICKY MOBILE CTA */}
-      {state !== 'success' ? (
-        <div className="md:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-md border-t border-stone-200/80 px-3 py-3 shadow-[0_-10px_30px_-15px_rgba(12,14,16,0.15)]">
-          <div className="flex items-center gap-2">
-            <a
-              href={`tel:${PHONE_TEL}`}
-              aria-label="Anrufen"
-              onClick={() =>
-                trackEvent('cta_click', { location: 'sticky_mobile', label: 'anrufen' })
-              }
-              className="inline-flex items-center justify-center h-12 w-12 rounded-full border border-stone-200 text-[var(--ink)]"
-            >
-              <PhoneIcon className="w-[18px] h-[18px]" />
-            </a>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              onClick={() =>
-                trackEvent('cta_click', { location: 'sticky_mobile', label: 'whatsapp' })
-              }
-              className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-[#25D366] text-white"
-            >
-              <WhatsAppIcon className="w-[18px] h-[18px]" />
-            </a>
-            <a
-              href="#anfrage"
-              onClick={() =>
-                trackEvent('cta_click', { location: 'sticky_mobile', label: 'auftritt_pruefen' })
-              }
-              className="group flex-1 flex items-center justify-center gap-2 rounded-full bg-[var(--ink)] text-white px-4 py-3.5 text-[14px] font-semibold"
-            >
-              <span>Auftritt prüfen lassen</span>
-              <span className="text-cyan-400">→</span>
-            </a>
-          </div>
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-md border-t border-stone-200/80 px-3 py-3 shadow-[0_-10px_30px_-15px_rgba(12,14,16,0.15)]">
+        <div className="flex items-center gap-2">
+          <a
+            href={`tel:${PHONE_TEL}`}
+            aria-label="Anrufen"
+            onClick={() =>
+              trackEvent('cta_click', { location: 'sticky_mobile', label: 'anrufen' })
+            }
+            className="inline-flex items-center justify-center h-12 w-12 rounded-full border border-stone-200 text-[var(--ink)]"
+          >
+            <PhoneIcon className="w-[18px] h-[18px]" />
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            onClick={() =>
+              trackEvent('cta_click', { location: 'sticky_mobile', label: 'whatsapp' })
+            }
+            className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-[#25D366] text-white"
+          >
+            <WhatsAppIcon className="w-[18px] h-[18px]" />
+          </a>
+          <a
+            href="#anfrage"
+            onClick={() =>
+              trackEvent('cta_click', { location: 'sticky_mobile', label: 'auftritt_pruefen' })
+            }
+            className="group flex-1 flex items-center justify-center gap-2 rounded-full bg-[var(--ink)] text-white px-4 py-3.5 text-[14px] font-semibold"
+          >
+            <span>Auftritt prüfen lassen</span>
+            <span className="text-cyan-400">→</span>
+          </a>
         </div>
-      ) : null}
+      </div>
     </main>
   );
 }

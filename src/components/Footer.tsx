@@ -85,10 +85,6 @@ export default function Footer() {
               Unterseiten
             </h3>
             <ul className="space-y-2.5 text-sm text-stone-400">
-              <li><Link href="/team" className="hover:text-white transition-colors">Über</Link></li>
-              <li><Link href="/methodik" className="hover:text-white transition-colors">Prozess</Link></li>
-              <li><Link href="/referenzen" className="hover:text-white transition-colors">Referenzen</Link></li>
-              <li><Link href="/ratgeber" className="hover:text-white transition-colors">Ratgeber</Link></li>
               <li><Link href="/probleme" className="hover:text-white transition-colors">Probleme</Link></li>
               <li><Link href="/tools" className="hover:text-white transition-colors">Tools</Link></li>
               <li><Link href="/digital-index" className="hover:text-white transition-colors">Digital Index</Link></li>

@@ -186,7 +186,7 @@ export default function RootLayout({
                   "https://www.linkedin.com/in/fynn-schulz/",
                   "https://www.instagram.com/fylumarketing/",
                 ],
-                url: "https://www.fylumarketing.de/team",
+                url: "https://www.fylumarketing.de/",
               },
               address: {
                 "@type": "PostalAddress",

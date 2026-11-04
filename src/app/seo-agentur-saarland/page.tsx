@@ -281,15 +281,6 @@ export default function SeoAgenturSaarlandPage() {
                 an Ihrem tatsächlichen Bedarf.
               </p>
             </div>
-            <div className="mt-8">
-              <Link
-                href="/ratgeber/seo-kosten"
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-[var(--cyan-deep)] hover:underline underline-offset-4"
-              >
-                Ausführlicher Ratgeber: Was kostet SEO wirklich?
-                <span>→</span>
-              </Link>
-            </div>
           </div>
         </section>
 

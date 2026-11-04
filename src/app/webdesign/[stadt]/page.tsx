@@ -461,7 +461,7 @@ export default async function RegionPage({
               </h2>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2">
               <div>
                 <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
                   Tools
@@ -520,37 +520,6 @@ export default async function RegionPage({
                 </ul>
               </div>
 
-              <div>
-                <h3 className="text-[10px] uppercase tracking-[0.32em] text-stone-500 font-semibold mb-4">
-                  Ratgeber
-                </h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/ratgeber/website-kosten" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-sm font-semibold text-stone-900">Was kostet eine Website?</span>
-                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/ratgeber/sichtbarkeit-bei-google-verbessern" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-sm font-semibold text-stone-900">Bei Google sichtbar werden</span>
-                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/ratgeber/website-relaunch" className="group block rounded-2xl border border-stone-200 bg-white p-4 hover:border-cyan-300 transition-colors">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-sm font-semibold text-stone-900">Website-Relaunch: sinnvoll?</span>
-                        <span className="text-cyan-600 transition-transform group-hover:translate-x-0.5">→</span>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>

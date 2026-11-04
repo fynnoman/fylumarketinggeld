@@ -337,18 +337,6 @@ export default function WebdesignSaarlandPage() {
             ))}
           </div>
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/methodik"
-              className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
-            >
-              <span className="relative">
-                Zum ganzen Prozess
-                <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
-              </span>
-              <span className="transition-transform group-hover:translate-x-0.5">→</span>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -420,18 +408,6 @@ export default function WebdesignSaarlandPage() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <Link
-              href="/team"
-              className="group inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-900 font-semibold transition-colors"
-            >
-              <span className="relative">
-                Ansprechpartner kennenlernen
-                <span className="absolute inset-x-0 bottom-0 h-px bg-cyan-700/40" />
-              </span>
-              <span className="transition-transform group-hover:translate-x-0.5">→</span>
-            </Link>
-          </div>
         </div>
       </section>
 
