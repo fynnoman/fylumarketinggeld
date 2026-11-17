@@ -152,20 +152,24 @@ export function CaseBlock({ data, index }: { data: Reference; index: number }) {
             </span>
           </div>
 
-          <p className="text-stone-600 text-[15px] md:text-base leading-relaxed mb-7">
-            {data.story}
-          </p>
+          {data.story && (
+            <p className="text-stone-600 text-[15px] md:text-base leading-relaxed mb-7">
+              {data.story}
+            </p>
+          )}
 
-          <div className="flex flex-wrap gap-2 mb-7">
-            {data.services.map((s) => (
-              <span
-                key={s}
-                className="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] font-medium tracking-[0.02em] text-stone-700"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
+          {data.services && data.services.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-7">
+              {data.services.map((s) => (
+                <span
+                  key={s}
+                  className="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] font-medium tracking-[0.02em] text-stone-700"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          )}
 
           <div className="flex flex-col gap-3 pt-5 border-t border-stone-200/80">
             <span className="text-[10px] uppercase tracking-[0.32em] text-stone-400 font-medium">

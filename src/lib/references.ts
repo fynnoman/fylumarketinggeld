@@ -18,8 +18,8 @@ export type Reference = {
   industry: string;
   location: string;
   title: string;
-  story: string;
-  services: string[];
+  story?: string;
+  services?: string[];
   url: string;
   urlLabel: string;
   facebookUrl?: string;
@@ -172,12 +172,20 @@ export const references: Reference[] = [
     images: [{ src: '/demir.png', mode: 'photo' }],
     industry: 'Glasfaser & Tiefbau',
     location: 'Beckingen · Deutschland',
-    title: 'Neuer Webauftritt für einen deutschlandweit aktiven Glasfaserbetrieb.',
-    story:
-      'Demir SpeedConnect verlegt Glasfaser, spleißt präzise und übernimmt Tiefbau für Netzbetreiber, Kommunen und Privatkunden. Für den digitalen Auftritt entstand eine Website, die diese Mischung aus Infrastruktur und Handwerk ruhig und ernsthaft transportiert. Klare Leistungsstruktur, direkte Kontaktwege und ein Auftritt, der sowohl Ausschreibungen als auch Endkunden standhält.',
-    services: ['Website', 'Design', 'Struktur & Leistungen'],
-    url: 'https://demir-speedconnect.de',
+    title: 'Neuer Webauftritt für Demir SpeedConnect.',
+    url: 'https://www.demir-speedconnect.de',
     urlLabel: 'demir-speedconnect.de',
+  },
+  {
+    slug: 'mg-gebaeudeservice',
+    client: 'MG Gebäudeservice',
+    owner: 'MG Gebäudeservice',
+    images: [{ src: '/mg-gebaeude.png', mode: 'photo' }],
+    industry: 'Gebäudereinigung',
+    location: 'Köln',
+    title: 'Neuer Webauftritt für MG Gebäudeservice.',
+    url: 'https://www.mg-gebaeudeservice.de',
+    urlLabel: 'mg-gebaeudeservice.de',
   },
   {
     slug: 'oufa-hairstyling',
@@ -186,11 +194,8 @@ export const references: Reference[] = [
     images: [{ src: '/oufa-foto.jpg', mode: 'photo' }],
     industry: 'Friseur-Atelier',
     location: 'Saarbrücken',
-    title: 'Neuer Webauftritt für ein Friseur-Atelier mit eigener Handschrift.',
-    story:
-      'Oufa Hairstyling verbindet orientalisches Friseur-Handwerk mit präziser, moderner Ausführung. Für den digitalen Auftritt entstand eine Website, die genau diesen Ton trifft: ruhig, feminin, hochwertig. Klare Struktur für Leistungen und Terminanfragen, dazu eine Bildsprache, die zum Studio in Saarbrücken passt.',
-    services: ['Website', 'Design', 'Terminstrecke'],
-    url: 'https://oufa-hairstyling.de',
+    title: 'Neuer Webauftritt für Oufa Hairstyling.',
+    url: 'https://www.oufa-hairstyling.de',
     urlLabel: 'oufa-hairstyling.de',
   },
 ];
