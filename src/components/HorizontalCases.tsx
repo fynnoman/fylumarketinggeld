@@ -59,7 +59,7 @@ export default function HorizontalCases() {
       </div>
 
       {/* Cases, vertical alternating full-width blocks */}
-      <div className="relative z-10 space-y-16 md:space-y-24 pb-12 md:pb-16">
+      <div className="relative z-10 space-y-20 md:space-y-40 pb-16 md:pb-28">
         {cases.map((c, i) => (
           <CaseBlock key={c.slug} data={c} index={i} />
         ))}
