@@ -1,75 +1,15 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { useRef } from 'react';
+import Link from 'next/link';
+import { useRef, useState } from 'react';
+import type { Reference } from '@/lib/references';
+import { getFeaturedReferences } from '@/lib/references';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-type Case = {
-  client: string;
-  owner: string;
-  image: string;
-  industry: string;
-  location: string;
-  title: string;
-  story: string;
-  services: string[];
-  url: string;
-  urlLabel: string;
-  facebookUrl?: string;
-  photographer?: { handle: string; instagramUrl: string };
-  imageMode?: 'screenshot' | 'photo'; // 'photo' = Portrait-Shoot, nutzt 3:4 Rahmen statt 16:9 Browser-Screenshot
-};
-
-const cases: Case[] = [
-  {
-    client: 'Milana Kollmann',
-    owner: 'Milana Kollmann',
-    image: '/milana.jpeg',
-    industry: 'Zahnärztliche Abrechnung',
-    location: 'Saarlouis',
-    title: 'Von der Idee zur eigenen Marke in der zahnärztlichen Abrechnung.',
-    story:
-      'Milana wollte sich eigenständig als Expertin für zahnärztliche Abrechnung aufstellen. Fylu Marketing hat die Gründung von vorne bis hinten begleitet: Name, Logo, Website, Google Unternehmensprofil, SEO und GEO sowie eine eigene Fotoproduktion mit Fotografen. Bei jeder Entscheidung bekam Milana eine kuratierte Auswahl, so dass die Marke gemeinsam entstanden ist und wirklich ihre eigene ist.',
-    services: ['Markenaufbau', 'Website', 'SEO & GEO', 'Fotoproduktion'],
-    url: 'https://www.mb-zahnabrechnung.de',
-    urlLabel: 'mb-zahnabrechnung.de',
-    photographer: {
-      handle: '@manumr.photo',
-      instagramUrl: 'https://www.instagram.com/manumr.photo/',
-    },
-    imageMode: 'photo',
-  },
-  {
-    client: 'Galabau Eifler',
-    owner: 'Kevin Eifler',
-    image: '/galabau-eifler.jpeg',
-    industry: 'Garten- & Landschaftsbau',
-    location: 'Saarbrücken',
-    title: 'Vom Handwerksbetrieb zur wiedererkennbaren Marke.',
-    story:
-      'Neuer Auftritt für einen Landschaftsbauer mit Anspruch. Klare Typografie, geordnete Projekt-Galerie und Vorher-Nachher-Strecken. Anfragen kommen sortierter und mit klarem Budget-Verständnis.',
-    services: ['Website', 'Design', 'Projekt-Präsentation'],
-    url: 'https://galabau-eifler.de',
-    urlLabel: 'galabau-eifler.de',
-    imageMode: 'photo',
-  },
-  {
-    client: 'PB Fahrzeugpflege',
-    owner: 'Karsten Becker',
-    image: '/PB.jpg',
-    industry: 'Fahrzeugaufbereitung & Keramikversiegelung',
-    location: 'Saarlouis · Saarland · Luxemburg',
-    title: 'Über 25 Jahre Handwerk, endlich sichtbar.',
-    story:
-      'Seit 1997 auf Premium-Fahrzeugaufbereitung spezialisiert, die alte Website hat davon nichts erzählt. Neuer Auftritt mit prominenten Trust-Signalen (4,92/5 · 648 ProvenExpert · 184 Google), klarer Anfrage-Strecke und ruhiger Bildsprache. Von der Fachwerkstatt zur festen Adresse für Sportwagen und Oldtimer.',
-    services: ['Website', 'Trust-Signale', 'Lokales SEO'],
-    url: 'https://pb-fahrzeugpflege.de',
-    urlLabel: 'pb-fahrzeugpflege.de',
-    facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
-  },
-];
+const cases = getFeaturedReferences(3);
 
 export default function HorizontalCases() {
   const ref = useRef<HTMLDivElement>(null);
@@ -107,22 +47,42 @@ export default function HorizontalCases() {
               .
             </h2>
             <p className="mt-6 md:mt-8 max-w-lg text-base md:text-lg text-stone-600 leading-relaxed">
-              Drei Klienten. Drei unterschiedliche Märkte. Ein gemeinsamer Nenner:
-              Der Auftritt trägt heute, was das Unternehmen tatsächlich ist.
+              Eine Auswahl aktueller Projekte. Jedes Mal ein anderer Markt,
+              jedes Mal ein Auftritt, der trägt, was das Unternehmen tatsächlich ist.
             </p>
           </div>
           <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-stone-400 font-medium">
             <span className="rule-tick text-stone-400" />
-            <span>Drei Referenzen · seit 2024</span>
+            <span>Aktuelle Referenzen · seit 2024</span>
           </div>
         </motion.div>
       </div>
 
       {/* Cases, vertical alternating full-width blocks */}
-      <div className="relative z-10 space-y-20 md:space-y-40 pb-20 md:pb-40">
+      <div className="relative z-10 space-y-20 md:space-y-40 pb-16 md:pb-28">
         {cases.map((c, i) => (
-          <CaseBlock key={c.client} data={c} index={i} />
+          <CaseBlock key={c.slug} data={c} index={i} />
         ))}
+      </div>
+
+      {/* Link zur Referenzen-Unterseite */}
+      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-8 pb-20 md:pb-40">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 border-t border-stone-200/80 pt-8 md:pt-10">
+          <p className="max-w-md text-sm md:text-base text-stone-600 leading-relaxed">
+            Eine vollständige Übersicht aller bisherigen Projekte findest du auf der
+            Referenzen-Seite.
+          </p>
+          <Link
+            href="/referenzen"
+            className="group inline-flex items-center gap-2 self-start md:self-auto btn-glass-ink px-5 py-3 rounded-full text-[13px] font-semibold"
+          >
+            <span className="btn-glass-shine" aria-hidden />
+            <span className="relative">Alle Referenzen ansehen</span>
+            <span className="relative text-cyan-300 transition-transform duration-300 group-hover:translate-x-0.5">
+              →
+            </span>
+          </Link>
+        </div>
       </div>
 
       {/* Big background outline label */}
@@ -138,7 +98,7 @@ export default function HorizontalCases() {
   );
 }
 
-function CaseBlock({ data, index }: { data: Case; index: number }) {
+export function CaseBlock({ data, index }: { data: Reference; index: number }) {
   const isOdd = index % 2 === 1;
 
   return (
@@ -261,48 +221,81 @@ function CaseBlock({ data, index }: { data: Case; index: number }) {
               <span>{data.photographer.handle}</span>
             </a>
           )}
+
+          {data.testimonial && <TestimonialDisclosure data={data.testimonial} />}
         </div>
       </div>
     </motion.article>
   );
 }
 
-function CaseCard({ data, index }: { data: Case; index: number }) {
-  const isPhoto = data.imageMode === 'photo';
-  const altText = isPhoto
-    ? `${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`
-    : `Website ${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`;
+function TestimonialDisclosure({
+  data,
+}: {
+  data: NonNullable<Reference['testimonial']>;
+}) {
+  const [open, setOpen] = useState(false);
 
-  const inner = (
-    <>
-      {/* Bildfläche */}
-      <div
-        className={`relative overflow-hidden ${
-          isPhoto ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[16/9] bg-white'
-        }`}
+  return (
+    <div className="mt-7 border-t border-stone-200/80 pt-5">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        className="group flex items-center justify-between gap-4 w-full text-left"
       >
-        <Image
-          src={data.image}
-          alt={altText}
-          fill
-          sizes="(max-width: 1024px) 100vw, 900px"
-          className={`transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] ${
-            isPhoto ? 'object-cover object-center' : 'object-cover object-top'
-          }`}
-          priority={index < 2}
-        />
-        {/* Hover veil */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        {/* Hover pill */}
-        <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-[var(--ink)] text-xs font-semibold tracking-[0.02em] shadow-lg">
-            Website öffnen
-            <span className="text-[var(--cyan-deep)]">↗</span>
+        <span className="flex items-baseline gap-3">
+          <span className="text-[10px] uppercase tracking-[0.32em] text-stone-400 font-medium">
+            Stimme vom Klienten
           </span>
-        </div>
-      </div>
-    </>
+        </span>
+        <span
+          className={`inline-flex items-center justify-center w-7 h-7 rounded-full border border-stone-300 text-stone-600 transition-all duration-300 ${
+            open ? 'rotate-45 border-[var(--cyan-deep)] text-[var(--cyan-deep)]' : ''
+          }`}
+          aria-hidden
+        >
+          <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth={1.75}>
+            <path d="M6 1v10M1 6h10" strokeLinecap="round" />
+          </svg>
+        </span>
+      </button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            key="testimonial-body"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.35, ease }}
+            className="overflow-hidden"
+          >
+            <figure className="mt-4">
+              <blockquote className="font-display italic text-[1.05rem] md:text-[1.15rem] leading-[1.55] text-[var(--ink)]">
+                „{data.quote}“
+              </blockquote>
+              <figcaption className="mt-3 text-sm text-stone-600">
+                <span className="font-semibold text-[var(--ink)]">{data.author}</span>
+                <span className="text-stone-400 mx-2">·</span>
+                <span>{data.role}</span>
+              </figcaption>
+            </figure>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
+}
+
+function CaseCard({ data, index }: { data: Reference; index: number }) {
+  const [active, setActive] = useState(0);
+  const hasMultiple = data.images.length > 1;
+  const current = data.images[active] ?? data.images[0];
+  const isPhoto = current.mode === 'photo';
+
+  const altText = current.alt ?? (isPhoto
+    ? `${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`
+    : `Website ${data.client}, ${data.industry}, ${data.location} · Fylu Marketing Referenz`);
 
   const cardClassName =
     'group relative block rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-[var(--ink)] shadow-[0_30px_80px_-20px_rgba(12,14,16,0.35)] ring-1 ring-black/5';
@@ -314,16 +307,110 @@ function CaseCard({ data, index }: { data: Case; index: number }) {
     transition: { duration: 1, delay: 0.1, ease },
   };
 
+  const go = (dir: -1 | 1) => {
+    setActive((prev) => {
+      const next = prev + dir;
+      if (next < 0) return data.images.length - 1;
+      if (next >= data.images.length) return 0;
+      return next;
+    });
+  };
+
   return (
-    <motion.a
-      href={data.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      {...motionProps}
-      className={cardClassName}
-      aria-label={`${data.client} · Website öffnen`}
-    >
-      {inner}
-    </motion.a>
+    <motion.div {...motionProps} className={cardClassName}>
+      <a
+        href={data.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${data.client} · Website öffnen`}
+        className="block"
+      >
+        <div
+          className={`relative overflow-hidden ${
+            isPhoto ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[16/9] bg-white'
+          }`}
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={active}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.35, ease }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={current.src}
+                alt={altText}
+                fill
+                sizes="(max-width: 1024px) 100vw, 900px"
+                className={`transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] ${
+                  isPhoto ? 'object-cover object-center' : 'object-cover object-top'
+                }`}
+                priority={index < 2 && active === 0}
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Hover veil */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          {/* Hover pill */}
+          <div className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 pointer-events-none">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur text-[var(--ink)] text-xs font-semibold tracking-[0.02em] shadow-lg">
+              Website öffnen
+              <span className="text-[var(--cyan-deep)]">↗</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      {hasMultiple && (
+        <>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              go(-1);
+            }}
+            aria-label="Vorheriges Bild"
+            className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 z-10 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 hover:bg-white backdrop-blur text-[var(--ink)] shadow-md transition-colors"
+          >
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              go(1);
+            }}
+            aria-label="Nächstes Bild"
+            className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 z-10 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 hover:bg-white backdrop-blur text-[var(--ink)] shadow-md transition-colors"
+          >
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur shadow-sm">
+            {data.images.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive(i);
+                }}
+                aria-label={`Bild ${i + 1} von ${data.images.length}`}
+                aria-current={active === i}
+                className={`h-1.5 rounded-full transition-all ${
+                  active === i ? 'w-5 bg-[var(--ink)]' : 'w-1.5 bg-stone-400'
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </motion.div>
   );
 }

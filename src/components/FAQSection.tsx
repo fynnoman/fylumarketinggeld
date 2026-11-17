@@ -1,7 +1,6 @@
 'use client';
 
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { WHATSAPP_URL } from '@/lib/contact';
 import { homeFaqs as faqs } from '@/lib/home-faqs';
@@ -138,21 +137,6 @@ export default function FAQSection() {
             .
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-center mt-4 text-sm text-stone-500"
-          >
-            Konkrete Website-Probleme?{' '}
-            <Link
-              href="/probleme"
-              className="text-[var(--cyan-deep)] hover:text-[var(--ink)] font-semibold underline underline-offset-4 transition-colors"
-            >
-              Diagnose und Lösungen im Überblick
-            </Link>
-            .
-          </motion.div>
         </div>
       </div>
     </section>

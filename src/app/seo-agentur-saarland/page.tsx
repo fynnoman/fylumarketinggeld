@@ -110,19 +110,19 @@ export default function SeoAgenturSaarlandPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/tools/seo-check"
+                href="/buchen"
                 className="inline-flex items-center justify-center gap-2 btn-glass-ink px-6 py-3.5 rounded-full text-[14px] font-semibold relative overflow-hidden"
               >
                 <span className="btn-glass-shine" aria-hidden />
-                <span className="relative">SEO-Check starten</span>
+                <span className="relative">Vorgespräch buchen</span>
                 <span className="relative text-cyan-300">→</span>
               </Link>
               <Link
-                href="/buchen"
+                href="/referenzen"
                 className="inline-flex items-center justify-center gap-2 btn-glass px-6 py-3.5 rounded-full text-[14px] font-semibold text-stone-900 relative overflow-hidden"
               >
                 <span className="btn-glass-shine" aria-hidden />
-                <span className="relative">Vorgespräch buchen</span>
+                <span className="relative">Referenzen ansehen</span>
               </Link>
             </div>
           </div>
@@ -225,37 +225,6 @@ export default function SeoAgenturSaarlandPage() {
           </div>
         </section>
 
-        {/* SEO-Check Prominent */}
-        <section className="py-16 md:py-20 px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <div className="relative overflow-hidden rounded-3xl bg-white p-8 md:p-10 border border-stone-200/70 shadow-[0_8px_40px_rgba(12,14,16,0.04)]">
-              <div
-                aria-hidden
-                className="glass-bloom-cyan absolute -top-16 -right-16 w-64 h-64 rounded-full opacity-40 pointer-events-none"
-              />
-              <div className="relative">
-                <div className="text-[11px] uppercase tracking-[0.32em] text-[var(--cyan-deep)] font-semibold mb-3">
-                  Vor dem Gespräch
-                </div>
-                <h2 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] tracking-[-0.02em] mb-4">
-                  Kostenlose SEO-Potenzialanalyse Ihrer Website
-                </h2>
-                <p className="text-stone-700 leading-relaxed mb-6">
-                  Unser SEO-Check prüft in unter 15 Sekunden Meta, Struktur, Inhalt, Structured
-                  Data und lokale Signale Ihrer Domain, mit konkreter Handlungsempfehlung pro
-                  Finding. Keine Registrierung, nichts wird gespeichert.
-                </p>
-                <Link
-                  href="/tools/seo-check"
-                  className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3.5 rounded-full text-[14px] font-semibold transition-colors"
-                >
-                  SEO-Check starten
-                  <span>→</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Konditionen und Ehrlichkeit */}
         <section className="py-16 md:py-20 px-6">
@@ -303,10 +272,10 @@ export default function SeoAgenturSaarlandPage() {
                 <span className="text-cyan-300">→</span>
               </Link>
               <Link
-                href="/tools/seo-check"
+                href="/referenzen"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-[15px] font-semibold text-[var(--cyan-deep)] border border-stone-200 bg-white hover:border-cyan-300 transition-colors"
               >
-                Erst SEO-Check anschauen
+                Referenzen ansehen
               </Link>
             </div>
           </div>

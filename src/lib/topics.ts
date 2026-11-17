@@ -88,15 +88,6 @@ export const topics: Topic[] = [
         a: "Auf Wunsch erhalten Sie ein einfaches CMS, mit dem Sie Projekte und Bilder selbstständig pflegen können.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
   },
   {
     slug: "restaurant",
@@ -170,15 +161,6 @@ export const topics: Topic[] = [
         q: "Wie lange dauert die Erstellung?",
         a: "Typischerweise 3-4 Wochen, inklusive Texte, Design, technischer Umsetzung und SEO.",
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
   },
   {
@@ -254,15 +236,6 @@ export const topics: Topic[] = [
         a: "Standard 3-4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Design typischerweise 4-6 Wochen.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
   },
   {
     slug: "anwalt",
@@ -299,15 +272,6 @@ export const topics: Topic[] = [
         q: "Wie funktioniert SEO für Anwaltskanzleien?",
         a: `Wir optimieren pro Fachgebiet und Standort, z.B. „Fachanwalt Arbeitsrecht Saarbrücken“. Plus Content-Strategie mit Rechtsratgeber-Artikeln, die qualifizierte Mandanten anziehen.`,
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
   },
   {
@@ -346,15 +310,6 @@ export const topics: Topic[] = [
         a: "Über klar definierte KPIs: Anzahl qualifizierter Eigentümer-Anfragen, Käufer-Leads pro Objekt, Verweildauer auf Objektseiten und Conversion-Rate. Monatliche Reports inklusive.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
-    ],
   },
   {
     slug: "arzt",
@@ -391,15 +346,6 @@ export const topics: Topic[] = [
         q: "Wie lange dauert die Erstellung?",
         a: "Typischerweise 3-4 Wochen, Premium-Praxis-Websites mit eigenem Fotoshooting und individuellem Konzept 4-6 Wochen.",
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
   },
   {
@@ -549,15 +495,6 @@ export const topics: Topic[] = [
         a: "Für Photovoltaik, Wärmepumpen und E-Mobilität: definitiv ja. Auftragswerte sind hoch, Werbe-Kosten amortisieren sich oft mit dem ersten Lead.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
   },
   {
     slug: "heizungsbauer",
@@ -668,15 +605,6 @@ export const topics: Topic[] = [
         q: "Ist eine Online-Terminbuchung sinnvoll?",
         a: "Definitiv. Patienten buchen gerne abends und am Wochenende, wenn Ihre Praxis geschlossen ist. Online-Buchungen erhöhen die Termin-Auslastung messbar.",
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website tatsächlich hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
   },
   {
@@ -826,15 +754,6 @@ export const topics: Topic[] = [
         a: "Mit lokaler SEO und einem optimierten Google Business Profil definitiv, das ist eine der wichtigsten Suchanfragen für Hausbesitzer.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
   },
   {
     slug: "shk",
@@ -871,15 +790,6 @@ export const topics: Topic[] = [
         q: "Lohnt sich ein Wärmepumpen-Bereich?",
         a: "Absolut, Wärmepumpe ist eines der gefragtesten Suchthemen und positioniert Sie als zukunftsorientierter Betrieb.",
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
     ],
   },
   {
@@ -992,15 +902,6 @@ export const topics: Topic[] = [
         a: "Ja, in besonderem Maß. Klickpreise sind höher als in vielen anderen Segmenten, aber Auftragswerte auch. Ein einzelner gewonnener Auftrag amortisiert oft mehrere Monate Ads-Budget. Voraussetzung: sauberes Conversion-Tracking und passende Landing-Page.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
   },
   {
     slug: "gebaeudereinigung",
@@ -1038,15 +939,6 @@ export const topics: Topic[] = [
         a: "Für eine solide B2B-Website mit klarer Auftraggeber-Struktur typischerweise vier bis acht Wochen. Wenn Zertifikate, Referenzobjekte und Prozessbeschreibungen bereits vorliegen, entsprechend schneller.",
       },
     ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bei-google-nicht-gefunden", label: "Website bei Google nicht gefunden" },
-      { href: "/probleme/website-seo-verbessern", label: "Website-SEO verbessern" },
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-    ],
   },
   {
     slug: "industrie",
@@ -1083,15 +975,6 @@ export const topics: Topic[] = [
         q: "Wie lange dauert ein solches Projekt?",
         a: "Für einen fokussierten Auftritt mit klarer Produktstruktur: sechs bis zehn Wochen. Bei umfangreichem Produktkatalog und mehreren Sprachen: drei bis fünf Monate. Der Löwenanteil ist typischerweise die technische Content-Aufbereitung, nicht die Umsetzung selbst.",
       },
-    ],
-    relatedTools: [
-      { href: "/tools/website-check", label: "Website-Analyse", description: "Prüft in unter 15 Sekunden, wo Ihre Website hakt." },
-      { href: "/tools/seo-check", label: "SEO-Check", description: "Priorisierte SEO-Findings mit konkreter Handlungsempfehlung." },
-    ],
-    relatedProblems: [
-      { href: "/probleme/website-bekommt-keine-anfragen", label: "Website bekommt keine Anfragen" },
-      { href: "/probleme/website-conversion-verbessern", label: "Website-Conversion verbessern" },
-      { href: "/probleme/website-zu-alt", label: "Website wirkt veraltet" },
     ],
   },
 ];

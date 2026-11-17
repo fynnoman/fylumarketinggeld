@@ -85,9 +85,7 @@ export default function Footer() {
               Unterseiten
             </h3>
             <ul className="space-y-2.5 text-sm text-stone-400">
-              <li><Link href="/probleme" className="hover:text-white transition-colors">Probleme</Link></li>
-              <li><Link href="/tools" className="hover:text-white transition-colors">Tools</Link></li>
-              <li><Link href="/digital-index" className="hover:text-white transition-colors">Digital Index</Link></li>
+              <li><Link href="/referenzen" className="hover:text-white transition-colors">Referenzen</Link></li>
               <li><Link href="/buchen" className="hover:text-white transition-colors">Projekt anfragen</Link></li>
             </ul>
           </div>
