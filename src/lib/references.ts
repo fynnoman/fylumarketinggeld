@@ -137,6 +137,34 @@ export const references: Reference[] = [
     urlLabel: 'pb-fahrzeugpflege.de',
     facebookUrl: 'https://www.facebook.com/share/p/1C7ypdFRbh/?mibextid=wwXIfr',
   },
+  {
+    slug: 'salif-gebaeudeservice',
+    client: 'SALIF Gebäudeservice',
+    owner: 'SALIF Gebäudeservice',
+    images: [{ src: '/salif-hero.png', mode: 'screenshot' }],
+    industry: 'Gebäudereinigung & Facility Service',
+    location: 'Pirmasens · Kaiserslautern · Westpfalz',
+    title: 'Neuer Webauftritt für einen jungen Gebäudeservice mit eigenem Anspruch.',
+    story:
+      'SALIF ist ein inhabergeführter Gebäudeservice aus Pirmasens, aktiv in der gesamten Westpfalz. Für den digitalen Auftritt entstand eine Website mit klarer Haltung: starke Typografie, ehrliche Bildsprache und eine Struktur, die sofort zeigt, wofür das Unternehmen steht. Statt generischem Reinigungs-Stock ein Auftritt, der zum Handwerk und zum Team passt.',
+    services: ['Website', 'Design', 'Positionierung'],
+    url: 'https://salif-gebaeudeservice.de',
+    urlLabel: 'salif-gebaeudeservice.de',
+  },
+  {
+    slug: 'oufa-hairstyling',
+    client: 'Oufa Hairstyling',
+    owner: 'Oufa Yousef',
+    images: [{ src: '/oufa-foto.jpg', mode: 'photo' }],
+    industry: 'Friseur-Atelier',
+    location: 'Saarbrücken',
+    title: 'Neuer Webauftritt für ein Friseur-Atelier mit eigener Handschrift.',
+    story:
+      'Oufa Hairstyling verbindet orientalisches Friseur-Handwerk mit präziser, moderner Ausführung. Für den digitalen Auftritt entstand eine Website, die genau diesen Ton trifft: ruhig, feminin, hochwertig. Klare Struktur für Leistungen und Terminanfragen, dazu eine Bildsprache, die zum Studio in Saarbrücken passt.',
+    services: ['Website', 'Design', 'Terminstrecke'],
+    url: 'https://oufa-hairstyling.de',
+    urlLabel: 'oufa-hairstyling.de',
+  },
 ];
 
 export function getFeaturedReferences(): Reference[] {
