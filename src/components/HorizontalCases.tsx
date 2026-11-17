@@ -116,7 +116,7 @@ export function CaseBlock({ data, index }: { data: Reference; index: number }) {
       >
         {/* Image side */}
         <div
-          className={`lg:col-span-6 relative ${
+          className={`lg:col-span-8 relative ${
             isOdd ? 'lg:[direction:ltr]' : ''
           }`}
         >
@@ -125,7 +125,7 @@ export function CaseBlock({ data, index }: { data: Reference; index: number }) {
 
         {/* Text side */}
         <div
-          className={`lg:col-span-6 ${
+          className={`lg:col-span-4 ${
             isOdd ? 'lg:[direction:ltr]' : ''
           }`}
         >
@@ -331,8 +331,8 @@ function CaseCard({ data, index }: { data: Reference; index: number }) {
       >
         <div
           className={`relative overflow-hidden ${
-            isPhoto ? 'aspect-[4/5] bg-[var(--ink)]' : 'aspect-[16/10] bg-white'
-          } lg:max-h-[72vh]`}
+            isPhoto ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[16/9] bg-white'
+          }`}
         >
           <AnimatePresence mode="wait">
             <motion.div
