@@ -9,7 +9,7 @@ import { getFeaturedReferences } from '@/lib/references';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const cases = getFeaturedReferences(3);
+const cases = getFeaturedReferences();
 
 export default function HorizontalCases() {
   const ref = useRef<HTMLDivElement>(null);
@@ -59,7 +59,7 @@ export default function HorizontalCases() {
       </div>
 
       {/* Cases, vertical alternating full-width blocks */}
-      <div className="relative z-10 space-y-20 md:space-y-40 pb-16 md:pb-28">
+      <div className="relative z-10 space-y-16 md:space-y-24 pb-12 md:pb-16">
         {cases.map((c, i) => (
           <CaseBlock key={c.slug} data={c} index={i} />
         ))}
@@ -116,7 +116,7 @@ export function CaseBlock({ data, index }: { data: Reference; index: number }) {
       >
         {/* Image side */}
         <div
-          className={`lg:col-span-8 relative ${
+          className={`lg:col-span-6 relative ${
             isOdd ? 'lg:[direction:ltr]' : ''
           }`}
         >
@@ -125,7 +125,7 @@ export function CaseBlock({ data, index }: { data: Reference; index: number }) {
 
         {/* Text side */}
         <div
-          className={`lg:col-span-4 ${
+          className={`lg:col-span-6 ${
             isOdd ? 'lg:[direction:ltr]' : ''
           }`}
         >
@@ -327,8 +327,8 @@ function CaseCard({ data, index }: { data: Reference; index: number }) {
       >
         <div
           className={`relative overflow-hidden ${
-            isPhoto ? 'aspect-[3/4] bg-[var(--ink)]' : 'aspect-[16/9] bg-white'
-          }`}
+            isPhoto ? 'aspect-[4/5] bg-[var(--ink)]' : 'aspect-[16/10] bg-white'
+          } lg:max-h-[72vh]`}
         >
           <AnimatePresence mode="wait">
             <motion.div

@@ -25,10 +25,10 @@ export type Reference = {
   facebookUrl?: string;
   photographer?: { handle: string; instagramUrl: string };
   testimonial?: ReferenceTestimonial;
+  featured?: boolean;
 };
 
-// Neueste zuerst. Auf der Hauptseite werden die ersten drei gezeigt,
-// die Unterseite /referenzen listet alle.
+// Reihenfolge = Reihenfolge auf /referenzen. `featured: true` landet auf der Hauptseite.
 export const references: Reference[] = [
   {
     slug: 'kc3-gmbh',
@@ -48,7 +48,7 @@ export const references: Reference[] = [
     slug: 'sportcenter-kenn',
     client: 'Sportcenter Kenn',
     owner: 'Boris Cucka',
-    images: [{ src: '/sportcenter-kenn.jpeg', mode: 'photo' }],
+    images: [{ src: '/sportcenter-kenn-hero.png', mode: 'screenshot' }],
     industry: 'Sport & Freizeit',
     location: 'Kenn bei Trier',
     title: 'Neuer Webauftritt für ein Sportcenter mit vielen Welten unter einem Dach.',
@@ -86,6 +86,7 @@ export const references: Reference[] = [
       author: 'Willi Kühnreich',
       role: 'Vorstand · Kältebus Saarbrücken e.V.',
     },
+    featured: true,
   },
   {
     slug: 'mb-zahnabrechnung',
@@ -104,6 +105,7 @@ export const references: Reference[] = [
       handle: '@manumr.photo',
       instagramUrl: 'https://www.instagram.com/manumr.photo/',
     },
+    featured: true,
   },
   {
     slug: 'galabau-eifler',
@@ -118,6 +120,7 @@ export const references: Reference[] = [
     services: ['Website', 'Design', 'Projekt-Präsentation'],
     url: 'https://galabau-eifler.de',
     urlLabel: 'galabau-eifler.de',
+    featured: true,
   },
   {
     slug: 'pb-fahrzeugpflege',
@@ -136,6 +139,6 @@ export const references: Reference[] = [
   },
 ];
 
-export function getFeaturedReferences(count = 3): Reference[] {
-  return references.slice(0, count);
+export function getFeaturedReferences(): Reference[] {
+  return references.filter((r) => r.featured);
 }

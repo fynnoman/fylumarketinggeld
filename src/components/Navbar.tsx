@@ -34,7 +34,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Leistungen', href: '/#leistungen' },
-    { label: 'Arbeiten', href: '/#klienten' },
+    { label: 'Referenzen', href: '/referenzen' },
   ];
 
   return (
