@@ -160,17 +160,6 @@ export default function LeistungenSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6">
-                <Link
-                  href="/branding-agentur-saarland"
-                  className="group/link inline-flex items-center gap-2 text-[12px] font-semibold text-cyan-300 hover:text-white transition-colors"
-                >
-                  <span className="border-b border-cyan-300/40 group-hover/link:border-white pb-0.5 transition-colors">
-                    Zur Branding-Agentur Saarland
-                  </span>
-                  <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
-                </Link>
-              </div>
             </div>
           </motion.div>
 
@@ -220,17 +209,6 @@ export default function LeistungenSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 pt-6 border-t border-stone-200/70">
-                <Link
-                  href="/geo"
-                  className="group/link inline-flex items-center gap-2 text-[12px] font-semibold text-[var(--cyan-deep)] hover:text-[var(--ink)] transition-colors"
-                >
-                  <span className="border-b border-stone-300 group-hover/link:border-[var(--ink)] pb-0.5 transition-colors">
-                    Zur GEO-Methodik
-                  </span>
-                  <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
-                </Link>
-              </div>
             </div>
           </motion.div>
 
